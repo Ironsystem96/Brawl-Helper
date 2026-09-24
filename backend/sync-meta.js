@@ -105,6 +105,49 @@ async function main(){
   ],note:'Automatically synchronized community/build/statistics snapshot. Values are source data, not official Supercell recommendations.',entries};
   fs.writeFileSync(BUILD_PATH,JSON.stringify(buildMeta,null,2)+'\n');
 
+  // Contextual meta: mode-level rankings from Brawl Time Ninja.
+  // Global and mode data stay separate so the UI can show the actual context rank.
+  const modesResp=await (await fetch('https://api.brawlapi.com/v1/gamemodes',{headers:{'user-agent':'BrawlHelper-MetaSync/1.0'}})).json();
+  const modes=(modesResp.list||[]).filter(m=>!m.disabled);
+  const modeMeta={};
+  let modeOk=0;
+
+  function parseModeRanking(html,brawlers){
+    const text=clean(html);
+    const section=pickSection(text,'Best Brawlers for','Tier List');
+    const out={};
+    for(const b of brawlers){
+      const i=section.toLowerCase().indexOf(String(b.name).toLowerCase());
+      if(i<0)continue;
+      const before=section.slice(Math.max(0,i-32),i);
+      const after=section.slice(i+String(b.name).length,i+String(b.name).length+80);
+      const rm=before.match(/(\d+)\s*$/);
+      const sm=after.match(/(\d+(?:\.\d+)?)%\s+(\d+(?:\.\d+)?)%/);
+      if(rm&&sm)out[b.name]={rank:Number(rm[1]),adjustedWinRate:Number(sm[1]),pickRate:Number(sm[2])};
+    }
+    return out;
+  }
+
+  for(const mode of modes){
+    const slug=mode.hash||mode.scHash;
+    if(!slug)continue;
+    try{
+      const html=await get('https://brawltime.ninja/tier-list/mode/'+encodeURIComponent(String(slug).toLowerCase()));
+      const ranking=parseModeRanking(html,list);
+      if(Object.keys(ranking).length>=Math.min(10,list.length)){
+        modeMeta[mode.scHash||mode.hash]={
+          name:mode.name,
+          hash:mode.hash,
+          sourceUrl:'https://brawltime.ninja/tier-list/mode/'+encodeURIComponent(String(slug).toLowerCase()),
+          updatedAt:now,
+          entries:ranking
+        };
+        modeOk++;
+      }
+    }catch(e){}
+    await sleep(70);
+  }
+
   const metaEntries={};
   for(const b of list){
     const e=entries[b.name];
@@ -113,17 +156,25 @@ async function main(){
     const buildPicks=[...(e.gadget||[]),...(e.starPower||[]),...(e.gears||[])].map(x=>Number(x.pick)).filter(Number.isFinite);
     const buildScore=buildPicks.length?Math.min(100,Math.round(buildPicks.reduce((a,v)=>a+v,0)/buildPicks.length)):50;
     const score=base!=null?Math.round(base):buildScore;
-    metaEntries[b.name]={default:{score,reason:base!=null?'Brawl Time Ninja adjusted win rate':'Community build data only',source:base!=null?'Brawl Time Ninja':'NOFF',confidence:base!=null?'medium':'low'}};
+    const modesOut={};
+    for(const [modeKey,md] of Object.entries(modeMeta)){
+      const r=md.entries?.[b.name];
+      if(r)modesOut[modeKey]={score:r.adjustedWinRate,rank:r.rank,winRate:r.adjustedWinRate,pickRate:r.pickRate,reason:md.name+' adjusted win rate',source:'Brawl Time Ninja',confidence:r.rank<=10?'medium':'low'};
+    }
+    metaEntries[b.name]={
+      default:{score,rank:null,reason:base!=null?'Brawl Time Ninja adjusted win rate':'Community build data only',source:base!=null?'Brawl Time Ninja':'NOFF',confidence:base!=null?'medium':'low'},
+      modes:modesOut
+    };
   }
-  const meta={schemaVersion:1,updatedAt:now,source:'Brawl Time Ninja + NOFF',method:'Global snapshot; contextual mode/map data will be added in the next sync stage.',entries:metaEntries};
+  const meta={schemaVersion:2,updatedAt:now,source:'Brawl Time Ninja + NOFF',method:'Global + mode snapshot. Map-specific data is only shown when a verified map snapshot exists.',coverage:{brawlers:list.length,modes:modeOk,totalModes:modes.length},entries:metaEntries};
   fs.writeFileSync(META_PATH,JSON.stringify(meta,null,2)+'\n');
 
   const catalogOut=list.map(b=>({id:b.id,name:b.name,assetId:b.id,gadgets:(b.gadgets||[]).map(x=>({id:x.id,name:x.name})),starPowers:(b.starPowers||[]).map(x=>({id:x.id,name:x.name})),gears:(b.gears||[]).map(x=>({id:x.id,name:x.name})),hyperCharges:(b.hypercharges||b.hyperCharges||[]).map(x=>({id:x.id,name:x.name}))}));
   fs.writeFileSync(CATALOG_PATH,JSON.stringify(catalogOut,null,2)+'\n');
 
-  if(noffOk<Math.floor(list.length*.5) || btOk<Math.floor(list.length*.5)) {
+  if(noffOk<Math.floor(list.length*.5) || btOk<Math.floor(list.length*.5) || modeOk<3) {
     throw new Error('Sync quality gate failed: NOFF '+noffOk+'/'+list.length+', BrawlTime '+btOk+'/'+list.length);
   }
-  console.log(JSON.stringify({updatedAt:now,brawlers:list.length,noffOk,btOk},null,2));
+  console.log(JSON.stringify({updatedAt:now,brawlers:list.length,noffOk,btOk,modeOk,totalModes:modes.length},null,2));
 }
 main().catch(e=>{console.error(e);process.exit(1)});
