@@ -1,17 +1,23 @@
 # Brawl Helper
-Versione mobile-first collegata al profilo reale BlackShark tramite snapshot API ufficiale.
-## Stato
-- Profilo e inventario account: presente.
-- 106 Brawler: caricati dal player-response.
-- Home, Best For You, Play, My Brawlers, Upgrade Advisor e Meta: presenti.
-- Build context/meta live: architettura predisposta, non vengono inventati valori competitivi.
-- PWA: presente.
-## Roadmap
-1. Collegamento backend sicuro alla API ufficiale.
-2. Snapshot meta per stagione/patch/modalità/mappa.
+
+Companion app non ufficiale per Brawl Stars.
+
+## Architettura attuale
+- GitHub Pages: frontend/PWA di test.
+- BlackShark / #22QYOQRGY: profilo TEST, usato solo per sviluppo.
+- Produzione: ogni cliente inserisce il proprio Player Tag.
+- Backend: unico punto autorizzato a custodire la chiave API e interrogare l'API ufficiale.
+- Il frontend non contiene chiavi segrete.
+- Profili multipli sono gestiti localmente per il test; il backend può successivamente aggiungere account persistence/auth.
+
+## Roadmap tecnica
+1. Backend sicuro + cache account.
+2. Meta snapshot stagione/patch/modalità/mappa.
 3. Asset cache locale.
-4. Build Android con Capacitor/Android Studio.
-5. Privacy policy, consenso ads e integrazione pubblicitaria.
-6. AAB per Google Play.
-## Fan Content
-App non ufficiale. Deve includere il disclaimer previsto dalla Fan Content Policy di Supercell e rispettarne sempre le condizioni.
+4. Recommendation engine.
+5. Capacitor/Android Studio -> APK/AAB.
+6. AdMob e privacy/consenso.
+7. QA e pubblicazione.
+
+## Supercell
+Brawl Helper è fan content non ufficiale. Il progetto deve mantenere il disclaimer richiesto e rispettare la Fan Content Policy di Supercell.
