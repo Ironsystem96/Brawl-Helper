@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "game": "Brawl Stars",
+  "databaseVersion": "2026.09.24",
+  "lastSyncedAt": "2026-09-24T00:00:00Z",
+  "sources": [
+    {
+      "type": "official_release_notes",
+      "publisher": "Supercell",
+      "url": "https://supercell.com/en/games/brawlstars/blog/release-notes/note-di-rilascio-di-agosto-2026/"
+    }
+  ],
+  "patch": {
+    "id": "2026-08",
+    "title": "Release Notes August 2026",
+    "publishedAt": "2026-09-01",
+    "latestMaintenance": "2026-09-16",
+    "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-august-2026/"
+  },
+  "entities": {
+    "brawlers": {},
+    "gadgets": {},
+    "starPowers": {},
+    "gears": {},
+    "hypercharges": {},
+    "gameModes": {},
+    "maps": {},
+    "rankedSeasons": {}
+  },
+  "meta": {
+    "status": "foundation",
+    "note": "The database schema is ready. Public game data and account data are intentionally separated."
+  }
+}
