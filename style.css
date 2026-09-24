@@ -6,3 +6,26 @@
 .advisorIcon .compIcon{width:38px;height:38px;object-fit:contain}
 .advisorRow .chip{margin-left:auto;white-space:nowrap}
 .card a{color:var(--accent);text-decoration:none}
+
+/* V0.13 fluid motion layer — lightweight, GPU-friendly */
+@keyframes bhPageIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@keyframes bhCardIn{from{opacity:0;transform:translateY(7px) scale(.992)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes bhModalIn{from{opacity:0;transform:translateY(18px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes bhFade{from{opacity:0}to{opacity:1}}
+.content{animation:bhPageIn .28s cubic-bezier(.22,.8,.25,1) both}
+.content>.section,.content>.hero{animation:bhPageIn .34s cubic-bezier(.22,.8,.25,1) both}
+.card,.action,.upgradeRow{transition:transform .22s cubic-bezier(.22,.8,.25,1),box-shadow .22s ease,border-color .22s ease}
+.bcard:hover,.action:hover,.upgradeRow:hover{transform:translateY(-2px);box-shadow:0 9px 22px rgba(25,35,55,.09)}
+.bcard:active,.action:active,.upgradeRow:active{transform:scale(.985)}
+.nav button{transition:color .2s ease,transform .2s cubic-bezier(.22,.8,.25,1)}
+.nav button:active{transform:scale(.92)}
+.filters button,.profileBtn,.primary,.close,.back{transition:transform .2s cubic-bezier(.22,.8,.25,1),background-color .2s ease,border-color .2s ease,color .2s ease,box-shadow .2s ease}
+.filters button:active,.profileBtn:active,.primary:active,.close:active{transform:scale(.97)}
+.modal{animation:bhFade .2s ease both}
+.modalBox{animation:bhModalIn .32s cubic-bezier(.22,.8,.25,1) both}
+.search:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(56,169,255,.12);transition:border-color .2s ease,box-shadow .2s ease}
+.portrait,.compIcon{transition:transform .28s cubic-bezier(.22,.8,.25,1)}
+.bcard:hover .portrait{transform:scale(1.035)}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.001ms!important}
+}
