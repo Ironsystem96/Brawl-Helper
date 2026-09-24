@@ -8,6 +8,8 @@ const DB_STATE={loaded:false,version:null,patch:null,lastSyncedAt:null,changelog
 const BUILD_STATE={loaded:false,updatedAt:null,entries:{},sources:[]};
 const CATALOG_STATE={loaded:false,count:0,entries:{}};
 
+async function fetchJson(url,ms=7000){const ctl=new AbortController();const t=setTimeout(()=>ctl.abort(),ms);try{const r=await fetch(url,{cache:'no-store',signal:ctl.signal});if(!r.ok)throw new Error('HTTP '+r.status+' · '+url);return await r.json()}finally{clearTimeout(t)}}
+
 function loadProfiles(){try{return JSON.parse(localStorage.getItem('bh_profiles')||'[]')}catch{return[]}}
 function saveProfiles(){localStorage.setItem('bh_profiles',JSON.stringify(profiles))}
 function img(kind,id){return 'https://cdn.brawlify.com/'+kind+'/'+id+'.png'}
@@ -190,9 +192,7 @@ function meta(){
 
 async function loadCatalog(){
  try{
-  const r=await fetch('https://api.brawlapi.com/v1/brawlers',{cache:'no-store'});
-  if(!r.ok)throw new Error('BrawlAPI HTTP '+r.status);
-  const d=await r.json();
+  const d=await fetchJson('https://api.brawlapi.com/v1/brawlers',6000);
   const list=d.list||[];
   CATALOG_STATE.loaded=true;CATALOG_STATE.count=list.length;
   CATALOG_STATE.entries=Object.fromEntries(list.filter(x=>x&&x.id&&x.name).map(x=>[x.name,x]));list.forEach(b=>{const im=new Image();if(b.imageUrl)im.src=b.imageUrl;(b.gadgets||[]).concat(b.starPowers||[]).forEach(x=>{if(x.imageUrl){const ci=new Image();ci.src=x.imageUrl}})});
@@ -200,17 +200,16 @@ async function loadCatalog(){
 }
 async function loadMeta(){
   try{
-    const r=await fetch('data/meta.json',{cache:'no-store'});
-    if(r.ok){const d=await r.json();META_STATE.loaded=!!d.updatedAt;META_STATE.source=d.source;META_STATE.updatedAt=d.updatedAt;META_STATE.entries=d.entries||{}}
+    const d=await fetchJson('data/meta.json',5000);META_STATE.loaded=!!d.updatedAt;META_STATE.source=d.source;META_STATE.updatedAt=d.updatedAt;META_STATE.entries=d.entries||{}
   }catch(e){console.warn('Meta snapshot non disponibile',e)}
   try{
     const base=apiBase();
     const dbUrl=base?base+'/api/database':'data/game-db.json';
     const clUrl=base?base+'/api/changelog':'data/changelog.json';
-    const [dr,cr,br]=await Promise.all([fetch(dbUrl,{cache:'no-store'}),fetch(clUrl,{cache:'no-store'}),fetch('data/build-meta.json',{cache:'no-store'})]);
-    if(dr.ok){const d=await dr.json();DB_STATE.loaded=true;DB_STATE.version=d.databaseVersion||null;DB_STATE.patch=d.patch?.id||null;DB_STATE.lastSyncedAt=d.lastSyncedAt||null}
-    if(cr.ok){const c=await cr.json();DB_STATE.changelog=c.releases||[]}
-    if(br.ok){const b=await br.json();BUILD_STATE.loaded=true;BUILD_STATE.updatedAt=b.updatedAt||null;BUILD_STATE.entries=b.entries||{};BUILD_STATE.sources=b.sources||[]}
+    const [dr,cr,br]=await Promise.allSettled([fetchJson(dbUrl,5000),fetchJson(clUrl,5000),fetchJson('data/build-meta.json',5000)]);
+    if(dr.status==='fulfilled'){const d=dr.value;DB_STATE.loaded=true;DB_STATE.version=d.databaseVersion||null;DB_STATE.patch=d.patch?.id||null;DB_STATE.lastSyncedAt=d.lastSyncedAt||null}
+    if(cr.status==='fulfilled'){const c=cr.value;DB_STATE.changelog=c.releases||[]}
+    if(br.status==='fulfilled'){const b=br.value;BUILD_STATE.loaded=true;BUILD_STATE.updatedAt=b.updatedAt||null;BUILD_STATE.entries=b.entries||{};BUILD_STATE.sources=b.sources||[]}
   }catch(e){console.warn('Game database non disponibile',e)}
 }
 
@@ -236,5 +235,5 @@ function render(){
 }
 function showFatal(e){console.error('Brawl Helper fatal error',e);const msg=e?.message||String(e);const stack=e?.stack?'<details style="margin-top:12px"><summary>Dettagli tecnici</summary><pre style="white-space:pre-wrap;color:#ff9b9b;font-size:11px">'+esc(e.stack)+'</pre></details>':'';document.getElementById('app').innerHTML='<div style="min-height:100vh;background:#10131a;color:#fff;font-family:Arial,sans-serif;padding:28px;box-sizing:border-box"><h1>Brawl Helper</h1><p>Si è verificato un errore di caricamento.</p><pre style="white-space:pre-wrap;color:#ff9b9b">'+esc(msg)+'</pre>'+stack+'<button style="padding:14px 18px;border:0;border-radius:12px" onclick="location.reload()">Riprova</button></div>'}
 function loading(){document.getElementById('app').innerHTML='<div style="min-height:100vh;background:#10131a;color:#fff;font-family:Arial,sans-serif;display:flex;align-items:center;justify-content:center"><div style="text-align:center"><div style="font-size:28px;font-weight:800">Brawl Helper</div><div style="opacity:.65;margin-top:8px">Caricamento profilo…</div></div></div>'}
-async function boot(){try{loading();await Promise.all([loadMeta(),loadCatalog()]);let testProfile=profiles.find(x=>x.test);if(!testProfile){testProfile={name:'BlackShark TEST',tag:'#22QYOQRGY',test:true};profiles=[testProfile,...profiles];saveProfiles()}let p=profiles.find(x=>x.name===active);if(!p||(!apiBase()&&!p.test)){p=testProfile;active=p.name;localStorage.setItem('bh_active',active)}else{active=p.name;localStorage.setItem('bh_active',active)}await loadProfile(p);if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{})}catch(e){showFatal(e)}}
+async function boot(){try{loading();await Promise.allSettled([loadMeta(),loadCatalog()]);let testProfile=profiles.find(x=>x.test);if(!testProfile){testProfile={name:'BlackShark TEST',tag:'#22QYOQRGY',test:true};profiles=[testProfile,...profiles];saveProfiles()}let p=profiles.find(x=>x.name===active);if(!p||(!apiBase()&&!p.test)){p=testProfile;active=p.name;localStorage.setItem('bh_active',active)}else{active=p.name;localStorage.setItem('bh_active',active)}await loadProfile(p);if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{})}catch(e){showFatal(e)}}
 boot().catch(showFatal);
