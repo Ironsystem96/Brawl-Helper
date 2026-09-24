@@ -1,0 +1,61 @@
+name: Sync Brawl Helper Meta
+on:
+  schedule:
+    - cron: '17 2 * * *'
+      timezone: 'Europe/Rome'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Force metadata refresh'
+        required: false
+        default: 'true'
+        type: boolean
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: brawl-helper-meta-sync
+  cancel-in-progress: false
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install backend dependencies
+        working-directory: backend
+        run: npm install
+      - name: Sync catalog, builds and meta
+        working-directory: backend
+        run: node sync-meta.js
+      - name: Validate JSON
+        run: node -e "for (const f of ['data/brawlers.json','data/build-meta.json','data/meta.json']) JSON.parse(require('fs').readFileSync(f,'utf8')); console.log('JSON OK')"
+      - name: Commit data changes
+        id: commit
+        run: |
+          git config user.name "brawl-helper-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/brawlers.json data/build-meta.json data/meta.json
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git commit -m "chore(meta): automatic meta sync"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+      - name: Publish updated site
+        if: steps.commit.outputs.changed == 'true'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - name: Deploy updated site
+        if: steps.commit.outputs.changed == 'true'
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          artifact_name: github-pages
