@@ -1,0 +1,2535 @@
+{
+  "schemaVersion": 1,
+  "generatedFrom": "official account API snapshot (BlackShark TEST)",
+  "generatedAt": "2026-09-24",
+  "count": 106,
+  "brawlers": [
+    {
+      "id": 16000000,
+      "name": "SHELLY",
+      "assetId": 16000000,
+      "gadgets": [
+        {
+          "id": 23000255,
+          "name": "FAST FORWARD"
+        },
+        {
+          "id": 23000288,
+          "name": "CLAY PIGEONS"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000076,
+          "name": "SHELL SHOCK"
+        },
+        {
+          "id": 23000135,
+          "name": "BAND-AID"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000001,
+      "name": "COLT",
+      "assetId": 16000001,
+      "gadgets": [
+        {
+          "id": 23000273,
+          "name": "SPEEDLOADER"
+        },
+        {
+          "id": 23000319,
+          "name": "SILVER BULLET"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000077,
+          "name": "SLICK BOOTS"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000002,
+      "name": "BULL",
+      "assetId": 16000002,
+      "gadgets": [
+        {
+          "id": 23000272,
+          "name": "T-BONE MISSILE"
+        },
+        {
+          "id": 23000310,
+          "name": "STOMPER"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000078,
+          "name": "BERSERKER"
+        },
+        {
+          "id": 23000137,
+          "name": "TOUGH GUY"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000003,
+      "name": "BROCK",
+      "assetId": 16000003,
+      "gadgets": [
+        {
+          "id": 23000245,
+          "name": "ROCKET LACES"
+        },
+        {
+          "id": 23000316,
+          "name": "ROCKET FUEL"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000079,
+          "name": "MORE ROCKETS!"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000004,
+      "name": "RICO",
+      "assetId": 16000004,
+      "gadgets": [
+        {
+          "id": 23000246,
+          "name": "MULTIBALL LAUNCHER"
+        },
+        {
+          "id": 23000409,
+          "name": "MULTIBALL"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000080,
+          "name": "SUPER BOUNCY"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": [
+        {
+          "id": 23000776,
+          "name": "TRICK SHOT KING"
+        }
+      ]
+    },
+    {
+      "id": 16000005,
+      "name": "SPIKE",
+      "assetId": 16000005,
+      "gadgets": [
+        {
+          "id": 23000247,
+          "name": "POPPING PINCUSHION"
+        },
+        {
+          "id": 23000406,
+          "name": "LIFE PLANT"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000081,
+          "name": "FERTILIZE"
+        },
+        {
+          "id": 23000151,
+          "name": "CURVEBALL"
+        }
+      ],
+      "gears": [
+        {
+          "id": 62000001,
+          "name": "HEALTH"
+        },
+        {
+          "id": 62000004,
+          "name": "SHIELD"
+        }
+      ],
+      "hyperCharges": [
+        {
+          "id": 23000615,
+          "name": "BLOOMING SEASON"
+        }
+      ]
+    },
+    {
+      "id": 16000006,
+      "name": "BARLEY",
+      "assetId": 16000006,
+      "gadgets": [
+        {
+          "id": 23000250,
+          "name": "STICKY SYRUP MIXER"
+        },
+        {
+          "id": 23000293,
+          "name": "HERBAL TONIC"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000158,
+          "name": "EXTRA NOXIOUS"
+        }
+      ],
+      "gears": [
+        {
+          "id": 62000001,
+          "name": "HEALTH"
+        }
+      ],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000007,
+      "name": "JESSIE",
+      "assetId": 16000007,
+      "gadgets": [
+        {
+          "id": 23000251,
+          "name": "SPARK PLUG"
+        },
+        {
+          "id": 23000295,
+          "name": "RECOIL SPRING"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000083,
+          "name": "ENERGIZE"
+        },
+        {
+          "id": 23000149,
+          "name": "SHOCKY"
+        }
+      ],
+      "gears": [
+        {
+          "id": 62000001,
+          "name": "HEALTH"
+        },
+        {
+          "id": 62000014,
+          "name": "PET POWER"
+        }
+      ],
+      "hyperCharges": [
+        {
+          "id": 23000630,
+          "name": "SCRAPPY 2.0"
+        }
+      ]
+    },
+    {
+      "id": 16000008,
+      "name": "NITA",
+      "assetId": 16000008,
+      "gadgets": [
+        {
+          "id": 23000249,
+          "name": "BEAR PAWS"
+        },
+        {
+          "id": 23000314,
+          "name": "FAUX FUR"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000084,
+          "name": "BEAR WITH ME"
+        },
+        {
+          "id": 23000136,
+          "name": "HYPER BEAR"
+        }
+      ],
+      "gears": [
+        {
+          "id": 62000001,
+          "name": "HEALTH"
+        }
+      ],
+      "hyperCharges": [
+        {
+          "id": 23000686,
+          "name": "HYPERBEARING"
+        }
+      ]
+    },
+    {
+      "id": 16000009,
+      "name": "DYNAMIKE",
+      "assetId": 16000009,
+      "gadgets": [
+        {
+          "id": 23000258,
+          "name": "FIDGET SPINNER"
+        },
+        {
+          "id": 23000294,
+          "name": "SATCHEL CHARGE"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000085,
+          "name": "DYNA-JUMP"
+        },
+        {
+          "id": 23000155,
+          "name": "DEMOLITION"
+        }
+      ],
+      "gears": [
+        {
+          "id": 62000002,
+          "name": "DAMAGE"
+        },
+        {
+          "id": 62000017,
+          "name": "GADGET COOLDOWN"
+        },
+        {
+          "id": 62000001,
+          "name": "HEALTH"
+        },
+        {
+          "id": 62000004,
+          "name": "SHIELD"
+        }
+      ],
+      "hyperCharges": [
+        {
+          "id": 23000652,
+          "name": "BOOMER"
+        }
+      ]
+    },
+    {
+      "id": 16000010,
+      "name": "EL PRIMO",
+      "assetId": 16000010,
+      "gadgets": [
+        {
+          "id": 23000264,
+          "name": "SUPLEX SUPPLEMENT"
+        },
+        {
+          "id": 23000292,
+          "name": "ASTEROID BELT"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000086,
+          "name": "EL FUEGO"
+        },
+        {
+          "id": 23000140,
+          "name": "METEOR RUSH"
+        }
+      ],
+      "gears": [
+        {
+          "id": 62000002,
+          "name": "DAMAGE"
+        }
+      ],
+      "hyperCharges": [
+        {
+          "id": 23000679,
+          "name": "GRAVITY LEAP"
+        }
+      ]
+    },
+    {
+      "id": 16000011,
+      "name": "MORTIS",
+      "assetId": 16000011,
+      "gadgets": [
+        {
+          "id": 23000265,
+          "name": "COMBO SPINNER"
+        },
+        {
+          "id": 23000290,
+          "name": "CREATURE OF THE NIGHT"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000087,
+          "name": "CREEPY HARVEST"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000012,
+      "name": "CROW",
+      "assetId": 16000012,
+      "gadgets": [
+        {
+          "id": 23000243,
+          "name": "INSTAPOISON"
+        },
+        {
+          "id": 23000286,
+          "name": "SLOWING TOXIN"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000088,
+          "name": "EXTRA TOXIC"
+        },
+        {
+          "id": 23000143,
+          "name": "CARRION CROW"
+        }
+      ],
+      "gears": [
+        {
+          "id": 62000002,
+          "name": "DAMAGE"
+        },
+        {
+          "id": 62000001,
+          "name": "HEALTH"
+        },
+        {
+          "id": 62000004,
+          "name": "SHIELD"
+        }
+      ],
+      "hyperCharges": [
+        {
+          "id": 23000650,
+          "name": "UTILITY KNIVES"
+        }
+      ]
+    },
+    {
+      "id": 16000013,
+      "name": "POCO",
+      "assetId": 16000013,
+      "gadgets": [
+        {
+          "id": 23000267,
+          "name": "TUNING FORK"
+        },
+        {
+          "id": 23000350,
+          "name": "PROTECTIVE TUNES"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000089,
+          "name": "DA CAPO!"
+        },
+        {
+          "id": 23000144,
+          "name": "SCREECHING SOLO"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000014,
+      "name": "BO",
+      "assetId": 16000014,
+      "gadgets": [
+        {
+          "id": 23000263,
+          "name": "SUPER TOTEM"
+        },
+        {
+          "id": 23000289,
+          "name": "TRIPWIRE"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000090,
+          "name": "CIRCLING EAGLE"
+        },
+        {
+          "id": 23000148,
+          "name": "SNARE A BEAR"
+        }
+      ],
+      "gears": [
+        {
+          "id": 62000002,
+          "name": "DAMAGE"
+        }
+      ],
+      "hyperCharges": [
+        {
+          "id": 23000896,
+          "name": "CATCH A BEAR"
+        }
+      ]
+    },
+    {
+      "id": 16000015,
+      "name": "PIPER",
+      "assetId": 16000015,
+      "gadgets": [
+        {
+          "id": 23000268,
+          "name": "AUTO AIMER"
+        },
+        {
+          "id": 23000291,
+          "name": "HOMEMADE RECIPE"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000091,
+          "name": "AMBUSH"
+        },
+        {
+          "id": 23000152,
+          "name": "SNAPPY SNIPING"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000016,
+      "name": "PAM",
+      "assetId": 16000016,
+      "gadgets": [
+        {
+          "id": 23000257,
+          "name": "PULSE MODULATOR"
+        },
+        {
+          "id": 23000404,
+          "name": "SCRAPSUCKER"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000092,
+          "name": "MAMA'S HUG"
+        },
+        {
+          "id": 23000139,
+          "name": "MAMA'S SQUEEZE"
+        }
+      ],
+      "gears": [
+        {
+          "id": 62000016,
+          "name": "SUPER TURRET"
+        }
+      ],
+      "hyperCharges": [
+        {
+          "id": 23000898,
+          "name": "MAMA'S LOVE"
+        }
+      ]
+    },
+    {
+      "id": 16000017,
+      "name": "TARA",
+      "assetId": 16000017,
+      "gadgets": [
+        {
+          "id": 23000266,
+          "name": "PSYCHIC ENHANCER"
+        },
+        {
+          "id": 23000356,
+          "name": "SUPPORT FROM BEYOND"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000093,
+          "name": "BLACK PORTAL"
+        },
+        {
+          "id": 23000160,
+          "name": "HEALING SHADE"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": [
+        {
+          "id": 23000824,
+          "name": "SUPERMASSIVE"
+        }
+      ]
+    },
+    {
+      "id": 16000018,
+      "name": "DARRYL",
+      "assetId": 16000018,
+      "gadgets": [
+        {
+          "id": 23000260,
+          "name": "RECOILING ROTATOR"
+        },
+        {
+          "id": 23000313,
+          "name": "TAR BARREL"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000094,
+          "name": "STEEL HOOPS"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000019,
+      "name": "PENNY",
+      "assetId": 16000019,
+      "gadgets": [
+        {
+          "id": 23000248,
+          "name": "SALTY BARREL"
+        },
+        {
+          "id": 23000287,
+          "name": "TRUSTY SPYGLASS"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000099,
+          "name": "HEAVY COFFERS"
+        },
+        {
+          "id": 23000142,
+          "name": "MASTER BLASTER"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": [
+        {
+          "id": 23000861,
+          "name": "NEW LOBBER"
+        }
+      ]
+    },
+    {
+      "id": 16000020,
+      "name": "FRANK",
+      "assetId": 16000020,
+      "gadgets": [
+        {
+          "id": 23000261,
+          "name": "ACTIVE NOISE CANCELING"
+        },
+        {
+          "id": 23000351,
+          "name": "IRRESISTIBLE ATTRACTION"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000104,
+          "name": "POWER GRAB"
+        },
+        {
+          "id": 23000153,
+          "name": "SPONGE"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": [
+        {
+          "id": 23000758,
+          "name": "SEISMIC SMASH"
+        }
+      ]
+    },
+    {
+      "id": 16000021,
+      "name": "GENE",
+      "assetId": 16000021,
+      "gadgets": [
+        {
+          "id": 23000252,
+          "name": "LAMP BLOWOUT"
+        },
+        {
+          "id": 23000352,
+          "name": "VENGEFUL SPIRITS"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000109,
+          "name": "MAGIC PUFFS"
+        },
+        {
+          "id": 23000159,
+          "name": "SPIRIT SLAP"
+        }
+      ],
+      "gears": [
+        {
+          "id": 62000008,
+          "name": "TALK TO THE HAND"
+        }
+      ],
+      "hyperCharges": [
+        {
+          "id": 23000690,
+          "name": "HYPER HANDS"
+        }
+      ]
+    },
+    {
+      "id": 16000022,
+      "name": "TICK",
+      "assetId": 16000022,
+      "gadgets": [
+        {
+          "id": 23000253,
+          "name": "MINE MANIA"
+        },
+        {
+          "id": 23000355,
+          "name": "LAST HURRAH"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000114,
+          "name": "WELL OILED"
+        },
+        {
+          "id": 23000161,
+          "name": "AUTOMA-TICK RELOAD"
+        }
+      ],
+      "gears": [
+        {
+          "id": 62000000,
+          "name": "SPEED"
+        },
+        {
+          "id": 62000007,
+          "name": "THICC HEAD"
+        },
+        {
+          "id": 62000004,
+          "name": "SHIELD"
+        }
+      ],
+      "hyperCharges": [
+        {
+          "id": 23000687,
+          "name": "HEADSTRONG"
+        }
+      ]
+    },
+    {
+      "id": 16000023,
+      "name": "LEON",
+      "assetId": 16000023,
+      "gadgets": [
+        {
+          "id": 23000276,
+          "name": "CLONE PROJECTOR"
+        },
+        {
+          "id": 23000408,
+          "name": "LOLLIPOP DROP"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000141,
+          "name": "INVISIHEAL"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000024,
+      "name": "ROSA",
+      "assetId": 16000024,
+      "gadgets": [
+        {
+          "id": 23000242,
+          "name": "GROW LIGHT"
+        },
+        {
+          "id": 23000348,
+          "name": "UNFRIENDLY BUSHES"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000124,
+          "name": "PLANT LIFE"
+        },
+        {
+          "id": 23000147,
+          "name": "THORNY GLOVES"
+        }
+      ],
+      "gears": [
+        {
+          "id": 62000002,
+          "name": "DAMAGE"
+        }
+      ],
+      "hyperCharges": [
+        {
+          "id": 23000628,
+          "name": "GRASPING ROOTS"
+        }
+      ]
+    },
+    {
+      "id": 16000025,
+      "name": "CARL",
+      "assetId": 16000025,
+      "gadgets": [
+        {
+          "id": 23000262,
+          "name": "HEAT EJECTOR"
+        },
+        {
+          "id": 23000317,
+          "name": "FLYING HOOK"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000129,
+          "name": "POWER THROW"
+        },
+        {
+          "id": 23000145,
+          "name": "PROTECTIVE PIROUETTE"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": [
+        {
+          "id": 23000910,
+          "name": "FLAMESPIN"
+        }
+      ]
+    },
+    {
+      "id": 16000026,
+      "name": "BIBI",
+      "assetId": 16000026,
+      "gadgets": [
+        {
+          "id": 23000275,
+          "name": "VITAMIN BOOSTER"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000134,
+          "name": "HOME RUN"
+        },
+        {
+          "id": 23000146,
+          "name": "BATTING STANCE"
+        }
+      ],
+      "gears": [
+        {
+          "id": 62000000,
+          "name": "SPEED"
+        }
+      ],
+      "hyperCharges": [
+        {
+          "id": 23000683,
+          "name": "OUT OF BOUNDS"
+        }
+      ]
+    },
+    {
+      "id": 16000027,
+      "name": "8-BIT",
+      "assetId": 16000027,
+      "gadgets": [
+        {
+          "id": 23000259,
+          "name": "CHEAT CARTRIDGE"
+        },
+        {
+          "id": 23000318,
+          "name": "EXTRA CREDITS"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000168,
+          "name": "BOOSTED BOOSTER"
+        },
+        {
+          "id": 23000181,
+          "name": "PLUGGED IN"
+        }
+      ],
+      "gears": [
+        {
+          "id": 62000002,
+          "name": "DAMAGE"
+        }
+      ],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000028,
+      "name": "SANDY",
+      "assetId": 16000028,
+      "gadgets": [
+        {
+          "id": 23000270,
+          "name": "SLEEP STIMULATOR"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000186,
+          "name": "RUDE SANDS"
+        },
+        {
+          "id": 23000187,
+          "name": "HEALING WINDS"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000029,
+      "name": "BEA",
+      "assetId": 16000029,
+      "gadgets": [
+        {
+          "id": 23000271,
+          "name": "HONEY MOLASSES"
+        },
+        {
+          "id": 23000312,
+          "name": "RATTLED HIVE"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000192,
+          "name": "INSTA BEALOAD"
+        },
+        {
+          "id": 23000193,
+          "name": "HONEYCOMB"
+        }
+      ],
+      "gears": [
+        {
+          "id": 62000002,
+          "name": "DAMAGE"
+        }
+      ],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000030,
+      "name": "EMZ",
+      "assetId": 16000030,
+      "gadgets": [
+        {
+          "id": 23000274,
+          "name": "FRIENDZONER"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000199,
+          "name": "HYPE"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": [
+        {
+          "id": 23000778,
+          "name": "OVERHYPED HAZE"
+        }
+      ]
+    },
+    {
+      "id": 16000031,
+      "name": "MR. P",
+      "assetId": 16000031,
+      "gadgets": [
+        {
+          "id": 23000269,
+          "name": "SERVICE BELL"
+        },
+        {
+          "id": 23000349,
+          "name": "PORTER REINFORCEMENTS"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000205,
+          "name": "REVOLVING DOOR"
+        }
+      ],
+      "gears": [
+        {
+          "id": 62000014,
+          "name": "PET POWER"
+        }
+      ],
+      "hyperCharges": [
+        {
+          "id": 23000899,
+          "name": "SUPER PORTERS! ASSEMBLE!"
+        }
+      ]
+    },
+    {
+      "id": 16000032,
+      "name": "MAX",
+      "assetId": 16000032,
+      "gadgets": [
+        {
+          "id": 23000254,
+          "name": "PHASE SHIFTER"
+        },
+        {
+          "id": 23000311,
+          "name": "SNEAKY SNEAKERS"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000210,
+          "name": "SUPER CHARGED"
+        },
+        {
+          "id": 23000211,
+          "name": "RUN N GUN"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000034,
+      "name": "JACKY",
+      "assetId": 16000034,
+      "gadgets": [
+        {
+          "id": 23000256,
+          "name": "PNEUMATIC BOOSTER"
+        },
+        {
+          "id": 23000486,
+          "name": "REBUILD"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000222,
+          "name": "COUNTER CRUSH"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000035,
+      "name": "GALE",
+      "assetId": 16000035,
+      "gadgets": [
+        {
+          "id": 23000277,
+          "name": "SPRING EJECTOR"
+        },
+        {
+          "id": 23000407,
+          "name": "TWISTER"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000228,
+          "name": "BLUSTERY BLOW"
+        },
+        {
+          "id": 23000229,
+          "name": "FREEZING SNOW"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": [
+        {
+          "id": 23000756,
+          "name": "BLIZZARD"
+        }
+      ]
+    },
+    {
+      "id": 16000036,
+      "name": "NANI",
+      "assetId": 16000036,
+      "gadgets": [
+        {
+          "id": 23000278,
+          "name": "WARPIN' TIME"
+        },
+        {
+          "id": 23000353,
+          "name": "RETURN TO SENDER"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000234,
+          "name": "AUTOFOCUS"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000037,
+      "name": "SPROUT",
+      "assetId": 16000037,
+      "gadgets": [
+        {
+          "id": 23000244,
+          "name": "GARDEN MULCHER"
+        },
+        {
+          "id": 23000315,
+          "name": "TRANSPLANT"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000240,
+          "name": "OVERGROWTH"
+        },
+        {
+          "id": 23000241,
+          "name": "PHOTOSYNTHESIS"
+        }
+      ],
+      "gears": [
+        {
+          "id": 62000002,
+          "name": "DAMAGE"
+        }
+      ],
+      "hyperCharges": [
+        {
+          "id": 23000681,
+          "name": "THORNS"
+        }
+      ]
+    },
+    {
+      "id": 16000038,
+      "name": "SURGE",
+      "assetId": 16000038,
+      "gadgets": [
+        {
+          "id": 23000285,
+          "name": "POWER SURGE"
+        },
+        {
+          "id": 23000485,
+          "name": "POWER SHIELD"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000283,
+          "name": "TO THE MAX!"
+        },
+        {
+          "id": 23000284,
+          "name": "SERVE ICE COLD"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": [
+        {
+          "id": 23000826,
+          "name": "STAGE 5"
+        }
+      ]
+    },
+    {
+      "id": 16000039,
+      "name": "COLETTE",
+      "assetId": 16000039,
+      "gadgets": [
+        {
+          "id": 23000302,
+          "name": "NA-AH!"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000300,
+          "name": "PUSH IT"
+        },
+        {
+          "id": 23000301,
+          "name": "MASS TAX"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000040,
+      "name": "AMBER",
+      "assetId": 16000040,
+      "gadgets": [
+        {
+          "id": 23000309,
+          "name": "FIRE STARTERS"
+        },
+        {
+          "id": 23000488,
+          "name": "DANCING FLAMES"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000307,
+          "name": "WILD FLAMES"
+        },
+        {
+          "id": 23000308,
+          "name": "SCORCHIN' SIPHON"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000041,
+      "name": "LOU",
+      "assetId": 16000041,
+      "gadgets": [
+        {
+          "id": 23000326,
+          "name": "ICE BLOCK"
+        },
+        {
+          "id": 23000400,
+          "name": "CRYO SYRUP"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000325,
+          "name": "HYPOTHERMIA"
+        }
+      ],
+      "gears": [
+        {
+          "id": 62000006,
+          "name": "SUPER CHARGE"
+        }
+      ],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000042,
+      "name": "BYRON",
+      "assetId": 16000042,
+      "gadgets": [
+        {
+          "id": 23000333,
+          "name": "SHOT IN THE ARM"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000331,
+          "name": "MALAISE"
+        },
+        {
+          "id": 23000332,
+          "name": "INJECTION"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000043,
+      "name": "EDGAR",
+      "assetId": 16000043,
+      "gadgets": [
+        {
+          "id": 23000340,
+          "name": "LET'S FLY"
+        },
+        {
+          "id": 23000403,
+          "name": "HARDCORE"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000338,
+          "name": "HARD LANDING"
+        },
+        {
+          "id": 23000339,
+          "name": "FISTICUFFS"
+        }
+      ],
+      "gears": [
+        {
+          "id": 62000017,
+          "name": "GADGET COOLDOWN"
+        },
+        {
+          "id": 62000001,
+          "name": "HEALTH"
+        }
+      ],
+      "hyperCharges": [
+        {
+          "id": 23000654,
+          "name": "OUTBURST"
+        }
+      ]
+    },
+    {
+      "id": 16000044,
+      "name": "RUFFS",
+      "assetId": 16000044,
+      "gadgets": [
+        {
+          "id": 23000347,
+          "name": "TAKE COVER"
+        },
+        {
+          "id": 23000402,
+          "name": "AIR SUPPORT"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000345,
+          "name": "AIR SUPERIORITY"
+        },
+        {
+          "id": 23000346,
+          "name": "FIELD PROMOTION"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000045,
+      "name": "STU",
+      "assetId": 16000045,
+      "gadgets": [
+        {
+          "id": 23000364,
+          "name": "SPEED ZONE"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000362,
+          "name": "ZERO DRAG"
+        },
+        {
+          "id": 23000363,
+          "name": "GASO-HEAL"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": [
+        {
+          "id": 23000858,
+          "name": "INFINITRO"
+        }
+      ]
+    },
+    {
+      "id": 16000046,
+      "name": "BELLE",
+      "assetId": 16000046,
+      "gadgets": [
+        {
+          "id": 23000371,
+          "name": "NEST EGG"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000370,
+          "name": "GROUNDED"
+        }
+      ],
+      "gears": [
+        {
+          "id": 62000005,
+          "name": "RELOAD SPEED"
+        }
+      ],
+      "hyperCharges": [
+        {
+          "id": 23000682,
+          "name": "MAGNETIC"
+        }
+      ]
+    },
+    {
+      "id": 16000047,
+      "name": "SQUEAK",
+      "assetId": 16000047,
+      "gadgets": [
+        {
+          "id": 23000378,
+          "name": "WINDUP"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000376,
+          "name": "CHAIN REACTION"
+        },
+        {
+          "id": 23000377,
+          "name": "SUPER STICKY"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000048,
+      "name": "GROM",
+      "assetId": 16000048,
+      "gadgets": [
+        {
+          "id": 23000385,
+          "name": "WATCHTOWER"
+        },
+        {
+          "id": 23000460,
+          "name": "RADIO CHECK"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000383,
+          "name": "FOOT PATROL"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": [
+        {
+          "id": 23000920,
+          "name": "GROM BOMB GOES BOOM!"
+        }
+      ]
+    },
+    {
+      "id": 16000049,
+      "name": "BUZZ",
+      "assetId": 16000049,
+      "gadgets": [
+        {
+          "id": 23000392,
+          "name": "RESERVE BUOY"
+        }
+      ],
+      "starPowers": [],
+      "gears": [],
+      "hyperCharges": [
+        {
+          "id": 23000680,
+          "name": "BUZZWATCH"
+        }
+      ]
+    },
+    {
+      "id": 16000050,
+      "name": "GRIFF",
+      "assetId": 16000050,
+      "gadgets": [
+        {
+          "id": 23000399,
+          "name": "PIGGY BANK"
+        },
+        {
+          "id": 23000487,
+          "name": "COIN SHOWER"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000397,
+          "name": "KEEP THE CHANGE"
+        },
+        {
+          "id": 23000398,
+          "name": "BUSINESS RESILIENCE"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": [
+        {
+          "id": 23000971,
+          "name": "TAX REBATE"
+        }
+      ]
+    },
+    {
+      "id": 16000051,
+      "name": "ASH",
+      "assetId": 16000051,
+      "gadgets": [
+        {
+          "id": 23000465,
+          "name": "ROTTEN BANANA"
+        }
+      ],
+      "starPowers": [],
+      "gears": [
+        {
+          "id": 62000000,
+          "name": "SPEED"
+        }
+      ],
+      "hyperCharges": [
+        {
+          "id": 23000890,
+          "name": "RAT KING"
+        }
+      ]
+    },
+    {
+      "id": 16000052,
+      "name": "MEG",
+      "assetId": 16000052,
+      "gadgets": [
+        {
+          "id": 23000423,
+          "name": "JOLTING VOLTS"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000422,
+          "name": "HEAVY METAL"
+        }
+      ],
+      "gears": [
+        {
+          "id": 62000001,
+          "name": "HEALTH"
+        }
+      ],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000053,
+      "name": "LOLA",
+      "assetId": 16000053,
+      "gadgets": [
+        {
+          "id": 23000456,
+          "name": "STUNT DOUBLE"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000431,
+          "name": "IMPROVISE"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": [
+        {
+          "id": 23000909,
+          "name": "INFLATED EGO"
+        }
+      ]
+    },
+    {
+      "id": 16000054,
+      "name": "FANG",
+      "assetId": 16000054,
+      "gadgets": [
+        {
+          "id": 23000440,
+          "name": "CORN-FU"
+        },
+        {
+          "id": 23000464,
+          "name": "ROUNDHOUSE KICK"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000438,
+          "name": "FRESH KICKS"
+        },
+        {
+          "id": 23000439,
+          "name": "DIVINE SOLES"
+        }
+      ],
+      "gears": [
+        {
+          "id": 62000000,
+          "name": "SPEED"
+        },
+        {
+          "id": 62000004,
+          "name": "SHIELD"
+        }
+      ],
+      "hyperCharges": [
+        {
+          "id": 23000653,
+          "name": "DRAGON KICK"
+        }
+      ]
+    },
+    {
+      "id": 16000056,
+      "name": "EVE",
+      "assetId": 16000056,
+      "gadgets": [
+        {
+          "id": 23000454,
+          "name": "GOTTA GO!"
+        },
+        {
+          "id": 23000455,
+          "name": "MOTHERLY LOVE"
+        }
+      ],
+      "starPowers": [],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000057,
+      "name": "JANET",
+      "assetId": 16000057,
+      "gadgets": [],
+      "starPowers": [
+        {
+          "id": 23000470,
+          "name": "STAGE VIEW"
+        },
+        {
+          "id": 23000471,
+          "name": "VOCAL WARM UP"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000058,
+      "name": "BONNIE",
+      "assetId": 16000058,
+      "gadgets": [
+        {
+          "id": 23000480,
+          "name": "SUGAR RUSH"
+        },
+        {
+          "id": 23000481,
+          "name": "CRASH TEST"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000479,
+          "name": "WISDOM TOOTH"
+        }
+      ],
+      "gears": [
+        {
+          "id": 62000006,
+          "name": "SUPER CHARGE"
+        }
+      ],
+      "hyperCharges": [
+        {
+          "id": 23001003,
+          "name": "DAREDEVIL"
+        }
+      ]
+    },
+    {
+      "id": 16000059,
+      "name": "OTIS",
+      "assetId": 16000059,
+      "gadgets": [],
+      "starPowers": [],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000060,
+      "name": "SAM",
+      "assetId": 16000060,
+      "gadgets": [
+        {
+          "id": 23000505,
+          "name": "MAGNETIC FIELD"
+        }
+      ],
+      "starPowers": [],
+      "gears": [
+        {
+          "id": 62000004,
+          "name": "SHIELD"
+        }
+      ],
+      "hyperCharges": [
+        {
+          "id": 23000923,
+          "name": "HYPER FIST"
+        }
+      ]
+    },
+    {
+      "id": 16000061,
+      "name": "GUS",
+      "assetId": 16000061,
+      "gadgets": [
+        {
+          "id": 23000513,
+          "name": "KOOKY POPPER"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000511,
+          "name": "HEALTH BONANZA"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000062,
+      "name": "BUSTER",
+      "assetId": 16000062,
+      "gadgets": [],
+      "starPowers": [],
+      "gears": [],
+      "hyperCharges": [
+        {
+          "id": 23000921,
+          "name": "PLOT ARMOR"
+        }
+      ]
+    },
+    {
+      "id": 16000063,
+      "name": "CHESTER",
+      "assetId": 16000063,
+      "gadgets": [],
+      "starPowers": [],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000064,
+      "name": "GRAY",
+      "assetId": 16000064,
+      "gadgets": [
+        {
+          "id": 23000538,
+          "name": "GRAND PIANO"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000535,
+          "name": "FAKE INJURY"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000065,
+      "name": "MANDY",
+      "assetId": 16000065,
+      "gadgets": [
+        {
+          "id": 23000545,
+          "name": "CARAMELIZE"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000543,
+          "name": "IN MY SIGHTS"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": [
+        {
+          "id": 23000894,
+          "name": "SUGAR FOR ALL!"
+        }
+      ]
+    },
+    {
+      "id": 16000066,
+      "name": "R-T",
+      "assetId": 16000066,
+      "gadgets": [],
+      "starPowers": [
+        {
+          "id": 23000554,
+          "name": "RECORDING"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000067,
+      "name": "WILLOW",
+      "assetId": 16000067,
+      "gadgets": [],
+      "starPowers": [
+        {
+          "id": 23000561,
+          "name": "LOVE IS BLIND"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000068,
+      "name": "MAISIE",
+      "assetId": 16000068,
+      "gadgets": [
+        {
+          "id": 23000571,
+          "name": "DISENGAGE!"
+        },
+        {
+          "id": 23000572,
+          "name": "FINISH THEM!"
+        }
+      ],
+      "starPowers": [],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000069,
+      "name": "HANK",
+      "assetId": 16000069,
+      "gadgets": [
+        {
+          "id": 23000580,
+          "name": "BARRICADE"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000577,
+          "name": "IT'S GONNA BLOW"
+        },
+        {
+          "id": 23000578,
+          "name": "TAKE COVER!"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000070,
+      "name": "CORDELIUS",
+      "assetId": 16000070,
+      "gadgets": [
+        {
+          "id": 23000587,
+          "name": "REPLANTING"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000586,
+          "name": "MUSHROOM KINGDOM"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000071,
+      "name": "DOUG",
+      "assetId": 16000071,
+      "gadgets": [
+        {
+          "id": 23000596,
+          "name": "EXTRA MUSTARD"
+        }
+      ],
+      "starPowers": [],
+      "gears": [
+        {
+          "id": 62000000,
+          "name": "SPEED"
+        }
+      ],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000072,
+      "name": "PEARL",
+      "assetId": 16000072,
+      "gadgets": [
+        {
+          "id": 23000603,
+          "name": "OVERCOOKED"
+        },
+        {
+          "id": 23000604,
+          "name": "MADE WITH LOVE"
+        }
+      ],
+      "starPowers": [],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000073,
+      "name": "CHUCK",
+      "assetId": 16000073,
+      "gadgets": [
+        {
+          "id": 23000611,
+          "name": "REROUTING"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000610,
+          "name": "TICKETS PLEASE!"
+        }
+      ],
+      "gears": [
+        {
+          "id": 62000004,
+          "name": "SHIELD"
+        }
+      ],
+      "hyperCharges": [
+        {
+          "id": 23001005,
+          "name": "FULL STEAM AHEAD!"
+        }
+      ]
+    },
+    {
+      "id": 16000074,
+      "name": "CHARLIE",
+      "assetId": 16000074,
+      "gadgets": [
+        {
+          "id": 23000625,
+          "name": "SPIDERS"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000624,
+          "name": "SLIMY"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": [
+        {
+          "id": 23000627,
+          "name": "PESTILENCE"
+        }
+      ]
+    },
+    {
+      "id": 16000075,
+      "name": "MICO",
+      "assetId": 16000075,
+      "gadgets": [
+        {
+          "id": 23000640,
+          "name": "PRESTO"
+        }
+      ],
+      "starPowers": [],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000076,
+      "name": "KIT",
+      "assetId": 16000076,
+      "gadgets": [
+        {
+          "id": 23000648,
+          "name": "CARDBOARD BOX"
+        }
+      ],
+      "starPowers": [],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000077,
+      "name": "LARRY & LAWRIE",
+      "assetId": 16000077,
+      "gadgets": [
+        {
+          "id": 23000661,
+          "name": "ORDER: SWAP"
+        },
+        {
+          "id": 23000662,
+          "name": "ORDER: FALL BACK"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000659,
+          "name": "PROTOCOL: PROTECT"
+        },
+        {
+          "id": 23000660,
+          "name": "PROTOCOL: ASSIST"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000078,
+      "name": "MELODIE",
+      "assetId": 16000078,
+      "gadgets": [
+        {
+          "id": 23000669,
+          "name": "PERFECT PITCH"
+        },
+        {
+          "id": 23000670,
+          "name": "INTERLUDE"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000667,
+          "name": "FAST BEATS"
+        },
+        {
+          "id": 23000668,
+          "name": "EXTENDED MIX"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000079,
+      "name": "ANGELO",
+      "assetId": 16000079,
+      "gadgets": [
+        {
+          "id": 23000678,
+          "name": "MASTER FLETCHER"
+        }
+      ],
+      "starPowers": [],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000080,
+      "name": "DRACO",
+      "assetId": 16000080,
+      "gadgets": [
+        {
+          "id": 23000736,
+          "name": "UPPER CUT"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000735,
+          "name": "SHREDDING"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000081,
+      "name": "LILY",
+      "assetId": 16000081,
+      "gadgets": [
+        {
+          "id": 23000754,
+          "name": "VANISH"
+        },
+        {
+          "id": 23000755,
+          "name": "REPOT"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000753,
+          "name": "VIGILANCE"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000082,
+      "name": "BERRY",
+      "assetId": 16000082,
+      "gadgets": [
+        {
+          "id": 23000766,
+          "name": "FRIENDSHIP IS GREAT"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000765,
+          "name": "MAKING A MESS"
+        }
+      ],
+      "gears": [
+        {
+          "id": 62000002,
+          "name": "DAMAGE"
+        }
+      ],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000083,
+      "name": "CLANCY",
+      "assetId": 16000083,
+      "gadgets": [
+        {
+          "id": 23000774,
+          "name": "SNAPPY SHOOTING"
+        }
+      ],
+      "starPowers": [],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000084,
+      "name": "MOE",
+      "assetId": 16000084,
+      "gadgets": [],
+      "starPowers": [],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000085,
+      "name": "KENJI",
+      "assetId": 16000085,
+      "gadgets": [
+        {
+          "id": 23000817,
+          "name": "DASHI DASH"
+        },
+        {
+          "id": 23000818,
+          "name": "HOSOMAKI HEALING"
+        }
+      ],
+      "starPowers": [],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000086,
+      "name": "SHADE",
+      "assetId": 16000086,
+      "gadgets": [],
+      "starPowers": [
+        {
+          "id": 23000832,
+          "name": "SPOOKY SPEEDSTER"
+        },
+        {
+          "id": 23000833,
+          "name": "HARDENED HOODIE"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000087,
+      "name": "JUJU",
+      "assetId": 16000087,
+      "gadgets": [
+        {
+          "id": 23000851,
+          "name": "ELEMENTALIST"
+        }
+      ],
+      "starPowers": [],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000089,
+      "name": "MEEPLE",
+      "assetId": 16000089,
+      "gadgets": [],
+      "starPowers": [
+        {
+          "id": 23000876,
+          "name": "RULE BENDING"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000090,
+      "name": "OLLIE",
+      "assetId": 16000090,
+      "gadgets": [],
+      "starPowers": [
+        {
+          "id": 23000884,
+          "name": "RENEGADE"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": [
+        {
+          "id": 23001033,
+          "name": "AIN'T NO HALF-SUPERING"
+        }
+      ]
+    },
+    {
+      "id": 16000091,
+      "name": "LUMI",
+      "assetId": 16000091,
+      "gadgets": [],
+      "starPowers": [
+        {
+          "id": 23000906,
+          "name": "HALF-TIME"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": [
+        {
+          "id": 23000980,
+          "name": "DRUM SOLO"
+        }
+      ]
+    },
+    {
+      "id": 16000092,
+      "name": "FINX",
+      "assetId": 16000092,
+      "gadgets": [],
+      "starPowers": [
+        {
+          "id": 23000915,
+          "name": "HIEROGLYPH HALT"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000093,
+      "name": "JAE-YONG",
+      "assetId": 16000093,
+      "gadgets": [
+        {
+          "id": 23000931,
+          "name": "WEEKEND WARRIOR"
+        }
+      ],
+      "starPowers": [
+        {
+          "id": 23000929,
+          "name": "THE CROWD GOES MILD"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": [
+        {
+          "id": 23001054,
+          "name": "CROWD-PLEASER"
+        }
+      ]
+    },
+    {
+      "id": 16000094,
+      "name": "KAZE",
+      "assetId": 16000094,
+      "gadgets": [],
+      "starPowers": [
+        {
+          "id": 23000939,
+          "name": "GRATUITY INCLUDED"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000095,
+      "name": "ALLI",
+      "assetId": 16000095,
+      "gadgets": [],
+      "starPowers": [
+        {
+          "id": 23000990,
+          "name": "YOU BETTER RUN, YOU BETTER TAKE COVER"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000096,
+      "name": "TRUNK",
+      "assetId": 16000096,
+      "gadgets": [
+        {
+          "id": 23001001,
+          "name": "WORKER ANTS"
+        }
+      ],
+      "starPowers": [],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000097,
+      "name": "MINA",
+      "assetId": 16000097,
+      "gadgets": [],
+      "starPowers": [
+        {
+          "id": 23001039,
+          "name": "ZUM ZUM ZUM"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000098,
+      "name": "ZIGGY",
+      "assetId": 16000098,
+      "gadgets": [],
+      "starPowers": [
+        {
+          "id": 23001048,
+          "name": "THE GREAT ZIGGINI"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": [
+        {
+          "id": 23001137,
+          "name": "THE GRAND VORTEX"
+        }
+      ]
+    },
+    {
+      "id": 16000099,
+      "name": "PIERCE",
+      "assetId": 16000099,
+      "gadgets": [],
+      "starPowers": [
+        {
+          "id": 23001060,
+          "name": "MISSION: SWIMPOSSIBLE"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": [
+        {
+          "id": 23001220,
+          "name": "SECOND WAVE"
+        }
+      ]
+    },
+    {
+      "id": 16000100,
+      "name": "GIGI",
+      "assetId": 16000100,
+      "gadgets": [],
+      "starPowers": [],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000101,
+      "name": "GLOWY",
+      "assetId": 16000101,
+      "gadgets": [],
+      "starPowers": [],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000102,
+      "name": "SIRIUS",
+      "assetId": 16000102,
+      "gadgets": [],
+      "starPowers": [],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000103,
+      "name": "NAJIA",
+      "assetId": 16000103,
+      "gadgets": [],
+      "starPowers": [
+        {
+          "id": 23001216,
+          "name": "POISONOUS PROTECTOR"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": [
+        {
+          "id": 23001283,
+          "name": "TWIN SNAKES"
+        }
+      ]
+    },
+    {
+      "id": 16000104,
+      "name": "DAMIAN",
+      "assetId": 16000104,
+      "gadgets": [],
+      "starPowers": [],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000105,
+      "name": "STARR NOVA",
+      "assetId": 16000105,
+      "gadgets": [],
+      "starPowers": [
+        {
+          "id": 23001253,
+          "name": "POWER LEVEL: MAXIMUM"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000106,
+      "name": "BOLT",
+      "assetId": 16000106,
+      "gadgets": [],
+      "starPowers": [],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000107,
+      "name": "NORI",
+      "assetId": 16000107,
+      "gadgets": [],
+      "starPowers": [],
+      "gears": [],
+      "hyperCharges": []
+    },
+    {
+      "id": 16000108,
+      "name": "WENDY",
+      "assetId": 16000108,
+      "gadgets": [],
+      "starPowers": [
+        {
+          "id": 23001319,
+          "name": "SOLAR SHIELD"
+        }
+      ],
+      "gears": [],
+      "hyperCharges": []
+    }
+  ]
+}
