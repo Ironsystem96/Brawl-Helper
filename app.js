@@ -12,13 +12,13 @@ function loadProfiles(){try{return JSON.parse(localStorage.getItem('bh_profiles'
 function saveProfiles(){localStorage.setItem('bh_profiles',JSON.stringify(profiles))}
 function img(kind,id){return 'https://cdn.brawlify.com/'+kind+'/'+id+'.png'}
 function portrait(b){return img('brawlers/borders',b.id)}
-function owned(b){return {gadgets:b.gadgets?.length||0,stars:b.starPowers?.length||0,gears:b.gears?.length||0,hc:b.hyperCharges?.length||0}}
-function readiness(b){const o=owned(b);return Math.min(100,Math.round((b.power||1)*5+Math.min(o.gadgets,2)*5+Math.min(o.stars,2)*5+Math.min(o.gears,2)*5+Math.min(o.hc,1)*8))}
-function powerScore(b){return Math.min(100,(b.power||1)*7+(b.trophies||0)/20)}
-function personalScore(b){return Math.round(readiness(b)*.45+powerScore(b)*.35+Math.min(100,(b.highestTrophies||0)/8)*.20)}
+function owned(b){if(!b)return {gadgets:0,stars:0,gears:0,hc:0};return {gadgets:b.gadgets?.length||0,stars:b.starPowers?.length||0,gears:b.gears?.length||0,hc:b.hyperCharges?.length||0}}
+function readiness(b){if(!b)return 0;const o=owned(b);return Math.min(100,Math.round((b.power||1)*5+Math.min(o.gadgets,2)*5+Math.min(o.stars,2)*5+Math.min(o.gears,2)*5+Math.min(o.hc,1)*8))}
+function powerScore(b){if(!b)return 0;return Math.min(100,(b.power||1)*7+(b.trophies||0)/20)}
+function personalScore(b){if(!b)return 0;return Math.round(readiness(b)*.45+powerScore(b)*.35+Math.min(100,(b.highestTrophies||0)/8)*.20)}
 function modeKey(mode){return String(mode||'').trim().toLowerCase().replace(/[^a-z0-9]+([a-z0-9])/g,(_,x)=>x.toUpperCase()).replace(/[^a-z0-9]/g,'')}
-function isOwnedAccount(b){return !!P?.brawlers?.some(x=>x.id===b.id||norm(x.name)===norm(b.name))}
-function accountBrawler(c){if(!c)return null;const a=P?.brawlers?.find(x=>x.id===c.id||norm(x.name)===norm(c.name));return a||{...c,power:0,rank:0,trophies:0,highestTrophies:0,gadgets:[],starPowers:[],gears:[],hyperCharges:[]}}
+function isOwnedAccount(b){if(!b)return false;return !!P?.brawlers?.some(x=>x&&((x.id!=null&&x.id===b.id)||norm(x.name)===norm(b.name)))}
+function accountBrawler(c){if(!c)return null;const a=P?.brawlers?.find(x=>x&&((x.id!=null&&x.id===c.id)||norm(x.name)===norm(c.name)));return a||{...c,power:0,rank:0,trophies:0,highestTrophies:0,gadgets:[],starPowers:[],gears:[],hyperCharges:[]}}
 function allBrawlers(){const by=Object.values(CATALOG_STATE.entries||{});return (by.length?by.map(accountBrawler):[...(P?.brawlers||[])]).filter(Boolean)}
 function metaEntry(b,mode,map){
  if(!b)return null;
@@ -29,6 +29,7 @@ function metaEntry(b,mode,map){
  return mapHit||e.modes?.[mk]||e[mode]?.[map]||e[mode]?.default||e.default||null;
 }
 function metaScope(b,mode,map){
+ if(!b)return 'NON DISPONIBILE';
  const e=META_STATE.entries[b.name];
  if(!e)return 'NON DISPONIBILE';
  const mk=modeKey(mode);
@@ -37,7 +38,7 @@ function metaScope(b,mode,map){
  if(e.default)return 'META GLOBALE';
  return 'NON DISPONIBILE';
 }
-function contextScore(b,mode,map){const m=metaEntry(b,mode,map);const personal=personalScore(b);const meta=m?.score??50;return Math.round(meta*.55+personal*.45)}
+function contextScore(b,mode,map){if(!b)return 0;const m=metaEntry(b,mode,map);const personal=personalScore(b);const meta=m?.score??50;return Math.round(meta*.55+personal*.45)}
 function status(b){const r=readiness(b);if((b.power||0)>=11&&r>=75)return ['PLAY NOW','ok'];if((b.power||0)>=9)return ['UPGRADE TO META',''];return ['LOW POWER','miss']}
 function compIcon(type,item){if(!item)return '';const path={gadget:'gadgets/borderless',star:'star-powers/borderless',gear:'gears/regular',hc:'hypercharges/regular'}[type];return path?'<img class="compIcon" src="'+img(path,item.id)+'" onerror="this.style.display=\'none\'">':''}
 function comp(type,label,item){return '<div class="comp '+(item?'owned':'missing')+'">'+compIcon(type,item)+'<div><span>'+label+'</span><b>'+esc(item?.name||'Not owned')+'</b></div></div>'}
@@ -48,7 +49,7 @@ function recommendationTag(b,mode,map){return META_STATE.loaded&&metaEntry(b,mod
 function norm(s){return String(s||'').toUpperCase().replace(/[’']/g,"'").replace(/[^A-Z0-9]+/g,' ').trim()}
 function buildEntry(b){if(!b)return null;return BUILD_STATE.entries[b.name]||BUILD_STATE.entries[norm(b.name)]||BUILD_STATE.entries[String(b.name||'').toUpperCase()]||null}
 function bestBuildItem(entry,type,index=0){const a=entry?.[type]||[];return a[index]||null}
-function ownedNames(b,type){return (b[type]||[]).map(x=>norm(x.name))}
+function ownedNames(b,type){return b?(b[type]||[]).filter(Boolean).map(x=>norm(x?.name)):[]}
 function itemState(b,type,item){
  if(!item)return 'DATA MISSING';
  const owned=ownedNames(b,type).includes(norm(item.name));
@@ -95,6 +96,7 @@ function metaRankList(mode,map){
 }
 function globalRankList(){return metaRankList('','Random').sort((a,z)=>(z.meta.score-a.meta.score)||((a.meta.rank||999)-(z.meta.rank||999)))}
 function metaRankOf(b,mode,map){
+ if(!b)return null;
  const list=metaRankList(mode,map);
  const i=list.findIndex(x=>x.b.id===b.id||norm(x.b.name)===norm(b.name));
  return i>=0?i+1:null;
@@ -132,7 +134,7 @@ function home(){
 }
 
 function brawlers(){
- let bs=[...P.brawlers];
+ let bs=[...(P.brawlers||[])].filter(Boolean);
  if(query)bs=bs.filter(b=>b.name.toLowerCase().includes(query.toLowerCase()));
  if(filter==='p11')bs=bs.filter(b=>b.power>=11);
  if(filter==='upgrade')bs=bs.filter(b=>b.power<11);
@@ -142,7 +144,7 @@ function brawlers(){
 }
 
 function detail(){
- const b=P.brawlers.find(x=>x.id===selected)||allBrawlers().find(x=>x.id===selected); if(!b)return '';
+ const b=P.brawlers.find(x=>x&&x.id===selected)||allBrawlers().find(x=>x&&x.id===selected); if(!b)return '';
  const accountOwned=isOwnedAccount(b),o=owned(b),g=first(b.gadgets),sp=first(b.starPowers),gear1=b.gears?.[0],gear2=b.gears?.[1],hc=first(b.hyperCharges),m=metaEntry(b,playMode,playMap);
  return '<button class="back" onclick="selected=null;render()">← Torna ai Brawler</button>'+
  '<section class="hero"><div class="row"><img class="portrait" src="'+portrait(b)+'"><div class="grow"><div class="eyebrow">BRAWLER</div><h1>'+esc(b.name)+'</h1><div class="muted">'+(accountOwned?'Power '+b.power+' · Rank '+b.rank:'Non posseduto')+'</div><div class="muted">'+(accountOwned?fmt(b.trophies)+' / '+fmt(b.highestTrophies)+' trofei':'Meta #'+(metaRankOf(b,playMode,playMap)||'—'))+'</div></div></div><div class="chips"><span class="chip">Personal '+personalScore(b)+'</span><span class="chip '+status(b)[1]+'">'+status(b)[0]+'</span></div></section>'+
@@ -168,7 +170,7 @@ function play(){
 }
 
 function upgrade(){
- const list=[...P.brawlers].filter(b=>b.power<11||owned(b).gears<2||owned(b).hc<1).sort((a,b)=>personalScore(b)-personalScore(a)).slice(0,20);
+ const list=[...(P.brawlers||[])].filter(Boolean).filter(b=>b.power<11||owned(b).gears<2||owned(b).hc<1).sort((a,b)=>personalScore(b)-personalScore(a)).slice(0,20);
  return '<section class="section"><div class="sectionTitle"><h2>Upgrade Advisor</h2><span class="small">20 opportunità</span></div><div class="notice">Qui vediamo cosa hai già e cosa manca rispetto alla build community disponibile.</div>'+list.map((b,i)=>'<div class="upgradeRow" onclick="openB('+b.id+')"><span class="num">'+(i+1)+'</span><div class="grow"><b class="upgradeName">'+esc(b.name)+'</b><span class="small upgradeMetaLine">Power '+b.power+' · '+fmt(b.trophies)+' trofei · Personal '+personalScore(b)+'</span>'+miniBuild(b)+'</div><span class="score">'+(b.power<11?'POWER':'BUILD')+'</span></div>').join('')+'</section>'
 }
 
@@ -181,7 +183,7 @@ function meta(){
  '</div>'+
  '<div class="card"><b>Game Database</b><div class="grid"><div class="action"><b>'+fmt(CATALOG_STATE.count)+'</b><span class="small">Brawler nel catalogo</span></div><div class="action"><b>'+esc(DB_STATE.patch||'—')+'</b><span class="small">Patch corrente</span></div><div class="action"><b>'+esc(DB_STATE.version||'—')+'</b><span class="small">DB version</span></div></div><p class="small">Ultimo sync: '+esc(DB_STATE.lastSyncedAt||'—')+'</p></div>'+
  '<div class="card"><b>Changelog ufficiale</b>'+ (releases.length?releases.slice(0,5).map(c=>'<div class="action"><b>'+esc(c.title)+'</b><span class="small">'+esc(c.publishedAt||'')+' · '+esc(c.highlights?.[0]||c.status||'Fonte ufficiale Supercell')+'</span></div>').join(''):'<p class="small">Nessun changelog disponibile.</p>')+'</div>'+
- (names.length?'<div class="card"><b>Meta snapshot</b>'+names.map(n=>{const b=P.brawlers.find(x=>x.name===n);return b?bcard(b,true):''}).join('')+'</div>':'<div class="card"><b>Meta provider</b><p class="small">La struttura è pronta per ricevere snapshot verificabili per patch, modalità e mappa.</p></div>')+
+ (names.length?'<div class="card"><b>Meta snapshot</b>'+names.map(n=>{const b=P.brawlers.find(x=>x&&x.name===n);return b?bcard(b,true):''}).join('')+'</div>':'<div class="card"><b>Meta provider</b><p class="small">La struttura è pronta per ricevere snapshot verificabili per patch, modalità e mappa.</p></div>')+
  '</section>'
 }
 
