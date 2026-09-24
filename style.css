@@ -78,3 +78,20 @@
  .upgradeRow{align-items:flex-start}
  .upgradeRow .num{margin-top:1px}
 }
+
+/* V0.16 Top 10 / contextual meta */
+.rankBadge{width:28px;min-width:28px;height:28px;border-radius:9px;background:var(--surface2);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:950;color:var(--accent)}
+.metaRank{font-size:10px;font-weight:950;color:var(--accent)}
+.recommendedCard{border-color:#d9d2ff;background:linear-gradient(145deg,var(--surface),#f8f6ff)}
+.top10Legend{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0 10px}
+.top10Legend span{font-size:9px;font-weight:900;border-radius:999px;padding:5px 8px;border:1px solid var(--line)}
+.legendOwned{color:var(--green);background:#edf9f4;border-color:#bfead8!important}
+.legendMeta{color:#634fe0;background:#f1efff;border-color:#d8d0ff!important}
+.subhead{font-size:9px;font-weight:950;letter-spacing:1px;color:var(--muted);margin:13px 2px 6px}
+.actionLine{display:flex;flex-wrap:wrap;gap:4px;margin-top:7px}
+.actionPill{display:inline-flex;align-items:center;border-radius:7px;padding:4px 6px;font-size:8.5px;font-weight:950;letter-spacing:.15px}
+.buyAction{color:#9b7100;background:#fff7df;border:1px solid #eed18a}
+.equipAction{color:var(--green);background:#edf9f4;border:1px solid #bfead8}
+.powerAction{color:#b94d58;background:#fff1f3;border:1px solid #f0c7cd}
+.mutedAction{color:var(--muted);background:var(--surface2);border:1px dashed var(--line)}
+.detailChips{margin-top:8px}
