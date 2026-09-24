@@ -18,9 +18,10 @@ function powerScore(b){return Math.min(100,(b.power||1)*7+(b.trophies||0)/20)}
 function personalScore(b){return Math.round(readiness(b)*.45+powerScore(b)*.35+Math.min(100,(b.highestTrophies||0)/8)*.20)}
 function modeKey(mode){return String(mode||'').trim().toLowerCase().replace(/[^a-z0-9]+([a-z0-9])/g,(_,x)=>x.toUpperCase()).replace(/[^a-z0-9]/g,'')}
 function isOwnedAccount(b){return !!P?.brawlers?.some(x=>x.id===b.id||norm(x.name)===norm(b.name))}
-function accountBrawler(c){const a=P?.brawlers?.find(x=>x.id===c.id||norm(x.name)===norm(c.name));return a||{...c,power:0,rank:0,trophies:0,highestTrophies:0,gadgets:[],starPowers:[],gears:[],hyperCharges:[]}}
-function allBrawlers(){const by=Object.values(CATALOG_STATE.entries||{});return by.length?by.map(accountBrawler):[...(P?.brawlers||[])]}
+function accountBrawler(c){if(!c)return null;const a=P?.brawlers?.find(x=>x.id===c.id||norm(x.name)===norm(c.name));return a||{...c,power:0,rank:0,trophies:0,highestTrophies:0,gadgets:[],starPowers:[],gears:[],hyperCharges:[]}}
+function allBrawlers(){const by=Object.values(CATALOG_STATE.entries||{});return (by.length?by.map(accountBrawler):[...(P?.brawlers||[])]).filter(Boolean)}
 function metaEntry(b,mode,map){
+ if(!b)return null;
  const e=META_STATE.entries[b.name];
  if(!e)return null;
  const mk=modeKey(mode);
@@ -45,7 +46,7 @@ function buildLabel(b){const o=owned(b);return [o.gadgets?'Gadget':'Gadget missi
 function why(b,mode,map){const m=metaEntry(b,mode,map);const reasons=[];if(readiness(b)>=75)reasons.push('build già pronta');if(b.power>=11)reasons.push('Power 11');if((b.trophies||0)>=500)reasons.push('buona esperienza sul Brawler');if(m?.reason)reasons.push(m.reason);if(!reasons.length)reasons.push('dati account disponibili');return reasons.join(' · ')}
 function recommendationTag(b,mode,map){return META_STATE.loaded&&metaEntry(b,mode,map)?'META + ACCOUNT':'ACCOUNT ONLY'}
 function norm(s){return String(s||'').toUpperCase().replace(/[’']/g,"'").replace(/[^A-Z0-9]+/g,' ').trim()}
-function buildEntry(b){return BUILD_STATE.entries[b.name]||BUILD_STATE.entries[norm(b.name)]||BUILD_STATE.entries[String(b.name||'').toUpperCase()]||null}
+function buildEntry(b){if(!b)return null;return BUILD_STATE.entries[b.name]||BUILD_STATE.entries[norm(b.name)]||BUILD_STATE.entries[String(b.name||'').toUpperCase()]||null}
 function bestBuildItem(entry,type,index=0){const a=entry?.[type]||[];return a[index]||null}
 function ownedNames(b,type){return (b[type]||[]).map(x=>norm(x.name))}
 function itemState(b,type,item){
@@ -112,6 +113,7 @@ function shell(body){document.getElementById('app').innerHTML='<div class="app">
 function setTab(t){tab=t;selected=null;query='';filter='all';render()}
 
 function bcard(b,compact=false,mode=playMode,map=playMap,rank=null,kind=''){
+ if(!b)return '';
  const o=owned(b),st=status(b),score=contextScore(b,mode,map),m=metaEntry(b,mode,map),metaRank=rank||metaRankOf(b,mode,map);
  const ownedAccount=isOwnedAccount(b);
  const titleRank=metaRank?'<span class="metaRank">#'+metaRank+'</span>':'';
