@@ -10,7 +10,7 @@ const NOFF='https://www.noff.gg/brawl-stars/app/builds/';
 const BT='https://brawltime.ninja/tier-list/brawler/';
 
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
-const clean=s=>String(s||'').replace(/&amp;/g,'&').replace(/&#39;|&apos;/g,"'").replace(/&quot;/g,'"').replace(/&nbsp;/g,' ').replace(/<[^>]+>/g,' ').replace(/\\s+/g,' ').trim();
+const clean=s=>String(s||'').replace(/&amp;/g,'&').replace(/&#39;|&apos;/g,"'").replace(/&quot;/g,'"').replace(/&nbsp;/g,' ').replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim();
 const norm=s=>String(s||'').toUpperCase().replace(/[’']/g,"'").replace(/[^A-Z0-9]+/g,' ').trim();
 
 async function get(url){
@@ -173,7 +173,7 @@ async function main(){
   fs.writeFileSync(CATALOG_PATH,JSON.stringify(catalogOut,null,2)+'\n');
 
   if(noffOk<Math.floor(list.length*.5) || btOk<Math.floor(list.length*.5) || modeOk<3) {
-    throw new Error('Sync quality gate failed: NOFF '+noffOk+'/'+list.length+', BrawlTime '+btOk+'/'+list.length);
+    throw new Error('Sync quality gate failed: NOFF '+noffOk+'/'+list.length+', BrawlTime '+btOk+'/'+list.length+', modes '+modeOk+'/'+modes.length);
   }
   console.log(JSON.stringify({updatedAt:now,brawlers:list.length,noffOk,btOk,modeOk,totalModes:modes.length},null,2));
 }
