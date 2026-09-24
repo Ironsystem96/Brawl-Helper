@@ -7,7 +7,7 @@
     {
       "id": "2026-08",
       "title": "Release Notes August 2026",
-      "publishedAt": "2026-09-01",
+      "publishedAt": "2026-09-17",
       "maintenance": "2026-09-16",
       "url": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-august-2026/",
       "highlights": [
@@ -19,20 +19,116 @@
         "Brawler collection received horizontal cards and search."
       ],
       "balanceChanges": [
-        {"brawler":"Shade","type":"nerf","changes":["Super charge near enemies reduced by 15%","Long Arms cooldown 18s to 20s","Jump Scare fear radius 1000 to 600","Hypercharge Buffie bonus damage 75% to 30%"]},
-        {"brawler":"Gus","type":"nerf","changes":["Knockback Spirit cooldown increased to 18s","Health Bonanza healing increase 100% to 75%"]},
-        {"brawler":"El Primo","type":"nerf","changes":["Asteroid Belt cooldown 16s to 20s","Super gained from projectiles reduced by 50%","Meteor Rush speed duration 4s to 3s"]},
-        {"brawler":"Amber","type":"nerf","changes":["Fire Starters health 1750 to 1300","Wild Flames oil trail 3s to 1s","Hypercharge Buffie burn damage 500 to 240"]},
-        {"brawler":"Jae-Yong","type":"buff","changes":["Main attack heal 650 to 750","The Crowd Goes Mild speed boost 10% to 15%"]},
-        {"brawler":"Bea","type":"buff","changes":["Rattle Hive cooldown 24s to 20s","Super damage 100 to 130"]},
-        {"brawler":"Bo","type":"buff","changes":["Main attack damage 640 to 700"]},
-        {"brawler":"Jessie","type":"buff","changes":["Super turret damage 260 to 300"]},
-        {"brawler":"Chuck","type":"rework","changes":["Super starts fully charged","4 baseline Super charges","Dash damage 1750 to 800","Dash speed 3700 to 3200","Main attack range 20 to 18","Projectile speed 1750 to 2700"]},
-        {"brawler":"Brock","type":"nerf","changes":["Hypercharge Buffie damage 60% to 40%"]},
-        {"brawler":"Lumi","type":"nerf","changes":["Main attack recall damage 900 to 800"]},
-        {"brawler":"Rico","type":"nerf","changes":["Robo Retreat max speed with Buffie 60% to 50%","Multiball Launcher cooldown 19s to 22s","Multiball damage 980 to 900"]},
-        {"brawler":"Ruffs","type":"nerf","changes":["Super charge rate reduced by 20%"]}
-      ]
+        {
+          "brawler": "Shade",
+          "type": "nerf",
+          "changes": [
+            "Super charge near enemies reduced by 15%",
+            "Long Arms cooldown 18s to 20s",
+            "Jump Scare fear radius 1000 to 600",
+            "Hypercharge Buffie bonus damage 75% to 30%"
+          ]
+        },
+        {
+          "brawler": "Gus",
+          "type": "nerf",
+          "changes": [
+            "Knockback Spirit cooldown increased to 18s",
+            "Health Bonanza healing increase 100% to 75%"
+          ]
+        },
+        {
+          "brawler": "El Primo",
+          "type": "nerf",
+          "changes": [
+            "Asteroid Belt cooldown 16s to 20s",
+            "Super gained from projectiles reduced by 50%",
+            "Meteor Rush speed duration 4s to 3s"
+          ]
+        },
+        {
+          "brawler": "Amber",
+          "type": "nerf",
+          "changes": [
+            "Fire Starters health 1750 to 1300",
+            "Wild Flames oil trail 3s to 1s",
+            "Hypercharge Buffie burn damage 500 to 240"
+          ]
+        },
+        {
+          "brawler": "Jae-Yong",
+          "type": "buff",
+          "changes": [
+            "Main attack heal 650 to 750",
+            "The Crowd Goes Mild speed boost 10% to 15%"
+          ]
+        },
+        {
+          "brawler": "Bea",
+          "type": "buff",
+          "changes": [
+            "Rattle Hive cooldown 24s to 20s",
+            "Super damage 100 to 130"
+          ]
+        },
+        {
+          "brawler": "Bo",
+          "type": "buff",
+          "changes": [
+            "Main attack damage 640 to 700"
+          ]
+        },
+        {
+          "brawler": "Jessie",
+          "type": "buff",
+          "changes": [
+            "Super turret damage 260 to 300"
+          ]
+        },
+        {
+          "brawler": "Chuck",
+          "type": "rework",
+          "changes": [
+            "Super starts fully charged",
+            "4 baseline Super charges",
+            "Dash damage 1750 to 800",
+            "Dash speed 3700 to 3200",
+            "Main attack range 20 to 18",
+            "Projectile speed 1750 to 2700"
+          ]
+        },
+        {
+          "brawler": "Brock",
+          "type": "nerf",
+          "changes": [
+            "Hypercharge Buffie damage 60% to 40%"
+          ]
+        },
+        {
+          "brawler": "Lumi",
+          "type": "nerf",
+          "changes": [
+            "Main attack recall damage 900 to 800"
+          ]
+        },
+        {
+          "brawler": "Rico",
+          "type": "nerf",
+          "changes": [
+            "Robo Retreat max speed with Buffie 60% to 50%",
+            "Multiball Launcher cooldown 19s to 22s",
+            "Multiball damage 980 to 900"
+          ]
+        },
+        {
+          "brawler": "Ruffs",
+          "type": "nerf",
+          "changes": [
+            "Super charge rate reduced by 20%"
+          ]
+        }
+      ],
+      "sourceLanguage": "en"
     },
     {
       "id": "2026-06",
@@ -59,5 +155,7 @@
         "Boss Fights and Ranked rotation updates."
       ]
     }
-  ]
+  ],
+  "sourceStatus": "official_release_notes_checked",
+  "archiveUrl": "https://supercell.com/en/games/brawlstars/blog/"
 }
