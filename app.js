@@ -43,7 +43,7 @@ function metaScope(b,mode,map){
 }
 function contextScore(b,mode,map){if(!b)return 0;const m=metaEntry(b,mode,map);const personal=personalScore(b);const meta=m?.score??50;return Math.round(meta*.55+personal*.45)}
 function status(b){const r=readiness(b);if((b.power||0)>=11&&r>=75)return ['PLAY NOW','ok'];if((b.power||0)>=9)return ['UPGRADE TO META',''];return ['LOW POWER','miss']}
-function compIcon(type,item,b=null){if(!item)return '';const paths={gadgets:'gadgets/borderless',starPowers:'star-powers/borderless',gears:'gears/regular',hyperCharges:'hypercharges/regular',gadget:'gadgets/borderless',star:'star-powers/borderless',gear:'gears/regular',hc:'hypercharges/regular'};const c=catalogEntry(b);const list=type==='gadgets'||type==='gadget'?c?.gadgets:type==='starPowers'||type==='star'?c?.starPowers:null;const mapped=list?.find(x=>x&&((x.id!=null&&x.id===item.id)||norm(x.name)===norm(item.name)));const src=mapped?.imageUrl||(paths[type]&&item.id?img(paths[type],item.id):'');return src?'<img class="compIcon" loading="lazy" src="'+esc(src)+'" alt="">':''}
+function compIcon(type,item,b=null){if(!item)return '';const paths={gadgets:'gadgets/borderless',starPowers:'star-powers/borderless',gears:'gears/regular',hyperCharges:'hypercharges/regular',gadget:'gadgets/borderless',star:'star-powers/borderless',gear:'gears/regular',hc:'hypercharges/regular'};const c=catalogEntry(b);const pool=Object.values(CATALOG_STATE.entries||{});const list=type==='gadgets'||type==='gadget'?c?.gadgets:type==='starPowers'||type==='star'?c?.starPowers:null;const mapped=list?.find(x=>x&&((x.id!=null&&x.id===item.id)||norm(x.name)===norm(item.name)))||pool.flatMap(x=>type==='gadgets'||type==='gadget'?(x.gadgets||[]):type==='starPowers'||type==='star'?(x.starPowers||[]):[]).find(x=>x&&((x.id!=null&&x.id===item.id)||norm(x.name)===norm(item.name)));const src=mapped?.imageUrl||(paths[type]&&item.id?img(paths[type],item.id):'');return src?'<img class="compIcon" loading="lazy" src="'+esc(src)+'" alt="">':''}
 function comp(type,label,item){return '<div class="comp '+(item?'owned':'missing')+'">'+compIcon(type,item)+'<div><span>'+label+'</span><b>'+esc(item?.name||'Non posseduto')+'</b></div></div>'}
 function first(a){return Array.isArray(a)&&a.length?a[0]:null}
 function buildLabel(b){const o=owned(b);return [o.gadgets?'Gadget':'Gadget missing',o.stars?'Star Power':'Star Power missing',o.gears?'Gear':'Gear missing',o.hc?'Hypercharge':'Hypercharge missing'].join(' · ')}
@@ -127,12 +127,15 @@ function bcard(b,compact=false,mode=playMode,map=playMap,rank=null,kind=''){
 }
 
 function home(){
- const my=metaRankList(playMode,playMap).filter(x=>isOwnedAccount(x.b)).sort((a,z)=>contextScore(z.b,playMode,playMap)-contextScore(a.b,playMode,playMap)).slice(0,5);
+ const ranked=metaRankList(playMode,playMap);
+ const hasMeta=ranked.length>0;
+ const my=hasMeta?ranked.filter(x=>isOwnedAccount(x.b)).sort((a,z)=>contextScore(z.b,playMode,playMap)-contextScore(a.b,playMode,playMap)).slice(0,5):[...(P?.brawlers||[])].sort((a,z)=>personalScore(z)-personalScore(a)).slice(0,5).map(b=>({b,meta:null}));
  const myIds=new Set(my.map(x=>x.b.id));
- const rec=metaRankList(playMode,playMap).filter(x=>!myIds.has(x.b.id)).slice(0,5);
- const ctx=metaScope(my[0]?.b||rec[0]?.b,playMode,playMap);
+ const catalog=allBrawlers().filter(b=>b&&!myIds.has(b.id)&&!isOwnedAccount(b));
+ const rec=hasMeta?ranked.filter(x=>!myIds.has(x.b.id)).slice(0,5):catalog.sort((a,z)=>z.id-a.id).slice(0,5).map(b=>({b,meta:null}));
+ const ctx=hasMeta?metaScope(my[0]?.b||rec[0]?.b,playMode,playMap):'ACCOUNT ONLY';
  return '<section class="hero"><div class="eyebrow">ACCOUNT</div><h1>'+esc(P.name)+'</h1><div class="tag">'+esc(P.tag)+' · livello '+P.expLevel+'</div><div class="stats"><div class="stat"><b>'+fmt(P.trophies)+'</b><span>TROFEI</span></div><div class="stat"><b>'+P.brawlers.length+'</b><span>BRAWLER</span></div><div class="stat"><b>'+fmt(P['3vs3Victories'])+'</b><span>VITTORIE 3V3</span></div></div><div class="rank"><span>Ranked · '+esc(P.rankedRankName||'—')+'</span><b>'+fmt(P.rankedElo)+' Elo</b></div></section>'+
- '<section class="section"><div class="sectionTitle"><h2>Top 10 per te</h2><span class="small">'+esc(playMode)+' · '+esc(playMap)+'</span></div><div class="top10Legend"><span class="legendOwned">TUOI · combinazione migliore</span><span class="legendMeta">META · prossimi consigliati</span></div><div class="subhead">I TUOI 5</div>'+my.map((x,i)=>bcard(x.b,true,playMode,playMap,x.meta.rank||metaRankOf(x.b,playMode,playMap),'ownedTop')).join('')+'<div class="subhead">5 DA CONSIDERARE</div>'+rec.map(x=>bcard(x.b,true,playMode,playMap,x.meta.rank||metaRankOf(x.b,playMode,playMap),'recommended')).join('')+'</section>'+
+ '<section class="section"><div class="sectionTitle"><h2>Top 10 per te</h2><span class="small">'+esc(playMode)+' · '+esc(playMap)+'</span></div><div class="top10Legend"><span class="legendOwned">TUOI · combinazione migliore</span><span class="legendMeta">'${hasMeta}'?'META · prossimi consigliati':'CATALOGO · da considerare'</span></div><div class="subhead">I TUOI 5</div>'+my.map((x,i)=>bcard(x.b,true,playMode,playMap,x.meta?.rank||metaRankOf(x.b,playMode,playMap),'ownedTop')).join('')+'<div class="subhead">5 DA CONSIDERARE</div>'+rec.map(x=>bcard(x.b,true,playMode,playMap,x.meta.rank||metaRankOf(x.b,playMode,playMap),'recommended')).join('')+'</section>'+
  '<section class="section"><div class="sectionTitle"><h2>Upgrade Advisor</h2><span class="small">Azioni immediate</span></div>'+my.slice(0,4).map(x=>'<div class="action" onclick="openB('+x.b.id+')"><b>'+esc(x.b.name)+' · Meta #'+(x.meta.rank||metaRankOf(x.b,playMode,playMap)||'—')+'</b><span class="small">'+buildActionLine(x.b)+'</span></div>').join('')+'</section>'
 }
 
