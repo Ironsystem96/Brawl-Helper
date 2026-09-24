@@ -1,1 +1,10 @@
-{"name":"Brawl Helper","short_name":"Brawl Helper","start_url":"./","scope":"./","display":"standalone","orientation":"portrait","background_color":"#10131f","theme_color":"#ffcf33"}
+{
+  "name": "Brawl Helper",
+  "short_name": "Brawl Helper",
+  "start_url": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#10131a",
+  "theme_color": "#10131a",
+  "description": "Personal Brawl Stars companion and progression advisor."
+}

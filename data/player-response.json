@@ -1,0 +1,1000 @@
+{
+    "tag":  "#22QYOQRGY",
+    "name":  "BlackShark",
+    "nameColor":  "0xff4ddba2",
+    "icon":  {
+                 "id":  28001349
+             },
+    "trophies":  47873,
+    "highestTrophies":  47873,
+    "totalPrestigeLevel":  0,
+    "fame":  21586,
+    "fameTierName":  "MARTIAN FAME II",
+    "expLevel":  180,
+    "expPoints":  167922,
+    "isQualifiedFromChampionshipChallenge":  false,
+    "3vs3Victories":  8451,
+    "soloVictories":  426,
+    "duoVictories":  1102,
+    "bestRoboRumbleTime":  5,
+    "bestTimeAsBigBrawler":  0,
+    "rankedSeasonId":  49,
+    "rankedRank":  9,
+    "rankedRankName":  "GOLD III",
+    "rankedElo":  2590,
+    "highestSeasonRankedRank":  9,
+    "highestSeasonRankedRankName":  "GOLD III",
+    "highestSeasonRankedElo":  2590,
+    "highestAllTimeRankedRank":  13,
+    "highestAllTimeRankedRankName":  "MYTHIC I",
+    "highestAllTimeRankedElo":  6062,
+    "bestBossFightSpeedrunTimes":  [
+                                       {
+                                           "event":  {
+                                                         "id":  0,
+                                                         "modeId":  0
+                                                     },
+                                           "bestTimeInSeconds":  129,
+                                           "difficulty":  0,
+                                           "difficultyName":  "Normal"
+                                       }
+                                   ],
+    "club":  {
+                 "tag":  "#98VJCJG0",
+                 "name":  "ZE PARROT"
+             },
+    "brawlers":  [
+                     {
+                         "id":  16000000,
+                         "name":  "SHELLY",
+                         "power":  9,
+                         "rank":  3,
+                         "trophies":  529,
+                         "highestTrophies":  557,
+                         "prestigeLevel":  0,
+                         "currentWinStreak":  1,
+                         "maxWinStreak":  2,
+                         "skin":  {
+                                      "id":  29001661,
+                                      "name":  "CYBER SHELLY"
+                                  },
+                         "gadgets":  [
+                                         {
+                                             "id":  23000255,
+                                             "name":  "FAST FORWARD"
+                                         },
+                                         {
+                                             "id":  23000288,
+                                             "name":  "CLAY PIGEONS"
+                                         }
+                                     ],
+                         "gears":  [
+
+                                   ],
+                         "starPowers":  [
+                                            {
+                                                "id":  23000076,
+                                                "name":  "SHELL SHOCK"
+                                            },
+                                            {
+                                                "id":  23000135,
+                                                "name":  "BAND-AID"
+                                            }
+                                        ],
+                         "hyperCharges":  [
+
+                                          ],
+                         "buffies":  {
+                                         "gadget":  true,
+                                         "starPower":  false,
+                                         "hyperCharge":  false
+                                     }
+                     },
+                     {
+                         "id":  16000001,
+                         "name":  "COLT",
+                         "power":  9,
+                         "rank":  3,
+                         "trophies":  500,
+                         "highestTrophies":  552,
+                         "prestigeLevel":  0,
+                         "currentWinStreak":  0,
+                         "maxWinStreak":  0,
+                         "skin":  {
+                                      "id":  29000376,
+                                      "name":  "HANDSOME COLT"
+                                  },
+                         "gadgets":  [
+                                         {
+                                             "id":  23000273,
+                                             "name":  "SPEEDLOADER"
+                                         },
+                                         {
+                                             "id":  23000319,
+                                             "name":  "SILVER BULLET"
+                                         }
+                                     ],
+                         "gears":  [
+
+                                   ],
+                         "starPowers":  [
+                                            {
+                                                "id":  23000077,
+                                                "name":  "SLICK BOOTS"
+                                            }
+                                        ],
+                         "hyperCharges":  [
+
+                                          ],
+                         "buffies":  {
+                                         "gadget":  false,
+                                         "starPower":  true,
+                                         "hyperCharge":  true
+                                     }
+                     },
+                     {
+                         "id":  16000002,
+                         "name":  "BULL",
+                         "power":  9,
+                         "rank":  3,
+                         "trophies":  528,
+                         "highestTrophies":  608,
+                         "prestigeLevel":  0,
+                         "currentWinStreak":  1,
+                         "maxWinStreak":  1,
+                         "skin":  {
+                                      "id":  29000178,
+                                      "name":  "BARBARIAN KING BULL"
+                                  },
+                         "gadgets":  [
+                                         {
+                                             "id":  23000272,
+                                             "name":  "T-BONE MISSILE"
+                                         },
+                                         {
+                                             "id":  23000310,
+                                             "name":  "STOMPER"
+                                         }
+                                     ],
+                         "gears":  [
+
+                                   ],
+                         "starPowers":  [
+                                            {
+                                                "id":  23000078,
+                                                "name":  "BERSERKER"
+                                            },
+                                            {
+                                                "id":  23000137,
+                                                "name":  "TOUGH GUY"
+                                            }
+                                        ],
+                         "hyperCharges":  [
+
+                                          ],
+                         "buffies":  {
+                                         "gadget":  true,
+                                         "starPower":  false,
+                                         "hyperCharge":  false
+                                     }
+                     },
+                     {
+                         "id":  16000003,
+                         "name":  "BROCK",
+                         "power":  10,
+                         "rank":  3,
+                         "trophies":  554,
+                         "highestTrophies":  571,
+                         "prestigeLevel":  0,
+                         "currentWinStreak":  1,
+                         "maxWinStreak":  2,
+                         "skin":  {
+                                      "id":  29001680,
+                                      "name":  "CYBER BROCK VI"
+                                  },
+                         "gadgets":  [
+                                         {
+                                             "id":  23000245,
+                                             "name":  "ROCKET LACES"
+                                         },
+                                         {
+                                             "id":  23000316,
+                                             "name":  "ROCKET FUEL"
+                                         }
+                                     ],
+                         "gears":  [
+
+                                   ],
+                         "starPowers":  [
+                                            {
+                                                "id":  23000079,
+                                                "name":  "MORE ROCKETS!"
+                                            }
+                                        ],
+                         "hyperCharges":  [
+
+                                          ],
+                         "buffies":  {
+                                         "gadget":  false,
+                                         "starPower":  true,
+                                         "hyperCharge":  false
+                                     }
+                     },
+                     {
+                         "id":  16000004,
+                         "name":  "RICO",
+                         "power":  9,
+                         "rank":  3,
+                         "trophies":  518,
+                         "highestTrophies":  565,
+                         "prestigeLevel":  0,
+                         "currentWinStreak":  0,
+                         "maxWinStreak":  0,
+                         "skin":  {
+                                      "id":  29000758,
+                                      "name":  "FINAL BOSS\nRICO"
+                                  },
+                         "gadgets":  [
+                                         {
+                                             "id":  23000246,
+                                             "name":  "MULTIBALL LAUNCHER"
+                                         },
+                                         {
+                                             "id":  23000409,
+                                             "name":  "MULTIBALL"
+                                         }
+                                     ],
+                         "gears":  [
+
+                                   ],
+                         "starPowers":  [
+                                            {
+                                                "id":  23000080,
+                                                "name":  "SUPER BOUNCY"
+                                            }
+                                        ],
+                         "hyperCharges":  [
+                                              {
+                                                  "id":  23000776,
+                                                  "name":  "TRICK SHOT KING"
+                                              }
+                                          ],
+                         "buffies":  {
+                                         "gadget":  false,
+                                         "starPower":  false,
+                                         "hyperCharge":  false
+                                     }
+                     },
+                     {
+                         "id":  16000005,
+                         "name":  "SPIKE",
+                         "power":  11,
+                         "rank":  3,
+                         "trophies":  515,
+                         "highestTrophies":  576,
+                         "prestigeLevel":  0,
+                         "currentWinStreak":  1,
+                         "maxWinStreak":  1,
+                         "skin":  {
+                                      "id":  29000502,
+                                      "name":  "PYRO SPIKE"
+                                  },
+                         "gadgets":  [
+                                         {
+                                             "id":  23000247,
+                                             "name":  "POPPING PINCUSHION"
+                                         },
+                                         {
+                                             "id":  23000406,
+                                             "name":  "LIFE PLANT"
+                                         }
+                                     ],
+                         "gears":  [
+                                       {
+                                           "id":  62000001,
+                                           "name":  "HEALTH",
+                                           "level":  3
+                                       },
+                                       {
+                                           "id":  62000004,
+                                           "name":  "SHIELD",
+                                           "level":  3
+                                       }
+                                   ],
+                         "starPowers":  [
+                                            {
+                                                "id":  23000081,
+                                                "name":  "FERTILIZE"
+                                            },
+                                            {
+                                                "id":  23000151,
+                                                "name":  "CURVEBALL"
+                                            }
+                                        ],
+                         "hyperCharges":  [
+                                              {
+                                                  "id":  23000615,
+                                                  "name":  "BLOOMING SEASON"
+                                              }
+                                          ],
+                         "buffies":  {
+                                         "gadget":  false,
+                                         "starPower":  false,
+                                         "hyperCharge":  false
+                                     }
+                     },
+                     {
+                         "id":  16000006,
+                         "name":  "BARLEY",
+                         "power":  9,
+                         "rank":  3,
+                         "trophies":  510,
+                         "highestTrophies":  553,
+                         "prestigeLevel":  0,
+                         "currentWinStreak":  0,
+                         "maxWinStreak":  0,
+                         "skin":  {
+                                      "id":  29001293,
+                                      "name":  "ELDRITCH PROFESSOR BARLEY"
+                                  },
+                         "gadgets":  [
+                                         {
+                                             "id":  23000250,
+                                             "name":  "STICKY SYRUP MIXER"
+                                         },
+                                         {
+                                             "id":  23000293,
+                                             "name":  "HERBAL TONIC"
+                                         }
+                                     ],
+                         "gears":  [
+                                       {
+                                           "id":  62000001,
+                                           "name":  "HEALTH",
+                                           "level":  3
+                                       }
+                                   ],
+                         "starPowers":  [
+                                            {
+                                                "id":  23000158,
+                                                "name":  "EXTRA NOXIOUS"
+                                            }
+                                        ],
+                         "hyperCharges":  [
+
+                                          ],
+                         "buffies":  {
+                                         "gadget":  false,
+                                         "starPower":  false,
+                                         "hyperCharge":  false
+                                     }
+                     },
+                     {
+                         "id":  16000007,
+                         "name":  "JESSIE",
+                         "power":  11,
+                         "rank":  3,
+                         "trophies":  523,
+                         "highestTrophies":  602,
+                         "prestigeLevel":  0,
+                         "currentWinStreak":  1,
+                         "maxWinStreak":  2,
+                         "skin":  {
+                                      "id":  29000047,
+                                      "name":  "SUMMER JESSIE"
+                                  },
+                         "gadgets":  [
+                                         {
+                                             "id":  23000251,
+                                             "name":  "SPARK PLUG"
+                                         },
+                                         {
+                                             "id":  23000295,
+                                             "name":  "RECOIL SPRING"
+                                         }
+                                     ],
+                         "gears":  [
+                                       {
+                                           "id":  62000001,
+                                           "name":  "HEALTH",
+                                           "level":  3
+                                       },
+                                       {
+                                           "id":  62000014,
+                                           "name":  "PET POWER",
+                                           "level":  3
+                                       }
+                                   ],
+                         "starPowers":  [
+                                            {
+                                                "id":  23000083,
+                                                "name":  "ENERGIZE"
+                                            },
+                                            {
+                                                "id":  23000149,
+                                                "name":  "SHOCKY"
+                                            }
+                                        ],
+                         "hyperCharges":  [
+                                              {
+                                                  "id":  23000630,
+                                                  "name":  "SCRAPPY 2.0"
+                                              }
+                                          ],
+                         "buffies":  {
+                                         "gadget":  false,
+                                         "starPower":  false,
+                                         "hyperCharge":  false
+                                     }
+                     },
+                     {
+                         "id":  16000008,
+                         "name":  "NITA",
+                         "power":  11,
+                         "rank":  3,
+                         "trophies":  510,
+                         "highestTrophies":  572,
+                         "prestigeLevel":  0,
+                         "currentWinStreak":  1,
+                         "maxWinStreak":  1,
+                         "skin":  {
+                                      "id":  29000606,
+                                      "name":  "GUMMYBEAR NITA"
+                                  },
+                         "gadgets":  [
+                                         {
+                                             "id":  23000249,
+                                             "name":  "BEAR PAWS"
+                                         },
+                                         {
+                                             "id":  23000314,
+                                             "name":  "FAUX FUR"
+                                         }
+                                     ],
+                         "gears":  [
+                                       {
+                                           "id":  62000001,
+                                           "name":  "HEALTH",
+                                           "level":  3
+                                       }
+                                   ],
+                         "starPowers":  [
+                                            {
+                                                "id":  23000084,
+                                                "name":  "BEAR WITH ME"
+                                            },
+                                            {
+                                                "id":  23000136,
+                                                "name":  "HYPER BEAR"
+                                            }
+                                        ],
+                         "hyperCharges":  [
+                                              {
+                                                  "id":  23000686,
+                                                  "name":  "HYPERBEARING"
+                                              }
+                                          ],
+                         "buffies":  {
+                                         "gadget":  false,
+                                         "starPower":  false,
+                                         "hyperCharge":  false
+                                     }
+                     },
+                     {
+                         "id":  16000009,
+                         "name":  "DYNAMIKE",
+                         "power":  11,
+                         "rank":  3,
+                         "trophies":  566,
+                         "highestTrophies":  591,
+                         "prestigeLevel":  0,
+                         "currentWinStreak":  1,
+                         "maxWinStreak":  3,
+                         "skin":  {
+                                      "id":  29000961,
+                                      "name":  "DECAYING DYNAMIKE"
+                                  },
+                         "gadgets":  [
+                                         {
+                                             "id":  23000258,
+                                             "name":  "FIDGET SPINNER"
+                                         },
+                                         {
+                                             "id":  23000294,
+                                             "name":  "SATCHEL CHARGE"
+                                         }
+                                     ],
+                         "gears":  [
+                                       {
+                                           "id":  62000002,
+                                           "name":  "DAMAGE",
+                                           "level":  3
+                                       },
+                                       {
+                                           "id":  62000017,
+                                           "name":  "GADGET COOLDOWN",
+                                           "level":  3
+                                       },
+                                       {
+                                           "id":  62000001,
+                                           "name":  "HEALTH",
+                                           "level":  3
+                                       },
+                                       {
+                                           "id":  62000004,
+                                           "name":  "SHIELD",
+                                           "level":  3
+                                       }
+                                   ],
+                         "starPowers":  [
+                                            {
+                                                "id":  23000085,
+                                                "name":  "DYNA-JUMP"
+                                            },
+                                            {
+                                                "id":  23000155,
+                                                "name":  "DEMOLITION"
+                                            }
+                                        ],
+                         "hyperCharges":  [
+                                              {
+                                                  "id":  23000652,
+                                                  "name":  "BOOMER"
+                                              }
+                                          ],
+                         "buffies":  {
+                                         "gadget":  false,
+                                         "starPower":  false,
+                                         "hyperCharge":  false
+                                     }
+                     },
+                     {
+                         "id":  16000010,
+                         "name":  "EL PRIMO",
+                         "power":  11,
+                         "rank":  3,
+                         "trophies":  510,
+                         "highestTrophies":  609,
+                         "prestigeLevel":  0,
+                         "currentWinStreak":  1,
+                         "maxWinStreak":  1,
+                         "skin":  {
+                                      "id":  29000744,
+                                      "name":  "EL QUARTERBACK"
+                                  },
+                         "gadgets":  [
+                                         {
+                                             "id":  23000264,
+                                             "name":  "SUPLEX SUPPLEMENT"
+                                         },
+                                         {
+                                             "id":  23000292,
+                                             "name":  "ASTEROID BELT"
+                                         }
+                                     ],
+                         "gears":  [
+                                       {
+                                           "id":  62000002,
+                                           "name":  "DAMAGE",
+                                           "level":  3
+                                       }
+                                   ],
+                         "starPowers":  [
+                                            {
+                                                "id":  23000086,
+                                                "name":  "EL FUEGO"
+                                            },
+                                            {
+                                                "id":  23000140,
+                                                "name":  "METEOR RUSH"
+                                            }
+                                        ],
+                         "hyperCharges":  [
+                                              {
+                                                  "id":  23000679,
+                                                  "name":  "GRAVITY LEAP"
+                                              }
+                                          ],
+                         "buffies":  {
+                                         "gadget":  false,
+                                         "starPower":  false,
+                                         "hyperCharge":  false
+                                     }
+                     },
+                     {
+                         "id":  16000011,
+                         "name":  "MORTIS",
+                         "power":  9,
+                         "rank":  3,
+                         "trophies":  608,
+                         "highestTrophies":  608,
+                         "prestigeLevel":  0,
+                         "currentWinStreak":  5,
+                         "maxWinStreak":  5,
+                         "skin":  {
+                                      "id":  29000311,
+                                      "name":  "BEACH TIME MORTIS"
+                                  },
+                         "gadgets":  [
+                                         {
+                                             "id":  23000265,
+                                             "name":  "COMBO SPINNER"
+                                         },
+                                         {
+                                             "id":  23000290,
+                                             "name":  "CREATURE OF THE NIGHT"
+                                         }
+                                     ],
+                         "gears":  [
+
+                                   ],
+                         "starPowers":  [
+                                            {
+                                                "id":  23000087,
+                                                "name":  "CREEPY HARVEST"
+                                            }
+                                        ],
+                         "hyperCharges":  [
+
+                                          ],
+                         "buffies":  {
+                                         "gadget":  false,
+                                         "starPower":  false,
+                                         "hyperCharge":  false
+                                     }
+                     },
+                     {
+                         "id":  16000012,
+                         "name":  "CROW",
+                         "power":  11,
+                         "rank":  3,
+                         "trophies":  632,
+                         "highestTrophies":  632,
+                         "prestigeLevel":  0,
+                         "currentWinStreak":  4,
+                         "maxWinStreak":  5,
+                         "skin":  {
+                                      "id":  29001487,
+                                      "name":  "DRAGON CROW III"
+                                  },
+                         "gadgets":  [
+                                         {
+                                             "id":  23000243,
+                                             "name":  "INSTAPOISON"
+                                         },
+                                         {
+                                             "id":  23000286,
+                                             "name":  "SLOWING TOXIN"
+                                         }
+                                     ],
+                         "gears":  [
+                                       {
+                                           "id":  62000002,
+                                           "name":  "DAMAGE",
+                                           "level":  3
+                                       },
+                                       {
+                                           "id":  62000001,
+                                           "name":  "HEALTH",
+                                           "level":  3
+                                       },
+                                       {
+                                           "id":  62000004,
+                                           "name":  "SHIELD",
+                                           "level":  3
+                                       }
+                                   ],
+                         "starPowers":  [
+                                            {
+                                                "id":  23000088,
+                                                "name":  "EXTRA TOXIC"
+                                            },
+                                            {
+                                                "id":  23000143,
+                                                "name":  "CARRION CROW"
+                                            }
+                                        ],
+                         "hyperCharges":  [
+                                              {
+                                                  "id":  23000650,
+                                                  "name":  "UTILITY KNIVES"
+                                              }
+                                          ],
+                         "buffies":  {
+                                         "gadget":  true,
+                                         "starPower":  false,
+                                         "hyperCharge":  true
+                                     }
+                     },
+                     {
+                         "id":  16000013,
+                         "name":  "POCO",
+                         "power":  10,
+                         "rank":  3,
+                         "trophies":  523,
+                         "highestTrophies":  666,
+                         "prestigeLevel":  0,
+                         "currentWinStreak":  0,
+                         "maxWinStreak":  0,
+                         "skin":  {
+                                      "id":  29001336,
+                                      "name":  "SCRATCHER POCO"
+                                  },
+                         "gadgets":  [
+                                         {
+                                             "id":  23000267,
+                                             "name":  "TUNING FORK"
+                                         },
+                                         {
+                                             "id":  23000350,
+                                             "name":  "PROTECTIVE TUNES"
+                                         }
+                                     ],
+                         "gears":  [
+
+                                   ],
+                         "starPowers":  [
+                                            {
+                                                "id":  23000089,
+                                                "name":  "DA CAPO!"
+                                            },
+                                            {
+                                                "id":  23000144,
+                                                "name":  "SCREECHING SOLO"
+                                            }
+                                        ],
+                         "hyperCharges":  [
+
+                                          ],
+                         "buffies":  {
+                                         "gadget":  false,
+                                         "starPower":  false,
+                                         "hyperCharge":  false
+                                     }
+                     },
+                     {
+                         "id":  16000014,
+                         "name":  "BO",
+                         "power":  11,
+                         "rank":  3,
+                         "trophies":  627,
+                         "highestTrophies":  627,
+                         "prestigeLevel":  0,
+                         "currentWinStreak":  2,
+                         "maxWinStreak":  3,
+                         "skin":  {
+                                      "id":  29000098,
+                                      "name":  "LIGHT MECHA BO"
+                                  },
+                         "gadgets":  [
+                                         {
+                                             "id":  23000263,
+                                             "name":  "SUPER TOTEM"
+                                         },
+                                         {
+                                             "id":  23000289,
+                                             "name":  "TRIPWIRE"
+                                         }
+                                     ],
+                         "gears":  [
+                                       {
+                                           "id":  62000002,
+                                           "name":  "DAMAGE",
+                                           "level":  3
+                                       }
+                                   ],
+                         "starPowers":  [
+                                            {
+                                                "id":  23000090,
+                                                "name":  "CIRCLING EAGLE"
+                                            },
+                                            {
+                                                "id":  23000148,
+                                                "name":  "SNARE A BEAR"
+                                            }
+                                        ],
+                         "hyperCharges":  [
+                                              {
+                                                  "id":  23000896,
+                                                  "name":  "CATCH A BEAR"
+                                              }
+                                          ],
+                         "buffies":  {
+                                         "gadget":  false,
+                                         "starPower":  true,
+                                         "hyperCharge":  false
+                                     }
+                     },
+                     {
+                         "id":  16000015,
+                         "name":  "PIPER",
+                         "power":  9,
+                         "rank":  3,
+                         "trophies":  500,
+                         "highestTrophies":  550,
+                         "prestigeLevel":  0,
+                         "currentWinStreak":  0,
+                         "maxWinStreak":  0,
+                         "skin":  {
+                                      "id":  29000626,
+                                      "name":  "MARIPOSA PIPER"
+                                  },
+                         "gadgets":  [
+                                         {
+                                             "id":  23000268,
+                                             "name":  "AUTO AIMER"
+                                         },
+                                         {
+                                             "id":  23000291,
+                                             "name":  "HOMEMADE RECIPE"
+                                         }
+                                     ],
+                         "gears":  [
+
+                                   ],
+                         "starPowers":  [
+                                            {
+                                                "id":  23000091,
+                                                "name":  "AMBUSH"
+                                            },
+                                            {
+                                                "id":  23000152,
+                                                "name":  "SNAPPY SNIPING"
+                                            }
+                                        ],
+                         "hyperCharges":  [
+
+                                          ],
+                         "buffies":  {
+                                         "gadget":  false,
+                                         "starPower":  false,
+                                         "hyperCharge":  false
+                                     }
+                     },
+                     {
+                         "id":  16000016,
+                         "name":  "PAM",
+                         "power":  11,
+                         "rank":  3,
+                         "trophies":  524,
+                         "highestTrophies":  573,
+                         "prestigeLevel":  0,
+                         "currentWinStreak":  0,
+                         "maxWinStreak":  0,
+                         "skin":  {
+                                      "id":  29000556,
+                                      "name":  "STONKS PAM"
+                                  },
+                         "gadgets":  [
+                                         {
+                                             "id":  23000257,
+                                             "name":  "PULSE MODULATOR"
+                                         },
+                                         {
+                                             "id":  23000404,
+                                             "name":  "SCRAPSUCKER"
+                                         }
+                                     ],
+                         "gears":  [
+                                       {
+                                           "id":  62000016,
+                                           "name":  "SUPER TURRET",
+                                           "level":  3
+                                       }
+                                   ],
+                         "starPowers":  [
+                                            {
+                                                "id":  23000092,
+                                                "name":  "MAMA\u0027S HUG"
+                                            },
+                                            {
+                                                "id":  23000139,
+                                                "name":  "MAMA\u0027S SQUEEZE"
+                                            }
+                                        ],
+                         "hyperCharges":  [
+                                              {
+                                                  "id":  23000898,
+                                                  "name":  "MAMA\u0027S LOVE"
+                                              }
+                                          ],
+                         "buffies":  {
+                                         "gadget":  false,
+                                         "starPower":  false,
+                                         "hyperCharge":  false
+                                     }
+                     },
+                     {
+                         "id":  16000017,
+                         "name":  "TARA",
+                         "power":  11,
+                         "rank":  3,
+                         "trophies":  534,
+                         "highestTrophies":  581,
+                         "prestigeLevel":  0,
+                         "currentWinStreak":  1,
+                         "maxWinStreak":  1,
+                         "skin":  {
+                                      "id":  29001673,
+                                      "name":  "TECH TARA"
+                                  },
+                         "gadgets":  [
+                                         {
+                                             "id":  23000266,
+                                             "name":  "PSYCHIC ENHANCER"
+                                         },
+                                         {
+                                             "id":  23000356,
+                                             "name":  "SUPPORT FROM BEYOND"
+                                         }
+                                     ],
+                         "gears":  [
+
+                                   ],
+                         "starPowers":  [
+                                            {
+                                                "id":  23000093,
+                                                "name":  "BLACK PORTAL"
+                                            },
+                                            {
+                                                "id":  23000160,
+                                                "name":  "HEALING SHADE"
+                                            }
+                                        ],
+                         "hyperCharges":  [
+                                              {
+                                                  "id":  23000824,
+                                                  "name":  "SUPERMASSIVE"
+                                              }
+                                          ],
+                         "buffies":  {
+                                         "gadget":  false,
+                                         "starPower":  false,
+                                         "hyperCharge":  false
+                                     }
+                     },
+                     {
+                         "id":  16000018,
+                         "name":  "DARRYL",
+                         "power":  9,
+                         "rank":  3,
+                         "trophies":  517,
+                         "highestTrophies":  565,
+                         "prestigeLevel":  0,
+                         "currentWinStreak":  0,
+                         "maxWinStreak":  0,
+                         "skin":  {
+                                      "id":  29000350,
+                                      "name":  "MEGA BOX DARRYL"
+                                  },
+                         "gadgets":  [
+                                         {
+                                             "id":  23000260,
+                                             "name":  "RECOILING ROTATOR"
+                                         },
+                                         {
+                                             "id":  23000313,
+                                             "name":  "TAR BARREL"
+                                         }
+                                     ],
+                         "gears":  [
+
+                                   ],
+                         "starPowers":  [
+                                            {
+                                                "id":  23000094,
+                                                "name":  "STEEL HOOPS"
+                                            }
+                                        ],
+                         "hyperCharges":  [
+
+                                          ],
+                         "buffies":  {
+                                         "gadget":  false,
+                                         "starPower":  false,
+                                         "hyperCharge":  false
+                                     }
+                     },
+                     {
+                         "id":  16000019,
+                         "name":  "PENNY",
