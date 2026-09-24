@@ -8,24 +8,50 @@
 .card a{color:var(--accent);text-decoration:none}
 
 /* V0.13 fluid motion layer — lightweight, GPU-friendly */
-@keyframes bhPageIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
-@keyframes bhCardIn{from{opacity:0;transform:translateY(7px) scale(.992)}to{opacity:1;transform:translateY(0) scale(1)}}
-@keyframes bhModalIn{from{opacity:0;transform:translateY(18px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+/* V0.14 motion system — fluid, restrained, iOS-inspired without copying iOS */
+@keyframes bhPageIn{from{opacity:0;transform:translate3d(0,10px,0) scale(.995)}to{opacity:1;transform:translate3d(0,0,0) scale(1)}}
+@keyframes bhCardIn{from{opacity:0;transform:translate3d(0,9px,0) scale(.985)}to{opacity:1;transform:translate3d(0,0,0) scale(1)}}
+@keyframes bhModalIn{from{opacity:0;transform:translate3d(0,24px,0) scale(.975)}to{opacity:1;transform:translate3d(0,0,0) scale(1)}}
 @keyframes bhFade{from{opacity:0}to{opacity:1}}
-.content{animation:bhPageIn .28s cubic-bezier(.22,.8,.25,1) both}
+@keyframes bhNavIn{from{opacity:.5;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
+@keyframes bhPress{0%{transform:scale(1)}45%{transform:scale(.965)}100%{transform:scale(1)}}
+@keyframes bhGlow{0%{box-shadow:0 0 0 0 rgba(56,169,255,0)}100%{box-shadow:0 0 0 4px rgba(56,169,255,.10)}}
+
+.content{animation:bhPageIn .30s cubic-bezier(.22,.8,.25,1) both;will-change:opacity,transform}
 .content>.section,.content>.hero{animation:bhPageIn .34s cubic-bezier(.22,.8,.25,1) both}
-.card,.action,.upgradeRow{transition:transform .22s cubic-bezier(.22,.8,.25,1),box-shadow .22s ease,border-color .22s ease}
-.bcard:hover,.action:hover,.upgradeRow:hover{transform:translateY(-2px);box-shadow:0 9px 22px rgba(25,35,55,.09)}
-.bcard:active,.action:active,.upgradeRow:active{transform:scale(.985)}
-.nav button{transition:color .2s ease,transform .2s cubic-bezier(.22,.8,.25,1)}
-.nav button:active{transform:scale(.92)}
-.filters button,.profileBtn,.primary,.close,.back{transition:transform .2s cubic-bezier(.22,.8,.25,1),background-color .2s ease,border-color .2s ease,color .2s ease,box-shadow .2s ease}
-.filters button:active,.profileBtn:active,.primary:active,.close:active{transform:scale(.97)}
-.modal{animation:bhFade .2s ease both}
-.modalBox{animation:bhModalIn .32s cubic-bezier(.22,.8,.25,1) both}
-.search:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(56,169,255,.12);transition:border-color .2s ease,box-shadow .2s ease}
-.portrait,.compIcon{transition:transform .28s cubic-bezier(.22,.8,.25,1)}
-.bcard:hover .portrait{transform:scale(1.035)}
+.content>.section:nth-child(2){animation-delay:.025s}
+.content>.section:nth-child(3){animation-delay:.045s}
+.card,.action,.upgradeRow{transition:transform .24s cubic-bezier(.22,.8,.25,1),box-shadow .24s ease,border-color .24s ease,background-color .24s ease}
+.section>.card,.section>.action,.section>.upgradeRow,.card>.action{animation:bhCardIn .34s cubic-bezier(.22,.8,.25,1) both}
+.section>.card:nth-child(2),.section>.action:nth-child(2),.section>.upgradeRow:nth-child(2){animation-delay:.025s}
+.section>.card:nth-child(3),.section>.action:nth-child(3),.section>.upgradeRow:nth-child(3){animation-delay:.05s}
+.section>.card:nth-child(4),.section>.action:nth-child(4),.section>.upgradeRow:nth-child(4){animation-delay:.075s}
+.section>.card:nth-child(5),.section>.action:nth-child(5),.section>.upgradeRow:nth-child(5){animation-delay:.10s}
+.bcard:hover,.action:hover,.upgradeRow:hover{transform:translate3d(0,-2px,0);box-shadow:0 10px 26px rgba(25,35,55,.10)}
+.bcard:active,.action:active,.upgradeRow:active{animation:bhPress .18s ease both}
+.nav{animation:bhNavIn .30s cubic-bezier(.22,.8,.25,1) both}
+.nav button{transition:color .22s ease,transform .22s cubic-bezier(.22,.8,.25,1),opacity .22s ease}
+.nav button:active{transform:scale(.90)}
+.nav button.active{transition:color .24s ease,transform .24s cubic-bezier(.22,.8,.25,1)}
+.nav button.active::after{content:'';display:block;width:5px;height:5px;margin:3px auto 0;border-radius:50%;background:var(--accent);animation:bhNavIn .24s ease both}
+.filters button,.profileBtn,.primary,.close,.back{transition:transform .22s cubic-bezier(.22,.8,.25,1),background-color .22s ease,border-color .22s ease,color .22s ease,box-shadow .22s ease}
+.filters button:active,.profileBtn:active,.primary:active,.close:active,.back:active{transform:scale(.965)}
+.filters button.active{box-shadow:0 0 0 3px rgba(56,169,255,.08);transition:box-shadow .24s ease,border-color .24s ease,background-color .24s ease,color .24s ease}
+.modal{animation:bhFade .22s ease both}
+.modalBox{animation:bhModalIn .34s cubic-bezier(.22,.8,.25,1) both}
+.search:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(56,169,255,.12);transition:border-color .22s ease,box-shadow .22s ease}
+.portrait,.compIcon{transition:transform .30s cubic-bezier(.22,.8,.25,1),filter .25s ease}
+.bcard:hover .portrait{transform:scale(1.035) translateY(-1px)}
+.componentGrid .comp{transition:transform .22s cubic-bezier(.22,.8,.25,1),border-color .22s ease,background-color .22s ease,opacity .22s ease}
+.componentGrid .comp:active{transform:scale(.975)}
+.advisorRow{transition:background-color .22s ease,padding-left .22s ease}
+.advisorRow:hover{background:#f4f8fd;padding-left:5px}
+.rankPick .num,.upgradeRow .num{transition:transform .22s cubic-bezier(.22,.8,.25,1),background-color .22s ease}
+.rankPick:hover .num,.upgradeRow:hover .num{transform:scale(1.06)}
+@media (max-width:699px){
+ .bcard:hover,.action:hover,.upgradeRow:hover{transform:none;box-shadow:0 4px 14px rgba(25,35,55,.045)}
+ .top{transition:background-color .25s ease,box-shadow .25s ease}
+}
 @media (prefers-reduced-motion:reduce){
-  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.001ms!important}
+ *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.001ms!important}
 }
