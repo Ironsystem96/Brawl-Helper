@@ -55,3 +55,26 @@
 @media (prefers-reduced-motion:reduce){
  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.001ms!important}
 }
+
+/* V0.15 compact build intelligence */
+.bMetaLine,.upgradeMetaLine{display:block;margin-top:3px;line-height:1.35}
+.bMetaLine span{opacity:.55;padding:0 2px}
+.metaChip{border-color:rgba(115,92,255,.35);background:#f1efff;color:#634fe0;font-weight:800}
+.miniBuild{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px;align-items:center}
+.miniItem,.miniState{font-size:9px;font-weight:800;border-radius:7px;padding:4px 6px;border:1px solid var(--line);background:var(--surface2);color:var(--muted);white-space:nowrap}
+.miniItem em{font-style:normal;font-weight:700;margin-left:2px;opacity:.72}
+.miniItem.ownedMini{border-color:#bfead8;background:#edf9f4;color:var(--green)}
+.miniItem.buyMini{border-color:#f0d28a;background:#fff8df;color:#a47700}
+.miniItem.unknown{opacity:.55}
+.mutedBuild{opacity:.7}
+.miniState{border-style:dashed}
+.miniHint{font-size:9px;color:var(--muted)}
+.upgradeName{display:block;font-size:14px;line-height:1.2;margin-bottom:2px}
+.upgradeRow .miniBuild{margin-top:6px}
+.upgradeRow .score{align-self:flex-start;margin-top:2px}
+@media(max-width:699px){
+ .miniBuild{gap:4px}
+ .miniItem,.miniState{font-size:8.5px;padding:3px 5px}
+ .upgradeRow{align-items:flex-start}
+ .upgradeRow .num{margin-top:1px}
+}
