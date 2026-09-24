@@ -16,8 +16,27 @@ function owned(b){return {gadgets:b.gadgets?.length||0,stars:b.starPowers?.lengt
 function readiness(b){const o=owned(b);return Math.min(100,Math.round((b.power||1)*5+Math.min(o.gadgets,2)*5+Math.min(o.stars,2)*5+Math.min(o.gears,2)*5+Math.min(o.hc,1)*8))}
 function powerScore(b){return Math.min(100,(b.power||1)*7+(b.trophies||0)/20)}
 function personalScore(b){return Math.round(readiness(b)*.45+powerScore(b)*.35+Math.min(100,(b.highestTrophies||0)/8)*.20)}
-function metaEntry(b,mode,map){return META_STATE.entries[b.name]?.[mode]?.[map]||META_STATE.entries[b.name]?.[mode]?.default||META_STATE.entries[b.name]?.default||null}
-function contextScore(b,mode,map){const m=metaEntry(b,mode,map);const personal=personalScore(b);const meta=m?.score??50;return Math.round(meta*.40+personal*.60)}
+function modeKey(mode){return String(mode||'').trim().toLowerCase().replace(/[^a-z0-9]+([a-z0-9])/g,(_,x)=>x.toUpperCase()).replace(/[^a-z0-9]/g,'')}
+function isOwnedAccount(b){return !!P?.brawlers?.some(x=>x.id===b.id||norm(x.name)===norm(b.name))}
+function accountBrawler(c){const a=P?.brawlers?.find(x=>x.id===c.id||norm(x.name)===norm(c.name));return a||{...c,power:0,rank:0,trophies:0,highestTrophies:0,gadgets:[],starPowers:[],gears:[],hyperCharges:[]}}
+function allBrawlers(){const by=Object.values(CATALOG_STATE.entries||{});return by.length?by.map(accountBrawler):[...(P?.brawlers||[])]}
+function metaEntry(b,mode,map){
+ const e=META_STATE.entries[b.name];
+ if(!e)return null;
+ const mk=modeKey(mode);
+ const mapHit=map&&map!=='Random'?(e.maps?.[mk]?.[map]||e.modes?.[mk]?.maps?.[map]):null;
+ return mapHit||e.modes?.[mk]||e[mode]?.[map]||e[mode]?.default||e.default||null;
+}
+function metaScope(b,mode,map){
+ const e=META_STATE.entries[b.name];
+ if(!e)return 'NON DISPONIBILE';
+ const mk=modeKey(mode);
+ if(map&&map!=='Random'&&(e.maps?.[mk]?.[map]||e.modes?.[mk]?.maps?.[map]))return 'META MAPPA';
+ if(e.modes?.[mk]||e[mode])return 'META MODALITÀ';
+ if(e.default)return 'META GLOBALE';
+ return 'NON DISPONIBILE';
+}
+function contextScore(b,mode,map){const m=metaEntry(b,mode,map);const personal=personalScore(b);const meta=m?.score??50;return Math.round(meta*.55+personal*.45)}
 function status(b){const r=readiness(b);if((b.power||0)>=11&&r>=75)return ['PLAY NOW','ok'];if((b.power||0)>=9)return ['UPGRADE TO META',''];return ['LOW POWER','miss']}
 function compIcon(type,item){if(!item)return '';const path={gadget:'gadgets/borderless',star:'star-powers/borderless',gear:'gears/regular',hc:'hypercharges/regular'}[type];return path?'<img class="compIcon" src="'+img(path,item.id)+'" onerror="this.style.display=\'none\'">':''}
 function comp(type,label,item){return '<div class="comp '+(item?'owned':'missing')+'">'+compIcon(type,item)+'<div><span>'+label+'</span><b>'+esc(item?.name||'Not owned')+'</b></div></div>'}
@@ -40,9 +59,23 @@ function advisorRow(b,label,type,item){
  const pct=item.pick!=null?' · '+item.pick+'% pick':'';
  return '<div class="advisorRow"><div class="advisorIcon">'+compIcon(type,item)+'</div><div class="grow"><b>'+esc(item.name)+'</b><span class="small">'+esc(label)+pct+'</span></div><span class="chip '+(state==='EQUIPAGGIA'?'ok':'')+'">'+state+'</span></div>';
 }
+function buildActionLine(b){
+ const e=buildEntry(b);
+ if(!isOwnedAccount(b))return '<span class="actionPill buyAction">DA SBLOCCARE</span>';
+ if(!e)return '<span class="actionPill mutedAction">BUILD DA VERIFICARE</span>';
+ const actions=[];
+ const defs=[['GADGET','gadgets',bestBuildItem(e,'gadget')],['SP','starPowers',bestBuildItem(e,'starPower')],['G1','gears',bestBuildItem(e,'gears',0)],['G2','gears',bestBuildItem(e,'gears',1)]];
+ for(const [label,type,item] of defs){
+   if(!item)continue;
+   const has=ownedNames(b,type).includes(norm(item.name));
+   actions.push('<span class="actionPill '+(has?'equipAction':'buyAction')+'">'+(has?'EQUIPAGGIA ':'COMPRA ')+esc(label)+'</span>');
+ }
+ if((b.power||0)<11)actions.unshift('<span class="actionPill powerAction">PORTA P11</span>');
+ return actions.slice(0,3).join('');
+}
 function miniBuild(b){
  const e=buildEntry(b);
- if(!e)return '<div class="miniBuild mutedBuild"><span class="miniState">META NON DISPONIBILE</span><span class="miniHint">build community da verificare</span></div>';
+ if(!e)return '<div class="miniBuild mutedBuild"><span class="miniState">BUILD N/D</span><span class="miniHint">nessun dato verificato</span></div>';
  const items=[
   ['G','gadgets',bestBuildItem(e,'gadget')],
   ['SP','starPowers',bestBuildItem(e,'starPower')],
@@ -51,11 +84,21 @@ function miniBuild(b){
  ];
  return '<div class="miniBuild">'+items.map(([label,type,item])=>{
    if(!item)return '<span class="miniItem unknown">'+label+' · —</span>';
-   const has=ownedNames(b,type).includes(norm(item.name));
+   const has=isOwnedAccount(b)&&ownedNames(b,type).includes(norm(item.name));
    const pick=item.pick!=null?' '+item.pick+'%':'';
    return '<span class="miniItem '+(has?'ownedMini':'buyMini')+'" title="'+esc(item.name)+'">'+label+' · '+(has?'✓':'＋')+(pick?'<em>'+pick+'</em>':'')+'</span>';
  }).join('')+'</div>';
 }
+function metaRankList(mode,map){
+ return allBrawlers().map(b=>({b,meta:metaEntry(b,mode,map)})).filter(x=>x.meta?.score!=null).sort((a,z)=>(z.meta.score-a.meta.score)||((a.meta.rank||999)-(z.meta.rank||999)));
+}
+function globalRankList(){return metaRankList('','Random').sort((a,z)=>(z.meta.score-a.meta.score)||((a.meta.rank||999)-(z.meta.rank||999)))}
+function metaRankOf(b,mode,map){
+ const list=metaRankList(mode,map);
+ const i=list.findIndex(x=>x.b.id===b.id||norm(x.b.name)===norm(b.name));
+ return i>=0?i+1:null;
+}
+function recommendationTag(b,mode,map){const s=metaScope(b,mode,map);return s==='NON DISPONIBILE'?'DATI N/D':s}
 function buildAdvisor(b){
  const e=buildEntry(b);
  if(!e)return '<section class="card"><div class="sectionTitle"><h3>Build Advisor</h3><span class="chip">DATI IN ATTESA</span></div><p class="small">Non abbiamo ancora una build community verificata per questo Brawler. Non inventiamo una scelta: verrà aggiunta con il prossimo sync.</p></section>';
@@ -68,17 +111,22 @@ function nav(){return '<nav class="nav">'+[['home','⌂','Home'],['play','▶','
 function shell(body){document.getElementById('app').innerHTML='<div class="app"><header class="top"><div class="brand"><div class="logo">Brawl <span>Helper</span></div><div class="sync">'+(active?'PROFILE':'NO PROFILE')+'</div></div><button class="profileBtn" onclick="profilePanel()">'+esc(active||'Profilo')+'</button></header><main class="content">'+body+'</main>'+nav()+'</div>'}
 function setTab(t){tab=t;selected=null;query='';filter='all';render()}
 
-function bcard(b,compact=false,mode=playMode,map=playMap){
- const o=owned(b),st=status(b),score=contextScore(b,mode,map),meta=buildEntry(b);
- return '<div class="card bcard" onclick="openB('+b.id+')"><div class="row"><img class="portrait" src="'+portrait(b)+'" onerror="this.style.opacity=.25"><div class="grow"><div class="bname">'+esc(b.name)+'</div><div class="small bMetaLine">Power '+b.power+' <span>·</span> Rank '+b.rank+' <span>·</span> '+fmt(b.trophies)+' 🏆</div><div class="chips"><span class="chip '+st[1]+'">'+st[0]+'</span><span class="chip '+(meta?'metaChip':'')+'">'+(meta?'META BUILD':'ACCOUNT')+'</span><span class="chip">Personal '+personalScore(b)+'</span></div>'+miniBuild(b)+'</div></div>'+(!compact?'<div class="chips"><span class="chip '+(o.gadgets?'ok':'miss')+'">G '+o.gadgets+'/2</span><span class="chip '+(o.stars?'ok':'miss')+'">★ '+o.stars+'/2</span><span class="chip '+(o.gears?'ok':'miss')+'">Gear '+o.gears+'/2</span><span class="chip '+(o.hc?'ok':'miss')+'">HC '+o.hc+'</span><span class="chip">Context '+score+'</span></div>':'')+'</div>'
+function bcard(b,compact=false,mode=playMode,map=playMap,rank=null,kind=''){
+ const o=owned(b),st=status(b),score=contextScore(b,mode,map),m=metaEntry(b,mode,map),metaRank=rank||metaRankOf(b,mode,map);
+ const ownedAccount=isOwnedAccount(b);
+ const titleRank=metaRank?'<span class="metaRank">#'+metaRank+'</span>':'';
+ const action=buildActionLine(b);
+ return '<div class="card bcard '+(kind==='recommended'?'recommendedCard':'')+'" onclick="openB('+b.id+')"><div class="row"><div class="rankBadge">'+titleRank+'</div><img class="portrait" src="'+portrait(b)+'" onerror="this.style.opacity=.25"><div class="grow"><div class="bname">'+esc(b.name)+'</div><div class="small bMetaLine">'+(ownedAccount?'P'+b.power+' · '+fmt(b.trophies)+' 🏆':'NON POSSEDUTO')+' <span>·</span> '+esc(metaScope(b,mode,map))+'</div><div class="chips"><span class="chip '+st[1]+'">'+(ownedAccount?st[0]:'DA SBLOCCARE')+'</span><span class="chip '+(m?'metaChip':'')+'">'+(m?'META':'N/D')+'</span><span class="chip">Score '+score+'</span></div>'+miniBuild(b)+'<div class="actionLine">'+action+'</div></div></div>'+(!compact?'<div class="chips detailChips"><span class="chip '+(o.gadgets?'ok':'miss')+'">G '+o.gadgets+'/2</span><span class="chip '+(o.stars?'ok':'miss')+'">SP '+o.stars+'/2</span><span class="chip '+(o.gears?'ok':'miss')+'">Gear '+o.gears+'/2</span><span class="chip '+(o.hc?'ok':'miss')+'">HC '+o.hc+'</span></div>':'')+'</div>'
 }
 
 function home(){
- const bs=[...P.brawlers].sort((a,b)=>personalScore(b)-personalScore(a));
- const upgrades=[...P.brawlers].filter(b=>b.power<11).sort((a,b)=>personalScore(b)-personalScore(a)).slice(0,4);
+ const my=metaRankList(playMode,playMap).filter(x=>isOwnedAccount(x.b)).sort((a,z)=>contextScore(z.b,playMode,playMap)-contextScore(a.b,playMode,playMap)).slice(0,5);
+ const myIds=new Set(my.map(x=>x.b.id));
+ const rec=metaRankList(playMode,playMap).filter(x=>!myIds.has(x.b.id)).slice(0,5);
+ const ctx=metaScope(my[0]?.b||rec[0]?.b,playMode,playMap);
  return '<section class="hero"><div class="eyebrow">ACCOUNT</div><h1>'+esc(P.name)+'</h1><div class="tag">'+esc(P.tag)+' · livello '+P.expLevel+'</div><div class="stats"><div class="stat"><b>'+fmt(P.trophies)+'</b><span>TROFEI</span></div><div class="stat"><b>'+P.brawlers.length+'</b><span>BRAWLER</span></div><div class="stat"><b>'+fmt(P['3vs3Victories'])+'</b><span>VITTORIE 3V3</span></div></div><div class="rank"><span>Ranked · '+esc(P.rankedRankName||'—')+'</span><b>'+fmt(P.rankedElo)+' Elo</b></div></section>'+
- '<section class="section"><div class="sectionTitle"><h2>Best For You</h2><span class="small">Personal Score</span></div><div class="notice">La selezione usa Power, trofei, progressione e build posseduta. Il meta live viene applicato solo quando è disponibile una snapshot verificata.</div>'+bs.slice(0,5).map(b=>bcard(b,true)).join('')+'</section>'+
- '<section class="section"><div class="sectionTitle"><h2>Upgrade Advisor</h2><span class="small">Opportunità</span></div>'+upgrades.map(b=>'<div class="action" onclick="openB('+b.id+')"><b>'+esc(b.name)+' · Power '+b.power+'</b><span class="small">'+fmt(b.trophies)+' trofei · '+buildLabel(b)+'</span></div>').join('')+'</section>'
+ '<section class="section"><div class="sectionTitle"><h2>Top 10 per te</h2><span class="small">'+esc(playMode)+' · '+esc(playMap)+'</span></div><div class="top10Legend"><span class="legendOwned">TUOI · combinazione migliore</span><span class="legendMeta">META · prossimi consigliati</span></div><div class="subhead">I TUOI 5</div>'+my.map((x,i)=>bcard(x.b,true,playMode,playMap,x.meta.rank||metaRankOf(x.b,playMode,playMap),'ownedTop')).join('')+'<div class="subhead">5 DA CONSIDERARE</div>'+rec.map(x=>bcard(x.b,true,playMode,playMap,x.meta.rank||metaRankOf(x.b,playMode,playMap),'recommended')).join('')+'</section>'+
+ '<section class="section"><div class="sectionTitle"><h2>Upgrade Advisor</h2><span class="small">Azioni immediate</span></div>'+my.slice(0,4).map(x=>'<div class="action" onclick="openB('+x.b.id+')"><b>'+esc(x.b.name)+' · Meta #'+(x.meta.rank||metaRankOf(x.b,playMode,playMap)||'—')+'</b><span class="small">'+buildActionLine(x.b)+'</span></div>').join('')+'</section>'
 }
 
 function brawlers(){
@@ -111,8 +159,10 @@ const MODES={
 };
 function play(){
  const names=MODES[playMode]||MODES.Ranked;
- const ready=[...P.brawlers].sort((a,b)=>contextScore(b,playMode,playMap)-contextScore(a,playMode,playMap));
- return '<section class="section"><div class="sectionTitle"><h2>Play</h2><span class="small">'+(META_STATE.loaded?'Meta + Account':'Account only')+'</span></div><div class="notice">Seleziona modalità e mappa. Il punteggio combina il profilo personale e, quando presente, la snapshot meta contestuale.</div><div class="filters">'+Object.keys(MODES).map(m=>'<button class="'+(playMode===m?'active':'')+'" onclick="playMode=\''+m+'\';playMap=\'Random\';render()">'+m+'</button>').join('')+'</div><select class="search" onchange="playMap=this.value;render()">'+names.map(m=>'<option '+(playMap===m?'selected':'')+'>'+m+'</option>').join('')+'</select><div class="context"><span>MODALITÀ</span><b>'+esc(playMode)+'</b><span>MAPPA</span><b>'+esc(playMap)+'</b></div><section class="section"><div class="sectionTitle"><h2>Top 5</h2><span class="small">'+esc(playMode)+' · '+esc(playMap)+'</span></div>'+ready.slice(0,5).map((b,i)=>'<div class="rankPick"><span class="num">'+(i+1)+'</span><div class="grow"><div class="card"><div class="row"><img class="portrait" src="'+portrait(b)+'"><div class="grow"><div class="bname">'+esc(b.name)+'</div><div class="small">Context Score '+contextScore(b,playMode,playMap)+' · '+recommendationTag(b,playMode,playMap)+'</div><div class="small">'+esc(why(b,playMode,playMap))+'</div></div></div></div></div></div>').join('')+'</section></section>'
+ const ranked=metaRankList(playMode,playMap);
+ const ready=ranked.filter(x=>isOwnedAccount(x.b)).sort((a,z)=>contextScore(z.b,playMode,playMap)-contextScore(a.b,playMode,playMap));
+ const recommended=ranked.filter(x=>!isOwnedAccount(x.b)).slice(0,5);
+ return '<section class="section"><div class="sectionTitle"><h2>Play</h2><span class="small">'+esc(metaScope(ready[0]?.b||recommended[0]?.b,playMode,playMap))+'</span></div><div class="notice">Cambiando modalità o mappa cambia la classifica. La Top 5 personale considera solo i Brawler posseduti; i consigliati mantengono il loro rank reale nel meta.</div><div class="filters">'+Object.keys(MODES).map(m=>'<button class="'+(playMode===m?'active':'')+'" onclick="playMode=\''+m+'\';playMap=\'Random\';render()">'+m+'</button>').join('')+'</div><select class="search" onchange="playMap=this.value;render()">'+names.map(m=>'<option '+(playMap===m?'selected':'')+'>'+m+'</option>').join('')+'</select><div class="context"><span>MODALITÀ</span><b>'+esc(playMode)+'</b><span>MAPPA</span><b>'+esc(playMap)+'</b></div><section class="section"><div class="sectionTitle"><h2>I tuoi 5</h2><span class="small">combinazione meta + account</span></div>'+ready.slice(0,5).map((x,i)=>'<div class="rankPick"><span class="num">'+(i+1)+'</span><div class="grow">'+bcard(x.b,true,playMode,playMap,x.meta.rank||metaRankOf(x.b,playMode,playMap),'ownedTop')+'</div></div>').join('')+'</section><section class="section"><div class="sectionTitle"><h2>Meta da considerare</h2><span class="small">non posseduti</span></div>'+recommended.map(x=>'<div class="rankPick"><span class="num">#'+(x.meta.rank||metaRankOf(x.b,playMode,playMap)||'—')+'</span><div class="grow">'+bcard(x.b,true,playMode,playMap,x.meta.rank||metaRankOf(x.b,playMode,playMap),'recommended')+'</div></div>').join('')+'</section></section>'
 }
 
 function upgrade(){
