@@ -40,6 +40,22 @@ function advisorRow(b,label,type,item){
  const pct=item.pick!=null?' · '+item.pick+'% pick':'';
  return '<div class="advisorRow"><div class="advisorIcon">'+compIcon(type,item)+'</div><div class="grow"><b>'+esc(item.name)+'</b><span class="small">'+esc(label)+pct+'</span></div><span class="chip '+(state==='EQUIPAGGIA'?'ok':'')+'">'+state+'</span></div>';
 }
+function miniBuild(b){
+ const e=buildEntry(b);
+ if(!e)return '<div class="miniBuild mutedBuild"><span class="miniState">META NON DISPONIBILE</span><span class="miniHint">build community da verificare</span></div>';
+ const items=[
+  ['G','gadgets',bestBuildItem(e,'gadget')],
+  ['SP','starPowers',bestBuildItem(e,'starPower')],
+  ['G1','gears',bestBuildItem(e,'gears',0)],
+  ['G2','gears',bestBuildItem(e,'gears',1)]
+ ];
+ return '<div class="miniBuild">'+items.map(([label,type,item])=>{
+   if(!item)return '<span class="miniItem unknown">'+label+' · —</span>';
+   const has=ownedNames(b,type).includes(norm(item.name));
+   const pick=item.pick!=null?' '+item.pick+'%':'';
+   return '<span class="miniItem '+(has?'ownedMini':'buyMini')+'" title="'+esc(item.name)+'">'+label+' · '+(has?'✓':'＋')+(pick?'<em>'+pick+'</em>':'')+'</span>';
+ }).join('')+'</div>';
+}
 function buildAdvisor(b){
  const e=buildEntry(b);
  if(!e)return '<section class="card"><div class="sectionTitle"><h3>Build Advisor</h3><span class="chip">DATI IN ATTESA</span></div><p class="small">Non abbiamo ancora una build community verificata per questo Brawler. Non inventiamo una scelta: verrà aggiunta con il prossimo sync.</p></section>';
@@ -53,8 +69,8 @@ function shell(body){document.getElementById('app').innerHTML='<div class="app">
 function setTab(t){tab=t;selected=null;query='';filter='all';render()}
 
 function bcard(b,compact=false,mode=playMode,map=playMap){
- const o=owned(b),st=status(b),score=contextScore(b,mode,map);
- return '<div class="card bcard" onclick="openB('+b.id+')"><div class="row"><img class="portrait" src="'+portrait(b)+'" onerror="this.style.opacity=.25"><div class="grow"><div class="bname">'+esc(b.name)+'</div><div class="small">Power '+b.power+' · Rank '+b.rank+' · '+fmt(b.trophies)+' 🏆</div><div class="chips"><span class="chip '+st[1]+'">'+st[0]+'</span><span class="chip">Personal '+personalScore(b)+'</span></div></div></div>'+(!compact?'<div class="chips"><span class="chip '+(o.gadgets?'ok':'miss')+'">G '+o.gadgets+'/2</span><span class="chip '+(o.stars?'ok':'miss')+'">★ '+o.stars+'/2</span><span class="chip '+(o.gears?'ok':'miss')+'">Gear '+o.gears+'/2</span><span class="chip '+(o.hc?'ok':'miss')+'">HC '+o.hc+'</span><span class="chip">Context '+score+'</span></div>':'')+'</div>'
+ const o=owned(b),st=status(b),score=contextScore(b,mode,map),meta=buildEntry(b);
+ return '<div class="card bcard" onclick="openB('+b.id+')"><div class="row"><img class="portrait" src="'+portrait(b)+'" onerror="this.style.opacity=.25"><div class="grow"><div class="bname">'+esc(b.name)+'</div><div class="small bMetaLine">Power '+b.power+' <span>·</span> Rank '+b.rank+' <span>·</span> '+fmt(b.trophies)+' 🏆</div><div class="chips"><span class="chip '+st[1]+'">'+st[0]+'</span><span class="chip '+(meta?'metaChip':'')+'">'+(meta?'META BUILD':'ACCOUNT')+'</span><span class="chip">Personal '+personalScore(b)+'</span></div>'+miniBuild(b)+'</div></div>'+(!compact?'<div class="chips"><span class="chip '+(o.gadgets?'ok':'miss')+'">G '+o.gadgets+'/2</span><span class="chip '+(o.stars?'ok':'miss')+'">★ '+o.stars+'/2</span><span class="chip '+(o.gears?'ok':'miss')+'">Gear '+o.gears+'/2</span><span class="chip '+(o.hc?'ok':'miss')+'">HC '+o.hc+'</span><span class="chip">Context '+score+'</span></div>':'')+'</div>'
 }
 
 function home(){
@@ -101,7 +117,7 @@ function play(){
 
 function upgrade(){
  const list=[...P.brawlers].filter(b=>b.power<11||owned(b).gears<2||owned(b).hc<1).sort((a,b)=>personalScore(b)-personalScore(a)).slice(0,20);
- return '<section class="section"><div class="sectionTitle"><h2>Upgrade Advisor</h2><span class="small">20 priorità</span></div><div class="notice">Questo indice misura l’opportunità sul tuo account. Non è un ranking del meta.</div>'+list.map((b,i)=>'<div class="upgradeRow" onclick="openB('+b.id+')"><span class="num">'+(i+1)+'</span><div class="grow"><b>'+esc(b.name)+'</b><span class="small">Power '+b.power+' · '+fmt(b.trophies)+' trofei · Personal '+personalScore(b)+'</span></div><span class="score">'+(b.power<11?'POWER':'BUILD')+'</span></div>').join('')+'</section>'
+ return '<section class="section"><div class="sectionTitle"><h2>Upgrade Advisor</h2><span class="small">20 opportunità</span></div><div class="notice">Qui vediamo cosa hai già e cosa manca rispetto alla build community disponibile.</div>'+list.map((b,i)=>'<div class="upgradeRow" onclick="openB('+b.id+')"><span class="num">'+(i+1)+'</span><div class="grow"><b class="upgradeName">'+esc(b.name)+'</b><span class="small upgradeMetaLine">Power '+b.power+' · '+fmt(b.trophies)+' trofei · Personal '+personalScore(b)+'</span>'+miniBuild(b)+'</div><span class="score">'+(b.power<11?'POWER':'BUILD')+'</span></div>').join('')+'</section>'
 }
 
 function meta(){
