@@ -11,7 +11,8 @@ const CATALOG_STATE={loaded:false,count:0,entries:{}};
 function loadProfiles(){try{return JSON.parse(localStorage.getItem('bh_profiles')||'[]')}catch{return[]}}
 function saveProfiles(){localStorage.setItem('bh_profiles',JSON.stringify(profiles))}
 function img(kind,id){return 'https://cdn.brawlify.com/'+kind+'/'+id+'.png'}
-function portrait(b){return img('brawlers/borders',b.id)}
+function catalogEntry(b){if(!b)return null;return CATALOG_STATE.entries[b.name]||Object.values(CATALOG_STATE.entries||{}).find(x=>x&&x.id===b.id)||null}
+function portrait(b){return catalogEntry(b)?.imageUrl||b?.imageUrl||img('brawlers/borders',b?.id)}
 function owned(b){if(!b)return {gadgets:0,stars:0,gears:0,hc:0};return {gadgets:b.gadgets?.length||0,stars:b.starPowers?.length||0,gears:b.gears?.length||0,hc:b.hyperCharges?.length||0}}
 function readiness(b){if(!b)return 0;const o=owned(b);return Math.min(100,Math.round((b.power||1)*5+Math.min(o.gadgets,2)*5+Math.min(o.stars,2)*5+Math.min(o.gears,2)*5+Math.min(o.hc,1)*8))}
 function powerScore(b){if(!b)return 0;return Math.min(100,(b.power||1)*7+(b.trophies||0)/20)}
@@ -41,7 +42,7 @@ function metaScope(b,mode,map){
 function contextScore(b,mode,map){if(!b)return 0;const m=metaEntry(b,mode,map);const personal=personalScore(b);const meta=m?.score??50;return Math.round(meta*.55+personal*.45)}
 function status(b){const r=readiness(b);if((b.power||0)>=11&&r>=75)return ['PLAY NOW','ok'];if((b.power||0)>=9)return ['UPGRADE TO META',''];return ['LOW POWER','miss']}
 function compIcon(type,item){if(!item)return '';const path={gadget:'gadgets/borderless',star:'star-powers/borderless',gear:'gears/regular',hc:'hypercharges/regular'}[type];return path?'<img class="compIcon" src="'+img(path,item.id)+'" onerror="this.style.display=\'none\'">':''}
-function comp(type,label,item){return '<div class="comp '+(item?'owned':'missing')+'">'+compIcon(type,item)+'<div><span>'+label+'</span><b>'+esc(item?.name||'Not owned')+'</b></div></div>'}
+function comp(type,label,item){return '<div class="comp '+(item?'owned':'missing')+'">'+compIcon(type,item)+'<div><span>'+label+'</span><b>'+esc(item?.name||'Non posseduto')+'</b></div></div>'}
 function first(a){return Array.isArray(a)&&a.length?a[0]:null}
 function buildLabel(b){const o=owned(b);return [o.gadgets?'Gadget':'Gadget missing',o.stars?'Star Power':'Star Power missing',o.gears?'Gear':'Gear missing',o.hc?'Hypercharge':'Hypercharge missing'].join(' · ')}
 function why(b,mode,map){const m=metaEntry(b,mode,map);const reasons=[];if(readiness(b)>=75)reasons.push('build già pronta');if(b.power>=11)reasons.push('Power 11');if((b.trophies||0)>=500)reasons.push('buona esperienza sul Brawler');if(m?.reason)reasons.push(m.reason);if(!reasons.length)reasons.push('dati account disponibili');return reasons.join(' · ')}
@@ -194,7 +195,7 @@ async function loadCatalog(){
   const d=await r.json();
   const list=d.list||[];
   CATALOG_STATE.loaded=true;CATALOG_STATE.count=list.length;
-  CATALOG_STATE.entries=Object.fromEntries(list.map(x=>[x.name,x]));
+  CATALOG_STATE.entries=Object.fromEntries(list.filter(x=>x&&x.id&&x.name).map(x=>[x.name,x]));list.forEach(b=>{const im=new Image();if(b.imageUrl)im.src=b.imageUrl;(b.gadgets||[]).concat(b.starPowers||[]).forEach(x=>{if(x.imageUrl){const ci=new Image();ci.src=x.imageUrl}})});
  }catch(e){console.warn('Catalogo BrawlAPI non disponibile',e)}
 }
 async function loadMeta(){
