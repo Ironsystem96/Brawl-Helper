@@ -70,7 +70,7 @@ async function main(){
   let noffOk=0,btOk=0;
 
   for(const b of list){
-    const slug=b.path||b.hash||String(b.name).toLowerCase().replace(/[^a-z0-9]+/g,'-');
+    const slug=String(b.name).toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
     let build=previous.entries?.[b.name]||null;
     try{
       const parsed=parseNoff(await get(NOFF+encodeURIComponent(slug)));
