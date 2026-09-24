@@ -1,5 +1,9 @@
 name: Sync Brawl Helper Meta
 on:
+  push:
+    paths:
+      - 'backend/sync-meta.js'
+      - '.github/workflows/update-meta.yml'
   schedule:
     - cron: '17 2 * * *'
       timezone: 'Europe/Rome'
