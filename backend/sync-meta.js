@@ -160,7 +160,7 @@ async function main(){
     const modesOut={};
     for(const [modeKey,md] of Object.entries(modeMeta)){
       const r=md.entries?.[b.name];
-      if(r)modesOut[modeKey]={score:r.winRate,rank:r.rank,winRate:r.adjustedWinRate,pickRate:r.pickRate,reason:md.name+' Wilson-adjusted win rate',source:'BrawlMetrics',confidence:r.rank<=10?'medium':'low'};
+      if(r)modesOut[modeKey]={score:r.winRate,rank:r.rank,winRate:r.winRate,pickRate:r.pickRate,reason:md.name+' Wilson-adjusted win rate',source:'BrawlMetrics',confidence:r.rank<=10?'medium':'low'};
     }
     metaEntries[b.name]={
       default:{score,rank:null,reason:base!=null?'Brawl Time Ninja adjusted win rate':'Community build data only',source:base!=null?'Brawl Time Ninja':'NOFF',confidence:base!=null?'medium':'low'},
@@ -176,6 +176,6 @@ async function main(){
   if(noffOk<Math.floor(list.length*.5) || btOk<Math.floor(list.length*.5) || modeOk<3) {
     throw new Error('Sync quality gate failed: NOFF '+noffOk+'/'+list.length+', BrawlTime '+btOk+'/'+list.length+', modes '+modeOk+'/'+Object.keys(modeSlugs).length);
   }
-  console.log(JSON.stringify({updatedAt:now,brawlers:list.length,noffOk,btOk,modeOk,totalModes:modes.length},null,2));
+  console.log(JSON.stringify({updatedAt:now,brawlers:list.length,noffOk,btOk,modeOk,totalModes:Object.keys(modeSlugs).length},null,2));
 }
 main().catch(e=>{console.error(e);process.exit(1)});
