@@ -114,7 +114,10 @@ async function main(){
 
   function parseModeRanking(html,brawlers){
     const text=clean(html);
-    const section=pickSection(text,'Best Brawlers for','Tier List');
+    const low=text.toLowerCase();
+    const a=low.lastIndexOf('best brawlers for');
+    const b=low.indexOf('best teams',a+1);
+    const section=text.slice(a<0?0:a,b<0?text.length:b);
     const out={};
     for(const b of brawlers){
       const i=section.toLowerCase().indexOf(String(b.name).toLowerCase());
