@@ -4,7 +4,7 @@
   "start_url": "./",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#10131a",
+  "background_color": "#e9edf3",
   "theme_color": "#10131a",
   "description": "Personal Brawl Stars companion and progression advisor."
 }
