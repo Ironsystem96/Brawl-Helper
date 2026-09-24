@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffcf33">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="manifest" href="./manifest.webmanifest">
+<title>Brawl Helper</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#10131f;color:#fff;font-family:system-ui,-apple-system,Segoe UI,sans-serif}header{padding:18px 16px 12px;background:linear-gradient(180deg,#202a45,#10131f);position:sticky;top:0;z-index:2}h1{margin:0;font-size:25px}small{opacity:.7}.pill{display:inline-block;margin-top:8px;padding:6px 10px;border-radius:999px;background:#26324f;font-size:12px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:14px}.card{background:#1b2132;border:1px solid #303952;border-radius:16px;padding:12px;min-height:130px}.portrait{width:64px;height:64px;border-radius:14px;object-fit:cover;background:#303952}.name{font-weight:800;margin-top:7px}.row{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}.tag{font-size:11px;padding:5px 7px;border-radius:8px;background:#303952}.nav{position:fixed;bottom:0;left:0;right:0;background:#171b2a;border-top:1px solid #303952;display:flex;justify-content:space-around;padding:8px 4px calc(8px + env(safe-area-inset-bottom));z-index:3}.nav button{background:none;border:0;color:#aeb7cf;font-weight:700;padding:7px;font-size:11px}.nav button.active{color:#ffcf33}.content{padding-bottom:90px}.hero{margin:14px;padding:16px;border-radius:18px;background:linear-gradient(135deg,#3b2b73,#1d4770)}.hero h2{margin:0 0 5px}.section{padding:0 14px}.muted{color:#aeb7cf;font-size:13px}
+</style>
+</head>
+<body>
+<header><h1>Brawl Helper</h1><small>Personal competitive companion</small><div class="pill">SMARTPHONE • LOCAL FIRST</div></header>
+<div id="app" class="content"></div>
+<nav class="nav">
+<button data-tab="home" class="active">Home</button><button data-tab="play">Play</button><button data-tab="brawlers">Brawlers</button><button data-tab="upgrade">Upgrade</button><button data-tab="meta">Meta</button>
+</nav>
+<script src="./app.js"></script>
+<script>if("serviceWorker" in navigator) navigator.serviceWorker.register("./sw.js").catch(()=>{});</script>
+</body>
+</html>
