@@ -4,6 +4,7 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&
 const fmt=n=>Number(n||0).toLocaleString('it-IT');
 const apiBase=()=>localStorage.getItem('bh_api_base')||'';
 const META_STATE={loaded:false,source:null,updatedAt:null,entries:{}};
+const DB_STATE={loaded:false,version:null,patch:null,lastSyncedAt:null,changelog:[]};
 
 function loadProfiles(){try{return JSON.parse(localStorage.getItem('bh_profiles')||'[]')}catch{return[]}}
 function saveProfiles(){localStorage.setItem('bh_profiles',JSON.stringify(profiles))}
@@ -84,7 +85,20 @@ function meta(){
  return '<section class="section"><h2>Meta</h2><div class="notice"><b>'+ (META_STATE.loaded?'Snapshot meta caricata':'Meta live non ancora collegato') +'</b><br>'+(META_STATE.loaded?'Fonte: '+esc(META_STATE.source||'snapshot')+' · Aggiornamento: '+esc(META_STATE.updatedAt||'—'):'Nessuna percentuale o tier viene inventata. Il backend potrà fornire snapshot per patch, modalità e mappa.')+'</div><div class="card"><b>Account snapshot</b><div class="grid"><div class="action"><b>'+fmt(P.trophies)+'</b><span class="small">Trofei</span></div><div class="action"><b>'+esc(P.rankedRankName||'—')+'</b><span class="small">Ranked</span></div></div></div>'+(names.length?names.map(n=>{const b=P.brawlers.find(x=>x.name===n);return b?bcard(b,true):''}).join(''):'<div class="card"><b>In attesa del meta provider</b><p class="small">La struttura è pronta per ricevere dati verificabili senza modificare il client.</p></div>')+'</section>'
 }
 
-async function loadMeta(){try{const r=await fetch('data/meta.json',{cache:'no-store'});if(!r.ok)return;const d=await r.json();META_STATE.loaded=!!d.updatedAt;META_STATE.source=d.source;META_STATE.updatedAt=d.updatedAt;META_STATE.entries=d.entries||{}}catch(e){console.warn('Meta snapshot non disponibile',e)}}
+async function loadMeta(){
+  try{
+    const r=await fetch('data/meta.json',{cache:'no-store'});
+    if(r.ok){const d=await r.json();META_STATE.loaded=!!d.updatedAt;META_STATE.source=d.source;META_STATE.updatedAt=d.updatedAt;META_STATE.entries=d.entries||{}}
+  }catch(e){console.warn('Meta snapshot non disponibile',e)}
+  try{
+    const base=apiBase();
+    const dbUrl=base?base+'/api/database':'data/game-db.json';
+    const clUrl=base?base+'/api/changelog':'data/changelog.json';
+    const [dr,cr]=await Promise.all([fetch(dbUrl,{cache:'no-store'}),fetch(clUrl,{cache:'no-store'})]);
+    if(dr.ok){const d=await dr.json();DB_STATE.loaded=true;DB_STATE.version=d.databaseVersion||null;DB_STATE.patch=d.patch?.id||null;DB_STATE.lastSyncedAt=d.lastSyncedAt||null}
+    if(cr.ok){const c=await cr.json();DB_STATE.changelog=c.releases||[]}
+  }catch(e){console.warn('Game database non disponibile',e)}
+}
 
 function profilePanel(){
  const rows=profiles.map(p=>'<div class="profileRow"><button onclick="activate(\\''+esc(p.name)+'\\')"><b>'+esc(p.name)+'</b><span>'+esc(p.tag)+(p.test?' · TEST':'')+'</span></button><button class="del" onclick="removeProfile(\\''+esc(p.name)+'\\')">×</button></div>').join('');
