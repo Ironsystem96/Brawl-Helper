@@ -25,10 +25,22 @@
     "hypercharges": {},
     "gameModes": {},
     "maps": {},
-    "rankedSeasons": {}
+    "rankedSeasons": {},
+    "brawlersCount": 106,
+    "catalogFile": "data/brawlers.json"
   },
   "meta": {
     "status": "foundation",
-    "note": "The database schema is ready. Public game data and account data are intentionally separated."
+    "note": "The database schema is ready. Public game data and account data are intentionally separated.",
+    "nextSyncTargets": [
+      "brawlers",
+      "gadgets",
+      "starPowers",
+      "gears",
+      "hypercharges",
+      "gameModes",
+      "maps",
+      "rankedSeasons"
+    ]
   }
 }
