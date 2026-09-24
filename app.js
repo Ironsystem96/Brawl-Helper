@@ -111,12 +111,22 @@ function meta(){
  '<div class="notice"><b>'+(META_STATE.loaded?'Snapshot meta caricata':'Meta live non ancora collegato')+'</b><br>'+
  (META_STATE.loaded?'Fonte: '+esc(META_STATE.source||'snapshot')+' · Aggiornamento: '+esc(META_STATE.updatedAt||'—'):'Il database di gioco e il changelog ufficiale sono separati dai dati personali dell’account.')+
  '</div>'+
- '<div class="card"><b>Game Database</b><div class="grid"><div class="action"><b>'+esc(DB_STATE.patch||'—')+'</b><span class="small">Patch corrente</span></div><div class="action"><b>'+esc(DB_STATE.version||'—')+'</b><span class="small">DB version</span></div></div><p class="small">Ultimo sync: '+esc(DB_STATE.lastSyncedAt||'—')+'</p></div>'+
+ '<div class="card"><b>Game Database</b><div class="grid"><div class="action"><b>'+fmt(CATALOG_STATE.count)+'</b><span class="small">Brawler nel catalogo</span></div><div class="action"><b>'+esc(DB_STATE.patch||'—')+'</b><span class="small">Patch corrente</span></div><div class="action"><b>'+esc(DB_STATE.version||'—')+'</b><span class="small">DB version</span></div></div><p class="small">Ultimo sync: '+esc(DB_STATE.lastSyncedAt||'—')+'</p></div>'+
  '<div class="card"><b>Changelog ufficiale</b>'+ (releases.length?releases.slice(0,5).map(c=>'<div class="action"><b>'+esc(c.title)+'</b><span class="small">'+esc(c.publishedAt||'')+' · '+esc(c.highlights?.[0]||c.status||'Fonte ufficiale Supercell')+'</span></div>').join(''):'<p class="small">Nessun changelog disponibile.</p>')+'</div>'+
  (names.length?'<div class="card"><b>Meta snapshot</b>'+names.map(n=>{const b=P.brawlers.find(x=>x.name===n);return b?bcard(b,true):''}).join('')+'</div>':'<div class="card"><b>Meta provider</b><p class="small">La struttura è pronta per ricevere snapshot verificabili per patch, modalità e mappa.</p></div>')+
  '</section>'
 }
 
+async function loadCatalog(){
+ try{
+  const r=await fetch('https://api.brawlapi.com/v1/brawlers',{cache:'no-store'});
+  if(!r.ok)throw new Error('BrawlAPI HTTP '+r.status);
+  const d=await r.json();
+  const list=d.list||[];
+  CATALOG_STATE.loaded=true;CATALOG_STATE.count=list.length;
+  CATALOG_STATE.entries=Object.fromEntries(list.map(x=>[x.name,x]));
+ }catch(e){console.warn('Catalogo BrawlAPI non disponibile',e)}
+}
 async function loadMeta(){
   try{
     const r=await fetch('data/meta.json',{cache:'no-store'});
@@ -152,5 +162,5 @@ function openB(id){selected=id;render()}
 function render(){if(!P){shell('<section class="hero"><div class="eyebrow">ACCOUNT</div><h1>Nessun profilo attivo</h1><p class="muted">Apri Profili e aggiungi il tuo Player Tag. Il profilo BlackShark è disponibile solo come ambiente di test.</p><button class="primary" onclick="profilePanel()">Gestisci profili</button></section>');return}if(selected)shell(detail());else if(tab==='home')shell(home());else if(tab==='brawlers')shell(brawlers());else if(tab==='play')shell(play());else if(tab==='upgrade')shell(upgrade());else shell(meta())}
 function showFatal(e){document.getElementById('app').innerHTML='<div style="min-height:100vh;background:#10131a;color:#fff;font-family:Arial,sans-serif;padding:28px;box-sizing:border-box"><h1>Brawl Helper</h1><p>Si è verificato un errore di caricamento.</p><pre style="white-space:pre-wrap;color:#ff9b9b">'+esc(e?.message||e)+'</pre><button style="padding:14px 18px;border:0;border-radius:12px" onclick="location.reload()">Riprova</button></div>'}
 function loading(){document.getElementById('app').innerHTML='<div style="min-height:100vh;background:#10131a;color:#fff;font-family:Arial,sans-serif;display:flex;align-items:center;justify-content:center"><div style="text-align:center"><div style="font-size:28px;font-weight:800">Brawl Helper</div><div style="opacity:.65;margin-top:8px">Caricamento profilo…</div></div></div>'}
-async function boot(){try{loading();await loadMeta();let testProfile=profiles.find(x=>x.test);if(!testProfile){testProfile={name:'BlackShark TEST',tag:'#22QYOQRGY',test:true};profiles=[testProfile,...profiles];saveProfiles()}let p=profiles.find(x=>x.name===active);if(!p||(!apiBase()&&!p.test)){p=testProfile;active=p.name;localStorage.setItem('bh_active',active)}else{active=p.name;localStorage.setItem('bh_active',active)}await loadProfile(p);if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{})}catch(e){showFatal(e)}}
+async function boot(){try{loading();await Promise.all([loadMeta(),loadCatalog()]);let testProfile=profiles.find(x=>x.test);if(!testProfile){testProfile={name:'BlackShark TEST',tag:'#22QYOQRGY',test:true};profiles=[testProfile,...profiles];saveProfiles()}let p=profiles.find(x=>x.name===active);if(!p||(!apiBase()&&!p.test)){p=testProfile;active=p.name;localStorage.setItem('bh_active',active)}else{active=p.name;localStorage.setItem('bh_active',active)}await loadProfile(p);if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{})}catch(e){showFatal(e)}}
 boot().catch(showFatal);
