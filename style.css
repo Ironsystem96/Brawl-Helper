@@ -96,3 +96,4 @@ button{cursor:pointer}
  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.001ms!important}
  ::view-transition-old(root),::view-transition-new(root){animation:none!important}
 }
+.miniItem{display:inline-flex;align-items:center;gap:4px}.miniItem .compIcon{width:22px;height:22px;filter:grayscale(100%)}.miniItem:hover .compIcon{filter:grayscale(0);transform:scale(1.06)}.miniItem b{font-size:8px}.miniItem em{font-size:8px}
