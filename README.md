@@ -12,10 +12,12 @@ Companion app non ufficiale per Brawl Stars.
 
 ## Roadmap tecnica
 1. Backend sicuro + cache account.
-2. Meta snapshot stagione/patch/modalità/mappa.
-3. Asset cache locale.
-4. Recommendation engine.
-5. Capacitor/Android Studio -> APK/AAB.
+2. Game Database versionato: brawler, componenti, modalità, mappe, Ranked e patch.
+3. Changelog ufficiale Supercell indicizzato e aggiornabile.
+4. Meta snapshot stagione/patch/modalità/mappa.
+5. Asset cache locale.
+6. Recommendation engine.
+7. Capacitor/Android Studio -> APK/AAB.
 6. AdMob e privacy/consenso.
 7. QA e pubblicazione.
 
