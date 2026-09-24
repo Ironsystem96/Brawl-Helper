@@ -82,7 +82,15 @@ function upgrade(){
 
 function meta(){
  const names=Object.keys(META_STATE.entries);
- return '<section class="section"><h2>Meta</h2><div class="notice"><b>'+ (META_STATE.loaded?'Snapshot meta caricata':'Meta live non ancora collegato') +'</b><br>'+(META_STATE.loaded?'Fonte: '+esc(META_STATE.source||'snapshot')+' · Aggiornamento: '+esc(META_STATE.updatedAt||'—'):'Nessuna percentuale o tier viene inventata. Il backend potrà fornire snapshot per patch, modalità e mappa.')+'</div><div class="card"><b>Account snapshot</b><div class="grid"><div class="action"><b>'+fmt(P.trophies)+'</b><span class="small">Trofei</span></div><div class="action"><b>'+esc(P.rankedRankName||'—')+'</b><span class="small">Ranked</span></div></div></div>'+(names.length?names.map(n=>{const b=P.brawlers.find(x=>x.name===n);return b?bcard(b,true):''}).join(''):'<div class="card"><b>In attesa del meta provider</b><p class="small">La struttura è pronta per ricevere dati verificabili senza modificare il client.</p></div>')+'</section>'
+ const releases=DB_STATE.changelog||[];
+ return '<section class="section"><h2>Meta & Database</h2>'+
+ '<div class="notice"><b>'+(META_STATE.loaded?'Snapshot meta caricata':'Meta live non ancora collegato')+'</b><br>'+
+ (META_STATE.loaded?'Fonte: '+esc(META_STATE.source||'snapshot')+' · Aggiornamento: '+esc(META_STATE.updatedAt||'—'):'Il database di gioco e il changelog ufficiale sono separati dai dati personali dell’account.')+
+ '</div>'+
+ '<div class="card"><b>Game Database</b><div class="grid"><div class="action"><b>'+esc(DB_STATE.patch||'—')+'</b><span class="small">Patch corrente</span></div><div class="action"><b>'+esc(DB_STATE.version||'—')+'</b><span class="small">DB version</span></div></div><p class="small">Ultimo sync: '+esc(DB_STATE.lastSyncedAt||'—')+'</p></div>'+
+ '<div class="card"><b>Changelog ufficiale</b>'+ (releases.length?releases.slice(0,5).map(c=>'<div class="action"><b>'+esc(c.title)+'</b><span class="small">'+esc(c.publishedAt||'')+' · '+esc(c.highlights?.[0]||c.status||'Fonte ufficiale Supercell')+'</span></div>').join(''):'<p class="small">Nessun changelog disponibile.</p>')+'</div>'+
+ (names.length?'<div class="card"><b>Meta snapshot</b>'+names.map(n=>{const b=P.brawlers.find(x=>x.name===n);return b?bcard(b,true):''}).join('')+'</div>':'<div class="card"><b>Meta provider</b><p class="small">La struttura è pronta per ricevere snapshot verificabili per patch, modalità e mappa.</p></div>')+
+ '</section>'
 }
 
 async function loadMeta(){
