@@ -105,52 +105,50 @@ async function main(){
   ],note:'Automatically synchronized community/build/statistics snapshot. Values are source data, not official Supercell recommendations.',entries};
   fs.writeFileSync(BUILD_PATH,JSON.stringify(buildMeta,null,2)+'\n');
 
-  // Contextual meta: mode-level rankings from Brawl Time Ninja.
-  // Global and mode data stay separate so the UI can show the actual context rank.
-  const modesResp=await (await fetch('https://api.brawlapi.com/v1/gamemodes',{headers:{'user-agent':'BrawlHelper-MetaSync/1.0'}})).json();
-  const modes=(modesResp.list||[]).filter(m=>!m.disabled);
+  // Contextual meta: mode-level rankings from BrawlMetrics.
+  const modeSlugs={
+    'Ranked':'ranked',
+    'Gem Grab':'gem-grab',
+    'Heist':'heist',
+    'Bounty':'bounty',
+    'Brawl Ball':'brawl-ball',
+    'Hot Zone':'hot-zone',
+    'Knockout':'knockout',
+    'Solo Showdown':'solo-showdown'
+  };
   const modeMeta={};
   let modeOk=0;
-
-  function parseModeRanking(html,brawlers){
+  function parseBrawlMetricsRanking(html,brawlers){
     const text=clean(html);
     const low=text.toLowerCase();
-    const a=low.lastIndexOf('best brawlers for');
-    const b=low.indexOf('best teams',a+1);
-    const section=text.slice(a<0?0:a,b<0?text.length:b);
+    const a=low.lastIndexOf('full brawler rankings');
+    const section=text.slice(a<0?0:a);
+    const sectionLow=section.toLowerCase();
     const out={};
     for(const b of brawlers){
-      const i=section.toLowerCase().indexOf(String(b.name).toLowerCase());
+      const i=sectionLow.indexOf(String(b.name).toLowerCase());
       if(i<0)continue;
-      const before=section.slice(Math.max(0,i-32),i);
-      const after=section.slice(i+String(b.name).length,i+String(b.name).length+80);
-      const rm=before.match(/(\d+)\s*$/);
-      const sm=after.match(/(\d+(?:\.\d+)?)%\s+(\d+(?:\.\d+)?)%/);
-      if(rm&&sm)out[b.name]={rank:Number(rm[1]),adjustedWinRate:Number(sm[1]),pickRate:Number(sm[2])};
+      const before=section.slice(Math.max(0,i-140),i);
+      const after=section.slice(i+String(b.name).length,i+String(b.name).length+120);
+      const rm=before.match(/(\d+)\s+[A-Za-z0-9 .&'’+\-]+$/);
+      const sm=after.match(/(?:S\+|S|A|B|C|D)\s+(\d+(?:\.\d+)?)%\s+(\d+(?:\.\d+)?)%/);
+      if(rm&&sm)out[b.name]={rank:Number(rm[1]),winRate:Number(sm[1]),pickRate:Number(sm[2])};
     }
     return out;
   }
-
-  for(const mode of modes){
-    const slug=mode.hash||mode.scHash;
-    if(!slug)continue;
+  for(const [modeName,slug] of Object.entries(modeSlugs)){
     try{
-      const html=await get('https://brawltime.ninja/tier-list/mode/'+encodeURIComponent(String(slug).toLowerCase()));
-      const ranking=parseModeRanking(html,list);
-      if(Object.keys(ranking).length>=Math.min(10,list.length)){
-        modeMeta[mode.scHash||mode.hash]={
-          name:mode.name,
-          hash:mode.hash,
-          sourceUrl:'https://brawltime.ninja/tier-list/mode/'+encodeURIComponent(String(slug).toLowerCase()),
-          updatedAt:now,
-          entries:ranking
-        };
+      const url='https://brawlmetrics.gg/tier-list/'+slug;
+      const html=await get(url);
+      const ranking=parseBrawlMetricsRanking(html,list);
+      const sample=(clean(html).match(/([\d,]+)\s+battles\s+analyzed/i)||[])[1];
+      if(Object.keys(ranking).length>=Math.min(50,list.length)){
+        modeMeta[modeName]={name:modeName,sourceUrl:url,updatedAt:now,sample:sample?Number(sample.replace(/,/g,'')):null,entries:ranking};
         modeOk++;
       }
     }catch(e){}
     await sleep(70);
   }
-
   const metaEntries={};
   for(const b of list){
     const e=entries[b.name];
@@ -162,21 +160,21 @@ async function main(){
     const modesOut={};
     for(const [modeKey,md] of Object.entries(modeMeta)){
       const r=md.entries?.[b.name];
-      if(r)modesOut[modeKey]={score:r.adjustedWinRate,rank:r.rank,winRate:r.adjustedWinRate,pickRate:r.pickRate,reason:md.name+' adjusted win rate',source:'Brawl Time Ninja',confidence:r.rank<=10?'medium':'low'};
+      if(r)modesOut[modeKey]={score:r.winRate,rank:r.rank,winRate:r.adjustedWinRate,pickRate:r.pickRate,reason:md.name+' Wilson-adjusted win rate',source:'BrawlMetrics',confidence:r.rank<=10?'medium':'low'};
     }
     metaEntries[b.name]={
       default:{score,rank:null,reason:base!=null?'Brawl Time Ninja adjusted win rate':'Community build data only',source:base!=null?'Brawl Time Ninja':'NOFF',confidence:base!=null?'medium':'low'},
       modes:modesOut
     };
   }
-  const meta={schemaVersion:2,updatedAt:now,source:'Brawl Time Ninja + NOFF',method:'Global + mode snapshot. Map-specific data is only shown when a verified map snapshot exists.',coverage:{brawlers:list.length,modes:modeOk,totalModes:modes.length},entries:metaEntries};
+  const meta={schemaVersion:2,updatedAt:now,source:'BrawlMetrics + Brawl Time Ninja + NOFF',method:'Global + mode snapshot. Mode rankings use BrawlMetrics Wilson-adjusted win rate; map-specific data is only shown when a verified map snapshot exists.',coverage:{brawlers:list.length,modes:modeOk,totalModes:Object.keys(modeSlugs).length},entries:metaEntries};
   fs.writeFileSync(META_PATH,JSON.stringify(meta,null,2)+'\n');
 
   const catalogOut=list.map(b=>({id:b.id,name:b.name,assetId:b.id,gadgets:(b.gadgets||[]).map(x=>({id:x.id,name:x.name})),starPowers:(b.starPowers||[]).map(x=>({id:x.id,name:x.name})),gears:(b.gears||[]).map(x=>({id:x.id,name:x.name})),hyperCharges:(b.hypercharges||b.hyperCharges||[]).map(x=>({id:x.id,name:x.name}))}));
   fs.writeFileSync(CATALOG_PATH,JSON.stringify(catalogOut,null,2)+'\n');
 
   if(noffOk<Math.floor(list.length*.5) || btOk<Math.floor(list.length*.5) || modeOk<3) {
-    throw new Error('Sync quality gate failed: NOFF '+noffOk+'/'+list.length+', BrawlTime '+btOk+'/'+list.length+', modes '+modeOk+'/'+modes.length);
+    throw new Error('Sync quality gate failed: NOFF '+noffOk+'/'+list.length+', BrawlTime '+btOk+'/'+list.length+', modes '+modeOk+'/'+Object.keys(modeSlugs).length);
   }
   console.log(JSON.stringify({updatedAt:now,brawlers:list.length,noffOk,btOk,modeOk,totalModes:modes.length},null,2));
 }
