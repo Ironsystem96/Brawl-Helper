@@ -3,10 +3,10 @@ const cors=require('cors');
 const app=express();
 const PORT=process.env.PORT||3000;
 const TOKEN=process.env.BRAWL_STARS_API_TOKEN;
-if(!TOKEN) console.warn('BRAWL_STARS_API_TOKEN non configurato');
+const ALLOWED_ORIGIN=process.env.ALLOWED_ORIGIN||'*';
 
-app.use(cors({origin:true}));
-app.get('/api/health',(req,res)=>res.json({ok:true,service:'brawl-helper-backend'}));
+app.use(cors({origin:ALLOWED_ORIGIN}));
+app.get('/api/health',(req,res)=>res.json({ok:true,service:'brawl-helper-backend',version:'0.2.0'}));
 app.get('/api/player/:tag',async(req,res)=>{
   if(!TOKEN)return res.status(500).json({error:'Backend token non configurato'});
   const tag=String(req.params.tag||'').replace(/^#/,'').toUpperCase();

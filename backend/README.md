@@ -1,25 +1,19 @@
 # Brawl Helper Backend
 
-Backend separato dal frontend GitHub Pages. La chiave API non deve mai essere inserita in index.html, app.js, manifest o APK.
+Questo servizio è separato dal frontend GitHub Pages.
 
-## Avvio locale
-```bash
-cd backend
-npm install
-set BRAWL_STARS_API_TOKEN=INSERISCI_LA_TUA_CHIAVE
-node server.js
-```
-
-Linux/macOS:
-```bash
-BRAWL_STARS_API_TOKEN=INSERISCI_LA_TUA_CHIAVE node server.js
-```
+1. Copia .env.example in .env.
+2. Inserisci BRAWL_STARS_API_TOKEN.
+3. Esegui npm install.
+4. Esegui npm start.
 
 Endpoint:
-`GET /api/health`
-`GET /api/player/22QYOQRGY`
+GET /api/health
+GET /api/player/<PLAYER_TAG>
 
-Il frontend può essere configurato con l'URL del backend dalla schermata Profili.
+La chiave API resta esclusivamente sul server e non deve essere inserita nel frontend o nell'APK.
 
-## Produzione
-Usare HTTPS, secret manager/env vars, rate limiting, logging minimo e CORS limitato al dominio dell'app. Il backend interroga esclusivamente l'API ufficiale configurata per Brawl Stars.
+Per il test locale:
+http://localhost:3000/api/player/22QYOQRGY
+
+Per produzione usare un provider HTTPS/serverless e configurare ALLOWED_ORIGIN con il dominio dell'app.
