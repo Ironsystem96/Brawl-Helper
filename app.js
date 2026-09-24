@@ -5,6 +5,8 @@ const fmt=n=>Number(n||0).toLocaleString('it-IT');
 const apiBase=()=>localStorage.getItem('bh_api_base')||'';
 const META_STATE={loaded:false,source:null,updatedAt:null,entries:{}};
 const DB_STATE={loaded:false,version:null,patch:null,lastSyncedAt:null,changelog:[]};
+const BUILD_STATE={loaded:false,updatedAt:null,entries:{},sources:[]};
+const CATALOG_STATE={loaded:false,count:0,entries:{}};
 
 function loadProfiles(){try{return JSON.parse(localStorage.getItem('bh_profiles')||'[]')}catch{return[]}}
 function saveProfiles(){localStorage.setItem('bh_profiles',JSON.stringify(profiles))}
@@ -23,6 +25,28 @@ function first(a){return Array.isArray(a)&&a.length?a[0]:null}
 function buildLabel(b){const o=owned(b);return [o.gadgets?'Gadget':'Gadget missing',o.stars?'Star Power':'Star Power missing',o.gears?'Gear':'Gear missing',o.hc?'Hypercharge':'Hypercharge missing'].join(' · ')}
 function why(b,mode,map){const m=metaEntry(b,mode,map);const reasons=[];if(readiness(b)>=75)reasons.push('build già pronta');if(b.power>=11)reasons.push('Power 11');if((b.trophies||0)>=500)reasons.push('buona esperienza sul Brawler');if(m?.reason)reasons.push(m.reason);if(!reasons.length)reasons.push('dati account disponibili');return reasons.join(' · ')}
 function recommendationTag(b,mode,map){return META_STATE.loaded&&metaEntry(b,mode,map)?'META + ACCOUNT':'ACCOUNT ONLY'}
+function norm(s){return String(s||'').toUpperCase().replace(/[’']/g,"'").replace(/[^A-Z0-9]+/g,' ').trim()}
+function buildEntry(b){return BUILD_STATE.entries[b.name]||BUILD_STATE.entries[norm(b.name)]||BUILD_STATE.entries[String(b.name||'').toUpperCase()]||null}
+function bestBuildItem(entry,type,index=0){const a=entry?.[type]||[];return a[index]||null}
+function ownedNames(b,type){return (b[type]||[]).map(x=>norm(x.name))}
+function itemState(b,type,item){
+ if(!item)return 'DATA MISSING';
+ const owned=ownedNames(b,type).includes(norm(item.name));
+ return owned?'EQUIPAGGIA':'DA COMPRARE';
+}
+function advisorRow(b,label,type,item){
+ if(!item)return '';
+ const state=itemState(b,type,item);
+ const pct=item.pick!=null?' · '+item.pick+'% pick':'';
+ return '<div class="advisorRow"><div class="advisorIcon">'+compIcon(type,item)+'</div><div class="grow"><b>'+esc(item.name)+'</b><span class="small">'+esc(label)+pct+'</span></div><span class="chip '+(state==='EQUIPAGGIA'?'ok':'')+'">'+state+'</span></div>';
+}
+function buildAdvisor(b){
+ const e=buildEntry(b);
+ if(!e)return '<section class="card"><div class="sectionTitle"><h3>Build Advisor</h3><span class="chip">DATI IN ATTESA</span></div><p class="small">Non abbiamo ancora una build community verificata per questo Brawler. Non inventiamo una scelta: verrà aggiunta con il prossimo sync.</p></section>';
+ const rows=[advisorRow(b,'Gadget consigliato','gadgets',bestBuildItem(e,'gadget')),advisorRow(b,'Star Power consigliata','starPowers',bestBuildItem(e,'starPower')),advisorRow(b,'Gear 1 consigliato','gears',bestBuildItem(e,'gears',0)),advisorRow(b,'Gear 2 consigliato','gears',bestBuildItem(e,'gears',1))].join('');
+ const hc=b.power>=11&&(!b.hyperCharges||!b.hyperCharges.length)?'<div class="advisorRow"><div class="grow"><b>Hypercharge</b><span class="small">Power 11 raggiunto ma Hypercharge non posseduta</span></div><span class="chip">DA CONSIDERARE</span></div>':'';
+ return '<section class="card"><div class="sectionTitle"><h3>Build Advisor</h3><span class="chip ok">COMMUNITY</span></div><p class="small">Il consiglio confronta la build community con ciò che possiedi. Se manca un componente: DA COMPRARE. Se lo possiedi: EQUIPAGGIA.</p>'+rows+hc+'<p class="small">Fonte: <a href="'+esc(e.sourceUrl)+'" target="_blank" rel="noopener">NOFF</a>'+(e.sample?' · '+fmt(e.sample)+' build':'')+'</p></section>';
+}
 
 function nav(){return '<nav class="nav">'+[['home','⌂','Home'],['play','▶','Play'],['brawlers','●','Brawlers'],['upgrade','↗','Upgrade'],['meta','✦','Meta']].map(x=>'<button class="'+(tab===x[0]?'active':'')+'" onclick="setTab(\''+x[0]+'\')">'+x[1]+'<br>'+x[2]+'</button>').join('')}
 function shell(body){document.getElementById('app').innerHTML='<div class="app"><header class="top"><div class="brand"><div class="logo">Brawl <span>Helper</span></div><div class="sync">'+(active?'PROFILE':'NO PROFILE')+'</div></div><button class="profileBtn" onclick="profilePanel()">'+esc(active||'Profilo')+'</button></header><main class="content">'+body+'</main>'+nav()+'</div>'}
@@ -56,7 +80,7 @@ function detail(){
  const o=owned(b),g=first(b.gadgets),sp=first(b.starPowers),gear1=b.gears?.[0],gear2=b.gears?.[1],hc=first(b.hyperCharges),m=metaEntry(b,playMode,playMap);
  return '<button class="back" onclick="selected=null;render()">← Torna ai Brawler</button>'+
  '<section class="hero"><div class="row"><img class="portrait" src="'+portrait(b)+'"><div class="grow"><div class="eyebrow">BRAWLER</div><h1>'+esc(b.name)+'</h1><div class="muted">Power '+b.power+' · Rank '+b.rank+'</div><div class="muted">'+fmt(b.trophies)+' / '+fmt(b.highestTrophies)+' trofei</div></div></div><div class="chips"><span class="chip">Personal '+personalScore(b)+'</span><span class="chip '+status(b)[1]+'">'+status(b)[0]+'</span></div></section>'+
- '<section class="section"><h2>Build account</h2><div class="componentGrid">'+comp('gadget','Gadget',g)+comp('star','Star Power',sp)+comp('gear','Gear 1',gear1)+comp('gear','Gear 2',gear2)+comp('hc','Hypercharge',hc)+'</div></section>'+
+ '<section class="section"><h2>Build account</h2><div class="componentGrid">'+comp('gadget','Gadget',g)+comp('star','Star Power',sp)+comp('gear','Gear 1',gear1)+comp('gear','Gear 2',gear2)+comp('hc','Hypercharge',hc)+'</div></section>'+buildAdvisor(b)+
  '<section class="card"><b>Contesto attuale</b><div class="context"><span>MODALITÀ</span><b>'+esc(playMode)+'</b><span>MAPPA</span><b>'+esc(playMap)+'</b></div><div class="notice">'+(m?esc(m.reason||'Meta entry disponibile'):'Meta live non collegato: questa spiegazione usa solo i dati dell’account.')+'</div><p class="small">'+esc(why(b,playMode,playMap))+'</p></section>'+
  '<section class="card"><b>Progressione</b><div class="grid"><div class="action"><b>'+o.gadgets+'/2</b><span class="small">Gadget</span></div><div class="action"><b>'+o.stars+'/2</b><span class="small">Star Power</span></div><div class="action"><b>'+o.gears+'/2</b><span class="small">Gear</span></div><div class="action"><b>'+o.hc+'/1</b><span class="small">Hypercharge</span></div></div></section>'
 }
@@ -102,9 +126,10 @@ async function loadMeta(){
     const base=apiBase();
     const dbUrl=base?base+'/api/database':'data/game-db.json';
     const clUrl=base?base+'/api/changelog':'data/changelog.json';
-    const [dr,cr]=await Promise.all([fetch(dbUrl,{cache:'no-store'}),fetch(clUrl,{cache:'no-store'})]);
+    const [dr,cr,br]=await Promise.all([fetch(dbUrl,{cache:'no-store'}),fetch(clUrl,{cache:'no-store'}),fetch('data/build-meta.json',{cache:'no-store'})]);
     if(dr.ok){const d=await dr.json();DB_STATE.loaded=true;DB_STATE.version=d.databaseVersion||null;DB_STATE.patch=d.patch?.id||null;DB_STATE.lastSyncedAt=d.lastSyncedAt||null}
     if(cr.ok){const c=await cr.json();DB_STATE.changelog=c.releases||[]}
+    if(br.ok){const b=await br.json();BUILD_STATE.loaded=true;BUILD_STATE.updatedAt=b.updatedAt||null;BUILD_STATE.entries=b.entries||{};BUILD_STATE.sources=b.sources||[]}
   }catch(e){console.warn('Game database non disponibile',e)}
 }
 
