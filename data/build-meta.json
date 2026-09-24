@@ -1,0 +1,305 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-09-24T00:00:00Z",
+  "sources": [
+    {
+      "name": "NOFF",
+      "type": "community_build_statistics",
+      "url": "https://www.noff.gg/brawl-stars/app/builds"
+    },
+    {
+      "name": "BrawlAPI",
+      "type": "game_catalog",
+      "url": "https://brawlapi.com/"
+    }
+  ],
+  "note": "Seed dataset for the recommendation engine. Entries are community build statistics; they are not official Supercell recommendations. The sync pipeline will expand this dataset.",
+  "entries": {
+    "BO": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/bo",
+      "sample": 184,
+      "gadget": [
+        {
+          "name": "SUPER TOTEM",
+          "pick": 50
+        }
+      ],
+      "starPower": [
+        {
+          "name": "SNARE A BEAR",
+          "pick": 79
+        }
+      ],
+      "gears": [
+        {
+          "name": "DAMAGE",
+          "pick": 27
+        },
+        {
+          "name": "SHIELD",
+          "pick": 23
+        }
+      ]
+    },
+    "FANG": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/fang",
+      "sample": 266,
+      "gadget": [
+        {
+          "name": "ROUNDHOUSE KICK",
+          "pick": 81
+        }
+      ],
+      "starPower": [
+        {
+          "name": "FRESH KICKS",
+          "pick": 78
+        }
+      ],
+      "gears": [
+        {
+          "name": "DAMAGE",
+          "pick": 42
+        },
+        {
+          "name": "SHIELD",
+          "pick": 32
+        }
+      ]
+    },
+    "MAX": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/max",
+      "sample": 164,
+      "gadget": [
+        {
+          "name": "PHASE SHIFTER",
+          "pick": 91
+        }
+      ],
+      "starPower": [
+        {
+          "name": "RUN N GUN",
+          "pick": 63
+        }
+      ],
+      "gears": [
+        {
+          "name": "DAMAGE",
+          "pick": 29
+        },
+        {
+          "name": "SHIELD",
+          "pick": 29
+        }
+      ]
+    },
+    "JACKY": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/jacky",
+      "sample": 93,
+      "gadget": [
+        {
+          "name": "PNEUMATIC BOOSTER",
+          "pick": 95
+        }
+      ],
+      "starPower": [
+        {
+          "name": "COUNTER CRUSH",
+          "pick": 87
+        }
+      ],
+      "gears": [
+        {
+          "name": "DAMAGE",
+          "pick": 31
+        },
+        {
+          "name": "SUPER CHARGE",
+          "pick": 24
+        }
+      ]
+    },
+    "ALLI": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/alli",
+      "sample": 139,
+      "gadget": [
+        {
+          "name": "COLD-BLOODED",
+          "pick": 64
+        }
+      ],
+      "starPower": [
+        {
+          "name": "YOU BETTER RUN, YOU BETTER TAKE COVER",
+          "pick": 80
+        }
+      ],
+      "gears": [
+        {
+          "name": "DAMAGE",
+          "pick": 32
+        },
+        {
+          "name": "SHIELD",
+          "pick": 31
+        }
+      ]
+    },
+    "BOLT": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/bolt",
+      "sample": 46,
+      "gadget": [
+        {
+          "name": "OIL CHANGE",
+          "pick": 70
+        }
+      ],
+      "starPower": [
+        {
+          "name": "UNSTOPPABALL",
+          "pick": 61
+        }
+      ],
+      "gears": [
+        {
+          "name": "DAMAGE",
+          "pick": 32
+        },
+        {
+          "name": "SHIELD",
+          "pick": 30
+        }
+      ]
+    },
+    "RICO": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/rico",
+      "sample": null,
+      "gadget": [
+        {
+          "name": "MULTIBALL LAUNCHER",
+          "pick": null
+        }
+      ],
+      "starPower": [
+        {
+          "name": "ROBO RETREAT",
+          "pick": null
+        }
+      ],
+      "gears": [
+        {
+          "name": "DAMAGE",
+          "pick": null
+        },
+        {
+          "name": "RELOAD SPEED",
+          "pick": null
+        }
+      ]
+    },
+    "EDGAR": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/builds/edgar",
+      "sample": null,
+      "gadget": [
+        {
+          "name": "LET'S FLY",
+          "pick": null
+        }
+      ],
+      "starPower": [
+        {
+          "name": "FISTICUFFS",
+          "pick": null
+        }
+      ],
+      "gears": [
+        {
+          "name": "DAMAGE",
+          "pick": null
+        },
+        {
+          "name": "SHIELD",
+          "pick": null
+        }
+      ]
+    },
+    "BIBI": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/builds/bibi",
+      "sample": null,
+      "gadget": [
+        {
+          "name": "VITAMIN BOOSTER",
+          "pick": null
+        }
+      ],
+      "starPower": [
+        {
+          "name": "HOME RUN",
+          "pick": null
+        }
+      ],
+      "gears": [
+        {
+          "name": "GADGET COOLDOWN",
+          "pick": null
+        },
+        {
+          "name": "SHIELD",
+          "pick": null
+        }
+      ]
+    },
+    "GUS": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/build/20560/best-build-for-every-map",
+      "sample": null,
+      "gadget": [
+        {
+          "name": "KOOKY POPPER",
+          "pick": null
+        }
+      ],
+      "starPower": [
+        {
+          "name": "SPIRIT ANIMAL",
+          "pick": null
+        }
+      ],
+      "gears": [
+        {
+          "name": "DAMAGE",
+          "pick": null
+        },
+        {
+          "name": "SHIELD",
+          "pick": null
+        }
+      ]
+    },
+    "STARR NOVA": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/starr-nova",
+      "sample": 50,
+      "gadget": [
+        {
+          "name": "SHINING STARR OF FRIENDSHIP AND JUSTICE",
+          "pick": 56
+        }
+      ],
+      "starPower": [
+        {
+          "name": "POWER LEVEL: MAXIMUM",
+          "pick": 88
+        }
+      ],
+      "gears": [
+        {
+          "name": "DAMAGE",
+          "pick": 38
+        },
+        {
+          "name": "SHIELD",
+          "pick": 33
+        }
+      ]
+    }
+  }
+}
