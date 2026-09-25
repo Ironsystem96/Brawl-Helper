@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: brawl-helper-backend
+    runtime: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: BRAWL_STARS_API_TOKEN
+        sync: false
+      - key: ALLOWED_ORIGIN
+        value: https://ironsystem96.github.io
+      - key: PLAYER_CACHE_TTL_MS
+        value: "300000"
+      - key: BRAWL_API_TIMEOUT_MS
+        value: "8000"
