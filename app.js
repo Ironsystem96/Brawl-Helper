@@ -217,20 +217,27 @@ async function loadMeta(){
   }catch(e){console.warn('Game database non disponibile',e)}
 }
 
-function profilePanel(){
+function profilePanel(first=false){
  const rows=profiles.map(p=>'<div class="profileRow"><button onclick="activate(\''+esc(p.name||p.tag)+'\')"><b>'+esc(p.name||p.tag)+'</b><span>'+esc(p.tag)+(p.test?' · TEST':'')+'</span></button><button class="del" onclick="removeProfile(\''+esc(p.name||p.tag)+'\')">×</button></div>').join('');
- document.getElementById('app').insertAdjacentHTML('beforeend','<div class="modal"><div class="modalBox"><div class="modalHead"><h2>Profili</h2><button onclick="closeModal()">×</button></div>'+rows+'<div class="profileForm"><input id="newName" placeholder="Nome profilo (opzionale)"><input id="newTag" placeholder="Player Tag, es. #22QYOQRGY"><button class="primary" onclick="addProfile()">Aggiungi account</button></div><div class="profileForm"><input id="apiBase" placeholder="Backend API URL (opzionale)" value="'+esc(apiBase())+'"><button onclick="saveApiBase()">Salva backend</button></div><div class="small">Il nome è opzionale: con un account reale verrà usato automaticamente il nome restituito dall’API Brawl Stars.</div><button class="close" onclick="closeModal()">Chiudi</button></div></div>')
+ const title=first?'Collega il tuo account':'Profili';
+ const intro=first?'<div class="onboardIntro"><div class="onboardIcon">BH</div><div><h3>Inserisci il Player Tag di Brawl Stars</h3><p>È il codice che identifica il tuo account. Lo usiamo solo per recuperare i dati pubblici del profilo tramite il backend.</p></div></div>':'<p class="small modalLead">Gestisci i tuoi account Brawl Stars. Puoi salvarne più di uno e passare da un profilo all’altro.</p>';
+ const form='<div class="profileForm '+(first?'onboardForm':'')+'"><label for="newTag">PLAYER TAG BRAWL STARS</label><input id="newTag" class="tagInput" placeholder="#22QYOQRGY" autocomplete="off" autocapitalize="characters" spellcheck="false"><span class="fieldHint">Esempio: #22QYOQRGY · il tag inizia con #</span><label for="newName">NOME PROFILO <span>(opzionale)</span></label><input id="newName" placeholder="Es. Il mio account" autocomplete="off"><button class="primary" onclick="addProfile()">Collega account</button></div>';
+ const extra=first?'<div class="onboardHelp"><b>Dove trovo il Player Tag?</b><span>Apri Brawl Stars → Profilo → sotto il nome del giocatore trovi il codice che inizia con #.</span></div><button class="secondaryBtn" onclick="skipOnboarding()">Continua con profilo TEST</button>':'';
+ const settings=first?'':rows+'<div class="profileForm"><label for="apiBase">BACKEND API URL</label><input id="apiBase" placeholder="Backend API URL" value="'+esc(apiBase())+'"><button class="secondaryBtn" onclick="saveApiBase()">Salva backend</button></div>';
+ document.getElementById('app').insertAdjacentHTML('beforeend','<div class="modal '+(first?'onboardingModal':'')+'"><div class="modalBox">'+(first?'<div class="modalBrand">BRAWL HELPER</div>':'<div class="modalHead"><h2>Profili</h2><button onclick="closeModal()">×</button></div>')+intro+form+extra+settings+(first?'':'<button class="close" onclick="closeModal()">Chiudi</button>')+'</div></div>');
+ if(first){setTimeout(()=>document.getElementById('newTag')?.focus(),220)}
 }
+function skipOnboarding(){localStorage.setItem('bh_onboarding_seen','1');closeModal()}
 function closeModal(){document.querySelector('.modal')?.remove()}
 function activate(name){const p=profiles.find(x=>(x.name||x.tag)===name);if(!p)return;active=p.name||p.tag;localStorage.setItem('bh_active',active);closeModal();loadProfile(p)}
 function removeProfile(name){const p=profiles.find(x=>(x.name||x.tag)===name);profiles=profiles.filter(x=>x!==p);saveProfiles();if(p&&(active===p.name||active===p.tag)){active='';localStorage.removeItem('bh_active');P=null}closeModal();render()}
 async function addProfile(){
  const name=document.getElementById('newName').value.trim();
  const tag=document.getElementById('newTag').value.trim().toUpperCase();
- if(!/^#[A-Z0-9]+$/.test(tag)){alert('Inserisci un Player Tag valido.');return}
+ if(!/^#[A-Z0-9]+$/.test(tag)){alert('Inserisci un Player Tag valido, ad esempio #22QYOQRGY.');return}
  if(profiles.some(p=>p.tag===tag)){alert('Player Tag già presente.');return}
  const p={name:name||'',tag,test:false};
- profiles.push(p);saveProfiles();active=name||tag;localStorage.setItem('bh_active',active);closeModal();await loadProfile(p)
+ profiles.push(p);saveProfiles();active=name||tag;localStorage.setItem('bh_active',active);localStorage.setItem('bh_onboarding_seen','1');closeModal();await loadProfile(p)
 }
 function saveApiBase(){const v=document.getElementById('apiBase').value.trim().replace(/\/$/,'');if(v)localStorage.setItem('bh_api_base',v);else localStorage.removeItem('bh_api_base');closeModal();alert('Backend salvato.')}
 async function loadProfile(p){
