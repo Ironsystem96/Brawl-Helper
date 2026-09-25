@@ -139,3 +139,25 @@ button{cursor:pointer}
 .miniItem.ownedMini{color:#fff;background:#26344c;border-color:#647b9e}
 .miniItem.buyMini{color:#e8edf6;background:#1b2639;border-color:#536786}
 .subhead{color:#9eacc1}
+
+/* Global readability pass: dark UI, light text, strong contrast */
+:root{
+ --text:#f4f7fb;--muted:#aebbd0;--line:#405274;--accent:#ffd34e;
+}
+body{color:#f4f7fb}
+.logo{color:#fff}.logo span{color:#dce5f4}
+.profileBtn{color:#f4f7fb;background:#17233a;border-color:#64799c}
+.hero h1,.section h2,.section h3,.card h2,.card h3,.bname,.action b,.comp b,.rank b,.stat b,.upgradeName{color:#fff}
+.eyebrow{color:#b9c6da}.tag,.small,.muted{color:#aebbd0}
+.stat{background:#18243a;border-color:#405274}.stat span{color:#aebbd0}
+.rank{color:#e8eef8;border-color:#536887}.rank span{color:#dbe5f4}
+.card,.action,.comp,.upgradeRow{color:#edf3fb;border-color:#405274}
+.card{background:linear-gradient(145deg,#151f34,#10182a)}
+.action{background:#141f34}.comp{background:#141f34}.comp span{color:#aebbd0}
+.bMetaLine{color:#cbd7e8}.subhead{color:#b9c6da}
+.notice{color:#dbe5f5}.back{color:#f2f6ff}
+.search{color:#fff;background:#111b2e;border-color:#536887}.search::placeholder{color:#91a0b8}
+.rankBadge{color:#fff;background:#24324b;border-color:#64799c}.metaRank{color:#fff}
+.top10Legend span{color:#e9eff9!important}.legendOwned,.legendMeta{background:#202b40!important;border-color:#64799c!important}
+.nav button{color:#9aaac2}.nav button.active{color:#ffd34e}
+.sync{color:#111827}
