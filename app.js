@@ -227,7 +227,7 @@ async function addProfile(){const name=document.getElementById('newName').value.
 function saveApiBase(){const v=document.getElementById('apiBase').value.trim().replace(/\/$/,'');if(v)localStorage.setItem('bh_api_base',v);else localStorage.removeItem('bh_api_base');closeModal();alert('Backend salvato.')}
 async function loadProfile(p){
  selected=null;tab='home';
- if(p.test){try{P=await fetch('data/player-response.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('Test profile HTTP '+r.status);return r.json()})}catch(e){console.warn(e);P=null}render();return}
+ if(p.test){P=window.BH_TEST_PROFILE||null;if(!P)console.warn('Profilo TEST incorporato non disponibile');render();return}
  if(!apiBase()){P=null;render();document.getElementById('app').insertAdjacentHTML('beforeend','<div class="modal"><div class="modalBox"><h2>Collega account</h2><p>Player Tag salvato. Per i dati reali serve il backend Brawl Helper.</p><p class="small">La chiave Brawl Stars non deve mai essere inserita nell’app.</p><button class="close" onclick="closeModal()">OK</button></div></div>');return}
  try{const r=await fetch(apiBase()+'/api/player/'+encodeURIComponent(p.tag.slice(1)));if(!r.ok)throw new Error('Backend HTTP '+r.status);P=await r.json();render()}catch(e){P=null;render();document.getElementById('app').insertAdjacentHTML('beforeend','<div class="modal"><div class="modalBox"><h2>Errore collegamento</h2><p>'+esc(e.message)+'</p><button class="close" onclick="closeModal()">OK</button></div></div>')}
 }
