@@ -23,6 +23,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Check JavaScript syntax
+        run: |
+          node --check app.js
+          node --check preboot.js
+          node --check data/player-response.js
+          node --check cache-cleanup.js
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
