@@ -217,19 +217,35 @@ async function loadMeta(){
 }
 
 function profilePanel(){
- const rows=profiles.map(p=>'<div class="profileRow"><button onclick="activate(\''+esc(p.name)+'\')"><b>'+esc(p.name)+'</b><span>'+esc(p.tag)+(p.test?' · TEST':'')+'</span></button><button class="del" onclick="removeProfile(\''+esc(p.name)+'\')">×</button></div>').join('');
- document.getElementById('app').insertAdjacentHTML('beforeend','<div class="modal"><div class="modalBox"><div class="modalHead"><h2>Profili</h2><button onclick="closeModal()">×</button></div>'+rows+'<div class="profileForm"><input id="newName" placeholder="Nome profilo"><input id="newTag" placeholder="Player Tag, es. #22QYOQRGY"><button class="primary" onclick="addProfile()">Aggiungi account</button></div><div class="profileForm"><input id="apiBase" placeholder="Backend API URL (opzionale)" value="'+esc(apiBase())+'"><button onclick="saveApiBase()">Salva backend</button></div><div class="small">BlackShark è esclusivamente il profilo di test. I clienti useranno il proprio Player Tag.</div><button class="close" onclick="closeModal()">Chiudi</button></div></div>')
+ const rows=profiles.map(p=>'<div class="profileRow"><button onclick="activate(\''+esc(p.name||p.tag)+'\')"><b>'+esc(p.name||p.tag)+'</b><span>'+esc(p.tag)+(p.test?' · TEST':'')+'</span></button><button class="del" onclick="removeProfile(\''+esc(p.name||p.tag)+'\')">×</button></div>').join('');
+ document.getElementById('app').insertAdjacentHTML('beforeend','<div class="modal"><div class="modalBox"><div class="modalHead"><h2>Profili</h2><button onclick="closeModal()">×</button></div>'+rows+'<div class="profileForm"><input id="newName" placeholder="Nome profilo (opzionale)"><input id="newTag" placeholder="Player Tag, es. #22QYOQRGY"><button class="primary" onclick="addProfile()">Aggiungi account</button></div><div class="profileForm"><input id="apiBase" placeholder="Backend API URL (opzionale)" value="'+esc(apiBase())+'"><button onclick="saveApiBase()">Salva backend</button></div><div class="small">Il nome è opzionale: con un account reale verrà usato automaticamente il nome restituito dall'API Brawl Stars.</div><button class="close" onclick="closeModal()">Chiudi</button></div></div>')
 }
 function closeModal(){document.querySelector('.modal')?.remove()}
-function activate(name){const p=profiles.find(x=>x.name===name);if(!p)return;active=name;localStorage.setItem('bh_active',name);closeModal();loadProfile(p)}
-function removeProfile(name){profiles=profiles.filter(p=>p.name!==name);saveProfiles();if(active===name){active='';localStorage.removeItem('bh_active');P=null}closeModal();render()}
-async function addProfile(){const name=document.getElementById('newName').value.trim(),tag=document.getElementById('newTag').value.trim().toUpperCase();if(!name||!/^#[A-Z0-9]+$/.test(tag)){alert('Inserisci nome e Player Tag valido.');return}if(profiles.some(p=>p.name===name)){alert('Nome profilo già presente.');return}const p={name,tag,test:false};profiles.push(p);saveProfiles();active=name;localStorage.setItem('bh_active',name);closeModal();await loadProfile(p)}
+function activate(name){const p=profiles.find(x=>(x.name||x.tag)===name);if(!p)return;active=p.name||p.tag;localStorage.setItem('bh_active',active);closeModal();loadProfile(p)}
+function removeProfile(name){const p=profiles.find(x=>(x.name||x.tag)===name);profiles=profiles.filter(x=>x!==p);saveProfiles();if(p&&(active===p.name||active===p.tag)){active='';localStorage.removeItem('bh_active');P=null}closeModal();render()}
+async function addProfile(){
+ const name=document.getElementById('newName').value.trim();
+ const tag=document.getElementById('newTag').value.trim().toUpperCase();
+ if(!/^#[A-Z0-9]+$/.test(tag)){alert('Inserisci un Player Tag valido.');return}
+ if(profiles.some(p=>p.tag===tag)){alert('Player Tag già presente.');return}
+ const p={name:name||'',tag,test:false};
+ profiles.push(p);saveProfiles();active=name||tag;localStorage.setItem('bh_active',active);closeModal();await loadProfile(p)
+}
 function saveApiBase(){const v=document.getElementById('apiBase').value.trim().replace(/\/$/,'');if(v)localStorage.setItem('bh_api_base',v);else localStorage.removeItem('bh_api_base');closeModal();alert('Backend salvato.')}
 async function loadProfile(p){
  selected=null;tab='home';
- if(p.test){P=window.BH_TEST_PROFILE||null;if(!P)console.warn('Profilo TEST incorporato non disponibile');render();return}
- if(!apiBase()){P=null;render();document.getElementById('app').insertAdjacentHTML('beforeend','<div class="modal"><div class="modalBox"><h2>Collega account</h2><p>Player Tag salvato. Per i dati reali serve il backend Brawl Helper.</p><p class="small">La chiave Brawl Stars non deve mai essere inserita nell’app.</p><button class="close" onclick="closeModal()">OK</button></div></div>');return}
- try{const r=await fetch(apiBase()+'/api/player/'+encodeURIComponent(p.tag.slice(1)));if(!r.ok)throw new Error('Backend HTTP '+r.status);P=await r.json();render()}catch(e){P=null;render();document.getElementById('app').insertAdjacentHTML('beforeend','<div class="modal"><div class="modalBox"><h2>Errore collegamento</h2><p>'+esc(e.message)+'</p><button class="close" onclick="closeModal()">OK</button></div></div>')}
+ if(p.test || (p.tag==='#22QYOQRGY' && window.BH_TEST_PROFILE)){P=window.BH_TEST_PROFILE||null;if(!P)console.warn('Profilo TEST incorporato non disponibile');render();return}
+ if(!apiBase()){P=null;render();document.getElementById('app').insertAdjacentHTML('beforeend','<div class="modal"><div class="modalBox"><h2>Backend non collegato</h2><p>Il Player Tag è stato salvato, ma questa versione web non può chiamare direttamente l'API ufficiale Brawl Stars senza un backend.</p><p class="small">Inserisci il Backend API URL nelle impostazioni Profili. La chiave API non deve mai essere inserita nell'app.</p><button class="close" onclick="closeModal()">OK</button></div></div>');return}
+ try{const r=await fetch(apiBase()+'/api/player/'+encodeURIComponent(p.tag.slice(1)));if(!r.ok)throw new Error('Backend HTTP '+r.status);P=await r.json();
+ const serverName=String(P?.name||'').trim();
+ if(serverName && !p.test){
+   const oldKey=p.name||p.tag;
+   p.name=serverName;
+   profiles=profiles.map(x=>x===p?{...p}:x);
+   saveProfiles();
+   if(active===oldKey || active===p.tag){active=serverName;localStorage.setItem('bh_active',active)}
+ }
+ render()}catch(e){P=null;render();document.getElementById('app').insertAdjacentHTML('beforeend','<div class="modal"><div class="modalBox"><h2>Errore collegamento</h2><p>'+esc(e.message)+'</p><button class="close" onclick="closeModal()">OK</button></div></div>')}
 }
 function openB(id){selected=id;render()}
 function render(){
