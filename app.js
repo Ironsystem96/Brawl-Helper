@@ -243,7 +243,7 @@ function saveApiBase(){const v=document.getElementById('apiBase').value.trim().r
 async function loadProfile(p){
  selected=null;tab='home';
  const bs=document.getElementById('bootStatus');if(bs)bs.textContent='stage: loadProfile('+(p?.name||p?.tag||'unknown')+')';
- if(p.test || (p.tag==='#22QYOQRGY' && window.BH_TEST_PROFILE)){P=window.BH_TEST_PROFILE||null;if(!P)console.warn('Profilo TEST incorporato non disponibile');render();return}
+ if(p.test || (p.tag==='#22QYOQRGY' && window.BH_TEST_PROFILE)){P=window.BH_TEST_PROFILE||null;if(!P)console.warn('Profilo TEST incorporato non disponibile');render();if(!localStorage.getItem('bh_onboarding_seen'))setTimeout(()=>profilePanel(true),250);return}
  if(!apiBase()){P=null;render();document.getElementById('app').insertAdjacentHTML('beforeend','<div class="modal"><div class="modalBox"><h2>Backend non collegato</h2><p>Il Player Tag è stato salvato, ma questa versione web non può chiamare direttamente l’API ufficiale Brawl Stars senza un backend.</p><p class="small">Inserisci il Backend API URL nelle impostazioni Profili. La chiave API non deve mai essere inserita nell’app.</p><button class="close" onclick="closeModal()">OK</button></div></div>');return}
  try{const d=await fetchJson(apiBase()+'/api/player/'+encodeURIComponent(p.tag.slice(1)),8000);P=d;
  const serverName=String(P?.name||'').trim();
@@ -254,7 +254,7 @@ async function loadProfile(p){
    saveProfiles();
    if(active===oldKey || active===p.tag){active=serverName;localStorage.setItem('bh_active',active)}
  }
- render()}catch(e){P=null;render();document.getElementById('app').insertAdjacentHTML('beforeend','<div class="modal"><div class="modalBox"><h2>Errore collegamento</h2><p>'+esc(e.message)+'</p><button class="close" onclick="closeModal()">OK</button></div></div>')}
+ render();if(!localStorage.getItem('bh_onboarding_seen')){localStorage.setItem('bh_onboarding_seen','1')} }catch(e){P=null;render();document.getElementById('app').insertAdjacentHTML('beforeend','<div class="modal"><div class="modalBox"><h2>Errore collegamento</h2><p>'+esc(e.message)+'</p><button class="close" onclick="closeModal()">OK</button></div></div>')}
 }
 function openB(id){selected=id;render()}
 function render(){
