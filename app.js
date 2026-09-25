@@ -255,9 +255,17 @@ function render(){
 }
 function showFatal(e){console.error('Brawl Helper fatal error',e);const msg=e?.message||String(e);const stack=e?.stack?'<details style="margin-top:12px"><summary>Dettagli tecnici</summary><pre style="white-space:pre-wrap;color:#ff9b9b;font-size:11px">'+esc(e.stack)+'</pre></details>':'';document.getElementById('app').innerHTML='<div style="min-height:100vh;background:#10131a;color:#fff;font-family:Arial,sans-serif;padding:28px;box-sizing:border-box"><h1>Brawl Helper</h1><p>Si è verificato un errore di caricamento.</p><pre style="white-space:pre-wrap;color:#ff9b9b">'+esc(msg)+'</pre>'+stack+'<button style="padding:14px 18px;border:0;border-radius:12px" onclick="location.reload()">Riprova</button></div>'}
 function loading(){document.getElementById('app').innerHTML='<div style="min-height:100vh;background:#10131a;color:#fff;font-family:Arial,sans-serif;display:flex;align-items:center;justify-content:center"><div style="text-align:center"><div style="font-size:28px;font-weight:800">Brawl Helper</div><div style="opacity:.65;margin-top:8px">Avvio applicazione…</div><div id="bootStatus" style="opacity:.5;margin-top:10px;font-size:12px">stage: loading()</div></div></div>'}
-async function boot(){try{loading();setTimeout(()=>{const s=document.getElementById('bootStatus');if(s)s.textContent='stage: boot()';},100);let testProfile=profiles.find(x=>x.test);if(!testProfile){testProfile={name:'BlackShark TEST',tag:'#22QYOQRGY',test:true};profiles=[testProfile,...profiles];saveProfiles()}let p=profiles.find(x=>(x.name||x.tag)===active);
-// In avvio usiamo sempre il profilo TEST incorporato: evita che un vecchio profilo salvato in localStorage blocchi la schermata di caricamento.
-// L'account reale resta disponibile e può essere selezionato da Profili dopo l'avvio.
-if(!p || !p.test){p=testProfile;active=p.name;localStorage.setItem('bh_active',active)}
-else{active=p.name||p.tag;localStorage.setItem('bh_active',active)}await loadProfile(p);Promise.allSettled([loadMeta(),loadCatalog()]).then(()=>{if(P)render()});}catch(e){showFatal(e)}}
+async function boot(){
+ try{
+  loading();
+  const s=()=>document.getElementById('bootStatus');
+  if(s())s().textContent='stage: test profile';
+  P=window.BH_TEST_PROFILE||null;
+  if(!P)throw new Error('BH_TEST_PROFILE non disponibile');
+  active=P.name||P.tag||'BlackShark TEST';
+  if(s())s().textContent='stage: render';
+  render();
+  Promise.allSettled([loadMeta(),loadCatalog()]).then(()=>{if(P)render()});
+ }catch(e){showFatal(e)}
+}
 boot().catch(showFatal);
