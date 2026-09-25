@@ -64,7 +64,7 @@ async function brawlApi(path) {
   const timer = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
 
   try {
-    const response = await fetch('https://api.brawlstars.com/v1' + path, {
+    const response = await fetch('https://bsproxy.royaleapi.dev/v1' + path, {
       method: 'GET',
       headers: {
         Authorization: 'Bearer ' + TOKEN,
