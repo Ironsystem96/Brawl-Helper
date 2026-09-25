@@ -2,22 +2,26 @@
 
 Backend Node.js per Brawl Helper. La chiave Brawl Stars resta esclusivamente sul server.
 
-## Funzioni attuali
+## Funzioni
 
-- GET /api/health — stato del backend.
-- GET /api/player/<PLAYER_TAG> — recupera il profilo completo dal Brawl Stars API.
+- GET /api/health — stato backend e configurazione non sensibile.
+- GET /api/player/<PLAYER_TAG> — recupera il profilo tramite proxy server-side.
 - GET /api/database — database locale dell'app.
 - GET /api/changelog — changelog locale.
-- Cache in memoria dei profili per ridurre le chiamate ripetute.
-- Timeout sulle chiamate al Brawl Stars API.
-- Gestione degli errori 404/401/403/429.
-- CORS limitato al dominio configurato.
+- Cache in memoria dei profili.
+- Fallback sul profilo cached se il provider upstream è temporaneamente indisponibile.
+- Timeout e gestione errori 404/401/403/429.
+- CORS configurabile tramite ALLOWED_ORIGINS.
 
-## Configurazione locale
+## Configurazione
 
-Copia `.env.example` in `.env` e imposta BRAWL_STARS_API_TOKEN, ALLOWED_ORIGIN, PORT, PLAYER_CACHE_TTL_MS e BRAWL_API_TIMEOUT_MS.
+Copia `.env.example` in `.env` e imposta:
 
-Poi esegui:
+- `BRAWL_STARS_API_TOKEN`: secret del provider Brawl Stars/proxy. Non committarlo.
+- `ALLOWED_ORIGINS`: uno o più origin separati da virgola.
+- `PORT`, `PLAYER_CACHE_TTL_MS`, `BRAWL_API_TIMEOUT_MS`: parametri opzionali.
+
+Avvio:
 
     npm install
     npm start
@@ -29,14 +33,19 @@ Test:
 
 ## Produzione
 
-Il frontend è su GitHub Pages, mentre il backend deve essere pubblicato su un servizio HTTPS separato, ad esempio Render.
+Il frontend è pubblicato su GitHub Pages e il backend su un servizio HTTPS separato, ad esempio Render.
 
-Il frontend chiamerà https://<backend-domain>/api/player/22QYOQRGY.
+Su Render configurare almeno:
 
-La variabile BRAWL_STARS_API_TOKEN deve essere configurata come Secret/Environment Variable del provider. Non deve mai essere committata nel repository, inserita nel frontend o distribuita nell'APK.
+    BRAWL_STARS_API_TOKEN = <secret>
+    ALLOWED_ORIGINS = https://ironsystem96.github.io
 
-## Flusso
+La chiave non deve mai essere inserita nel frontend, nel repository o nell'APK.
 
-Player Tag → Brawl Helper Backend → Brawl Stars API → profilo JSON → Brawl Helper
+## Flusso account
 
-Il nome restituito dall'API (`name`) viene utilizzato dal frontend come nome automatico del profilo.
+Player Tag inserito dall'utente → Brawl Helper Backend → provider Brawl Stars → profilo JSON → frontend.
+
+Il frontend salva localmente un solo Player Tag per installazione. Il profilo viene aggiornato automaticamente alla riapertura. Se il backend non è raggiungibile, viene usata la copia locale dell'ultimo profilo riuscito, con stato OFFLINE.
+
+BlackShark (#22QYOQRGY) è previsto esclusivamente come profilo DEV quando `DEV_MODE=true`; non viene più creato automaticamente in produzione.
