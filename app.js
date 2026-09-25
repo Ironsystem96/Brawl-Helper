@@ -266,12 +266,20 @@ async function boot(){
  try{
   loading();
   const s=()=>document.getElementById('bootStatus');
-  if(s())s().textContent='stage: test profile';
-  P=window.BH_TEST_PROFILE||null;
-  if(!P)throw new Error('BH_TEST_PROFILE non disponibile');
-  active=P.name||P.tag||'BlackShark TEST';
-  if(s())s().textContent='stage: render';
-  render();
+  let testProfile=profiles.find(x=>x.test);
+  if(!testProfile){
+   testProfile={name:'BlackShark TEST',tag:'#22QYOQRGY',test:true};
+   profiles=[testProfile,...profiles];
+   saveProfiles();
+  }
+  let p=profiles.find(x=>(x.name||x.tag)===active);
+  if(!p){
+   p=testProfile;
+   active=p.name;
+   localStorage.setItem('bh_active',active);
+  }
+  if(s())s().textContent='stage: loadProfile';
+  await loadProfile(p);
   Promise.allSettled([loadMeta(),loadCatalog()]).then(()=>{if(P)render()});
  }catch(e){showFatal(e)}
 }
