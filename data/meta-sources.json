@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Provider registry for the Brawl Helper Meta Agent.",
+  "refreshPolicy": {
+    "cadence": "daily",
+    "minimumFreshnessHours": 36,
+    "staleAfterHours": 72
+  },
+  "providers": [
+    {
+      "id": "brawlmetrics",
+      "name": "BrawlMetrics",
+      "role": "battle_stats",
+      "priority": 1,
+      "signals": [
+        "winRate",
+        "pickRate",
+        "wilsonAdjustedWinRate"
+      ],
+      "contexts": [
+        "global",
+        "mode",
+        "ranked"
+      ],
+      "url": "https://brawlmetrics.gg/tier-list",
+      "enabled": true
+    },
+    {
+      "id": "brawltime",
+      "name": "Brawl Time Ninja",
+      "role": "battle_stats",
+      "priority": 2,
+      "signals": [
+        "adjustedWinRate",
+        "pickRate"
+      ],
+      "contexts": [
+        "global",
+        "mode",
+        "map"
+      ],
+      "url": "https://brawltime.ninja/dashboard",
+      "enabled": true
+    },
+    {
+      "id": "noff",
+      "name": "NOFF",
+      "role": "builds",
+      "priority": 1,
+      "signals": [
+        "gadgetPick",
+        "starPowerPick",
+        "gearPick"
+      ],
+      "contexts": [
+        "global",
+        "mode",
+        "map"
+      ],
+      "url": "https://www.noff.gg/brawl-stars/tier-list",
+      "enabled": true
+    },
+    {
+      "id": "brawlify",
+      "name": "Brawlify",
+      "role": "events_stats_catalog",
+      "priority": 2,
+      "signals": [
+        "winRate",
+        "pickRate",
+        "events",
+        "catalog"
+      ],
+      "contexts": [
+        "global",
+        "mode",
+        "map"
+      ],
+      "url": "https://brawlify.com/",
+      "enabled": true
+    },
+    {
+      "id": "supercell",
+      "name": "Brawl Stars API",
+      "role": "official_account_game_data",
+      "priority": 1,
+      "signals": [
+        "player",
+        "brawlers",
+        "progression"
+      ],
+      "contexts": [
+        "account"
+      ],
+      "url": "https://developer.brawlstars.com/",
+      "enabled": true
+    }
+  ],
+  "scoring": {
+    "metaScore": {
+      "battleStats": 0.55,
+      "pickRate": 0.15,
+      "contextAgreement": 0.15,
+      "recency": 0.1,
+      "sampleConfidence": 0.05
+    },
+    "buildScore": {
+      "buildPickRate": 0.65,
+      "sourceAgreement": 0.2,
+      "recency": 0.1,
+      "sampleConfidence": 0.05
+    }
+  },
+  "rules": [
+    "Never present a provider tier as an official Supercell recommendation.",
+    "Prefer fresh data and retain source timestamp and sample size.",
+    "When providers disagree, preserve each source signal and lower confidence rather than inventing certainty.",
+    "Map-specific recommendations require map-level evidence; otherwise fall back to mode or global context.",
+    "Account readiness is applied only after the external meta snapshot is built."
+  ]
+}
