@@ -235,7 +235,7 @@ function saveApiBase(){const v=document.getElementById('apiBase').value.trim().r
 async function loadProfile(p){
  selected=null;tab='home';
  if(p.test || (p.tag==='#22QYOQRGY' && window.BH_TEST_PROFILE)){P=window.BH_TEST_PROFILE||null;if(!P)console.warn('Profilo TEST incorporato non disponibile');render();return}
- if(!apiBase()){P=null;render();document.getElementById('app').insertAdjacentHTML('beforeend','<div class="modal"><div class="modalBox"><h2>Backend non collegato</h2><p>Il Player Tag è stato salvato, ma questa versione web non può chiamare direttamente l’API ufficiale Brawl Stars senza un backend.</p><p class="small">Inserisci il Backend API URL nelle impostazioni Profili. La chiave API non deve mai essere inserita nell'app.</p><button class="close" onclick="closeModal()">OK</button></div></div>');return}
+ if(!apiBase()){P=null;render();document.getElementById('app').insertAdjacentHTML('beforeend','<div class="modal"><div class="modalBox"><h2>Backend non collegato</h2><p>Il Player Tag è stato salvato, ma questa versione web non può chiamare direttamente l’API ufficiale Brawl Stars senza un backend.</p><p class="small">Inserisci il Backend API URL nelle impostazioni Profili. La chiave API non deve mai essere inserita nell’app.</p><button class="close" onclick="closeModal()">OK</button></div></div>');return}
  try{const r=await fetch(apiBase()+'/api/player/'+encodeURIComponent(p.tag.slice(1)));if(!r.ok)throw new Error('Backend HTTP '+r.status);P=await r.json();
  const serverName=String(P?.name||'').trim();
  if(serverName && !p.test){
