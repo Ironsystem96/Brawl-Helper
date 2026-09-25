@@ -1,0 +1,9 @@
+{
+  "checkedAt": "2026-09-25T05:26:23.440Z",
+  "status": "warning",
+  "warnings": [
+    "BrawlAPI catalog coverage below 90%",
+    "NOFF coverage below 50%",
+    "Brawl Time Ninja coverage below 50%"
+  ]
+}
