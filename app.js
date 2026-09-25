@@ -250,8 +250,15 @@ async function loadProfile(p){
 }
 function openB(id){selected=id;render()}
 function render(){
- const paint=()=>{if(!P){shell('<section class="hero"><div class="eyebrow">ACCOUNT</div><h1>Nessun profilo attivo</h1><p class="muted">Apri Profili e aggiungi il tuo Player Tag. Il profilo BlackShark è disponibile solo come ambiente di test.</p><button class="primary" onclick="profilePanel()">Gestisci profili</button></section>');return}if(selected)shell(detail());else if(tab==='home')shell(home());else if(tab==='brawlers')shell(brawlers());else if(tab==='play')shell(play());else if(tab==='upgrade')shell(upgrade());else shell(meta())};
- if(document.startViewTransition){document.startViewTransition(paint)}else{paint()}
+ try{
+  if(!P){shell('<section class="hero"><div class="eyebrow">ACCOUNT</div><h1>Nessun profilo attivo</h1><p class="muted">Apri Profili e aggiungi il tuo Player Tag. Il profilo BlackShark è disponibile solo come ambiente di test.</p><button class="primary" onclick="profilePanel()">Gestisci profili</button></section>');return}
+  if(selected)shell(detail());
+  else if(tab==='home')shell(home());
+  else if(tab==='brawlers')shell(brawlers());
+  else if(tab==='play')shell(play());
+  else if(tab==='upgrade')shell(upgrade());
+  else shell(meta());
+ }catch(e){showFatal(e)}
 }
 function showFatal(e){console.error('Brawl Helper fatal error',e);const msg=e?.message||String(e);const stack=e?.stack?'<details style="margin-top:12px"><summary>Dettagli tecnici</summary><pre style="white-space:pre-wrap;color:#ff9b9b;font-size:11px">'+esc(e.stack)+'</pre></details>':'';document.getElementById('app').innerHTML='<div style="min-height:100vh;background:#10131a;color:#fff;font-family:Arial,sans-serif;padding:28px;box-sizing:border-box"><h1>Brawl Helper</h1><p>Si è verificato un errore di caricamento.</p><pre style="white-space:pre-wrap;color:#ff9b9b">'+esc(msg)+'</pre>'+stack+'<button style="padding:14px 18px;border:0;border-radius:12px" onclick="location.reload()">Riprova</button></div>'}
 function loading(){document.getElementById('app').innerHTML='<div style="min-height:100vh;background:#10131a;color:#fff;font-family:Arial,sans-serif;display:flex;align-items:center;justify-content:center"><div style="text-align:center"><div style="font-size:28px;font-weight:800">Brawl Helper</div><div style="opacity:.65;margin-top:8px">Avvio applicazione…</div><div id="bootStatus" style="opacity:.5;margin-top:10px;font-size:12px">stage: loading()</div></div></div>'}
