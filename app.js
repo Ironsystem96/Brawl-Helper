@@ -2,7 +2,7 @@ let P=null,profiles=loadProfiles(),active=localStorage.getItem('bh_active')||'',
 
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 const fmt=n=>Number(n||0).toLocaleString('it-IT');
-const apiBase=()=>localStorage.getItem('bh_api_base')||'';
+const apiBase=()=>localStorage.getItem('bh_api_base')||'https://brawl-helper-backend.onrender.com';
 const META_STATE={loaded:false,source:null,updatedAt:null,entries:{}};
 const DB_STATE={loaded:false,version:null,patch:null,lastSyncedAt:null,changelog:[]};
 const BUILD_STATE={loaded:false,updatedAt:null,entries:{},sources:[]};
