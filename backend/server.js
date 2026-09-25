@@ -6,7 +6,7 @@ const app = express();
 
 const PORT = Number(process.env.PORT || 3000);
 const TOKEN = process.env.BRAWL_STARS_API_TOKEN;
-const ALLOWED_ORIGIN = process.env.ALLOWED_ORIGIN || 'https://ironsystem96.github.io';
+const ALLOWED_ORIGINS = String(process.env.ALLOWED_ORIGINS || process.env.ALLOWED_ORIGIN || 'https://ironsystem96.github.io').split(',').map(x => x.trim()).filter(Boolean);
 const CACHE_TTL_MS = Number(process.env.PLAYER_CACHE_TTL_MS || 5 * 60 * 1000);
 const REQUEST_TIMEOUT_MS = Number(process.env.BRAWL_API_TIMEOUT_MS || 8000);
 
@@ -16,8 +16,13 @@ const playerCache = new Map();
 
 app.disable('x-powered-by');
 app.use(cors({
-  origin: ALLOWED_ORIGIN,
-  methods: ['GET', 'OPTIONS']
+  origin(origin, callback) {
+    if (!origin || ALLOWED_ORIGINS.includes(origin)) return callback(null, true);
+    return callback(new Error('Origin non autorizzata'));
+  },
+  methods: ['GET', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'X-Client-Id'],
+  exposedHeaders: ['X-Brawl-Helper-Cache', 'X-Brawl-Helper-Sync-At']
 }));
 app.use(express.json({ limit: '16kb' }));
 
@@ -97,7 +102,8 @@ app.get('/api/health', (req, res) => {
     cache: {
       entries: playerCache.size,
       ttlMs: CACHE_TTL_MS
-    }
+    },
+    cors: { allowedOrigins: ALLOWED_ORIGINS }
   });
 });
 
@@ -141,7 +147,17 @@ app.get('/api/player/:tag', async (req, res) => {
     if (response.ok) {
       storePlayer(tag, body);
       res.set('X-Brawl-Helper-Cache', 'MISS');
+      res.set('X-Brawl-Helper-Sync-At', new Date().toISOString());
       return res.status(200).json(body);
+    }
+
+    // If Brawl Stars is temporarily unavailable, serve the last known profile.
+    // This keeps the companion usable without pretending the data is fresh.
+    const stale = playerCache.get(tag);
+    if (stale && response.status >= 500) {
+      res.set('X-Brawl-Helper-Cache', 'STALE');
+      res.set('X-Brawl-Helper-Sync-At', new Date(stale.timestamp).toISOString());
+      return res.status(200).json(stale.data);
     }
 
     if (response.status === 404) {
