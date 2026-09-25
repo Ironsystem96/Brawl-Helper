@@ -1,8 +1,11 @@
-let P=null,profiles=loadProfiles(),active=localStorage.getItem('bh_active')||'',tab='home',query='',filter='all',selected=null,playMode='Ranked',playMap='Random';
+let P=null,active=localStorage.getItem('bh_player_tag')||'',profileStatus='OFFLINE',profileSyncAt=null,tab='home',query='',filter='all',selected=null,playMode='Ranked',playMap='Random';
+const DEV_MODE=false;
+const DEV_TEST_TAG='#22QYOQRGY';
 
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 const fmt=n=>Number(n||0).toLocaleString('it-IT');
 const apiBase=()=>localStorage.getItem('bh_api_base')||'https://brawl-helper-backend.onrender.com';
+const normalizeTag=v=>{const t=String(v||'').trim().toUpperCase();return t.startsWith('#')?t:'#'+t};
 const META_STATE={loaded:false,source:null,updatedAt:null,entries:{}};
 const DB_STATE={loaded:false,version:null,patch:null,lastSyncedAt:null,changelog:[]};
 const BUILD_STATE={loaded:false,updatedAt:null,entries:{},sources:[]};
@@ -11,8 +14,6 @@ const PROVIDER_STATE={loaded:false,providers:[],report:null};
 
 async function fetchJson(url,ms=7000){const ctl=new AbortController();const t=setTimeout(()=>ctl.abort(),ms);try{const r=await fetch(url,{cache:'no-store',signal:ctl.signal});if(!r.ok)throw new Error('HTTP '+r.status+' · '+url);return await r.json()}finally{clearTimeout(t)}}
 
-function loadProfiles(){try{return JSON.parse(localStorage.getItem('bh_profiles')||'[]')}catch{return[]}}
-function saveProfiles(){localStorage.setItem('bh_profiles',JSON.stringify(profiles))}
 function img(kind,id){return 'https://cdn.brawlify.com/'+kind+'/'+id+'.png'}
 function catalogEntry(b){if(!b)return null;return CATALOG_STATE.entries[b.name]||Object.values(CATALOG_STATE.entries||{}).find(x=>x&&x.id===b.id)||null}
 function portrait(b){return catalogEntry(b)?.imageUrl||b?.imageUrl||img('brawlers/borders',b?.id)}
@@ -115,7 +116,7 @@ function buildAdvisor(b){
 }
 
 function nav(){return '<nav class="nav">'+[['home','⌂','Home'],['play','▶','Play'],['brawlers','●','Brawlers'],['upgrade','↗','Upgrade'],['meta','✦','Meta']].map(x=>'<button class="'+(tab===x[0]?'active':'')+'" onclick="setTab(\''+x[0]+'\')">'+x[1]+'<br>'+x[2]+'</button>').join('')}
-function shell(body){document.getElementById('app').innerHTML='<div class="app"><header class="top"><div class="brand"><div class="logo">Brawl <span>Helper</span></div><div class="sync">'+(active?'PROFILE':'NO PROFILE')+'</div></div><button class="profileBtn" onclick="profilePanel()">'+esc(active||'Profilo')+'</button></header><main class="content">'+body+'</main>'+nav()+'</div>'}
+function shell(body){document.getElementById('app').innerHTML='<div class="app"><header class="top"><div class="brand"><div class="logo">Brawl <span>Helper</span></div><div class="sync">'+(active?'PROFILE · '+esc(profileStatus):'NO PROFILE')+'</div></div><button class="profileBtn" onclick="profilePanel()">'+esc(P?.name||active||'Collega profilo')+'</button></header><main class="content">'+body+'</main>'+nav()+'</div>'}
 function setTab(t){tab=t;selected=null;query='';filter='all';render()}
 
 function bcard(b,compact=false,mode=playMode,map=playMap,rank=null,kind=''){
@@ -218,45 +219,59 @@ async function loadMeta(){
 }
 
 function profilePanel(first=false){
- const rows=profiles.map(p=>'<div class="profileRow"><button onclick="activate(\''+esc(p.name||p.tag)+'\')"><b>'+esc(p.name||p.tag)+'</b><span>'+esc(p.tag)+(p.test?' · TEST':'')+'</span></button><button class="del" onclick="removeProfile(\''+esc(p.name||p.tag)+'\')">×</button></div>').join('');
- const title=first?'Collega il tuo account':'Profili';
- const intro=first?'<div class="onboardIntro"><div class="onboardIcon">BH</div><div><h3>Inserisci il Player Tag di Brawl Stars</h3><p>È il codice che identifica il tuo account. Lo usiamo solo per recuperare i dati pubblici del profilo tramite il backend.</p></div></div>':'<p class="small modalLead">Gestisci i tuoi account Brawl Stars. Puoi salvarne più di uno e passare da un profilo all’altro.</p>';
- const form='<div class="profileForm '+(first?'onboardForm':'')+'"><label for="newTag">PLAYER TAG BRAWL STARS</label><input id="newTag" class="tagInput" placeholder="#22QYOQRGY" autocomplete="off" autocapitalize="characters" spellcheck="false"><span class="fieldHint">Esempio: #22QYOQRGY · il tag inizia con #</span><label for="newName">NOME PROFILO <span>(opzionale)</span></label><input id="newName" placeholder="Es. Il mio account" autocomplete="off"><button class="primary" onclick="addProfile()">Collega account</button></div>';
- const extra=first?'<div class="onboardHelp"><b>Dove trovo il Player Tag?</b><span>Apri Brawl Stars → Profilo → sotto il nome del giocatore trovi il codice che inizia con #.</span></div><button class="secondaryBtn" onclick="skipOnboarding()">Continua con profilo TEST</button>':'';
- const settings=first?'':rows+'<div class="profileForm"><label for="apiBase">BACKEND API URL</label><input id="apiBase" placeholder="Backend API URL" value="'+esc(apiBase())+'"><button class="secondaryBtn" onclick="saveApiBase()">Salva backend</button></div>';
- document.getElementById('app').insertAdjacentHTML('beforeend','<div class="modal '+(first?'onboardingModal':'')+'"><div class="modalBox">'+(first?'<div class="modalBrand">BRAWL HELPER</div>':'<div class="modalHead"><h2>Profili</h2><button onclick="closeModal()">×</button></div>')+intro+form+extra+settings+(first?'':'<button class="close" onclick="closeModal()">Chiudi</button>')+'</div></div>');
- if(first){setTimeout(()=>document.getElementById('newTag')?.focus(),220)}
+ const current=active||'';
+ const title=first?'Collega il tuo account':'Profilo Brawl Stars';
+ const intro=first
+  ?'<div class="onboardIntro"><div class="onboardIcon">BH</div><div><h3>Inserisci il Player Tag di Brawl Stars</h3><p>Il tag identifica il tuo account. Viene usato per recuperare i dati pubblici tramite il backend Brawl Helper.</p></div></div>'
+  :'<p class="small modalLead">Account collegato: <b>'+esc(P?.name||current||'nessuno')+'</b><br>Stato: '+esc(profileStatus)+(profileSyncAt?' · ultimo aggiornamento '+esc(profileSyncAt):'')+'</p>';
+ const form='<div class="profileForm '+(first?'onboardForm':'')+'"><label for="newTag">PLAYER TAG BRAWL STARS</label><input id="newTag" class="tagInput" value="'+esc(current)+'" placeholder="#22QYOQRGY" autocomplete="off" autocapitalize="characters" spellcheck="false"><span class="fieldHint">Esempio: #22QYOQRGY · il tag inizia con #</span><button class="primary" onclick="savePlayerTag()">'+(current?'Cambia / aggiorna profilo':'Collega account')+'</button></div>';
+ const help='<div class="onboardHelp"><b>Dove trovo il Player Tag?</b><span>Apri Brawl Stars → Profilo → sotto il nome del giocatore trovi il codice che inizia con #.</span></div>';
+ const dev=DEV_MODE?'<button class="secondaryBtn" onclick="useDevProfile()">Apri BlackShark TEST</button>':'';
+ const settings='<details class="small" style="margin-top:14px"><summary>Impostazioni tecniche</summary><div class="profileForm"><label for="apiBase">BACKEND API URL</label><input id="apiBase" placeholder="Backend API URL" value="'+esc(apiBase())+'"><button class="secondaryBtn" onclick="saveApiBase()">Salva backend</button></div></details>';
+ document.getElementById('app').insertAdjacentHTML('beforeend','<div class="modal '+(first?'onboardingModal':'')+'"><div class="modalBox">'+(first?'<div class="modalBrand">BRAWL HELPER</div>':'<div class="modalHead"><h2>'+title+'</h2><button onclick="closeModal()">×</button></div>')+intro+form+help+dev+settings+(first?'':'<button class="close" onclick="closeModal()">Chiudi</button>')+'</div></div>');
+ setTimeout(()=>document.getElementById('newTag')?.focus(),180);
 }
-function skipOnboarding(){localStorage.setItem('bh_onboarding_seen','1');closeModal()}
 function closeModal(){document.querySelector('.modal')?.remove()}
-function activate(name){const p=profiles.find(x=>(x.name||x.tag)===name);if(!p)return;active=p.name||p.tag;localStorage.setItem('bh_active',active);closeModal();loadProfile(p)}
-function removeProfile(name){const p=profiles.find(x=>(x.name||x.tag)===name);profiles=profiles.filter(x=>x!==p);saveProfiles();if(p&&(active===p.name||active===p.tag)){active='';localStorage.removeItem('bh_active');P=null}closeModal();render()}
-async function addProfile(){
- const name=document.getElementById('newName').value.trim();
- const tag=document.getElementById('newTag').value.trim().toUpperCase();
- if(!/^#[A-Z0-9]+$/.test(tag)){alert('Inserisci un Player Tag valido, ad esempio #22QYOQRGY.');return}
- if(profiles.some(p=>p.tag===tag)){alert('Player Tag già presente.');return}
- const p={name:name||'',tag,test:false};
- profiles.push(p);saveProfiles();active=name||tag;localStorage.setItem('bh_active',active);localStorage.setItem('bh_onboarding_seen','1');closeModal();await loadProfile(p)
+function savePlayerTag(){
+ const raw=document.getElementById('newTag')?.value||'';
+ const tag=normalizeTag(raw);
+ if(!/^#[A-Z0-9]{3,20}$/.test(tag)){alert('Inserisci un Player Tag valido, ad esempio #22QYOQRGY.');return}
+ localStorage.setItem('bh_player_tag',tag);
+ active=tag;
+ localStorage.removeItem('bh_profile_cache_'+tag);
+ closeModal();
+ loadProfile(tag);
 }
-function saveApiBase(){const v=document.getElementById('apiBase').value.trim().replace(/\/$/,'');if(v)localStorage.setItem('bh_api_base',v);else localStorage.removeItem('bh_api_base');closeModal();alert('Backend salvato.')}
-async function loadProfile(p){
+function useDevProfile(){localStorage.setItem('bh_player_tag',DEV_TEST_TAG);active=DEV_TEST_TAG;closeModal();loadProfile(DEV_TEST_TAG)}
+function saveApiBase(){const v=document.getElementById('apiBase')?.value.trim().replace(/\/$/,'');if(v)localStorage.setItem('bh_api_base',v);else localStorage.removeItem('bh_api_base');closeModal();alert('Backend salvato.')}
+async function loadProfile(tag){
  selected=null;tab='home';
- const bs=document.getElementById('bootStatus');if(bs)bs.textContent='stage: loadProfile('+(p?.name||p?.tag||'unknown')+')';
- if(p.test || (p.tag==='#22QYOQRGY' && window.BH_TEST_PROFILE)){P=window.BH_TEST_PROFILE||null;if(!P)console.warn('Profilo TEST incorporato non disponibile');render();if(!localStorage.getItem('bh_onboarding_seen'))setTimeout(()=>profilePanel(true),250);return}
- if(!apiBase()){P=null;render();document.getElementById('app').insertAdjacentHTML('beforeend','<div class="modal"><div class="modalBox"><h2>Backend non collegato</h2><p>Il Player Tag è stato salvato, ma questa versione web non può chiamare direttamente l’API ufficiale Brawl Stars senza un backend.</p><p class="small">Inserisci il Backend API URL nelle impostazioni Profili. La chiave API non deve mai essere inserita nell’app.</p><button class="close" onclick="closeModal()">OK</button></div></div>');return}
- try{const d=await fetchJson(apiBase()+'/api/player/'+encodeURIComponent(p.tag.slice(1)),8000);P=d;
- const serverName=String(P?.name||'').trim();
- if(serverName && !p.test){
-   const oldKey=p.name||p.tag;
-   p.name=serverName;
-   profiles=profiles.map(x=>x===p?{...p}:x);
-   saveProfiles();
-   if(active===oldKey || active===p.tag){active=serverName;localStorage.setItem('bh_active',active)}
+ tag=normalizeTag(tag);
+ active=tag;localStorage.setItem('bh_player_tag',tag);
+ const bs=document.getElementById('bootStatus');if(bs)bs.textContent='stage: loadProfile('+tag+')';
+ if(DEV_MODE && tag===DEV_TEST_TAG && window.BH_TEST_PROFILE){
+   P=window.BH_TEST_PROFILE;profileStatus='DEV';profileSyncAt=new Date().toLocaleString('it-IT');render();return;
  }
- render();if(!localStorage.getItem('bh_onboarding_seen')){localStorage.setItem('bh_onboarding_seen','1')} }catch(e){P=null;render();document.getElementById('app').insertAdjacentHTML('beforeend','<div class="modal"><div class="modalBox"><h2>Errore collegamento</h2><p>'+esc(e.message)+'</p><button class="close" onclick="closeModal()">OK</button></div></div>')}
+ try{
+   const ctl=new AbortController();const timer=setTimeout(()=>ctl.abort(),8000);
+   const r=await fetch(apiBase()+'/api/player/'+encodeURIComponent(tag.slice(1)),{cache:'no-store',signal:ctl.signal});
+   clearTimeout(timer);
+   const cacheState=r.headers.get('X-Brawl-Helper-Cache')||'MISS';
+   const sync=r.headers.get('X-Brawl-Helper-Sync-At');
+   if(!r.ok){let body={};try{body=await r.json()}catch{};throw new Error(body.error||('HTTP '+r.status))}
+   const d=await r.json();P=d;
+   profileStatus=cacheState==='HIT'?'CACHE':cacheState==='STALE'?'OFFLINE':'ONLINE';
+   profileSyncAt=sync||new Date().toLocaleString('it-IT');
+   localStorage.setItem('bh_profile_cache_'+tag,JSON.stringify({savedAt:Date.now(),data:d}));
+   render();
+   localStorage.setItem('bh_onboarding_seen','1');
+ }catch(e){
+   const cached=localStorage.getItem('bh_profile_cache_'+tag);
+   if(cached){try{const c=JSON.parse(cached);P=c.data;profileStatus='OFFLINE';profileSyncAt=new Date(c.savedAt).toLocaleString('it-IT');render();return}catch{}}
+   P=null;profileStatus='OFFLINE';render();
+   document.getElementById('app').insertAdjacentHTML('beforeend','<div class="modal"><div class="modalBox"><h2>Profilo non raggiungibile</h2><p>'+esc(e.name==='AbortError'?'Timeout nel collegamento al backend.':e.message)+'</p><p class="small">Il Player Tag resta salvato. Riprova quando il backend è disponibile.</p><button class="close" onclick="closeModal()">OK</button></div></div>');
+ }
 }
-function openB(id){selected=id;render()}
 function render(){
  try{
   if(!P){shell('<section class="hero"><div class="eyebrow">ACCOUNT</div><h1>Nessun profilo attivo</h1><p class="muted">Apri Profili e aggiungi il tuo Player Tag. Il profilo BlackShark è disponibile solo come ambiente di test.</p><button class="primary" onclick="profilePanel()">Gestisci profili</button></section>');return}
@@ -273,21 +288,13 @@ function loading(){document.getElementById('app').innerHTML='<div style="min-hei
 async function boot(){
  try{
   loading();
-  const s=()=>document.getElementById('bootStatus');
-  let testProfile=profiles.find(x=>x.test);
-  if(!testProfile){
-   testProfile={name:'BlackShark TEST',tag:'#22QYOQRGY',test:true};
-   profiles=[testProfile,...profiles];
-   saveProfiles();
+  const tag=localStorage.getItem('bh_player_tag');
+  if(!tag){
+    P=null;profileStatus='OFFLINE';render();
+    setTimeout(()=>profilePanel(true),250);
+    return;
   }
-  let p=profiles.find(x=>(x.name||x.tag)===active);
-  if(!p){
-   p=testProfile;
-   active=p.name;
-   localStorage.setItem('bh_active',active);
-  }
-  if(s())s().textContent='stage: loadProfile';
-  await loadProfile(p);
+  await loadProfile(tag);
   Promise.allSettled([loadMeta(),loadCatalog()]).then(()=>{if(P)render()});
  }catch(e){showFatal(e)}
 }
