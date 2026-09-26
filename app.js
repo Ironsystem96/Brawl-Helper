@@ -116,7 +116,7 @@ function buildAdvisor(b){
 }
 
 function nav(){return '<nav class="nav">'+[['home','⌂','Home'],['play','▶','Play'],['brawlers','●','Brawlers'],['upgrade','↗','Upgrade'],['meta','✦','Meta']].map(x=>'<button class="'+(tab===x[0]?'active':'')+'" onclick="setTab(\''+x[0]+'\')">'+x[1]+'<br>'+x[2]+'</button>').join('')}
-function shell(body){document.getElementById('app').innerHTML='<div class="app"><header class="top"><div class="brand"><div class="logo">Brawl <span>Helper</span></div><div class="sync">'+(active?'PROFILE · '+esc(profileStatus):'NO PROFILE')+'</div></div><button class="profileBtn" onclick="profilePanel()">'+esc(P?.name||active||'Collega profilo')+'</button></header><main class="content">'+body+'</main>'+nav()+'</div>'}
+function shell(body){document.getElementById('app').innerHTML='<div class="app"><header class="top"><div class="brand"><div class="logo">Brawl <span>Helper</span></div><div class="sync">'+(active?'PROFILE · '+esc(profileStatus):'NO PROFILE')+'</div></div><button class="profileBtn" onclick="profilePanel()">'+esc(P?.name||active||'Collega profilo')+'</button></header><main class="content">'+body+'</main>'+nav()+'<footer class="legalFooter">Questo materiale non è ufficiale e non è sponsorizzato da Supercell. Brawl Stars e i relativi contenuti appartengono ai rispettivi titolari. <a href="https://supercell.com/en/fan-content-policy/it/" target="_blank" rel="noopener">Politica sui Contenuti dei fan</a> · <a href="privacy.html">Privacy</a></footer></div>'}
 function setTab(t){tab=t;selected=null;query='';filter='all';render()}
 
 function bcard(b,compact=false,mode=playMode,map=playMap,rank=null,kind=''){
