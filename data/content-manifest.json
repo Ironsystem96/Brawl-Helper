@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": null,
+  "contentVersion": "0.1.0",
+  "sources": {
+    "catalog": "Brawlify/CDN and official/public game data where permitted",
+    "meta": "Configured providers in data/meta-sources.json",
+    "officiality": "Unofficial fan content"
+  },
+  "assetPolicy": {
+    "useOnlyPermittedAssets": true,
+    "lazyLoadImages": true,
+    "fallbackToPlaceholder": true,
+    "doNotBundleSecrets": true
+  },
+  "brawlerFields": [
+    "id",
+    "name",
+    "description",
+    "role",
+    "rarity",
+    "imageUrl",
+    "iconUrl",
+    "gadgets",
+    "starPowers",
+    "gears",
+    "hypercharge",
+    "buffies",
+    "tips",
+    "counters",
+    "synergies",
+    "recommendedBuilds",
+    "lastUpdated"
+  ],
+  "guideFields": [
+    "summary",
+    "mechanics",
+    "strengths",
+    "weaknesses",
+    "bestModes",
+    "bestMaps",
+    "builds",
+    "matchups",
+    "tips",
+    "source",
+    "updatedAt"
+  ],
+  "metaFields": [
+    "mode",
+    "map",
+    "brawler",
+    "rank",
+    "score",
+    "pickRate",
+    "winRate",
+    "buildUsage",
+    "confidence",
+    "source",
+    "updatedAt"
+  ]
+}
