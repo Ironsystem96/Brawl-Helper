@@ -10,22 +10,20 @@ Future locale candidates: `it`, `es`, `de`, `fr`.
 
 ## Brawler Guide — Phase 1
 
-Every Brawler detail page should expose:
+The Brawler Guide is the core product surface.
 
-- role and short gameplay identity
-- strengths and weaknesses
-- best modes and map contexts
-- recommended Gadget with a plain-English explanation of when to use it
-- recommended Star Power with a plain-English explanation of when to use it
-- recommended Gears
-- Hypercharge / Buffies when applicable
-- build alternatives for different modes
-- counters and synergies when evidence exists
-- owned vs missing components from the player's profile
-- "Why this build?" explanation
-- source and freshness timestamp
+Required:
+- full Brawler catalog and search;
+- one detail page per Brawler;
+- clear account state: EQUIPPED / OWNED / BUY / UNKNOWN;
+- clear action state: READY / EQUIP / BUY / CHECK / POWER;
+- component icons with stable category fallbacks;
+- component detail modal;
+- Brawler description and gameplay context;
+- recommended build with source and freshness;
+- no fabricated build when data is missing.
 
-Components should open into a compact detail panel explaining what they do and how they affect gameplay.
+The MVP navigation is intentionally reduced to Home, Brawler Browser and Upgrade Queue.
 
 ## Meta pipeline — Phase 1
 
@@ -44,16 +42,23 @@ Pipeline:
 
 ## Player-specific recommendations — Phase 1
 
-The recommendation engine combines:
+The recommendation engine should prioritize actionable progression rather than opaque scores.
 
-- current external meta context
-- the player's owned Brawlers
-- Power Level
-- available Gadgets / Star Powers / Gears / Hypercharges
-- Brawler experience
-- mode/map context
+Inputs:
+- owned Brawler;
+- Power Level;
+- equipped components from the public profile;
+- manually confirmed ownership for components that are not equipped;
+- validated community build data;
+- validated meta context when available.
 
-The engine must explain recommendations instead of presenting unexplained scores.
+The output is a short ordered queue:
+1. Power progression;
+2. BUY actions for confirmed missing components;
+3. EQUIP actions for confirmed owned components;
+4. CHECK actions for unknown ownership.
+
+Do not label an item BUY merely because it is absent from the profile response.
 
 ## Popup Companion — Phase 2
 
