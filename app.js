@@ -33,7 +33,7 @@ function buildItems(b){const e=buildEntry(b);return [['Gadget','gadgets',bestBui
 function nextActions(b){const actions=[];if(!isOwnedAccount(b))return [{type:'UNLOCK',label:'Unlock Brawler',priority:100,reason:'This Brawler is not on the account.'}];if((b.power||0)<11)actions.push({type:'POWER',label:'Reach Power 11',priority:100-(b.power||0),reason:'Power 11 unlocks the full build path.'});for(const [label,type,item] of buildItems(b)){const s=itemStatus(b,type,item);if(s==='NOT OWNED')actions.push({type:'BUY',label:'Buy '+label+': '+item.name,priority:70+Number(item.pick||0)*.4,reason:'Marked as not owned and selected by the current build data.'});else if(s==='OWNED')actions.push({type:'EQUIP',label:'Equip '+label+': '+item.name,priority:55+Number(item.pick||0)*.3,reason:'You marked this component as owned but it is not currently equipped.'});else if(s==='UNKNOWN')actions.push({type:'CHECK',label:'Check '+label+': '+item.name,priority:20+Number(item.pick||0)*.1,reason:'Ownership is not available from the public profile. Confirm it once to unlock precise BUY/EQUIP guidance.'})}return actions.sort((a,z)=>z.priority-a.priority)}
 function upgradePriority(b){const actions=nextActions(b),m=metaEntry(b,playMode,playMap),metaScore=Number(m?.score||0);return {score:Math.round(Math.min(100,(actions[0]?.priority||0)+metaScore*.12)),actions:actions.slice(0,4),metaScore}}
 function componentCatalogItem(type,item,b=null){if(!item)return null;const c=catalogEntry(b);const key=({gadgets:'gadgets',gadget:'gadgets',starPowers:'starPowers',star:'starPowers',gears:'gears',gear:'gears',hyperCharges:'hyperCharges',hc:'hyperCharges',buffies:'buffies',buffie:'buffies'})[type];const local=c?.[key]||[];const pool=Object.values(CATALOG_STATE.entries||{}).flatMap(x=>x?.[key]||[]);return [...local,...pool].find(x=>x&&((x.id!=null&&item.id!=null&&x.id===item.id)||norm(x.name)===norm(item.name)))||null}
-function compIcon(type,item,b=null){if(!item)return '';const paths={gadgets:'gadgets/borderless',starPowers:'star-powers/borderless',gears:'gears/regular',hyperCharges:'hypercharges/regular',buffies:'buffies/regular',gadget:'gadgets/borderless',star:'star-powers/borderless',gear:'gears/regular',hc:'hypercharges/regular',buffie:'buffies/regular'};const mapped=componentCatalogItem(type,item,b);const src=mapped?.imageUrl||(paths[type]&&item.id?img(paths[type],item.id):'');return src?'<img class="compIcon" loading="lazy" src="'+esc(src)+'" alt="">':''}
+function compIcon(type,item,b=null){const sym={gadgets:'◈',starPowers:'★',gears:'⚙',hyperCharges:'⚡',buffies:'✦',overdrives:'◉',gadget:'◈',star:'★',gear:'⚙',hc:'⚡',buffie:'✦',overdrive:'◉'}[type]||'•';if(!item)return '<span class="compIcon fallbackIcon">'+sym+'</span>';const paths={gadgets:'gadgets/borderless',starPowers:'star-powers/borderless',gears:'gears/regular',hyperCharges:'hypercharges/regular',buffies:'buffies/regular',overdrives:'overdrives/regular',gadget:'gadgets/borderless',star:'star-powers/borderless',gear:'gears/regular',hc:'hypercharges/regular',buffie:'buffies/regular',overdrive:'overdrives/regular'};const mapped=componentCatalogItem(type,item,b),src=mapped?.imageUrl||(paths[type]&&item.id?img(paths[type],item.id):'');return src?'<img class="compIcon" loading="lazy" src="'+esc(src)+'" alt="" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'"><span class="compIcon fallbackIcon" style="display:none">'+sym+'</span>':'<span class="compIcon fallbackIcon">'+sym+'</span>'}
 function comp(type,label,item){return '<div class="comp '+(item?'owned':'missing')+'">'+compIcon(type,item)+'<div><span>'+label+'</span><b>'+esc(item?.name||'Not owned')+'</b></div></div>'}
 function first(a){return Array.isArray(a)&&a.length?a[0]:null}
 function buildLabel(b){const o=owned(b);return [o.gadgets?'Gadget':'Gadget missing',o.stars?'Star Power':'Star Power missing',o.gears?'Gear':'Gear missing',o.hc?'Hypercharge':'Hypercharge missing'].join(' · ')}
@@ -46,42 +46,9 @@ function ownedNames(b,type){return b?(b[type]||[]).filter(Boolean).map(x=>norm(x
 function itemState(b,type,item){if(!item)return 'DATA MISSING';return ownedNames(b,type).includes(norm(item.name))?'OWNED':'BUY'}
 function missingBuildActions(b){const e=buildEntry(b),actions=[];if(!isOwnedAccount(b))return [{type:'UNLOCK',label:'Unlock Brawler',priority:30,reason:'This Brawler is not owned on the account.'}];if((b.power||0)<11)actions.push({type:'POWER',label:'Reach Power 11',priority:100+(11-(b.power||0))*8,reason:'Power level is below the full build threshold.'});const defs=[['Gadget','gadgets',bestBuildItem(e,'gadget'),70],['Star Power','starPowers',bestBuildItem(e,'starPower'),64],['Gear','gears',bestBuildItem(e,'gears',0),48],['Gear','gears',bestBuildItem(e,'gears',1),42]];for(const [label,type,item,base] of defs){if(!item)continue;if(!ownedNames(b,type).includes(norm(item.name)))actions.push({type:'BUY',label:'Buy '+label,priority:base+Number(item.pick||0)*.5,reason:item.name+' is the current community build component.'})}if((b.power||0)>=11&&!(b.hyperCharges?.length))actions.push({type:'CONSIDER',label:'Consider Hypercharge',priority:36,reason:'Power 11 is reached and no Hypercharge is recorded.'});return actions.sort((a,z)=>z.priority-a.priority)}
 function upgradePriority(b){const actions=missingBuildActions(b),m=metaEntry(b,playMode,playMap);const metaScore=Number(m?.score||0),progress=Math.max(0,11-(b.power||0))*8;const score=Math.round(Math.min(100,(actions[0]?.priority||0)+metaScore*.1+progress));return {score,actions:actions.slice(0,3),metaScore,readinessScore:readiness(b)}}
-function advisorRow(b,label,type,item){
- if(!item)return '';
- const state=itemState(b,type,item);
- const pct=item.pick!=null?' · '+item.pick+'% pick':'';
- return '<div class="advisorRow"><div class="advisorIcon">'+compIcon(type,item)+'</div><div class="grow"><b>'+esc(item.name)+'</b><span class="small">'+esc(label)+pct+'</span></div><span class="chip '+(state==='EQUIP'?'ok':'')+'">'+state+'</span></div>';
-}
-function buildActionLine(b){
- const e=buildEntry(b);
- if(!isOwnedAccount(b))return '<span class="actionPill buyAction">UNLOCK</span>';
- if(!e)return '<span class="actionPill mutedAction">BUILD TO REVIEW</span>';
- const actions=[];
- const defs=[['GADGET','gadgets',bestBuildItem(e,'gadget')],['SP','starPowers',bestBuildItem(e,'starPower')],['G1','gears',bestBuildItem(e,'gears',0)],['G2','gears',bestBuildItem(e,'gears',1)]];
- for(const [label,type,item] of defs){
-   if(!item)continue;
-   const has=ownedNames(b,type).includes(norm(item.name));
-   actions.push('<span class="actionPill '+(has?'equipAction':'buyAction')+'">'+(has?'OWNED ':'BUY ')+esc(label)+'</span>');
- }
- if((b.power||0)<11)actions.unshift('<span class="actionPill powerAction">REACH POWER 11</span>');
- return actions.slice(0,3).join('');
-}
-function miniBuild(b){
- const e=buildEntry(b);
- if(!e)return '<div class="miniBuild mutedBuild"><span class="miniState">BUILD N/A</span><span class="miniHint">no verified data</span></div>';
- const items=[
-  ['G','gadgets',bestBuildItem(e,'gadget')],
-  ['SP','starPowers',bestBuildItem(e,'starPower')],
-  ['G1','gears',bestBuildItem(e,'gears',0)],
-  ['G2','gears',bestBuildItem(e,'gears',1)]
- ];
- return '<div class="miniBuild">'+items.map(([label,type,item])=>{
-   if(!item)return '<span class="miniItem unknown">'+label+' · —</span>';
-   const has=isOwnedAccount(b)&&ownedNames(b,type).includes(norm(item.name));
-   const pick=item.pick!=null?' '+item.pick+'%':'';
-   return '<span class="miniItem '+(has?'ownedMini':'buyMini')+'">'+compIcon(type,item,b)+'<b>'+label+'</b><em>'+ (has?'✓':'＋')+pick+'</em></span>';
- }).join('')+'</div>';
-}
+function advisorRow(b,label,type,item){if(!item)return '';const state=itemStatus(b,type,item),act=recommendationAction(b,type,item),pct=item.pick!=null?' · '+item.pick+'% pick':'';return '<div class="advisorRow"><div class="advisorIcon">'+compIcon(type,item,b)+'</div><div class="grow"><b>'+esc(item.name)+'</b><span class="small">'+esc(label)+pct+'</span></div><span class="chip '+(state==='EQUIPPED'?'ok':state==='NOT OWNED'?'miss':'')+'">'+state+'</span><span class="advisorAction">'+act+'</span></div>'}
+function buildActionLine(b){const actions=nextActions(b).slice(0,3);if(!actions.length)return '<span class="actionPill mutedAction">READY</span>';return actions.map(a=>'<span class="actionPill '+(a.type==='BUY'?'buyAction':a.type==='EQUIP'?'equipAction':a.type==='POWER'?'powerAction':'mutedAction')+'">'+esc(a.type==='POWER'?'POWER 11':a.type)+'</span>').join('')}
+function miniBuild(b){const items=buildItems(b);if(!items.length)return '<div class="miniBuild mutedBuild"><span class="miniState">BUILD N/A</span><span class="miniHint">verified build data pending</span></div>';return '<div class="miniBuild">'+items.map(([label,type,item])=>{const s=itemStatus(b,type,item),action=s==='EQUIPPED'?'✓':s==='OWNED'?'●':s==='NOT OWNED'?'＋':'?';return '<span class="miniItem '+(s==='EQUIPPED'?'equippedMini':s==='OWNED'?'ownedMini':s==='NOT OWNED'?'buyMini':'unknownMini')+'">'+compIcon(type,item,b)+'<b>'+esc(label)+'</b><em>'+action+'</em></span>'}).join('')+'</div>'}
 function metaRankList(mode,map){
  return allBrawlers().map(b=>({b,meta:metaEntry(b,mode,map)})).filter(x=>x.meta?.score!=null).sort((a,z)=>(z.meta.score-a.meta.score)||((a.meta.rank||999)-(z.meta.rank||999)));
 }
@@ -99,23 +66,9 @@ function guideItem(b,type,item){
  const pool=c?.[type]||[]; return pool.find(x=>x&&((x.id!=null&&x.id===item.id)||norm(x.name)===norm(item.name)))||item;
 }
 function cleanGuideText(v){return String(v||'').replace(/<[^>]*>/g,' ').replace(/<![^>]*>/g,' ').replace(/\s+/g,' ').trim()}
-function componentModal(b,type,item){
- const x=guideItem(b,type,item); if(!x)return;
- const title=type==='gadgets'?'Gadget':type==='starPowers'?'Star Power':type==='gears'?'Gear':type==='hyperCharges'?'Hypercharge':'Buffie';
- const description=cleanGuideText(x.description||'No description available.');
- document.body.insertAdjacentHTML('beforeend','<div class="modal componentModal"><div class="modalBox"><div class="modalHead"><h2>'+esc(x.name||title)+'</h2><button onclick="closeModal()">×</button></div><div class="componentDetail"><div class="eyebrow">'+title.toUpperCase()+'</div><p>'+esc(description)+'</p><div class="small">Source catalog data · '+esc(b.name)+'</div></div><button class="close" onclick="closeModal()">Close</button></div></div>');
-}
-function guideComponent(b,label,type,item){
- if(!item)return '<div class="guideComponent missing"><span class="eyebrow">'+label+'</span><b>Not available</b></div>';
- const x=guideItem(b,type,item);
- const desc=cleanGuideText(x?.description||'');
- const state=itemState(b,type,item);
- return '<button class="guideComponent '+(state==='OWNED'?'owned':'missing')+'" onclick="componentModalById('+b.id+',\''+type+'\','+item.id+')" type="button">'+compIcon(type,item,b)+'<span class="grow"><small>'+label+'</small><b>'+esc(item.name)+'</b><em>'+esc(desc||'View details')+'</em></span><strong>'+state+'</strong></button>';
-}
-function componentModalById(bid,type,itemId){
- const b=allBrawlers().find(x=>x&&x.id===bid); if(!b)return;
- const c=guideEntry(b); const item=(c?.[type]||[]).find(x=>x&&x.id===itemId)||null; componentModal(b,type,item);
-}
+function componentModal(b,type,item){const x=guideItem(b,type,item);if(!x)return;const title=type==='gadgets'?'Gadget':type==='starPowers'?'Star Power':type==='gears'?'Gear':type==='hyperCharges'?'Hypercharge':type==='buffies'?'Buffie':type==='overdrives'?'Overdrive':'Component';const description=cleanGuideText(x.description||x.descriptionHtml||'No description available.');const state=itemStatus(b,type,item);document.body.insertAdjacentHTML('beforeend','<div class="modal componentModal"><div class="modalBox"><div class="modalHead"><h2>'+esc(x.name||title)+'</h2><button onclick="closeModal()">×</button></div><div class="componentDetail">'+compIcon(type,item,b)+'<div class="eyebrow">'+title.toUpperCase()+'</div><p>'+esc(description)+'</p><div class="stateBox"><b>'+state+'</b><span>'+esc(recommendationAction(b,type,item))+'</span></div>'+ownershipControl(b,type,item)+'</div><button class="close" onclick="closeModal()">Close</button></div></div>')}
+function guideComponent(b,label,type,item){if(!item)return '';const x=guideItem(b,type,item),desc=cleanGuideText(x?.description||''),state=itemStatus(b,type,item),act=recommendationAction(b,type,item);return '<button class="guideComponent '+(state==='EQUIPPED'?'equipped':state==='OWNED'?'owned':state==='NOT OWNED'?'missing':'unknown')+'" onclick="componentModalById('+b.id+',\''+type+'\','+(item.id||0)+')" type="button">'+compIcon(type,item,b)+'<span class="grow"><small>'+esc(label)+'</small><b>'+esc(item.name)+'</b><em>'+esc(desc||'View details')+'</em></span><strong>'+state+'</strong><span class="guideAction">'+act+'</span></button>'}
+function componentModalById(bid,type,itemId){const b=allBrawlers().find(x=>x&&x.id===bid);if(!b)return;const c=guideEntry(b),item=(c?.[type]||[]).find(x=>x&&x.id===itemId)||null;componentModal(b,type,item)}
 function brawlerGuide(b){
  const e=buildEntry(b), c=guideEntry(b), m=metaEntry(b,playMode,playMap);
  const g=bestBuildItem(e,'gadget'),sp=bestBuildItem(e,'starPower'),g1=bestBuildItem(e,'gears',0),g2=bestBuildItem(e,'gears',1),hc=first(b.hyperCharges);
