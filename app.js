@@ -17,34 +17,21 @@ async function fetchJson(url,ms=7000){const ctl=new AbortController();const t=se
 function img(kind,id){return 'https://cdn.brawlify.com/'+kind+'/'+id+'.png'}
 function catalogEntry(b){if(!b)return null;return CATALOG_STATE.entries[b.name]||Object.values(CATALOG_STATE.entries||{}).find(x=>x&&x.id===b.id)||null}
 function portrait(b){return catalogEntry(b)?.imageUrl||b?.imageUrl||img('brawlers/borders',b?.id)}
-function owned(b){if(!b)return {gadgets:0,stars:0,gears:0,hc:0};return {gadgets:b.gadgets?.length||0,stars:b.starPowers?.length||0,gears:b.gears?.length||0,hc:b.hyperCharges?.length||0}}
-function readiness(b){if(!b)return 0;const o=owned(b);return Math.min(100,Math.round((b.power||1)*5+Math.min(o.gadgets,2)*5+Math.min(o.stars,2)*5+Math.min(o.gears,2)*5+Math.min(o.hc,1)*8))}
-function powerScore(b){if(!b)return 0;return Math.min(100,(b.power||1)*7+(b.trophies||0)/20)}
-function personalScore(b){if(!b)return 0;return Math.round(readiness(b)*.45+powerScore(b)*.35+Math.min(100,(b.highestTrophies||0)/8)*.20)}
-function modeKey(mode){return String(mode||'').trim().toLowerCase().replace(/[^a-z0-9]+([a-z0-9])/g,(_,x)=>x.toUpperCase()).replace(/[^a-z0-9]/g,'')}
-function isOwnedAccount(b){if(!b)return false;return !!P?.brawlers?.some(x=>x&&((x.id!=null&&x.id===b.id)||norm(x.name)===norm(b.name)))}
-function accountBrawler(c){if(!c)return null;const a=P?.brawlers?.find(x=>x&&((x.id!=null&&x.id===c.id)||norm(x.name)===norm(c.name)));return a||{...c,power:0,rank:0,trophies:0,highestTrophies:0,gadgets:[],starPowers:[],gears:[],hyperCharges:[]}}
-function allBrawlers(){const by=Object.values(CATALOG_STATE.entries||{});return (by.length?by.map(accountBrawler):[...(P?.brawlers||[])]).filter(Boolean)}
-function metaEntry(b,mode,map){
- if(!b)return null;
- const e=META_STATE.entries[b.name];
- if(!e)return null;
- const mk=modeKey(mode);
- const mapHit=map&&map!=='Random'?(e.maps?.[mk]?.[map]||e.modes?.[mk]?.maps?.[map]):null;
- return mapHit||e.modes?.[mk]||e[mode]?.[map]||e[mode]?.default||e.default||null;
-}
-function metaScope(b,mode,map){
- if(!b)return 'NOT AVAILABLE';
- const e=META_STATE.entries[b.name];
- if(!e)return 'NOT AVAILABLE';
- const mk=modeKey(mode);
- if(map&&map!=='Random'&&(e.maps?.[mk]?.[map]||e.modes?.[mk]?.maps?.[map]))return 'MAP META';
- if(e.modes?.[mk]||e[mode])return 'MODE META';
- if(e.default)return 'META GLOBALE';
- return 'NOT AVAILABLE';
-}
-function contextScore(b,mode,map){if(!b)return 0;const m=metaEntry(b,mode,map);const personal=personalScore(b);const meta=m?.score??50;return Math.round(meta*.55+personal*.45)}
-function status(b){const r=readiness(b);if((b.power||0)>=11&&r>=75)return ['PLAY NOW','ok'];if((b.power||0)>=9)return ['UPGRADE TO META',''];return ['LOW POWER','miss']}
+function owned(b){return {gadgets:b?.gadgets?.length||0,stars:b?.starPowers?.length||0,gears:b?.gears?.length||0,hc:b?.hyperCharges?.length||0,buffies:b?.buffies||{}}}
+function readiness(b){if(!b)return 0;const e=b.power||1;const eq=(b.gadgets?.length||0)+(b.starPowers?.length||0)+(b.gears?.length||0)+(b.hyperCharges?.length||0);return Math.min(100,Math.round(e*6+Math.min(eq,6)*3))}
+function equippedNames(b,type){return (b?.[type]||[]).filter(Boolean).map(x=>norm(x?.name))}
+function ownedMapKey(b){return 'bh_owned_'+active+'_'+(b?.id||'unknown')}
+function manualOwnership(b){try{return JSON.parse(localStorage.getItem(ownedMapKey(b)||'{}')||'{}')||{}}catch{return {}}}
+function manualItemState(b,type,item){if(!item)return null;const m=manualOwnership(b),k=type+':'+(item.id??norm(item.name));return Object.prototype.hasOwnProperty.call(m,k)?m[k]:null}
+function setManualOwnership(bid,type,itemId,value){const b=allBrawlers().find(x=>x&&x.id===bid);if(!b)return;const m=manualOwnership(b),k=type+':'+itemId;if(value===null)delete m[k];else m[k]=!!value;localStorage.setItem(ownedMapKey(b),JSON.stringify(m));render()}
+function itemStatus(b,type,item){if(!item)return 'DATA N/A';if(equippedNames(b,type).includes(norm(item.name)))return 'EQUIPPED';const manual=manualItemState(b,type,item);if(manual===true)return 'OWNED';if(manual===false)return 'NOT OWNED';return 'UNKNOWN'}
+function actionForItem(b,type,item){const s=itemStatus(b,type,item);return s==='EQUIPPED'?'READY':s==='OWNED'?'EQUIP':s==='NOT OWNED'?'BUY':'CHECK'}
+function itemState(b,type,item){return itemStatus(b,type,item)}
+function ownershipControl(b,type,item){if(!item)return '';const s=itemStatus(b,type,item);if(s==='EQUIPPED')return '<span class="ownershipApi">EQUIPPED · API</span>';return '<div class="ownershipControls"><button type="button" onclick="event.stopPropagation();setManualOwnership('+b.id+',\''+type+'\','+item.id+',true)">I OWN IT</button><button type="button" onclick="event.stopPropagation();setManualOwnership('+b.id+',\''+type+'\','+item.id+',false)">BUY</button><button type="button" onclick="event.stopPropagation();setManualOwnership('+b.id+',\''+type+'\','+item.id+',null)">RESET</button></div>'}
+function recommendationAction(b,type,item){return actionForItem(b,type,item)}
+function buildItems(b){const e=buildEntry(b);return [['Gadget','gadgets',bestBuildItem(e,'gadget')],['Star Power','starPowers',bestBuildItem(e,'starPower')],['Gear 1','gears',bestBuildItem(e,'gears',0)],['Gear 2','gears',bestBuildItem(e,'gears',1)]].filter(x=>x[2])}
+function nextActions(b){const actions=[];if(!isOwnedAccount(b))return [{type:'UNLOCK',label:'Unlock Brawler',priority:100,reason:'This Brawler is not on the account.'}];if((b.power||0)<11)actions.push({type:'POWER',label:'Reach Power 11',priority:100-(b.power||0),reason:'Power 11 unlocks the full build path.'});for(const [label,type,item] of buildItems(b)){const s=itemStatus(b,type,item);if(s==='NOT OWNED')actions.push({type:'BUY',label:'Buy '+label+': '+item.name,priority:70+Number(item.pick||0)*.4,reason:'Marked as not owned and selected by the current build data.'});else if(s==='OWNED')actions.push({type:'EQUIP',label:'Equip '+label+': '+item.name,priority:55+Number(item.pick||0)*.3,reason:'You marked this component as owned but it is not currently equipped.'});else if(s==='UNKNOWN')actions.push({type:'CHECK',label:'Check '+label+': '+item.name,priority:20+Number(item.pick||0)*.1,reason:'Ownership is not available from the public profile. Confirm it once to unlock precise BUY/EQUIP guidance.'})}return actions.sort((a,z)=>z.priority-a.priority)}
+function upgradePriority(b){const actions=nextActions(b),m=metaEntry(b,playMode,playMap),metaScore=Number(m?.score||0);return {score:Math.round(Math.min(100,(actions[0]?.priority||0)+metaScore*.12)),actions:actions.slice(0,4),metaScore}}
 function componentCatalogItem(type,item,b=null){if(!item)return null;const c=catalogEntry(b);const key=({gadgets:'gadgets',gadget:'gadgets',starPowers:'starPowers',star:'starPowers',gears:'gears',gear:'gears',hyperCharges:'hyperCharges',hc:'hyperCharges',buffies:'buffies',buffie:'buffies'})[type];const local=c?.[key]||[];const pool=Object.values(CATALOG_STATE.entries||{}).flatMap(x=>x?.[key]||[]);return [...local,...pool].find(x=>x&&((x.id!=null&&item.id!=null&&x.id===item.id)||norm(x.name)===norm(item.name)))||null}
 function compIcon(type,item,b=null){if(!item)return '';const paths={gadgets:'gadgets/borderless',starPowers:'star-powers/borderless',gears:'gears/regular',hyperCharges:'hypercharges/regular',buffies:'buffies/regular',gadget:'gadgets/borderless',star:'star-powers/borderless',gear:'gears/regular',hc:'hypercharges/regular',buffie:'buffies/regular'};const mapped=componentCatalogItem(type,item,b);const src=mapped?.imageUrl||(paths[type]&&item.id?img(paths[type],item.id):'');return src?'<img class="compIcon" loading="lazy" src="'+esc(src)+'" alt="">':''}
 function comp(type,label,item){return '<div class="comp '+(item?'owned':'missing')+'">'+compIcon(type,item)+'<div><span>'+label+'</span><b>'+esc(item?.name||'Not owned')+'</b></div></div>'}
