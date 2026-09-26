@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Controlled source-of-truth registry for Brawl Helper content and meta.",
+  "principle": "Use a small, explicitly reviewed set of sources. Never merge scraped data blindly.",
+  "refresh": {
+    "catalog": "weekly_or_on_game_patch",
+    "meta": "daily",
+    "builds": "daily",
+    "officialAnnouncements": "on_release"
+  },
+  "conflictPolicy": [
+    "Official Supercell API/game data wins for account and progression fields.",
+    "For battle meta, preserve provider-level observations and calculate confidence from recency, sample size and agreement.",
+    "Never turn disagreement into false certainty.",
+    "Map-specific data outranks mode-level data only when map evidence exists.",
+    "Every published meta/build record must retain source, capturedAt, sampleSize when available and confidence."
+  ],
+  "providers": [
+    {
+      "id": "supercell-api",
+      "name": "Brawl Stars API",
+      "role": "official_account_data",
+      "priority": 1,
+      "enabled": true,
+      "allowedFields": [
+        "player",
+        "brawlers",
+        "progression"
+      ]
+    },
+    {
+      "id": "brawlmetrics",
+      "name": "BrawlMetrics",
+      "role": "battle_statistics",
+      "priority": 1,
+      "enabled": true,
+      "allowedFields": [
+        "winRate",
+        "pickRate",
+        "ranked",
+        "mode"
+      ]
+    },
+    {
+      "id": "brawltime",
+      "name": "Brawl Time Ninja",
+      "role": "battle_statistics",
+      "priority": 2,
+      "enabled": true,
+      "allowedFields": [
+        "winRate",
+        "pickRate",
+        "mode",
+        "map"
+      ]
+    },
+    {
+      "id": "noff",
+      "name": "NOFF",
+      "role": "community_builds",
+      "priority": 1,
+      "enabled": true,
+      "allowedFields": [
+        "gadgetPick",
+        "starPowerPick",
+        "gearPick",
+        "builds"
+      ]
+    },
+    {
+      "id": "brawlify",
+      "name": "Brawlify",
+      "role": "catalog_events_reference",
+      "priority": 2,
+      "enabled": true,
+      "allowedFields": [
+        "catalog",
+        "events",
+        "reference_statistics"
+      ]
+    }
+  ],
+  "publicationGates": {
+    "minimumSourcesForMeta": 2,
+    "minimumConfidence": 0.55,
+    "staleAfterHours": 72,
+    "rejectMissingSource": true,
+    "rejectFutureContent": true
+  }
+}
