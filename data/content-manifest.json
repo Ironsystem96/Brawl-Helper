@@ -45,6 +45,15 @@
     "source",
     "updatedAt"
   ],
+  "stateModel": [
+    "EQUIPPED",
+    "OWNED",
+    "BUY",
+    "UNKNOWN",
+    "EQUIP",
+    "CHECK",
+    "READY"
+  ],
   "metaFields": [
     "mode",
     "map",
