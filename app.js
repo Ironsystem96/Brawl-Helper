@@ -107,6 +107,43 @@ function metaRankOf(b,mode,map){
  return i>=0?i+1:null;
 }
 function recommendationTag(b,mode,map){const s=metaScope(b,mode,map);return s==='NOT AVAILABLE'?'DATI N/D':s}
+function guideEntry(b){return catalogEntry(b)||b||null}
+function guideItem(b,type,item){
+ const c=guideEntry(b); if(!item)return null;
+ const pool=c?.[type]||[]; return pool.find(x=>x&&((x.id!=null&&x.id===item.id)||norm(x.name)===norm(item.name)))||item;
+}
+function cleanGuideText(v){return String(v||'').replace(/<[^>]*>/g,' ').replace(/<![^>]*>/g,' ').replace(/\s+/g,' ').trim()}
+function componentModal(b,type,item){
+ const x=guideItem(b,type,item); if(!x)return;
+ const title=type==='gadgets'?'Gadget':type==='starPowers'?'Star Power':type==='gears'?'Gear':type==='hyperCharges'?'Hypercharge':'Buffie';
+ const description=cleanGuideText(x.description||'No description available.');
+ document.body.insertAdjacentHTML('beforeend','<div class="modal componentModal"><div class="modalBox"><div class="modalHead"><h2>'+esc(x.name||title)+'</h2><button onclick="closeModal()">×</button></div><div class="componentDetail"><div class="eyebrow">'+title.toUpperCase()+'</div><p>'+esc(description)+'</p><div class="small">Source catalog data · '+esc(b.name)+'</div></div><button class="close" onclick="closeModal()">Close</button></div></div>');
+}
+function guideComponent(b,label,type,item){
+ if(!item)return '<div class="guideComponent missing"><span class="eyebrow">'+label+'</span><b>Not available</b></div>';
+ const x=guideItem(b,type,item);
+ const desc=cleanGuideText(x?.description||'');
+ const state=itemState(b,type,item);
+ return '<button class="guideComponent '+(state==='EQUIP'?'owned':'missing')+'" onclick="componentModalById('+b.id+',\''+type+'\','+item.id+')" type="button">'+compIcon(type,item,b)+'<span class="grow"><small>'+label+'</small><b>'+esc(item.name)+'</b><em>'+esc(desc||'View details')+'</em></span><strong>'+state+'</strong></button>';
+}
+function componentModalById(bid,type,itemId){
+ const b=allBrawlers().find(x=>x&&x.id===bid); if(!b)return;
+ const c=guideEntry(b); const item=(c?.[type]||[]).find(x=>x&&x.id===itemId)||null; componentModal(b,type,item);
+}
+function brawlerGuide(b){
+ const e=buildEntry(b), c=guideEntry(b), m=metaEntry(b,playMode,playMap);
+ const g=bestBuildItem(e,'gadget'),sp=bestBuildItem(e,'starPower'),g1=bestBuildItem(e,'gears',0),g2=bestBuildItem(e,'gears',1),hc=first(b.hyperCharges);
+ const desc=cleanGuideText(c?.description||c?.shortDescription||'');
+ const modeText=m?('Recommended for '+playMode+(playMap!=='Random'?' on '+playMap:'')):'Meta context not available for this selection.';
+ const buildReason=e?'Community build usage is used as the build signal. '+(e.sample?fmt(e.sample)+' submitted builds were available.':''):'No verified community build is available yet.';
+ return '<section class="card guideCard"><div class="sectionTitle"><h2>Brawler Guide</h2><span class="chip">'+esc(metaScope(b,playMode,playMap))+'</span></div>'+
+ '<p class="guideDescription">'+esc(desc||'Brawler description not available in the current catalog.')+'</p>'+
+ '<div class="guideContext"><span>BEST CONTEXT</span><b>'+esc(modeText)+'</b></div>'+
+ '<div class="guideGrid">'+guideComponent(b,'Recommended Gadget','gadgets',g)+guideComponent(b,'Recommended Star Power','starPowers',sp)+guideComponent(b,'Recommended Gear 1','gears',g1)+guideComponent(b,'Recommended Gear 2','gears',g2)+'</div>'+
+ (hc?guideComponent(b,'Hypercharge','hyperCharges',hc):'')+
+ '<div class="guideWhy"><b>Why this build?</b><p>'+esc(buildReason)+'</p></div>'+
+ '<p class="small">Tap a component to see what it does. Recommendations are based on available community data and current account context, not official Supercell recommendations.</p></section>';
+}
 function buildAdvisor(b){
  const e=buildEntry(b);
  if(!e)return '<section class="card"><div class="sectionTitle"><h3>Build Advisor</h3><span class="chip">DATA PENDING</span></div><p class="small">Non abbiamo ancora una build community verificata per questo Brawler. Non inventiamo una scelta: verrà aggiunta con il prossimo sync.</p></section>';
@@ -156,7 +193,7 @@ function detail(){
  const accountOwned=isOwnedAccount(b),o=owned(b),g=first(b.gadgets),sp=first(b.starPowers),gear1=b.gears?.[0],gear2=b.gears?.[1],hc=first(b.hyperCharges),m=metaEntry(b,playMode,playMap);
  return '<button class="back" onclick="selected=null;render()">← Back to Brawlers</button>'+
  '<section class="hero"><div class="row"><img class="portrait" src="'+portrait(b)+'"><div class="grow"><div class="eyebrow">BRAWLERS</div><h1>'+esc(b.name)+'</h1><div class="muted">'+(accountOwned?'Power '+b.power+' · Rank '+b.rank:'Not owned')+'</div><div class="muted">'+(accountOwned?fmt(b.trophies)+' / '+fmt(b.highestTrophies)+' trophies':'Meta #'+(metaRankOf(b,playMode,playMap)||'—'))+'</div></div></div><div class="chips"><span class="chip">Personal '+personalScore(b)+'</span><span class="chip '+status(b)[1]+'">'+status(b)[0]+'</span></div></section>'+
- '<section class="section"><h2>Account build</h2><div class="actionLine">'+buildActionLine(b)+'</div><div class="componentGrid">'+comp('gadget','Gadget',g)+comp('star','Star Power',sp)+comp('gear','Gear 1',gear1)+comp('gear','Gear 2',gear2)+comp('hc','Hypercharge',hc)+'</div></section>'+buildAdvisor(b)+
+ '<section class="section"><h2>Account build</h2><div class="actionLine">'+buildActionLine(b)+'</div><div class="componentGrid">'+comp('gadget','Gadget',g)+comp('star','Star Power',sp)+comp('gear','Gear 1',gear1)+comp('gear','Gear 2',gear2)+comp('hc','Hypercharge',hc)+'</div></section>'+brawlerGuide(b)+buildAdvisor(b)+
  '<section class="card"><b>Current context</b><div class="context"><span>MODE</span><b>'+esc(playMode)+'</b><span>MAP</span><b>'+esc(playMap)+'</b></div><div class="notice">'+(m?esc(m.reason||'Meta entry disponibile'):'Live meta is unavailable; this explanation uses account data only.')+'</div><p class="small">'+esc(why(b,playMode,playMap))+'</p></section>'+
  '<section class="card"><b>Progression</b><div class="grid"><div class="action"><b>'+o.gadgets+'/2</b><span class="small">Gadget</span></div><div class="action"><b>'+o.stars+'/2</b><span class="small">Star Power</span></div><div class="action"><b>'+o.gears+'/2</b><span class="small">Gear</span></div><div class="action"><b>'+o.hc+'/1</b><span class="small">Hypercharge</span></div></div></section>'
 }
