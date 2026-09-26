@@ -146,14 +146,14 @@ function brawlerGuide(b){
 }
 function buildAdvisor(b){
  const e=buildEntry(b);
- if(!e)return '<section class="card"><div class="sectionTitle"><h3>Build Advisor</h3><span class="chip">DATA PENDING</span></div><p class="small">Non abbiamo ancora una build community verificata per questo Brawler. Non inventiamo una scelta: verrà aggiunta con il prossimo sync.</p></section>';
+ if(!e)return '<section class="card"><div class="sectionTitle"><h3>Build Advisor</h3><span class="chip">DATA PENDING</span></div><p class="small">No verified community build is available for this Brawler yet. No recommendation is invented; it will be added after a validated sync.</p></section>';
  const rows=[advisorRow(b,'Recommended Gadget','gadgets',bestBuildItem(e,'gadget')),advisorRow(b,'Recommended Star Power','starPowers',bestBuildItem(e,'starPower')),advisorRow(b,'Recommended Gear 1','gears',bestBuildItem(e,'gears',0)),advisorRow(b,'Recommended Gear 2','gears',bestBuildItem(e,'gears',1))].join('');
  const hc=b.power>=11&&(!b.hyperCharges||!b.hyperCharges.length)?'<div class="advisorRow"><div class="grow"><b>Hypercharge</b><span class="small">Power 11 reached but Hypercharge is not owned</span></div><span class="chip">CONSIDER</span></div>':'';
- return '<section class="card"><div class="sectionTitle"><h3>Build Advisor</h3><span class="chip ok">COMMUNITY</span></div><p class="small">Il consiglio confronta la build community con ciò che possiedi. Se manca un componente: BUY. Se lo possiedi: EQUIP.</p>'+rows+hc+'<p class="small">Source: <a href="'+esc(e.sourceUrl)+'" target="_blank" rel="noopener">NOFF</a>'+(e.sample?' · '+fmt(e.sample)+' build':'')+'</p></section>';
+ return '<section class="card"><div class="sectionTitle"><h3>Build Advisor</h3><span class="chip ok">COMMUNITY</span></div><p class="small">This advisor compares the community build with your account. If a component is missing: BUY. If you own it: EQUIP.</p>'+rows+hc+'<p class="small">Source: <a href="'+esc(e.sourceUrl)+'" target="_blank" rel="noopener">NOFF</a>'+(e.sample?' · '+fmt(e.sample)+' build':'')+'</p></section>';
 }
 
 function nav(){return '<nav class="nav">'+[['home','⌂','Home'],['play','▶','Play'],['brawlers','●','Brawlers'],['upgrade','↗','Upgrade'],['meta','✦','Meta']].map(x=>'<button class="'+(tab===x[0]?'active':'')+'" onclick="setTab(\''+x[0]+'\')">'+x[1]+'<br>'+x[2]+'</button>').join('')}
-function shell(body){document.getElementById('app').innerHTML='<div class="app"><header class="top"><div class="brand"><div class="logo">Brawl <span>Helper</span></div><div class="sync">'+(active?'PROFILE · '+esc(profileStatus):'NO PROFILE')+'</div></div><button class="profileBtn" onclick="profilePanel()">'+esc(P?.name||active||'Connect profile')+'</button></header><main class="content">'+body+'</main>'+nav()+'<footer class="legalFooter">Questo materiale non è ufficiale e non è sponsorizzato da Supercell. Brawl Stars e i relativi contenuti appartengono ai rispettivi titolari. <a href="https://supercell.com/en/fan-content-policy/it/" target="_blank" rel="noopener">Fan Content Policy</a> · <a href="privacy.html">Privacy</a></footer></div>'}
+function shell(body){document.getElementById('app').innerHTML='<div class="app"><header class="top"><div class="brand"><div class="logo">Brawl <span>Helper</span></div><div class="sync">'+(active?'PROFILE · '+esc(profileStatus):'NO PROFILE')+'</div></div><button class="profileBtn" onclick="profilePanel()">'+esc(P?.name||active||'Connect profile')+'</button></header><main class="content">'+body+'</main>'+nav()+'<footer class="legalFooter">This material is unofficial and is not sponsored by Supercell. Brawl Stars and its related content belong to their respective owners. <a href="https://supercell.com/en/fan-content-policy/it/" target="_blank" rel="noopener">Fan Content Policy</a> · <a href="privacy.html">Privacy</a></footer></div>'}
 function setTab(t){tab=t;selected=null;query='';filter='all';render()}
 
 function bcard(b,compact=false,mode=playMode,map=playMap,rank=null,kind=''){
@@ -214,9 +214,26 @@ function play(){
  return '<section class="section"><div class="sectionTitle"><h2>Play</h2><span class="small">'+esc(metaScope(ready[0]?.b||recommended[0]?.b,playMode,playMap))+'</span></div><div class="notice">Cambiando modalità o mappa cambia la classifica. La Top 5 personale considera solo i Brawler posseduti; i consigliati mantengono il loro rank reale nel meta.</div><div class="filters">'+Object.keys(MODES).map(m=>'<button class="'+(playMode===m?'active':'')+'" onclick="playMode=\''+m+'\';playMap=\'Random\';render()">'+m+'</button>').join('')+'</div><select class="search" onchange="playMap=this.value;render()">'+names.map(m=>'<option '+(playMap===m?'selected':'')+'>'+m+'</option>').join('')+'</select><div class="context"><span>MODE</span><b>'+esc(playMode)+'</b><span>MAP</span><b>'+esc(playMap)+'</b></div><section class="section"><div class="sectionTitle"><h2>I tuoi 5</h2><span class="small">meta + account combination</span></div>'+ready.slice(0,5).map((x,i)=>'<div class="rankPick"><span class="num">'+(i+1)+'</span><div class="grow">'+bcard(x.b,true,playMode,playMap,x.meta.rank||metaRankOf(x.b,playMode,playMap),'ownedTop')+'</div></div>').join('')+'</section><section class="section"><div class="sectionTitle"><h2>Meta to consider</h2><span class="small">not owned</span></div>'+recommended.map(x=>'<div class="rankPick"><span class="num">#'+(x.meta.rank||metaRankOf(x.b,playMode,playMap)||'—')+'</span><div class="grow">'+bcard(x.b,true,playMode,playMap,x.meta.rank||metaRankOf(x.b,playMode,playMap),'recommended')+'</div></div>').join('')+'</section></section>'
 }
 
+function upgradePriority(b){
+ const e=buildEntry(b), m=metaEntry(b,playMode,playMap), actions=[];
+ const metaScore=Number(m?.score??50), readinessScore=readiness(b), experience=Math.min(100,Number(b.trophies||0)/8);
+ if((b.power||0)<11) actions.push({type:'POWER',label:'Reach Power 11',priority:40+(11-(b.power||0))*3,reason:'Unlock the full build potential and advanced progression options.'});
+ const defs=[['Gadget','gadgets',bestBuildItem(e,'gadget'),18],['Star Power','starPowers',bestBuildItem(e,'starPower'),20],['Gear','gears',bestBuildItem(e,'gears',0),12],['Gear','gears',bestBuildItem(e,'gears',1),10]];
+ for(const [label,type,item,weight] of defs){
+   if(!item)continue;
+   const has=ownedNames(b,type).includes(norm(item.name));
+   const pick=Number(item.pick||0);
+   if(!has)actions.push({type:'BUY',label:'Buy '+label+': '+item.name,priority:weight+(pick*.45)+(metaScore*.12),reason:'Missing a community-recommended component for the current context.'});
+   else actions.push({type:'EQUIP',label:'Equip '+label+': '+item.name,priority:weight+(pick*.25)+(metaScore*.10),reason:'You already own the recommended component; equip it for the selected context.'});
+ }
+ if((b.power||0)>=11&&b.hyperCharges?.length===0) actions.push({type:'CONSIDER',label:'Consider Hypercharge',priority:10+(metaScore*.08),reason:'Power 11 is reached and no Hypercharge is recorded on the account.'});
+ const best=actions.sort((a,z)=>z.priority-a.priority).slice(0,3);
+ const total=Math.round(Math.min(100,metaScore*.45+readinessScore*.30+experience*.10+(best.length?15:0)));
+ return {score:total,actions:best,metaScore,readinessScore};
+}
 function upgrade(){
- const list=[...(P.brawlers||[])].filter(Boolean).filter(b=>b.power<11||owned(b).gears<2||owned(b).hc<1).sort((a,b)=>personalScore(b)-personalScore(a)).slice(0,20);
- return '<section class="section"><div class="sectionTitle"><h2>Upgrade Advisor</h2><span class="small">20 opportunities</span></div><div class="notice">This shows what you already own and what is missing from the available community build.</div>'+list.map((b,i)=>'<div class="upgradeRow" onclick="openB('+b.id+')"><span class="num">'+(i+1)+'</span><div class="grow"><b class="upgradeName">'+esc(b.name)+'</b><span class="small upgradeMetaLine">Power '+b.power+' · '+fmt(b.trophies)+' trophies · Personal '+personalScore(b)+'</span>'+miniBuild(b)+'</div><span class="score">'+(b.power<11?'POWER':'BUILD')+'</span></div>').join('')+'</section>'
+ const list=[...(P.brawlers||[])].filter(Boolean).map(b=>({b,plan:upgradePriority(b)})).filter(x=>x.plan.actions.length).sort((a,z)=>(z.plan.score-a.plan.score)||personalScore(z.b)-personalScore(a.b)).slice(0,20);
+ return '<section class="section"><div class="sectionTitle"><h2>Upgrade Advisor</h2><span class="small">Prioritized for your account</span></div><div class="notice">Recommendations combine account progression, current Meta context and verified community build data. Each action explains what to do next.</div>'+list.map((x,i)=>'<div class="upgradeRow" onclick="openB('+x.b.id+')"><span class="num">'+(i+1)+'</span><div class="grow"><b class="upgradeName">'+esc(x.b.name)+'</b><span class="small upgradeMetaLine">Power '+x.b.power+' · '+fmt(x.b.trophies)+' trophies · Priority '+x.plan.score+'</span>'+x.plan.actions.map(a=>'<div class="upgradeAction"><b>'+esc(a.label)+'</b><span>'+esc(a.reason)+'</span></div>').join('')+'</div><span class="score">'+esc(x.plan.actions[0]?.type||'REVIEW')+'</span></div>').join('')+'</section>'
 }
 
 function meta(){
@@ -224,7 +241,7 @@ function meta(){
  const releases=DB_STATE.changelog||[];
  return '<section class="section"><h2>Meta & Database</h2>'+
  '<div class="notice"><b>'+(META_STATE.loaded?'Meta snapshot loaded':'Live meta not connected yet')+'</b><br>'+
- (META_STATE.loaded?'Source: '+esc(META_STATE.source||'snapshot')+' · Aggiornamento: '+esc(META_STATE.updatedAt||'—'):'Il database di gioco e il changelog ufficiale sono separati dai dati personali dell’account.')+
+ (META_STATE.loaded?'Source: '+esc(META_STATE.source||'snapshot')+' · Updated: '+esc(META_STATE.updatedAt||'—'):'Il database di gioco e il changelog ufficiale sono separati dai dati personali dell’account.')+
  '</div>'+
  '<div class="card"><b>Meta Agent</b><p class="small">Provider esterni, freschezza e confidence vengono separati dai dati account. Il meta contestuale viene applicato prima della personalizzazione.</p><div class="grid"><div class="action"><b>'+PROVIDER_STATE.providers.filter(x=>x.enabled).length+'</b><span class="small">Active providers</span></div><div class="action"><b>'+esc(PROVIDER_STATE.report?.summary?.brawlersWithGlobalMeta??'—')+'</b><span class="small">Brawlers with meta</span></div></div></div><div class="card"><b>Game Database</b><div class="grid"><div class="action"><b>'+fmt(CATALOG_STATE.count)+'</b><span class="small">Brawlers in catalog</span></div><div class="action"><b>'+esc(DB_STATE.patch||'—')+'</b><span class="small">Current patch</span></div><div class="action"><b>'+esc(DB_STATE.version||'—')+'</b><span class="small">DB version</span></div></div><p class="small">Last sync: '+esc(DB_STATE.lastSyncedAt||'—')+'</p></div>'+
  '<div class="card"><b>Official changelog</b>'+ (releases.length?releases.slice(0,5).map(c=>'<div class="action"><b>'+esc(c.title)+'</b><span class="small">'+esc(c.publishedAt||'')+' · '+esc(c.highlights?.[0]||c.status||'Fonte ufficiale Supercell')+'</span></div>').join(''):'<p class="small">No changelog available.</p>')+'</div>'+
