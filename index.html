@@ -22,10 +22,18 @@ window.addEventListener('error',function(e){
 
 <script>
 (function(){
-  if(!('serviceWorker' in navigator)) return;
-  navigator.serviceWorker.getRegistrations().then(function(regs){
-    return Promise.all(regs.map(function(reg){ return reg.update().catch(function(){}); }));
-  }).catch(function(){});
+  var KEY='bh_sw_reset_v2';
+  if(sessionStorage.getItem(KEY)==='1') return;
+  if(!('serviceWorker' in navigator) && !('caches' in window)) return;
+  sessionStorage.setItem(KEY,'1');
+  Promise.all([
+    'serviceWorker' in navigator ? navigator.serviceWorker.getRegistrations().then(function(regs){
+      return Promise.all(regs.map(function(reg){ return reg.unregister(); }));
+    }) : Promise.resolve(),
+    'caches' in window ? caches.keys().then(function(keys){
+      return Promise.all(keys.map(function(key){ return caches.delete(key); }));
+    }) : Promise.resolve()
+  ]).then(function(){ location.reload(); }).catch(function(){});
 })();
 </script>
 <script src="app.js?v=35"></script>
