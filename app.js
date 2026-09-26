@@ -197,11 +197,13 @@ function meta(){
 
 async function loadCatalog(){
  try{
-  const d=await fetchJson('https://api.brawlapi.com/v1/brawlers',6000);
-  const list=d.list||[];
-  CATALOG_STATE.loaded=true;CATALOG_STATE.count=list.length;
-  CATALOG_STATE.entries=Object.fromEntries(list.filter(x=>x&&x.id&&x.name).map(x=>[x.name,x]));list.forEach(b=>{const im=new Image();if(b.imageUrl)im.src=b.imageUrl;(b.gadgets||[]).concat(b.starPowers||[]).forEach(x=>{if(x.imageUrl){const ci=new Image();ci.src=x.imageUrl}})});
- }catch(e){console.warn('Catalogo BrawlAPI non disponibile',e)}
+  let d=null;
+  try{d=await fetchJson('https://api.brawlapi.com/v1/brawlers',6000)}catch(e){d=await fetchJson('data/brawlers.json',6000)}
+  const list=Array.isArray(d?.list)?d.list:(Array.isArray(d?.brawlers)?d.brawlers:[]);
+  CATALOG_STATE.loaded=list.length>0;CATALOG_STATE.count=list.length;
+  CATALOG_STATE.entries=Object.fromEntries(list.filter(x=>x&&x.id&&x.name).map(x=>[x.name,x]));
+  list.forEach(b=>{const im=new Image();if(b.imageUrl)im.src=b.imageUrl;(b.gadgets||[]).concat(b.starPowers||[],b.gears||[],b.hyperCharges||[]).forEach(x=>{if(x?.imageUrl){const ci=new Image();ci.src=x.imageUrl}})});
+ }catch(e){console.warn('Brawler catalog unavailable',e)}
 }
 async function loadMeta(){
   try{
@@ -235,7 +237,7 @@ function closeModal(){document.querySelector('.modal')?.remove()}
 function savePlayerTag(){
  const raw=document.getElementById('newTag')?.value||'';
  const tag=normalizeTag(raw);
- if(!/^#[A-Z0-9]{3,20}$/.test(tag)){alert('Inserisci un Player Tag valido, ad esempio #22QYOQRGY.');return}
+ if(!/^#[A-Z0-9]{3,20}$/.test(tag)){alert('Enter a valid Player Tag, for example #22QYOQRGY.');return}
  localStorage.setItem('bh_player_tag',tag);
  active=tag;
  localStorage.removeItem('bh_profile_cache_'+tag);
@@ -243,7 +245,7 @@ function savePlayerTag(){
  loadProfile(tag);
 }
 function useDevProfile(){localStorage.setItem('bh_player_tag',DEV_TEST_TAG);active=DEV_TEST_TAG;closeModal();loadProfile(DEV_TEST_TAG)}
-function saveApiBase(){const v=document.getElementById('apiBase')?.value.trim().replace(/\/$/,'');if(v)localStorage.setItem('bh_api_base',v);else localStorage.removeItem('bh_api_base');closeModal();alert('Backend salvato.')}
+function saveApiBase(){const v=document.getElementById('apiBase')?.value.trim().replace(/\/$/,'');if(v)localStorage.setItem('bh_api_base',v);else localStorage.removeItem('bh_api_base');closeModal();alert('Backend saved.')}
 async function loadProfile(tag){
  selected=null;tab='home';
  tag=normalizeTag(tag);
