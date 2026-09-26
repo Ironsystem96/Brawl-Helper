@@ -20,7 +20,15 @@ window.addEventListener('error',function(e){
 });
 </script>
 
-<script src="app.js?v=34"></script>
+<script>
+(function(){
+  if(!('serviceWorker' in navigator)) return;
+  navigator.serviceWorker.getRegistrations().then(function(regs){
+    return Promise.all(regs.map(function(reg){ return reg.update().catch(function(){}); }));
+  }).catch(function(){});
+})();
+</script>
+<script src="app.js?v=35"></script>
 <script>
 setTimeout(function(){
   var app=document.getElementById('app');
