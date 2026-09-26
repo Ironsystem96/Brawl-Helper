@@ -157,7 +157,7 @@ function detail(){
  return '<button class="back" onclick="selected=null;render()">← Back to Brawlers</button>'+
  '<section class="hero"><div class="row"><img class="portrait" src="'+portrait(b)+'"><div class="grow"><div class="eyebrow">BRAWLERS</div><h1>'+esc(b.name)+'</h1><div class="muted">'+(accountOwned?'Power '+b.power+' · Rank '+b.rank:'Not owned')+'</div><div class="muted">'+(accountOwned?fmt(b.trophies)+' / '+fmt(b.highestTrophies)+' trophies':'Meta #'+(metaRankOf(b,playMode,playMap)||'—'))+'</div></div></div><div class="chips"><span class="chip">Personal '+personalScore(b)+'</span><span class="chip '+status(b)[1]+'">'+status(b)[0]+'</span></div></section>'+
  '<section class="section"><h2>Account build</h2><div class="actionLine">'+buildActionLine(b)+'</div><div class="componentGrid">'+comp('gadget','Gadget',g)+comp('star','Star Power',sp)+comp('gear','Gear 1',gear1)+comp('gear','Gear 2',gear2)+comp('hc','Hypercharge',hc)+'</div></section>'+buildAdvisor(b)+
- '<section class="card"><b>Current context</b><div class="context"><span>MODE</span><b>'+esc(playMode)+'</b><span>MAP</span><b>'+esc(playMap)+'</b></div><div class="notice">'+(m?esc(m.reason||'Meta entry disponibile'):'Meta live non collegato: questa spiegazione usa solo i dati dell’account.')+'</div><p class="small">'+esc(why(b,playMode,playMap))+'</p></section>'+
+ '<section class="card"><b>Current context</b><div class="context"><span>MODE</span><b>'+esc(playMode)+'</b><span>MAP</span><b>'+esc(playMap)+'</b></div><div class="notice">'+(m?esc(m.reason||'Meta entry disponibile'):'Live meta is unavailable; this explanation uses account data only.')+'</div><p class="small">'+esc(why(b,playMode,playMap))+'</p></section>'+
  '<section class="card"><b>Progression</b><div class="grid"><div class="action"><b>'+o.gadgets+'/2</b><span class="small">Gadget</span></div><div class="action"><b>'+o.stars+'/2</b><span class="small">Star Power</span></div><div class="action"><b>'+o.gears+'/2</b><span class="small">Gear</span></div><div class="action"><b>'+o.hc+'/1</b><span class="small">Hypercharge</span></div></div></section>'
 }
 
@@ -222,13 +222,13 @@ async function loadMeta(){
 
 function profilePanel(first=false){
  const current=active||'';
- const title=first?'Collega il tuo account':'Profilo Brawl Stars';
+ const title=first?'Connect your account':'Brawl Stars Profile';
  const intro=first
   ?'<div class="onboardIntro"><div class="onboardIcon">BH</div><div><h3>Enter your Brawl Stars Player Tag</h3><p>The tag identifies your account. It is used to retrieve public data through the Brawl Helper backend.</p></div></div>'
   :'<p class="small modalLead">Connected account: <b>'+esc(P?.name||current||'none')+'</b><br>Status: '+esc(profileStatus)+(profileSyncAt?' · last updated '+esc(profileSyncAt):'')+'</p>';
  const form='<div class="profileForm '+(first?'onboardForm':'')+'"><label for="newTag">PLAYER TAG BRAWL STARS</label><input id="newTag" class="tagInput" value="'+esc(current)+'" placeholder="#22QYOQRGY" autocomplete="off" autocapitalize="characters" spellcheck="false"><span class="fieldHint">Example: #22QYOQRGY · the tag starts with #</span><button class="primary" onclick="savePlayerTag()">'+(current?'Change / update profile':'Connect account')+'</button></div>';
  const help='<div class="onboardHelp"><b>Where do I find the Player Tag?</b><span>Open Brawl Stars → Profile → under the player name you will find the code starting with #.</span></div>';
- const dev=DEV_MODE?'<button class="secondaryBtn" onclick="useDevProfile()">Apri BlackShark TEST</button>':'';
+ const dev=DEV_MODE?'<button class="secondaryBtn" onclick="useDevProfile()">Open BlackShark TEST</button>':'';
  const settings='<details class="small" style="margin-top:14px"><summary>Technical settings</summary><div class="profileForm"><label for="apiBase">BACKEND API URL</label><input id="apiBase" placeholder="Backend API URL" value="'+esc(apiBase())+'"><button class="secondaryBtn" onclick="saveApiBase()">Save backend</button></div></details>';
  document.getElementById('app').insertAdjacentHTML('beforeend','<div class="modal '+(first?'onboardingModal':'')+'"><div class="modalBox">'+(first?'<div class="modalBrand">BRAWL HELPER</div>':'<div class="modalHead"><h2>'+title+'</h2><button onclick="closeModal()">×</button></div>')+intro+form+help+dev+settings+(first?'':'<button class="close" onclick="closeModal()">Close</button>')+'</div></div>');
  setTimeout(()=>document.getElementById('newTag')?.focus(),180);
