@@ -165,3 +165,24 @@ body{color:#f4f7fb}
 /* deployment refresh */
 
 .legalFooter{padding:18px 16px 28px;max-width:980px;margin:0 auto;color:#8f98a8;font-size:11px;line-height:1.5;text-align:center}.legalFooter a{color:#c8d0dc;text-decoration:underline;text-underline-offset:2px}
+
+/* Brawler guide */
+.guideCard{display:grid;gap:14px}
+.guideDescription{margin:0;color:#dbe5f4;line-height:1.55;font-size:13px}
+.guideContext{display:flex;justify-content:space-between;gap:12px;padding:11px 13px;border:1px solid #405274;background:#18243a;border-radius:12px}
+.guideContext span,.guideComponent small{color:#aebbd0;font-size:10px;letter-spacing:.7px;font-weight:900}
+.guideContext b{color:#fff;text-align:right}
+.guideGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.guideComponent{display:flex;align-items:center;gap:10px;width:100%;text-align:left;padding:11px;border:1px solid #405274;background:#141f34;color:#fff;border-radius:14px;cursor:pointer}
+.guideComponent:hover{border-color:#7086aa;transform:translateY(-1px)}
+.guideComponent .compIcon{width:34px;height:34px;object-fit:contain;flex:0 0 34px}
+.guideComponent span{display:grid;gap:3px;min-width:0}
+.guideComponent b{font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.guideComponent em{font-size:10px;color:#9eacc1;font-style:normal;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.guideComponent strong{font-size:9px;white-space:nowrap;color:#ffd34e}
+.guideComponent.owned{border-color:#526b8e}.guideComponent.missing{border-color:#405274}
+.guideWhy{padding:12px 13px;border-left:3px solid #ffd34e;background:#18243a;border-radius:0 12px 12px 0}
+.guideWhy b{color:#fff}.guideWhy p{margin:5px 0 0;color:#b9c6da;font-size:11px;line-height:1.45}
+.componentDetail{display:grid;gap:10px;padding:4px 0}.componentDetail p{margin:0;color:#e5edf8;line-height:1.55;font-size:13px}
+.componentModal .modalBox{max-width:520px}
+@media(max-width:620px){.guideGrid{grid-template-columns:1fr}.guideContext{display:grid}.guideContext b{text-align:left}}
