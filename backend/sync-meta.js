@@ -170,7 +170,17 @@ async function main(){
   const meta={schemaVersion:2,updatedAt:now,source:'BrawlMetrics + Brawl Time Ninja + NOFF',method:'Global + mode snapshot. Mode rankings use BrawlMetrics Wilson-adjusted win rate; map-specific data is only shown when a verified map snapshot exists.',coverage:{brawlers:list.length,modes:modeOk,totalModes:Object.keys(modeSlugs).length},entries:metaEntries};
   fs.writeFileSync(META_PATH,JSON.stringify(meta,null,2)+'\n');
 
-  const catalogOut=list.map(b=>({id:b.id,name:b.name,assetId:b.id,gadgets:(b.gadgets||[]).map(x=>({id:x.id,name:x.name})),starPowers:(b.starPowers||[]).map(x=>({id:x.id,name:x.name})),gears:(b.gears||[]).map(x=>({id:x.id,name:x.name})),hyperCharges:(b.hypercharges||b.hyperCharges||[]).map(x=>({id:x.id,name:x.name}))}));
+  const catalogOut=list.map(b=>({
+    id:b.id,name:b.name,assetId:b.id,avatarId:b.avatarId||null,
+    imageUrl:b.imageUrl||null,imageUrl2:b.imageUrl2||null,
+    rarity:b.rarity||null,class:b.class||null,
+    description:b.description||'',shortDescription:b.shortDescription||'',
+    gadgets:(b.gadgets||[]).map(x=>({id:x.id,name:x.name,description:x.description||'',descriptionHtml:x.descriptionHtml||'',imageUrl:x.imageUrl||null,released:x.released!==false})),
+    starPowers:(b.starPowers||[]).map(x=>({id:x.id,name:x.name,description:x.description||'',descriptionHtml:x.descriptionHtml||'',imageUrl:x.imageUrl||null,released:x.released!==false})),
+    gears:(b.gears||[]).map(x=>({id:x.id,name:x.name,description:x.description||'',descriptionHtml:x.descriptionHtml||'',imageUrl:x.imageUrl||null,released:x.released!==false})),
+    hyperCharges:(b.hypercharges||b.hyperCharges||[]).map(x=>({id:x.id,name:x.name,description:x.description||'',descriptionHtml:x.descriptionHtml||'',imageUrl:x.imageUrl||null,released:x.released!==false})),
+    buffies:(b.buffies||[]).map(x=>({id:x.id,name:x.name,description:x.description||'',descriptionHtml:x.descriptionHtml||'',imageUrl:x.imageUrl||null,released:x.released!==false}))
+  }));
   const catalogDocument={schemaVersion:2,generatedFrom:'BrawlAPI catalog snapshot',generatedAt:now,count:catalogOut.length,brawlers:catalogOut};
   fs.writeFileSync(CATALOG_PATH,JSON.stringify(catalogDocument,null,2)+'\n');
 
