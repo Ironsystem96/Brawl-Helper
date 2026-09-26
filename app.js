@@ -87,7 +87,6 @@ function norm(s){return String(s||'').toUpperCase().replace(/[’']/g,"'").repla
 function buildEntry(b){if(!b)return null;return BUILD_STATE.entries[b.name]||BUILD_STATE.entries[norm(b.name)]||BUILD_STATE.entries[String(b.name||'').toUpperCase()]||null}
 function bestBuildItem(entry,type,index=0){const a=entry?.[type]||[];return a[index]||null}
 function ownedNames(b,type){return b?(b[type]||[]).filter(Boolean).map(x=>norm(x?.name)):[]}
-function ownedNames(b,type){return b?(b[type]||[]).filter(Boolean).map(x=>norm(x?.name)):[]}
 
 function advisorRow(b,label,type,item){if(!item)return '';const state=itemStatus(b,type,item),act=recommendationAction(b,type,item),pct=item.pick!=null?' · '+item.pick+'% pick':'';return '<div class="advisorRow"><div class="advisorIcon">'+compIcon(type,item,b)+'</div><div class="grow"><b>'+esc(item.name)+'</b><span class="small">'+esc(label)+pct+'</span></div><span class="chip '+(state==='EQUIPPED'?'ok':state==='NOT OWNED'?'miss':'')+'">'+state+'</span><span class="advisorAction">'+act+'</span></div>'}
 function buildActionLine(b){const actions=nextActions(b).slice(0,3);if(!actions.length)return '<span class="actionPill mutedAction">READY</span>';return actions.map(a=>'<span class="actionPill '+(a.type==='BUY'?'buyAction':a.type==='EQUIP'?'equipAction':a.type==='POWER'?'powerAction':'mutedAction')+'">'+esc(a.type==='POWER'?'POWER 11':a.type)+'</span>').join('')}
