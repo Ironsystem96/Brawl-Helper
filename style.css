@@ -188,3 +188,46 @@ body{color:#f4f7fb}
 @media(max-width:620px){.guideGrid{grid-template-columns:1fr}.guideContext{display:grid}.guideContext b{text-align:left}}
 
 .upgradeAction{display:grid;gap:2px;margin-top:7px;padding:7px 9px;border-left:2px solid #526b8e;background:#18243a;border-radius:0 8px 8px 0}.upgradeAction b{font-size:11px;color:#fff}.upgradeAction span{font-size:10px;color:#aebbd0;line-height:1.35}
+
+/* Upgrade hierarchy and Brawler Browser redesign */
+.upgradeIntro{border-color:#60779d;background:linear-gradient(135deg,#182944,#121c30);color:#eef4ff}
+.upgradeCard{background:linear-gradient(145deg,#17243b,#10182a);border:1px solid #4d648a;border-radius:18px;padding:13px;margin:9px 0;cursor:pointer;box-shadow:0 5px 18px rgba(0,0,0,.16);transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}
+.upgradeCard:hover{transform:translateY(-2px);border-color:#ffd34e;box-shadow:0 12px 28px rgba(0,0,0,.22)}
+.upgradeTop{display:flex;align-items:center;gap:10px}
+.priorityNum{width:30px;height:30px;flex:0 0 30px;border-radius:10px;background:#ffd34e;color:#111827;display:flex;align-items:center;justify-content:center;font-weight:950}
+.upgradePortrait{width:54px;height:54px;object-fit:contain;border-radius:13px;background:#0c1424;border:1px solid #465c80}
+.upgradeTop b{display:block;color:#fff;font-size:15px}
+.priorityLabel{font-size:9px;font-weight:950;color:#111827;background:#ffd34e;border-radius:999px;padding:5px 7px;margin-left:auto}
+.upgradeActions{display:grid;gap:6px;margin-top:11px}
+.priorityAction{display:flex;align-items:flex-start;gap:9px;padding:8px 9px;border:1px solid #3f5579;background:#111c2f;border-radius:11px}
+.priorityIcon{width:22px;height:22px;border-radius:7px;display:flex;align-items:center;justify-content:center;background:#263752;color:#ffd34e;font-weight:950;flex:none}
+.priorityAction b{display:block;color:#fff;font-size:11px}
+.priorityAction span:not(.priorityIcon){display:block;color:#aebbd0;font-size:9px;line-height:1.35;margin-top:2px}
+.emptyState{display:flex;flex-direction:column;gap:4px}
+.browseCta{width:100%;border:1px solid #5d7396;background:linear-gradient(135deg,#1c2b46,#152137);color:#fff;border-radius:15px;padding:14px;text-align:left;font-weight:950;font-size:13px;display:flex;justify-content:space-between;align-items:center;cursor:pointer}
+.browseCta span{color:#ffd34e;font-size:20px}
+.browserIntro{background:#17253d;color:#e8eef8}
+.bcard{cursor:pointer}
+.bcard .miniBuild{min-height:27px}
+.miniItem{min-height:24px}
+.miniItem .compIcon{width:22px;height:22px;object-fit:contain}
+.miniItem.buyMini{border-color:#ffd34e;background:rgba(255,211,78,.08);color:#fff}
+.miniItem.buyMini em{color:#ffd34e;opacity:1}
+.miniItem.ownedMini{border-color:#4e8b72;background:rgba(97,230,167,.08);color:#eafff5}
+.miniItem.ownedMini em{color:#9ff0c6;opacity:1}
+.guideComponent{cursor:pointer;text-align:left;width:100%;color:#f4f7fb}
+.guideComponent.owned{border-color:#4e8b72;background:rgba(97,230,167,.07)}
+.guideComponent.missing{border-color:#ffd34e;background:rgba(255,211,78,.055);opacity:1}
+.guideComponent strong{font-size:9px;white-space:nowrap}
+.guideComponent em{color:#aebbd0}
+.fanNoticeModal{align-items:center}
+.fanNoticeBox{border-radius:24px;max-width:500px}
+.fanNoticeBox h2{font-size:24px;margin:0 0 8px}
+.legalLink{display:block;text-align:center;margin-top:10px;color:#aebbd0;text-decoration:underline;font-size:11px}
+@media(max-width:699px){
+ .upgradeCard{padding:12px}
+ .upgradePortrait{width:50px;height:50px}
+ .priorityAction{padding:8px}
+ .priorityAction b{font-size:10px}
+ .browseCta{padding:13px}
+}
