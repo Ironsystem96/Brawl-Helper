@@ -186,3 +186,5 @@ body{color:#f4f7fb}
 .componentDetail{display:grid;gap:10px;padding:4px 0}.componentDetail p{margin:0;color:#e5edf8;line-height:1.55;font-size:13px}
 .componentModal .modalBox{max-width:520px}
 @media(max-width:620px){.guideGrid{grid-template-columns:1fr}.guideContext{display:grid}.guideContext b{text-align:left}}
+
+.upgradeAction{display:grid;gap:2px;margin-top:7px;padding:7px 9px;border-left:2px solid #526b8e;background:#18243a;border-radius:0 8px 8px 0}.upgradeAction b{font-size:11px;color:#fff}.upgradeAction span{font-size:10px;color:#aebbd0;line-height:1.35}
