@@ -171,11 +171,13 @@ async function main(){
   fs.writeFileSync(META_PATH,JSON.stringify(meta,null,2)+'\n');
 
   const catalogOut=list.map(b=>({id:b.id,name:b.name,assetId:b.id,gadgets:(b.gadgets||[]).map(x=>({id:x.id,name:x.name})),starPowers:(b.starPowers||[]).map(x=>({id:x.id,name:x.name})),gears:(b.gears||[]).map(x=>({id:x.id,name:x.name})),hyperCharges:(b.hypercharges||b.hyperCharges||[]).map(x=>({id:x.id,name:x.name}))}));
-  fs.writeFileSync(CATALOG_PATH,JSON.stringify(catalogOut,null,2)+'\n');
+  const catalogDocument={schemaVersion:2,generatedFrom:'BrawlAPI catalog snapshot',generatedAt:now,count:catalogOut.length,brawlers:catalogOut};
+  fs.writeFileSync(CATALOG_PATH,JSON.stringify(catalogDocument,null,2)+'\n');
 
-  if(noffOk<Math.floor(list.length*.5) || btOk<Math.floor(list.length*.5) || modeOk<3) {
-    throw new Error('Sync quality gate failed: NOFF '+noffOk+'/'+list.length+', BrawlTime '+btOk+'/'+list.length+', modes '+modeOk+'/'+Object.keys(modeSlugs).length);
+  if(noffOk<Math.floor(list.length*.5) || btOk<Math.floor(list.length*.5)) {
+    throw new Error('Sync quality gate failed: NOFF '+noffOk+'/'+list.length+', BrawlTime '+btOk+'/'+list.length);
   }
+  if(modeOk===0) console.warn('Mode snapshot unavailable: BrawlMetrics returned no validated mode pages. Global meta remains publishable; mode data is omitted rather than fabricated.');
   console.log(JSON.stringify({updatedAt:now,brawlers:list.length,noffOk,btOk,modeOk,totalModes:Object.keys(modeSlugs).length},null,2));
 }
 main().catch(e=>{console.error(e);process.exit(1)});
