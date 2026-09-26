@@ -1,25 +1,172 @@
-function brawlers(){
- let bs=[...(P.brawlers||[])].filter(Boolean);
- if(query)bs=bs.filter(b=>b.name.toLowerCase().includes(query.toLowerCase()));
- if(filter==='p11')bs=bs.filter(b=>b.power>=11);
- if(filter==='upgrade')bs=bs.filter(b=>b.power<11);
- if(filter==='missing')bs=bs.filter(b=>{const o=owned(b);return o.gadgets<2||o.stars<2||o.gears<2||o.hc<1});
- bs.sort((a,b)=>b.trophies-a.trophies);
- return '<section class="section"><div class="sectionTitle"><h2>My Brawlers · '+P.brawlers.length+'</h2><span class="small">'+bs.length+' shown</span></div><input class="search" placeholder="Cerca Brawler..." value="'+esc(query)+'" oninput="query=this.value;render()"><div class="filters"><button class="'+(filter==='all'?'active':'')+'" onclick="filter=\'all\';render()">All</button><button class="'+(filter==='p11'?'active':'')+'" onclick="filter=\'p11\';render()">Power 11</button><button class="'+(filter==='upgrade'?'active':'')+'" onclick="filter=\'upgrade\';render()">Needs improvement</button><button class="'+(filter==='missing'?'active':'')+'" onclick="filter=\'missing\';render()">Incomplete build</button></div>'+bs.map(bcard).join('')+'</section>'
+let P=null,active=localStorage.getItem('bh_player_tag')||'',profileStatus='OFFLINE',profileSyncAt=null,tab='home',query='',filter='all',selected=null,playMode='Ranked',playMap='Random';
+const DEV_MODE=false;
+const DEV_TEST_TAG='#22QYOQRGY';
+
+const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+const fmt=n=>Number(n||0).toLocaleString('en-US');
+const apiBase=()=>localStorage.getItem('bh_api_base')||'https://brawl-helper-backend.onrender.com';
+const normalizeTag=v=>{const t=String(v||'').trim().toUpperCase();return t.startsWith('#')?t:'#'+t};
+const META_STATE={loaded:false,source:null,updatedAt:null,entries:{}};
+const DB_STATE={loaded:false,version:null,patch:null,lastSyncedAt:null,changelog:[]};
+const BUILD_STATE={loaded:false,updatedAt:null,entries:{},sources:[]};
+const CATALOG_STATE={loaded:false,count:0,entries:{}};
+const PROVIDER_STATE={loaded:false,providers:[],report:null};
+
+async function fetchJson(url,ms=7000){const ctl=new AbortController();const t=setTimeout(()=>ctl.abort(),ms);try{const r=await fetch(url,{cache:'no-store',signal:ctl.signal});if(!r.ok)throw new Error('HTTP '+r.status+' · '+url);return await r.json()}finally{clearTimeout(t)}}
+
+function img(kind,id){return 'https://cdn.brawlify.com/'+kind+'/'+id+'.png'}
+function catalogEntry(b){if(!b)return null;return CATALOG_STATE.entries[b.name]||Object.values(CATALOG_STATE.entries||{}).find(x=>x&&x.id===b.id)||null}
+function portrait(b){return catalogEntry(b)?.imageUrl||b?.imageUrl||img('brawlers/borders',b?.id)}
+function owned(b){if(!b)return {gadgets:0,stars:0,gears:0,hc:0};return {gadgets:b.gadgets?.length||0,stars:b.starPowers?.length||0,gears:b.gears?.length||0,hc:b.hyperCharges?.length||0}}
+function readiness(b){if(!b)return 0;const o=owned(b);return Math.min(100,Math.round((b.power||1)*5+Math.min(o.gadgets,2)*5+Math.min(o.stars,2)*5+Math.min(o.gears,2)*5+Math.min(o.hc,1)*8))}
+function powerScore(b){if(!b)return 0;return Math.min(100,(b.power||1)*7+(b.trophies||0)/20)}
+function personalScore(b){if(!b)return 0;return Math.round(readiness(b)*.45+powerScore(b)*.35+Math.min(100,(b.highestTrophies||0)/8)*.20)}
+function modeKey(mode){return String(mode||'').trim().toLowerCase().replace(/[^a-z0-9]+([a-z0-9])/g,(_,x)=>x.toUpperCase()).replace(/[^a-z0-9]/g,'')}
+function isOwnedAccount(b){if(!b)return false;return !!P?.brawlers?.some(x=>x&&((x.id!=null&&x.id===b.id)||norm(x.name)===norm(b.name)))}
+function accountBrawler(c){if(!c)return null;const a=P?.brawlers?.find(x=>x&&((x.id!=null&&x.id===c.id)||norm(x.name)===norm(c.name)));return a||{...c,power:0,rank:0,trophies:0,highestTrophies:0,gadgets:[],starPowers:[],gears:[],hyperCharges:[]}}
+function allBrawlers(){const by=Object.values(CATALOG_STATE.entries||{});return (by.length?by.map(accountBrawler):[...(P?.brawlers||[])]).filter(Boolean)}
+function metaEntry(b,mode,map){
+ if(!b)return null;
+ const e=META_STATE.entries[b.name];
+ if(!e)return null;
+ const mk=modeKey(mode);
+ const mapHit=map&&map!=='Random'?(e.maps?.[mk]?.[map]||e.modes?.[mk]?.maps?.[map]):null;
+ return mapHit||e.modes?.[mk]||e[mode]?.[map]||e[mode]?.default||e.default||null;
 }
-function brawlers(){
- let bs=[...(P.brawlers||[])].filter(Boolean);
- if(query)bs=bs.filter(b=>b.name.toLowerCase().includes(query.toLowerCase()));
- if(filter==='p11')bs=bs.filter(b=>b.power>=11);
- if(filter==='upgrade')bs=bs.filter(b=>upgradePriority(b).actions.length>0);
- if(filter==='missing')bs=bs.filter(b=>missingBuildActions(b).some(a=>a.type==='BUY'||a.type==='POWER'));
- bs.sort((a,b)=>b.trophies-a.trophies);
- return '<section class="section"><div class="sectionTitle"><h2>Brawler Browser</h2><span class="small">'+bs.length+' shown · '+P.brawlers.length+' owned</span></div>'+
- '<div class="notice browserIntro"><b>Tap any Brawler to open its full build.</b><br>Icons show the recommended build; BUY means you do not own it, OWNED means it is already unlocked.</div>'+
- '<input class="search" placeholder="Search Brawler..." value="'+esc(query)+'" oninput="query=this.value;render()">'+
- '<div class="filters"><button class="'+(filter==='all'?'active':'')+'" onclick="filter=\'all\';render()">All</button><button class="'+(filter==='p11'?'active':'')+'" onclick="filter=\'p11\';render()">Power 11</button><button class="'+(filter==='upgrade'?'active':'')+'" onclick="filter=\'upgrade\';render()">Upgrade next</button><button class="'+(filter==='missing'?'active':'')+'" onclick="filter=\'missing\';render()">Missing items</button></div>'+
- bs.map(bcard).join('')+'</section>';
+function metaScope(b,mode,map){
+ if(!b)return 'NOT AVAILABLE';
+ const e=META_STATE.entries[b.name];
+ if(!e)return 'NOT AVAILABLE';
+ const mk=modeKey(mode);
+ if(map&&map!=='Random'&&(e.maps?.[mk]?.[map]||e.modes?.[mk]?.maps?.[map]))return 'MAP META';
+ if(e.modes?.[mk]||e[mode])return 'MODE META';
+ if(e.default)return 'META GLOBALE';
+ return 'NOT AVAILABLE';
 }
+function contextScore(b,mode,map){if(!b)return 0;const m=metaEntry(b,mode,map);const personal=personalScore(b);const meta=m?.score??50;return Math.round(meta*.55+personal*.45)}
+function status(b){const r=readiness(b);if((b.power||0)>=11&&r>=75)return ['PLAY NOW','ok'];if((b.power||0)>=9)return ['UPGRADE TO META',''];return ['LOW POWER','miss']}
+function componentCatalogItem(type,item,b=null){if(!item)return null;const c=catalogEntry(b);const key=({gadgets:'gadgets',gadget:'gadgets',starPowers:'starPowers',star:'starPowers',gears:'gears',gear:'gears',hyperCharges:'hyperCharges',hc:'hyperCharges',buffies:'buffies',buffie:'buffies'})[type];const local=c?.[key]||[];const pool=Object.values(CATALOG_STATE.entries||{}).flatMap(x=>x?.[key]||[]);return [...local,...pool].find(x=>x&&((x.id!=null&&item.id!=null&&x.id===item.id)||norm(x.name)===norm(item.name)))||null}
+function compIcon(type,item,b=null){if(!item)return '';const paths={gadgets:'gadgets/borderless',starPowers:'star-powers/borderless',gears:'gears/regular',hyperCharges:'hypercharges/regular',buffies:'buffies/regular',gadget:'gadgets/borderless',star:'star-powers/borderless',gear:'gears/regular',hc:'hypercharges/regular',buffie:'buffies/regular'};const mapped=componentCatalogItem(type,item,b);const src=mapped?.imageUrl||(paths[type]&&item.id?img(paths[type],item.id):'');return src?'<img class="compIcon" loading="lazy" src="'+esc(src)+'" alt="">':''}
+function comp(type,label,item){return '<div class="comp '+(item?'owned':'missing')+'">'+compIcon(type,item)+'<div><span>'+label+'</span><b>'+esc(item?.name||'Not owned')+'</b></div></div>'}
+function first(a){return Array.isArray(a)&&a.length?a[0]:null}
+function buildLabel(b){const o=owned(b);return [o.gadgets?'Gadget':'Gadget missing',o.stars?'Star Power':'Star Power missing',o.gears?'Gear':'Gear missing',o.hc?'Hypercharge':'Hypercharge missing'].join(' · ')}
+function why(b,mode,map){const m=metaEntry(b,mode,map);const reasons=[];if(readiness(b)>=75)reasons.push('build already ready');if(b.power>=11)reasons.push('Power 11');if((b.trophies||0)>=500)reasons.push('good Brawler experience');if(m?.reason)reasons.push(m.reason);if(!reasons.length)reasons.push('account data available');return reasons.join(' · ')}
+function recommendationTag(b,mode,map){return META_STATE.loaded&&metaEntry(b,mode,map)?'META + ACCOUNT':'ACCOUNT ONLY'}
+function norm(s){return String(s||'').toUpperCase().replace(/[’']/g,"'").replace(/[^A-Z0-9]+/g,' ').trim()}
+function buildEntry(b){if(!b)return null;return BUILD_STATE.entries[b.name]||BUILD_STATE.entries[norm(b.name)]||BUILD_STATE.entries[String(b.name||'').toUpperCase()]||null}
+function bestBuildItem(entry,type,index=0){const a=entry?.[type]||[];return a[index]||null}
+function ownedNames(b,type){return b?(b[type]||[]).filter(Boolean).map(x=>norm(x?.name)):[]}
+function itemState(b,type,item){if(!item)return 'DATA MISSING';return ownedNames(b,type).includes(norm(item.name))?'OWNED':'BUY'}
+function missingBuildActions(b){const e=buildEntry(b),actions=[];if(!isOwnedAccount(b))return [{type:'UNLOCK',label:'Unlock Brawler',priority:30,reason:'This Brawler is not owned on the account.'}];if((b.power||0)<11)actions.push({type:'POWER',label:'Reach Power 11',priority:100+(11-(b.power||0))*8,reason:'Power level is below the full build threshold.'});const defs=[['Gadget','gadgets',bestBuildItem(e,'gadget'),70],['Star Power','starPowers',bestBuildItem(e,'starPower'),64],['Gear','gears',bestBuildItem(e,'gears',0),48],['Gear','gears',bestBuildItem(e,'gears',1),42]];for(const [label,type,item,base] of defs){if(!item)continue;if(!ownedNames(b,type).includes(norm(item.name)))actions.push({type:'BUY',label:'Buy '+label,priority:base+Number(item.pick||0)*.5,reason:item.name+' is the current community build component.'})}if((b.power||0)>=11&&!(b.hyperCharges?.length))actions.push({type:'CONSIDER',label:'Consider Hypercharge',priority:36,reason:'Power 11 is reached and no Hypercharge is recorded.'});return actions.sort((a,z)=>z.priority-a.priority)}
+function upgradePriority(b){const actions=missingBuildActions(b),m=metaEntry(b,playMode,playMap);const metaScore=Number(m?.score||0),progress=Math.max(0,11-(b.power||0))*8;const score=Math.round(Math.min(100,(actions[0]?.priority||0)+metaScore*.1+progress));return {score,actions:actions.slice(0,3),metaScore,readinessScore:readiness(b)}}
+function advisorRow(b,label,type,item){
+ if(!item)return '';
+ const state=itemState(b,type,item);
+ const pct=item.pick!=null?' · '+item.pick+'% pick':'';
+ return '<div class="advisorRow"><div class="advisorIcon">'+compIcon(type,item)+'</div><div class="grow"><b>'+esc(item.name)+'</b><span class="small">'+esc(label)+pct+'</span></div><span class="chip '+(state==='EQUIP'?'ok':'')+'">'+state+'</span></div>';
+}
+function buildActionLine(b){
+ const e=buildEntry(b);
+ if(!isOwnedAccount(b))return '<span class="actionPill buyAction">UNLOCK</span>';
+ if(!e)return '<span class="actionPill mutedAction">BUILD TO REVIEW</span>';
+ const actions=[];
+ const defs=[['GADGET','gadgets',bestBuildItem(e,'gadget')],['SP','starPowers',bestBuildItem(e,'starPower')],['G1','gears',bestBuildItem(e,'gears',0)],['G2','gears',bestBuildItem(e,'gears',1)]];
+ for(const [label,type,item] of defs){
+   if(!item)continue;
+   const has=ownedNames(b,type).includes(norm(item.name));
+   actions.push('<span class="actionPill '+(has?'equipAction':'buyAction')+'">'+(has?'OWNED ':'BUY ')+esc(label)+'</span>');
+ }
+ if((b.power||0)<11)actions.unshift('<span class="actionPill powerAction">REACH POWER 11</span>');
+ return actions.slice(0,3).join('');
+}
+function miniBuild(b){
+ const e=buildEntry(b);
+ if(!e)return '<div class="miniBuild mutedBuild"><span class="miniState">BUILD N/A</span><span class="miniHint">no verified data</span></div>';
+ const items=[
+  ['G','gadgets',bestBuildItem(e,'gadget')],
+  ['SP','starPowers',bestBuildItem(e,'starPower')],
+  ['G1','gears',bestBuildItem(e,'gears',0)],
+  ['G2','gears',bestBuildItem(e,'gears',1)]
+ ];
+ return '<div class="miniBuild">'+items.map(([label,type,item])=>{
+   if(!item)return '<span class="miniItem unknown">'+label+' · —</span>';
+   const has=isOwnedAccount(b)&&ownedNames(b,type).includes(norm(item.name));
+   const pick=item.pick!=null?' '+item.pick+'%':'';
+   return '<span class="miniItem '+(has?'ownedMini':'buyMini')+'">'+compIcon(type,item,b)+'<b>'+label+'</b><em>'+ (has?'✓':'＋')+pick+'</em></span>';
+ }).join('')+'</div>';
+}
+function metaRankList(mode,map){
+ return allBrawlers().map(b=>({b,meta:metaEntry(b,mode,map)})).filter(x=>x.meta?.score!=null).sort((a,z)=>(z.meta.score-a.meta.score)||((a.meta.rank||999)-(z.meta.rank||999)));
+}
+function globalRankList(){return metaRankList('','Random').sort((a,z)=>(z.meta.score-a.meta.score)||((a.meta.rank||999)-(z.meta.rank||999)))}
+function metaRankOf(b,mode,map){
+ if(!b)return null;
+ const list=metaRankList(mode,map);
+ const i=list.findIndex(x=>x.b.id===b.id||norm(x.b.name)===norm(b.name));
+ return i>=0?i+1:null;
+}
+function recommendationTag(b,mode,map){const s=metaScope(b,mode,map);return s==='NOT AVAILABLE'?'DATI N/D':s}
+function guideEntry(b){return catalogEntry(b)||b||null}
+function guideItem(b,type,item){
+ const c=guideEntry(b); if(!item)return null;
+ const pool=c?.[type]||[]; return pool.find(x=>x&&((x.id!=null&&x.id===item.id)||norm(x.name)===norm(item.name)))||item;
+}
+function cleanGuideText(v){return String(v||'').replace(/<[^>]*>/g,' ').replace(/<![^>]*>/g,' ').replace(/\s+/g,' ').trim()}
+function componentModal(b,type,item){
+ const x=guideItem(b,type,item); if(!x)return;
+ const title=type==='gadgets'?'Gadget':type==='starPowers'?'Star Power':type==='gears'?'Gear':type==='hyperCharges'?'Hypercharge':'Buffie';
+ const description=cleanGuideText(x.description||'No description available.');
+ document.body.insertAdjacentHTML('beforeend','<div class="modal componentModal"><div class="modalBox"><div class="modalHead"><h2>'+esc(x.name||title)+'</h2><button onclick="closeModal()">×</button></div><div class="componentDetail"><div class="eyebrow">'+title.toUpperCase()+'</div><p>'+esc(description)+'</p><div class="small">Source catalog data · '+esc(b.name)+'</div></div><button class="close" onclick="closeModal()">Close</button></div></div>');
+}
+function guideComponent(b,label,type,item){
+ if(!item)return '<div class="guideComponent missing"><span class="eyebrow">'+label+'</span><b>Not available</b></div>';
+ const x=guideItem(b,type,item);
+ const desc=cleanGuideText(x?.description||'');
+ const state=itemState(b,type,item);
+ return '<button class="guideComponent '+(state==='OWNED'?'owned':'missing')+'" onclick="componentModalById('+b.id+',\''+type+'\','+item.id+')" type="button">'+compIcon(type,item,b)+'<span class="grow"><small>'+label+'</small><b>'+esc(item.name)+'</b><em>'+esc(desc||'View details')+'</em></span><strong>'+state+'</strong></button>';
+}
+function componentModalById(bid,type,itemId){
+ const b=allBrawlers().find(x=>x&&x.id===bid); if(!b)return;
+ const c=guideEntry(b); const item=(c?.[type]||[]).find(x=>x&&x.id===itemId)||null; componentModal(b,type,item);
+}
+function brawlerGuide(b){
+ const e=buildEntry(b), c=guideEntry(b), m=metaEntry(b,playMode,playMap);
+ const g=bestBuildItem(e,'gadget'),sp=bestBuildItem(e,'starPower'),g1=bestBuildItem(e,'gears',0),g2=bestBuildItem(e,'gears',1),hc=first(b.hyperCharges);
+ const desc=cleanGuideText(c?.description||c?.shortDescription||'');
+ const modeText=m?('Recommended for '+playMode+(playMap!=='Random'?' on '+playMap:'')):'Meta context not available for this selection.';
+ const buildReason=e?'Community build usage is used as the build signal. '+(e.sample?fmt(e.sample)+' submitted builds were available.':''):'No verified community build is available yet.';
+ return '<section class="card guideCard"><div class="sectionTitle"><h2>Brawler Guide</h2><span class="chip">'+esc(metaScope(b,playMode,playMap))+'</span></div>'+
+ '<p class="guideDescription">'+esc(desc||'Brawler description not available in the current catalog.')+'</p>'+
+ '<div class="guideContext"><span>BEST CONTEXT</span><b>'+esc(modeText)+'</b></div>'+
+ '<div class="guideGrid">'+guideComponent(b,'Recommended Gadget','gadgets',g)+guideComponent(b,'Recommended Star Power','starPowers',sp)+guideComponent(b,'Recommended Gear 1','gears',g1)+guideComponent(b,'Recommended Gear 2','gears',g2)+'</div>'+
+ (hc?guideComponent(b,'Hypercharge','hyperCharges',hc):'')+
+ '<div class="guideWhy"><b>Why this build?</b><p>'+esc(buildReason)+'</p></div>'+
+ '<p class="small">Tap a component to see what it does. Recommendations are based on available community data and current account context, not official Supercell recommendations.</p></section>';
+}
+function buildAdvisor(b){
+ const e=buildEntry(b);
+ if(!e)return '<section class="card"><div class="sectionTitle"><h3>Build Advisor</h3><span class="chip">DATA PENDING</span></div><p class="small">No verified community build is available for this Brawler yet. No recommendation is invented; it will be added after a validated sync.</p></section>';
+ const rows=[advisorRow(b,'Recommended Gadget','gadgets',bestBuildItem(e,'gadget')),advisorRow(b,'Recommended Star Power','starPowers',bestBuildItem(e,'starPower')),advisorRow(b,'Recommended Gear 1','gears',bestBuildItem(e,'gears',0)),advisorRow(b,'Recommended Gear 2','gears',bestBuildItem(e,'gears',1))].join('');
+ const hc=b.power>=11&&(!b.hyperCharges||!b.hyperCharges.length)?'<div class="advisorRow"><div class="grow"><b>Hypercharge</b><span class="small">Power 11 reached but Hypercharge is not owned</span></div><span class="chip">CONSIDER</span></div>':'';
+ return '<section class="card"><div class="sectionTitle"><h3>Build Advisor</h3><span class="chip ok">COMMUNITY</span></div><p class="small">This advisor compares the community build with your account. If a component is missing: BUY. If you own it: EQUIP.</p>'+rows+hc+'<p class="small">Source: <a href="'+esc(e.sourceUrl)+'" target="_blank" rel="noopener">NOFF</a>'+(e.sample?' · '+fmt(e.sample)+' build':'')+'</p></section>';
+}
+
+function nav(){return '<nav class="nav">'+[['home','⌂','Home'],['play','▶','Play'],['brawlers','●','Brawlers'],['upgrade','↗','Upgrade'],['meta','✦','Meta']].map(x=>'<button class="'+(tab===x[0]?'active':'')+'" onclick="setTab(\''+x[0]+'\')">'+x[1]+'<br>'+x[2]+'</button>').join('')}
+function shell(body){document.getElementById('app').innerHTML='<div class="app"><header class="top"><div class="brand"><div class="logo">Brawl <span>Helper</span></div><div class="sync">'+(active?'PROFILE · '+esc(profileStatus):'NO PROFILE')+'</div></div><button class="profileBtn" onclick="profilePanel()">'+esc(P?.name||active||'Connect profile')+'</button></header><main class="content">'+body+'</main>'+nav()+'</div>'}
+function setTab(t){tab=t;selected=null;query='';filter='all';render()}
+
+function bcard(b,compact=false,mode=playMode,map=playMap,rank=null,kind=''){
+ if(!b)return '';
+ const o=owned(b),st=status(b),score=contextScore(b,mode,map),m=metaEntry(b,mode,map),metaRank=rank||metaRankOf(b,mode,map);
+ const ownedAccount=isOwnedAccount(b);
+ const titleRank=metaRank?'<span class="metaRank">#'+metaRank+'</span>':'';
+ const action=buildActionLine(b);
+ return '<div class="card bcard '+(kind==='recommended'?'recommendedCard':'')+'" onclick="openB('+b.id+')"><div class="row"><div class="rankBadge">'+titleRank+'</div><img class="portrait" src="'+portrait(b)+'" onerror="this.style.opacity=.25"><div class="grow"><div class="bname">'+esc(b.name)+'</div><div class="small bMetaLine">'+(ownedAccount?'P'+b.power+' · '+fmt(b.trophies)+' 🏆':'NOT OWNED')+' <span>·</span> '+esc(metaScope(b,mode,map))+'</div><div class="chips"><span class="chip '+st[1]+'">'+(ownedAccount?st[0]:'UNLOCK')+'</span><span class="chip '+(m?'metaChip':'')+'">'+(m?'META':'N/D')+'</span><span class="chip">Score '+score+'</span></div>'+miniBuild(b)+'<div class="actionLine">'+action+'</div></div></div>'+(!compact?'<div class="chips detailChips"><span class="chip '+(o.gadgets?'ok':'miss')+'">G '+o.gadgets+'/2</span><span class="chip '+(o.stars?'ok':'miss')+'">SP '+o.stars+'/2</span><span class="chip '+(o.gears?'ok':'miss')+'">Gear '+o.gears+'/2</span><span class="chip '+(o.hc?'ok':'miss')+'">HC '+o.hc+'</span></div>':'')+'</div>'
+}
+
+function home(){const ownedList=[...(P?.brawlers||[])].filter(Boolean);const plans=ownedList.map(b=>({b,plan:upgradePriority(b)}));const upgrades=plans.filter(x=>x.plan.actions.some(a=>a.type==='BUY'||a.type==='POWER')).sort((a,z)=>(z.plan.score-a.plan.score)||((z.b.power||0)-(a.b.power||0))).slice(0,5);const ready=ownedList.filter(b=>missingBuildActions(b).length===0).sort((a,z)=>personalScore(z)-personalScore(a)).slice(0,5);return '<section class="hero"><div class="eyebrow">ACCOUNT</div><h1>'+esc(P.name)+'</h1><div class="tag">'+esc(P.tag)+' · Level '+P.expLevel+'</div><div class="stats"><div class="stat"><b>'+fmt(P.trophies)+'</b><span>TROPHIES</span></div><div class="stat"><b>'+P.brawlers.length+'</b><span>BRAWLERS</span></div><div class="stat"><b>'+fmt(P['3vs3Victories'])+'</b><span>3v3 WINS</span></div></div><div class="rank"><span>Ranked · '+esc(P.rankedRankName||'—')+'</span><b>'+fmt(P.rankedElo)+' Elo</b></div></section>'+'<section class="section"><div class="sectionTitle"><h2>What should I upgrade?</h2><span class="small">'+(upgrades.length?'Next actions':'No urgent purchases')+'</span></div><div class="notice upgradeIntro"><b>BUY = not owned · OWNED = already unlocked</b><br>Only missing progression is shown here. A fully built Brawler is not treated as an upgrade target.</div>'+(upgrades.length?upgrades.map((x,i)=>upgradeCard(x,i+1)).join(''):'<div class="card emptyState"><b>No detected purchase priority on this account.</b><span class="small">Open Upgrade for the full progression view.</span></div>')+'</section>'+'<section class="section"><div class="sectionTitle"><h2>Ready to play</h2><span class="small">Your developed Brawlers</span></div>'+(ready.length?ready.map(b=>bcard(b,true,playMode,playMap,null,'ready')).join(''):'<div class="card emptyState"><b>No fully built Brawlers detected yet.</b><span class="small">Complete the recommended build components to move a Brawler here.</span></div>')+'</section>'+'<section class="section"><div class="sectionTitle"><h2>Explore Brawlers</h2><span class="small">Open the full catalog</span></div><button class="browseCta" onclick="setTab(\'brawlers\')">Open Brawler Browser <span>→</span></button></section>'}
+function upgradeCard(x,rank){const b=x.b,plan=x.plan;return '<div class="upgradeCard" onclick="openB('+b.id+')"><div class="upgradeTop"><span class="priorityNum">'+rank+'</span><img class="upgradePortrait" src="'+portrait(b)+'" onerror="this.style.opacity=.25"><div class="grow"><b>'+esc(b.name)+'</b><span class="small">Power '+b.power+' · '+fmt(b.trophies)+' trophies</span></div><span class="priorityLabel">NEXT</span></div><div class="upgradeActions">'+plan.actions.map(a=>'<div class="priorityAction"><span class="priorityIcon">'+(a.type==='BUY'?'＋':a.type==='POWER'?'↑':'◆')+'</span><div><b>'+esc(a.label)+'</b><span>'+esc(a.reason)+'</span></div></div>').join('')+'</div>'+miniBuild(b)+'</div>'}
+function brawlers(){let bs=[...(P.brawlers||[])].filter(Boolean);if(query)bs=bs.filter(b=>b.name.toLowerCase().includes(query.toLowerCase()));if(filter==='p11')bs=bs.filter(b=>b.power>=11);if(filter==='upgrade')bs=bs.filter(b=>upgradePriority(b).actions.length>0);if(filter==='missing')bs=bs.filter(b=>missingBuildActions(b).some(a=>a.type==='BUY'||a.type==='POWER'));bs.sort((a,b)=>b.trophies-a.trophies);return '<section class="section"><div class="sectionTitle"><h2>Brawler Browser</h2><span class="small">'+bs.length+' shown · '+P.brawlers.length+' owned</span></div><div class="notice browserIntro"><b>Tap any Brawler to open its full build.</b><br>Icons show the recommended build; BUY means you do not own it, OWNED means it is already unlocked.</div><input class="search" placeholder="Search Brawler..." value="'+esc(query)+'" oninput="query=this.value;render()"><div class="filters"><button class="'+(filter==='all'?'active':'')+'" onclick="filter=\'all\';render()">All</button><button class="'+(filter==='p11'?'active':'')+'" onclick="filter=\'p11\';render()">Power 11</button><button class="'+(filter==='upgrade'?'active':'')+'" onclick="filter=\'upgrade\';render()">Upgrade next</button><button class="'+(filter==='missing'?'active':'')+'" onclick="filter=\'missing\';render()">Missing items</button></div>'+bs.map(bcard).join('')+'</section>'}
 function detail(){
  const b=P.brawlers.find(x=>x&&x.id===selected)||allBrawlers().find(x=>x&&x.id===selected); if(!b)return '';
  const accountOwned=isOwnedAccount(b),o=owned(b),g=first(b.gadgets),sp=first(b.starPowers),gear1=b.gears?.[0],gear2=b.gears?.[1],hc=first(b.hyperCharges),m=metaEntry(b,playMode,playMap);
