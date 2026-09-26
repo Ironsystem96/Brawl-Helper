@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "strategy": "quiet_monetization",
+  "enabled": false,
+  "principles": [
+    "No advertising during onboarding.",
+    "No advertising while a profile is loading.",
+    "No advertising inside dense Brawler guide reading.",
+    "No unexpected full-screen interstitial on app launch.",
+    "No ad after every click or navigation action.",
+    "Use frequency caps and natural transition points.",
+    "Rewarded ads, if introduced, must always be explicit opt-in and never required for core guide access."
+  ],
+  "placements": {
+    "homeBanner": {
+      "enabled": false,
+      "position": "below_primary_dashboard",
+      "format": "banner"
+    },
+    "brawlerDetailBanner": {
+      "enabled": false,
+      "position": "after_guide_summary",
+      "format": "banner"
+    },
+    "interstitial": {
+      "enabled": false,
+      "position": "natural_navigation_boundary",
+      "minActionsBetweenAds": 4,
+      "cooldownMinutes": 20
+    },
+    "rewarded": {
+      "enabled": false,
+      "position": "optional_bonus",
+      "requiresExplicitOptIn": true
+    }
+  },
+  "remoteConfig": {
+    "enabled": true,
+    "killSwitch": true,
+    "maxDailyInterstitials": 2,
+    "maxSessionInterstitials": 1
+  },
+  "complianceNotes": [
+    "Ad providers and consent tooling must be selected before enabling monetization.",
+    "Actual privacy disclosures and store Data Safety/App Privacy declarations must match the final SDK behavior.",
+    "Fan Content Policy restrictions apply to advertising content as well as the app itself."
+  ]
+}
