@@ -27,7 +27,6 @@ jobs:
         run: |
           node --check app.js
           node --check preboot.js
-          node --check data/player-response.js
           node --check cache-cleanup.js
 
       - name: Setup Pages
