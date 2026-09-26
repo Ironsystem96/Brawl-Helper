@@ -14,6 +14,50 @@ const PROVIDER_STATE={loaded:false,providers:[],report:null};
 
 async function fetchJson(url,ms=7000){const ctl=new AbortController();const t=setTimeout(()=>ctl.abort(),ms);try{const r=await fetch(url,{cache:'no-store',signal:ctl.signal});if(!r.ok)throw new Error('HTTP '+r.status+' · '+url);return await r.json()}finally{clearTimeout(t)}}
 
+function metaEntry(b,mode='Ranked',map='Random'){
+ if(!b)return null;
+ const name=norm(b.name);
+ const entries=META_STATE.entries||{};
+ const direct=entries[b.name]||entries[name]||entries[String(b.name||'').toUpperCase()];
+ if(!direct)return null;
+ if(Array.isArray(direct)){
+  return direct.find(x=>!mode||!x.mode||norm(x.mode)===norm(mode))?.entry||direct[0]||null;
+ }
+ if(direct.modes){
+  const modeEntry=direct.modes[mode]||direct.modes[norm(mode)]||direct.modes['GLOBAL'];
+  if(Array.isArray(modeEntry))return modeEntry.find(x=>!map||!x.map||norm(x.map)===norm(map))||modeEntry[0]||null;
+  return modeEntry||direct.global||null;
+ }
+ if(direct.mode&&mode&&norm(direct.mode)!==norm(mode))return null;
+ if(direct.map&&map&&direct.map!=='Random'&&norm(direct.map)!==norm(map))return null;
+ return direct;
+}
+
+async function loadMeta(){
+ const [meta,build]=await Promise.allSettled([
+  fetchJson('data/meta.json',5000),
+  fetchJson('data/build-meta.json',5000)
+ ]);
+ if(meta.status==='fulfilled'&&meta.value){
+  const d=meta.value||{};
+  const raw=d.entries||d.meta||d.data||{};
+  META_STATE.entries=raw&&typeof raw==='object'?raw:{};
+  META_STATE.source=d.source||null;
+  META_STATE.updatedAt=d.updatedAt||null;
+  META_STATE.loaded=Object.keys(META_STATE.entries).length>0;
+ }
+ if(build.status==='fulfilled'&&build.value){
+  const d=build.value||{};
+  const raw=d.entries||{};
+  BUILD_STATE.entries={};
+  Object.entries(raw).forEach(([k,v])=>{BUILD_STATE.entries[k]=v;BUILD_STATE.entries[norm(k)]=v;});
+  BUILD_STATE.updatedAt=d.updatedAt||null;
+  BUILD_STATE.sources=d.sources||[];
+  BUILD_STATE.loaded=Object.keys(raw).length>0;
+ }
+ return {meta:META_STATE,build:BUILD_STATE};
+}
+
 function img(kind,id){return 'https://cdn.brawlify.com/'+kind+'/'+id+'.png'}
 function catalogEntry(b){if(!b)return null;return CATALOG_STATE.entries[b.name]||Object.values(CATALOG_STATE.entries||{}).find(x=>x&&x.id===b.id)||null}
 function portrait(b){return catalogEntry(b)?.imageUrl||b?.imageUrl||img('brawlers/borders',b?.id)}
