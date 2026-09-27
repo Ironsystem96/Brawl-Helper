@@ -222,6 +222,13 @@ async function main(){
     }catch(e){}
     await sleep(70);
   }
+function buildCompleteness(metaEntries,brawler){
+ const e=metaEntries[brawler.name]||{};
+ const components={gadgets:Array.isArray(brawler.gadgets)?brawler.gadgets.length:0,starPowers:Array.isArray(brawler.starPowers)?brawler.starPowers.length:0,gears:Array.isArray(brawler.gears)?brawler.gears.length:0,hyperCharges:Array.isArray(brawler.hyperCharges||brawler.hypercharges)?(brawler.hyperCharges||brawler.hypercharges).length:0,overdrives:Array.isArray(e.overdrives)?e.overdrives.length:0,buffies:Array.isArray(e.buffies)?e.buffies.length:0};
+ const checks={identity:!!(brawler.id&&brawler.name),portrait:!!(brawler.imageUrl||brawler.imageUrl2),gadgets:components.gadgets===2,starPowers:components.starPowers===2,gears:components.gears>0,hyperCharges:components.hyperCharges>0,overdrives:components.overdrives>0,buffies:components.buffies>0};
+ const done=Object.values(checks).filter(Boolean).length,total=Object.keys(checks).length;
+ return {checks,components,score:Math.round(done/total*100),status:done===total?'COMPLETE':done>=6?'PARTIAL':'INCOMPLETE'};
+}
   const metaEntries={};
   for(const b of list){
     const e=entries[b.name];
@@ -237,7 +244,7 @@ async function main(){
       const r=md.entries?.[b.name];
       if(r&&!modesOut[modeKey])modesOut[modeKey]={score:r.winRate,rank:r.rank,winRate:r.winRate,pickRate:r.pickRate,reason:md.name+' Wilson-adjusted win rate',source:'BrawlMetrics',confidence:r.rank<=10?'medium':'low'};
     }
-    metaEntries[b.name]={
+    metaEntries[b.name]={completeness:buildCompleteness(e,b),
       default:{score,rank:null,reason:base!=null?'Brawl Time Ninja adjusted win rate':'Community build data only',source:base!=null?'Brawl Time Ninja':'NOFF',confidence:base!=null?'medium':'low'},
       modes:modesOut,
       maps:Object.fromEntries((e.noff?.maps||[]).map(r=>[r.name,{score:r.score,winRate:r.winRate,pickRate:r.pickRate,source:'NOFF',confidence:r.pickRate>=1?'medium':'low'}]))
