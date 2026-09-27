@@ -50,7 +50,7 @@ function parseNoff(html,brawler){
   starPowers.push(...parseNamed(brawler?.starPowers));
   const gearBlock=pickSection(text,'Gear Pick Rates','Hypercharge');
   const gearOut=[];
-  const gearRe=/([A-Z][A-Za-z0-9&'’+:.- ]{2,60}?)\s+([0-9]{1,3})%/g;
+  const gearRe=/([A-Z][A-Za-z0-9&'’+:\.\- ]{2,60}?)\s+([0-9]{1,3})%/g;
   let gm;
   while((gm=gearRe.exec(gearBlock))){
     let name=gm[1].trim().replace(/^Image/i,'').replace(/^(?:Gear\s*)/i,'').replace(/\s+/g,' ');
