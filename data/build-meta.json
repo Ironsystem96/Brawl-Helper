@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-27T10:31:56.722Z",
+  "updatedAt": "2026-09-27T10:34:43.024Z",
   "sourceStatus": {
     "brawlApi": 109,
     "noff": 105,
@@ -62,7 +62,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 40
         },
         {
@@ -93,7 +93,7 @@
         "winRate": 66.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/cosmo",
@@ -264,7 +264,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 36
         },
         {
@@ -295,7 +295,7 @@
         "winRate": 76.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/wendy",
@@ -466,7 +466,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 38
         },
         {
@@ -497,7 +497,7 @@
         "winRate": 67.1,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/nori",
@@ -668,7 +668,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 32
         },
         {
@@ -699,7 +699,7 @@
         "winRate": 73.3,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bolt",
@@ -870,7 +870,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 38
         },
         {
@@ -1066,7 +1066,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 40
         },
         {
@@ -1097,7 +1097,7 @@
         "winRate": 69.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/damian",
@@ -1268,7 +1268,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Shield",
+          "name": "Shield",
           "pick": 38
         },
         {
@@ -1299,7 +1299,7 @@
         "winRate": 66,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/najia",
@@ -1470,7 +1470,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Shield",
+          "name": "Shield",
           "pick": 36
         },
         {
@@ -1501,7 +1501,7 @@
         "winRate": 67.1,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/sirius",
@@ -1668,7 +1668,7 @@
         "winRate": 70.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/glowy",
@@ -1698,7 +1698,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 40
         },
         {
@@ -1729,7 +1729,7 @@
         "winRate": 69.9,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gigi",
@@ -1895,7 +1895,7 @@
       "starPower": [],
       "gears": [
         {
-          "name": "Pick Rates Shield",
+          "name": "Shield",
           "pick": 37
         },
         {
@@ -1926,7 +1926,7 @@
         "winRate": 63.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/pierce",
@@ -2097,7 +2097,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Shield",
+          "name": "Shield",
           "pick": 34
         },
         {
@@ -2128,7 +2128,7 @@
         "winRate": 69.1,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/ziggy",
@@ -2299,7 +2299,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 38
         },
         {
@@ -2330,7 +2330,7 @@
         "winRate": 64.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/mina",
@@ -2501,7 +2501,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 38
         },
         {
@@ -2532,7 +2532,7 @@
         "winRate": 67.3,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/trunk",
@@ -2703,7 +2703,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 32
         },
         {
@@ -2734,7 +2734,7 @@
         "winRate": 66.9,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/alli",
@@ -2905,7 +2905,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 34
         },
         {
@@ -2936,7 +2936,7 @@
         "winRate": 63.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/kaze",
@@ -3107,7 +3107,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 36
         },
         {
@@ -3138,7 +3138,7 @@
         "winRate": 70.6,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/jae-yong",
@@ -3304,7 +3304,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Shield",
+          "name": "Shield",
           "pick": 35
         },
         {
@@ -3335,7 +3335,7 @@
         "winRate": 69.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/finx",
@@ -3506,7 +3506,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Shield",
+          "name": "Shield",
           "pick": 37
         },
         {
@@ -3537,7 +3537,7 @@
         "winRate": 65.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/lumi",
@@ -3708,7 +3708,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 35
         },
         {
@@ -3739,7 +3739,7 @@
         "winRate": 72.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/ollie",
@@ -3910,7 +3910,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Shield",
+          "name": "Shield",
           "pick": 36
         },
         {
@@ -3941,7 +3941,7 @@
         "winRate": 61.9,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/meeple",
@@ -4132,7 +4132,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Shield",
+          "name": "Shield",
           "pick": 34
         },
         {
@@ -4163,7 +4163,7 @@
         "winRate": 70.3,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/juju",
@@ -4334,7 +4334,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 35
         },
         {
@@ -4365,7 +4365,7 @@
         "winRate": 67,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/shade",
@@ -4536,7 +4536,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 37
         },
         {
@@ -4567,7 +4567,7 @@
         "winRate": 65.8,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/kenji",
@@ -4738,7 +4738,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 37
         },
         {
@@ -4769,7 +4769,7 @@
         "winRate": 68.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/moe",
@@ -4940,7 +4940,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 40
         },
         {
@@ -4971,7 +4971,7 @@
         "winRate": 68.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/clancy",
@@ -5142,7 +5142,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Shield",
+          "name": "Shield",
           "pick": 36
         },
         {
@@ -5173,7 +5173,7 @@
         "winRate": 65.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/berry",
@@ -5344,7 +5344,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 33
         },
         {
@@ -5375,7 +5375,7 @@
         "winRate": 64.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/lily",
@@ -5546,7 +5546,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 36
         },
         {
@@ -5577,7 +5577,7 @@
         "winRate": 70.8,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/draco",
@@ -5748,7 +5748,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Shield",
+          "name": "Shield",
           "pick": 32
         },
         {
@@ -5779,7 +5779,7 @@
         "winRate": 64.8,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/angelo",
@@ -5950,7 +5950,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 35
         },
         {
@@ -5981,7 +5981,7 @@
         "winRate": 66.3,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/melodie",
@@ -6172,7 +6172,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 32
         },
         {
@@ -6203,7 +6203,7 @@
         "winRate": 62.6,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/kit",
@@ -6374,7 +6374,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 36
         },
         {
@@ -6405,7 +6405,7 @@
         "winRate": 65.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/mico",
@@ -6576,7 +6576,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 36
         },
         {
@@ -6607,7 +6607,7 @@
         "winRate": 70,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/charlie",
@@ -6778,7 +6778,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 40
         },
         {
@@ -6809,7 +6809,7 @@
         "winRate": 65,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/chuck",
@@ -6980,7 +6980,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 39
         },
         {
@@ -7011,7 +7011,7 @@
         "winRate": 67.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/pearl",
@@ -7182,7 +7182,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 34
         },
         {
@@ -7213,7 +7213,7 @@
         "winRate": 68.9,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/doug",
@@ -7384,7 +7384,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 35
         },
         {
@@ -7415,7 +7415,7 @@
         "winRate": 65.6,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/cordelius",
@@ -7586,7 +7586,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 38
         },
         {
@@ -7617,7 +7617,7 @@
         "winRate": 69.9,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/hank",
@@ -7788,7 +7788,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 37
         },
         {
@@ -7819,7 +7819,7 @@
         "winRate": 67.9,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/maisie",
@@ -7990,7 +7990,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Shield",
+          "name": "Shield",
           "pick": 34
         },
         {
@@ -8021,7 +8021,7 @@
         "winRate": 62.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/willow",
@@ -8192,7 +8192,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 37
         },
         {
@@ -8223,7 +8223,7 @@
         "winRate": 70.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/r-t",
@@ -8394,7 +8394,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Shield",
+          "name": "Shield",
           "pick": 40
         },
         {
@@ -8425,7 +8425,7 @@
         "winRate": 60.8,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/mandy",
@@ -8596,7 +8596,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Shield",
+          "name": "Shield",
           "pick": 39
         },
         {
@@ -8627,7 +8627,7 @@
         "winRate": 64.6,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gray",
@@ -8798,7 +8798,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 39
         },
         {
@@ -8829,7 +8829,7 @@
         "winRate": 63.9,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/chester",
@@ -9000,7 +9000,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 37
         },
         {
@@ -9031,7 +9031,7 @@
         "winRate": 70.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/buster",
@@ -9202,7 +9202,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Shield",
+          "name": "Shield",
           "pick": 36
         },
         {
@@ -9233,7 +9233,7 @@
         "winRate": 65.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gus",
@@ -9404,7 +9404,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 38
         },
         {
@@ -9435,7 +9435,7 @@
         "winRate": 70.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/sam",
@@ -9606,7 +9606,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Super Charge",
+          "name": "Super Charge",
           "pick": 36
         },
         {
@@ -9637,7 +9637,7 @@
         "winRate": 65.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/otis",
@@ -9808,7 +9808,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Super Charge",
+          "name": "Super Charge",
           "pick": 39
         },
         {
@@ -9839,7 +9839,7 @@
         "winRate": 69.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bonnie",
@@ -10010,7 +10010,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 40
         },
         {
@@ -10041,7 +10041,7 @@
         "winRate": 69,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/janet",
@@ -10212,7 +10212,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Quadruplets",
+          "name": "Quadruplets",
           "pick": 35
         },
         {
@@ -10243,7 +10243,7 @@
         "winRate": 69.1,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/eve",
@@ -10414,7 +10414,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 42
         },
         {
@@ -10445,7 +10445,7 @@
         "winRate": 63,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/fang",
@@ -10616,7 +10616,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Reload Speed",
+          "name": "Reload Speed",
           "pick": 40
         },
         {
@@ -10647,7 +10647,7 @@
         "winRate": 68.6,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/lola",
@@ -10818,7 +10818,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 39
         },
         {
@@ -10878,7 +10878,7 @@
         "winRate": 67,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/meg",
@@ -11049,7 +11049,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 34
         },
         {
@@ -11080,7 +11080,7 @@
         "winRate": 69.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/ash",
@@ -11251,7 +11251,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Reload Speed",
+          "name": "Reload Speed",
           "pick": 35
         },
         {
@@ -11318,7 +11318,7 @@
         "winRate": 63.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/griff",
@@ -11489,7 +11489,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 35
         },
         {
@@ -11520,7 +11520,7 @@
         "winRate": 63.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/buzz",
@@ -11691,7 +11691,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Shield",
+          "name": "Shield",
           "pick": 32
         },
         {
@@ -11722,7 +11722,7 @@
         "winRate": 64.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/grom",
@@ -11893,7 +11893,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 31
         },
         {
@@ -11924,7 +11924,7 @@
         "winRate": 62.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/squeak",
@@ -12095,7 +12095,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Reload Speed",
+          "name": "Reload Speed",
           "pick": 39
         },
         {
@@ -12126,7 +12126,7 @@
         "winRate": 65.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/belle",
@@ -12297,7 +12297,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 39
         },
         {
@@ -12328,7 +12328,7 @@
         "winRate": 60.9,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/stu",
@@ -12499,7 +12499,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Shield",
+          "name": "Shield",
           "pick": 37
         },
         {
@@ -12530,7 +12530,7 @@
         "winRate": 64.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/ruffs",
@@ -12701,7 +12701,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Shield",
+          "name": "Shield",
           "pick": 27
         },
         {
@@ -12761,7 +12761,7 @@
         "winRate": 61,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/edgar",
@@ -12932,7 +12932,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Shield",
+          "name": "Shield",
           "pick": 39
         },
         {
@@ -12963,7 +12963,7 @@
         "winRate": 60.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/byron",
@@ -13134,7 +13134,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Super Charge",
+          "name": "Super Charge",
           "pick": 42
         },
         {
@@ -13165,7 +13165,7 @@
         "winRate": 67.1,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/lou",
@@ -13336,7 +13336,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Reload Speed",
+          "name": "Reload Speed",
           "pick": 33
         },
         {
@@ -13367,7 +13367,7 @@
         "winRate": 67.3,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/amber",
@@ -13538,7 +13538,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 37
         },
         {
@@ -13605,7 +13605,7 @@
         "winRate": 61.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/colette",
@@ -13776,7 +13776,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 39
         },
         {
@@ -13843,7 +13843,7 @@
         "winRate": 61.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/surge",
@@ -14014,7 +14014,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Super Charge",
+          "name": "Super Charge",
           "pick": 35
         },
         {
@@ -14045,7 +14045,7 @@
         "winRate": 66.1,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/sprout",
@@ -14216,7 +14216,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Shield",
+          "name": "Shield",
           "pick": 33
         },
         {
@@ -14247,7 +14247,7 @@
         "winRate": 63.1,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/nani",
@@ -14418,7 +14418,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 38
         },
         {
@@ -14449,7 +14449,7 @@
         "winRate": 64.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gale",
@@ -14620,7 +14620,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 31
         },
         {
@@ -14651,7 +14651,7 @@
         "winRate": 70.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/jacky",
@@ -14822,7 +14822,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 29
         },
         {
@@ -14889,7 +14889,7 @@
         "winRate": 62.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/max",
@@ -15060,7 +15060,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Pet Power",
+          "name": "Pet Power",
           "pick": 38
         },
         {
@@ -15256,7 +15256,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 35
         },
         {
@@ -15323,7 +15323,7 @@
         "winRate": 63.1,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/emz",
@@ -15494,7 +15494,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Shield",
+          "name": "Shield",
           "pick": 41
         },
         {
@@ -15525,7 +15525,7 @@
         "winRate": 63.3,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bea",
@@ -15696,7 +15696,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Exhausting Storm",
+          "name": "Exhausting Storm",
           "pick": 34
         },
         {
@@ -15727,7 +15727,7 @@
         "winRate": 68.8,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/sandy",
@@ -15898,7 +15898,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Reload Speed",
+          "name": "Reload Speed",
           "pick": 35
         },
         {
@@ -15965,7 +15965,7 @@
         "winRate": 66,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/8-bit",
@@ -16136,7 +16136,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 36
         },
         {
@@ -16203,7 +16203,7 @@
         "winRate": 64.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bibi",
@@ -16374,7 +16374,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 38
         },
         {
@@ -16405,7 +16405,7 @@
         "winRate": 65.1,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/carl",
@@ -16576,7 +16576,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Speed",
+          "name": "Speed",
           "pick": 33
         },
         {
@@ -16607,7 +16607,7 @@
         "winRate": 71,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/rosa",
@@ -16778,7 +16778,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 26
         },
         {
@@ -16845,7 +16845,7 @@
         "winRate": 62.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/leon",
@@ -17016,7 +17016,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Thicc Head",
+          "name": "Thicc Head",
           "pick": 40
         },
         {
@@ -17047,7 +17047,7 @@
         "winRate": 62.3,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/tick",
@@ -17218,7 +17218,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Talk to the Hand",
+          "name": "Talk to the Hand",
           "pick": 41
         },
         {
@@ -17249,7 +17249,7 @@
         "winRate": 62.3,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gene",
@@ -17420,7 +17420,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 36
         },
         {
@@ -17487,7 +17487,7 @@
         "winRate": 65.8,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/frank",
@@ -17658,7 +17658,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Pet Power",
+          "name": "Pet Power",
           "pick": 32
         },
         {
@@ -17689,7 +17689,7 @@
         "winRate": 63.9,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/penny",
@@ -17860,7 +17860,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 40
         },
         {
@@ -17891,7 +17891,7 @@
         "winRate": 66.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/darryl",
@@ -18062,7 +18062,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Pet Power",
+          "name": "Pet Power",
           "pick": 28
         },
         {
@@ -18093,7 +18093,7 @@
         "winRate": 66.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/tara",
@@ -18259,7 +18259,7 @@
       "starPower": [],
       "gears": [
         {
-          "name": "Pick Rates Super Turret",
+          "name": "Super Turret",
           "pick": 42
         },
         {
@@ -18290,7 +18290,7 @@
         "winRate": 69.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/pam",
@@ -18461,7 +18461,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Shield",
+          "name": "Shield",
           "pick": 37
         },
         {
@@ -18492,7 +18492,7 @@
         "winRate": 60.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/piper",
@@ -18663,7 +18663,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 27
         },
         {
@@ -18730,7 +18730,7 @@
         "winRate": 64.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bo",
@@ -18901,7 +18901,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Shield",
+          "name": "Shield",
           "pick": 28
         },
         {
@@ -18932,7 +18932,7 @@
         "winRate": 64.3,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/poco",
@@ -19103,7 +19103,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Shield",
+          "name": "Shield",
           "pick": 33
         },
         {
@@ -19170,7 +19170,7 @@
         "winRate": 60.8,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/crow",
@@ -19341,7 +19341,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 33
         },
         {
@@ -19408,7 +19408,7 @@
         "winRate": 57.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/mortis",
@@ -19579,7 +19579,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Super Charge",
+          "name": "Super Charge",
           "pick": 34
         },
         {
@@ -19775,7 +19775,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Shield",
+          "name": "Shield",
           "pick": 35
         },
         {
@@ -19806,7 +19806,7 @@
         "winRate": 60.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/dynamike",
@@ -19977,7 +19977,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 26
         },
         {
@@ -20044,7 +20044,7 @@
         "winRate": 68.8,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/nita",
@@ -20215,7 +20215,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Pet Power",
+          "name": "Pet Power",
           "pick": 40
         },
         {
@@ -20246,7 +20246,7 @@
         "winRate": 66.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/jessie",
@@ -20417,7 +20417,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Shield",
+          "name": "Shield",
           "pick": 38
         },
         {
@@ -20448,7 +20448,7 @@
         "winRate": 65.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/barley",
@@ -20619,7 +20619,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Shield",
+          "name": "Shield",
           "pick": 31
         },
         {
@@ -20686,7 +20686,7 @@
         "winRate": 62.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/spike",
@@ -20857,7 +20857,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Reload Speed",
+          "name": "Reload Speed",
           "pick": 36
         },
         {
@@ -20924,7 +20924,7 @@
         "winRate": 61.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/rico",
@@ -21095,7 +21095,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Reload Speed",
+          "name": "Reload Speed",
           "pick": 36
         },
         {
@@ -21162,7 +21162,7 @@
         "winRate": 62,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/brock",
@@ -21333,7 +21333,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 37
         },
         {
@@ -21400,7 +21400,7 @@
         "winRate": 64.8,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bull",
@@ -21571,7 +21571,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 27
         },
         {
@@ -21638,7 +21638,7 @@
         "winRate": 60.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/colt",
@@ -21809,7 +21809,7 @@
       ],
       "gears": [
         {
-          "name": "Pick Rates Damage",
+          "name": "Damage",
           "pick": 36
         },
         {
@@ -21876,7 +21876,7 @@
         "winRate": 64.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:31:56.722Z"
+        "updatedAt": "2026-09-27T10:34:43.024Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/shelly",
