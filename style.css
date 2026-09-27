@@ -325,3 +325,81 @@ body{color:#f4f7fb}
 .guideFreshness span{font-size:8px;letter-spacing:.8px;font-weight:950;color:#aebbd0}
 .guideFreshness b{font-size:10px;color:#fff}
 .guideFreshness small{font-size:9px;color:#8fa0b9;line-height:1.35}
+
+
+/* Brawl Helper UI pass v4 — readable graphite, compact cards, robust image fallbacks */
+.portraitFallback{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#ffd34e;
+  font-weight:950;
+  font-size:15px;
+  letter-spacing:-.5px;
+  background:radial-gradient(circle at 50% 35%,#31486e,#0b1424 72%);
+  border:1px solid #526b92;
+}
+.primaryUpgradeAction{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin-top:8px;
+  padding:8px 9px;
+  border:1px solid #3f5275;
+  border-radius:10px;
+  background:#18243a;
+}
+.primaryUpgradeAction .priorityIcon{
+  width:25px;height:25px;flex:0 0 25px;border-radius:8px;
+  display:flex;align-items:center;justify-content:center;
+  background:#243653;color:#ffd34e;font-size:12px;font-weight:950;
+}
+.primaryUpgradeAction b{display:block;font-size:10px;line-height:1.2;color:#fff}
+.primaryUpgradeAction span{display:block;font-size:8.5px;line-height:1.25;color:#9eacc1;margin-top:2px}
+.upgradeMore{
+  margin-top:6px;
+  font-size:8.5px;
+  color:#8797af;
+  text-align:right;
+}
+.upgradeCard .miniBuild{margin-top:7px}
+.quickGrid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin:8px 0 12px
+}
+.quickGrid button{
+  min-height:70px;padding:9px 7px;text-align:left;border:1px solid #3b4f73;
+  border-radius:14px;background:#151f34;color:#fff
+}
+.quickGrid .quickIcon{
+  display:flex;width:26px;height:26px;align-items:center;justify-content:center;
+  border-radius:8px;background:#243653;color:#ffd34e;font-weight:950;margin-bottom:5px
+}
+.quickGrid b{display:block;font-size:11px}
+.quickGrid small{display:block;font-size:8.5px;color:#8fa0b9;margin-top:2px}
+.upgradeIntro{font-size:9px!important;line-height:1.35!important;color:#9eacc1!important}
+.browserIntro{
+  display:grid;gap:2px;margin:7px 0 8px;padding:8px 10px;border:1px solid #334765;
+  background:#111c2f;border-radius:11px
+}
+.browserIntro b{font-size:10px;color:#fff}
+.browserIntro span{font-size:8.5px;color:#8fa0b9;line-height:1.35}
+.bcard{padding:10px 11px}
+.bcard .row{gap:9px}
+.bcard .portrait{width:55px;height:55px;border-radius:13px}
+.bcard .bname{font-size:14px}
+.bcard .bMetaLine{font-size:9px}
+.bcard .chips{margin-top:4px}
+.bcard .chip{font-size:8.5px;padding:3px 5px}
+.bcard .miniBuild{margin-top:5px}
+.rankBadge{width:25px;min-width:25px;height:25px}
+.detailChips{display:none!important}
+.heroPortrait{width:78px;height:78px}
+.modalBox{color:#f7f9fc}
+.modalBox .small,.modalLead{color:#aebbd0}
+@media(max-width:430px){
+ .quickGrid button{min-height:64px}
+ .quickGrid .quickIcon{width:24px;height:24px}
+ .upgradeCard{padding:9px 10px}
+ .upgradeTop{gap:7px}
+ .upgradePortrait{width:52px;height:52px}
+}
