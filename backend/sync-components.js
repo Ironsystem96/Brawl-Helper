@@ -1,6 +1,21 @@
 const fs=require('fs'),path=require('path');
 const ROOT=path.join(__dirname,'..'),CATALOG=path.join(ROOT,'data','brawlers.json'),BUILD=path.join(ROOT,'data','build-meta.json'),OUT=path.join(ROOT,'data','components.json');
 async function get(url){const ctl=new AbortController(),t=setTimeout(()=>ctl.abort(),10000);try{const r=await fetch(url,{headers:{'user-agent':'BrawlHelper-ComponentSync/1.0'},signal:ctl.signal});if(!r.ok)throw Error('HTTP '+r.status);return await r.json()}finally{clearTimeout(t)}}
+async function brawlFindData(name){
+ const slug=String(name||'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+ const url='https://www.brawlfind.com/it/brawlers/'+slug;
+ try{
+  const html=await (async()=>{const ctl=new AbortController(),t=setTimeout(()=>ctl.abort(),8000);try{const r=await fetch(url,{headers:{'user-agent':'BrawlHelper-ComponentSync/1.0'},signal:ctl.signal});if(!r.ok)throw Error('HTTP '+r.status);return await r.text()}finally{clearTimeout(t)}})();
+  const clean=x=>String(x||'').replace(/&amp;/g,'&').replace(/&#39;/g,"'").replace(/&quot;/g,'"').replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim();
+  const imgs=[];const ir=/<img\b[^>]*>/gi;let m;while((m=ir.exec(html))){const tag=m[0],src=tag.match(/(?:src|data-src)=["']([^"']+)["']/i),alt=tag.match(/(?:alt|title)=["']([^"']+)["']/i);if(src?.[1])imgs.push({url:src[1],alt:clean(alt?.[1]||'')})}
+  const text=clean(html),pos=text.toUpperCase().indexOf('OVERDRIVE');
+  if(pos<0)return {url};
+  const tail=text.slice(pos,pos+2500),lines=tail.split(/(?=IMAGE:)|(?=GADGET)|(?=ABILITÀ STELLARE)|(?=DURATA OVERDRIVE)/);
+  const nameLine=lines.find(x=>!/^OVERDRIVE/i.test(x)&&!/^IMAGE:/i.test(x)&&x.length>2)?.trim()||null;
+  const matchImg=imgs.find(x=>x.alt&&nameLine&&x.alt.toUpperCase().includes(nameLine.toUpperCase()))||imgs.slice(0,1)[0]||null;
+  return {url,name:nameLine,imageUrl:matchImg?.url||null,raw:tail};
+ }catch(e){return {url,error:e.message}}
+}
 const norm=s=>String(s||'').toUpperCase().replace(/[^A-Z0-9]+/g,' ').trim();
 async function main(){
  const catalog=JSON.parse(fs.readFileSync(CATALOG,'utf8')),list=catalog.brawlers||[];
@@ -25,7 +40,7 @@ async function main(){
   const buffieMap={gadget:(be.buffies||[]).filter(x=>x.slot==='gadget'),starPower:(be.buffies||[]).filter(x=>x.slot==='starPower'),hyperCharge:(be.buffies||[]).filter(x=>x.slot==='hypercharge')};
   const odKey=row?.OverchargedUltimateSkill||null,od=odKey?bySkill.get(norm(odKey)):null;
   const odName=od?(textMap.get(od.TID)||textMap.get(od.Name)||od.Name||od.name||odKey):odKey;
-  const overdrive=odKey?{id:'overdrive:'+b.id,skillKey:odKey,name:odName,description:textMap.get(od.InfoTID)||od.Description||od.description||'',source:'BrawlAPI game CSV'}:null;
+  let overdrive=odKey?{id:'overdrive:'+b.id,skillKey:odKey,name:odName,description:textMap.get(od.InfoTID)||od.Description||od.description||'',source:'BrawlAPI game CSV',imageUrl:null}:null; if(!overdrive){const bf=await brawlFindData(b.name); if(bf.name||bf.imageUrl) overdrive={id:'overdrive:'+b.id,name:bf.name||('Overdrive · '+b.name),description:bf.raw||'',source:'BrawlFind',sourceUrl:bf.url,imageUrl:bf.imageUrl||null}}
   out.entries[String(b.id)]={id:b.id,name:b.name,gears:available,overdrives:overdrive?[overdrive]:(be.overdrives||[]),buffies:{gadget:buffieMap.gadget,starPower:buffieMap.starPower,hyperCharge:buffieMap.hyperCharge},gameCharacter:row?.Name||null};
  }
  fs.writeFileSync(OUT,JSON.stringify(out,null,2)+'\n');
