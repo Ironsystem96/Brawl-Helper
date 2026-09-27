@@ -704,41 +704,33 @@ body{color:#f4f7fb}
 
 
 /* Full component strip: 5 primary slots + 3 Buffies */
-.miniBuildFull{display:grid;gap:5px;margin-top:7px}
+.miniBuildFull{display:grid;gap:6px;margin-top:8px}
 .miniBuildRow{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:4px}
-.miniBuildRow .miniItem{min-width:0;min-height:43px;padding:4px 3px;display:grid;grid-template-columns:24px 1fr 12px;align-items:center;gap:3px;border-radius:9px}
-.miniBuildRow .miniItem .compIcon{width:24px;height:24px}
-.miniBuildRow .miniItem b{font-size:7px;line-height:1.05;white-space:normal;overflow:hidden;text-overflow:ellipsis}
-.miniBuildRow .miniItem em{font-size:9px;font-style:normal;font-weight:950}
+.miniBuildRow .miniItem{min-width:0;min-height:62px;padding:5px 3px;display:grid;grid-template-columns:1fr;grid-template-rows:30px 22px 10px;justify-items:center;align-items:center;gap:2px;border-radius:10px}
+.miniBuildRow .miniItem .compIcon{width:30px;height:30px}
+.miniBuildRow .miniItem b{width:100%;font-size:7px;line-height:1.05;text-align:center;white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.miniBuildRow .miniItem em{font-size:8px;font-style:normal;font-weight:950;line-height:1}
+.miniBuildRow .miniItem:nth-child(1){border-top:2px solid #58d8ff}
+.miniBuildRow .miniItem:nth-child(2){border-top:2px solid #ffd34e}
+.miniBuildRow .miniItem:nth-child(3),.miniBuildRow .miniItem:nth-child(4){border-top:2px solid #9b7cff}
+.miniBuildRow .miniItem:nth-child(5){border-top:2px solid #ff8a45}
 .pendingMini{opacity:.7;border-style:dashed!important}
-.miniBuffieRow{display:grid;grid-template-columns:repeat(3,1fr);gap:4px}
-.miniBuffie{min-width:0;display:flex;align-items:center;gap:4px;padding:4px 5px;border:1px solid #405274;border-radius:8px;background:#111c2f;color:#dce5f7;text-align:left}
+.miniBuffieRow{display:grid;grid-template-columns:repeat(3,1fr);gap:5px}
+.miniBuffie{min-width:0;min-height:31px;display:flex;align-items:center;gap:5px;padding:5px 6px;border:1px solid #405274;border-radius:9px;background:#111c2f;color:#dce5f7;text-align:left}
 .miniBuffie .buffieCheck{width:19px;height:19px;flex:0 0 19px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:950;background:#243653}
-.miniBuffie b{font-size:7px;line-height:1.05;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.miniBuffie.buffieOwned{border-color:#4e8b72;background:rgba(97,230,167,.06)}
+.miniBuffie b{font-size:7.5px;line-height:1.05;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.miniBuffie.buffieOwned{border-color:#4e8b72;background:rgba(97,230,167,.07)}
 .miniBuffie.buffieOwned .buffieCheck{color:#9ff0c6;background:#1d5b43}
-.miniBuffie.buffieMissing .buffieCheck{color:#ff9a9a}
-.miniBuffie.buffieUnknown .buffieCheck{color:#ffd34e}
-.gearOptions{display:grid;gap:5px;margin-top:9px}
-.subsectionLabel{font-size:8px;letter-spacing:1px;font-weight:950;color:#9eacc1}
-.gearOption{display:flex;align-items:center;gap:8px;padding:7px 8px;border:1px solid #334765;border-radius:9px;background:#17243a;color:#fff;text-align:left}
-.gearOption .compIcon{width:30px;height:30px;flex:0 0 30px}
-.gearOption span{display:grid;gap:2px;min-width:0}
-.gearOption b{font-size:9px}
-.gearOption small{font-size:7.5px;color:#9eacc1}
-.gearOption strong{margin-left:auto;font-size:7px;color:#ffd34e}
-.gearRecommended{border-color:#ffd34e;background:rgba(255,211,78,.06)}
+.miniBuffie.buffieMissing{border-color:#76505a}
+.miniBuffie.buffieMissing .buffieCheck{color:#ff9a9a;background:#3a2630}
+.miniBuffie.buffieUnknown{border-color:#6d5b2b}
+.miniBuffie.buffieUnknown .buffieCheck{color:#ffd34e;background:#3b321d}
 @media(max-width:430px){
  .miniBuildRow{gap:3px}
- .miniBuildRow .miniItem{grid-template-columns:20px 1fr 9px;min-height:39px;padding:3px 2px}
- .miniBuildRow .miniItem .compIcon{width:20px;height:20px}
- .miniBuildRow .miniItem b{font-size:6.5px}
- .miniBuffie b{font-size:6.5px}
- .miniBuffie .buffieCheck{width:17px;height:17px;flex-basis:17px}
+ .miniBuildRow .miniItem{min-height:60px;padding:4px 2px;grid-template-rows:29px 21px 9px}
+ .miniBuildRow .miniItem .compIcon{width:29px;height:29px}
+ .miniBuildRow .miniItem b{font-size:6.7px}
+ .miniBuffie{padding:5px 4px}
+ .miniBuffie b{font-size:6.8px}
+ .miniBuffie .buffieCheck{width:18px;height:18px;flex-basis:18px}
 }
-
-
-.buffieDetailList{display:grid;gap:7px;margin:10px 0}
-.buffieDetailItem{padding:9px 10px;border:1px solid #405274;border-radius:10px;background:#17243a}
-.buffieDetailItem b{font-size:10px;color:#fff}
-.buffieDetailItem p{margin:4px 0 0;font-size:9px;line-height:1.4;color:#aebbd0}
