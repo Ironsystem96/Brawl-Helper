@@ -115,7 +115,7 @@ async function main(){
   }
 
   const buildMeta={schemaVersion:2,updatedAt:now,sourceStatus:{brawlApi:list.length,noff:noffOk,brawlTimeNinja:btOk},sources:[
-    {name:'NOFF',type:'community_build_statistics',url:'https://www.noff.gg/brawl-stars/app/builds'},
+    {name:'NOFF',type:'community_build_statistics',url:'https://www.noff.gg/brawl-stars/app/brawler'},
     {name:'Brawl Time Ninja',type:'brawler_statistics',url:'https://brawltime.ninja/tier-list/brawler'},
     {name:'BrawlAPI',type:'game_catalog',url:'https://brawlapi.com/'}
   ],note:'Automatically synchronized community/build/statistics snapshot. Values are source data, not official Supercell recommendations.',entries};
