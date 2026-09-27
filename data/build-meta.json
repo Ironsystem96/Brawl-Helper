@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-27T10:23:23.026Z",
+  "updatedAt": "2026-09-27T10:27:59.235Z",
   "sourceStatus": {
     "brawlApi": 109,
     "noff": 105,
@@ -60,7 +60,32 @@
           "pick": 90
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 40
+        },
+        {
+          "name": "Shield",
+          "pick": 30
+        },
+        {
+          "name": "Speed",
+          "pick": 10
+        },
+        {
+          "name": "Vision",
+          "pick": 10
+        },
+        {
+          "name": "Health",
+          "pick": 5
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 5
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -68,7 +93,7 @@
         "winRate": 66.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/cosmo",
@@ -237,7 +262,32 @@
           "pick": 69
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 36
+        },
+        {
+          "name": "Shield",
+          "pick": 25
+        },
+        {
+          "name": "Health",
+          "pick": 17
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 11
+        },
+        {
+          "name": "Vision",
+          "pick": 6
+        },
+        {
+          "name": "Speed",
+          "pick": 5
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -245,7 +295,7 @@
         "winRate": 76.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/wendy",
@@ -414,7 +464,32 @@
           "pick": 65
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 38
+        },
+        {
+          "name": "Shield",
+          "pick": 30
+        },
+        {
+          "name": "Health",
+          "pick": 16
+        },
+        {
+          "name": "Speed",
+          "pick": 8
+        },
+        {
+          "name": "Vision",
+          "pick": 6
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 2
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -422,7 +497,7 @@
         "winRate": 67.1,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/nori",
@@ -591,7 +666,32 @@
           "pick": 61
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 32
+        },
+        {
+          "name": "Shield",
+          "pick": 30
+        },
+        {
+          "name": "Health",
+          "pick": 23
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 8
+        },
+        {
+          "name": "Speed",
+          "pick": 5
+        },
+        {
+          "name": "Vision",
+          "pick": 2
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -599,7 +699,7 @@
         "winRate": 73.3,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bolt",
@@ -768,7 +868,32 @@
           "pick": 12
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 38
+        },
+        {
+          "name": "Shield",
+          "pick": 33
+        },
+        {
+          "name": "Health",
+          "pick": 13
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 8
+        },
+        {
+          "name": "Speed",
+          "pick": 5
+        },
+        {
+          "name": "Vision",
+          "pick": 3
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": null,
@@ -939,7 +1064,32 @@
           "pick": 76
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 40
+        },
+        {
+          "name": "Shield",
+          "pick": 29
+        },
+        {
+          "name": "Health",
+          "pick": 16
+        },
+        {
+          "name": "Speed",
+          "pick": 7
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 6
+        },
+        {
+          "name": "Vision",
+          "pick": 1
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -947,7 +1097,7 @@
         "winRate": 69.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/damian",
@@ -1116,7 +1266,32 @@
           "pick": 75
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Shield",
+          "pick": 38
+        },
+        {
+          "name": "Damage",
+          "pick": 35
+        },
+        {
+          "name": "Vision",
+          "pick": 13
+        },
+        {
+          "name": "Health",
+          "pick": 6
+        },
+        {
+          "name": "Speed",
+          "pick": 4
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 4
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -1124,7 +1299,7 @@
         "winRate": 66,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/najia",
@@ -1293,7 +1468,32 @@
           "pick": 24
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Shield",
+          "pick": 36
+        },
+        {
+          "name": "Damage",
+          "pick": 35
+        },
+        {
+          "name": "Health",
+          "pick": 10
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 8
+        },
+        {
+          "name": "Speed",
+          "pick": 7
+        },
+        {
+          "name": "Vision",
+          "pick": 3
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -1301,7 +1501,7 @@
         "winRate": 67.1,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/sirius",
@@ -1468,7 +1668,7 @@
         "winRate": 70.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/glowy",
@@ -1496,7 +1696,32 @@
           "pick": 71
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 40
+        },
+        {
+          "name": "Shield",
+          "pick": 35
+        },
+        {
+          "name": "Health",
+          "pick": 10
+        },
+        {
+          "name": "Vision",
+          "pick": 6
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 6
+        },
+        {
+          "name": "Speed",
+          "pick": 3
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -1504,7 +1729,7 @@
         "winRate": 69.9,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gigi",
@@ -1668,7 +1893,32 @@
         }
       ],
       "starPower": [],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Shield",
+          "pick": 37
+        },
+        {
+          "name": "Damage",
+          "pick": 36
+        },
+        {
+          "name": "Health",
+          "pick": 9
+        },
+        {
+          "name": "Vision",
+          "pick": 7
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 6
+        },
+        {
+          "name": "Speed",
+          "pick": 5
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -1676,7 +1926,7 @@
         "winRate": 63.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/pierce",
@@ -1845,7 +2095,32 @@
           "pick": 56
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Shield",
+          "pick": 34
+        },
+        {
+          "name": "Damage",
+          "pick": 33
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 10
+        },
+        {
+          "name": "Vision",
+          "pick": 9
+        },
+        {
+          "name": "Health",
+          "pick": 8
+        },
+        {
+          "name": "Speed",
+          "pick": 6
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -1853,7 +2128,7 @@
         "winRate": 69.1,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/ziggy",
@@ -2022,7 +2297,32 @@
           "pick": 73
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 38
+        },
+        {
+          "name": "Shield",
+          "pick": 32
+        },
+        {
+          "name": "Health",
+          "pick": 13
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 11
+        },
+        {
+          "name": "Speed",
+          "pick": 4
+        },
+        {
+          "name": "Vision",
+          "pick": 2
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -2030,7 +2330,7 @@
         "winRate": 64.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/mina",
@@ -2199,7 +2499,32 @@
           "pick": 75
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 38
+        },
+        {
+          "name": "Shield",
+          "pick": 25
+        },
+        {
+          "name": "Health",
+          "pick": 19
+        },
+        {
+          "name": "Speed",
+          "pick": 10
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 7
+        },
+        {
+          "name": "Vision",
+          "pick": 2
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -2207,7 +2532,7 @@
         "winRate": 67.3,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/trunk",
@@ -2376,7 +2701,32 @@
           "pick": 20
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 32
+        },
+        {
+          "name": "Shield",
+          "pick": 31
+        },
+        {
+          "name": "Speed",
+          "pick": 14
+        },
+        {
+          "name": "Health",
+          "pick": 13
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 5
+        },
+        {
+          "name": "Vision",
+          "pick": 4
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -2384,7 +2734,7 @@
         "winRate": 66.9,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/alli",
@@ -2553,7 +2903,32 @@
           "pick": 58
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 34
+        },
+        {
+          "name": "Shield",
+          "pick": 31
+        },
+        {
+          "name": "Health",
+          "pick": 13
+        },
+        {
+          "name": "Speed",
+          "pick": 8
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 8
+        },
+        {
+          "name": "Vision",
+          "pick": 5
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -2561,7 +2936,7 @@
         "winRate": 63.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/kaze",
@@ -2730,7 +3105,32 @@
           "pick": 66
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 36
+        },
+        {
+          "name": "Shield",
+          "pick": 34
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 14
+        },
+        {
+          "name": "Health",
+          "pick": 9
+        },
+        {
+          "name": "Vision",
+          "pick": 4
+        },
+        {
+          "name": "Speed",
+          "pick": 3
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -2738,7 +3138,7 @@
         "winRate": 70.6,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/jae-yong",
@@ -2902,7 +3302,32 @@
           "pick": 74
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Shield",
+          "pick": 35
+        },
+        {
+          "name": "Damage",
+          "pick": 33
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 13
+        },
+        {
+          "name": "Health",
+          "pick": 11
+        },
+        {
+          "name": "Speed",
+          "pick": 4
+        },
+        {
+          "name": "Vision",
+          "pick": 4
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -2910,7 +3335,7 @@
         "winRate": 69.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/finx",
@@ -3079,7 +3504,32 @@
           "pick": 74
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Shield",
+          "pick": 37
+        },
+        {
+          "name": "Damage",
+          "pick": 34
+        },
+        {
+          "name": "Health",
+          "pick": 10
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 8
+        },
+        {
+          "name": "Vision",
+          "pick": 6
+        },
+        {
+          "name": "Speed",
+          "pick": 5
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -3087,7 +3537,7 @@
         "winRate": 65.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/lumi",
@@ -3256,7 +3706,32 @@
           "pick": 83
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 35
+        },
+        {
+          "name": "Shield",
+          "pick": 25
+        },
+        {
+          "name": "Health",
+          "pick": 21
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 9
+        },
+        {
+          "name": "Speed",
+          "pick": 6
+        },
+        {
+          "name": "Vision",
+          "pick": 3
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -3264,7 +3739,7 @@
         "winRate": 72.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/ollie",
@@ -3433,7 +3908,32 @@
           "pick": 68
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Shield",
+          "pick": 36
+        },
+        {
+          "name": "Damage",
+          "pick": 26
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 22
+        },
+        {
+          "name": "Health",
+          "pick": 6
+        },
+        {
+          "name": "Vision",
+          "pick": 5
+        },
+        {
+          "name": "Speed",
+          "pick": 4
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -3441,7 +3941,7 @@
         "winRate": 61.9,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/meeple",
@@ -3630,7 +4130,32 @@
           "pick": 77
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Shield",
+          "pick": 34
+        },
+        {
+          "name": "Damage",
+          "pick": 28
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 15
+        },
+        {
+          "name": "Health",
+          "pick": 12
+        },
+        {
+          "name": "Speed",
+          "pick": 8
+        },
+        {
+          "name": "Vision",
+          "pick": 3
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -3638,7 +4163,7 @@
         "winRate": 70.3,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/juju",
@@ -3807,7 +4332,32 @@
           "pick": 67
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 35
+        },
+        {
+          "name": "Shield",
+          "pick": 30
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 13
+        },
+        {
+          "name": "Health",
+          "pick": 10
+        },
+        {
+          "name": "Speed",
+          "pick": 7
+        },
+        {
+          "name": "Vision",
+          "pick": 6
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -3815,7 +4365,7 @@
         "winRate": 67,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/shade",
@@ -3984,7 +4534,32 @@
           "pick": 76
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 37
+        },
+        {
+          "name": "Shield",
+          "pick": 35
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 11
+        },
+        {
+          "name": "Health",
+          "pick": 10
+        },
+        {
+          "name": "Speed",
+          "pick": 5
+        },
+        {
+          "name": "Vision",
+          "pick": 2
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -3992,7 +4567,7 @@
         "winRate": 65.8,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/kenji",
@@ -4161,7 +4736,32 @@
           "pick": 73
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 37
+        },
+        {
+          "name": "Shield",
+          "pick": 35
+        },
+        {
+          "name": "Health",
+          "pick": 10
+        },
+        {
+          "name": "Speed",
+          "pick": 7
+        },
+        {
+          "name": "Vision",
+          "pick": 6
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 6
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -4169,7 +4769,7 @@
         "winRate": 68.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/moe",
@@ -4338,7 +4938,32 @@
           "pick": 60
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 40
+        },
+        {
+          "name": "Shield",
+          "pick": 35
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 8
+        },
+        {
+          "name": "Speed",
+          "pick": 7
+        },
+        {
+          "name": "Health",
+          "pick": 7
+        },
+        {
+          "name": "Vision",
+          "pick": 3
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -4346,7 +4971,7 @@
         "winRate": 68.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/clancy",
@@ -4515,7 +5140,32 @@
           "pick": 75
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Shield",
+          "pick": 36
+        },
+        {
+          "name": "Damage",
+          "pick": 31
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 13
+        },
+        {
+          "name": "Health",
+          "pick": 11
+        },
+        {
+          "name": "Speed",
+          "pick": 4
+        },
+        {
+          "name": "Vision",
+          "pick": 4
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -4523,7 +5173,7 @@
         "winRate": 65.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/berry",
@@ -4692,7 +5342,32 @@
           "pick": 80
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 33
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 29
+        },
+        {
+          "name": "Shield",
+          "pick": 21
+        },
+        {
+          "name": "Speed",
+          "pick": 8
+        },
+        {
+          "name": "Health",
+          "pick": 6
+        },
+        {
+          "name": "Vision",
+          "pick": 3
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -4700,7 +5375,7 @@
         "winRate": 64.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/lily",
@@ -4869,7 +5544,32 @@
           "pick": 63
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 36
+        },
+        {
+          "name": "Shield",
+          "pick": 21
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 17
+        },
+        {
+          "name": "Health",
+          "pick": 15
+        },
+        {
+          "name": "Speed",
+          "pick": 6
+        },
+        {
+          "name": "Vision",
+          "pick": 4
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -4877,7 +5577,7 @@
         "winRate": 70.8,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/draco",
@@ -5046,7 +5746,32 @@
           "pick": 86
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Shield",
+          "pick": 32
+        },
+        {
+          "name": "Damage",
+          "pick": 30
+        },
+        {
+          "name": "Health",
+          "pick": 18
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 10
+        },
+        {
+          "name": "Vision",
+          "pick": 6
+        },
+        {
+          "name": "Speed",
+          "pick": 4
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -5054,7 +5779,7 @@
         "winRate": 64.8,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/angelo",
@@ -5223,7 +5948,32 @@
           "pick": 76
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 35
+        },
+        {
+          "name": "Shield",
+          "pick": 34
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 14
+        },
+        {
+          "name": "Health",
+          "pick": 9
+        },
+        {
+          "name": "Vision",
+          "pick": 5
+        },
+        {
+          "name": "Speed",
+          "pick": 4
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -5231,7 +5981,7 @@
         "winRate": 66.3,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/melodie",
@@ -5420,7 +6170,32 @@
           "pick": 65
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 32
+        },
+        {
+          "name": "Shield",
+          "pick": 32
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 16
+        },
+        {
+          "name": "Health",
+          "pick": 9
+        },
+        {
+          "name": "Speed",
+          "pick": 6
+        },
+        {
+          "name": "Vision",
+          "pick": 4
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -5428,7 +6203,7 @@
         "winRate": 62.6,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/kit",
@@ -5597,7 +6372,32 @@
           "pick": 79
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 36
+        },
+        {
+          "name": "Shield",
+          "pick": 36
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 12
+        },
+        {
+          "name": "Speed",
+          "pick": 6
+        },
+        {
+          "name": "Health",
+          "pick": 6
+        },
+        {
+          "name": "Vision",
+          "pick": 4
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -5605,7 +6405,7 @@
         "winRate": 65.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/mico",
@@ -5774,7 +6574,32 @@
           "pick": 77
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 36
+        },
+        {
+          "name": "Shield",
+          "pick": 30
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 17
+        },
+        {
+          "name": "Health",
+          "pick": 8
+        },
+        {
+          "name": "Vision",
+          "pick": 5
+        },
+        {
+          "name": "Speed",
+          "pick": 3
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -5782,7 +6607,7 @@
         "winRate": 70,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/charlie",
@@ -5951,7 +6776,32 @@
           "pick": 78
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 40
+        },
+        {
+          "name": "Shield",
+          "pick": 24
+        },
+        {
+          "name": "Health",
+          "pick": 19
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 10
+        },
+        {
+          "name": "Speed",
+          "pick": 4
+        },
+        {
+          "name": "Vision",
+          "pick": 2
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -5959,7 +6809,7 @@
         "winRate": 65,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/chuck",
@@ -6128,7 +6978,32 @@
           "pick": 79
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 39
+        },
+        {
+          "name": "Shield",
+          "pick": 30
+        },
+        {
+          "name": "Health",
+          "pick": 12
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 11
+        },
+        {
+          "name": "Speed",
+          "pick": 6
+        },
+        {
+          "name": "Vision",
+          "pick": 2
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -6136,7 +7011,7 @@
         "winRate": 67.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/pearl",
@@ -6305,7 +7180,32 @@
           "pick": 83
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 34
+        },
+        {
+          "name": "Shield",
+          "pick": 21
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 19
+        },
+        {
+          "name": "Speed",
+          "pick": 11
+        },
+        {
+          "name": "Health",
+          "pick": 11
+        },
+        {
+          "name": "Vision",
+          "pick": 4
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -6313,7 +7213,7 @@
         "winRate": 68.9,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/doug",
@@ -6482,7 +7382,32 @@
           "pick": 71
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 35
+        },
+        {
+          "name": "Shield",
+          "pick": 31
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 18
+        },
+        {
+          "name": "Health",
+          "pick": 7
+        },
+        {
+          "name": "Speed",
+          "pick": 6
+        },
+        {
+          "name": "Vision",
+          "pick": 2
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -6490,7 +7415,7 @@
         "winRate": 65.6,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/cordelius",
@@ -6659,7 +7584,32 @@
           "pick": 22
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 38
+        },
+        {
+          "name": "Health",
+          "pick": 28
+        },
+        {
+          "name": "Shield",
+          "pick": 20
+        },
+        {
+          "name": "Speed",
+          "pick": 8
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 4
+        },
+        {
+          "name": "Vision",
+          "pick": 3
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -6667,7 +7617,7 @@
         "winRate": 69.9,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/hank",
@@ -6836,7 +7786,32 @@
           "pick": 82
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 37
+        },
+        {
+          "name": "Shield",
+          "pick": 33
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 13
+        },
+        {
+          "name": "Health",
+          "pick": 8
+        },
+        {
+          "name": "Speed",
+          "pick": 7
+        },
+        {
+          "name": "Vision",
+          "pick": 3
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -6844,7 +7819,7 @@
         "winRate": 67.9,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/maisie",
@@ -7013,7 +7988,32 @@
           "pick": 52
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Shield",
+          "pick": 34
+        },
+        {
+          "name": "Damage",
+          "pick": 31
+        },
+        {
+          "name": "Health",
+          "pick": 11
+        },
+        {
+          "name": "Vision",
+          "pick": 10
+        },
+        {
+          "name": "Speed",
+          "pick": 7
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 7
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -7021,7 +8021,7 @@
         "winRate": 62.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/willow",
@@ -7190,7 +8190,32 @@
           "pick": 79
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 37
+        },
+        {
+          "name": "Shield",
+          "pick": 30
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 20
+        },
+        {
+          "name": "Health",
+          "pick": 6
+        },
+        {
+          "name": "Vision",
+          "pick": 5
+        },
+        {
+          "name": "Speed",
+          "pick": 2
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -7198,7 +8223,7 @@
         "winRate": 70.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/r-t",
@@ -7367,7 +8392,32 @@
           "pick": 68
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Shield",
+          "pick": 40
+        },
+        {
+          "name": "Damage",
+          "pick": 38
+        },
+        {
+          "name": "Health",
+          "pick": 7
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 7
+        },
+        {
+          "name": "Vision",
+          "pick": 6
+        },
+        {
+          "name": "Speed",
+          "pick": 2
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -7375,7 +8425,7 @@
         "winRate": 60.8,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/mandy",
@@ -7544,7 +8594,32 @@
           "pick": 64
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Shield",
+          "pick": 39
+        },
+        {
+          "name": "Damage",
+          "pick": 25
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 24
+        },
+        {
+          "name": "Health",
+          "pick": 6
+        },
+        {
+          "name": "Speed",
+          "pick": 3
+        },
+        {
+          "name": "Vision",
+          "pick": 3
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -7552,7 +8627,7 @@
         "winRate": 64.6,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gray",
@@ -7721,7 +8796,32 @@
           "pick": 15
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 39
+        },
+        {
+          "name": "Shield",
+          "pick": 32
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 12
+        },
+        {
+          "name": "Health",
+          "pick": 8
+        },
+        {
+          "name": "Speed",
+          "pick": 6
+        },
+        {
+          "name": "Vision",
+          "pick": 3
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -7729,7 +8829,7 @@
         "winRate": 63.9,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/chester",
@@ -7898,7 +8998,32 @@
           "pick": 75
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 37
+        },
+        {
+          "name": "Shield",
+          "pick": 22
+        },
+        {
+          "name": "Health",
+          "pick": 15
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 14
+        },
+        {
+          "name": "Speed",
+          "pick": 10
+        },
+        {
+          "name": "Vision",
+          "pick": 3
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -7906,7 +9031,7 @@
         "winRate": 70.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/buster",
@@ -8075,7 +9200,32 @@
           "pick": 69
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Shield",
+          "pick": 36
+        },
+        {
+          "name": "Damage",
+          "pick": 35
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 12
+        },
+        {
+          "name": "Health",
+          "pick": 9
+        },
+        {
+          "name": "Speed",
+          "pick": 4
+        },
+        {
+          "name": "Vision",
+          "pick": 4
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -8083,7 +9233,7 @@
         "winRate": 65.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gus",
@@ -8252,7 +9402,32 @@
           "pick": 77
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 38
+        },
+        {
+          "name": "Shield",
+          "pick": 24
+        },
+        {
+          "name": "Health",
+          "pick": 15
+        },
+        {
+          "name": "Speed",
+          "pick": 8
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 8
+        },
+        {
+          "name": "Vision",
+          "pick": 7
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -8260,7 +9435,7 @@
         "winRate": 70.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/sam",
@@ -8429,7 +9604,32 @@
           "pick": 80
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Super Charge",
+          "pick": 36
+        },
+        {
+          "name": "Damage",
+          "pick": 27
+        },
+        {
+          "name": "Shield",
+          "pick": 21
+        },
+        {
+          "name": "Health",
+          "pick": 5
+        },
+        {
+          "name": "Speed",
+          "pick": 4
+        },
+        {
+          "name": "Vision",
+          "pick": 4
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -8437,7 +9637,7 @@
         "winRate": 65.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/otis",
@@ -8606,7 +9806,32 @@
           "pick": 68
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Super Charge",
+          "pick": 39
+        },
+        {
+          "name": "Damage",
+          "pick": 19
+        },
+        {
+          "name": "Shield",
+          "pick": 19
+        },
+        {
+          "name": "Health",
+          "pick": 7
+        },
+        {
+          "name": "Speed",
+          "pick": 6
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 6
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -8614,7 +9839,7 @@
         "winRate": 69.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bonnie",
@@ -8783,7 +10008,32 @@
           "pick": 62
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 40
+        },
+        {
+          "name": "Shield",
+          "pick": 34
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 9
+        },
+        {
+          "name": "Health",
+          "pick": 8
+        },
+        {
+          "name": "Vision",
+          "pick": 8
+        },
+        {
+          "name": "Speed",
+          "pick": 2
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -8791,7 +10041,7 @@
         "winRate": 69,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/janet",
@@ -8960,7 +10210,32 @@
           "pick": 77
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Quadruplets",
+          "pick": 35
+        },
+        {
+          "name": "Reload Speed",
+          "pick": 31
+        },
+        {
+          "name": "Shield",
+          "pick": 11
+        },
+        {
+          "name": "Damage",
+          "pick": 10
+        },
+        {
+          "name": "Vision",
+          "pick": 4
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 4
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -8968,7 +10243,7 @@
         "winRate": 69.1,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/eve",
@@ -9137,7 +10412,32 @@
           "pick": 77
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 42
+        },
+        {
+          "name": "Shield",
+          "pick": 32
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 11
+        },
+        {
+          "name": "Health",
+          "pick": 9
+        },
+        {
+          "name": "Speed",
+          "pick": 4
+        },
+        {
+          "name": "Vision",
+          "pick": 2
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -9145,7 +10445,7 @@
         "winRate": 63,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/fang",
@@ -9314,7 +10614,32 @@
           "pick": 72
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Reload Speed",
+          "pick": 40
+        },
+        {
+          "name": "Damage",
+          "pick": 29
+        },
+        {
+          "name": "Shield",
+          "pick": 19
+        },
+        {
+          "name": "Health",
+          "pick": 8
+        },
+        {
+          "name": "Vision",
+          "pick": 2
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 2
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -9322,7 +10647,7 @@
         "winRate": 68.6,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/lola",
@@ -9491,7 +10816,32 @@
           "pick": 60
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 39
+        },
+        {
+          "name": "Shield",
+          "pick": 32
+        },
+        {
+          "name": "Health",
+          "pick": 13
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 10
+        },
+        {
+          "name": "Speed",
+          "pick": 4
+        },
+        {
+          "name": "Vision",
+          "pick": 3
+        }
+      ],
       "overdrives": [],
       "buffies": [
         {
@@ -9528,7 +10878,7 @@
         "winRate": 67,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/meg",
@@ -9697,7 +11047,32 @@
           "pick": 64
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 34
+        },
+        {
+          "name": "Super Charge",
+          "pick": 26
+        },
+        {
+          "name": "Speed",
+          "pick": 10
+        },
+        {
+          "name": "Health",
+          "pick": 10
+        },
+        {
+          "name": "Shield",
+          "pick": 10
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 6
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -9705,7 +11080,7 @@
         "winRate": 69.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/ash",
@@ -9874,7 +11249,32 @@
           "pick": 54
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Reload Speed",
+          "pick": 35
+        },
+        {
+          "name": "Damage",
+          "pick": 31
+        },
+        {
+          "name": "Shield",
+          "pick": 22
+        },
+        {
+          "name": "Health",
+          "pick": 7
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 3
+        },
+        {
+          "name": "Speed",
+          "pick": 1
+        }
+      ],
       "overdrives": [],
       "buffies": [
         {
@@ -9918,7 +11318,7 @@
         "winRate": 63.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/griff",
@@ -10087,7 +11487,32 @@
           "pick": 74
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 35
+        },
+        {
+          "name": "Shield",
+          "pick": 27
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 13
+        },
+        {
+          "name": "Speed",
+          "pick": 11
+        },
+        {
+          "name": "Health",
+          "pick": 10
+        },
+        {
+          "name": "Vision",
+          "pick": 3
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -10095,7 +11520,7 @@
         "winRate": 63.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/buzz",
@@ -10264,7 +11689,32 @@
           "pick": 86
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Shield",
+          "pick": 32
+        },
+        {
+          "name": "Damage",
+          "pick": 31
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 17
+        },
+        {
+          "name": "Vision",
+          "pick": 9
+        },
+        {
+          "name": "Health",
+          "pick": 7
+        },
+        {
+          "name": "Speed",
+          "pick": 4
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -10272,7 +11722,7 @@
         "winRate": 64.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/grom",
@@ -10441,7 +11891,32 @@
           "pick": 56
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 31
+        },
+        {
+          "name": "Shield",
+          "pick": 30
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 14
+        },
+        {
+          "name": "Health",
+          "pick": 11
+        },
+        {
+          "name": "Speed",
+          "pick": 7
+        },
+        {
+          "name": "Vision",
+          "pick": 7
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -10449,7 +11924,7 @@
         "winRate": 62.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/squeak",
@@ -10618,7 +12093,32 @@
           "pick": 70
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Reload Speed",
+          "pick": 39
+        },
+        {
+          "name": "Shield",
+          "pick": 33
+        },
+        {
+          "name": "Damage",
+          "pick": 18
+        },
+        {
+          "name": "Vision",
+          "pick": 4
+        },
+        {
+          "name": "Health",
+          "pick": 2
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 2
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -10626,7 +12126,7 @@
         "winRate": 65.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/belle",
@@ -10795,7 +12295,32 @@
           "pick": 59
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 39
+        },
+        {
+          "name": "Shield",
+          "pick": 39
+        },
+        {
+          "name": "Health",
+          "pick": 7
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 7
+        },
+        {
+          "name": "Speed",
+          "pick": 6
+        },
+        {
+          "name": "Vision",
+          "pick": 3
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -10803,7 +12328,7 @@
         "winRate": 60.9,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/stu",
@@ -10972,7 +12497,32 @@
           "pick": 69
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Shield",
+          "pick": 37
+        },
+        {
+          "name": "Damage",
+          "pick": 32
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 12
+        },
+        {
+          "name": "Health",
+          "pick": 8
+        },
+        {
+          "name": "Vision",
+          "pick": 7
+        },
+        {
+          "name": "Speed",
+          "pick": 3
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -10980,7 +12530,7 @@
         "winRate": 64.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/ruffs",
@@ -11149,7 +12699,32 @@
           "pick": 55
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Shield",
+          "pick": 27
+        },
+        {
+          "name": "Super Charge",
+          "pick": 26
+        },
+        {
+          "name": "Damage",
+          "pick": 25
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 8
+        },
+        {
+          "name": "Health",
+          "pick": 7
+        },
+        {
+          "name": "Speed",
+          "pick": 4
+        }
+      ],
       "overdrives": [],
       "buffies": [
         {
@@ -11186,7 +12761,7 @@
         "winRate": 61,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/edgar",
@@ -11355,7 +12930,32 @@
           "pick": 59
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Shield",
+          "pick": 39
+        },
+        {
+          "name": "Damage",
+          "pick": 31
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 11
+        },
+        {
+          "name": "Health",
+          "pick": 10
+        },
+        {
+          "name": "Vision",
+          "pick": 7
+        },
+        {
+          "name": "Speed",
+          "pick": 3
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -11363,7 +12963,7 @@
         "winRate": 60.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/byron",
@@ -11532,7 +13132,32 @@
           "pick": 61
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Super Charge",
+          "pick": 42
+        },
+        {
+          "name": "Shield",
+          "pick": 19
+        },
+        {
+          "name": "Damage",
+          "pick": 17
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 13
+        },
+        {
+          "name": "Health",
+          "pick": 5
+        },
+        {
+          "name": "Vision",
+          "pick": 2
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -11540,7 +13165,7 @@
         "winRate": 67.1,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/lou",
@@ -11709,7 +13334,32 @@
           "pick": 67
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Reload Speed",
+          "pick": 33
+        },
+        {
+          "name": "Sticky Oil",
+          "pick": 24
+        },
+        {
+          "name": "Damage",
+          "pick": 16
+        },
+        {
+          "name": "Shield",
+          "pick": 11
+        },
+        {
+          "name": "Health",
+          "pick": 6
+        },
+        {
+          "name": "Vision",
+          "pick": 4
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -11717,7 +13367,7 @@
         "winRate": 67.3,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/amber",
@@ -11886,7 +13536,32 @@
           "pick": 68
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 37
+        },
+        {
+          "name": "Shield",
+          "pick": 35
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 14
+        },
+        {
+          "name": "Health",
+          "pick": 8
+        },
+        {
+          "name": "Speed",
+          "pick": 3
+        },
+        {
+          "name": "Vision",
+          "pick": 3
+        }
+      ],
       "overdrives": [],
       "buffies": [
         {
@@ -11930,7 +13605,7 @@
         "winRate": 61.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/colette",
@@ -12099,7 +13774,32 @@
           "pick": 52
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 39
+        },
+        {
+          "name": "Shield",
+          "pick": 38
+        },
+        {
+          "name": "Speed",
+          "pick": 9
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 7
+        },
+        {
+          "name": "Health",
+          "pick": 5
+        },
+        {
+          "name": "Vision",
+          "pick": 1
+        }
+      ],
       "overdrives": [],
       "buffies": [
         {
@@ -12143,7 +13843,7 @@
         "winRate": 61.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/surge",
@@ -12312,7 +14012,32 @@
           "pick": 65
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Super Charge",
+          "pick": 35
+        },
+        {
+          "name": "Shield",
+          "pick": 31
+        },
+        {
+          "name": "Damage",
+          "pick": 19
+        },
+        {
+          "name": "Health",
+          "pick": 5
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 5
+        },
+        {
+          "name": "Speed",
+          "pick": 3
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -12320,7 +14045,7 @@
         "winRate": 66.1,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/sprout",
@@ -12489,7 +14214,32 @@
           "pick": 65
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Shield",
+          "pick": 33
+        },
+        {
+          "name": "Damage",
+          "pick": 27
+        },
+        {
+          "name": "Super Charge",
+          "pick": 23
+        },
+        {
+          "name": "Health",
+          "pick": 8
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 5
+        },
+        {
+          "name": "Speed",
+          "pick": 2
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -12497,7 +14247,7 @@
         "winRate": 63.1,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/nani",
@@ -12666,7 +14416,32 @@
           "pick": 73
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 38
+        },
+        {
+          "name": "Shield",
+          "pick": 37
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 10
+        },
+        {
+          "name": "Health",
+          "pick": 6
+        },
+        {
+          "name": "Speed",
+          "pick": 4
+        },
+        {
+          "name": "Vision",
+          "pick": 4
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -12674,7 +14449,7 @@
         "winRate": 64.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gale",
@@ -12843,7 +14618,32 @@
           "pick": 87
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 31
+        },
+        {
+          "name": "Super Charge",
+          "pick": 24
+        },
+        {
+          "name": "Shield",
+          "pick": 18
+        },
+        {
+          "name": "Health",
+          "pick": 10
+        },
+        {
+          "name": "Speed",
+          "pick": 9
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 7
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -12851,7 +14651,7 @@
         "winRate": 70.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/jacky",
@@ -13020,7 +14820,32 @@
           "pick": 63
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 29
+        },
+        {
+          "name": "Shield",
+          "pick": 29
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 18
+        },
+        {
+          "name": "Speed",
+          "pick": 14
+        },
+        {
+          "name": "Health",
+          "pick": 7
+        },
+        {
+          "name": "Vision",
+          "pick": 3
+        }
+      ],
       "overdrives": [],
       "buffies": [
         {
@@ -13064,7 +14889,7 @@
         "winRate": 62.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/max",
@@ -13233,7 +15058,32 @@
           "pick": 69
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Pet Power",
+          "pick": 38
+        },
+        {
+          "name": "Damage",
+          "pick": 23
+        },
+        {
+          "name": "Shield",
+          "pick": 22
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 8
+        },
+        {
+          "name": "Health",
+          "pick": 5
+        },
+        {
+          "name": "Vision",
+          "pick": 3
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": null,
@@ -13404,7 +15254,32 @@
           "pick": 73
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 35
+        },
+        {
+          "name": "Shield",
+          "pick": 32
+        },
+        {
+          "name": "Health",
+          "pick": 11
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 11
+        },
+        {
+          "name": "Speed",
+          "pick": 8
+        },
+        {
+          "name": "Vision",
+          "pick": 2
+        }
+      ],
       "overdrives": [],
       "buffies": [
         {
@@ -13448,7 +15323,7 @@
         "winRate": 63.1,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/emz",
@@ -13617,7 +15492,32 @@
           "pick": 52
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Shield",
+          "pick": 41
+        },
+        {
+          "name": "Damage",
+          "pick": 38
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 9
+        },
+        {
+          "name": "Health",
+          "pick": 5
+        },
+        {
+          "name": "Vision",
+          "pick": 4
+        },
+        {
+          "name": "Speed",
+          "pick": 2
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -13625,7 +15525,7 @@
         "winRate": 63.3,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bea",
@@ -13794,7 +15694,32 @@
           "pick": 57
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Exhausting Storm",
+          "pick": 34
+        },
+        {
+          "name": "Damage",
+          "pick": 22
+        },
+        {
+          "name": "Shield",
+          "pick": 16
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 11
+        },
+        {
+          "name": "Health",
+          "pick": 7
+        },
+        {
+          "name": "Speed",
+          "pick": 6
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -13802,7 +15727,7 @@
         "winRate": 68.8,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/sandy",
@@ -13971,7 +15896,32 @@
           "pick": 63
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Reload Speed",
+          "pick": 35
+        },
+        {
+          "name": "Damage",
+          "pick": 24
+        },
+        {
+          "name": "Shield",
+          "pick": 13
+        },
+        {
+          "name": "Speed",
+          "pick": 11
+        },
+        {
+          "name": "Health",
+          "pick": 9
+        },
+        {
+          "name": "Vision",
+          "pick": 4
+        }
+      ],
       "overdrives": [],
       "buffies": [
         {
@@ -14015,7 +15965,7 @@
         "winRate": 66,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/8-bit",
@@ -14184,7 +16134,32 @@
           "pick": 25
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 36
+        },
+        {
+          "name": "Shield",
+          "pick": 30
+        },
+        {
+          "name": "Health",
+          "pick": 12
+        },
+        {
+          "name": "Speed",
+          "pick": 11
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 9
+        },
+        {
+          "name": "Vision",
+          "pick": 2
+        }
+      ],
       "overdrives": [],
       "buffies": [
         {
@@ -14228,7 +16203,7 @@
         "winRate": 64.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bibi",
@@ -14397,7 +16372,32 @@
           "pick": 80
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 38
+        },
+        {
+          "name": "Shield",
+          "pick": 31
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 14
+        },
+        {
+          "name": "Health",
+          "pick": 8
+        },
+        {
+          "name": "Speed",
+          "pick": 5
+        },
+        {
+          "name": "Vision",
+          "pick": 4
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -14405,7 +16405,7 @@
         "winRate": 65.1,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/carl",
@@ -14574,7 +16574,32 @@
           "pick": 72
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Speed",
+          "pick": 33
+        },
+        {
+          "name": "Damage",
+          "pick": 33
+        },
+        {
+          "name": "Health",
+          "pick": 13
+        },
+        {
+          "name": "Shield",
+          "pick": 11
+        },
+        {
+          "name": "Vision",
+          "pick": 5
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 4
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -14582,7 +16607,7 @@
         "winRate": 71,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/rosa",
@@ -14751,7 +16776,32 @@
           "pick": 68
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 26
+        },
+        {
+          "name": "Shield",
+          "pick": 21
+        },
+        {
+          "name": "Speed",
+          "pick": 8
+        },
+        {
+          "name": "Health",
+          "pick": 7
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 4
+        },
+        {
+          "name": "Vision",
+          "pick": 3
+        }
+      ],
       "overdrives": [],
       "buffies": [
         {
@@ -14795,7 +16845,7 @@
         "winRate": 62.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/leon",
@@ -14964,7 +17014,32 @@
           "pick": 71
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Thicc Head",
+          "pick": 40
+        },
+        {
+          "name": "Shield",
+          "pick": 27
+        },
+        {
+          "name": "Health",
+          "pick": 13
+        },
+        {
+          "name": "Damage",
+          "pick": 10
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 5
+        },
+        {
+          "name": "Vision",
+          "pick": 4
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -14972,7 +17047,7 @@
         "winRate": 62.3,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/tick",
@@ -15141,7 +17216,32 @@
           "pick": 52
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Talk to the Hand",
+          "pick": 41
+        },
+        {
+          "name": "Vision",
+          "pick": 18
+        },
+        {
+          "name": "Shield",
+          "pick": 17
+        },
+        {
+          "name": "Damage",
+          "pick": 15
+        },
+        {
+          "name": "Health",
+          "pick": 4
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 4
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -15149,7 +17249,7 @@
         "winRate": 62.3,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gene",
@@ -15318,7 +17418,32 @@
           "pick": 58
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 36
+        },
+        {
+          "name": "Shield",
+          "pick": 26
+        },
+        {
+          "name": "Health",
+          "pick": 20
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 11
+        },
+        {
+          "name": "Speed",
+          "pick": 7
+        },
+        {
+          "name": "Vision",
+          "pick": 1
+        }
+      ],
       "overdrives": [],
       "buffies": [
         {
@@ -15362,7 +17487,7 @@
         "winRate": 65.8,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/frank",
@@ -15531,7 +17656,32 @@
           "pick": 60
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Pet Power",
+          "pick": 32
+        },
+        {
+          "name": "Shield",
+          "pick": 27
+        },
+        {
+          "name": "Damage",
+          "pick": 22
+        },
+        {
+          "name": "Speed",
+          "pick": 6
+        },
+        {
+          "name": "Health",
+          "pick": 5
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 5
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -15539,7 +17689,7 @@
         "winRate": 63.9,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/penny",
@@ -15708,7 +17858,32 @@
           "pick": 55
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 40
+        },
+        {
+          "name": "Shield",
+          "pick": 27
+        },
+        {
+          "name": "Health",
+          "pick": 16
+        },
+        {
+          "name": "Speed",
+          "pick": 8
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 8
+        },
+        {
+          "name": "Vision",
+          "pick": 1
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -15716,7 +17891,7 @@
         "winRate": 66.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/darryl",
@@ -15885,7 +18060,32 @@
           "pick": 52
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Pet Power",
+          "pick": 28
+        },
+        {
+          "name": "Shield",
+          "pick": 22
+        },
+        {
+          "name": "Damage",
+          "pick": 21
+        },
+        {
+          "name": "Speed",
+          "pick": 10
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 10
+        },
+        {
+          "name": "Health",
+          "pick": 5
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -15893,7 +18093,7 @@
         "winRate": 66.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/tara",
@@ -16057,7 +18257,32 @@
         }
       ],
       "starPower": [],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Super Turret",
+          "pick": 42
+        },
+        {
+          "name": "Damage",
+          "pick": 17
+        },
+        {
+          "name": "Shield",
+          "pick": 14
+        },
+        {
+          "name": "Health",
+          "pick": 13
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 9
+        },
+        {
+          "name": "Vision",
+          "pick": 4
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -16065,7 +18290,7 @@
         "winRate": 69.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/pam",
@@ -16234,7 +18459,32 @@
           "pick": 67
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Shield",
+          "pick": 37
+        },
+        {
+          "name": "Damage",
+          "pick": 28
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 13
+        },
+        {
+          "name": "Vision",
+          "pick": 10
+        },
+        {
+          "name": "Health",
+          "pick": 8
+        },
+        {
+          "name": "Speed",
+          "pick": 4
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -16242,7 +18492,7 @@
         "winRate": 60.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/piper",
@@ -16411,7 +18661,32 @@
           "pick": 79
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 27
+        },
+        {
+          "name": "Shield",
+          "pick": 23
+        },
+        {
+          "name": "Vision",
+          "pick": 7
+        },
+        {
+          "name": "Speed",
+          "pick": 6
+        },
+        {
+          "name": "Health",
+          "pick": 4
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 2
+        }
+      ],
       "overdrives": [],
       "buffies": [
         {
@@ -16455,7 +18730,7 @@
         "winRate": 64.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bo",
@@ -16624,7 +18899,32 @@
           "pick": 54
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Shield",
+          "pick": 28
+        },
+        {
+          "name": "Damage",
+          "pick": 27
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 24
+        },
+        {
+          "name": "Health",
+          "pick": 15
+        },
+        {
+          "name": "Speed",
+          "pick": 5
+        },
+        {
+          "name": "Vision",
+          "pick": 2
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -16632,7 +18932,7 @@
         "winRate": 64.3,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/poco",
@@ -16801,7 +19101,32 @@
           "pick": 51
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Shield",
+          "pick": 33
+        },
+        {
+          "name": "Damage",
+          "pick": 17
+        },
+        {
+          "name": "Health",
+          "pick": 7
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 5
+        },
+        {
+          "name": "Speed",
+          "pick": 3
+        },
+        {
+          "name": "Vision",
+          "pick": 3
+        }
+      ],
       "overdrives": [],
       "buffies": [
         {
@@ -16845,7 +19170,7 @@
         "winRate": 60.8,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/crow",
@@ -17014,7 +19339,32 @@
           "pick": 70
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 33
+        },
+        {
+          "name": "Shield",
+          "pick": 23
+        },
+        {
+          "name": "Health",
+          "pick": 6
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 6
+        },
+        {
+          "name": "Speed",
+          "pick": 3
+        },
+        {
+          "name": "Vision",
+          "pick": 2
+        }
+      ],
       "overdrives": [],
       "buffies": [
         {
@@ -17058,7 +19408,7 @@
         "winRate": 57.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/mortis",
@@ -17227,7 +19577,32 @@
           "pick": 69
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Super Charge",
+          "pick": 34
+        },
+        {
+          "name": "Damage",
+          "pick": 29
+        },
+        {
+          "name": "Shield",
+          "pick": 15
+        },
+        {
+          "name": "Health",
+          "pick": 11
+        },
+        {
+          "name": "Speed",
+          "pick": 7
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 4
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": null,
@@ -17398,7 +19773,32 @@
           "pick": 57
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Shield",
+          "pick": 35
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 28
+        },
+        {
+          "name": "Damage",
+          "pick": 24
+        },
+        {
+          "name": "Health",
+          "pick": 6
+        },
+        {
+          "name": "Vision",
+          "pick": 5
+        },
+        {
+          "name": "Speed",
+          "pick": 3
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -17406,7 +19806,7 @@
         "winRate": 60.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/dynamike",
@@ -17575,7 +19975,32 @@
           "pick": 62
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 26
+        },
+        {
+          "name": "Shield",
+          "pick": 22
+        },
+        {
+          "name": "Speed",
+          "pick": 6
+        },
+        {
+          "name": "Health",
+          "pick": 6
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 5
+        },
+        {
+          "name": "Vision",
+          "pick": 1
+        }
+      ],
       "overdrives": [],
       "buffies": [
         {
@@ -17619,7 +20044,7 @@
         "winRate": 68.8,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/nita",
@@ -17788,7 +20213,32 @@
           "pick": 58
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Pet Power",
+          "pick": 40
+        },
+        {
+          "name": "Shield",
+          "pick": 24
+        },
+        {
+          "name": "Damage",
+          "pick": 20
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 7
+        },
+        {
+          "name": "Health",
+          "pick": 6
+        },
+        {
+          "name": "Vision",
+          "pick": 2
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -17796,7 +20246,7 @@
         "winRate": 66.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/jessie",
@@ -17965,7 +20415,32 @@
           "pick": 52
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Shield",
+          "pick": 38
+        },
+        {
+          "name": "Damage",
+          "pick": 29
+        },
+        {
+          "name": "Health",
+          "pick": 11
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 11
+        },
+        {
+          "name": "Vision",
+          "pick": 7
+        },
+        {
+          "name": "Speed",
+          "pick": 4
+        }
+      ],
       "overdrives": [],
       "buffies": [],
       "stats": {
@@ -17973,7 +20448,7 @@
         "winRate": 65.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/barley",
@@ -18142,7 +20617,32 @@
           "pick": 75
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Shield",
+          "pick": 31
+        },
+        {
+          "name": "Damage",
+          "pick": 24
+        },
+        {
+          "name": "Health",
+          "pick": 8
+        },
+        {
+          "name": "Speed",
+          "pick": 4
+        },
+        {
+          "name": "Vision",
+          "pick": 3
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 3
+        }
+      ],
       "overdrives": [],
       "buffies": [
         {
@@ -18186,7 +20686,7 @@
         "winRate": 62.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/spike",
@@ -18355,7 +20855,32 @@
           "pick": 70
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Reload Speed",
+          "pick": 36
+        },
+        {
+          "name": "Damage",
+          "pick": 28
+        },
+        {
+          "name": "Shield",
+          "pick": 23
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 5
+        },
+        {
+          "name": "Health",
+          "pick": 4
+        },
+        {
+          "name": "Vision",
+          "pick": 3
+        }
+      ],
       "overdrives": [],
       "buffies": [
         {
@@ -18399,7 +20924,7 @@
         "winRate": 61.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/rico",
@@ -18568,7 +21093,32 @@
           "pick": 79
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Reload Speed",
+          "pick": 36
+        },
+        {
+          "name": "Shield",
+          "pick": 32
+        },
+        {
+          "name": "Damage",
+          "pick": 18
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 5
+        },
+        {
+          "name": "Health",
+          "pick": 3
+        },
+        {
+          "name": "Vision",
+          "pick": 3
+        }
+      ],
       "overdrives": [],
       "buffies": [
         {
@@ -18612,7 +21162,7 @@
         "winRate": 62,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/brock",
@@ -18781,7 +21331,32 @@
           "pick": 56
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 37
+        },
+        {
+          "name": "Health",
+          "pick": 15
+        },
+        {
+          "name": "Shield",
+          "pick": 12
+        },
+        {
+          "name": "Speed",
+          "pick": 6
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 6
+        },
+        {
+          "name": "Vision",
+          "pick": 1
+        }
+      ],
       "overdrives": [],
       "buffies": [
         {
@@ -18825,7 +21400,7 @@
         "winRate": 64.8,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bull",
@@ -18994,7 +21569,32 @@
           "pick": 73
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 27
+        },
+        {
+          "name": "Shield",
+          "pick": 26
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 6
+        },
+        {
+          "name": "Health",
+          "pick": 4
+        },
+        {
+          "name": "Speed",
+          "pick": 3
+        },
+        {
+          "name": "Vision",
+          "pick": 2
+        }
+      ],
       "overdrives": [],
       "buffies": [
         {
@@ -19038,7 +21638,7 @@
         "winRate": 60.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/colt",
@@ -19207,7 +21807,32 @@
           "pick": 65
         }
       ],
-      "gears": [],
+      "gears": [
+        {
+          "name": "Pick Rates Damage",
+          "pick": 36
+        },
+        {
+          "name": "Shield",
+          "pick": 30
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 13
+        },
+        {
+          "name": "Speed",
+          "pick": 10
+        },
+        {
+          "name": "Health",
+          "pick": 6
+        },
+        {
+          "name": "Vision",
+          "pick": 4
+        }
+      ],
       "overdrives": [],
       "buffies": [
         {
@@ -19251,7 +21876,7 @@
         "winRate": 64.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:23:23.026Z"
+        "updatedAt": "2026-09-27T10:27:59.235Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/shelly",
