@@ -98,7 +98,7 @@ function manualItemState(b,type,item){if(!item)return null;const m=manualOwnersh
 function setManualOwnership(bid,type,itemId,value){const b=allBrawlers().find(x=>x&&x.id===bid);if(!b)return;const m=manualOwnership(b),k=type+':'+itemId;if(value===null)delete m[k];else m[k]=!!value;localStorage.setItem(ownedMapKey(b),JSON.stringify(m));render()}
 function itemStatus(b,type,item){if(!item)return 'DATA N/A';if(equippedNames(b,type).includes(norm(item.name)))return 'EQUIPPED';const manual=manualItemState(b,type,item);if(manual===true)return 'OWNED';if(manual===false)return 'NOT OWNED';return 'UNKNOWN'}
 function actionForItem(b,type,item){const s=itemStatus(b,type,item);return s==='EQUIPPED'?'READY':s==='OWNED'?'EQUIP':s==='NOT OWNED'?'BUY':'CHECK'}
-function itemState(b,type,item){return itemStatus(b,type,item)}
+
 function ownershipControl(b,type,item){if(!item)return '';const s=itemStatus(b,type,item);if(s==='EQUIPPED')return '<span class="ownershipApi">EQUIPPED · API</span>';return '<div class="ownershipControls"><button type="button" onclick="event.stopPropagation();setManualOwnership('+b.id+',\''+type+'\','+item.id+',true)">I OWN IT</button><button type="button" onclick="event.stopPropagation();setManualOwnership('+b.id+',\''+type+'\','+item.id+',false)">BUY</button><button type="button" onclick="event.stopPropagation();setManualOwnership('+b.id+',\''+type+'\','+item.id+',null)">RESET</button></div>'}
 function recommendationAction(b,type,item){return actionForItem(b,type,item)}
 function buildItems(b){const e=buildEntry(b);return [['Gadget','gadgets',bestBuildItem(e,'gadget')],['Star Power','starPowers',bestBuildItem(e,'starPower')],['Gear','gears',bestBuildItem(e,'gears',0)],['Gear','gears',bestBuildItem(e,'gears',1)]].filter(x=>x[2])}
@@ -140,9 +140,9 @@ function compIcon(type,item,b=null){
 }
 function comp(type,label,item){return '<div class="comp '+(item?'owned':'missing')+'">'+compIcon(type,item)+'<div><span>'+label+'</span><b>'+esc(item?.name||'Not owned')+'</b></div></div>'}
 function first(a){return Array.isArray(a)&&a.length?a[0]:null}
-function buildLabel(b){const o=owned(b);return [o.gadgets?'Gadget':'Gadget missing',o.stars?'Star Power':'Star Power missing',o.gears?'Gear':'Gear missing',o.hc?'Hypercharge':'Hypercharge missing'].join(' · ')}
-function why(b,mode,map){const m=metaEntry(b,mode,map);const reasons=[];if(readiness(b)>=75)reasons.push('build already ready');if(b.power>=11)reasons.push('Power 11');if((b.trophies||0)>=500)reasons.push('good Brawler experience');if(m?.reason)reasons.push(m.reason);if(!reasons.length)reasons.push('account data available');return reasons.join(' · ')}
-function recommendationTag(b,mode,map){return META_STATE.loaded&&metaEntry(b,mode,map)?'META + ACCOUNT':'ACCOUNT ONLY'}
+
+
+
 function norm(s){return String(s||'').toUpperCase().replace(/[’']/g,"'").replace(/[^A-Z0-9]+/g,' ').trim()}
 function isOwnedAccount(b){if(!b)return false;return !!P?.brawlers?.some(x=>x&&((x.id!=null&&x.id===b.id)||norm(x.name)===norm(b.name)))}
 function accountBrawler(c){if(!c)return null;const a=P?.brawlers?.find(x=>x&&((x.id!=null&&x.id===c.id)||norm(x.name)===norm(c.name)));return a||{...c,power:0,rank:0,trophies:0,highestTrophies:0,gadgets:[],starPowers:[],gears:[],hyperCharges:[],buffies:[],overdrives:[]}}
@@ -152,10 +152,10 @@ function status(b){const r=readiness(b);if((b.power||0)>=11&&r>=75)return ['PLAY
 const MODES={Ranked:['Random','Open Business','Belle’s Rock','Goldarm Gulch','Kaboom Canyon'],Knockout:['Random','Goldarm Gulch','Belle’s Rock','Out in the Open'],'Gem Grab':['Random','Hard Rock Mine','Last Stop','Minecart Madness'],'Brawl Ball':['Random','Field Goal','Pinball Dreams','Super Beach'],Heist:['Random','Kaboom Canyon','Safe Zone','Hot Potato'],'Hot Zone':['Random','Dueling Beetles','Ring of Fire','Split']};
 function buildEntry(b){if(!b)return null;return BUILD_STATE.entries[b.name]||BUILD_STATE.entries[norm(b.name)]||BUILD_STATE.entries[String(b.name||'').toUpperCase()]||null}
 function bestBuildItem(entry,type,index=0){const a=entry?.[type]||[];return a[index]||null}
-function ownedNames(b,type){return b?(b[type]||[]).filter(Boolean).map(x=>norm(x?.name)):[]}
+
 
 function advisorRow(b,label,type,item){if(!item)return '';const state=itemStatus(b,type,item),act=recommendationAction(b,type,item),pct=item.pick!=null?' · '+item.pick+'% pick':'';return '<div class="advisorRow"><div class="advisorIcon">'+compIcon(type,item,b)+'</div><div class="grow"><b>'+esc(item.name)+'</b><span class="small">'+esc(label)+pct+'</span></div><span class="chip '+(state==='EQUIPPED'?'ok':state==='NOT OWNED'?'miss':'')+'">'+state+'</span><span class="advisorAction">'+act+'</span></div>'}
-function buildActionLine(b){const actions=nextActions(b).slice(0,3);if(!actions.length)return '<span class="actionPill mutedAction">READY</span>';return actions.map(a=>'<span class="actionPill '+(a.type==='BUY'?'buyAction':a.type==='EQUIP'?'equipAction':a.type==='POWER'?'powerAction':'mutedAction')+'">'+esc(a.type==='POWER'?'POWER 11':a.type)+'</span>').join('')}
+
 function miniBuild(b){
  const items=guideComponents(b),buffs=buffieRows(b);
  const compact=(item,type)=>{
@@ -191,7 +191,7 @@ function guideItem(b,type,item){
 function cleanGuideText(v){return String(v||'').replace(/<[^>]*>/g,' ').replace(/<![^>]*>/g,' ').replace(/\s+/g,' ').trim()}
 function componentDescription(item){if(!item)return '';let d=String(item.description||item.descriptionHtml||'');const n=item.modifierValue!=null?String(item.modifierValue):'';d=d.replace(/<NUM>/gi,n).replace(/<c[^>]*>/gi,'').replace(/<\/c>/gi,'');return cleanGuideText(d)}
 function componentSignal(b,type,item){const e=buildEntry(b),key=type==='starPowers'?'starPower':type==='gadgets'?'gadget':type,list=Array.isArray(e?.[key])?e[key]:[],score=metaEntry(b,playMode,playMap)?.score,ranked=[...list].sort((a,z)=>(Number(z.pick)||0)-(Number(a.pick)||0)),rank=ranked.findIndex(x=>norm(x.name)===norm(item?.name))+1,pick=item?.pick!=null?Number(item.pick):null;return {label:score==null?'COMMUNITY BUILD SIGNAL':rank===1?'TOP COMMUNITY PICK':rank===2?'HIGH USAGE PICK':'ALTERNATIVE',rank:rank>0?rank:null,pick:Number.isFinite(pick)?pick:null,score:Number.isFinite(Number(score))?Number(score):null}}
-function componentModal(b,type,item){const x=guideItem(b,type,item);if(!x)return;const title=type==='gadgets'?'Gadget':type==='starPowers'?'Star Power':type==='gears'?'Gear':type==='hyperCharges'?'Hypercharge':type==='buffies'?'Buffie':type==='overdrives'?'Overdrive':'Component';const description=cleanGuideText(x.description||x.descriptionHtml||'No description available.');const state=itemStatus(b,type,item);document.body.insertAdjacentHTML('beforeend','<div class="modal componentModal"><div class="modalBox"><div class="modalHead"><h2>'+esc(x.name||title)+'</h2><button onclick="closeModal()">×</button></div><div class="componentDetail">'+compIcon(type,item,b)+'<div class="eyebrow">'+title.toUpperCase()+'</div><p>'+esc(description)+'</p><div class="stateBox"><b>'+state+'</b><span>'+esc(action)+'</span></div>'+ownershipControl(b,type,item)+'</div><button class="close" onclick="closeModal()">Close</button></div></div>')}
+
 function componentModalV2(b,type,item){
  const x=guideItem(b,type,item); if(!x)return;
  const title=componentTitle(type),desc=componentDescription(x)||'No description available.';
@@ -218,17 +218,8 @@ function componentModalV2ById(bid,type,itemId){
  componentModalV2(b,type,item);
 }
 function guideComponent(b,label,type,item){if(!item)return '';const pending=String(item.id||'').startsWith('pending:');const x=guideItem(b,type,item),desc=cleanGuideText(x?.description||''),state=pending?'—':type==='buffies'?(buffieState(b,String(item.id||'').split(':')[1])?'✓':'—'):itemStatus(b,type,item),act=pending?'DATA PENDING':recommendationAction(b,type,item);return '<button class="guideComponent '+(state==='✓'?'equipped':state==='OWNED'?'owned':state==='NOT OWNED'?'missing':'unknown')+'" onclick="componentModalV2ById('+b.id+',\''+type+'\','+(item.id||0)+')" type="button">'+compIcon(type,item,b)+'<span class="grow"><small>'+esc(label)+'</small><b>'+esc(item.name)+'</b><em>'+esc(desc||'Tap for details')+'</em></span><span class="guideState '+(state==='✓'?'stateOk':'')+'">'+state+'</span></button>'}
-function componentModalById(bid,type,itemId){const b=allBrawlers().find(x=>x&&x.id===bid);if(!b)return;const c=guideEntry(b);let item=null;if(type==='buffies'){const bc=COMPONENT_STATE.entries[String(b.id)]?.buffies||{};item=bc[itemId]||{id:'buffie:'+itemId,name:itemId==='gadget'?'Gadget Buffie':itemId==='starPower'?'Star Buffie':'Overdrive Buffie',description:'Permanent Buffie state reported by the player profile.'}}else item=(c?.[type]||[]).find(x=>x&&x.id===itemId)||null;const fallback=type==='buffies'?null:buildAlternatives(b,type).find(x=>x&&x.id===itemId)||null;componentModalV2(b,type,item||fallback)}
-function dataProvenance(b){
- const e=buildEntry(b),m=metaEntry(b,playMode,playMap),assets=ASSET_STATE.generatedAt||null,components=COMPONENT_STATE.generatedAt||null;
- const rows=[
-  ['BUILD DATA',e?.sourceUrl||BUILD_STATE.sources?.find(x=>x.name==='NOFF')?.url||'',BUILD_STATE.updatedAt||e?.updatedAt,'Community build statistics'],
-  ['META DATA',m?.sourceUrl||'',m?.updatedAt||META_STATE.updatedAt,'Mode/map statistics'],
-  ['GAME CATALOG',COMPONENT_STATE.loaded?'https://brawlapi.com/':'',components,'BrawlAPI game-data mirror'],
-  ['ASSETS',ASSET_STATE.loaded?'https://github.com/Brawlify/CDN':'',assets,'Brawlify CDN asset source']
- ];
- return '<section class="card provenanceCard"><div class="sectionTitle"><h2>Data & sources</h2><span class="small">transparency</span></div><div class="provenanceList">'+rows.map(([label,url,date,note])=>'<div class="provenanceRow"><div><b>'+label+'</b><small>'+esc(note)+'</small></div><span>'+esc(date?new Date(date).toLocaleDateString('en-US'):'PENDING')+'</span>'+(url?'<a href="'+esc(url)+'" target="_blank" rel="noopener">SOURCE</a>':'<em>NO LINK</em>')+'</div>').join('')+'</div><p class="small">Build and meta signals are community/statistical data. Game catalog data is sourced from the public BrawlAPI mirror. Brawl Helper derives its recommendations from these inputs; it does not present them as official Supercell recommendations.</p></section>'
-}
+
+
 function brawlerGuide(b){
  const e=buildEntry(b),c=guideEntry(b),m=metaEntry(b,playMode,playMap),desc=cleanGuideText(c?.description||c?.shortDescription||''),rows=guideComponents(b).map(([label,type,item])=>guideComponent(b,label,type,item)).join('');
  const buffs=buffieRows(b).map(([label,key,items,owned])=>'<button class="buffieBox '+(owned===true?'buffieOwned':owned===false?'buffieMissing':'buffieUnknown')+'" type="button" onclick="componentModalV2ById('+b.id+',\'buffies\',\''+key+'\')"><span class="buffieCheck">'+(owned===true?'✓':owned===false?'×':'?')+'</span><span><b>'+label+'</b><small>'+(items.length?items.length+' option'+(items.length===1?'':'s')+' · ':'')+(owned===true?'UNLOCKED':owned===false?'NOT UNLOCKED':'NOT VERIFIED')+'</small></span></button>').join('');
