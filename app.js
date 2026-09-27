@@ -94,7 +94,7 @@ function guideComponents(b){
   ['Overdrive','overdrives',od||{id:'pending:overdrive',name:'Data pending',description:'No validated Overdrive record is available in the current synchronized snapshot.'}]
  ];
 }
-function recommendationContext(){return {isOwnedAccount,buildItems,itemStatus,metaEntry,readiness,playMode,playMap}}
+function recommendationContext(){return {isOwnedAccount,buildItems,guideComponents,itemStatus,metaEntry,readiness,playMode,playMap}}
 function nextActions(b){return window.BHRecommendations?window.BHRecommendations.nextActions(b,recommendationContext()):[]}
 function upgradePriority(b){return window.BHRecommendations?window.BHRecommendations.upgradePriority(b,recommendationContext()):{score:0,actions:[],metaScore:null,confidence:.4}}
 function componentCatalogItem(type,item,b=null){if(!item)return null;const c=catalogEntry(b);const key=({gadgets:'gadgets',gadget:'gadgets',starPowers:'starPowers',star:'starPowers',gears:'gears',gear:'gears',hyperCharges:'hyperCharges',hc:'hyperCharges',buffies:'buffies',buffie:'buffies',overdrives:'overdrives',overdrive:'overdrives'})[type];const local=c?.[key]||[];const componentLocal=COMPONENT_STATE.entries[String(b?.id||'')]?.[key]||[];const pool=Object.values(CATALOG_STATE.entries||{}).flatMap(x=>x?.[key]||[]);return [...local,...componentLocal,...pool].find(x=>x&&((x.id!=null&&item.id!=null&&x.id===item.id)||norm(x.name)===norm(item.name)))||null}
