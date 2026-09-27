@@ -43,7 +43,7 @@ async function main(){
    starPowers:(b.starPowers||[]).map(x=>({id:x.id,name:x.name,description:x.description||'',imageUrl:x.imageUrl||null,released:x.released!==false})),
    hyperCharges:(b.hyperCharges||[]).map(x=>({id:x.id,name:x.name,description:x.description||'',imageUrl:x.imageUrl||null,released:x.released!==false})),
    overdrives:(comp.overdrives||[]),
-   buffies:{gadget:comp.buffies?.gadget||null,starPower:comp.buffies?.starPower||null,overdrive:comp.buffies?.overdrive||null},
+   buffies:{gadget:comp.buffies?.gadget||null,starPower:comp.buffies?.starPower||null,hyperCharge:comp.buffies?.hyperCharge||null},
    gears:comp.gears||[]
   };
   const coverage={
@@ -63,19 +63,19 @@ async function main(){
    meta:!!(meta.stats||meta.noff||meta.gadget?.length||meta.starPower?.length||meta.gears?.length)
   };
   const coreComplete=coverage.identity&&coverage.portrait&&coverage.rarity&&coverage.role&&coverage.lore&&coverage.attack&&coverage.super&&coverage.gadgets&&coverage.starPowers&&coverage.gears;
-  const complete=coreComplete&&coverage.hyperCharge&&coverage.overdrive&&coverage.buffies&&coverage.meta;
+  const optionalKnown=Object.entries({hyperCharge:coverage.hyperCharge,overdrive:coverage.overdrive,buffies:coverage.buffies}).filter(([,v])=>v).length;\n  const score=Math.round(((Object.values(coverage).filter(Boolean).length)/Object.keys(coverage).length)*100);\n  const complete=coreComplete&&coverage.meta;\n  const optionalStatus={hyperCharge:coverage.hyperCharge?'VERIFIED':'UNKNOWN',overdrive:coverage.overdrive?'VERIFIED':'UNKNOWN',buffies:coverage.buffies?'VERIFIED':'UNKNOWN'};
   profiles.entries[String(b.id)]={
    id:b.id,name:b.name,identity:{assetId:b.assetId,avatarId:b.avatarId,rarity:b.rarity||null,class:b.class||null,description:b.description||'',shortDescription:b.shortDescription||''},
    portrait:{imageUrl:b.imageUrl||null,imageUrl2:b.imageUrl2||null},
    baseStats:ch?{health:firstNonEmpty(ch.Hitpoints,ch.Health),speed:firstNonEmpty(ch.Speed),attackDamage:firstNonEmpty(ch.AutoAttackDamage),attackBullets:firstNonEmpty(ch.AutoAttackBulletsPerShot),attackRange:firstNonEmpty(ch.AutoAttackRange),reloadMs:firstNonEmpty(ch.AutoAttackSpeedMs),regeneratePerSecond:firstNonEmpty(ch.RegeneratePerSecond),superChargeMultiplier:firstNonEmpty(ch.UltiChargeMul),superChargeDivider:firstNonEmpty(ch.UltiChargeDiv)}:null,
    attack,super:superDef,
    abilities,meta,
-   coverage:{complete,coreComplete,fields:coverage,missing:Object.entries(coverage).filter(([,ok])=>!ok).map(([k])=>k)},
+   coverage:{complete,coreComplete,score,fields:coverage,optionalKnown,optionalStatus,missing:Object.entries(coverage).filter(([,ok])=>!ok).map(([k])=>k)},
    sources:{catalog:'BrawlAPI',gameData:'BrawlAPI game CSV',buildMeta:meta.sourceUrl||meta.noff?.sourceUrl||null}
   };
  }
  const vals=Object.values(profiles.entries);
- profiles.quality={brawlers:vals.length,coreComplete:vals.filter(x=>x.coverage.coreComplete).length,complete:vals.filter(x=>x.coverage.complete).length,partial:vals.filter(x=>!x.coverage.complete).length,missingByField:Object.fromEntries([...new Set(vals.flatMap(x=>x.coverage.missing))].map(k=>[k,vals.filter(x=>x.coverage.missing.includes(k)).length]))};
+ profiles.quality={brawlers:vals.length,coreComplete:vals.filter(x=>x.coverage.coreComplete).length,complete:vals.filter(x=>x.coverage.complete).length,partial:vals.filter(x=>!x.coverage.complete).length,averageScore:Math.round(vals.reduce((a,x)=>a+x.coverage.score,0)/vals.length),missingByField:Object.fromEntries([...new Set(vals.flatMap(x=>x.coverage.missing))].map(k=>[k,vals.filter(x=>x.coverage.missing.includes(k)).length]))};
  fs.writeFileSync(OUT,JSON.stringify(profiles,null,2)+'\n');
  console.log(JSON.stringify(profiles.quality,null,2));
  if(profiles.quality.coreComplete!==profiles.quality.brawlers)throw Error('Core Brawler profile incomplete: '+(profiles.quality.brawlers-profiles.quality.coreComplete));
