@@ -65,7 +65,8 @@ async function main(){
   const coreComplete=coverage.identity&&coverage.portrait&&coverage.rarity&&coverage.role&&coverage.lore&&coverage.attack&&coverage.super&&coverage.gadgets&&coverage.starPowers&&coverage.gears;
   const optionalKnown=Object.entries({hyperCharge:coverage.hyperCharge,overdrive:coverage.overdrive,buffies:coverage.buffies}).filter(([,v])=>v).length;
   const score=Math.round(((Object.values(coverage).filter(Boolean).length)/Object.keys(coverage).length)*100);
-  const complete=Object.values(coverage).every(Boolean);\n  const usable=coreComplete&&coverage.meta;
+  const complete=Object.values(coverage).every(Boolean);
+  const usable=coreComplete&&coverage.meta;
   const optionalStatus={hyperCharge:coverage.hyperCharge?'VERIFIED':'UNKNOWN',overdrive:coverage.overdrive?'VERIFIED':'UNKNOWN',buffies:coverage.buffies?'VERIFIED':'UNKNOWN'};
   profiles.entries[String(b.id)]={
    id:b.id,name:b.name,identity:{assetId:b.assetId,avatarId:b.avatarId,rarity:b.rarity||null,class:b.class||null,description:b.description||'',shortDescription:b.shortDescription||''},
