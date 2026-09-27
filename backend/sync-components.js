@@ -13,7 +13,7 @@ async function main(){
  ]);
  const gearRows=Object.values(gearBoosts||{}).filter(x=>x&&x.Name);
  const textMap=new Map(Object.values(texts||{}).map(x=>[x.TID||x.Name,x.EN||x.IT||x.name||'']));
- const gears=gearRows.map((g,i)=>({id:'gear:'+g.Name,name:textMap.get(g.TID)||g.Name,internalName:g.Name,rarity:g.Rarity,availableToAll:!g.ExtraHerosAvailableTo,extraHeroes:String(g.ExtraHerosAvailableTo||'').split(',').map(norm).filter(Boolean),deprecated:g.HeroDeprecated===true,description:textMap.get(g.InfoTID)||'',infoTid:g.InfoTID||null,titleTid:g.TID||null,modifierValue:g.ModifierValue??null,modifierType:g.ModifierType||null,iconExportName:g.IconExportName||null,imageUrl:'https://cdn.brawlify.com/gears/regular/'+(62000000+i)+'.png'})).filter(g=>!g.deprecated);
+ const gears=gearRows.map((g,i)=>({id:'gear:'+g.Name,name:textMap.get(g.TID)||g.Name,internalName:g.Name,rarity:g.Rarity,availableToAll:!g.ExtraHerosAvailableTo,extraHeroes:String(g.ExtraHerosAvailableTo||'').split(',').map(norm).filter(Boolean),deprecated:g.HeroDeprecated===true,description:textMap.get(g.InfoTID)||'',infoTid:g.InfoTID||null,titleTid:g.TID||null,modifierValue:g.ModifierValue??null,modifierType:g.ModifierType||null,iconExportName:g.IconExportName||null,imageUrl:'https://cdn.brawlify.com/gears/regular/'+(g.id||62000000+i)+'.png'})).filter(g=>!g.deprecated);
  const charRows=Object.values(characters||{}),byItem=new Map(charRows.filter(x=>x&&x.ItemName).map(x=>[norm(x.ItemName),x]));
  const skillRows=Object.values(skills||{}),bySkill=new Map(skillRows.filter(x=>x).map(x=>[norm(x.Name||x.name||x.id),x]));
  const build=fs.existsSync(BUILD)?JSON.parse(fs.readFileSync(BUILD,'utf8')):{entries:{}};
@@ -22,7 +22,7 @@ async function main(){
   const internal=norm(b.hash||b.path||b.name),row=byItem.get(internal);
   const available=gears.filter(g=>g.availableToAll||g.extraHeroes.includes(internal)).map(g=>({...g}));
   const be=build.entries?.[b.name]||{};
-  const buffieMap={gadget:(be.buffies||[]).find(x=>x.slot==='gadget')||null,starPower:(be.buffies||[]).find(x=>x.slot==='starPower')||null,hyperCharge:(be.buffies||[]).find(x=>x.slot==='hypercharge')||null};
+  const buffieMap={gadget:(be.buffies||[]).filter(x=>x.slot==='gadget'),starPower:(be.buffies||[]).filter(x=>x.slot==='starPower'),hyperCharge:(be.buffies||[]).filter(x=>x.slot==='hypercharge')};
   const odKey=row?.OverchargedUltimateSkill||null,od=odKey?bySkill.get(norm(odKey)):null;
   const odName=od?(textMap.get(od.TID)||textMap.get(od.Name)||od.Name||od.name||odKey):odKey;
   const overdrive=odKey?{id:'overdrive:'+b.id,skillKey:odKey,name:odName,description:textMap.get(od.InfoTID)||od.Description||od.description||'',source:'BrawlAPI game CSV'}:null;
