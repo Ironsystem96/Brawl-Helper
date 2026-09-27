@@ -611,3 +611,22 @@ body{color:#f4f7fb}
 .gearOption strong{margin-left:auto;color:#ffd34e;font-size:7px;white-space:nowrap}
 .gearRecommended{border-color:#ffd34e;background:rgba(255,211,78,.06)}
 .guideComponent .guideAction{font-size:7px;color:#ffd34e;font-weight:950}
+
+
+/* Component interaction pass — make every component visibly inspectable */
+.componentFiveGrid .guideComponent,
+.gearOption,
+.buffieBox,
+.equippedItem{cursor:pointer}
+.componentFiveGrid .guideComponent:after{content:'TAP FOR DETAILS';font-size:6px;letter-spacing:.35px;color:#ffd34e;opacity:.8;margin-top:auto}
+.componentFiveGrid .guideComponent:hover{border-color:#ffd34e;background:#1a2942;transform:translateY(-1px)}
+.gearOption:hover,.buffieBox:hover,.equippedItem:hover{border-color:#ffd34e;background:#1a2942}
+.componentModal .modalBox{max-height:88vh;overflow:auto}
+.componentModal .componentDetail{display:grid;gap:9px}
+.componentModal .componentDetail>.compIcon{width:64px;height:64px;margin:0 auto}
+.componentModal .componentDetail p{font-size:11px;line-height:1.5;color:#d6e0ef}
+.componentModal .modalHead h2{font-size:18px}
+.componentModal .sourceLine{font-size:8px;color:#8fa0b9}
+.componentModal .stateBox{padding:9px 10px;border:1px solid #405274;background:#17243a;border-radius:10px}
+.componentModal .ownershipControls{display:flex;flex-wrap:wrap;gap:5px}
+@media(max-width:430px){.componentFiveGrid .guideComponent:after{font-size:5.5px}.componentModal .modalBox{max-height:84vh}}
