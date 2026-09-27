@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-27T12:19:11.431Z",
+  "generatedAt": "2026-09-27T12:30:28.832Z",
   "sources": [
     {
       "name": "BrawlAPI Brawler catalog",
@@ -92,7 +92,7 @@
           {
             "id": 23000288,
             "name": "Clay Pigeons",
-            "description": "Shelly focuses her fire to a smaller area with an increased range. Can be used <!card.accessory.skill.maxAmmo> times per activation.",
+            "description": "Shelly focuses her fire to a smaller area with an increased range. Can be used times per activation.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000288.png",
             "released": true
           }
@@ -101,7 +101,7 @@
           {
             "id": 23000076,
             "name": "Shell Shock",
-            "description": "Shelly's Super shells slow down enemies for <!card.value1.ticksasseconds> sec!",
+            "description": "Shelly's Super shells slow down enemies for sec!",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000076.png",
             "released": true
           },
@@ -315,7 +315,7 @@
           "winRate": 64.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/shelly",
@@ -568,14 +568,14 @@
           {
             "id": 23000273,
             "name": "Speedloader",
-            "description": "Colt fires two quick shots that slow targets. Deals <!card.accessory.skill.damage.scaleToLevel> damage.",
+            "description": "Colt fires two quick shots that slow targets. Deals damage.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000273.png",
             "released": true
           },
           {
             "id": 23000319,
             "name": "Silver Bullet",
-            "description": "Colt fires a bullet that destroys the environment and pierces Brawlers. Deals <!card.accessory.skill.damage.scaleToLevel> damage. Consumes ammo.",
+            "description": "Colt fires a bullet that destroys the environment and pierces Brawlers. Deals damage. Consumes ammo.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000319.png",
             "released": true
           }
@@ -584,7 +584,7 @@
           {
             "id": 23000077,
             "name": "Slick Boots",
-            "description": "Colt's movement speed is increased by <!card.trait.statuseffect.basespeedincreasepercent>%.",
+            "description": "Colt's movement speed is increased by %.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000077.png",
             "released": true
           },
@@ -798,7 +798,7 @@
           "winRate": 60.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/colt",
@@ -1051,7 +1051,7 @@
           {
             "id": 23000272,
             "name": "T-Bone Missile",
-            "description": "Bull throws a projectile at the target Brawler, dealing <!card.accessory.skill.damage.scaleToLevel> damage and healing for <!card.accessory.skill.projectile.statusEffectSelfOnHit.healing> if he hits.",
+            "description": "Bull throws a projectile at the target Brawler, dealing damage and healing for if he hits.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000272.png",
             "released": true
           },
@@ -1281,7 +1281,7 @@
           "winRate": 64.8,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bull",
@@ -1764,7 +1764,7 @@
           "winRate": 62,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/brock",
@@ -2017,14 +2017,14 @@
           {
             "id": 23000246,
             "name": "Multiball Launcher",
-            "description": "Rico Deploys a vending machine that has <!card.accessory.skill.summonedcharacter.maxhealth.scaleStatToLevel> health - when destroyed fires bouncing projectiles in all directions.",
+            "description": "Rico Deploys a vending machine that has health - when destroyed fires bouncing projectiles in all directions.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000246.png",
             "released": true
           },
           {
             "id": 23000409,
             "name": "Multiball",
-            "description": "Rico fires a big bullet that, on hitting a wall or Brawler, splits into <!card.accessory.skill.projectile.chainbullets> smaller bullets.",
+            "description": "Rico fires a big bullet that, on hitting a wall or Brawler, splits into smaller bullets.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000409.png",
             "released": true
           }
@@ -2040,7 +2040,7 @@
           {
             "id": 23000156,
             "name": "Robo Retreat",
-            "description": "Rico runs <!card.component[0].values[2]>% faster when his health falls below <!card.component[0].values[0]>%.",
+            "description": "Rico runs % faster when his health falls below %.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000156.png",
             "released": true
           }
@@ -2247,7 +2247,7 @@
           "winRate": 61.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/rico",
@@ -2500,14 +2500,14 @@
           {
             "id": 23000247,
             "name": "Popping Pincushion",
-            "description": "Spike aims and fires a wave of needles that deal <!card.accessory.skill.damage.scaleToLevel> damage.",
+            "description": "Spike aims and fires a wave of needles that deal damage.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000247.png",
             "released": true
           },
           {
             "id": 23000406,
             "name": "Life Plant",
-            "description": "Spike throws a large cactus with <!card.accessory.skill.summonedCharacter.maxHealth.scaleToLevel> health to give cover to teammates. If destroyed, the cactus bursts, and all nearby teammates recover <!card.accessory.skill.cactusMinionHealing.scaleToLevel> health.",
+            "description": "Spike throws a large cactus with health to give cover to teammates. If destroyed, the cactus bursts, and all nearby teammates recover health.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000406.png",
             "released": true
           }
@@ -2730,7 +2730,7 @@
           "winRate": 62.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/spike",
@@ -3159,7 +3159,7 @@
           "winRate": 65.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/barley",
@@ -3589,7 +3589,7 @@
           "winRate": 66.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/jessie",
@@ -3850,7 +3850,7 @@
           {
             "id": 23000314,
             "name": "Faux Fur",
-            "description": "For the next <!card.accessory.activeTime.ticksAsSeconds> seconds, Nita's bear gets a <!card.accessory.value1>% shield against damage.",
+            "description": "For the next seconds, Nita's bear gets a % shield against damage.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000314.png",
             "released": true
           }
@@ -4073,7 +4073,7 @@
           "winRate": 68.8,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/nita",
@@ -4326,7 +4326,7 @@
           {
             "id": 23000258,
             "name": "Fidget Spinner",
-            "description": "Dynamike spins furiously with <!card.accessory.statuseffectself.speedboostpercent>% increased movement speed and throws multiple sticks of dynamite around himself. Each dynamite deals <!card.character.weaponskill.damage.scaletolevel.scaleaccessoryvalue3> damage to enemies.",
+            "description": "Dynamike spins furiously with % increased movement speed and throws multiple sticks of dynamite around himself. Each dynamite deals damage to enemies.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000258.png",
             "released": true
           },
@@ -4502,7 +4502,7 @@
           "winRate": 60.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/dynamike",
@@ -4763,7 +4763,7 @@
           {
             "id": 23000292,
             "name": "Asteroid Belt",
-            "description": "El primo flexes his pecs and destroys any incoming projectiles for <!card.accessory.areaeffect.timems.msasseconds> sec.",
+            "description": "El primo flexes his pecs and destroys any incoming projectiles for sec.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000292.png",
             "released": true
           }
@@ -4779,7 +4779,7 @@
           {
             "id": 23000140,
             "name": "Meteor Rush",
-            "description": "El Primo gains a <!card.statuseffect.baseSpeedIncreasePercent>% speed boost for <!card.statuseffect.duration.ticksasseconds> seconds after using his Super.",
+            "description": "El Primo gains a % speed boost for seconds after using his Super.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000140.png",
             "released": true
           }
@@ -5180,7 +5180,7 @@
           {
             "id": 23000265,
             "name": "Combo Spinner",
-            "description": "Mortis spins his shovel dealing <!card.accessory.skill.damage.scaleToLevel> damage. Can also be aimed for a short-distance bat attack.",
+            "description": "Mortis spins his shovel dealing damage. Can also be aimed for a short-distance bat attack.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000265.png",
             "released": true
           },
@@ -5410,7 +5410,7 @@
           "winRate": 57.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/mortis",
@@ -5663,14 +5663,14 @@
           {
             "id": 23000243,
             "name": "Instapoison",
-            "description": "Crow instantly deals remaining poison damage to all Crow-poisoned enemies and gains a shield for <!card.accessory.customValue2>% of the value.",
+            "description": "Crow instantly deals remaining poison damage to all Crow-poisoned enemies and gains a shield for % of the value.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000243.png",
             "released": true
           },
           {
             "id": 23000286,
             "name": "Slowing Toxin",
-            "description": "Throw a kunai that damages, slows and poisons the first enemy hit for <!card.accessory.skill.projectile.statusEffectEnemy.duration.ticksAsSeconds> sec.",
+            "description": "Throw a kunai that damages, slows and poisons the first enemy hit for sec.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000286.png",
             "released": true
           }
@@ -5893,7 +5893,7 @@
           "winRate": 60.8,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/crow",
@@ -6146,14 +6146,14 @@
           {
             "id": 23000267,
             "name": "Tuning Fork",
-            "description": "Poco and all nearby allies heal for <!card.accessory.areaeffect.damage.scaleStatToLevel.negate> health <!card.accessory.repeatAreaEffectiveCount> times.",
+            "description": "Poco and all nearby allies heal for health times.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000267.png",
             "released": true
           },
           {
             "id": 23000350,
             "name": "Protective Tunes",
-            "description": "Poco creates a large AoE lasting <!card.accessory.skill.projectile.spawnAreaEffectObject.timeMs.msAsSeconds> seconds that removes all adverse effects and grants them immunity while inside.",
+            "description": "Poco creates a large AoE lasting seconds that removes all adverse effects and grants them immunity while inside.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000350.png",
             "released": true
           }
@@ -6169,7 +6169,7 @@
           {
             "id": 23000144,
             "name": "Screeching Solo",
-            "description": "Poco's Super now also hits enemies, dealing <!card.value1.scaleWeaponDamageLevel.scaleStatToLevel> damage.",
+            "description": "Poco's Super now also hits enemies, dealing damage.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000144.png",
             "released": true
           }
@@ -6322,7 +6322,7 @@
           "winRate": 64.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/poco",
@@ -6576,7 +6576,7 @@
           {
             "id": 23000263,
             "name": "Super Totem",
-            "description": "Bo places a totem that increases allies' Super charging rate by <!card.accessory.skill.summonedCharacter.areaEffect.customValue1>%. The totem slowly loses its health over time.",
+            "description": "Bo places a totem that increases allies' Super charging rate by %. The totem slowly loses its health over time.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000263.png",
             "released": true
           },
@@ -6806,7 +6806,7 @@
           "winRate": 64.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bo",
@@ -7235,7 +7235,7 @@
           "winRate": 60.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/piper",
@@ -7660,7 +7660,7 @@
           "winRate": 69.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/pam",
@@ -8090,7 +8090,7 @@
           "winRate": 66.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/tara",
@@ -8520,7 +8520,7 @@
           "winRate": 66.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/darryl",
@@ -8950,7 +8950,7 @@
           "winRate": 63.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/penny",
@@ -9204,14 +9204,14 @@
           {
             "id": 23000261,
             "name": "Active Noise Canceling",
-            "description": "Fires a soundwave in a target direction, dealing <!card.accessory.skill.damage.scaleToLevel> damage to Brawlers. Frank becomes immune to Crowd Control for <!card.accessory.skill.activationSelfStatusEffect.duration.ticksAsSeconds> secs.",
+            "description": "Fires a soundwave in a target direction, dealing damage to Brawlers. Frank becomes immune to Crowd Control for secs.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000261.png",
             "released": true
           },
           {
             "id": 23000351,
             "name": "Irresistible Attraction",
-            "description": "Frank aims a long-range attack that pulls enemies towards him. Consumes ammo. Does <!card.accessory.skill.damage.scaleToLevel> damage.",
+            "description": "Frank aims a long-range attack that pulls enemies towards him. Consumes ammo. Does damage.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000351.png",
             "released": true
           }
@@ -9434,7 +9434,7 @@
           "winRate": 65.8,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/frank",
@@ -9863,7 +9863,7 @@
           "winRate": 62.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gene",
@@ -10293,7 +10293,7 @@
           "winRate": 62.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/tick",
@@ -10563,14 +10563,14 @@
           {
             "id": 23000119,
             "name": "Smoke Trails",
-            "description": "When Leon is not visible, he gains a <!card.statuseffect.speedboostpercent>% movement speed for the duration of his invisibility.",
+            "description": "When Leon is not visible, he gains a % movement speed for the duration of his invisibility.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000119.png",
             "released": true
           },
           {
             "id": 23000141,
             "name": "Invisiheal",
-            "description": "Leon recovers <!card.character.maxHealth.scaleToLevel.scaleCardValue1> health per second while his Super is active.",
+            "description": "Leon recovers health per second while his Super is active.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000141.png",
             "released": true
           }
@@ -10777,7 +10777,7 @@
           "winRate": 62.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/leon",
@@ -11037,7 +11037,7 @@
           {
             "id": 23000348,
             "name": "Unfriendly Bushes",
-            "description": "All opponents hiding in bushes take <!card.character.weaponskill.damage.scaleaccessoryvalue3.scaletolevel> damage and get slowed down for <!card.accessory.statuseffectenemy.duration.ticksasseconds> seconds.",
+            "description": "All opponents hiding in bushes take damage and get slowed down for seconds.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000348.png",
             "released": true
           }
@@ -11206,7 +11206,7 @@
           "winRate": 71,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/rosa",
@@ -11636,7 +11636,7 @@
           "winRate": 65.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/carl",
@@ -11890,14 +11890,14 @@
           {
             "id": 23000275,
             "name": "Vitamin Booster",
-            "description": "Bibi heals <!card.value1> health per second for <!card.value2> seconds.",
+            "description": "Bibi heals health per second for seconds.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000275.png",
             "released": true
           },
           {
             "id": 23000458,
             "name": "Extra Sticky",
-            "description": "Bibi throws bubble gum that slows all enemies in it by <!card.accessory.skill.projectile.spawnareaeffectobject.statuseffectenemy.speedreducepercent>%",
+            "description": "Bibi throws bubble gum that slows all enemies in it by %",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000458.png",
             "released": true
           }
@@ -11906,7 +11906,7 @@
           {
             "id": 23000134,
             "name": "Home Run",
-            "description": "Bibi's movement speed is increased by <!card.statuseffect.baseSpeedIncreasePercent>% when her Home Run bar is fully charged.",
+            "description": "Bibi's movement speed is increased by % when her Home Run bar is fully charged.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000134.png",
             "released": true
           },
@@ -12120,7 +12120,7 @@
           "winRate": 64.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bibi",
@@ -12380,7 +12380,7 @@
           {
             "id": 23000318,
             "name": "Extra Credits",
-            "description": "8-Bit fires <!card.accessory.skill.areaEffect.bulletExplosionTriggerCount> projectiles. Consumes ammo.",
+            "description": "8-Bit fires projectiles. Consumes ammo.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000318.png",
             "released": true
           }
@@ -12389,14 +12389,14 @@
           {
             "id": 23000168,
             "name": "Boosted Booster",
-            "description": "Increases the Damage Booster's range by <!arcade.largerAreaUlti.rangePercent>% and boosts damage by an additional <!arcade.largerAreaUlti.damageDelta>%.",
+            "description": "Increases the Damage Booster's range by % and boosts damage by an additional %.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000168.png",
             "released": true
           },
           {
             "id": 23000181,
             "name": "Plugged In",
-            "description": "While near the Damage Booster 8-Bit gains +<!card.projectile.statusEffectAlly.speedBoostPercent>% Movement Speed.",
+            "description": "While near the Damage Booster 8-Bit gains + % Movement Speed.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000181.png",
             "released": true
           }
@@ -12603,7 +12603,7 @@
           "winRate": 66,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/8-bit",
@@ -13032,7 +13032,7 @@
           "winRate": 68.8,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/sandy",
@@ -13462,7 +13462,7 @@
           "winRate": 63.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bea",
@@ -13716,14 +13716,14 @@
           {
             "id": 23000274,
             "name": "Friendzoner",
-            "description": "Emz fires off some hairspray that pushes enemies back. Deals <!card.accessory.skill.damage.scaleToLevel> damage.",
+            "description": "Emz fires off some hairspray that pushes enemies back. Deals damage.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000274.png",
             "released": true
           },
           {
             "id": 23000459,
             "name": "Acid Spray",
-            "description": "Emz squirts out hairspray that goes through walls! Deals <!card.accessory.skill.damage.scaleToLevel> damage.",
+            "description": "Emz squirts out hairspray that goes through walls! Deals damage.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000459.png",
             "released": true
           }
@@ -13946,7 +13946,7 @@
           "winRate": 63.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/emz",
@@ -14630,7 +14630,7 @@
           {
             "id": 23000311,
             "name": "Sneaky Sneakers",
-            "description": "Max throws a lightning bolt. If she reactivates the Gadget, or after <!card.accessory.skill.projectile.spawnAreaEffectObject.timems.msasseconds> seconds, she blinks back to the lightning bolt and heals any damage taken since.",
+            "description": "Max throws a lightning bolt. If she reactivates the Gadget, or after seconds, she blinks back to the lightning bolt and heals any damage taken since.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000311.png",
             "released": true
           }
@@ -14639,7 +14639,7 @@
           {
             "id": 23000210,
             "name": "Super Charged",
-            "description": "Hitting an enemy with Max's Main Attack extends the duration of her Super by <!card.component.value.ticksAsSeconds> sec.",
+            "description": "Hitting an enemy with Max's Main Attack extends the duration of her Super by sec.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000210.png",
             "released": true
           },
@@ -14853,7 +14853,7 @@
           "winRate": 62.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/max",
@@ -15106,7 +15106,7 @@
           {
             "id": 23000256,
             "name": "Pneumatic Booster",
-            "description": "Jacky gets a burst of energy and moves <!card.accessory.statuseffectself.speedboostpercent>% faster for <!card.accessory.statuseffectself.duration.ticksasseconds> seconds.",
+            "description": "Jacky gets a burst of energy and moves % faster for seconds.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000256.png",
             "released": true
           },
@@ -15282,7 +15282,7 @@
           "winRate": 70.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/jacky",
@@ -15559,7 +15559,7 @@
           {
             "id": 23000229,
             "name": "Freezing Snow",
-            "description": "Gale's snow balls now also slow down opponents for <!card.statuseffect.duration.ticksasseconds> seconds.",
+            "description": "Gale's snow balls now also slow down opponents for seconds.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000229.png",
             "released": true
           }
@@ -15712,7 +15712,7 @@
           "winRate": 64.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gale",
@@ -16142,7 +16142,7 @@
           "winRate": 63.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/nani",
@@ -16572,7 +16572,7 @@
           "winRate": 66.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/sprout",
@@ -16826,14 +16826,14 @@
           {
             "id": 23000285,
             "name": "Power Surge",
-            "description": "Surge's power surges! Increase Super charge rate by <!card.accessory.statusEffectAlly.ultiChargeBoostPercent>% for <!card.accessory.statusEffectAlly.duration.ticksAsSeconds> sec.",
+            "description": "Surge's power surges! Increase Super charge rate by % for sec.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000285.png",
             "released": true
           },
           {
             "id": 23000485,
             "name": "Power Shield",
-            "description": "Within the next <!card.accessory.statusEffectAlly.duration.ticksAsSeconds> seconds, Surge consumes <!card.accessory.statusEffectAlly.shieldPercent>% of the damage of the next incoming hit and uses the energy to reload <!card.accessory.statusEffectAlly.actionsOnCancelOnDamage.values> ammo.",
+            "description": "Within the next seconds, Surge consumes % of the damage of the next incoming hit and uses the energy to reload ammo.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000485.png",
             "released": true
           }
@@ -17056,7 +17056,7 @@
           "winRate": 61.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/surge",
@@ -17309,14 +17309,14 @@
           {
             "id": 23000302,
             "name": "Na-Ah",
-            "description": "Colette fires a projectile that charms a Brawler for <!card.accessory.skill.projectile.statuseffectenemy.duration.ticksasseconds> sec. Uses ammo.",
+            "description": "Colette fires a projectile that charms a Brawler for sec. Uses ammo.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000302.png",
             "released": true
           },
           {
             "id": 23000457,
             "name": "Gotcha",
-            "description": "Colette fires a projectile that heals for  <!card.accessory.skill.projectile.lifestealpercent>% of damage dealt. Uses ammo and can be fired 3 times before cooldown.",
+            "description": "Colette fires a projectile that heals for % of damage dealt. Uses ammo and can be fired 3 times before cooldown.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000457.png",
             "released": true
           }
@@ -17325,14 +17325,14 @@
           {
             "id": 23000300,
             "name": "Push It",
-            "description": "All enemy Brawlers hit by Colette's charge are carried to the farthest point of the attack! At max distance, they are stunned for <!card.value2.ticksAsSeconds> sec.",
+            "description": "All enemy Brawlers hit by Colette's charge are carried to the farthest point of the attack! At max distance, they are stunned for sec.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000300.png",
             "released": true
           },
           {
             "id": 23000301,
             "name": "Mass Tax",
-            "description": "Colette takes <!card.trait.statuseffect.shieldpercent>% less damage during her Super and gains 30% shield for 3 sec if she hits a Brawler.",
+            "description": "Colette takes % less damage during her Super and gains 30% shield for 3 sec if she hits a Brawler.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000301.png",
             "released": true
           }
@@ -17539,7 +17539,7 @@
           "winRate": 61.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/colette",
@@ -17792,14 +17792,14 @@
           {
             "id": 23000309,
             "name": "Fire Starters",
-            "description": "Amber summons an Oil barrel with <!card.accessory.skill.summonedcharacter.maxhealth.scaleStatToLevel> health, spilling oil when destroyed.",
+            "description": "Amber summons an Oil barrel with health, spilling oil when destroyed.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000309.png",
             "released": true
           },
           {
             "id": 23000488,
             "name": "Dancing Flames",
-            "description": "Amber creates <!card.accessory.value3> orbiting flames around her for <!card.accessory.customObjectProjectile.steerLifeTime.ticksAsSeconds> seconds, dealing <!card.accessory.value2.scaleStatToLevel> damage on hit.",
+            "description": "Amber creates orbiting flames around her for seconds, dealing damage on hit.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000488.png",
             "released": true
           }
@@ -17815,7 +17815,7 @@
           {
             "id": 23000308,
             "name": "Scorchin Siphon",
-            "description": "Amber reloads <!card.component.values[0].asAmmoReloadPercent>% of her fire-breathing when an enemy takes fire damage.",
+            "description": "Amber reloads % of her fire-breathing when an enemy takes fire damage.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000308.png",
             "released": true
           }
@@ -17968,7 +17968,7 @@
           "winRate": 67.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/amber",
@@ -18398,7 +18398,7 @@
           "winRate": 67.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/lou",
@@ -18659,7 +18659,7 @@
           {
             "id": 23000461,
             "name": "Booster Shots",
-            "description": "Byron's next attack shoots x darts instead of one, each dealing <ccc0000>x% less damage and <ccc0000>x% less healing.",
+            "description": "Byron's next attack shoots x darts instead of one, each dealing x% less damage and x% less healing.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000461.png",
             "released": true
           }
@@ -18828,7 +18828,7 @@
           "winRate": 60.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/byron",
@@ -19089,7 +19089,7 @@
           {
             "id": 23000403,
             "name": "Hardcore",
-            "description": "Edgar gets a shield that protects him from the next <!card.character.maxhealth.scaletolevel.scaleaccessoryvalue1> damage. The shield gets weaker over time.",
+            "description": "Edgar gets a shield that protects him from the next damage. The shield gets weaker over time.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000403.png",
             "released": true
           }
@@ -19098,14 +19098,14 @@
           {
             "id": 23000338,
             "name": "Hard Landing",
-            "description": "Edgar's Super and Let's Fly Gadget will also deal <!card.areaeffect.damage.scaleweapondamagelevel.scaletolevel> damage to nearby enemies upon landing, or <!card.areaeffect.innerradiusdamage.scaleweapondamagelevel.scaletolevel> damage on a direct hit.",
+            "description": "Edgar's Super and Let's Fly Gadget will also deal damage to nearby enemies upon landing, or damage on a direct hit.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000338.png",
             "released": true
           },
           {
             "id": 23000339,
             "name": "Fisticuffs",
-            "description": "Edgar receives <!card.value1>% more healing from damage he deals.",
+            "description": "Edgar receives % more healing from damage he deals.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000339.png",
             "released": true
           }
@@ -19305,7 +19305,7 @@
           "winRate": 61,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/edgar",
@@ -19734,7 +19734,7 @@
           "winRate": 64.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/ruffs",
@@ -20164,7 +20164,7 @@
           "winRate": 60.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/stu",
@@ -20418,7 +20418,7 @@
           {
             "id": 23000371,
             "name": "Nest Egg",
-            "description": "Belle places a trap on the ground that will explode when triggered by an opponent. The trap deals <!card.character.weaponskill.damage.scaletolevel.scaleaccessoryvalue1> damage, and slows down anyone within its blast radius for <!card.accessory.customobjectitem.triggerareaeffect.statuseffectenemy.duration.ticksAsSeconds> seconds.",
+            "description": "Belle places a trap on the ground that will explode when triggered by an opponent. The trap deals damage, and slows down anyone within its blast radius for seconds.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000371.png",
             "released": true
           },
@@ -20594,7 +20594,7 @@
           "winRate": 65.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/belle",
@@ -21024,7 +21024,7 @@
           "winRate": 62.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/squeak",
@@ -21294,7 +21294,7 @@
           {
             "id": 23000383,
             "name": "Foot Patrol",
-            "description": "When Grom's Super is fully charged, he gains +<!card.statuseffect.baseSpeedIncreasePercent>% faster movement speed!",
+            "description": "When Grom's Super is fully charged, he gains + % faster movement speed!",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000383.png",
             "released": true
           },
@@ -21454,7 +21454,7 @@
           "winRate": 64.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/grom",
@@ -21884,7 +21884,7 @@
           "winRate": 63.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/buzz",
@@ -22138,14 +22138,14 @@
           {
             "id": 23000399,
             "name": "Piggy Bank",
-            "description": "Griff throws a firecracker-filled piggy bank that explodes after a short delay, destroying obstacles and dealing <!card.accessory.skill.damage.scaletolevel> damage to opponents within range.",
+            "description": "Griff throws a firecracker-filled piggy bank that explodes after a short delay, destroying obstacles and dealing damage to opponents within range.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000399.png",
             "released": true
           },
           {
             "id": 23000487,
             "name": "Coin Shower",
-            "description": "Griff throws a shower of coins at target area, dealing <!card.accessory.skill.damage.scaletolevel> damage per sec to opponents inside.",
+            "description": "Griff throws a shower of coins at target area, dealing damage per sec to opponents inside.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000487.png",
             "released": true
           }
@@ -22161,7 +22161,7 @@
           {
             "id": 23000398,
             "name": "Business Resilience",
-            "description": "Every <!card.value2.ticksasseconds> seconds, Griff regains up to <!card.value1>% of his missing health.",
+            "description": "Every seconds, Griff regains up to % of his missing health.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000398.png",
             "released": true
           }
@@ -22368,7 +22368,7 @@
           "winRate": 63.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/griff",
@@ -22628,7 +22628,7 @@
           {
             "id": 23000465,
             "name": "Rotten Banana",
-            "description": "Ash loses <ccc0000>x% health and instantly gains x% rage.",
+            "description": "Ash loses x% health and instantly gains x% rage.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000465.png",
             "released": true
           }
@@ -22797,7 +22797,7 @@
           "winRate": 69.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/ash",
@@ -23058,7 +23058,7 @@
           {
             "id": 23000489,
             "name": "Repurpose",
-            "description": "Meg ejects from the Mecha, launching it forward, dealing <!card.accessory.skill.damage.scaleStatToLevel> damage on the way. Charges Super after during the next <!card.character.component[0].values[1].ticksasseconds>  seconds.",
+            "description": "Meg ejects from the Mecha, launching it forward, dealing damage on the way. Charges Super after during the next seconds.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000489.png",
             "released": true
           }
@@ -23074,7 +23074,7 @@
           {
             "id": 23000422,
             "name": "Heavy Metal",
-            "description": "The Mecha recovers <!card.value1.scaleStatToLevel> health for each enemy hit with Feel the Steel (Super in Mech).",
+            "description": "The Mecha recovers health for each enemy hit with Feel the Steel (Super in Mech).",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000422.png",
             "released": true
           }
@@ -23274,7 +23274,7 @@
           "winRate": 67,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/meg",
@@ -23703,7 +23703,7 @@
           "winRate": 68.6,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/lola",
@@ -24133,7 +24133,7 @@
           "winRate": 63,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/fang",
@@ -24563,7 +24563,7 @@
           "winRate": 69.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/eve",
@@ -24993,7 +24993,7 @@
           "winRate": 69,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/janet",
@@ -25247,7 +25247,7 @@
           {
             "id": 23000480,
             "name": "Sugar Rush",
-            "description": "Clyde's movement and reload speed are increased by <!card.accessory.statuseffectself.speedboostpercent>% for <!card.accessory.statuseffectself.duration.ticksasseconds> seconds.",
+            "description": "Clyde's movement and reload speed are increased by % for seconds.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000480.png",
             "released": true
           },
@@ -25423,7 +25423,7 @@
           "winRate": 69.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bonnie",
@@ -25853,7 +25853,7 @@
           "winRate": 65.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/otis",
@@ -26283,7 +26283,7 @@
           "winRate": 70.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/sam",
@@ -26544,7 +26544,7 @@
           {
             "id": 23000514,
             "name": "Knockback Spirit",
-            "description": "Gus throws a spirit, knocking back enemies and dealing <!card.accessory.skill.damage.scaleToLevel> damage.",
+            "description": "Gus throws a spirit, knocking back enemies and dealing damage.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000514.png",
             "released": true
           }
@@ -26560,7 +26560,7 @@
           {
             "id": 23000512,
             "name": "Spirit Animal",
-            "description": "Spooky increases the damage of a teammate by <!card.trait.statuseffect.damageboostpercent>% for <!card.trait.statuseffect.duration.ticksasseconds> seconds.",
+            "description": "Spooky increases the damage of a teammate by % for seconds.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000512.png",
             "released": true
           }
@@ -26713,7 +26713,7 @@
           "winRate": 65.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gus",
@@ -27143,7 +27143,7 @@
           "winRate": 70.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/buster",
@@ -27600,7 +27600,7 @@
           "winRate": 63.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/chester",
@@ -27868,14 +27868,14 @@
           {
             "id": 23000535,
             "name": "Fake Injury",
-            "description": "When Gray has full health, the next damage taken is reduced by <VALUE>%.",
+            "description": "When Gray has full health, the next damage taken is reduced by %.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000535.png",
             "released": true
           },
           {
             "id": 23000536,
             "name": "New Perspective",
-            "description": "When Gray or his Allies use Doors, they recover <VALUE>% of their max hit points.",
+            "description": "When Gray or his Allies use Doors, they recover % of their max hit points.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000536.png",
             "released": true
           }
@@ -28028,7 +28028,7 @@
           "winRate": 64.6,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gray",
@@ -28292,7 +28292,7 @@
           {
             "id": 23000545,
             "name": "Caramelize",
-            "description": "Mandy's next candy from her Candy Dispenser slows down enemies on hit for <!card.accessory.statuseffectenemy.duration.ticksasseconds> seconds.",
+            "description": "Mandy's next candy from her Candy Dispenser slows down enemies on hit for seconds.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000545.png",
             "released": true
           },
@@ -28485,7 +28485,7 @@
           "winRate": 60.8,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/mandy",
@@ -28913,7 +28913,7 @@
           "winRate": 70.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/r-t",
@@ -29183,14 +29183,14 @@
           {
             "id": 23000561,
             "name": "Love Is Blind",
-            "description": "Lantern's Curse also reduces reload speed of affected Brawlers by <!card.value>% for <!card.value2.ticksAsSeconds> seconds.",
+            "description": "Lantern's Curse also reduces reload speed of affected Brawlers by % for seconds.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000561.png",
             "released": true
           },
           {
             "id": 23000562,
             "name": "Obsession",
-            "description": "Hexed enemies gain <!card.statuseffect.baseSpeedIncreasePercent>% movement speed while mind controlled.",
+            "description": "Hexed enemies gain % movement speed while mind controlled.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000562.png",
             "released": true
           }
@@ -29343,7 +29343,7 @@
           "winRate": 62.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/willow",
@@ -29773,7 +29773,7 @@
           "winRate": 67.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/maisie",
@@ -30043,7 +30043,7 @@
           {
             "id": 23000577,
             "name": "Its Gonna Blow",
-            "description": "When Balloon Blast is charged over <!card.value1>%, Hank gains <!card.statuseffect.baseSpeedIncreasePercent>% extra movement speed.",
+            "description": "When Balloon Blast is charged over %, Hank gains % extra movement speed.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000577.png",
             "released": true
           },
@@ -30203,7 +30203,7 @@
           "winRate": 69.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/hank",
@@ -30633,7 +30633,7 @@
           "winRate": 65.6,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/cordelius",
@@ -31063,7 +31063,7 @@
           "winRate": 68.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/doug",
@@ -31493,7 +31493,7 @@
           "winRate": 67.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/pearl",
@@ -31747,14 +31747,14 @@
           {
             "id": 23000611,
             "name": "Rerouting",
-            "description": "Chuck removes the nearest Post and charges <!card.accessory.customValue1>% of his Super.",
+            "description": "Chuck removes the nearest Post and charges % of his Super.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000611.png",
             "released": true
           },
           {
             "id": 23000612,
             "name": "Ghost Train",
-            "description": "Chuck's Supers can go through walls for <!card.accessory.activeTicks.ticksAsSeconds> seconds!",
+            "description": "Chuck's Supers can go through walls for seconds!",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000612.png",
             "released": true
           }
@@ -31763,14 +31763,14 @@
           {
             "id": 23000609,
             "name": "Pit Stop",
-            "description": "Placing a Pole slows <!card.trait.action.statusEffect.speedReducePercent>% any hit enemy for <!card.trait.action.statusEffect.durationTicks.ticksAsSeconds> sec.",
+            "description": "Placing a Pole slows % any hit enemy for sec.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000609.png",
             "released": true
           },
           {
             "id": 23000610,
             "name": "Tickets Please",
-            "description": "Dashing through enemies with his Super will also steal <!card.trait.value>% of their ammo.",
+            "description": "Dashing through enemies with his Super will also steal % of their ammo.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000610.png",
             "released": true
           }
@@ -31923,7 +31923,7 @@
           "winRate": 65,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/chuck",
@@ -32353,7 +32353,7 @@
           "winRate": 70,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/charlie",
@@ -32607,7 +32607,7 @@
           {
             "id": 23000639,
             "name": "Clipping Scream",
-            "description": "Mico lets out a deafening scream towards the nearest enemy, dealing <!card.character.weaponskill.damage.scaletolevel.scaleaccessoryvalue2> damage and slowing down enemies for <!card.accessory.customobjectprojectile.statuseffectenemy.duration.ticksasseconds> seconds on hit.",
+            "description": "Mico lets out a deafening scream towards the nearest enemy, dealing damage and slowing down enemies for seconds on hit.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000639.png",
             "released": true
           },
@@ -32783,7 +32783,7 @@
           "winRate": 65.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/mico",
@@ -33213,7 +33213,7 @@
           "winRate": 62.6,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/kit",
@@ -33749,7 +33749,7 @@
           {
             "id": 23000667,
             "name": "Fast Beats",
-            "description": "Melodie gains <!card.statuseffect.baseSpeedIncreasePercent>% increased movement speed from each note orbiting her.",
+            "description": "Melodie gains % increased movement speed from each note orbiting her.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000667.png",
             "released": true
           },
@@ -33909,7 +33909,7 @@
           "winRate": 66.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/melodie",
@@ -34186,7 +34186,7 @@
           {
             "id": 23000676,
             "name": "Flow",
-            "description": "Angelo gains <!card.statuseffect.baseSpeedIncreasePercent>% increased movement speed after entering water.",
+            "description": "Angelo gains % increased movement speed after entering water.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000676.png",
             "released": true
           }
@@ -34339,7 +34339,7 @@
           "winRate": 64.8,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/angelo",
@@ -34769,7 +34769,7 @@
           "winRate": 70.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/draco",
@@ -35046,7 +35046,7 @@
           {
             "id": 23000753,
             "name": "Vigilance",
-            "description": "Gain <!card.statuseffect.baseSpeedIncreasePercent>% movement speed while an enemy is in her Super charge radius.",
+            "description": "Gain % movement speed while an enemy is in her Super charge radius.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000753.png",
             "released": true
           }
@@ -35199,7 +35199,7 @@
           "winRate": 64.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/lily",
@@ -35629,7 +35629,7 @@
           "winRate": 65.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/berry",
@@ -36059,7 +36059,7 @@
           "winRate": 68.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/clancy",
@@ -36336,7 +36336,7 @@
           {
             "id": 23000805,
             "name": "Speeding Ticket",
-            "description": "Moe's Driller has <!card.statuseffect.basespeedincreasepercent>% increased travel speed.",
+            "description": "Moe's Driller has % increased travel speed.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000805.png",
             "released": true
           }
@@ -36489,7 +36489,7 @@
           "winRate": 68.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/moe",
@@ -36919,7 +36919,7 @@
           "winRate": 65.8,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/kenji",
@@ -37173,14 +37173,14 @@
           {
             "id": 23000834,
             "name": "Longarms",
-            "description": "The next main attack has <!card.accessory.customValue1>% longer range.",
+            "description": "The next main attack has % longer range.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000834.png",
             "released": true
           },
           {
             "id": 23000835,
             "name": "Jump Scare",
-            "description": "Shade jumps a short distance, fearing enemies for <!card.accessory.skill.areaEffectObject2.statusEffectEnemy.duration.ticksAsSeconds> sec when landing.",
+            "description": "Shade jumps a short distance, fearing enemies for sec when landing.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000835.png",
             "released": true
           }
@@ -37196,7 +37196,7 @@
           {
             "id": 23000833,
             "name": "Hardened Hoodie",
-            "description": "Shade gets <!card.statuseffect.shieldpercent>% damage reduction while in its Incorporeal Form.",
+            "description": "Shade gets % damage reduction while in its Incorporeal Form.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000833.png",
             "released": true
           }
@@ -37349,7 +37349,7 @@
           "winRate": 67,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/shade",
@@ -37626,7 +37626,7 @@
           {
             "id": 23000849,
             "name": "Numbing Needles",
-            "description": "Gris-Gris' attack now also slows the enemy for <!card.projectile.statuseffectenemy.duration.ticksasseconds> sec",
+            "description": "Gris-Gris' attack now also slows the enemy for sec",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000849.png",
             "released": true
           }
@@ -37779,7 +37779,7 @@
           "winRate": 70.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/juju",
@@ -38304,7 +38304,7 @@
           {
             "id": 23000876,
             "name": "Rule Bending",
-            "description": "Critical success also increases allies reload speed within the area by <VALUE>%.",
+            "description": "Critical success also increases allies reload speed within the area by %.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000876.png",
             "released": true
           }
@@ -38457,7 +38457,7 @@
           "winRate": 61.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/meeple",
@@ -38737,14 +38737,14 @@
           {
             "id": 23000883,
             "name": "Kick Push",
-            "description": "While near walls, Ollie kicks off his hoverboard and gains <!card.statuseffect.baseSpeedIncreasePercent>% extra movement speed.",
+            "description": "While near walls, Ollie kicks off his hoverboard and gains % extra movement speed.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000883.png",
             "released": true
           },
           {
             "id": 23000884,
             "name": "Renegade",
-            "description": "After dashing forward with his Super, Ollie gains a <!card.value1> decaying shield over <!card.value2.ticksasseconds> seconds.",
+            "description": "After dashing forward with his Super, Ollie gains a decaying shield over seconds.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000884.png",
             "released": true
           }
@@ -38914,7 +38914,7 @@
           "winRate": 72.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/ollie",
@@ -39342,7 +39342,7 @@
           "winRate": 65.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/lumi",
@@ -39612,7 +39612,7 @@
           {
             "id": 23000915,
             "name": "Hieroglyph Halt",
-            "description": "Finx reduces the reload speed of any enemy Brawlers hit by his main attack by <!card.value1>% for <!card.value2.ticksasseconds> seconds.",
+            "description": "Finx reduces the reload speed of any enemy Brawlers hit by his main attack by % for seconds.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000915.png",
             "released": true
           },
@@ -39772,7 +39772,7 @@
           "winRate": 69.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/finx",
@@ -40042,7 +40042,7 @@
           {
             "id": 23000929,
             "name": "The Crowd Goes Mild",
-            "description": "Being near teammates gives Jae-yong a <!card.statuseffect.baseSpeedIncreasePercent>% speed boost per teammate in range.",
+            "description": "Being near teammates gives Jae-yong a % speed boost per teammate in range.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000929.png",
             "released": true
           },
@@ -40202,7 +40202,7 @@
           "winRate": 70.6,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/jae-yong",
@@ -40627,7 +40627,7 @@
           "winRate": 63.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/kaze",
@@ -41057,7 +41057,7 @@
           "winRate": 66.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/alli",
@@ -41514,7 +41514,7 @@
           "winRate": 67.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/trunk",
@@ -41961,7 +41961,7 @@
           "winRate": 64.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/mina",
@@ -42390,7 +42390,7 @@
           "winRate": 69.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/ziggy",
@@ -42667,7 +42667,7 @@
           {
             "id": 23001061,
             "name": "Slip N Snipe",
-            "description": "When collecting a shell, Pierce gains a short burst (<!card.statusEffect.baseSpeedIncreasePercent>%) of movement speed.",
+            "description": "When collecting a shell, Pierce gains a short burst ( %) of movement speed.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23001061.png",
             "released": true
           }
@@ -42815,7 +42815,7 @@
           "winRate": 63.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/pierce",
@@ -43245,7 +43245,7 @@
           "winRate": 69.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gigi",
@@ -43499,7 +43499,7 @@
           {
             "id": 23001183,
             "name": "Slippery Savior",
-            "description": "Glowy dashes in a target direction, healing himself and teammates for <!card.accessory.skill.areaEffectObject2.statusEffect.healingTotal.scaleToLevel> on arrival.",
+            "description": "Glowy dashes in a target direction, healing himself and teammates for on arrival.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23001183.png",
             "released": true
           },
@@ -43522,7 +43522,7 @@
           {
             "id": 23001182,
             "name": "Parasitism",
-            "description": "Tethering to an enemy also heals Glowy for x% of the damage dealt.",
+            "description": "Tethering to an enemy also heals Glowy for x% of the damage dealt.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23001182.png",
             "released": true
           }
@@ -43640,7 +43640,7 @@
           "winRate": 70.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/glowy",
@@ -43753,14 +43753,14 @@
           {
             "id": 23001191,
             "name": "A Starr Is Born",
-            "description": "Sirius fires a projectile that summons a Shadow on hit, also slowing the hit target by <!card.accessory.skill.projectile.statusEffectEnemy.speedReducePercent>% for <!card.accessory.skill.projectile.statusEffectEnemy.duration.ticksAsSeconds> sec.",
+            "description": "Sirius fires a projectile that summons a Shadow on hit, also slowing the hit target by % for sec.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23001191.png",
             "released": true
           },
           {
             "id": 23001192,
             "name": "Master Of Shadows",
-            "description": "Summoned Shadows return to Sirius, who heals them for <!card.accessory.customValue1>% of their health.",
+            "description": "Summoned Shadows return to Sirius, who heals them for % of their health.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23001192.png",
             "released": true
           }
@@ -43769,7 +43769,7 @@
           {
             "id": 23001189,
             "name": "Dusk Runners",
-            "description": "Shadows have +<!card.statusEffect.baseSpeedIncreasePercent>% movement speed.",
+            "description": "Shadows have + % movement speed.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23001189.png",
             "released": true
           },
@@ -43929,7 +43929,7 @@
           "winRate": 67.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/sirius",
@@ -44183,7 +44183,7 @@
           {
             "id": 23001218,
             "name": "Poison Puddles",
-            "description": "All enemies currently poisoned by Najia will create poisonous puddles for the next <!card.character.component.statusEffect[3].duration.ticksAsSeconds> sec.",
+            "description": "All enemies currently poisoned by Najia will create poisonous puddles for the next sec.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23001218.png",
             "released": true
           },
@@ -44206,7 +44206,7 @@
           {
             "id": 23001217,
             "name": "Venomous",
-            "description": "Poison damage scales with the target Brawler's current percent health, dealing up to an extra <!card.character.component.trait[1].statusEffect.damage.scaleToLevel> damage when a target is at 100% health.",
+            "description": "Poison damage scales with the target Brawler's current percent health, dealing up to an extra damage when a target is at 100% health.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23001217.png",
             "released": true
           }
@@ -44359,7 +44359,7 @@
           "winRate": 66,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/najia",
@@ -44613,7 +44613,7 @@
           {
             "id": 23001247,
             "name": "Spiritual Healing",
-            "description": "Damian throws his microphone to a target location. The first teammate to pick it up is healed for <!card.accessory.skill.spawneditem.statuseffectally.healing.scaletolevel> health.",
+            "description": "Damian throws his microphone to a target location. The first teammate to pick it up is healed for health.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23001247.png",
             "released": true
           },
@@ -44629,7 +44629,7 @@
           {
             "id": 23001245,
             "name": "Crowdkill",
-            "description": "Knocking a target into a wall stuns them for <!card.value1.ticksasseconds> sec.",
+            "description": "Knocking a target into a wall stuns them for sec.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23001245.png",
             "released": true
           },
@@ -44789,7 +44789,7 @@
           "winRate": 69.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/damian",
@@ -45050,7 +45050,7 @@
           {
             "id": 23001256,
             "name": "Shining Starr Of Friendship And Justice",
-            "description": "Starr Nova fires an energy ball that damages enemies and heals teammates for <!card.accessory.skill.damage.scaleStatToLevel>. This energy ball can also be teleported to before it hits a target!",
+            "description": "Starr Nova fires an energy ball that damages enemies and heals teammates for . This energy ball can also be teleported to before it hits a target!",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23001256.png",
             "released": true
           }
@@ -45059,14 +45059,14 @@
           {
             "id": 23001253,
             "name": "Power Level Maximum",
-            "description": "Hitting an enemy Brawler while transformed increases your damage by <!card.statuseffect.damageboostpercent>% to a maximum of <!card.statuseffect.damageboostpercent.scalecardvalue2>%.",
+            "description": "Hitting an enemy Brawler while transformed increases your damage by % to a maximum of %.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23001253.png",
             "released": true
           },
           {
             "id": 23001254,
             "name": "Mystical Starr Technique",
-            "description": "Starr Nova's main attack also heals teammates for <!card.character.weaponSkill.damage.scaleStatToLevel.scaleByCardProjectileHealOwnPercent>, charging her Super based on healing.",
+            "description": "Starr Nova's main attack also heals teammates for , charging her Super based on healing.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23001254.png",
             "released": true
           }
@@ -45504,7 +45504,7 @@
           {
             "id": 23001280,
             "name": "Unstoppaball",
-            "description": "Bolt is immune to crowd control for <!card.statusEffect.duration.ticksAsSeconds> seconds after activating his Super.",
+            "description": "Bolt is immune to crowd control for seconds after activating his Super.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23001280.png",
             "released": true
           }
@@ -45657,7 +45657,7 @@
           "winRate": 73.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bolt",
@@ -45911,14 +45911,14 @@
           {
             "id": 23001297,
             "name": "Sushi Snack",
-            "description": "Nori eats up to <!card.accessory.value2> fish to heal himself for <!card.accessory.value1> per fish.",
+            "description": "Nori eats up to fish to heal himself for per fish.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23001297.png",
             "released": true
           },
           {
             "id": 23001298,
             "name": "Gonna Need A Bigger Net",
-            "description": "Aim a fishing net that roots the first Brawler hit for <!card.character.component[0].statuseffect[0].duration.ticksasseconds> sec and deals <!card.accessory.skill.damage.scaleToLevel> damage.",
+            "description": "Aim a fishing net that roots the first Brawler hit for sec and deals damage.",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23001298.png",
             "released": true
           }
@@ -45927,14 +45927,14 @@
           {
             "id": 23001295,
             "name": "Big Haul",
-            "description": "Nori catches <!card.value1> fish when his Super hits enemy Brawlers.",
+            "description": "Nori catches fish when his Super hits enemy Brawlers.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23001295.png",
             "released": true
           },
           {
             "id": 23001296,
             "name": "His Mothers Son",
-            "description": "Nori gains +<!card.statuseffect.baseSpeedIncreasePercent>% speed for <!card.statuseffect.duration.ticksasseconds> sec whenever he hits an enemy with his Main Attack.",
+            "description": "Nori gains + % speed for sec whenever he hits an enemy with his Main Attack.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23001296.png",
             "released": true
           }
@@ -46087,7 +46087,7 @@
           "winRate": 67.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/nori",
@@ -46364,7 +46364,7 @@
           {
             "id": 23001319,
             "name": "Solar Shield",
-            "description": "Wendy's shield generator gains an additional <!card.value.scaleToLevel> health.",
+            "description": "Wendy's shield generator gains an additional health.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23001319.png",
             "released": true
           }
@@ -46517,7 +46517,7 @@
           "winRate": 76.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/wendy",
@@ -46778,7 +46778,7 @@
           {
             "id": 23001445,
             "name": "Telescope Trap",
-            "description": "Cosmo uses his telescope to reveal an area for <!card.accessory.skill.projectile.spawnareaeffectobject.timems.msasseconds>s sec, including invisible enemies. Enemy Brawlers inside this area cannot use movement abilities (dashes, jumps, teleports, etc.).",
+            "description": "Cosmo uses his telescope to reveal an area for s sec, including invisible enemies. Enemy Brawlers inside this area cannot use movement abilities (dashes, jumps, teleports, etc.).",
             "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23001445.png",
             "released": true
           }
@@ -46787,14 +46787,14 @@
           {
             "id": 23001442,
             "name": "Precession",
-            "description": "Increases the orbit speed of Cosmo's main attack by <!card.character.component[0].trait[0].value>%.",
+            "description": "Increases the orbit speed of Cosmo's main attack by %.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23001442.png",
             "released": true
           },
           {
             "id": 23001443,
             "name": "Ammo Attractor",
-            "description": "Hitting an enemy with Cosmo's Super reloads <!card.value1> ammo.",
+            "description": "Hitting an enemy with Cosmo's Super reloads ammo.",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23001443.png",
             "released": true
           }
@@ -46947,7 +46947,7 @@
           "winRate": 66.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:17:20.810Z"
+          "updatedAt": "2026-09-27T12:28:42.380Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/cosmo",
@@ -47155,7 +47155,7 @@
           "id": 107,
           "name": "Collect Caterpillars To Become More Powerful"
         },
-        "description": "Vince tends to both the espresso machine and his many-legged friends, much to his customers' dismay.  He walks slowly around his Creepy Café, careful not to step on any of his beloved bugs. His companions, Mocha and Doppio, follow him everywhere.",
+        "description": "Vince tends to both the espresso machine and his many-legged friends, much to his customers' dismay. He walks slowly around his Creepy Café, careful not to step on any of his beloved bugs. His companions, Mocha and Doppio, follow him everywhere.",
         "shortDescription": ""
       },
       "portrait": {
@@ -47224,7 +47224,7 @@
           {
             "id": 23001451,
             "name": "Bug Bandage",
-            "description": "Turning a caterpillar into a moth heals Vince for <!card.value1.scaleStatToLevel>.",
+            "description": "Turning a caterpillar into a moth heals Vince for .",
             "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23001451.png",
             "released": true
           }

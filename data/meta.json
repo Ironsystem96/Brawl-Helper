@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-27T12:17:20.810Z",
+  "updatedAt": "2026-09-27T12:28:42.380Z",
   "source": "Brawl Time Ninja + NOFF + optional BrawlMetrics fallback",
   "method": "Global battle signal from Brawl Time Ninja; mode and map context from NOFF when available; BrawlMetrics is an optional fallback.",
   "coverage": {
@@ -10,6 +10,28 @@
   },
   "entries": {
     "Vince": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 50,
         "rank": null,
@@ -21,6 +43,28 @@
       "maps": {}
     },
     "Cosmo": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 74,
         "rank": null,
@@ -231,6 +275,28 @@
       }
     },
     "Wendy": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 59,
         "rank": null,
@@ -427,6 +493,28 @@
       }
     },
     "Nori": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 46,
         "rank": null,
@@ -637,6 +725,28 @@
       }
     },
     "Bolt": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": false,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 4,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 38,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 30,
         "rank": null,
@@ -847,6 +957,28 @@
       }
     },
     "Starr Nova": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 46,
         "rank": null,
@@ -1057,6 +1189,28 @@
       }
     },
     "Damian": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 34,
         "rank": null,
@@ -1260,6 +1414,28 @@
       }
     },
     "Najia": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 38,
         "rank": null,
@@ -1470,6 +1646,28 @@
       }
     },
     "Sirius": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 34,
         "rank": null,
@@ -1680,6 +1878,28 @@
       }
     },
     "Glowy": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 70,
         "rank": null,
@@ -1691,6 +1911,28 @@
       "maps": {}
     },
     "Gigi": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 48,
         "rank": null,
@@ -1901,6 +2143,28 @@
       }
     },
     "Pierce": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 51,
         "rank": null,
@@ -2111,6 +2375,28 @@
       }
     },
     "Ziggy": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 49,
         "rank": null,
@@ -2321,6 +2607,28 @@
       }
     },
     "Mina": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 45,
         "rank": null,
@@ -2531,6 +2839,28 @@
       }
     },
     "Trunk": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 53,
         "rank": null,
@@ -2741,6 +3071,28 @@
       }
     },
     "Alli": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 42,
         "rank": null,
@@ -2951,6 +3303,28 @@
       }
     },
     "Kaze": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 51,
         "rank": null,
@@ -3140,6 +3514,28 @@
       }
     },
     "Jae-Yong": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 54,
         "rank": null,
@@ -3341,6 +3737,28 @@
       }
     },
     "Finx": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 50,
         "rank": null,
@@ -3551,6 +3969,28 @@
       }
     },
     "Lumi": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 55,
         "rank": null,
@@ -3761,6 +4201,28 @@
       }
     },
     "Ollie": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 46,
         "rank": null,
@@ -3964,6 +4426,28 @@
       }
     },
     "Meeple": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 51,
         "rank": null,
@@ -4174,6 +4658,28 @@
       }
     },
     "Buzz Lightyear": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": false,
+          "starPowers": false,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 1,
+          "starPowers": 3,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 25,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 50,
         "rank": null,
@@ -4185,6 +4691,28 @@
       "maps": {}
     },
     "Juju": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 56,
         "rank": null,
@@ -4395,6 +4923,28 @@
       }
     },
     "Shade": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 61,
         "rank": null,
@@ -4591,6 +5141,28 @@
       }
     },
     "Kenji": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 38,
         "rank": null,
@@ -4794,6 +5366,28 @@
       }
     },
     "Moe": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 58,
         "rank": null,
@@ -5004,6 +5598,28 @@
       }
     },
     "Clancy": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 26,
         "rank": null,
@@ -5214,6 +5830,28 @@
       }
     },
     "Berry": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 42,
         "rank": null,
@@ -5424,6 +6062,28 @@
       }
     },
     "Lily": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 32,
         "rank": null,
@@ -5627,6 +6287,28 @@
       }
     },
     "Draco": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 44,
         "rank": null,
@@ -5837,6 +6519,28 @@
       }
     },
     "Angelo": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 50,
         "rank": null,
@@ -6047,6 +6751,28 @@
       }
     },
     "Melodie": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 45,
         "rank": null,
@@ -6257,6 +6983,28 @@
       }
     },
     "Larry & Lawrie": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 50,
         "rank": null,
@@ -6268,6 +7016,28 @@
       "maps": {}
     },
     "Kit": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 34,
         "rank": null,
@@ -6471,6 +7241,28 @@
       }
     },
     "Mico": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 39,
         "rank": null,
@@ -6681,6 +7473,28 @@
       }
     },
     "Charlie": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 56,
         "rank": null,
@@ -6891,6 +7705,28 @@
       }
     },
     "Chuck": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 49,
         "rank": null,
@@ -7101,6 +7937,28 @@
       }
     },
     "Pearl": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 52,
         "rank": null,
@@ -7311,6 +8169,28 @@
       }
     },
     "Doug": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 52,
         "rank": null,
@@ -7514,6 +8394,28 @@
       }
     },
     "Cordelius": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 35,
         "rank": null,
@@ -7717,6 +8619,28 @@
       }
     },
     "Hank": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 52,
         "rank": null,
@@ -7927,6 +8851,28 @@
       }
     },
     "Maisie": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 60,
         "rank": null,
@@ -8137,6 +9083,28 @@
       }
     },
     "Willow": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 52,
         "rank": null,
@@ -8347,6 +9315,28 @@
       }
     },
     "R-T": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 46,
         "rank": null,
@@ -8557,6 +9547,28 @@
       }
     },
     "Mandy": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 40,
         "rank": null,
@@ -8767,6 +9779,28 @@
       }
     },
     "Gray": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 51,
         "rank": null,
@@ -8977,6 +10011,28 @@
       }
     },
     "Chester": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 34,
         "rank": null,
@@ -9187,6 +10243,28 @@
       }
     },
     "Buster": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 48,
         "rank": null,
@@ -9397,6 +10475,28 @@
       }
     },
     "Gus": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 65,
         "rank": null,
@@ -9607,6 +10707,28 @@
       }
     },
     "Sam": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 39,
         "rank": null,
@@ -9817,6 +10939,28 @@
       }
     },
     "Otis": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 50,
         "rank": null,
@@ -10027,6 +11171,28 @@
       }
     },
     "Bonnie": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 47,
         "rank": null,
@@ -10237,6 +11403,28 @@
       }
     },
     "Janet": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 47,
         "rank": null,
@@ -10440,6 +11628,28 @@
       }
     },
     "Eve": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 57,
         "rank": null,
@@ -10650,6 +11860,28 @@
       }
     },
     "Fang": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 28,
         "rank": null,
@@ -10860,6 +12092,28 @@
       }
     },
     "Lola": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 59,
         "rank": null,
@@ -11070,6 +12324,28 @@
       }
     },
     "Meg": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 57,
         "rank": null,
@@ -11273,6 +12549,28 @@
       }
     },
     "Ash": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 53,
         "rank": null,
@@ -11483,6 +12781,28 @@
       }
     },
     "Griff": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 51,
         "rank": null,
@@ -11693,6 +13013,28 @@
       }
     },
     "Buzz": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 35,
         "rank": null,
@@ -11889,6 +13231,28 @@
       }
     },
     "Grom": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 43,
         "rank": null,
@@ -12099,6 +13463,28 @@
       }
     },
     "Squeak": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 43,
         "rank": null,
@@ -12309,6 +13695,28 @@
       }
     },
     "Belle": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 58,
         "rank": null,
@@ -12519,6 +13927,28 @@
       }
     },
     "Stu": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 42,
         "rank": null,
@@ -12729,6 +14159,28 @@
       }
     },
     "Ruffs": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 48,
         "rank": null,
@@ -12939,6 +14391,28 @@
       }
     },
     "Edgar": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 24,
         "rank": null,
@@ -13142,6 +14616,28 @@
       }
     },
     "Byron": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 47,
         "rank": null,
@@ -13352,6 +14848,28 @@
       }
     },
     "Lou": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 60,
         "rank": null,
@@ -13562,6 +15080,28 @@
       }
     },
     "Amber": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 71,
         "rank": null,
@@ -13772,6 +15312,28 @@
       }
     },
     "Colette": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 43,
         "rank": null,
@@ -13982,6 +15544,28 @@
       }
     },
     "Surge": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 38,
         "rank": null,
@@ -14178,6 +15762,28 @@
       }
     },
     "Sprout": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 50,
         "rank": null,
@@ -14388,6 +15994,28 @@
       }
     },
     "Nani": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 59,
         "rank": null,
@@ -14598,6 +16226,28 @@
       }
     },
     "Gale": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 41,
         "rank": null,
@@ -14808,6 +16458,28 @@
       }
     },
     "Jacky": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 41,
         "rank": null,
@@ -15018,6 +16690,28 @@
       }
     },
     "Max": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 61,
         "rank": null,
@@ -15228,6 +16922,28 @@
       }
     },
     "Mr. P": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 47,
         "rank": null,
@@ -15438,6 +17154,28 @@
       }
     },
     "Emz": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 46,
         "rank": null,
@@ -15648,6 +17386,28 @@
       }
     },
     "Bea": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 41,
         "rank": null,
@@ -15858,6 +17618,28 @@
       }
     },
     "Sandy": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 50,
         "rank": null,
@@ -16068,6 +17850,28 @@
       }
     },
     "8-Bit": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 58,
         "rank": null,
@@ -16278,6 +18082,28 @@
       }
     },
     "Bibi": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 28,
         "rank": null,
@@ -16481,6 +18307,28 @@
       }
     },
     "Carl": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 51,
         "rank": null,
@@ -16691,6 +18539,28 @@
       }
     },
     "Rosa": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 50,
         "rank": null,
@@ -16901,6 +18771,28 @@
       }
     },
     "Leon": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 34,
         "rank": null,
@@ -17111,6 +19003,28 @@
       }
     },
     "Tick": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 18,
         "rank": null,
@@ -17321,6 +19235,28 @@
       }
     },
     "Gene": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 50,
         "rank": null,
@@ -17531,6 +19467,28 @@
       }
     },
     "Frank": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 40,
         "rank": null,
@@ -17741,6 +19699,28 @@
       }
     },
     "Penny": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 39,
         "rank": null,
@@ -17951,6 +19931,28 @@
       }
     },
     "Darryl": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 34,
         "rank": null,
@@ -18161,6 +20163,28 @@
       }
     },
     "Tara": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 47,
         "rank": null,
@@ -18371,6 +20395,28 @@
       }
     },
     "Pam": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 52,
         "rank": null,
@@ -18581,6 +20627,28 @@
       }
     },
     "Piper": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 48,
         "rank": null,
@@ -18791,6 +20859,28 @@
       }
     },
     "Bo": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 50,
         "rank": null,
@@ -19001,6 +21091,28 @@
       }
     },
     "Poco": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 50,
         "rank": null,
@@ -19211,6 +21323,28 @@
       }
     },
     "Crow": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 25,
         "rank": null,
@@ -19421,6 +21555,28 @@
       }
     },
     "Mortis": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 26,
         "rank": null,
@@ -19624,6 +21780,28 @@
       }
     },
     "El Primo": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 57,
         "rank": null,
@@ -19834,6 +22012,28 @@
       }
     },
     "Dynamike": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 31,
         "rank": null,
@@ -20037,6 +22237,28 @@
       }
     },
     "Nita": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 42,
         "rank": null,
@@ -20240,6 +22462,28 @@
       }
     },
     "Jessie": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 35,
         "rank": null,
@@ -20450,6 +22694,28 @@
       }
     },
     "Barley": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 44,
         "rank": null,
@@ -20653,6 +22919,28 @@
       }
     },
     "Spike": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 37,
         "rank": null,
@@ -20863,6 +23151,28 @@
       }
     },
     "Rico": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 50,
         "rank": null,
@@ -21073,6 +23383,28 @@
       }
     },
     "Brock": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 53,
         "rank": null,
@@ -21283,6 +23615,28 @@
       }
     },
     "Bull": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 36,
         "rank": null,
@@ -21479,6 +23833,28 @@
       }
     },
     "Colt": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 29,
         "rank": null,
@@ -21689,6 +24065,28 @@
       }
     },
     "Shelly": {
+      "completeness": {
+        "checks": {
+          "identity": true,
+          "portrait": true,
+          "gadgets": true,
+          "starPowers": true,
+          "gears": false,
+          "hyperCharges": false,
+          "overdrives": false,
+          "buffies": false
+        },
+        "components": {
+          "gadgets": 2,
+          "starPowers": 2,
+          "gears": 0,
+          "hyperCharges": 0,
+          "overdrives": 0,
+          "buffies": 0
+        },
+        "score": 50,
+        "status": "INCOMPLETE"
+      },
       "default": {
         "score": 32,
         "rank": null,
