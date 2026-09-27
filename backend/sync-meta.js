@@ -52,9 +52,9 @@ function parseNoff(html,brawler){
   for(const name of gearNames){const i=text.toLowerCase().indexOf(name.toLowerCase());if(i<0)continue;const tail=text.slice(i,i+100);const m=tail.match(/\s*(\d{1,3})%/i);if(m)gears.push({name,pick:Number(m[1])});}
   // NOFF exposes the current Overdrive and the three Buffie effects in the brawler page.
   // Keep them as named guide data so the frontend does not have to infer them from slots.
-  const odMatch=text.match(/Overdrive\\s+([^%]{2,90}?)(?:\\s+Buffs while|\\s+Damage|\\s+Speed|\\s+Shield|\\s+Buffie:)/i);
+  const odMatch=text.match(/Overdrive\s+([^%]{2,90}?)(?:\s+Buffs while|\s+Damage|\s+Speed|\s+Shield|\s+Buffie:)/i);
   if(odMatch){
-    const name=odMatch[1].trim().replace(/^Image\\s+/i,'').replace(/\\s+/g,' ');
+    const name=odMatch[1].trim().replace(/^Image\s+/i,'').replace(/\s+/g,' ');
     if(name && !/^Buffie$/i.test(name)) overdrives.push({id:'od:'+norm(brawler?.name||name).replace(/ /g,'_'),name,description:''});
   }
   const bNames=[
@@ -63,7 +63,7 @@ function parseNoff(html,brawler){
   ];
   for(const x of bNames){
     if(!x.name)continue;
-    const re=new RegExp(escRe(x.name)+'[\\s\\S]{0,900}?Buffie\\s*:\\s*([^\\.]{10,500}\\.)','i');
+    const re=new RegExp(escRe(x.name)+'[\s\S]{0,900}?Buffie\s*:\s*([^\.]{10,500}\.)','i');
     const bm=text.match(re);
     if(bm)buffies.push({id:'buffie:'+x.slot+':'+norm(brawler.name).replace(/ /g,'_'),slot:x.slot,source:x.name,name:x.name+' Buffie',description:bm[1].trim()});
   }
@@ -71,7 +71,7 @@ function parseNoff(html,brawler){
   const hcIdx=text.toLowerCase().indexOf('hypercharge');
   if(hcIdx>=0){
     const tail=text.slice(hcIdx,hcIdx+1800);
-    const bm=tail.match(/Buffie\\s*:\\s*([^\\.]{10,500}\\.)/i);
+    const bm=tail.match(/Buffie\s*:\s*([^\.]{10,500}\.)/i);
     if(bm)buffies.push({id:'buffie:hypercharge:'+norm(brawler.name).replace(/ /g,'_'),slot:'hypercharge',source:'Hypercharge',name:'Hypercharge Buffie',description:bm[1].trim()});
   }
   const stats={winRate:Number((text.match(/Win Rate\s*\(?([0-9.]+)%/i)||[])[1]||'NaN'),pickRate:Number((text.match(/Pick Rate\s*\(?([0-9.]+)%/i)||[])[1]||'NaN')};
