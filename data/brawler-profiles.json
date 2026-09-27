@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-27T21:09:24.528Z",
+  "generatedAt": "2026-09-27T23:03:17.653Z",
   "sources": [
     {
       "name": "BrawlAPI Brawler catalog",
@@ -341,7 +341,7 @@
           "winRate": 64.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/shelly",
@@ -850,7 +850,7 @@
           "winRate": 60.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/colt",
@@ -1359,7 +1359,7 @@
           "winRate": 64.8,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bull",
@@ -1868,7 +1868,7 @@
           "winRate": 62,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/brock",
@@ -2377,7 +2377,7 @@
           "winRate": 61.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/rico",
@@ -2892,10 +2892,10 @@
         ],
         "stats": {
           "sourceUrl": "https://brawltime.ninja/tier-list/brawler/spike",
-          "winRate": 62.2,
+          "winRate": 62.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/spike",
@@ -3338,7 +3338,7 @@
           "winRate": 65.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/barley",
@@ -3781,7 +3781,7 @@
           "winRate": 66.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/jessie",
@@ -4289,7 +4289,7 @@
           "winRate": 68.8,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/nita",
@@ -4724,7 +4724,7 @@
           "winRate": 60.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/dynamike",
@@ -5662,7 +5662,7 @@
           "winRate": 57.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/mortis",
@@ -6171,7 +6171,7 @@
           "winRate": 60.8,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/crow",
@@ -6606,7 +6606,7 @@
           "winRate": 64.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/poco",
@@ -7115,7 +7115,7 @@
           "winRate": 64.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bo",
@@ -7550,7 +7550,7 @@
           "winRate": 60.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/piper",
@@ -7977,10 +7977,10 @@
         "buffies": [],
         "stats": {
           "sourceUrl": "https://brawltime.ninja/tier-list/brawler/pam",
-          "winRate": 69.4,
+          "winRate": 69.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/pam",
@@ -8424,7 +8424,7 @@
           "winRate": 66.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/tara",
@@ -8867,7 +8867,7 @@
           "winRate": 66.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/darryl",
@@ -9301,7 +9301,7 @@
           "winRate": 63.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/penny",
@@ -9819,7 +9819,7 @@
           "winRate": 65.8,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/frank",
@@ -10253,7 +10253,7 @@
           "winRate": 62.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gene",
@@ -10688,7 +10688,7 @@
           "winRate": 62.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/tick",
@@ -11197,7 +11197,7 @@
           "winRate": 62.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/leon",
@@ -11632,7 +11632,7 @@
           "winRate": 71,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/rosa",
@@ -12067,7 +12067,7 @@
           "winRate": 65.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/carl",
@@ -12576,7 +12576,7 @@
           "winRate": 64.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bibi",
@@ -13085,7 +13085,7 @@
           "winRate": 66,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/8-bit",
@@ -13520,7 +13520,7 @@
           "winRate": 68.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/sandy",
@@ -13964,7 +13964,7 @@
           "winRate": 63.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bea",
@@ -14481,7 +14481,7 @@
           "winRate": 63.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/emz",
@@ -15427,7 +15427,7 @@
           "winRate": 62.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/max",
@@ -15861,7 +15861,7 @@
           "winRate": 70.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/jacky",
@@ -16296,7 +16296,7 @@
           "winRate": 64.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gale",
@@ -16731,7 +16731,7 @@
           "winRate": 63.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/nani",
@@ -17166,7 +17166,7 @@
           "winRate": 66.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/sprout",
@@ -17675,7 +17675,7 @@
           "winRate": 61.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/surge",
@@ -18184,7 +18184,7 @@
           "winRate": 61.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/colette",
@@ -18619,7 +18619,7 @@
           "winRate": 67.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/amber",
@@ -19051,10 +19051,10 @@
         "buffies": [],
         "stats": {
           "sourceUrl": "https://brawltime.ninja/tier-list/brawler/lou",
-          "winRate": 67.1,
+          "winRate": 67.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/lou",
@@ -19498,7 +19498,7 @@
           "winRate": 60.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/byron",
@@ -20001,7 +20001,7 @@
           "winRate": 61,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/edgar",
@@ -20435,7 +20435,7 @@
           "winRate": 64.6,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/ruffs",
@@ -20870,7 +20870,7 @@
           "winRate": 60.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/stu",
@@ -21305,7 +21305,7 @@
           "winRate": 65.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/belle",
@@ -21740,7 +21740,7 @@
           "winRate": 62.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/squeak",
@@ -22175,7 +22175,7 @@
           "winRate": 64.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/grom",
@@ -22610,7 +22610,7 @@
           "winRate": 63.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/buzz",
@@ -23119,7 +23119,7 @@
           "winRate": 63.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/griff",
@@ -23554,7 +23554,7 @@
           "winRate": 69.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/ash",
@@ -24049,7 +24049,7 @@
           "winRate": 67,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/meg",
@@ -24484,7 +24484,7 @@
           "winRate": 68.6,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/lola",
@@ -24928,7 +24928,7 @@
           "winRate": 63,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/fang",
@@ -25371,7 +25371,7 @@
           "winRate": 69.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/eve",
@@ -25814,7 +25814,7 @@
           "winRate": 69.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/janet",
@@ -26257,7 +26257,7 @@
           "winRate": 69.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bonnie",
@@ -26691,7 +26691,7 @@
           "winRate": 65.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/otis",
@@ -27126,7 +27126,7 @@
           "winRate": 70.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/sam",
@@ -27561,7 +27561,7 @@
           "winRate": 65.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gus",
@@ -27996,7 +27996,7 @@
           "winRate": 70.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/buster",
@@ -28459,7 +28459,7 @@
           "winRate": 63.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/chester",
@@ -28891,7 +28891,7 @@
           "winRate": 64.6,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gray",
@@ -29354,7 +29354,7 @@
           "winRate": 60.8,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/mandy",
@@ -29786,7 +29786,7 @@
           "winRate": 70.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/r-t",
@@ -30221,7 +30221,7 @@
           "winRate": 62.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/willow",
@@ -30665,7 +30665,7 @@
           "winRate": 67.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/maisie",
@@ -31108,7 +31108,7 @@
           "winRate": 69.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/hank",
@@ -31551,7 +31551,7 @@
           "winRate": 65.6,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/cordelius",
@@ -31994,7 +31994,7 @@
           "winRate": 68.8,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/doug",
@@ -32428,7 +32428,7 @@
           "winRate": 67.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/pearl",
@@ -32863,7 +32863,7 @@
           "winRate": 65,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/chuck",
@@ -33298,7 +33298,7 @@
           "winRate": 70,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/charlie",
@@ -33733,7 +33733,7 @@
           "winRate": 65.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/mico",
@@ -34168,7 +34168,7 @@
           "winRate": 62.6,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/kit",
@@ -34874,7 +34874,7 @@
           "winRate": 66.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/melodie",
@@ -35309,7 +35309,7 @@
           "winRate": 64.8,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/angelo",
@@ -35744,7 +35744,7 @@
           "winRate": 70.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/draco",
@@ -36188,7 +36188,7 @@
           "winRate": 64.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/lily",
@@ -36622,7 +36622,7 @@
           "winRate": 65.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/berry",
@@ -37057,7 +37057,7 @@
           "winRate": 68.6,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/clancy",
@@ -37492,7 +37492,7 @@
           "winRate": 68.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/moe",
@@ -37936,7 +37936,7 @@
           "winRate": 65.8,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/kenji",
@@ -38379,7 +38379,7 @@
           "winRate": 67,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/shade",
@@ -38822,7 +38822,7 @@
           "winRate": 70.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/juju",
@@ -39509,7 +39509,7 @@
           "winRate": 61.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/meeple",
@@ -39972,7 +39972,7 @@
           "winRate": 72.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/ollie",
@@ -40404,7 +40404,7 @@
           "winRate": 65.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/lumi",
@@ -40839,7 +40839,7 @@
           "winRate": 69.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/finx",
@@ -41274,7 +41274,7 @@
           "winRate": 70.6,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/jae-yong",
@@ -41704,7 +41704,7 @@
           "winRate": 63.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/kaze",
@@ -42139,7 +42139,7 @@
           "winRate": 66.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/alli",
@@ -42602,7 +42602,7 @@
           "winRate": 67.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/trunk",
@@ -43053,7 +43053,7 @@
           "winRate": 64.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/mina",
@@ -43496,7 +43496,7 @@
           "winRate": 69.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/ziggy",
@@ -43934,7 +43934,7 @@
           "winRate": 63.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/pierce",
@@ -44377,7 +44377,7 @@
           "winRate": 69.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gigi",
@@ -44776,7 +44776,7 @@
           "winRate": 70.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/glowy",
@@ -45070,7 +45070,7 @@
           "winRate": 67.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/sirius",
@@ -45505,7 +45505,7 @@
           "winRate": 66,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/najia",
@@ -45940,7 +45940,7 @@
           "winRate": 69.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/damian",
@@ -46818,7 +46818,7 @@
           "winRate": 73.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bolt",
@@ -47253,7 +47253,7 @@
           "winRate": 67.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/nori",
@@ -47688,7 +47688,7 @@
           "winRate": 76.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/wendy",
@@ -48123,7 +48123,7 @@
           "winRate": 66.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T21:06:33.197Z"
+          "updatedAt": "2026-09-27T23:02:04.518Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/cosmo",
