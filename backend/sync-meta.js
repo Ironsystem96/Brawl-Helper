@@ -37,15 +37,18 @@ function parsePickList(section){
   return out.slice(0,6);
 }
 
-function parseNoff(html){
+function escRe(s){return String(s||'').replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}
+function parseNoff(html,brawler){
   const text=clean(html);
-  const gadgets=parsePickList(pickSection(text,'Gadgets','Star Powers'));
-  const starPowers=parsePickList(pickSection(text,'Star Powers','Gear Pick Rates'));
+  const gadgets=[],starPowers=[],gears=[];
+  const parseNamed=(names,section,needle)=>{const out=[];for(const item of names||[]){const name=item?.name||item;const re=new RegExp(escRe(name)+'\\s+(\\d{1,3})%pick','i');const m=section.match(re);if(m)out.push({name,pick:Number(m[1])});}return out;};
+  const gadgetSection=pickSection(text,'Gadgets','Star Powers');
+  const starSection=pickSection(text,'Star Powers','Gear Pick Rates');
   const gearSection=pickSection(text,'Gear Pick Rates','Hypercharge');
-  const gears=[];
-  const gearRe=/([A-Za-z][A-Za-z0-9'’+&. -]{1,60}?)\s+(\d{1,3})%/g;
-  let gm;
-  while((gm=gearRe.exec(gearSection))){const name=gm[1].trim();if(name&&!/^(?:Gear Pick Rates|Image)$/i.test(name)&&!/^(?:pick|from)$/i.test(name))gears.push({name,pick:Number(gm[2])});}
+  gadgets.push(...parseNamed(brawler?.gadgets,gadgetSection,'pick'));
+  starPowers.push(...parseNamed(brawler?.starPowers,starSection,'pick'));
+  const gearNames=(brawler?.gears||[]).map(x=>x?.name||x);
+  for(const name of gearNames){const m=gearSection.match(new RegExp(escRe(name)+'\\s+(\\d{1,3})%','i'));if(m)gears.push({name,pick:Number(m[1])});}
   const stats={winRate:Number((text.match(/Win Rate\s*\(?([0-9.]+)%/i)||[])[1]||'NaN'),pickRate:Number((text.match(/Pick Rate\s*\(?([0-9.]+)%/i)||[])[1]||'NaN')};
   if(!Number.isFinite(stats.winRate))stats.winRate=null;
   if(!Number.isFinite(stats.pickRate))stats.pickRate=null;
@@ -54,9 +57,9 @@ function parseNoff(html){
   const mapBlock=pickSection(text,'Best Maps','Attacks');
   const modeNames=['Showdown','Duo Showdown','Trio Showdown','Bounty','Gem Grab','Heist','Brawl Ball','Hot Zone','Knockout','Wipeout','Basket Brawl','Duels','Hunters'];
   const modes={};
-  for(const name of modeNames){const re=new RegExp(name+'\\s+([0-9.]+)%\\s*([0-9.]+)%\\s*([0-9.]+)','i');const m=modeBlock.match(re);if(m)modes[name]={winRate:Number(m[1]),pickRate:Number(m[2]),score:Number(m[3])};}
+  for(const name of modeNames){const re=new RegExp(escRe(name)+'\\s+([0-9.]+)%\\s*([0-9.]+)%\\s*([0-9.]+)','i');const m=modeBlock.match(re);if(m)modes[name]={winRate:Number(m[1]),pickRate:Number(m[2]),score:Number(m[3])};}
   const maps=[];
-  const mapRe=/([A-Za-z0-9][A-Za-z0-9'’&.\\- ]{1,70}?)\\s+([0-9.]+)%\\s*([0-9.]+)%\\s*([0-9.]+)/g;
+  const mapRe=/([A-Za-z0-9][A-Za-z0-9'’&.\- ]{1,70}?)\s+([0-9.]+)%\s*([0-9.]+)%\s*([0-9.]+)/g;
   let mm;
   while((mm=mapRe.exec(mapBlock))){const name=mm[1].trim().replace(/^Image\s*/i,'');if(name&&!/^(?:Map|Win Rate|Pick Rate|Score|Show More)$/i.test(name))maps.push({name,winRate:Number(mm[2]),pickRate:Number(mm[3]),score:Number(mm[4])});}
   return {sample:sample?Number(sample.replace(/,/g,'')):null,gadget:gadgets.slice(0,1),starPower:starPowers.slice(0,1),gears:gears.slice(0,6),stats,modes,maps:maps.slice(0,20)};
@@ -84,7 +87,7 @@ async function main(){
     let build=previous.entries?.[b.name]||null;
     let noff=null;
     try{
-      const parsed=parseNoff(await get(NOFF+encodeURIComponent(slug)));
+      const parsed=parseNoff(await get(NOFF+encodeURIComponent(slug)),b);
       noff={sourceUrl:NOFF+slug,stats:parsed.stats,modes:parsed.modes,maps:parsed.maps,sample:parsed.sample};
       if(parsed.gadget.length||parsed.starPower.length||parsed.gears.length||parsed.sample){
         build={sourceUrl:NOFF+slug,sample:parsed.sample,gadget:parsed.gadget,starPower:parsed.starPower,gears:parsed.gears};
