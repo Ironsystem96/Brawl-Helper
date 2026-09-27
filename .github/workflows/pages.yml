@@ -26,8 +26,13 @@ jobs:
       - name: Check JavaScript syntax
         run: |
           node --check app.js
+          node --check recommendations.js
+          node --check backend/sync-assets.js
           node --check preboot.js
           node --check cache-cleanup.js
+
+      - name: Build local game assets
+        run: node backend/sync-assets.js
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
