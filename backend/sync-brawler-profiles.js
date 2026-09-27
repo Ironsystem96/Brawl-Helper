@@ -79,8 +79,7 @@ async function main(){
  }
  const vals=Object.values(profiles.entries);
  profiles.quality={brawlers:vals.length,coreComplete:vals.filter(x=>x.coverage.coreComplete).length,complete:vals.filter(x=>x.coverage.complete).length,partial:vals.filter(x=>!x.coverage.complete).length,averageScore:Math.round(vals.reduce((a,x)=>a+x.coverage.score,0)/vals.length),missingByField:Object.fromEntries([...new Set(vals.flatMap(x=>x.coverage.missing))].map(k=>[k,vals.filter(x=>x.coverage.missing.includes(k)).length]))};
- fs.writeFileSync(OUT,JSON.stringify(profiles,null,2)+'
-');
+ fs.writeFileSync(OUT,JSON.stringify(profiles,null,2)+'\\n');
  console.log(JSON.stringify(profiles.quality,null,2));
  if(profiles.quality.coreComplete!==profiles.quality.brawlers)throw Error('Core Brawler profile incomplete: '+(profiles.quality.brawlers-profiles.quality.coreComplete));
 }
