@@ -263,3 +263,26 @@ body{color:#f4f7fb}
  .bcard .portrait{width:54px;height:54px}
  .guideComponent .compIcon,.equippedItem .compIcon{width:36px;height:36px;flex-basis:36px}
 }
+
+/* UI pass v3 — compact mobile upgrade cards and stronger asset presentation */
+.upgradeCard{padding:11px 12px;margin:7px 0;border-radius:17px;background:linear-gradient(145deg,#172640,#101a2d);border:1px solid #465e85;box-shadow:0 5px 18px rgba(0,0,0,.16)}
+.upgradeTop{gap:9px}
+.priorityNum{width:28px;height:28px;flex-basis:28px;border-radius:9px;font-size:13px}
+.upgradePortrait{width:58px;height:58px;border-radius:14px;background:#0b1425;border:1px solid #526b92;padding:1px;object-fit:contain}
+.upgradeTop b{font-size:15px;line-height:1.1}
+.upgradeTop .small{font-size:10px;color:#aebbd0;margin-top:3px}
+.priorityLabel{padding:5px 8px}
+.upgradeActions{gap:5px;margin-top:8px}
+.priorityAction{min-height:42px;padding:7px 8px;align-items:center;border-radius:10px}
+.priorityIcon{width:24px;height:24px;border-radius:8px}
+.priorityAction b{font-size:10px;line-height:1.2}
+.priorityAction span:not(.priorityIcon){font-size:8.5px;line-height:1.25;margin-top:1px}
+.upgradeCard>.miniBuild{margin-top:7px}
+.upgradeIntro{font-size:10px;padding:9px 10px;margin:7px 0}
+.bcard .portrait{background:radial-gradient(circle at 50% 35%,#263b60,#0a1220 72%);padding:0}
+.bcard .bname{font-size:16px}
+.bcard .bMetaLine{font-size:10px}
+.bcard .chips{margin-top:5px}
+.miniItem{background:#18243a;border-color:#405274;color:#dce5f7}
+.miniItem .compIcon{width:25px;height:25px}
+.fallbackIcon{background:#243653;color:#ffd34e;border:1px solid #415b82}
