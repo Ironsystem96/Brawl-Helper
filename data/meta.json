@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-27T17:13:11.992Z",
+  "updatedAt": "2026-09-27T17:35:43.601Z",
   "source": "Brawl Time Ninja + NOFF + optional BrawlMetrics fallback",
   "method": "Global battle signal from Brawl Time Ninja; mode and map context from NOFF when available; BrawlMetrics is an optional fallback.",
   "coverage": {

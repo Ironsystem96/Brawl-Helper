@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-27T17:15:49.030Z",
+  "generatedAt": "2026-09-27T17:37:06.482Z",
   "sources": [
     {
       "name": "BrawlAPI Brawler catalog",
@@ -116,27 +116,47 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": {
-            "id": "buffie:gadget:SHELLY",
-            "slot": "gadget",
-            "source": "Fast Forward",
-            "name": "Fast Forward Buffie",
-            "description": "Take no damage while dashing."
-          },
-          "starPower": {
-            "id": "buffie:starPower:SHELLY",
-            "slot": "starPower",
-            "source": "Shell Shock",
-            "name": "Shell Shock Buffie",
-            "description": "Using patented Draco Dragonbreath shells, Shelly leaves a burning area with her Super."
-          },
-          "hyperCharge": {
-            "id": "buffie:hypercharge:SHELLY",
-            "slot": "hypercharge",
-            "source": "Hypercharge",
-            "name": "Hypercharge Buffie",
-            "description": "Main attack projectile speed is greatly increased during Hypercharge."
-          }
+          "gadget": [
+            {
+              "id": "buffie:gadget:SHELLY",
+              "slot": "gadget",
+              "source": "Fast Forward",
+              "name": "Fast Forward Buffie",
+              "description": "Take no damage while dashing."
+            },
+            {
+              "id": "buffie:gadget:SHELLY",
+              "slot": "gadget",
+              "source": "Clay Pigeons",
+              "name": "Clay Pigeons Buffie",
+              "description": "Attacks slow enemies."
+            }
+          ],
+          "starPower": [
+            {
+              "id": "buffie:starPower:SHELLY",
+              "slot": "starPower",
+              "source": "Shell Shock",
+              "name": "Shell Shock Buffie",
+              "description": "Using patented Draco Dragonbreath shells, Shelly leaves a burning area with her Super."
+            },
+            {
+              "id": "buffie:starPower:SHELLY",
+              "slot": "starPower",
+              "source": "Band-Aid",
+              "name": "Band-Aid Buffie",
+              "description": "Gain 15% movement speed for 3 secs."
+            }
+          ],
+          "hyperCharge": [
+            {
+              "id": "buffie:hypercharge:SHELLY",
+              "slot": "hypercharge",
+              "source": "Hypercharge",
+              "name": "Hypercharge Buffie",
+              "description": "Main attack projectile speed is greatly increased during Hypercharge."
+            }
+          ]
         },
         "gears": [
           {
@@ -321,7 +341,7 @@
           "winRate": 64.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/shelly",
@@ -605,27 +625,47 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": {
-            "id": "buffie:gadget:COLT",
-            "slot": "gadget",
-            "source": "Speedloader",
-            "name": "Speedloader Buffie",
-            "description": "Each hit steals 1 ammo."
-          },
-          "starPower": {
-            "id": "buffie:starPower:COLT",
-            "slot": "starPower",
-            "source": "Slick Boots",
-            "name": "Slick Boots Buffie",
-            "description": "Gain movement speed when dealing damage."
-          },
-          "hyperCharge": {
-            "id": "buffie:hypercharge:COLT",
-            "slot": "hypercharge",
-            "source": "Hypercharge",
-            "name": "Hypercharge Buffie",
-            "description": "Fire bullets quicker during Hypercharge."
-          }
+          "gadget": [
+            {
+              "id": "buffie:gadget:COLT",
+              "slot": "gadget",
+              "source": "Speedloader",
+              "name": "Speedloader Buffie",
+              "description": "Each hit steals 1 ammo."
+            },
+            {
+              "id": "buffie:gadget:COLT",
+              "slot": "gadget",
+              "source": "Silver Bullet",
+              "name": "Silver Bullet Buffie",
+              "description": "Shoot a larger bullet that deals more damage."
+            }
+          ],
+          "starPower": [
+            {
+              "id": "buffie:starPower:COLT",
+              "slot": "starPower",
+              "source": "Slick Boots",
+              "name": "Slick Boots Buffie",
+              "description": "Gain movement speed when dealing damage."
+            },
+            {
+              "id": "buffie:starPower:COLT",
+              "slot": "starPower",
+              "source": "Magnum Special",
+              "name": "Magnum Special Buffie",
+              "description": "Deal increased damage to distant targets."
+            }
+          ],
+          "hyperCharge": [
+            {
+              "id": "buffie:hypercharge:COLT",
+              "slot": "hypercharge",
+              "source": "Hypercharge",
+              "name": "Hypercharge Buffie",
+              "description": "Fire bullets quicker during Hypercharge."
+            }
+          ]
         },
         "gears": [
           {
@@ -810,7 +850,7 @@
           "winRate": 60.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/colt",
@@ -1094,27 +1134,47 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": {
-            "id": "buffie:gadget:BULL",
-            "slot": "gadget",
-            "source": "T-Bone Missile",
-            "name": "T-Bone Missile Buffie",
-            "description": "Mark the target for 5 sec, gaining 50% damage against the target as health."
-          },
-          "starPower": {
-            "id": "buffie:starPower:BULL",
-            "slot": "starPower",
-            "source": "Berserker",
-            "name": "Berserker Buffie",
-            "description": "Defeating a Brawler while this effect is active instantly charges Bull's Super."
-          },
-          "hyperCharge": {
-            "id": "buffie:hypercharge:BULL",
-            "slot": "hypercharge",
-            "source": "Hypercharge",
-            "name": "Hypercharge Buffie",
-            "description": "Bull's main attack deals less damage at long range but pierces all enemies."
-          }
+          "gadget": [
+            {
+              "id": "buffie:gadget:BULL",
+              "slot": "gadget",
+              "source": "T-Bone Missile",
+              "name": "T-Bone Missile Buffie",
+              "description": "Mark the target for 5 sec, gaining 50% damage against the target as health."
+            },
+            {
+              "id": "buffie:gadget:BULL",
+              "slot": "gadget",
+              "source": "Stomper",
+              "name": "Stomper Buffie",
+              "description": "Stunning an enemy grants +30% movement speed for 3 sec."
+            }
+          ],
+          "starPower": [
+            {
+              "id": "buffie:starPower:BULL",
+              "slot": "starPower",
+              "source": "Berserker",
+              "name": "Berserker Buffie",
+              "description": "Defeating a Brawler while this effect is active instantly charges Bull's Super."
+            },
+            {
+              "id": "buffie:starPower:BULL",
+              "slot": "starPower",
+              "source": "Tough Guy",
+              "name": "Tough Guy Buffie",
+              "description": "Defeating a Brawler while this effect is active makes Bull immune to damage for 0."
+            }
+          ],
+          "hyperCharge": [
+            {
+              "id": "buffie:hypercharge:BULL",
+              "slot": "hypercharge",
+              "source": "Hypercharge",
+              "name": "Hypercharge Buffie",
+              "description": "Bull's main attack deals less damage at long range but pierces all enemies."
+            }
+          ]
         },
         "gears": [
           {
@@ -1299,7 +1359,7 @@
           "winRate": 64.8,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bull",
@@ -1583,27 +1643,47 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": {
-            "id": "buffie:gadget:BROCK",
-            "slot": "gadget",
-            "source": "Rocket Laces",
-            "name": "Rocket Laces Buffie",
-            "description": "Hitting an enemy Brawler gives +2 sec movement speed."
-          },
-          "starPower": {
-            "id": "buffie:starPower:BROCK",
-            "slot": "starPower",
-            "source": "More Rockets",
-            "name": "More Rockets Buffie",
-            "description": "Brock gets +30% movement speed while firing his Super."
-          },
-          "hyperCharge": {
-            "id": "buffie:hypercharge:BROCK",
-            "slot": "hypercharge",
-            "source": "Hypercharge",
-            "name": "Hypercharge Buffie",
-            "description": "Rockin' Rockets fires an additional two small rockets, each dealing 60% damage of the main rocket."
-          }
+          "gadget": [
+            {
+              "id": "buffie:gadget:BROCK",
+              "slot": "gadget",
+              "source": "Rocket Laces",
+              "name": "Rocket Laces Buffie",
+              "description": "Hitting an enemy Brawler gives +2 sec movement speed."
+            },
+            {
+              "id": "buffie:gadget:BROCK",
+              "slot": "gadget",
+              "source": "Rocket Fuel",
+              "name": "Rocket Fuel Buffie",
+              "description": "The rocket breaks into 4 smaller rockets after exploding, dealing +75% damage of the large rocket."
+            }
+          ],
+          "starPower": [
+            {
+              "id": "buffie:starPower:BROCK",
+              "slot": "starPower",
+              "source": "More Rockets",
+              "name": "More Rockets Buffie",
+              "description": "Brock gets +30% movement speed while firing his Super."
+            },
+            {
+              "id": "buffie:starPower:BROCK",
+              "slot": "starPower",
+              "source": "Rocket No. 4",
+              "name": "Rocket No. 4 Buffie",
+              "description": "Every 6 sec Brock's next attack has increased range."
+            }
+          ],
+          "hyperCharge": [
+            {
+              "id": "buffie:hypercharge:BROCK",
+              "slot": "hypercharge",
+              "source": "Hypercharge",
+              "name": "Hypercharge Buffie",
+              "description": "Rockin' Rockets fires an additional two small rockets, each dealing 60% damage of the main rocket."
+            }
+          ]
         },
         "gears": [
           {
@@ -1788,7 +1868,7 @@
           "winRate": 62,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/brock",
@@ -2072,27 +2152,47 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": {
-            "id": "buffie:gadget:RICO",
-            "slot": "gadget",
-            "source": "Multiball Launcher",
-            "name": "Multiball Launcher Buffie",
-            "description": "When Rico bounces bullets off the vending machine, extra bullets are added to it when it explodes."
-          },
-          "starPower": {
-            "id": "buffie:starPower:RICO",
-            "slot": "starPower",
-            "source": "Super Bouncy",
-            "name": "Super Bouncy Buffie",
-            "description": "Bounced bullets also give 10% Super charge on hit."
-          },
-          "hyperCharge": {
-            "id": "buffie:hypercharge:RICO",
-            "slot": "hypercharge",
-            "source": "Hypercharge",
-            "name": "Hypercharge Buffie",
-            "description": "Rico's Main Attack has increased bullet speed and fires additional bullets."
-          }
+          "gadget": [
+            {
+              "id": "buffie:gadget:RICO",
+              "slot": "gadget",
+              "source": "Multiball Launcher",
+              "name": "Multiball Launcher Buffie",
+              "description": "When Rico bounces bullets off the vending machine, extra bullets are added to it when it explodes."
+            },
+            {
+              "id": "buffie:gadget:RICO",
+              "slot": "gadget",
+              "source": "Multiball",
+              "name": "Multiball Buffie",
+              "description": "When Rico bounces bullets off the vending machine, extra bullets are added to it when it explodes."
+            }
+          ],
+          "starPower": [
+            {
+              "id": "buffie:starPower:RICO",
+              "slot": "starPower",
+              "source": "Super Bouncy",
+              "name": "Super Bouncy Buffie",
+              "description": "Bounced bullets also give 10% Super charge on hit."
+            },
+            {
+              "id": "buffie:starPower:RICO",
+              "slot": "starPower",
+              "source": "Robo Retreat",
+              "name": "Robo Retreat Buffie",
+              "description": "Increase movement speed by up to 60% when Rico is at 10% health."
+            }
+          ],
+          "hyperCharge": [
+            {
+              "id": "buffie:hypercharge:RICO",
+              "slot": "hypercharge",
+              "source": "Hypercharge",
+              "name": "Hypercharge Buffie",
+              "description": "Rico's Main Attack has increased bullet speed and fires additional bullets."
+            }
+          ]
         },
         "gears": [
           {
@@ -2277,7 +2377,7 @@
           "winRate": 61.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/rico",
@@ -2561,27 +2661,47 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": {
-            "id": "buffie:gadget:SPIKE",
-            "slot": "gadget",
-            "source": "Popping Pincushion",
-            "name": "Popping Pincushion Buffie",
-            "description": "Targets that are hit with 2 needles become rooted for 1 second."
-          },
-          "starPower": {
-            "id": "buffie:starPower:SPIKE",
-            "slot": "starPower",
-            "source": "Fertilize",
-            "name": "Fertilize Buffie",
-            "description": "Super projectile speed is 30% faster."
-          },
-          "hyperCharge": {
-            "id": "buffie:hypercharge:SPIKE",
-            "slot": "hypercharge",
-            "source": "Hypercharge",
-            "name": "Hypercharge Buffie",
-            "description": "Main attack needle grenades detonate twice! Hypercharge duration: +2 sec."
-          }
+          "gadget": [
+            {
+              "id": "buffie:gadget:SPIKE",
+              "slot": "gadget",
+              "source": "Popping Pincushion",
+              "name": "Popping Pincushion Buffie",
+              "description": "Targets that are hit with 2 needles become rooted for 1 second."
+            },
+            {
+              "id": "buffie:gadget:SPIKE",
+              "slot": "gadget",
+              "source": "Life Plant",
+              "name": "Life Plant Buffie",
+              "description": "When destroyed, the plant also deals 600 area damage that pushes enemies back."
+            }
+          ],
+          "starPower": [
+            {
+              "id": "buffie:starPower:SPIKE",
+              "slot": "starPower",
+              "source": "Fertilize",
+              "name": "Fertilize Buffie",
+              "description": "Super projectile speed is 30% faster."
+            },
+            {
+              "id": "buffie:starPower:SPIKE",
+              "slot": "starPower",
+              "source": "Curveball",
+              "name": "Curveball Buffie",
+              "description": "Curving spikes have extended range."
+            }
+          ],
+          "hyperCharge": [
+            {
+              "id": "buffie:hypercharge:SPIKE",
+              "slot": "hypercharge",
+              "source": "Hypercharge",
+              "name": "Hypercharge Buffie",
+              "description": "Main attack needle grenades detonate twice! Hypercharge duration: +2 sec."
+            }
+          ]
         },
         "gears": [
           {
@@ -2766,7 +2886,7 @@
           "winRate": 62.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/spike",
@@ -3050,9 +3170,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -3359,7 +3479,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -3373,19 +3493,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -3486,9 +3605,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -3637,7 +3756,7 @@
           "winRate": 66.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/jessie",
@@ -3795,7 +3914,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -3809,19 +3928,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -3922,27 +4040,47 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": {
-            "id": "buffie:gadget:NITA",
-            "slot": "gadget",
-            "source": "Bear Paws",
-            "name": "Bear Paws Buffie",
-            "description": "Her bear gains 50% damage for its next attack."
-          },
-          "starPower": {
-            "id": "buffie:starPower:NITA",
-            "slot": "starPower",
-            "source": "Bear With Me",
-            "name": "Bear With Me Buffie",
-            "description": "This ability can overheal Nita or her bear for 2000 health."
-          },
-          "hyperCharge": {
-            "id": "buffie:hypercharge:NITA",
-            "slot": "hypercharge",
-            "source": "Hypercharge",
-            "name": "Hypercharge Buffie",
-            "description": "Nita's attacks increase in speed, width, and range."
-          }
+          "gadget": [
+            {
+              "id": "buffie:gadget:NITA",
+              "slot": "gadget",
+              "source": "Bear Paws",
+              "name": "Bear Paws Buffie",
+              "description": "Her bear gains 50% damage for its next attack."
+            },
+            {
+              "id": "buffie:gadget:NITA",
+              "slot": "gadget",
+              "source": "Faux Fur",
+              "name": "Faux Fur Buffie",
+              "description": "Nita and her bear become invulnerable for 0."
+            }
+          ],
+          "starPower": [
+            {
+              "id": "buffie:starPower:NITA",
+              "slot": "starPower",
+              "source": "Bear With Me",
+              "name": "Bear With Me Buffie",
+              "description": "This ability can overheal Nita or her bear for 2000 health."
+            },
+            {
+              "id": "buffie:starPower:NITA",
+              "slot": "starPower",
+              "source": "Hyper Bear",
+              "name": "Hyper Bear Buffie",
+              "description": "Summoning Nita's bear gives her +25% reload speed for 3 sec."
+            }
+          ],
+          "hyperCharge": [
+            {
+              "id": "buffie:hypercharge:NITA",
+              "slot": "hypercharge",
+              "source": "Hypercharge",
+              "name": "Hypercharge Buffie",
+              "description": "Nita's attacks increase in speed, width, and range."
+            }
+          ]
         },
         "gears": [
           {
@@ -4127,7 +4265,7 @@
           "winRate": 68.8,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/nita",
@@ -4411,9 +4549,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -4562,7 +4700,7 @@
           "winRate": 60.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/dynamike",
@@ -4720,7 +4858,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -4734,19 +4872,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -4847,9 +4984,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -5150,7 +5287,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -5164,19 +5301,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -5277,27 +5413,47 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": {
-            "id": "buffie:gadget:MORTIS",
-            "slot": "gadget",
-            "source": "Combo Spinner",
-            "name": "Combo Spinner Buffie",
-            "description": "Deals increased damage to low health enemies."
-          },
-          "starPower": {
-            "id": "buffie:starPower:MORTIS",
-            "slot": "starPower",
-            "source": "Creepy Harvest",
-            "name": "Creepy Harvest Buffie",
-            "description": "Gains 250 additional max health until defeated (this stacks)."
-          },
-          "hyperCharge": {
-            "id": "buffie:hypercharge:MORTIS",
-            "slot": "hypercharge",
-            "source": "Hypercharge",
-            "name": "Hypercharge Buffie",
-            "description": "After Mortis uses a main attack, a phantom attack hits the same area, after a delay."
-          }
+          "gadget": [
+            {
+              "id": "buffie:gadget:MORTIS",
+              "slot": "gadget",
+              "source": "Combo Spinner",
+              "name": "Combo Spinner Buffie",
+              "description": "Deals increased damage to low health enemies."
+            },
+            {
+              "id": "buffie:gadget:MORTIS",
+              "slot": "gadget",
+              "source": "Creature Of The Night",
+              "name": "Creature Of The Night Buffie",
+              "description": "Deals 760 damage when passing through enemies and heals for the damage dealt."
+            }
+          ],
+          "starPower": [
+            {
+              "id": "buffie:starPower:MORTIS",
+              "slot": "starPower",
+              "source": "Creepy Harvest",
+              "name": "Creepy Harvest Buffie",
+              "description": "Gains 250 additional max health until defeated (this stacks)."
+            },
+            {
+              "id": "buffie:starPower:MORTIS",
+              "slot": "starPower",
+              "source": "Coiled Snake",
+              "name": "Coiled Snake Buffie",
+              "description": "Gains 40% damage reduction during his long dash."
+            }
+          ],
+          "hyperCharge": [
+            {
+              "id": "buffie:hypercharge:MORTIS",
+              "slot": "hypercharge",
+              "source": "Hypercharge",
+              "name": "Hypercharge Buffie",
+              "description": "After Mortis uses a main attack, a phantom attack hits the same area, after a delay."
+            }
+          ]
         },
         "gears": [
           {
@@ -5482,7 +5638,7 @@
           "winRate": 57.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/mortis",
@@ -5766,27 +5922,47 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": {
-            "id": "buffie:gadget:CROW",
-            "slot": "gadget",
-            "source": "Instapoison",
-            "name": "Instapoison Buffie",
-            "description": "Refreshes poison duration."
-          },
-          "starPower": {
-            "id": "buffie:starPower:CROW",
-            "slot": "starPower",
-            "source": "Extra Toxic",
-            "name": "Extra Toxic Buffie",
-            "description": "Crow deals 5% more damage for each poisoned enemy."
-          },
-          "hyperCharge": {
-            "id": "buffie:hypercharge:CROW",
-            "slot": "hypercharge",
-            "source": "Hypercharge",
-            "name": "Hypercharge Buffie",
-            "description": "Main attacks also pierce and return after reaching max distance, dealing 20% less damage when returning."
-          }
+          "gadget": [
+            {
+              "id": "buffie:gadget:CROW",
+              "slot": "gadget",
+              "source": "Instapoison",
+              "name": "Instapoison Buffie",
+              "description": "Refreshes poison duration."
+            },
+            {
+              "id": "buffie:gadget:CROW",
+              "slot": "gadget",
+              "source": "Slowing Toxin",
+              "name": "Slowing Toxin Buffie",
+              "description": "The kunai also bounces to nearby targets, causing the same effect."
+            }
+          ],
+          "starPower": [
+            {
+              "id": "buffie:starPower:CROW",
+              "slot": "starPower",
+              "source": "Extra Toxic",
+              "name": "Extra Toxic Buffie",
+              "description": "Crow deals 5% more damage for each poisoned enemy."
+            },
+            {
+              "id": "buffie:starPower:CROW",
+              "slot": "starPower",
+              "source": "Carrion Crow",
+              "name": "Carrion Crow Buffie",
+              "description": "Crow's poison duration is increased by 1 sec."
+            }
+          ],
+          "hyperCharge": [
+            {
+              "id": "buffie:hypercharge:CROW",
+              "slot": "hypercharge",
+              "source": "Hypercharge",
+              "name": "Hypercharge Buffie",
+              "description": "Main attacks also pierce and return after reaching max distance, dealing 20% less damage when returning."
+            }
+          ]
         },
         "gears": [
           {
@@ -5971,7 +6147,7 @@
           "winRate": 60.8,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/crow",
@@ -6255,9 +6431,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -6406,7 +6582,7 @@
           "winRate": 64.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/poco",
@@ -6564,7 +6740,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -6578,19 +6754,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -6691,27 +6866,47 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": {
-            "id": "buffie:gadget:BO",
-            "slot": "gadget",
-            "source": "Super Totem",
-            "name": "Super Totem Buffie",
-            "description": "The totem has a significantly increased radius."
-          },
-          "starPower": {
-            "id": "buffie:starPower:BO",
-            "slot": "starPower",
-            "source": "Circling Eagle",
-            "name": "Circling Eagle Buffie",
-            "description": "Bo is no longer revealed while attacking from a bush."
-          },
-          "hyperCharge": {
-            "id": "buffie:hypercharge:BO",
-            "slot": "hypercharge",
-            "source": "Hypercharge",
-            "name": "Hypercharge Buffie",
-            "description": "Bo's main attack shoots a 4th arrow, and each arrow has increased area damage radius."
-          }
+          "gadget": [
+            {
+              "id": "buffie:gadget:BO",
+              "slot": "gadget",
+              "source": "Super Totem",
+              "name": "Super Totem Buffie",
+              "description": "The totem has a significantly increased radius."
+            },
+            {
+              "id": "buffie:gadget:BO",
+              "slot": "gadget",
+              "source": "Tripwire",
+              "name": "Tripwire Buffie",
+              "description": "Detonated mines have a bigger blast radius."
+            }
+          ],
+          "starPower": [
+            {
+              "id": "buffie:starPower:BO",
+              "slot": "starPower",
+              "source": "Circling Eagle",
+              "name": "Circling Eagle Buffie",
+              "description": "Bo is no longer revealed while attacking from a bush."
+            },
+            {
+              "id": "buffie:starPower:BO",
+              "slot": "starPower",
+              "source": "Snare A Bear",
+              "name": "Snare A Bear Buffie",
+              "description": "Trap placement speed in increased significantly."
+            }
+          ],
+          "hyperCharge": [
+            {
+              "id": "buffie:hypercharge:BO",
+              "slot": "hypercharge",
+              "source": "Hypercharge",
+              "name": "Hypercharge Buffie",
+              "description": "Bo's main attack shoots a 4th arrow, and each arrow has increased area damage radius."
+            }
+          ]
         },
         "gears": [
           {
@@ -6896,7 +7091,7 @@
           "winRate": 64.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bo",
@@ -7180,9 +7375,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -7331,7 +7526,7 @@
           "winRate": 60.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/piper",
@@ -7489,7 +7684,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -7503,19 +7698,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -7616,9 +7810,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -7762,7 +7956,7 @@
           "winRate": 69.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/pam",
@@ -7920,7 +8114,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -7934,19 +8128,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -8047,9 +8240,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -8198,7 +8391,7 @@
           "winRate": 66.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/tara",
@@ -8356,7 +8549,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -8370,19 +8563,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -8483,9 +8675,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -8634,7 +8826,7 @@
           "winRate": 66.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/darryl",
@@ -8792,7 +8984,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -8806,19 +8998,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -8919,9 +9110,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -9070,7 +9261,7 @@
           "winRate": 63.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/penny",
@@ -9228,7 +9419,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -9242,19 +9433,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -9355,27 +9545,47 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": {
-            "id": "buffie:gadget:FRANK",
-            "slot": "gadget",
-            "source": "Active Noise Canceling",
-            "name": "Active Noise Canceling Buffie",
-            "description": "Soundwave also destroys enemy projectiles."
-          },
-          "starPower": {
-            "id": "buffie:starPower:FRANK",
-            "slot": "starPower",
-            "source": "Power Grab",
-            "name": "Power Grab Buffie",
-            "description": "Defeating a Brawler increases attack damage by 25% for 12 secs."
-          },
-          "hyperCharge": {
-            "id": "buffie:hypercharge:FRANK",
-            "slot": "hypercharge",
-            "source": "Hypercharge",
-            "name": "Hypercharge Buffie",
-            "description": "Main attack speed is increased to max while Frank is Hypercharged! Hypercharge duration: +2 sec."
-          }
+          "gadget": [
+            {
+              "id": "buffie:gadget:FRANK",
+              "slot": "gadget",
+              "source": "Active Noise Canceling",
+              "name": "Active Noise Canceling Buffie",
+              "description": "Soundwave also destroys enemy projectiles."
+            },
+            {
+              "id": "buffie:gadget:FRANK",
+              "slot": "gadget",
+              "source": "Irresistible Attraction",
+              "name": "Irresistible Attraction Buffie",
+              "description": "Enemies are slowed for 5 sec when hit."
+            }
+          ],
+          "starPower": [
+            {
+              "id": "buffie:starPower:FRANK",
+              "slot": "starPower",
+              "source": "Power Grab",
+              "name": "Power Grab Buffie",
+              "description": "Defeating a Brawler increases attack damage by 25% for 12 secs."
+            },
+            {
+              "id": "buffie:starPower:FRANK",
+              "slot": "starPower",
+              "source": "Sponge",
+              "name": "Sponge Buffie",
+              "description": "Take 15% less damage when above 50% health."
+            }
+          ],
+          "hyperCharge": [
+            {
+              "id": "buffie:hypercharge:FRANK",
+              "slot": "hypercharge",
+              "source": "Hypercharge",
+              "name": "Hypercharge Buffie",
+              "description": "Main attack speed is increased to max while Frank is Hypercharged! Hypercharge duration: +2 sec."
+            }
+          ]
         },
         "gears": [
           {
@@ -9560,7 +9770,7 @@
           "winRate": 65.8,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/frank",
@@ -9844,9 +10054,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -9995,7 +10205,7 @@
           "winRate": 62.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gene",
@@ -10153,7 +10363,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -10167,19 +10377,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -10280,9 +10489,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -10431,7 +10640,7 @@
           "winRate": 62.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/tick",
@@ -10589,7 +10798,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -10603,19 +10812,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -10716,27 +10924,47 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": {
-            "id": "buffie:gadget:LEON",
-            "slot": "gadget",
-            "source": "Clone Projector",
-            "name": "Clone Projector Buffie",
-            "description": "Leon can reactivate the Gadget, while a clone is active, to swap positions with the clone! Lollipop Drop 37% pick Leon creates a stealthy area for his team to hide in."
-          },
-          "starPower": {
-            "id": "buffie:starPower:LEON",
-            "slot": "starPower",
-            "source": "Smoke Trails",
-            "name": "Smoke Trails Buffie",
-            "description": "The first attack after breaking invisibility deals +15% damage."
-          },
-          "hyperCharge": {
-            "id": "buffie:hypercharge:LEON",
-            "slot": "hypercharge",
-            "source": "Hypercharge",
-            "name": "Hypercharge Buffie",
-            "description": "Leon's main attacks do at least 75% damage regardless of distance."
-          }
+          "gadget": [
+            {
+              "id": "buffie:gadget:LEON",
+              "slot": "gadget",
+              "source": "Clone Projector",
+              "name": "Clone Projector Buffie",
+              "description": "Leon can reactivate the Gadget, while a clone is active, to swap positions with the clone! Lollipop Drop 37% pick Leon creates a stealthy area for his team to hide in."
+            },
+            {
+              "id": "buffie:gadget:LEON",
+              "slot": "gadget",
+              "source": "Lollipop Drop",
+              "name": "Lollipop Drop Buffie",
+              "description": "Leon and teammates gain 15% movement speed inside the area."
+            }
+          ],
+          "starPower": [
+            {
+              "id": "buffie:starPower:LEON",
+              "slot": "starPower",
+              "source": "Smoke Trails",
+              "name": "Smoke Trails Buffie",
+              "description": "The first attack after breaking invisibility deals +15% damage."
+            },
+            {
+              "id": "buffie:starPower:LEON",
+              "slot": "starPower",
+              "source": "Invisiheal",
+              "name": "Invisiheal Buffie",
+              "description": "Leon's Super duration is +1 sec longer."
+            }
+          ],
+          "hyperCharge": [
+            {
+              "id": "buffie:hypercharge:LEON",
+              "slot": "hypercharge",
+              "source": "Hypercharge",
+              "name": "Hypercharge Buffie",
+              "description": "Leon's main attacks do at least 75% damage regardless of distance."
+            }
+          ]
         },
         "gears": [
           {
@@ -10921,7 +11149,7 @@
           "winRate": 62.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/leon",
@@ -11205,9 +11433,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -11356,7 +11584,7 @@
           "winRate": 71,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/rosa",
@@ -11514,7 +11742,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -11528,19 +11756,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -11641,9 +11868,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -11792,7 +12019,7 @@
           "winRate": 65.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/carl",
@@ -11950,7 +12177,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -11964,19 +12191,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -12077,27 +12303,47 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": {
-            "id": "buffie:gadget:BIBI",
-            "slot": "gadget",
-            "source": "Vitamin Booster",
-            "name": "Vitamin Booster Buffie",
-            "description": "Instantly charges Bibi's Home Run bar and her next attack restores 60% damage as health."
-          },
-          "starPower": {
-            "id": "buffie:starPower:BIBI",
-            "slot": "starPower",
-            "source": "Home Run",
-            "name": "Home Run Buffie",
-            "description": "Instantly charges Bibi's Home Run bar and her next attack restores 60% damage as health."
-          },
-          "hyperCharge": {
-            "id": "buffie:hypercharge:BIBI",
-            "slot": "hypercharge",
-            "source": "Hypercharge",
-            "name": "Hypercharge Buffie",
-            "description": "Hypercharged main attack has a shorter wind-up time."
-          }
+          "gadget": [
+            {
+              "id": "buffie:gadget:BIBI",
+              "slot": "gadget",
+              "source": "Vitamin Booster",
+              "name": "Vitamin Booster Buffie",
+              "description": "Instantly charges Bibi's Home Run bar and her next attack restores 60% damage as health."
+            },
+            {
+              "id": "buffie:gadget:BIBI",
+              "slot": "gadget",
+              "source": "Extra Sticky",
+              "name": "Extra Sticky Buffie",
+              "description": "The slowing effect increases the longer the gum stays on the ground."
+            }
+          ],
+          "starPower": [
+            {
+              "id": "buffie:starPower:BIBI",
+              "slot": "starPower",
+              "source": "Home Run",
+              "name": "Home Run Buffie",
+              "description": "Instantly charges Bibi's Home Run bar and her next attack restores 60% damage as health."
+            },
+            {
+              "id": "buffie:starPower:BIBI",
+              "slot": "starPower",
+              "source": "Batting Stance",
+              "name": "Batting Stance Buffie",
+              "description": "Bibi gains a shield for 5 sec when her Super hits an enemy Brawler."
+            }
+          ],
+          "hyperCharge": [
+            {
+              "id": "buffie:hypercharge:BIBI",
+              "slot": "hypercharge",
+              "source": "Hypercharge",
+              "name": "Hypercharge Buffie",
+              "description": "Hypercharged main attack has a shorter wind-up time."
+            }
+          ]
         },
         "gears": [
           {
@@ -12282,7 +12528,7 @@
           "winRate": 64.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bibi",
@@ -12566,27 +12812,47 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": {
-            "id": "buffie:gadget:8_BIT",
-            "slot": "gadget",
-            "source": "Cheat Cartridge",
-            "name": "Cheat Cartridge Buffie",
-            "description": "Heals himself for 1800 , and repairs the booster by 100%."
-          },
-          "starPower": {
-            "id": "buffie:starPower:8_BIT",
-            "slot": "starPower",
-            "source": "Boosted Booster",
-            "name": "Boosted Booster Buffie",
-            "description": "Every 5 sec the Damage Booster spawns an ammo clip lasting 8 sec and reloading 1 ammo."
-          },
-          "hyperCharge": {
-            "id": "buffie:hypercharge:8_BIT",
-            "slot": "hypercharge",
-            "source": "Hypercharge",
-            "name": "Hypercharge Buffie",
-            "description": "During Hypercharge 8-Bit gains infinite ammo and can interrupt his current Main Attack with another one."
-          }
+          "gadget": [
+            {
+              "id": "buffie:gadget:8_BIT",
+              "slot": "gadget",
+              "source": "Cheat Cartridge",
+              "name": "Cheat Cartridge Buffie",
+              "description": "Heals himself for 1800 , and repairs the booster by 100%."
+            },
+            {
+              "id": "buffie:gadget:8_BIT",
+              "slot": "gadget",
+              "source": "Extra Credits",
+              "name": "Extra Credits Buffie",
+              "description": "These projectiles bounce to nearby enemies."
+            }
+          ],
+          "starPower": [
+            {
+              "id": "buffie:starPower:8_BIT",
+              "slot": "starPower",
+              "source": "Boosted Booster",
+              "name": "Boosted Booster Buffie",
+              "description": "Every 5 sec the Damage Booster spawns an ammo clip lasting 8 sec and reloading 1 ammo."
+            },
+            {
+              "id": "buffie:starPower:8_BIT",
+              "slot": "starPower",
+              "source": "Plugged In",
+              "name": "Plugged In Buffie",
+              "description": "Teammates get a 15% Speed Boost."
+            }
+          ],
+          "hyperCharge": [
+            {
+              "id": "buffie:hypercharge:8_BIT",
+              "slot": "hypercharge",
+              "source": "Hypercharge",
+              "name": "Hypercharge Buffie",
+              "description": "During Hypercharge 8-Bit gains infinite ammo and can interrupt his current Main Attack with another one."
+            }
+          ]
         },
         "gears": [
           {
@@ -12771,7 +13037,7 @@
           "winRate": 66,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/8-bit",
@@ -13055,9 +13321,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -13203,10 +13469,10 @@
         "buffies": [],
         "stats": {
           "sourceUrl": "https://brawltime.ninja/tier-list/brawler/sandy",
-          "winRate": 68.8,
+          "winRate": 68.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/sandy",
@@ -13364,7 +13630,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -13378,19 +13644,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -13491,9 +13756,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -13642,7 +13907,7 @@
           "winRate": 63.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bea",
@@ -13800,7 +14065,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -13814,19 +14079,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -13927,27 +14191,47 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": {
-            "id": "buffie:gadget:EMZ",
-            "slot": "gadget",
-            "source": "Friendzoner",
-            "name": "Friendzoner Buffie",
-            "description": "Knocks enemies back farther and stuns them for 1 sec if knocked into a wall."
-          },
-          "starPower": {
-            "id": "buffie:starPower:EMZ",
-            "slot": "starPower",
-            "source": "Bad Karma",
-            "name": "Bad Karma Buffie",
-            "description": "Reduce damage dealt by enemies hit by Emz's main attack by 15% for 4 sec."
-          },
-          "hyperCharge": {
-            "id": "buffie:hypercharge:EMZ",
-            "slot": "hypercharge",
-            "source": "Hypercharge",
-            "name": "Hypercharge Buffie",
-            "description": "Sprays will poison enemies! Hypercharge duration: +2 sec."
-          }
+          "gadget": [
+            {
+              "id": "buffie:gadget:EMZ",
+              "slot": "gadget",
+              "source": "Friendzoner",
+              "name": "Friendzoner Buffie",
+              "description": "Knocks enemies back farther and stuns them for 1 sec if knocked into a wall."
+            },
+            {
+              "id": "buffie:gadget:EMZ",
+              "slot": "gadget",
+              "source": "Acid Spray",
+              "name": "Acid Spray Buffie",
+              "description": "Slows enemies on hit."
+            }
+          ],
+          "starPower": [
+            {
+              "id": "buffie:starPower:EMZ",
+              "slot": "starPower",
+              "source": "Bad Karma",
+              "name": "Bad Karma Buffie",
+              "description": "Reduce damage dealt by enemies hit by Emz's main attack by 15% for 4 sec."
+            },
+            {
+              "id": "buffie:starPower:EMZ",
+              "slot": "starPower",
+              "source": "Hype",
+              "name": "Hype Buffie",
+              "description": "Emz takes no damage for 1 sec when activating Super."
+            }
+          ],
+          "hyperCharge": [
+            {
+              "id": "buffie:hypercharge:EMZ",
+              "slot": "hypercharge",
+              "source": "Hypercharge",
+              "name": "Hypercharge Buffie",
+              "description": "Sprays will poison enemies! Hypercharge duration: +2 sec."
+            }
+          ]
         },
         "gears": [
           {
@@ -14132,7 +14416,7 @@
           "winRate": 63.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/emz",
@@ -14416,9 +14700,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -14719,7 +15003,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -14733,19 +15017,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -14846,27 +15129,47 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": {
-            "id": "buffie:gadget:MAX",
-            "slot": "gadget",
-            "source": "Phase Shifter",
-            "name": "Phase Shifter Buffie",
-            "description": "Max can dash a second time 3 sec after the first dash."
-          },
-          "starPower": {
-            "id": "buffie:starPower:MAX",
-            "slot": "starPower",
-            "source": "Super Charged",
-            "name": "Super Charged Buffie",
-            "description": "Teammates affected by Max's Super gain a shield for 4 sec."
-          },
-          "hyperCharge": {
-            "id": "buffie:hypercharge:MAX",
-            "slot": "hypercharge",
-            "source": "Hypercharge",
-            "name": "Hypercharge Buffie",
-            "description": "Max grants herself and nearby teammates 7% Super charge whenever she hits with her Main Attack."
-          }
+          "gadget": [
+            {
+              "id": "buffie:gadget:MAX",
+              "slot": "gadget",
+              "source": "Phase Shifter",
+              "name": "Phase Shifter Buffie",
+              "description": "Max can dash a second time 3 sec after the first dash."
+            },
+            {
+              "id": "buffie:gadget:MAX",
+              "slot": "gadget",
+              "source": "Sneaky Sneakers",
+              "name": "Sneaky Sneakers Buffie",
+              "description": "When blinking back, Max fully refills her ammo and heals teammates near the lightning bolt for the same amount that she healed."
+            }
+          ],
+          "starPower": [
+            {
+              "id": "buffie:starPower:MAX",
+              "slot": "starPower",
+              "source": "Super Charged",
+              "name": "Super Charged Buffie",
+              "description": "Teammates affected by Max's Super gain a shield for 4 sec."
+            },
+            {
+              "id": "buffie:starPower:MAX",
+              "slot": "starPower",
+              "source": "Run N Gun",
+              "name": "Run N Gun Buffie",
+              "description": "Max gains a burst of movement speed when hitting enemies with her Main Attack."
+            }
+          ],
+          "hyperCharge": [
+            {
+              "id": "buffie:hypercharge:MAX",
+              "slot": "hypercharge",
+              "source": "Hypercharge",
+              "name": "Hypercharge Buffie",
+              "description": "Max grants herself and nearby teammates 7% Super charge whenever she hits with her Main Attack."
+            }
+          ]
         },
         "gears": [
           {
@@ -15051,7 +15354,7 @@
           "winRate": 62.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/max",
@@ -15335,9 +15638,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -15486,7 +15789,7 @@
           "winRate": 70.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/jacky",
@@ -15644,7 +15947,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -15658,19 +15961,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -15771,9 +16073,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -15922,7 +16224,7 @@
           "winRate": 64.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gale",
@@ -16080,7 +16382,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -16094,19 +16396,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -16207,9 +16508,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -16358,7 +16659,7 @@
           "winRate": 63.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/nani",
@@ -16516,7 +16817,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -16530,19 +16831,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -16643,9 +16943,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -16794,7 +17094,7 @@
           "winRate": 66.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/sprout",
@@ -16952,7 +17252,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -16966,19 +17266,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -17079,27 +17378,47 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": {
-            "id": "buffie:gadget:SURGE",
-            "slot": "gadget",
-            "source": "Power Surge",
-            "name": "Power Surge Buffie",
-            "description": "Power Surge also grants 30% Reload Speed."
-          },
-          "starPower": {
-            "id": "buffie:starPower:SURGE",
-            "slot": "starPower",
-            "source": "To The Max",
-            "name": "To The Max Buffie",
-            "description": "When bouncing off a wall, Surge's Main Attack splits into 2 extra projectiles."
-          },
-          "hyperCharge": {
-            "id": "buffie:hypercharge:SURGE",
-            "slot": "hypercharge",
-            "source": "Hypercharge",
-            "name": "Hypercharge Buffie",
-            "description": "Surge shoots 'Double the Juice' for Double the Justice."
-          }
+          "gadget": [
+            {
+              "id": "buffie:gadget:SURGE",
+              "slot": "gadget",
+              "source": "Power Surge",
+              "name": "Power Surge Buffie",
+              "description": "Power Surge also grants 30% Reload Speed."
+            },
+            {
+              "id": "buffie:gadget:SURGE",
+              "slot": "gadget",
+              "source": "Power Shield",
+              "name": "Power Shield Buffie",
+              "description": "If Surge is hit during Power Shield, Gadget cooldown is decreased by 50%."
+            }
+          ],
+          "starPower": [
+            {
+              "id": "buffie:starPower:SURGE",
+              "slot": "starPower",
+              "source": "To The Max",
+              "name": "To The Max Buffie",
+              "description": "When bouncing off a wall, Surge's Main Attack splits into 2 extra projectiles."
+            },
+            {
+              "id": "buffie:starPower:SURGE",
+              "slot": "starPower",
+              "source": "Serve Ice Cold",
+              "name": "Serve Ice Cold Buffie",
+              "description": "While in Stage 3, Surge gains a burst of movement speed when using his Super."
+            }
+          ],
+          "hyperCharge": [
+            {
+              "id": "buffie:hypercharge:SURGE",
+              "slot": "hypercharge",
+              "source": "Hypercharge",
+              "name": "Hypercharge Buffie",
+              "description": "Surge shoots 'Double the Juice' for Double the Justice."
+            }
+          ]
         },
         "gears": [
           {
@@ -17284,7 +17603,7 @@
           "winRate": 61.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/surge",
@@ -17568,27 +17887,47 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": {
-            "id": "buffie:gadget:COLETTE",
-            "slot": "gadget",
-            "source": "Na-Ah",
-            "name": "Na-Ah Buffie",
-            "description": "The projectile pierces environments and Brawlers."
-          },
-          "starPower": {
-            "id": "buffie:starPower:COLETTE",
-            "slot": "starPower",
-            "source": "Push It",
-            "name": "Push It Buffie",
-            "description": "Super dash speed is significantly faster."
-          },
-          "hyperCharge": {
-            "id": "buffie:hypercharge:COLETTE",
-            "slot": "hypercharge",
-            "source": "Hypercharge",
-            "name": "Hypercharge Buffie",
-            "description": "Colette follows up each main attack with a smaller second attack that deals less damage."
-          }
+          "gadget": [
+            {
+              "id": "buffie:gadget:COLETTE",
+              "slot": "gadget",
+              "source": "Na-Ah",
+              "name": "Na-Ah Buffie",
+              "description": "The projectile pierces environments and Brawlers."
+            },
+            {
+              "id": "buffie:gadget:COLETTE",
+              "slot": "gadget",
+              "source": "Gotcha",
+              "name": "Gotcha Buffie",
+              "description": "Can overheal, creating a shield of 1000 maximum health."
+            }
+          ],
+          "starPower": [
+            {
+              "id": "buffie:starPower:COLETTE",
+              "slot": "starPower",
+              "source": "Push It",
+              "name": "Push It Buffie",
+              "description": "Super dash speed is significantly faster."
+            },
+            {
+              "id": "buffie:starPower:COLETTE",
+              "slot": "starPower",
+              "source": "Mass Tax",
+              "name": "Mass Tax Buffie",
+              "description": "Colette steals 33% ammo of any Brawlers she hits."
+            }
+          ],
+          "hyperCharge": [
+            {
+              "id": "buffie:hypercharge:COLETTE",
+              "slot": "hypercharge",
+              "source": "Hypercharge",
+              "name": "Hypercharge Buffie",
+              "description": "Colette follows up each main attack with a smaller second attack that deals less damage."
+            }
+          ]
         },
         "gears": [
           {
@@ -17773,7 +18112,7 @@
           "winRate": 61.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/colette",
@@ -18057,9 +18396,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -18208,7 +18547,7 @@
           "winRate": 67.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/amber",
@@ -18366,7 +18705,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -18380,19 +18719,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -18493,9 +18831,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -18644,7 +18982,7 @@
           "winRate": 67.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/lou",
@@ -18802,7 +19140,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -18816,19 +19154,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -18929,9 +19266,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -19080,7 +19417,7 @@
           "winRate": 60.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/byron",
@@ -19238,7 +19575,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -19252,19 +19589,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -19365,27 +19701,40 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": {
-            "id": "buffie:gadget:EDGAR",
-            "slot": "gadget",
-            "source": "Hardcore",
-            "name": "Hardcore Buffie",
-            "description": "Edgar also gains immunity to Crowd Control for 1 sec."
-          },
-          "starPower": {
-            "id": "buffie:starPower:EDGAR",
-            "slot": "starPower",
-            "source": "Hard Landing",
-            "name": "Hard Landing Buffie",
-            "description": "A direct hit also charges his Super by 25%."
-          },
-          "hyperCharge": {
-            "id": "buffie:hypercharge:EDGAR",
-            "slot": "hypercharge",
-            "source": "Hypercharge",
-            "name": "Hypercharge Buffie",
-            "description": "Edgar's main attack has two extra scarf punches with longer range, but -50% damage."
-          }
+          "gadget": [
+            {
+              "id": "buffie:gadget:EDGAR",
+              "slot": "gadget",
+              "source": "Hardcore",
+              "name": "Hardcore Buffie",
+              "description": "Edgar also gains immunity to Crowd Control for 1 sec."
+            }
+          ],
+          "starPower": [
+            {
+              "id": "buffie:starPower:EDGAR",
+              "slot": "starPower",
+              "source": "Hard Landing",
+              "name": "Hard Landing Buffie",
+              "description": "A direct hit also charges his Super by 25%."
+            },
+            {
+              "id": "buffie:starPower:EDGAR",
+              "slot": "starPower",
+              "source": "Fisticuffs",
+              "name": "Fisticuffs Buffie",
+              "description": "Taking down a Brawler instantly heals Edgar for 20% of his max health."
+            }
+          ],
+          "hyperCharge": [
+            {
+              "id": "buffie:hypercharge:EDGAR",
+              "slot": "hypercharge",
+              "source": "Hypercharge",
+              "name": "Hypercharge Buffie",
+              "description": "Edgar's main attack has two extra scarf punches with longer range, but -50% damage."
+            }
+          ]
         },
         "gears": [
           {
@@ -19563,7 +19912,7 @@
           "winRate": 61,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/edgar",
@@ -19847,9 +20196,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -19998,7 +20347,7 @@
           "winRate": 64.6,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/ruffs",
@@ -20156,7 +20505,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -20170,19 +20519,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -20283,9 +20631,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -20434,7 +20782,7 @@
           "winRate": 60.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/stu",
@@ -20592,7 +20940,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -20606,19 +20954,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -20719,9 +21066,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -20870,7 +21217,7 @@
           "winRate": 65.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/belle",
@@ -21028,7 +21375,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -21042,19 +21389,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -21155,9 +21501,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -21306,7 +21652,7 @@
           "winRate": 62.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/squeak",
@@ -21464,7 +21810,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -21478,19 +21824,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -21591,9 +21936,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -21742,7 +22087,7 @@
           "winRate": 64.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/grom",
@@ -21900,7 +22245,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -21914,19 +22259,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -22027,9 +22371,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -22178,7 +22522,7 @@
           "winRate": 63.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/buzz",
@@ -22336,7 +22680,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -22350,19 +22694,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -22463,27 +22806,47 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": {
-            "id": "buffie:gadget:GRIFF",
-            "slot": "gadget",
-            "source": "Piggy Bank",
-            "name": "Piggy Bank Buffie",
-            "description": "Griff can shoot the piggy bank to charge up and increase its explosion radius and damage! The piggy bank will explode instantly when it's fully charged."
-          },
-          "starPower": {
-            "id": "buffie:starPower:GRIFF",
-            "slot": "starPower",
-            "source": "Keep The Change",
-            "name": "Keep The Change Buffie",
-            "description": "Attacking with full ammo also fires a mega coin that deals extra damage! Business Resilience 54% pick Every 2 seconds, Griff regains up to 15% of his missing health."
-          },
-          "hyperCharge": {
-            "id": "buffie:hypercharge:GRIFF",
-            "slot": "hypercharge",
-            "source": "Hypercharge",
-            "name": "Hypercharge Buffie",
-            "description": "Griff's main attack also pierces enemies."
-          }
+          "gadget": [
+            {
+              "id": "buffie:gadget:GRIFF",
+              "slot": "gadget",
+              "source": "Piggy Bank",
+              "name": "Piggy Bank Buffie",
+              "description": "Griff can shoot the piggy bank to charge up and increase its explosion radius and damage! The piggy bank will explode instantly when it's fully charged."
+            },
+            {
+              "id": "buffie:gadget:GRIFF",
+              "slot": "gadget",
+              "source": "Coin Shower",
+              "name": "Coin Shower Buffie",
+              "description": "The coin shower grows in size throughout its duration."
+            }
+          ],
+          "starPower": [
+            {
+              "id": "buffie:starPower:GRIFF",
+              "slot": "starPower",
+              "source": "Keep The Change",
+              "name": "Keep The Change Buffie",
+              "description": "Attacking with full ammo also fires a mega coin that deals extra damage! Business Resilience 54% pick Every 2 seconds, Griff regains up to 15% of his missing health."
+            },
+            {
+              "id": "buffie:starPower:GRIFF",
+              "slot": "starPower",
+              "source": "Business Resilience",
+              "name": "Business Resilience Buffie",
+              "description": "When Griff's Super projectiles return, they heal Griff for 5% of his missing health."
+            }
+          ],
+          "hyperCharge": [
+            {
+              "id": "buffie:hypercharge:GRIFF",
+              "slot": "hypercharge",
+              "source": "Hypercharge",
+              "name": "Hypercharge Buffie",
+              "description": "Griff's main attack also pierces enemies."
+            }
+          ]
         },
         "gears": [
           {
@@ -22668,7 +23031,7 @@
           "winRate": 63.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/griff",
@@ -22952,9 +23315,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -23103,7 +23466,7 @@
           "winRate": 69.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/ash",
@@ -23261,7 +23624,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -23275,19 +23638,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -23388,27 +23750,40 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": {
-            "id": "buffie:gadget:MEG",
-            "slot": "gadget",
-            "source": "Jolting Volts",
-            "name": "Jolting Volts Buffie",
-            "description": "Jolting Volts heals for +1 sec."
-          },
-          "starPower": {
-            "id": "buffie:starPower:MEG",
-            "slot": "starPower",
-            "source": "Force Field",
-            "name": "Force Field Buffie",
-            "description": "Meg gains +20% movement speed while the shield is active."
-          },
-          "hyperCharge": {
-            "id": "buffie:hypercharge:MEG",
-            "slot": "hypercharge",
-            "source": "Hypercharge",
-            "name": "Hypercharge Buffie",
-            "description": "The Mecha's Main Attack explodes, dealing 360 area damage."
-          }
+          "gadget": [
+            {
+              "id": "buffie:gadget:MEG",
+              "slot": "gadget",
+              "source": "Jolting Volts",
+              "name": "Jolting Volts Buffie",
+              "description": "Jolting Volts heals for +1 sec."
+            }
+          ],
+          "starPower": [
+            {
+              "id": "buffie:starPower:MEG",
+              "slot": "starPower",
+              "source": "Force Field",
+              "name": "Force Field Buffie",
+              "description": "Meg gains +20% movement speed while the shield is active."
+            },
+            {
+              "id": "buffie:starPower:MEG",
+              "slot": "starPower",
+              "source": "Heavy Metal",
+              "name": "Heavy Metal Buffie",
+              "description": "Feel the Steel also steals 1 Ammo from enemy Brawlers."
+            }
+          ],
+          "hyperCharge": [
+            {
+              "id": "buffie:hypercharge:MEG",
+              "slot": "hypercharge",
+              "source": "Hypercharge",
+              "name": "Hypercharge Buffie",
+              "description": "The Mecha's Main Attack explodes, dealing 360 area damage."
+            }
+          ]
         },
         "gears": [
           {
@@ -23586,7 +23961,7 @@
           "winRate": 67,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/meg",
@@ -23870,9 +24245,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -24021,7 +24396,7 @@
           "winRate": 68.6,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/lola",
@@ -24179,7 +24554,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -24193,19 +24568,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -24306,9 +24680,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -24457,7 +24831,7 @@
           "winRate": 63,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/fang",
@@ -24615,7 +24989,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -24629,19 +25003,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -24742,9 +25115,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -24893,7 +25266,7 @@
           "winRate": 69.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/eve",
@@ -25051,7 +25424,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -25065,19 +25438,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -25178,9 +25550,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -25329,7 +25701,7 @@
           "winRate": 69.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/janet",
@@ -25487,7 +25859,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -25501,19 +25873,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -25614,9 +25985,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -25765,7 +26136,7 @@
           "winRate": 69.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bonnie",
@@ -25923,7 +26294,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -25937,19 +26308,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -26050,9 +26420,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -26201,7 +26571,7 @@
           "winRate": 65.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/otis",
@@ -26359,7 +26729,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -26373,19 +26743,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -26486,9 +26855,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -26637,7 +27006,7 @@
           "winRate": 70.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/sam",
@@ -26795,7 +27164,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -26809,19 +27178,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -26922,9 +27290,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -27073,7 +27441,7 @@
           "winRate": 65.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gus",
@@ -27231,7 +27599,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -27245,19 +27613,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -27358,9 +27725,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -27509,7 +27876,7 @@
           "winRate": 70.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/buster",
@@ -27667,7 +28034,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -27681,19 +28048,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -27821,9 +28187,9 @@
           }
         ],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -27972,7 +28338,7 @@
           "winRate": 63.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/chester",
@@ -28127,10 +28493,10 @@
         }
       },
       "coverage": {
-        "complete": false,
+        "complete": true,
         "usable": true,
         "coreComplete": true,
-        "score": 93,
+        "score": 100,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -28144,18 +28510,16 @@
           "gears": true,
           "hyperCharge": true,
           "overdrive": true,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 2,
+        "optionalKnown": 3,
         "optionalStatus": {
           "hyperCharge": "VERIFIED",
           "overdrive": "VERIFIED",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
-        "missing": [
-          "buffies"
-        ]
+        "missing": []
       },
       "sources": {
         "catalog": "BrawlAPI",
@@ -28255,9 +28619,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -28406,7 +28770,7 @@
           "winRate": 64.6,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gray",
@@ -28564,7 +28928,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -28578,19 +28942,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -28718,9 +29081,9 @@
           }
         ],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -28869,7 +29232,7 @@
           "winRate": 60.8,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/mandy",
@@ -29024,10 +29387,10 @@
         }
       },
       "coverage": {
-        "complete": false,
+        "complete": true,
         "usable": true,
         "coreComplete": true,
-        "score": 93,
+        "score": 100,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -29041,18 +29404,16 @@
           "gears": true,
           "hyperCharge": true,
           "overdrive": true,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 2,
+        "optionalKnown": 3,
         "optionalStatus": {
           "hyperCharge": "VERIFIED",
           "overdrive": "VERIFIED",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
-        "missing": [
-          "buffies"
-        ]
+        "missing": []
       },
       "sources": {
         "catalog": "BrawlAPI",
@@ -29152,9 +29513,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -29303,7 +29664,7 @@
           "winRate": 70.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/r-t",
@@ -29461,7 +29822,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -29475,19 +29836,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -29588,9 +29948,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -29739,7 +30099,7 @@
           "winRate": 62.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/willow",
@@ -29897,7 +30257,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -29911,19 +30271,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -30024,9 +30383,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -30175,7 +30534,7 @@
           "winRate": 67.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/maisie",
@@ -30333,7 +30692,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -30347,19 +30706,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -30460,9 +30818,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -30611,7 +30969,7 @@
           "winRate": 69.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/hank",
@@ -30769,7 +31127,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -30783,19 +31141,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -30896,9 +31253,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -31047,7 +31404,7 @@
           "winRate": 65.6,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/cordelius",
@@ -31205,7 +31562,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -31219,19 +31576,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -31332,9 +31688,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -31483,7 +31839,7 @@
           "winRate": 68.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/doug",
@@ -31641,7 +31997,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -31655,19 +32011,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -31768,9 +32123,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -31919,7 +32274,7 @@
           "winRate": 67.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/pearl",
@@ -32077,7 +32432,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -32091,19 +32446,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -32204,9 +32558,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -32355,7 +32709,7 @@
           "winRate": 65,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/chuck",
@@ -32513,7 +32867,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -32527,19 +32881,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -32640,9 +32993,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -32791,7 +33144,7 @@
           "winRate": 70,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/charlie",
@@ -32949,7 +33302,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -32963,19 +33316,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -33076,9 +33428,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -33227,7 +33579,7 @@
           "winRate": 65.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/mico",
@@ -33385,7 +33737,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -33399,19 +33751,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -33512,9 +33863,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -33663,7 +34014,7 @@
           "winRate": 62.6,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/kit",
@@ -33821,7 +34172,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -33835,19 +34186,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -33967,9 +34317,9 @@
         ],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -34094,7 +34444,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 86,
+        "score": 93,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -34108,18 +34458,17 @@
           "gears": true,
           "hyperCharge": true,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 1,
+        "optionalKnown": 2,
         "optionalStatus": {
           "hyperCharge": "VERIFIED",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -34220,9 +34569,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -34371,7 +34720,7 @@
           "winRate": 66.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/melodie",
@@ -34529,7 +34878,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -34543,19 +34892,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -34656,9 +35004,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -34807,7 +35155,7 @@
           "winRate": 64.8,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/angelo",
@@ -34965,7 +35313,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -34979,19 +35327,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -35092,9 +35439,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -35243,7 +35590,7 @@
           "winRate": 70.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/draco",
@@ -35401,7 +35748,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -35415,19 +35762,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -35528,9 +35874,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -35679,7 +36025,7 @@
           "winRate": 64.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/lily",
@@ -35837,7 +36183,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -35851,19 +36197,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -35964,9 +36309,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -36115,7 +36460,7 @@
           "winRate": 65.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/berry",
@@ -36273,7 +36618,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -36287,19 +36632,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -36400,9 +36744,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -36551,7 +36895,7 @@
           "winRate": 68.6,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/clancy",
@@ -36709,7 +37053,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -36723,19 +37067,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -36836,9 +37179,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -36987,7 +37330,7 @@
           "winRate": 68.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/moe",
@@ -37145,7 +37488,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -37159,19 +37502,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -37272,9 +37614,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -37423,7 +37765,7 @@
           "winRate": 65.8,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/kenji",
@@ -37581,7 +37923,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -37595,19 +37937,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -37708,9 +38049,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -37859,7 +38200,7 @@
           "winRate": 67,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/shade",
@@ -38017,7 +38358,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -38031,19 +38372,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -38144,9 +38484,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -38295,7 +38635,7 @@
           "winRate": 70.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/juju",
@@ -38453,7 +38793,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -38467,19 +38807,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -38580,9 +38919,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -38707,7 +39046,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -38721,19 +39060,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -38834,9 +39172,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -38985,7 +39323,7 @@
           "winRate": 61.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/meeple",
@@ -39143,7 +39481,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -39157,19 +39495,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -39297,9 +39634,9 @@
           }
         ],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -39448,7 +39785,7 @@
           "winRate": 72.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/ollie",
@@ -39603,10 +39940,10 @@
         }
       },
       "coverage": {
-        "complete": false,
+        "complete": true,
         "usable": true,
         "coreComplete": true,
-        "score": 93,
+        "score": 100,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -39620,18 +39957,16 @@
           "gears": true,
           "hyperCharge": true,
           "overdrive": true,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 2,
+        "optionalKnown": 3,
         "optionalStatus": {
           "hyperCharge": "VERIFIED",
           "overdrive": "VERIFIED",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
-        "missing": [
-          "buffies"
-        ]
+        "missing": []
       },
       "sources": {
         "catalog": "BrawlAPI",
@@ -39731,9 +40066,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -39882,7 +40217,7 @@
           "winRate": 65.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/lumi",
@@ -40040,7 +40375,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -40054,19 +40389,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -40167,9 +40501,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -40318,7 +40652,7 @@
           "winRate": 69.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/finx",
@@ -40476,7 +40810,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -40490,19 +40824,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -40603,9 +40936,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -40754,7 +41087,7 @@
           "winRate": 70.6,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/jae-yong",
@@ -40907,7 +41240,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -40921,19 +41254,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -41034,9 +41366,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -41185,7 +41517,7 @@
           "winRate": 63.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/kaze",
@@ -41343,7 +41675,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -41357,19 +41689,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -41470,9 +41801,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -41621,7 +41952,7 @@
           "winRate": 66.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/alli",
@@ -41779,7 +42110,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -41793,19 +42124,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -41933,9 +42263,9 @@
           }
         ],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -42084,7 +42414,7 @@
           "winRate": 67.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/trunk",
@@ -42239,10 +42569,10 @@
         }
       },
       "coverage": {
-        "complete": false,
+        "complete": true,
         "usable": true,
         "coreComplete": true,
-        "score": 93,
+        "score": 100,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -42256,18 +42586,16 @@
           "gears": true,
           "hyperCharge": true,
           "overdrive": true,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 2,
+        "optionalKnown": 3,
         "optionalStatus": {
           "hyperCharge": "VERIFIED",
           "overdrive": "VERIFIED",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
-        "missing": [
-          "buffies"
-        ]
+        "missing": []
       },
       "sources": {
         "catalog": "BrawlAPI",
@@ -42386,9 +42714,9 @@
         ],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -42537,7 +42865,7 @@
           "winRate": 64.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/mina",
@@ -42695,7 +43023,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 86,
+        "score": 93,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -42709,18 +43037,17 @@
           "gears": true,
           "hyperCharge": true,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 1,
+        "optionalKnown": 2,
         "optionalStatus": {
           "hyperCharge": "VERIFIED",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -42821,9 +43148,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -42972,7 +43299,7 @@
           "winRate": 69.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/ziggy",
@@ -43130,7 +43457,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -43144,19 +43471,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -43257,9 +43583,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -43403,7 +43729,7 @@
           "winRate": 63.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/pierce",
@@ -43561,7 +43887,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -43575,19 +43901,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -43688,9 +44013,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -43839,7 +44164,7 @@
           "winRate": 69.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gigi",
@@ -43997,7 +44322,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -44011,19 +44336,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -44124,9 +44448,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -44240,7 +44564,7 @@
           "winRate": 70.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/glowy",
@@ -44257,7 +44581,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -44271,19 +44595,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -44384,9 +44707,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -44535,7 +44858,7 @@
           "winRate": 67.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/sirius",
@@ -44693,7 +45016,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -44707,19 +45030,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -44820,9 +45142,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -44971,7 +45293,7 @@
           "winRate": 66,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/najia",
@@ -45129,7 +45451,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -45143,19 +45465,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -45256,9 +45577,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -45407,7 +45728,7 @@
           "winRate": 69.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/damian",
@@ -45565,7 +45886,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -45579,19 +45900,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -45692,9 +46012,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -45995,7 +46315,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -46009,19 +46329,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -46136,9 +46455,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -46287,7 +46606,7 @@
           "winRate": 73.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bolt",
@@ -46445,7 +46764,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -46459,19 +46778,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -46572,9 +46890,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -46723,7 +47041,7 @@
           "winRate": 67.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/nori",
@@ -46881,7 +47199,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -46895,19 +47213,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -47008,9 +47325,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -47159,7 +47476,7 @@
           "winRate": 76.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/wendy",
@@ -47317,7 +47634,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -47331,19 +47648,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -47444,9 +47760,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -47595,7 +47911,7 @@
           "winRate": 66.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T17:13:11.992Z"
+          "updatedAt": "2026-09-27T17:35:43.601Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/cosmo",
@@ -47753,7 +48069,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -47767,19 +48083,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -47880,9 +48195,9 @@
         "hyperCharges": [],
         "overdrives": [],
         "buffies": {
-          "gadget": null,
-          "starPower": null,
-          "hyperCharge": null
+          "gadget": [],
+          "starPower": [],
+          "hyperCharge": []
         },
         "gears": [
           {
@@ -48007,7 +48322,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -48021,19 +48336,18 @@
           "gears": true,
           "hyperCharge": false,
           "overdrive": false,
-          "buffies": false,
+          "buffies": true,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
           "overdrive": "UNKNOWN",
-          "buffies": "UNKNOWN"
+          "buffies": "VERIFIED"
         },
         "missing": [
           "hyperCharge",
-          "overdrive",
-          "buffies"
+          "overdrive"
         ]
       },
       "sources": {
@@ -48046,14 +48360,13 @@
   "quality": {
     "brawlers": 109,
     "coreComplete": 109,
-    "complete": 0,
-    "partial": 109,
+    "complete": 4,
+    "partial": 105,
     "usable": 109,
-    "averageScore": 81,
+    "averageScore": 87,
     "missingByField": {
       "hyperCharge": 103,
-      "overdrive": 105,
-      "buffies": 88
+      "overdrive": 105
     }
   }
 }
