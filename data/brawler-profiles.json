@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-27T12:11:52.529Z",
+  "generatedAt": "2026-09-27T12:19:11.431Z",
   "sources": [
     {
       "name": "BrawlAPI Brawler catalog",
@@ -79,6 +79,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -314,7 +315,7 @@
           "winRate": 64.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/shelly",
@@ -469,7 +470,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 86,
         "fields": {
@@ -560,6 +562,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -795,7 +798,7 @@
           "winRate": 60.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/colt",
@@ -950,7 +953,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 86,
         "fields": {
@@ -1041,6 +1045,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -1276,7 +1281,7 @@
           "winRate": 64.8,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bull",
@@ -1431,7 +1436,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 86,
         "fields": {
@@ -1522,6 +1528,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -1757,7 +1764,7 @@
           "winRate": 62,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/brock",
@@ -1912,7 +1919,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 86,
         "fields": {
@@ -2003,6 +2011,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -2238,7 +2247,7 @@
           "winRate": 61.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/rico",
@@ -2393,7 +2402,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 86,
         "fields": {
@@ -2484,6 +2494,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -2719,7 +2730,7 @@
           "winRate": 62.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T10:34:43.024Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/spike",
@@ -2874,7 +2885,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 86,
         "fields": {
@@ -2965,6 +2977,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -3146,7 +3159,7 @@
           "winRate": 65.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/barley",
@@ -3301,7 +3314,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -3393,6 +3407,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -3574,7 +3589,7 @@
           "winRate": 66.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/jessie",
@@ -3729,7 +3744,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -3821,6 +3837,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -4056,7 +4073,7 @@
           "winRate": 68.8,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/nita",
@@ -4211,7 +4228,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 86,
         "fields": {
@@ -4302,6 +4320,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -4483,7 +4502,7 @@
           "winRate": 60.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/dynamike",
@@ -4638,7 +4657,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -4730,6 +4750,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -5060,7 +5081,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -5152,6 +5174,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -5387,7 +5410,7 @@
           "winRate": 57.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/mortis",
@@ -5542,7 +5565,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 86,
         "fields": {
@@ -5633,6 +5657,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -5868,7 +5893,7 @@
           "winRate": 60.8,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/crow",
@@ -6023,7 +6048,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 86,
         "fields": {
@@ -6114,6 +6140,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -6295,7 +6322,7 @@
           "winRate": 64.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/poco",
@@ -6450,7 +6477,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -6542,6 +6570,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -6777,7 +6806,7 @@
           "winRate": 64.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bo",
@@ -6932,7 +6961,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 86,
         "fields": {
@@ -7023,6 +7053,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -7204,7 +7235,7 @@
           "winRate": 60.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/piper",
@@ -7359,7 +7390,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -7451,6 +7483,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -7627,7 +7660,7 @@
           "winRate": 69.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/pam",
@@ -7782,7 +7815,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -7874,6 +7908,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -8055,7 +8090,7 @@
           "winRate": 66.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/tara",
@@ -8210,7 +8245,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -8302,6 +8338,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -8483,7 +8520,7 @@
           "winRate": 66.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/darryl",
@@ -8638,7 +8675,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -8730,6 +8768,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -8911,7 +8950,7 @@
           "winRate": 63.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/penny",
@@ -9066,7 +9105,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -9158,6 +9198,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -9393,7 +9434,7 @@
           "winRate": 65.8,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/frank",
@@ -9548,7 +9589,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 86,
         "fields": {
@@ -9639,6 +9681,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -9820,7 +9863,7 @@
           "winRate": 62.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gene",
@@ -9975,7 +10018,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -10067,6 +10111,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -10248,7 +10293,7 @@
           "winRate": 62.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/tick",
@@ -10403,7 +10448,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -10495,6 +10541,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -10730,7 +10777,7 @@
           "winRate": 62.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/leon",
@@ -10885,7 +10932,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 86,
         "fields": {
@@ -10976,6 +11024,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -11157,7 +11206,7 @@
           "winRate": 71,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/rosa",
@@ -11312,7 +11361,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -11404,6 +11454,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -11585,7 +11636,7 @@
           "winRate": 65.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/carl",
@@ -11740,7 +11791,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -11832,6 +11884,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -12067,7 +12120,7 @@
           "winRate": 64.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bibi",
@@ -12222,7 +12275,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 86,
         "fields": {
@@ -12313,6 +12367,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -12548,7 +12603,7 @@
           "winRate": 66,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/8-bit",
@@ -12703,7 +12758,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 86,
         "fields": {
@@ -12794,6 +12850,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -12975,7 +13032,7 @@
           "winRate": 68.8,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/sandy",
@@ -13130,7 +13187,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -13222,6 +13280,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -13403,7 +13462,7 @@
           "winRate": 63.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bea",
@@ -13558,7 +13617,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -13650,6 +13710,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -13885,7 +13946,7 @@
           "winRate": 63.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/emz",
@@ -14040,7 +14101,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 86,
         "fields": {
@@ -14131,6 +14193,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -14461,7 +14524,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -14553,6 +14617,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -14788,7 +14853,7 @@
           "winRate": 62.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/max",
@@ -14943,7 +15008,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 86,
         "fields": {
@@ -15034,6 +15100,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -15215,7 +15282,7 @@
           "winRate": 70.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/jacky",
@@ -15370,7 +15437,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -15462,6 +15530,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -15643,7 +15712,7 @@
           "winRate": 64.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gale",
@@ -15798,7 +15867,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -15890,6 +15960,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -16071,7 +16142,7 @@
           "winRate": 63.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/nani",
@@ -16226,7 +16297,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -16318,6 +16390,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -16499,7 +16572,7 @@
           "winRate": 66.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/sprout",
@@ -16654,7 +16727,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -16746,6 +16820,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -16981,7 +17056,7 @@
           "winRate": 61.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/surge",
@@ -17136,7 +17211,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 86,
         "fields": {
@@ -17227,6 +17303,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -17462,7 +17539,7 @@
           "winRate": 61.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/colette",
@@ -17617,7 +17694,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 86,
         "fields": {
@@ -17708,6 +17786,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -17889,7 +17968,7 @@
           "winRate": 67.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/amber",
@@ -18044,7 +18123,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -18136,6 +18216,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -18317,7 +18398,7 @@
           "winRate": 67.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/lou",
@@ -18472,7 +18553,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -18564,6 +18646,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -18745,7 +18828,7 @@
           "winRate": 60.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/byron",
@@ -18900,7 +18983,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -18992,6 +19076,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -19220,7 +19305,7 @@
           "winRate": 61,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/edgar",
@@ -19375,7 +19460,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 86,
         "fields": {
@@ -19466,6 +19552,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -19647,7 +19734,7 @@
           "winRate": 64.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/ruffs",
@@ -19802,7 +19889,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -19894,6 +19982,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -20075,7 +20164,7 @@
           "winRate": 60.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/stu",
@@ -20230,7 +20319,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -20322,6 +20412,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -20503,7 +20594,7 @@
           "winRate": 65.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/belle",
@@ -20658,7 +20749,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -20750,6 +20842,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -20931,7 +21024,7 @@
           "winRate": 62.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/squeak",
@@ -21086,7 +21179,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -21178,6 +21272,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -21359,7 +21454,7 @@
           "winRate": 64.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/grom",
@@ -21514,7 +21609,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -21606,6 +21702,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -21787,7 +21884,7 @@
           "winRate": 63.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/buzz",
@@ -21942,7 +22039,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -22034,6 +22132,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -22269,7 +22368,7 @@
           "winRate": 63.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/griff",
@@ -22424,7 +22523,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 86,
         "fields": {
@@ -22515,6 +22615,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -22696,7 +22797,7 @@
           "winRate": 69.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/ash",
@@ -22851,7 +22952,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -22943,6 +23045,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -23171,7 +23274,7 @@
           "winRate": 67,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/meg",
@@ -23326,7 +23429,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 86,
         "fields": {
@@ -23417,6 +23521,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -23598,7 +23703,7 @@
           "winRate": 68.6,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/lola",
@@ -23753,7 +23858,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -23845,6 +23951,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -24026,7 +24133,7 @@
           "winRate": 63,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/fang",
@@ -24181,7 +24288,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -24273,6 +24381,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -24454,7 +24563,7 @@
           "winRate": 69.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/eve",
@@ -24609,7 +24718,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -24701,6 +24811,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -24882,7 +24993,7 @@
           "winRate": 69,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/janet",
@@ -25037,7 +25148,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -25129,6 +25241,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -25310,7 +25423,7 @@
           "winRate": 69.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bonnie",
@@ -25465,7 +25578,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -25557,6 +25671,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -25738,7 +25853,7 @@
           "winRate": 65.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/otis",
@@ -25893,7 +26008,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -25985,6 +26101,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -26166,7 +26283,7 @@
           "winRate": 70.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/sam",
@@ -26321,7 +26438,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -26413,6 +26531,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -26594,7 +26713,7 @@
           "winRate": 65.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gus",
@@ -26749,7 +26868,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -26841,6 +26961,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -27022,7 +27143,7 @@
           "winRate": 70.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/buster",
@@ -27177,7 +27298,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -27269,6 +27391,17 @@
           "infoTid": null
         }
       },
+      "hyperCharge": {
+        "key": "JesterOverchargedUlti",
+        "name": "JesterOverchargedUlti",
+        "description": "",
+        "source": "BrawlAPI game CSV",
+        "status": "VERIFIED",
+        "raw": {
+          "tid": null,
+          "infoTid": null
+        }
+      },
       "abilities": {
         "gadgets": [
           {
@@ -27302,7 +27435,16 @@
             "released": true
           }
         ],
-        "hyperCharges": [],
+        "hyperCharges": [
+          {
+            "id": "hyper:JesterOverchargedUlti",
+            "name": "JesterOverchargedUlti",
+            "description": "",
+            "imageUrl": null,
+            "released": true,
+            "source": "BrawlAPI game CSV"
+          }
+        ],
         "overdrives": [
           {
             "id": "overdrive:16000063",
@@ -27458,7 +27600,7 @@
           "winRate": 63.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/chester",
@@ -27613,9 +27755,10 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
-        "score": 86,
+        "score": 93,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -27627,19 +27770,18 @@
           "gadgets": true,
           "starPowers": true,
           "gears": true,
-          "hyperCharge": false,
+          "hyperCharge": true,
           "overdrive": true,
           "buffies": false,
           "meta": true
         },
-        "optionalKnown": 1,
+        "optionalKnown": 2,
         "optionalStatus": {
-          "hyperCharge": "UNKNOWN",
+          "hyperCharge": "VERIFIED",
           "overdrive": "VERIFIED",
           "buffies": "UNKNOWN"
         },
         "missing": [
-          "hyperCharge",
           "buffies"
         ]
       },
@@ -27704,6 +27846,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -27885,7 +28028,7 @@
           "winRate": 64.6,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gray",
@@ -28040,7 +28183,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -28132,6 +28276,17 @@
           "infoTid": null
         }
       },
+      "hyperCharge": {
+        "key": "BeamerOverchargedUlti",
+        "name": "BeamerOverchargedUlti",
+        "description": "",
+        "source": "BrawlAPI game CSV",
+        "status": "VERIFIED",
+        "raw": {
+          "tid": null,
+          "infoTid": null
+        }
+      },
       "abilities": {
         "gadgets": [
           {
@@ -28165,7 +28320,16 @@
             "released": true
           }
         ],
-        "hyperCharges": [],
+        "hyperCharges": [
+          {
+            "id": "hyper:BeamerOverchargedUlti",
+            "name": "BeamerOverchargedUlti",
+            "description": "",
+            "imageUrl": null,
+            "released": true,
+            "source": "BrawlAPI game CSV"
+          }
+        ],
         "overdrives": [
           {
             "id": "overdrive:16000065",
@@ -28321,7 +28485,7 @@
           "winRate": 60.8,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/mandy",
@@ -28476,9 +28640,10 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
-        "score": 86,
+        "score": 93,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -28490,19 +28655,18 @@
           "gadgets": true,
           "starPowers": true,
           "gears": true,
-          "hyperCharge": false,
+          "hyperCharge": true,
           "overdrive": true,
           "buffies": false,
           "meta": true
         },
-        "optionalKnown": 1,
+        "optionalKnown": 2,
         "optionalStatus": {
-          "hyperCharge": "UNKNOWN",
+          "hyperCharge": "VERIFIED",
           "overdrive": "VERIFIED",
           "buffies": "UNKNOWN"
         },
         "missing": [
-          "hyperCharge",
           "buffies"
         ]
       },
@@ -28567,6 +28731,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -28748,7 +28913,7 @@
           "winRate": 70.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/r-t",
@@ -28903,7 +29068,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -28995,6 +29161,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -29176,7 +29343,7 @@
           "winRate": 62.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/willow",
@@ -29331,7 +29498,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -29423,6 +29591,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -29604,7 +29773,7 @@
           "winRate": 67.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/maisie",
@@ -29759,7 +29928,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -29851,6 +30021,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -30032,7 +30203,7 @@
           "winRate": 69.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/hank",
@@ -30187,7 +30358,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -30279,6 +30451,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -30460,7 +30633,7 @@
           "winRate": 65.6,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/cordelius",
@@ -30615,7 +30788,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -30707,6 +30881,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -30888,7 +31063,7 @@
           "winRate": 68.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/doug",
@@ -31043,7 +31218,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -31135,6 +31311,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -31316,7 +31493,7 @@
           "winRate": 67.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/pearl",
@@ -31471,7 +31648,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -31563,6 +31741,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -31744,7 +31923,7 @@
           "winRate": 65,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/chuck",
@@ -31899,7 +32078,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -31991,6 +32171,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -32172,7 +32353,7 @@
           "winRate": 70,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/charlie",
@@ -32327,7 +32508,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -32419,6 +32601,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -32600,7 +32783,7 @@
           "winRate": 65.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/mico",
@@ -32755,7 +32938,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -32847,6 +33031,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -33028,7 +33213,7 @@
           "winRate": 62.6,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/kit",
@@ -33183,7 +33368,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -33275,6 +33461,17 @@
           "infoTid": null
         }
       },
+      "hyperCharge": {
+        "key": "TwinsHyperUlti",
+        "name": "TwinsHyperUlti",
+        "description": "",
+        "source": "BrawlAPI game CSV",
+        "status": "VERIFIED",
+        "raw": {
+          "tid": null,
+          "infoTid": null
+        }
+      },
       "abilities": {
         "gadgets": [
           {
@@ -33308,7 +33505,16 @@
             "released": true
           }
         ],
-        "hyperCharges": [],
+        "hyperCharges": [
+          {
+            "id": "hyper:TwinsHyperUlti",
+            "name": "TwinsHyperUlti",
+            "description": "",
+            "imageUrl": null,
+            "released": true,
+            "source": "BrawlAPI game CSV"
+          }
+        ],
         "overdrives": [],
         "buffies": {
           "gadget": null,
@@ -33429,9 +33635,10 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -33443,19 +33650,18 @@
           "gadgets": true,
           "starPowers": true,
           "gears": true,
-          "hyperCharge": false,
+          "hyperCharge": true,
           "overdrive": false,
           "buffies": false,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
-          "hyperCharge": "UNKNOWN",
+          "hyperCharge": "VERIFIED",
           "overdrive": "UNKNOWN",
           "buffies": "UNKNOWN"
         },
         "missing": [
-          "hyperCharge",
           "overdrive",
           "buffies"
         ]
@@ -33521,6 +33727,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -33702,7 +33909,7 @@
           "winRate": 66.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/melodie",
@@ -33857,7 +34064,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -33949,6 +34157,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -34130,7 +34339,7 @@
           "winRate": 64.8,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/angelo",
@@ -34285,7 +34494,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -34377,6 +34587,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -34558,7 +34769,7 @@
           "winRate": 70.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/draco",
@@ -34713,7 +34924,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -34805,6 +35017,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -34986,7 +35199,7 @@
           "winRate": 64.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/lily",
@@ -35141,7 +35354,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -35233,6 +35447,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -35414,7 +35629,7 @@
           "winRate": 65.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/berry",
@@ -35569,7 +35784,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -35661,6 +35877,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -35842,7 +36059,7 @@
           "winRate": 68.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/clancy",
@@ -35997,7 +36214,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -36089,6 +36307,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -36270,7 +36489,7 @@
           "winRate": 68.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/moe",
@@ -36425,7 +36644,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -36517,6 +36737,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -36698,7 +36919,7 @@
           "winRate": 65.8,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/kenji",
@@ -36853,7 +37074,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -36945,6 +37167,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -37126,7 +37349,7 @@
           "winRate": 67,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/shade",
@@ -37281,7 +37504,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -37373,6 +37597,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -37554,7 +37779,7 @@
           "winRate": 70.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/juju",
@@ -37709,7 +37934,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -37801,6 +38027,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -37955,7 +38182,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -38047,6 +38275,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -38228,7 +38457,7 @@
           "winRate": 61.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/meeple",
@@ -38383,7 +38612,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -38475,6 +38705,17 @@
           "infoTid": null
         }
       },
+      "hyperCharge": {
+        "key": "SkaterOverchargedUlti",
+        "name": "SkaterOverchargedUlti",
+        "description": "",
+        "source": "BrawlAPI game CSV",
+        "status": "VERIFIED",
+        "raw": {
+          "tid": null,
+          "infoTid": null
+        }
+      },
       "abilities": {
         "gadgets": [
           {
@@ -38508,7 +38749,16 @@
             "released": true
           }
         ],
-        "hyperCharges": [],
+        "hyperCharges": [
+          {
+            "id": "hyper:SkaterOverchargedUlti",
+            "name": "SkaterOverchargedUlti",
+            "description": "",
+            "imageUrl": null,
+            "released": true,
+            "source": "BrawlAPI game CSV"
+          }
+        ],
         "overdrives": [
           {
             "id": "overdrive:16000090",
@@ -38664,7 +38914,7 @@
           "winRate": 72.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/ollie",
@@ -38819,9 +39069,10 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
-        "score": 86,
+        "score": 93,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -38833,19 +39084,18 @@
           "gadgets": true,
           "starPowers": true,
           "gears": true,
-          "hyperCharge": false,
+          "hyperCharge": true,
           "overdrive": true,
           "buffies": false,
           "meta": true
         },
-        "optionalKnown": 1,
+        "optionalKnown": 2,
         "optionalStatus": {
-          "hyperCharge": "UNKNOWN",
+          "hyperCharge": "VERIFIED",
           "overdrive": "VERIFIED",
           "buffies": "UNKNOWN"
         },
         "missing": [
-          "hyperCharge",
           "buffies"
         ]
       },
@@ -38910,6 +39160,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -39091,7 +39342,7 @@
           "winRate": 65.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/lumi",
@@ -39246,7 +39497,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -39338,6 +39590,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -39519,7 +39772,7 @@
           "winRate": 69.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/finx",
@@ -39674,7 +39927,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -39766,6 +40020,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -39947,7 +40202,7 @@
           "winRate": 70.6,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/jae-yong",
@@ -40097,7 +40352,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -40189,6 +40445,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -40370,7 +40627,7 @@
           "winRate": 63.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/kaze",
@@ -40525,7 +40782,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -40617,6 +40875,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -40798,7 +41057,7 @@
           "winRate": 66.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/alli",
@@ -40953,7 +41212,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -41045,6 +41305,17 @@
           "infoTid": null
         }
       },
+      "hyperCharge": {
+        "key": "DomainOverchargedUlti",
+        "name": "DomainOverchargedUlti",
+        "description": "",
+        "source": "BrawlAPI game CSV",
+        "status": "VERIFIED",
+        "raw": {
+          "tid": null,
+          "infoTid": null
+        }
+      },
       "abilities": {
         "gadgets": [
           {
@@ -41078,7 +41349,16 @@
             "released": true
           }
         ],
-        "hyperCharges": [],
+        "hyperCharges": [
+          {
+            "id": "hyper:DomainOverchargedUlti",
+            "name": "DomainOverchargedUlti",
+            "description": "",
+            "imageUrl": null,
+            "released": true,
+            "source": "BrawlAPI game CSV"
+          }
+        ],
         "overdrives": [
           {
             "id": "overdrive:16000096",
@@ -41234,7 +41514,7 @@
           "winRate": 67.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/trunk",
@@ -41389,9 +41669,10 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
-        "score": 86,
+        "score": 93,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -41403,19 +41684,18 @@
           "gadgets": true,
           "starPowers": true,
           "gears": true,
-          "hyperCharge": false,
+          "hyperCharge": true,
           "overdrive": true,
           "buffies": false,
           "meta": true
         },
-        "optionalKnown": 1,
+        "optionalKnown": 2,
         "optionalStatus": {
-          "hyperCharge": "UNKNOWN",
+          "hyperCharge": "VERIFIED",
           "overdrive": "VERIFIED",
           "buffies": "UNKNOWN"
         },
         "missing": [
-          "hyperCharge",
           "buffies"
         ]
       },
@@ -41480,6 +41760,17 @@
           "infoTid": null
         }
       },
+      "hyperCharge": {
+        "key": "DancerOverchargedUlti",
+        "name": "DancerOverchargedUlti",
+        "description": "",
+        "source": "BrawlAPI game CSV",
+        "status": "VERIFIED",
+        "raw": {
+          "tid": null,
+          "infoTid": null
+        }
+      },
       "abilities": {
         "gadgets": [
           {
@@ -41513,7 +41804,16 @@
             "released": true
           }
         ],
-        "hyperCharges": [],
+        "hyperCharges": [
+          {
+            "id": "hyper:DancerOverchargedUlti",
+            "name": "DancerOverchargedUlti",
+            "description": "",
+            "imageUrl": null,
+            "released": true,
+            "source": "BrawlAPI game CSV"
+          }
+        ],
         "overdrives": [],
         "buffies": {
           "gadget": null,
@@ -41661,7 +41961,7 @@
           "winRate": 64.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/mina",
@@ -41816,9 +42116,10 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
-        "score": 79,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -41830,19 +42131,18 @@
           "gadgets": true,
           "starPowers": true,
           "gears": true,
-          "hyperCharge": false,
+          "hyperCharge": true,
           "overdrive": false,
           "buffies": false,
           "meta": true
         },
-        "optionalKnown": 0,
+        "optionalKnown": 1,
         "optionalStatus": {
-          "hyperCharge": "UNKNOWN",
+          "hyperCharge": "VERIFIED",
           "overdrive": "UNKNOWN",
           "buffies": "UNKNOWN"
         },
         "missing": [
-          "hyperCharge",
           "overdrive",
           "buffies"
         ]
@@ -41908,6 +42208,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -42089,7 +42390,7 @@
           "winRate": 69.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/ziggy",
@@ -42244,7 +42545,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -42336,6 +42638,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -42512,7 +42815,7 @@
           "winRate": 63.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/pierce",
@@ -42667,7 +42970,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -42759,6 +43063,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -42940,7 +43245,7 @@
           "winRate": 69.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gigi",
@@ -43095,7 +43400,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -43187,6 +43493,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -43333,7 +43640,7 @@
           "winRate": 70.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/glowy",
@@ -43347,7 +43654,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -43439,6 +43747,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -43620,7 +43929,7 @@
           "winRate": 67.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/sirius",
@@ -43775,7 +44084,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -43867,6 +44177,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -44048,7 +44359,7 @@
           "winRate": 66,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/najia",
@@ -44203,7 +44514,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -44295,6 +44607,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -44476,7 +44789,7 @@
           "winRate": 69.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/damian",
@@ -44631,7 +44944,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -44723,6 +45037,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -45053,7 +45368,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -45145,6 +45461,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -45340,7 +45657,7 @@
           "winRate": 73.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bolt",
@@ -45495,7 +45812,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -45587,6 +45905,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -45768,7 +46087,7 @@
           "winRate": 67.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/nori",
@@ -45923,7 +46242,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -46015,6 +46335,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -46196,7 +46517,7 @@
           "winRate": 76.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/wendy",
@@ -46351,7 +46672,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -46443,6 +46765,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -46624,7 +46947,7 @@
           "winRate": 66.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T12:10:20.421Z"
+          "updatedAt": "2026-09-27T12:17:20.810Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/cosmo",
@@ -46779,7 +47102,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -46871,6 +47195,7 @@
           "infoTid": null
         }
       },
+      "hyperCharge": null,
       "abilities": {
         "gadgets": [
           {
@@ -47025,7 +47350,8 @@
         }
       },
       "coverage": {
-        "complete": true,
+        "complete": false,
+        "usable": true,
         "coreComplete": true,
         "score": 79,
         "fields": {
@@ -47066,11 +47392,12 @@
   "quality": {
     "brawlers": 109,
     "coreComplete": 109,
-    "complete": 109,
-    "partial": 0,
+    "complete": 0,
+    "partial": 109,
+    "usable": 109,
     "averageScore": 81,
     "missingByField": {
-      "hyperCharge": 109,
+      "hyperCharge": 103,
       "overdrive": 105,
       "buffies": 88
     }
