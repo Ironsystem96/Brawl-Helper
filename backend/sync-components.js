@@ -8,7 +8,7 @@ async function main(){
  const [gearBoosts,characters,skills,texts]=await Promise.all([
   get('https://api.brawlapi.com/v2/raw/csv_logic/gear_boosts').then(x=>x.data||{}),
   get('https://api.brawlapi.com/v2/raw/csv_logic/characters').then(x=>x.data||{}),
-  get('https://api.brawlapi.com/v2/raw/csv_logic/skills').then(x=>x.data||{}),
+  get('https://api.brawlapi.com/v2/raw/csv_logic/skills').then(x=>x.data||{}).catch(()=>({})),
   get('https://api.brawlapi.com/v2/raw/localization/texts').then(x=>x.data||{})
  ]);
  const gearRows=Object.values(gearBoosts||{}).filter(x=>x&&x.Name);
