@@ -54,7 +54,10 @@ function parseNoff(html,brawler){
   let gm;
   while((gm=gearRe.exec(gearBlock))){
     let name=gm[1].trim().replace(/^Image/i,'').replace(/^(?:Gear\s*)/i,'').replace(/\s+/g,' ');
-    if(!name||/^(?:Gear Pick Rates|Damage|Speed|Shield|Health|Vision|Gadget Cooldown|Reload Speed|Super Charge|Pet Power|Talk to the Hand|Thicc Head|Exhausting Storm|Quadruplets|Super Turret)$/i.test(name) && false) continue;
+    const known=['Damage','Shield','Speed','Health','Vision','Gadget Cooldown','Reload Speed','Super Charge','Pet Power','Talk to the Hand','Thicc Head','Exhausting Storm','Quadruplets','Super Turret'];
+    const canonical=known.find(k=>norm(name)===norm(k+k))||known.find(k=>norm(name)===norm(k));
+    name=canonical||name;
+    if(!name) continue;
     if(!gearOut.some(x=>norm(x.name)===norm(name)))gearOut.push({name,pick:Number(gm[2])});
   }
   gears.push(...gearOut.slice(0,6));
