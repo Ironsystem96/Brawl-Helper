@@ -62,20 +62,22 @@ async function main(){
    buffies:Object.values(abilities.buffies).filter(Boolean).length===3,
    meta:!!(meta.stats||meta.noff||meta.gadget?.length||meta.starPower?.length||meta.gears?.length)
   };
-  const complete=Object.values(coverage).every(Boolean);
+  const coreComplete=coverage.identity&&coverage.portrait&&coverage.rarity&&coverage.role&&coverage.lore&&coverage.attack&&coverage.super&&coverage.gadgets&&coverage.starPowers&&coverage.gears;
+  const complete=coreComplete&&coverage.hyperCharge&&coverage.overdrive&&coverage.buffies&&coverage.meta;
   profiles.entries[String(b.id)]={
    id:b.id,name:b.name,identity:{assetId:b.assetId,avatarId:b.avatarId,rarity:b.rarity||null,class:b.class||null,description:b.description||'',shortDescription:b.shortDescription||''},
    portrait:{imageUrl:b.imageUrl||null,imageUrl2:b.imageUrl2||null},
    baseStats:ch?{health:firstNonEmpty(ch.Hitpoints,ch.Health),speed:firstNonEmpty(ch.Speed),attackDamage:firstNonEmpty(ch.AutoAttackDamage),attackBullets:firstNonEmpty(ch.AutoAttackBulletsPerShot),attackRange:firstNonEmpty(ch.AutoAttackRange),reloadMs:firstNonEmpty(ch.AutoAttackSpeedMs),regeneratePerSecond:firstNonEmpty(ch.RegeneratePerSecond),superChargeMultiplier:firstNonEmpty(ch.UltiChargeMul),superChargeDivider:firstNonEmpty(ch.UltiChargeDiv)}:null,
    attack,super:superDef,
    abilities,meta,
-   coverage:{complete,fields:coverage,missing:Object.entries(coverage).filter(([,ok])=>!ok).map(([k])=>k)},
+   coverage:{complete,coreComplete,fields:coverage,missing:Object.entries(coverage).filter(([,ok])=>!ok).map(([k])=>k)},
    sources:{catalog:'BrawlAPI',gameData:'BrawlAPI game CSV',buildMeta:meta.sourceUrl||meta.noff?.sourceUrl||null}
   };
  }
  const vals=Object.values(profiles.entries);
- profiles.quality={brawlers:vals.length,complete:vals.filter(x=>x.coverage.complete).length,partial:vals.filter(x=>!x.coverage.complete).length,missingByField:Object.fromEntries([...new Set(vals.flatMap(x=>x.coverage.missing))].map(k=>[k,vals.filter(x=>x.coverage.missing.includes(k)).length]))};
+ profiles.quality={brawlers:vals.length,coreComplete:vals.filter(x=>x.coverage.coreComplete).length,complete:vals.filter(x=>x.coverage.complete).length,partial:vals.filter(x=>!x.coverage.complete).length,missingByField:Object.fromEntries([...new Set(vals.flatMap(x=>x.coverage.missing))].map(k=>[k,vals.filter(x=>x.coverage.missing.includes(k)).length]))};
  fs.writeFileSync(OUT,JSON.stringify(profiles,null,2)+'\n');
  console.log(JSON.stringify(profiles.quality,null,2));
+ if(profiles.quality.coreComplete!==profiles.quality.brawlers)throw Error('Core Brawler profile incomplete: '+(profiles.quality.brawlers-profiles.quality.coreComplete));
 }
 main().catch(e=>{console.error(e);process.exit(1)})
