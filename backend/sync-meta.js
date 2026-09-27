@@ -45,7 +45,7 @@ function escRe(s){return String(s||'').replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}
 function parseNoff(html,brawler){
   const text=clean(html);
   const gadgets=[],starPowers=[],gears=[];
-  const parseNamed=(names)=>{const out=[],low=text.toLowerCase();for(const item of names||[]){const name=item?.name||item;const i=low.indexOf(String(name).toLowerCase());if(i<0)continue;const tail=text.slice(i,i+120);const m=tail.match(/\s*(\d{1,3})%pick/i);if(m)out.push({name,pick:Number(m[1])});}return out;};
+  const parseNamed=(names)=>{const out=[],low=text.toLowerCase();for(const item of names||[]){const name=item?.name||item,key=String(name).toLowerCase();let i=low.indexOf(key),pick=null;while(i>=0){const m=text.slice(i,i+120).match(/\s*(\d{1,3})%pick/i);if(m){pick=Number(m[1]);break}i=low.indexOf(key,i+key.length)}if(pick!=null)out.push({name,pick});}return out;};
   gadgets.push(...parseNamed(brawler?.gadgets));
   starPowers.push(...parseNamed(brawler?.starPowers));
   const gearNames=['Damage','Shield','Speed','Health','Vision','Gadget Cooldown','Reload','Super Charge','Pet Power','Talk to the Hand','Thicc Head','Exhausting Storm','Quadruplets','Super Turret'];
