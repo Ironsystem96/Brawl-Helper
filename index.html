@@ -22,7 +22,7 @@ window.addEventListener('error',function(e){
 
 <script>
 (function(){
-  var KEY='bh_sw_reset_v2';
+  var KEY='bh_sw_reset_v3';
   if(sessionStorage.getItem(KEY)==='1') return;
   if(!('serviceWorker' in navigator) && !('caches' in window)) return;
   sessionStorage.setItem(KEY,'1');
@@ -37,7 +37,7 @@ window.addEventListener('error',function(e){
 })();
 </script>
 <script src="recommendations.js?v=1"></script>
-<script src="app.js?v=39"></script>
+<script src="app.js?v=40"></script>
 <script>
 setTimeout(function(){
   var app=document.getElementById('app');
