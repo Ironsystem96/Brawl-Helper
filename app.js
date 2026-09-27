@@ -11,6 +11,7 @@ const DB_STATE={loaded:false,version:null,patch:null,lastSyncedAt:null,changelog
 const BUILD_STATE={loaded:false,updatedAt:null,entries:{},sources:[]};
 const CATALOG_STATE={loaded:false,count:0,entries:{}};
 const PROVIDER_STATE={loaded:false,providers:[],report:null};
+const ASSET_STATE={loaded:false,generatedAt:null,entries:{}};
 
 async function fetchJson(url,ms=7000){const ctl=new AbortController();const t=setTimeout(()=>ctl.abort(),ms);try{const r=await fetch(url,{cache:'no-store',signal:ctl.signal});if(!r.ok)throw new Error('HTTP '+r.status+' · '+url);return await r.json()}finally{clearTimeout(t)}}
 
@@ -59,8 +60,9 @@ async function loadMeta(){
 }
 
 function img(kind,id){return 'https://cdn.brawlify.com/'+kind+'/'+id+'.png'}
+function localAsset(type,item,b){const id=b?.id!=null?String(b.id):null,entry=id?ASSET_STATE.entries[id]:null;if(!entry||!item&&type!=='portrait')return null;if(type==='portrait')return entry.portrait||null;const key=({gadgets:'gadgets',starPowers:'starPowers',gears:'gears',hyperCharges:'hyperCharges',buffies:'buffies',overdrives:'overdrives',gadget:'gadgets',star:'starPowers',gear:'gears',hc:'hyperCharges',buffie:'buffies',overdrive:'overdrives'})[type];return key&&item?.id!=null?entry[key]?.[String(item.id)]||null:null}
 function catalogEntry(b){if(!b)return null;return CATALOG_STATE.entries[b.name]||Object.values(CATALOG_STATE.entries||{}).find(x=>x&&x.id===b.id)||null}
-function portrait(b){return catalogEntry(b)?.imageUrl||b?.imageUrl||img('brawlers/borders',b?.id)}
+function portrait(b){return localAsset('portrait',null,b)||catalogEntry(b)?.imageUrl2||catalogEntry(b)?.imageUrl||b?.imageUrl2||b?.imageUrl||img('brawlers/borders',b?.id)}
 function owned(b){return {gadgets:b?.gadgets?.length||0,stars:b?.starPowers?.length||0,gears:b?.gears?.length||0,hc:b?.hyperCharges?.length||0,buffies:b?.buffies||{}}}
 function readiness(b){if(!b)return 0;const e=b.power||1;const eq=(b.gadgets?.length||0)+(b.starPowers?.length||0)+(b.gears?.length||0)+(b.hyperCharges?.length||0);return Math.min(100,Math.round(e*6+Math.min(eq,6)*3))}
 function equippedNames(b,type){return (b?.[type]||[]).filter(Boolean).map(x=>norm(x?.name))}
@@ -74,10 +76,11 @@ function itemState(b,type,item){return itemStatus(b,type,item)}
 function ownershipControl(b,type,item){if(!item)return '';const s=itemStatus(b,type,item);if(s==='EQUIPPED')return '<span class="ownershipApi">EQUIPPED · API</span>';return '<div class="ownershipControls"><button type="button" onclick="event.stopPropagation();setManualOwnership('+b.id+',\''+type+'\','+item.id+',true)">I OWN IT</button><button type="button" onclick="event.stopPropagation();setManualOwnership('+b.id+',\''+type+'\','+item.id+',false)">BUY</button><button type="button" onclick="event.stopPropagation();setManualOwnership('+b.id+',\''+type+'\','+item.id+',null)">RESET</button></div>'}
 function recommendationAction(b,type,item){return actionForItem(b,type,item)}
 function buildItems(b){const e=buildEntry(b);return [['Gadget','gadgets',bestBuildItem(e,'gadget')],['Star Power','starPowers',bestBuildItem(e,'starPower')],['Gear 1','gears',bestBuildItem(e,'gears',0)],['Gear 2','gears',bestBuildItem(e,'gears',1)]].filter(x=>x[2])}
-function nextActions(b){const actions=[];if(!isOwnedAccount(b))return [{type:'UNLOCK',label:'Unlock Brawler',priority:100,reason:'This Brawler is not on the account.'}];if((b.power||0)<11)actions.push({type:'POWER',label:'Reach Power 11',priority:100-(b.power||0),reason:'Power 11 unlocks the full build path.'});for(const [label,type,item] of buildItems(b)){const s=itemStatus(b,type,item);if(s==='NOT OWNED')actions.push({type:'BUY',label:'Buy '+label+': '+item.name,priority:70+Number(item.pick||0)*.4,reason:'Marked as not owned and selected by the current build data.'});else if(s==='OWNED')actions.push({type:'EQUIP',label:'Equip '+label+': '+item.name,priority:55+Number(item.pick||0)*.3,reason:'You marked this component as owned but it is not currently equipped.'});else if(s==='UNKNOWN')actions.push({type:'CHECK',label:'Check '+label+': '+item.name,priority:20+Number(item.pick||0)*.1,reason:'Ownership is not available from the public profile. Confirm it once to unlock precise BUY/EQUIP guidance.'})}return actions.sort((a,z)=>z.priority-a.priority)}
-function upgradePriority(b){const actions=nextActions(b),m=metaEntry(b,playMode,playMap),metaScore=Number(m?.score||0);return {score:Math.round(Math.min(100,(actions[0]?.priority||0)+metaScore*.12)),actions:actions.slice(0,4),metaScore}}
+function recommendationContext(){return {isOwnedAccount,buildItems,itemStatus,metaEntry,readiness,playMode,playMap}}
+function nextActions(b){return window.BHRecommendations?window.BHRecommendations.nextActions(b,recommendationContext()):[]}
+function upgradePriority(b){return window.BHRecommendations?window.BHRecommendations.upgradePriority(b,recommendationContext()):{score:0,actions:[],metaScore:null,confidence:.4}}
 function componentCatalogItem(type,item,b=null){if(!item)return null;const c=catalogEntry(b);const key=({gadgets:'gadgets',gadget:'gadgets',starPowers:'starPowers',star:'starPowers',gears:'gears',gear:'gears',hyperCharges:'hyperCharges',hc:'hyperCharges',buffies:'buffies',buffie:'buffies',overdrives:'overdrives',overdrive:'overdrives'})[type];const local=c?.[key]||[];const pool=Object.values(CATALOG_STATE.entries||{}).flatMap(x=>x?.[key]||[]);return [...local,...pool].find(x=>x&&((x.id!=null&&item.id!=null&&x.id===item.id)||norm(x.name)===norm(item.name)))||null}
-function compIcon(type,item,b=null){const sym={gadgets:'◈',starPowers:'★',gears:'⚙',hyperCharges:'⚡',buffies:'✦',overdrives:'◉',gadget:'◈',star:'★',gear:'⚙',hc:'⚡',buffie:'✦',overdrive:'◉'}[type]||'•';if(!item)return '<span class="compIcon fallbackIcon">'+sym+'</span>';const paths={gadgets:'gadgets/borderless',starPowers:'star-powers/borderless',gears:'gears/regular',hyperCharges:'hypercharges/regular',buffies:'buffies/regular',overdrives:'overdrives/regular',gadget:'gadgets/borderless',star:'star-powers/borderless',gear:'gears/regular',hc:'hypercharges/regular',buffie:'buffies/regular',overdrive:'overdrives/regular'};const mapped=componentCatalogItem(type,item,b),src=mapped?.imageUrl||(paths[type]&&item.id?img(paths[type],item.id):'');return src?'<img class="compIcon" loading="lazy" src="'+esc(src)+'" alt="" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'"><span class="compIcon fallbackIcon" style="display:none">'+sym+'</span>':'<span class="compIcon fallbackIcon">'+sym+'</span>'}
+function compIcon(type,item,b=null){const sym={gadgets:'◈',starPowers:'★',gears:'⚙',hyperCharges:'⚡',buffies:'✦',overdrives:'◉',gadget:'◈',star:'★',gear:'⚙',hc:'⚡',buffie:'✦',overdrive:'◉'}[type]||'•';if(!item)return '<span class="compIcon fallbackIcon">'+sym+'</span>';const paths={gadgets:'gadgets/borderless',starPowers:'star-powers/borderless',gears:'gears/regular',hyperCharges:'hypercharges/regular',buffies:'buffies/regular',overdrives:'overdrives/regular',gadget:'gadgets/borderless',star:'star-powers/borderless',gear:'gears/regular',hc:'hypercharges/regular',buffie:'buffies/regular',overdrive:'overdrives/regular'};const mapped=componentCatalogItem(type,item,b),src=localAsset(type,item,b)||mapped?.imageUrl||(paths[type]&&item.id?img(paths[type],item.id):'');return src?'<img class="compIcon" loading="lazy" src="'+esc(src)+'" alt="" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'"><span class="compIcon fallbackIcon" style="display:none">'+sym+'</span>':'<span class="compIcon fallbackIcon">'+sym+'</span>'}
 function comp(type,label,item){return '<div class="comp '+(item?'owned':'missing')+'">'+compIcon(type,item)+'<div><span>'+label+'</span><b>'+esc(item?.name||'Not owned')+'</b></div></div>'}
 function first(a){return Array.isArray(a)&&a.length?a[0]:null}
 function buildLabel(b){const o=owned(b);return [o.gadgets?'Gadget':'Gadget missing',o.stars?'Star Power':'Star Power missing',o.gears?'Gear':'Gear missing',o.hc?'Hypercharge':'Hypercharge missing'].join(' · ')}
@@ -144,6 +147,7 @@ function meta(){
  '</section>'
 }
 
+async function loadAssets(){try{const d=await fetchJson('data/asset-manifest.json',5000);ASSET_STATE.entries=d?.entries&&typeof d.entries==='object'?d.entries:{};ASSET_STATE.generatedAt=d?.generatedAt||null;ASSET_STATE.loaded=Object.keys(ASSET_STATE.entries).length>0}catch(e){ASSET_STATE.loaded=false;console.warn('Asset manifest unavailable',e)}}
 async function loadCatalog(){try{const local=await fetchJson('data/brawlers.json',5000);let live=null;try{live=await fetchJson('https://api.brawlapi.com/v1/brawlers',7000)}catch(e){}const localList=Array.isArray(local?.brawlers)?local.brawlers:[],liveList=Array.isArray(live?.list)?live.list:[],byLocal=Object.fromEntries(localList.map(x=>[x.id||norm(x.name),x])),merged=liveList.length?liveList.map(x=>({...byLocal[x.id]||{},...x,gadgets:x.gadgets?.length?x.gadgets:(byLocal[x.id]?.gadgets||[]),starPowers:x.starPowers?.length?x.starPowers:(byLocal[x.id]?.starPowers||[]),gears:x.gears?.length?x.gears:(byLocal[x.id]?.gears||[]),hyperCharges:x.hyperCharges?.length?x.hyperCharges:(byLocal[x.id]?.hyperCharges||[]),buffies:x.buffies||byLocal[x.id]?.buffies||[],overdrives:x.overdrives||byLocal[x.id]?.overdrives||[]})):localList;CATALOG_STATE.loaded=merged.length>0;CATALOG_STATE.count=merged.length;CATALOG_STATE.entries=Object.fromEntries(merged.filter(x=>x&&x.id&&x.name).map(x=>[x.name,x]));merged.forEach(b=>{if(b.imageUrl){const im=new Image();im.src=b.imageUrl}(b.gadgets||[]).concat(b.starPowers||[],b.gears||[],b.hyperCharges||[],b.buffies||[],b.overdrives||[]).forEach(x=>{if(x?.imageUrl){const ci=new Image();ci.src=x.imageUrl}})})}catch(e){console.warn('Brawler catalog unavailable',e)}}
 function profilePanel(first=false){
  const current=active||'';
@@ -225,7 +229,7 @@ async function boot(){
     return;
   }
   await loadProfile(tag);
-  Promise.allSettled([loadMeta(),loadCatalog()]).then(()=>{if(P)render()});
+  Promise.allSettled([loadMeta(),loadCatalog(),loadAssets()]).then(()=>{if(P)render()});
  }catch(e){showFatal(e)}
 }
 boot().catch(showFatal);
