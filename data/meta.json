@@ -1,11 +1,11 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-27T08:21:48.554Z",
-  "source": "BrawlMetrics + Brawl Time Ninja + NOFF",
-  "method": "Global + mode snapshot. Mode rankings use BrawlMetrics Wilson-adjusted win rate; map-specific data is only shown when a verified map snapshot exists.",
+  "updatedAt": "2026-09-27T08:24:37.315Z",
+  "source": "Brawl Time Ninja + NOFF + optional BrawlMetrics fallback",
+  "method": "Global battle signal from Brawl Time Ninja; mode and map context from NOFF when available; BrawlMetrics is an optional fallback.",
   "coverage": {
     "brawlers": 109,
-    "modes": 0,
+    "modes": 105,
     "totalModes": 8
   },
   "entries": {
