@@ -403,3 +403,28 @@ body{color:#f4f7fb}
  .upgradeTop{gap:7px}
  .upgradePortrait{width:52px;height:52px}
 }
+
+
+/* Component system v5 — five primary slots + three Buffie state boxes */
+.componentFiveGrid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;align-items:stretch}
+.componentFiveGrid .guideComponent{min-width:0;padding:7px 5px;display:grid;grid-template-rows:auto auto 1fr;gap:4px;text-align:center}
+.componentFiveGrid .guideComponent .compIcon{width:32px;height:32px;margin:0 auto}
+.componentFiveGrid .guideComponent .grow{display:grid;gap:2px;min-width:0}
+.componentFiveGrid .guideComponent small{font-size:7px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.componentFiveGrid .guideComponent b{font-size:8px;white-space:normal;line-height:1.15}
+.componentFiveGrid .guideComponent em{display:none}
+.componentFiveGrid .guideComponent strong{font-size:7px}
+.buffieGrid,.buffieGuideGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:7px}
+.buffieBox{min-width:0;display:flex;align-items:center;gap:7px;padding:8px;border:1px solid #405274;border-radius:11px;background:#17243a;color:#fff;text-align:left}
+.buffieCheck{width:24px;height:24px;flex:0 0 24px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:950;background:#243653;color:#9eacc1}
+.buffieBox span:last-child{display:grid;gap:2px;min-width:0}
+.buffieBox b{font-size:9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.buffieBox small{font-size:7px;color:#8fa0b9}
+.buffieOwned{border-color:#4e8b72;background:rgba(97,230,167,.06)}
+.buffieOwned .buffieCheck{background:#1d5b43;color:#9ff0c6}
+.buffieMissing .buffieCheck{color:#7f8da2}
+.buffieCard .small{color:#9eacc1}
+.buffieGuideGrid{margin-top:8px}
+.buffieGuideGrid .guideComponent{background:#111c2f}
+@media(max-width:700px){.componentFiveGrid{grid-template-columns:repeat(5,minmax(52px,1fr));overflow-x:auto;padding-bottom:2px}.componentFiveGrid .guideComponent{min-width:52px}.buffieGrid,.buffieGuideGrid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:430px){.componentFiveGrid{gap:4px}.componentFiveGrid .guideComponent{padding:6px 3px}.componentFiveGrid .guideComponent .compIcon{width:28px;height:28px}.buffieBox{padding:6px 5px;gap:5px}.buffieCheck{width:21px;height:21px;flex-basis:21px}}
