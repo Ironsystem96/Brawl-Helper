@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-27T08:27:04.213Z",
+  "updatedAt": "2026-09-27T08:29:42.225Z",
   "sourceStatus": {
     "brawlApi": 109,
     "noff": 105,
@@ -48,14 +48,14 @@
       "sample": 10,
       "gadget": [
         {
-          "name": "Planetary Pushback",
-          "pick": 40
+          "name": "Telescope Trap",
+          "pick": 60
         }
       ],
       "starPower": [
         {
-          "name": "Precession",
-          "pick": 10
+          "name": "Ammo Attractor",
+          "pick": 90
         }
       ],
       "gears": [
@@ -77,7 +77,7 @@
         "winRate": 66.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/cosmo",
@@ -242,8 +242,8 @@
       ],
       "starPower": [
         {
-          "name": "Slowing Shield",
-          "pick": 31
+          "name": "Solar Shield",
+          "pick": 69
         }
       ],
       "gears": [
@@ -261,7 +261,7 @@
         "winRate": 76.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/wendy",
@@ -449,7 +449,7 @@
         "winRate": 67.1,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/nori",
@@ -614,8 +614,8 @@
       ],
       "starPower": [
         {
-          "name": "Toss Up",
-          "pick": 39
+          "name": "Unstoppaball",
+          "pick": 61
         }
       ],
       "gears": [
@@ -641,7 +641,7 @@
         "winRate": 73.3,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bolt",
@@ -800,8 +800,8 @@
       "sample": 50,
       "gadget": [
         {
-          "name": "Floaty Time",
-          "pick": 44
+          "name": "Shining Starr Of Friendship And Justice",
+          "pick": 56
         }
       ],
       "starPower": [
@@ -996,8 +996,8 @@
       ],
       "starPower": [
         {
-          "name": "Crowdkill",
-          "pick": 24
+          "name": "Vulgar Display Of Punch",
+          "pick": 76
         }
       ],
       "gears": [
@@ -1019,7 +1019,7 @@
         "winRate": 69.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/damian",
@@ -1207,7 +1207,7 @@
         "winRate": 66,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/najia",
@@ -1407,7 +1407,7 @@
         "winRate": 67.1,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/sirius",
@@ -1572,7 +1572,7 @@
         "winRate": 70.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/glowy",
@@ -1623,7 +1623,7 @@
         "winRate": 69.9,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gigi",
@@ -1782,8 +1782,8 @@
       "sample": 73,
       "gadget": [
         {
-          "name": "Bottomless Mags",
-          "pick": 41
+          "name": "You Only Brawl Twice",
+          "pick": 59
         }
       ],
       "starPower": [],
@@ -1802,7 +1802,7 @@
         "winRate": 63.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/pierce",
@@ -1967,8 +1967,8 @@
       ],
       "starPower": [
         {
-          "name": "Thunderstruck",
-          "pick": 44
+          "name": "The Great Ziggini",
+          "pick": 56
         }
       ],
       "gears": [
@@ -1990,7 +1990,7 @@
         "winRate": 69.1,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/ziggy",
@@ -2149,8 +2149,8 @@
       "sample": 64,
       "gadget": [
         {
-          "name": "Windmill",
-          "pick": 38
+          "name": "Capo-What?",
+          "pick": 63
         }
       ],
       "starPower": [
@@ -2178,7 +2178,7 @@
         "winRate": 64.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/mina",
@@ -2366,7 +2366,7 @@
         "winRate": 67.3,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/trunk",
@@ -2525,8 +2525,8 @@
       "sample": 139,
       "gadget": [
         {
-          "name": "Feed The Gators",
-          "pick": 36
+          "name": "Cold-Blooded",
+          "pick": 64
         }
       ],
       "starPower": [
@@ -2562,7 +2562,7 @@
         "winRate": 66.9,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/alli",
@@ -2750,7 +2750,7 @@
         "winRate": 63.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/kaze",
@@ -2915,8 +2915,8 @@
       ],
       "starPower": [
         {
-          "name": "The Crowd Goes Mild",
-          "pick": 34
+          "name": "Extra High Note",
+          "pick": 66
         }
       ],
       "gears": [
@@ -2950,7 +2950,7 @@
         "winRate": 70.6,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/jae-yong",
@@ -3141,7 +3141,7 @@
         "winRate": 69.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/finx",
@@ -3300,14 +3300,14 @@
       "sample": 94,
       "gadget": [
         {
-          "name": "Hit The Lights",
-          "pick": 26
+          "name": "Grim And Frostbitten",
+          "pick": 74
         }
       ],
       "starPower": [
         {
-          "name": "42% Burnt",
-          "pick": 26
+          "name": "Half-Time",
+          "pick": 74
         }
       ],
       "gears": [
@@ -3329,7 +3329,7 @@
         "winRate": 65.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/lumi",
@@ -3517,7 +3517,7 @@
         "winRate": 72.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/ollie",
@@ -3705,7 +3705,7 @@
         "winRate": 61.9,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/meeple",
@@ -3882,14 +3882,14 @@
       "sample": 86,
       "gadget": [
         {
-          "name": "Voodoo Chile",
-          "pick": 31
+          "name": "Elementalist",
+          "pick": 69
         }
       ],
       "starPower": [
         {
-          "name": "Guarded Gris-Gris",
-          "pick": 23
+          "name": "Numbing Needles",
+          "pick": 77
         }
       ],
       "gears": [
@@ -3911,7 +3911,7 @@
         "winRate": 70.3,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/juju",
@@ -4099,7 +4099,7 @@
         "winRate": 67,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/shade",
@@ -4258,14 +4258,14 @@
       "sample": 379,
       "gadget": [
         {
-          "name": "Dashi Dash",
-          "pick": 22
+          "name": "Hosomaki Healing",
+          "pick": 78
         }
       ],
       "starPower": [
         {
-          "name": "Studied The Blade",
-          "pick": 24
+          "name": "Nigiri Nemesis",
+          "pick": 76
         }
       ],
       "gears": [
@@ -4287,7 +4287,7 @@
         "winRate": 65.8,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/kenji",
@@ -4479,7 +4479,7 @@
         "winRate": 68.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/moe",
@@ -4644,8 +4644,8 @@
       ],
       "starPower": [
         {
-          "name": "Recon",
-          "pick": 40
+          "name": "Pumping Up",
+          "pick": 60
         }
       ],
       "gears": [
@@ -4667,7 +4667,7 @@
         "winRate": 68.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/clancy",
@@ -4855,7 +4855,7 @@
         "winRate": 65.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/berry",
@@ -5047,7 +5047,7 @@
         "winRate": 64.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/lily",
@@ -5212,8 +5212,8 @@
       ],
       "starPower": [
         {
-          "name": "Expose",
-          "pick": 37
+          "name": "Shredding",
+          "pick": 63
         }
       ],
       "gears": [
@@ -5235,7 +5235,7 @@
         "winRate": 70.8,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/draco",
@@ -5423,7 +5423,7 @@
         "winRate": 64.8,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/angelo",
@@ -5582,8 +5582,8 @@
       "sample": 121,
       "gadget": [
         {
-          "name": "Perfect Pitch",
-          "pick": 28
+          "name": "Interlude",
+          "pick": 72
         }
       ],
       "starPower": [
@@ -5611,7 +5611,7 @@
         "winRate": 66.3,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/melodie",
@@ -5817,7 +5817,7 @@
         "winRate": 62.6,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/kit",
@@ -6005,7 +6005,7 @@
         "winRate": 65.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/mico",
@@ -6193,7 +6193,7 @@
         "winRate": 70,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/charlie",
@@ -6389,7 +6389,7 @@
         "winRate": 65,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/chuck",
@@ -6554,8 +6554,8 @@
       ],
       "starPower": [
         {
-          "name": "Heat Retention",
-          "pick": 21
+          "name": "Heat Shield",
+          "pick": 79
         }
       ],
       "gears": [
@@ -6577,7 +6577,7 @@
         "winRate": 67.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/pearl",
@@ -6736,14 +6736,14 @@
       "sample": 206,
       "gadget": [
         {
-          "name": "Double Sausage",
-          "pick": 16
+          "name": "Extra Mustard",
+          "pick": 84
         }
       ],
       "starPower": [
         {
-          "name": "Fast Food",
-          "pick": 17
+          "name": "Self Service",
+          "pick": 83
         }
       ],
       "gears": [
@@ -6765,7 +6765,7 @@
         "winRate": 68.9,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/doug",
@@ -6924,8 +6924,8 @@
       "sample": 314,
       "gadget": [
         {
-          "name": "Replanting",
-          "pick": 25
+          "name": "Poison Mushroom",
+          "pick": 75
         }
       ],
       "starPower": [
@@ -6953,7 +6953,7 @@
         "winRate": 65.6,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/cordelius",
@@ -7112,8 +7112,8 @@
       "sample": 174,
       "gadget": [
         {
-          "name": "Water Balloons",
-          "pick": 24
+          "name": "Barricade",
+          "pick": 76
         }
       ],
       "starPower": [
@@ -7153,7 +7153,7 @@
         "winRate": 69.9,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/hank",
@@ -7318,8 +7318,8 @@
       ],
       "starPower": [
         {
-          "name": "Pinpoint Precision",
-          "pick": 18
+          "name": "Tremors",
+          "pick": 82
         }
       ],
       "gears": [
@@ -7341,7 +7341,7 @@
         "winRate": 67.9,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/maisie",
@@ -7500,8 +7500,8 @@
       "sample": 89,
       "gadget": [
         {
-          "name": "Spellbound",
-          "pick": 20
+          "name": "Dive",
+          "pick": 80
         }
       ],
       "starPower": [
@@ -7529,7 +7529,7 @@
         "winRate": 62.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/willow",
@@ -7694,8 +7694,8 @@
       ],
       "starPower": [
         {
-          "name": "Quick Maths",
-          "pick": 21
+          "name": "Recording",
+          "pick": 79
         }
       ],
       "gears": [
@@ -7717,7 +7717,7 @@
         "winRate": 70.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/r-t",
@@ -7876,8 +7876,8 @@
       "sample": 140,
       "gadget": [
         {
-          "name": "Caramelize",
-          "pick": 29
+          "name": "Cookie Crumbs",
+          "pick": 71
         }
       ],
       "starPower": [
@@ -7905,7 +7905,7 @@
         "winRate": 60.8,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/mandy",
@@ -8070,8 +8070,8 @@
       ],
       "starPower": [
         {
-          "name": "Fake Injury",
-          "pick": 36
+          "name": "New Perspective",
+          "pick": 64
         }
       ],
       "gears": [
@@ -8093,7 +8093,7 @@
         "winRate": 64.6,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gray",
@@ -8281,7 +8281,7 @@
         "winRate": 63.9,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/chester",
@@ -8440,14 +8440,14 @@
       "sample": 130,
       "gadget": [
         {
-          "name": "Utility Belt",
-          "pick": 12
+          "name": "Slo-Mo Replay",
+          "pick": 88
         }
       ],
       "starPower": [
         {
-          "name": "Blockbuster",
-          "pick": 25
+          "name": "Kevlar Vest",
+          "pick": 75
         }
       ],
       "gears": [
@@ -8465,7 +8465,7 @@
         "winRate": 70.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/buster",
@@ -8630,8 +8630,8 @@
       ],
       "starPower": [
         {
-          "name": "Health Bonanza",
-          "pick": 31
+          "name": "Spirit Animal",
+          "pick": 69
         }
       ],
       "gears": [
@@ -8649,7 +8649,7 @@
         "winRate": 65.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gus",
@@ -8837,7 +8837,7 @@
         "winRate": 70.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/sam",
@@ -8996,14 +8996,14 @@
       "sample": 122,
       "gadget": [
         {
-          "name": "Dormant Star",
-          "pick": 24
+          "name": "Phat Splatter",
+          "pick": 76
         }
       ],
       "starPower": [
         {
-          "name": "Stencil Glue",
-          "pick": 20
+          "name": "Ink Refills",
+          "pick": 80
         }
       ],
       "gears": [
@@ -9029,7 +9029,7 @@
         "winRate": 65.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/otis",
@@ -9221,7 +9221,7 @@
         "winRate": 69.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bonnie",
@@ -9386,8 +9386,8 @@
       ],
       "starPower": [
         {
-          "name": "Stage View",
-          "pick": 38
+          "name": "Vocal Warm Up",
+          "pick": 62
         }
       ],
       "gears": [
@@ -9409,7 +9409,7 @@
         "winRate": 69,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/janet",
@@ -9574,8 +9574,8 @@
       ],
       "starPower": [
         {
-          "name": "Unnatural Order",
-          "pick": 23
+          "name": "Happy Surprise",
+          "pick": 77
         }
       ],
       "gears": [
@@ -9601,7 +9601,7 @@
         "winRate": 69.1,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/eve",
@@ -9760,8 +9760,8 @@
       "sample": 277,
       "gadget": [
         {
-          "name": "Corn-Fu",
-          "pick": 19
+          "name": "Roundhouse Kick",
+          "pick": 81
         }
       ],
       "starPower": [
@@ -9793,7 +9793,7 @@
         "winRate": 63,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/fang",
@@ -9952,8 +9952,8 @@
       "sample": 53,
       "gadget": [
         {
-          "name": "Freeze Frame",
-          "pick": 26
+          "name": "Stunt Double",
+          "pick": 74
         }
       ],
       "starPower": [
@@ -9981,7 +9981,7 @@
         "winRate": 68.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/lola",
@@ -10146,8 +10146,8 @@
       ],
       "starPower": [
         {
-          "name": "Force Field",
-          "pick": 40
+          "name": "Heavy Metal",
+          "pick": 60
         }
       ],
       "gears": [
@@ -10169,7 +10169,7 @@
         "winRate": 67,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/meg",
@@ -10361,7 +10361,7 @@
         "winRate": 69.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/ash",
@@ -10526,8 +10526,8 @@
       ],
       "starPower": [
         {
-          "name": "Keep The Change",
-          "pick": 46
+          "name": "Business Resilience",
+          "pick": 54
         }
       ],
       "gears": [
@@ -10549,7 +10549,7 @@
         "winRate": 63.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/griff",
@@ -10714,8 +10714,8 @@
       ],
       "starPower": [
         {
-          "name": "Tougher Torpedo",
-          "pick": 26
+          "name": "Eyes Sharp",
+          "pick": 74
         }
       ],
       "gears": [
@@ -10737,7 +10737,7 @@
         "winRate": 63.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/buzz",
@@ -10896,14 +10896,14 @@
       "sample": 98,
       "gadget": [
         {
-          "name": "Watchtower",
-          "pick": 13
+          "name": "Radio Check",
+          "pick": 87
         }
       ],
       "starPower": [
         {
-          "name": "Foot Patrol",
-          "pick": 14
+          "name": "X-Factor",
+          "pick": 86
         }
       ],
       "gears": [
@@ -10925,7 +10925,7 @@
         "winRate": 64.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/grom",
@@ -11113,7 +11113,7 @@
         "winRate": 62.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/squeak",
@@ -11272,8 +11272,8 @@
       "sample": 136,
       "gadget": [
         {
-          "name": "Nest Egg",
-          "pick": 40
+          "name": "Reverse Polarity",
+          "pick": 60
         }
       ],
       "starPower": [
@@ -11301,7 +11301,7 @@
         "winRate": 65.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/belle",
@@ -11460,14 +11460,14 @@
       "sample": 257,
       "gadget": [
         {
-          "name": "Speed Zone",
-          "pick": 20
+          "name": "Breakthrough",
+          "pick": 80
         }
       ],
       "starPower": [
         {
-          "name": "Zero Drag",
-          "pick": 41
+          "name": "Gaso-Heal",
+          "pick": 59
         }
       ],
       "gears": [
@@ -11489,7 +11489,7 @@
         "winRate": 60.9,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/stu",
@@ -11677,7 +11677,7 @@
         "winRate": 64.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/ruffs",
@@ -11877,7 +11877,7 @@
         "winRate": 61,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/edgar",
@@ -12036,14 +12036,14 @@
       "sample": 172,
       "gadget": [
         {
-          "name": "Shot In The Arm",
-          "pick": 34
+          "name": "Booster Shots",
+          "pick": 66
         }
       ],
       "starPower": [
         {
-          "name": "Malaise",
-          "pick": 41
+          "name": "Injection",
+          "pick": 59
         }
       ],
       "gears": [
@@ -12065,7 +12065,7 @@
         "winRate": 60.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/byron",
@@ -12224,14 +12224,14 @@
       "sample": 109,
       "gadget": [
         {
-          "name": "Ice Block",
-          "pick": 26
+          "name": "Cryo Syrup",
+          "pick": 74
         }
       ],
       "starPower": [
         {
-          "name": "Supercool",
-          "pick": 39
+          "name": "Hypothermia",
+          "pick": 61
         }
       ],
       "gears": [
@@ -12257,7 +12257,7 @@
         "winRate": 67.1,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/lou",
@@ -12416,8 +12416,8 @@
       "sample": 290,
       "gadget": [
         {
-          "name": "Fire Starters",
-          "pick": 37
+          "name": "Dancing Flames",
+          "pick": 63
         }
       ],
       "starPower": [
@@ -12445,7 +12445,7 @@
         "winRate": 67.3,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/amber",
@@ -12604,8 +12604,8 @@
       "sample": 174,
       "gadget": [
         {
-          "name": "Na-Ah",
-          "pick": 27
+          "name": "Gotcha",
+          "pick": 73
         }
       ],
       "starPower": [
@@ -12645,7 +12645,7 @@
         "winRate": 61.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/colette",
@@ -12804,14 +12804,14 @@
       "sample": 446,
       "gadget": [
         {
-          "name": "Power Surge",
-          "pick": 26
+          "name": "Power Shield",
+          "pick": 74
         }
       ],
       "starPower": [
         {
-          "name": "To The Max",
-          "pick": 48
+          "name": "Serve Ice Cold",
+          "pick": 52
         }
       ],
       "gears": [
@@ -12837,7 +12837,7 @@
         "winRate": 61.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/surge",
@@ -12996,8 +12996,8 @@
       "sample": 92,
       "gadget": [
         {
-          "name": "Garden Mulcher",
-          "pick": 27
+          "name": "Transplant",
+          "pick": 73
         }
       ],
       "starPower": [
@@ -13025,7 +13025,7 @@
         "winRate": 66.1,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/sprout",
@@ -13190,8 +13190,8 @@
       ],
       "starPower": [
         {
-          "name": "Autofocus",
-          "pick": 35
+          "name": "Tempered Steel",
+          "pick": 65
         }
       ],
       "gears": [
@@ -13217,7 +13217,7 @@
         "winRate": 63.1,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/nani",
@@ -13376,14 +13376,14 @@
       "sample": 143,
       "gadget": [
         {
-          "name": "Spring Ejector",
-          "pick": 7
+          "name": "Twister",
+          "pick": 93
         }
       ],
       "starPower": [
         {
-          "name": "Blustery Blow",
-          "pick": 27
+          "name": "Freezing Snow",
+          "pick": 73
         }
       ],
       "gears": [
@@ -13405,7 +13405,7 @@
         "winRate": 64.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gale",
@@ -13597,7 +13597,7 @@
         "winRate": 70.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/jacky",
@@ -13762,8 +13762,8 @@
       ],
       "starPower": [
         {
-          "name": "Super Charged",
-          "pick": 37
+          "name": "Run N Gun",
+          "pick": 63
         }
       ],
       "gears": [
@@ -13789,7 +13789,7 @@
         "winRate": 62.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/max",
@@ -13954,8 +13954,8 @@
       ],
       "starPower": [
         {
-          "name": "Handle With Care",
-          "pick": 31
+          "name": "Revolving Door",
+          "pick": 69
         }
       ],
       "gears": [
@@ -14163,7 +14163,7 @@
         "winRate": 63.1,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/emz",
@@ -14351,7 +14351,7 @@
         "winRate": 63.3,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bea",
@@ -14510,8 +14510,8 @@
       "sample": 169,
       "gadget": [
         {
-          "name": "Sleep Stimulator",
-          "pick": 21
+          "name": "Sweet Dreams",
+          "pick": 79
         }
       ],
       "starPower": [
@@ -14543,7 +14543,7 @@
         "winRate": 68.8,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/sandy",
@@ -14735,7 +14735,7 @@
         "winRate": 66,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/8-bit",
@@ -14900,8 +14900,8 @@
       ],
       "starPower": [
         {
-          "name": "Home Run",
-          "pick": 6
+          "name": "Batting Stance",
+          "pick": 25
         }
       ],
       "gears": [
@@ -14923,7 +14923,7 @@
         "winRate": 64.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bibi",
@@ -15082,14 +15082,14 @@
       "sample": 172,
       "gadget": [
         {
-          "name": "Heat Ejector",
-          "pick": 34
+          "name": "Flying Hook",
+          "pick": 66
         }
       ],
       "starPower": [
         {
-          "name": "Power Throw",
-          "pick": 20
+          "name": "Protective Pirouette",
+          "pick": 80
         }
       ],
       "gears": [
@@ -15111,7 +15111,7 @@
         "winRate": 65.1,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/carl",
@@ -15270,8 +15270,8 @@
       "sample": 81,
       "gadget": [
         {
-          "name": "Grow Light",
-          "pick": 37
+          "name": "Unfriendly Bushes",
+          "pick": 63
         }
       ],
       "starPower": [
@@ -15311,7 +15311,7 @@
         "winRate": 71,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/rosa",
@@ -15476,8 +15476,8 @@
       ],
       "starPower": [
         {
-          "name": "Smoke Trails",
-          "pick": 32
+          "name": "Invisiheal",
+          "pick": 68
         }
       ],
       "gears": [
@@ -15499,7 +15499,7 @@
         "winRate": 62.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/leon",
@@ -15658,8 +15658,8 @@
       "sample": 201,
       "gadget": [
         {
-          "name": "Mine Mania",
-          "pick": 36
+          "name": "Last Hurrah",
+          "pick": 64
         }
       ],
       "starPower": [
@@ -15687,7 +15687,7 @@
         "winRate": 62.3,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/tick",
@@ -15852,8 +15852,8 @@
       ],
       "starPower": [
         {
-          "name": "Magic Puffs",
-          "pick": 48
+          "name": "Spirit Slap",
+          "pick": 52
         }
       ],
       "gears": [
@@ -15879,7 +15879,7 @@
         "winRate": 62.3,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gene",
@@ -16038,8 +16038,8 @@
       "sample": 323,
       "gadget": [
         {
-          "name": "Active Noise Canceling",
-          "pick": 20
+          "name": "Irresistible Attraction",
+          "pick": 80
         }
       ],
       "starPower": [
@@ -16067,7 +16067,7 @@
         "winRate": 65.8,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/frank",
@@ -16259,7 +16259,7 @@
         "winRate": 63.9,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/penny",
@@ -16455,7 +16455,7 @@
         "winRate": 66.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/darryl",
@@ -16614,8 +16614,8 @@
       "sample": 110,
       "gadget": [
         {
-          "name": "Psychic Enhancer",
-          "pick": 9
+          "name": "Support From Beyond",
+          "pick": 91
         }
       ],
       "starPower": [
@@ -16647,7 +16647,7 @@
         "winRate": 66.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/tara",
@@ -16806,8 +16806,8 @@
       "sample": 70,
       "gadget": [
         {
-          "name": "Pulse Modulator",
-          "pick": 30
+          "name": "Scrapsucker",
+          "pick": 70
         }
       ],
       "starPower": [],
@@ -16830,7 +16830,7 @@
         "winRate": 69.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/pam",
@@ -16995,8 +16995,8 @@
       ],
       "starPower": [
         {
-          "name": "Ambush",
-          "pick": 33
+          "name": "Snappy Sniping",
+          "pick": 67
         }
       ],
       "gears": [
@@ -17018,7 +17018,7 @@
         "winRate": 60.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/piper",
@@ -17183,8 +17183,8 @@
       ],
       "starPower": [
         {
-          "name": "Circling Eagle",
-          "pick": 21
+          "name": "Snare A Bear",
+          "pick": 79
         }
       ],
       "gears": [
@@ -17206,7 +17206,7 @@
         "winRate": 64.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bo",
@@ -17371,8 +17371,8 @@
       ],
       "starPower": [
         {
-          "name": "Da Capo",
-          "pick": 46
+          "name": "Screeching Solo",
+          "pick": 54
         }
       ],
       "gears": [
@@ -17394,7 +17394,7 @@
         "winRate": 64.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/poco",
@@ -17553,8 +17553,8 @@
       "sample": 366,
       "gadget": [
         {
-          "name": "Instapoison",
-          "pick": 44
+          "name": "Slowing Toxin",
+          "pick": 56
         }
       ],
       "starPower": [
@@ -17594,7 +17594,7 @@
         "winRate": 60.8,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/crow",
@@ -17753,14 +17753,14 @@
       "sample": 488,
       "gadget": [
         {
-          "name": "Combo Spinner",
-          "pick": 36
+          "name": "Creature Of The Night",
+          "pick": 64
         }
       ],
       "starPower": [
         {
-          "name": "Creepy Harvest",
-          "pick": 30
+          "name": "Coiled Snake",
+          "pick": 70
         }
       ],
       "gears": [
@@ -17782,7 +17782,7 @@
         "winRate": 57.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/mortis",
@@ -18127,8 +18127,8 @@
       "sample": 288,
       "gadget": [
         {
-          "name": "Fidget Spinner",
-          "pick": 10
+          "name": "Satchel Charge",
+          "pick": 90
         }
       ],
       "starPower": [
@@ -18156,7 +18156,7 @@
         "winRate": 60.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/dynamike",
@@ -18321,8 +18321,8 @@
       ],
       "starPower": [
         {
-          "name": "Bear With Me",
-          "pick": 38
+          "name": "Hyper Bear",
+          "pick": 62
         }
       ],
       "gears": [
@@ -18340,7 +18340,7 @@
         "winRate": 68.8,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/nita",
@@ -18499,8 +18499,8 @@
       "sample": 135,
       "gadget": [
         {
-          "name": "Spark Plug",
-          "pick": 29
+          "name": "Recoil Spring",
+          "pick": 71
         }
       ],
       "starPower": [
@@ -18532,7 +18532,7 @@
         "winRate": 66.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/jessie",
@@ -18720,7 +18720,7 @@
         "winRate": 65.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/barley",
@@ -18879,14 +18879,14 @@
       "sample": 302,
       "gadget": [
         {
-          "name": "Popping Pincushion",
-          "pick": 44
+          "name": "Life Plant",
+          "pick": 56
         }
       ],
       "starPower": [
         {
-          "name": "Fertilize",
-          "pick": 25
+          "name": "Curveball",
+          "pick": 75
         }
       ],
       "gears": [
@@ -18908,7 +18908,7 @@
         "winRate": 62.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/spike",
@@ -19100,7 +19100,7 @@
         "winRate": 61.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/rico",
@@ -19265,8 +19265,8 @@
       ],
       "starPower": [
         {
-          "name": "More Rockets",
-          "pick": 21
+          "name": "Rocket No. 4",
+          "pick": 79
         }
       ],
       "gears": [
@@ -19288,7 +19288,7 @@
         "winRate": 62,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/brock",
@@ -19447,14 +19447,14 @@
       "sample": 192,
       "gadget": [
         {
-          "name": "T-Bone Missile",
-          "pick": 26
+          "name": "Stomper",
+          "pick": 74
         }
       ],
       "starPower": [
         {
-          "name": "Berserker",
-          "pick": 44
+          "name": "Tough Guy",
+          "pick": 56
         }
       ],
       "gears": [
@@ -19476,7 +19476,7 @@
         "winRate": 64.8,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bull",
@@ -19641,8 +19641,8 @@
       ],
       "starPower": [
         {
-          "name": "Slick Boots",
-          "pick": 27
+          "name": "Magnum Special",
+          "pick": 73
         }
       ],
       "gears": [
@@ -19664,7 +19664,7 @@
         "winRate": 60.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/colt",
@@ -19823,14 +19823,14 @@
       "sample": 303,
       "gadget": [
         {
-          "name": "Fast Forward",
-          "pick": 21
+          "name": "Clay Pigeons",
+          "pick": 79
         }
       ],
       "starPower": [
         {
-          "name": "Shell Shock",
-          "pick": 35
+          "name": "Band-Aid",
+          "pick": 65
         }
       ],
       "gears": [
@@ -19852,7 +19852,7 @@
         "winRate": 64.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T08:27:04.213Z"
+        "updatedAt": "2026-09-27T08:29:42.225Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/shelly",
