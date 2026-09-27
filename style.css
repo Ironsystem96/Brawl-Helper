@@ -748,3 +748,9 @@ body{color:#f4f7fb}
 .miniBuildRow .miniItem:nth-child(4):before{content:'GEAR 2'}
 .miniBuildRow .miniItem:nth-child(5):before{content:'OVERDRIVE';color:#ffb66b}
 .miniBuildRow .miniItem:nth-child(5){background:linear-gradient(180deg,rgba(255,138,69,.08),rgba(17,28,47,.65))}
+
+
+/* Fix: hidden image fallback must stay hidden when the real component icon loads */
+.fallbackIcon[style*="display:none"]{display:none!important}
+.miniItem .fallbackIcon[style*="display:none"]{display:none!important}
+.guideComponent .fallbackIcon[style*="display:none"]{display:none!important}
