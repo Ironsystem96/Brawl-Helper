@@ -115,7 +115,7 @@ function guideComponents(b){
 }
 function gearOptions(b){const c=catalogEntry(b)||{},e=buildEntry(b),recommended=e?.gears||[],available=Array.isArray(c.gears)?c.gears:[];return available.map(g=>{const r=recommended.find(x=>norm(x.name)===norm(g.name));return {...g,pick:r?.pick||null,recommended:!!r}}).sort((a,z)=>(Number(z.pick)||0)-(Number(a.pick)||0))}
 function gearOptionRows(b){return gearOptions(b).map(g=>`<button class="gearOption ${g.recommended?'gearRecommended':''}" type="button" onclick="componentModalV2ById(${b.id},'gears','${esc(g.id)}')">${compIcon('gears',g,b)}<span><b>${esc(g.name)}</b><small>${g.pick!=null?esc(g.pick)+'% community pick':'available'}</small></span>${g.recommended?'<strong>RECOMMENDED</strong>':''}</button>`).join('')}
-function recommendationContext(){return {isOwnedAccount,buildItems,guideComponents,itemStatus,metaEntry,readiness,playMode,playMap}}
+function recommendationContext(){return {isOwnedAccount,buildItems,guideComponents,buildEntry,itemStatus,metaEntry,readiness,playMode,playMap}}
 function nextActions(b){return window.BHRecommendations?window.BHRecommendations.nextActions(b,recommendationContext()):[]}
 function upgradePriority(b){return window.BHRecommendations?window.BHRecommendations.upgradePriority(b,recommendationContext()):{score:0,actions:[],metaScore:null,confidence:.4}}
 function componentCatalogItem(type,item,b=null){
