@@ -44,12 +44,36 @@ function parsePickList(section){
 function escRe(s){return String(s||'').replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}
 function parseNoff(html,brawler){
   const text=clean(html);
-  const gadgets=[],starPowers=[],gears=[];
+  const gadgets=[],starPowers=[],gears=[],overdrives=[],buffies=[];
   const parseNamed=(names)=>{const out=[],low=text.toLowerCase();for(const item of names||[]){const name=item?.name||item,key=String(name).toLowerCase();let i=low.indexOf(key),pick=null;while(i>=0){const m=text.slice(i+key.length,i+key.length+120).match(/\s*(\d{1,3})%\s*pick/i);if(m){pick=Number(m[1]);break}i=low.indexOf(key,i+key.length)}if(pick!=null)out.push({name,pick});}return out;};
   gadgets.push(...parseNamed(brawler?.gadgets));
   starPowers.push(...parseNamed(brawler?.starPowers));
   const gearNames=['Damage','Shield','Speed','Health','Vision','Gadget Cooldown','Reload','Super Charge','Pet Power','Talk to the Hand','Thicc Head','Exhausting Storm','Quadruplets','Super Turret'];
   for(const name of gearNames){const i=text.toLowerCase().indexOf(name.toLowerCase());if(i<0)continue;const tail=text.slice(i,i+100);const m=tail.match(/\s*(\d{1,3})%/i);if(m)gears.push({name,pick:Number(m[1])});}
+  // NOFF exposes the current Overdrive and the three Buffie effects in the brawler page.
+  // Keep them as named guide data so the frontend does not have to infer them from slots.
+  const odMatch=text.match(/Overdrive\\s+([^%]{2,90}?)(?:\\s+Buffs while|\\s+Damage|\\s+Speed|\\s+Shield|\\s+Buffie:)/i);
+  if(odMatch){
+    const name=odMatch[1].trim().replace(/^Image\\s+/i,'').replace(/\\s+/g,' ');
+    if(name && !/^Buffie$/i.test(name)) overdrives.push({id:'od:'+norm(brawler?.name||name).replace(/ /g,'_'),name,description:''});
+  }
+  const bNames=[
+    ...(brawler?.gadgets||[]).map(x=>({slot:'gadget',name:x?.name})),
+    ...(brawler?.starPowers||[]).map(x=>({slot:'starPower',name:x?.name}))
+  ];
+  for(const x of bNames){
+    if(!x.name)continue;
+    const re=new RegExp(escRe(x.name)+'[\\s\\S]{0,900}?Buffie\\s*:\\s*([^\\.]{10,500}\\.)','i');
+    const bm=text.match(re);
+    if(bm)buffies.push({id:'buffie:'+x.slot+':'+norm(brawler.name).replace(/ /g,'_'),slot:x.slot,source:x.name,name:x.name+' Buffie',description:bm[1].trim()});
+  }
+  const hcName=brawler?.name+' Hypercharge';
+  const hcIdx=text.toLowerCase().indexOf('hypercharge');
+  if(hcIdx>=0){
+    const tail=text.slice(hcIdx,hcIdx+1800);
+    const bm=tail.match(/Buffie\\s*:\\s*([^\\.]{10,500}\\.)/i);
+    if(bm)buffies.push({id:'buffie:hypercharge:'+norm(brawler.name).replace(/ /g,'_'),slot:'hypercharge',source:'Hypercharge',name:'Hypercharge Buffie',description:bm[1].trim()});
+  }
   const stats={winRate:Number((text.match(/Win Rate\s*\(?([0-9.]+)%/i)||[])[1]||'NaN'),pickRate:Number((text.match(/Pick Rate\s*\(?([0-9.]+)%/i)||[])[1]||'NaN')};
   if(!Number.isFinite(stats.winRate))stats.winRate=null;
   if(!Number.isFinite(stats.pickRate))stats.pickRate=null;
@@ -63,7 +87,7 @@ function parseNoff(html,brawler){
   const mapRe=/([A-Za-z0-9][A-Za-z0-9'’&.\- ]{1,70}?)\s+([0-9.]+)%\s*([0-9.]+)%\s*([0-9.]+)/g;
   let mm;
   while((mm=mapRe.exec(mapBlock))){const name=mm[1].trim().replace(/^Image\s*/i,'');if(name&&!/^(?:Map|Win Rate|Pick Rate|Score|Show More)$/i.test(name)&&!/^Best Maps Map Win Rate Pick Rate Score/i.test(name))maps.push({name,winRate:Number(mm[2]),pickRate:Number(mm[3]),score:Number(mm[4])});}
-  return {sample:sample?Number(sample.replace(/,/g,'')):null,gadget:gadgets.sort((a,b)=>b.pick-a.pick).slice(0,1),starPower:starPowers.sort((a,b)=>b.pick-a.pick).slice(0,1),gears:gears.sort((a,b)=>b.pick-a.pick).slice(0,6),stats,modes,maps:maps.slice(0,20)};
+  return {sample:sample?Number(sample.replace(/,/g,'')):null,gadget:gadgets.sort((a,b)=>b.pick-a.pick).slice(0,1),starPower:starPowers.sort((a,b)=>b.pick-a.pick).slice(0,1),gears:gears.sort((a,b)=>b.pick-a.pick).slice(0,6),overdrives,buffies,stats,modes,maps:maps.slice(0,20)};
 }
 function parseBT(html){
   const text=clean(html);
@@ -200,7 +224,9 @@ async function main(){
     starPowers:(b.starPowers||[]).map(x=>({id:x.id,name:x.name,description:x.description||'',descriptionHtml:x.descriptionHtml||'',imageUrl:x.imageUrl||null,released:x.released!==false})),
     gears:(b.gears||[]).map(x=>({id:x.id,name:x.name,description:x.description||'',descriptionHtml:x.descriptionHtml||'',imageUrl:x.imageUrl||null,released:x.released!==false})),
     hyperCharges:(b.hypercharges||b.hyperCharges||[]).map(x=>({id:x.id,name:x.name,description:x.description||'',descriptionHtml:x.descriptionHtml||'',imageUrl:x.imageUrl||null,released:x.released!==false})),
-    buffies:(b.buffies||[]).map(x=>({id:x.id,name:x.name,description:x.description||'',descriptionHtml:x.descriptionHtml||'',imageUrl:x.imageUrl||null,released:x.released!==false}))
+    buffies:(b.buffies||[]).map(x=>({id:x.id,name:x.name,description:x.description||'',descriptionHtml:x.descriptionHtml||'',imageUrl:x.imageUrl||null,released:x.released!==false})),
+    overdrives:(entries[b.name]?.overdrives||[]).map(x=>({id:x.id,name:x.name,description:x.description||'',descriptionHtml:x.descriptionHtml||'',imageUrl:x.imageUrl||null,released:true})),
+    buffies:(entries[b.name]?.buffies||[]).map(x=>({id:x.id,name:x.name,slot:x.slot,source:x.source,description:x.description||'',descriptionHtml:x.description||'',imageUrl:x.imageUrl||null,released:true}))
   }));
   const catalogDocument={schemaVersion:2,generatedFrom:'BrawlAPI catalog snapshot',generatedAt:now,count:catalogOut.length,brawlers:catalogOut};
   fs.writeFileSync(CATALOG_PATH,JSON.stringify(catalogDocument,null,2)+'\n');
