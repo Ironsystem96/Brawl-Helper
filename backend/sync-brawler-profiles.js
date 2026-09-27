@@ -37,11 +37,11 @@ async function main(){
   const ch=byId.get(Number(b.id))||byName.get(norm(b.name))||null;
   const comp=components.entries?.[String(b.id)]||{};
   const meta=build.entries?.[b.name]||{};
-  const attack=skillDef(ch?.WeaponSkill,skills,textMap),superDef=skillDef(ch?.UltimateSkill,skills,textMap);
+  const attack=skillDef(ch?.WeaponSkill,skills,textMap),superDef=skillDef(ch?.UltimateSkill,skills,textMap),hyperDef=skillDef(ch?.OverchargedUltimateSkill,skills,textMap);
   const abilities={
    gadgets:(b.gadgets||[]).map(x=>({id:x.id,name:x.name,description:x.description||'',imageUrl:x.imageUrl||null,released:x.released!==false})),
    starPowers:(b.starPowers||[]).map(x=>({id:x.id,name:x.name,description:x.description||'',imageUrl:x.imageUrl||null,released:x.released!==false})),
-   hyperCharges:(b.hyperCharges||[]).map(x=>({id:x.id,name:x.name,description:x.description||'',imageUrl:x.imageUrl||null,released:x.released!==false})),
+   hyperCharges:(b.hyperCharges?.length?b.hyperCharges:((ch?.OverchargedUltimateSkill&&hyperDef?.status==='VERIFIED')?[{id:'hyper:'+ch.OverchargedUltimateSkill,name:hyperDef.name,description:hyperDef.description||'',imageUrl:null,released:true,source:'BrawlAPI game CSV'}]:[])).map(x=>({...x,source:x.source||'BrawlAPI'})),
    overdrives:(comp.overdrives||[]),
    buffies:{gadget:comp.buffies?.gadget||null,starPower:comp.buffies?.starPower||null,hyperCharge:comp.buffies?.hyperCharge||null},
    gears:comp.gears||[]
@@ -71,7 +71,7 @@ async function main(){
    id:b.id,name:b.name,identity:{assetId:b.assetId,avatarId:b.avatarId,rarity:b.rarity||null,class:b.class||null,description:b.description||'',shortDescription:b.shortDescription||''},
    portrait:{imageUrl:b.imageUrl||null,imageUrl2:b.imageUrl2||null},
    baseStats:ch?{health:firstNonEmpty(ch.Hitpoints,ch.Health),speed:firstNonEmpty(ch.Speed),attackDamage:firstNonEmpty(ch.AutoAttackDamage),attackBullets:firstNonEmpty(ch.AutoAttackBulletsPerShot),attackRange:firstNonEmpty(ch.AutoAttackRange),reloadMs:firstNonEmpty(ch.AutoAttackSpeedMs),regeneratePerSecond:firstNonEmpty(ch.RegeneratePerSecond),superChargeMultiplier:firstNonEmpty(ch.UltiChargeMul),superChargeDivider:firstNonEmpty(ch.UltiChargeDiv)}:null,
-   attack,super:superDef,
+   attack,super:superDef,hyperCharge:hyperDef,
    abilities,meta,
    coverage:{complete,coreComplete,score,fields:coverage,optionalKnown,optionalStatus,missing:Object.entries(coverage).filter(([,ok])=>!ok).map(([k])=>k)},
    sources:{catalog:'BrawlAPI',gameData:'BrawlAPI game CSV',buildMeta:meta.sourceUrl||meta.noff?.sourceUrl||null}
