@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - 'backend/sync-meta.js'
+      - 'backend/sync-assets.js'
       - '.github/workflows/update-meta.yml'
   schedule:
     - cron: '17 2 * * *'
