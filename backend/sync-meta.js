@@ -41,12 +41,12 @@ function escRe(s){return String(s||'').replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}
 function parseNoff(html,brawler){
   const text=clean(html);
   const gadgets=[],starPowers=[],gears=[];
-  const parseNamed=(names,section,needle)=>{const out=[];for(const item of names||[]){const name=item?.name||item;const re=new RegExp(escRe(name)+'\\s+(\\d{1,3})%pick','i');const m=section.match(re);if(m)out.push({name,pick:Number(m[1])});}return out;};
+  const parseNamed=(names,section)=>{const out=[],low=section.toLowerCase();for(const item of names||[]){const name=item?.name||item;const i=low.indexOf(String(name).toLowerCase());if(i<0)continue;const tail=section.slice(i,i+120);const m=tail.match(/\\s+(\\d{1,3})%pick/i);if(m)out.push({name,pick:Number(m[1])});}return out;};
   const gadgetSection=pickSection(text,'Gadgets','Star Powers');
   const starSection=pickSection(text,'Star Powers','Gear Pick Rates');
   const gearSection=pickSection(text,'Gear Pick Rates','Hypercharge');
-  gadgets.push(...parseNamed(brawler?.gadgets,gadgetSection,'pick'));
-  starPowers.push(...parseNamed(brawler?.starPowers,starSection,'pick'));
+  gadgets.push(...parseNamed(brawler?.gadgets,gadgetSection));
+  starPowers.push(...parseNamed(brawler?.starPowers,starSection));
   const gearNames=(brawler?.gears||[]).map(x=>x?.name||x);
   for(const name of gearNames){const m=gearSection.match(new RegExp(escRe(name)+'\\s+(\\d{1,3})%','i'));if(m)gears.push({name,pick:Number(m[1])});}
   const stats={winRate:Number((text.match(/Win Rate\s*\(?([0-9.]+)%/i)||[])[1]||'NaN'),pickRate:Number((text.match(/Pick Rate\s*\(?([0-9.]+)%/i)||[])[1]||'NaN')};
