@@ -1,3 +1,16 @@
+const GAME_DATA_VERSION='current';
+function normalizeBrawlerRecord(b){
+ const clean=x=>x==null?'':String(x).replace(/<[^>]*>/g,' ').replace(/\s+/g,' ').trim();
+ const arr=(x)=>Array.isArray(x)?x.filter(Boolean).map(i=>({id:i.id??null,name:clean(i.name),description:clean(i.description||i.descriptionHtml),imageUrl:i.imageUrl||null,released:i.released!==false})).filter(i=>i.name):[];
+ return {
+  id:b.id??null,name:clean(b.name),assetId:b.assetId??b.id??null,avatarId:b.avatarId??null,
+  imageUrl:b.imageUrl||null,imageUrl2:b.imageUrl2||null,rarity:b.rarity||null,class:b.class||null,
+  description:clean(b.description),shortDescription:clean(b.shortDescription),
+  gadgets:arr(b.gadgets),starPowers:arr(b.starPowers),gears:arr(b.gears),hyperCharges:arr(b.hyperCharges),
+  overdrives:arr(b.overdrives),buffies:arr(b.buffies),
+  dataCompleteness:{identity:!!(b.id&&b.name),portrait:!!(b.imageUrl||b.imageUrl2),gadgets:arr(b.gadgets).length===2,starPowers:arr(b.starPowers).length===2,gears:arr(b.gears).length>0,hyperCharges:arr(b.hyperCharges).length>0,overdrives:arr(b.overdrives).length>0,buffies:arr(b.buffies).length>0}
+ };
+}
 const fs=require('fs');
 const path=require('path');
 
