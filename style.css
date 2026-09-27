@@ -859,3 +859,19 @@ body{color:#f4f7fb}
 .buildSlot em{font-size:7px;color:#ffd34e;font-style:normal;font-weight:900}
 .buildSlot strong{display:block;margin-top:4px;font-size:7px;color:#9ff0c6}
 @media(max-width:520px){.buildSlotGrid{grid-template-columns:repeat(5,minmax(54px,1fr));overflow-x:auto;padding-bottom:2px}.buildSlot{min-width:54px}}
+
+.buffieAvailable{border-color:#5a7ba8;background:rgba(255,255,255,.025)}
+.buffieAvailable .buffieCheck{background:#243653;color:#9ed0ff}
+.buffieMissing{border-color:#5a4350}
+.buffieMissing .buffieCheck{background:#3a2730;color:#ff9aa9}
+.buffieDetailList{display:grid;gap:7px;margin-top:9px}
+.buffieDetailItem{padding:9px 10px;border:1px solid #334765;background:#18243a;border-radius:10px}
+.buffieDetailItem b{font-size:10px;color:#fff}
+.buffieDetailItem p{margin:4px 0 0;font-size:9px;line-height:1.4;color:#aebbd0}
+.gearOptionGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+.gearOption{display:flex;align-items:center;gap:7px;padding:7px;border:1px solid #334765;background:#18243a;border-radius:10px;color:#fff;text-align:left;min-width:0}
+.gearOption.gearSignal{border-color:#ffd34e;background:rgba(255,211,78,.055)}
+.gearOption .compIcon{width:30px;height:30px;flex:0 0 30px}
+.gearOption span{display:grid;gap:2px;min-width:0}
+.gearOption b{font-size:9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.gearOption small{font-size:7.5px;color:#9eacc1}
