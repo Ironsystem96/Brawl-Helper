@@ -844,3 +844,18 @@ body{color:#f4f7fb}
   .componentFiveGrid .guideComponent{min-height:108px;padding:6px 3px}
   .componentFiveGrid .guideComponent>.compIcon,.componentFiveGrid .guideComponent>.pendingIcon{width:30px!important;height:30px!important}
 }
+
+
+/* Gear recommendation hierarchy */
+.gearOption{position:relative}
+.gearOption.gearSignal{border-color:#526b92;background:#18243a}
+.gearOption.gearSignal:after{content:'BUILD SIGNAL';position:absolute;right:9px;top:8px;font-size:7px;font-weight:950;color:#ffd34e;letter-spacing:.4px}
+.buildSlotGrid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:7px}
+.buildSlot{min-width:0;padding:8px 5px;border:1px solid #405274;border-radius:12px;background:#17243a;color:#fff;text-align:center}
+.buildSlot .compIcon{width:34px;height:34px;margin:0 auto 4px}
+.buildSlot span{display:grid;gap:2px}
+.buildSlot small{font-size:7px;color:#aebbd0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.buildSlot b{font-size:8.5px;line-height:1.15;min-height:19px}
+.buildSlot em{font-size:7px;color:#ffd34e;font-style:normal;font-weight:900}
+.buildSlot strong{display:block;margin-top:4px;font-size:7px;color:#9ff0c6}
+@media(max-width:520px){.buildSlotGrid{grid-template-columns:repeat(5,minmax(54px,1fr));overflow-x:auto;padding-bottom:2px}.buildSlot{min-width:54px}}
