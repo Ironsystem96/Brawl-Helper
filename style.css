@@ -754,3 +754,24 @@ body{color:#f4f7fb}
 .fallbackIcon[style*="display:none"]{display:none!important}
 .miniItem .fallbackIcon[style*="display:none"]{display:none!important}
 .guideComponent .fallbackIcon[style*="display:none"]{display:none!important}
+
+
+/* Final component icon cleanup: one icon surface only */
+.componentFiveGrid .compIcon{
+  width:36px!important;height:36px!important;min-width:36px!important;
+  margin:auto!important;border-radius:9px;
+  object-fit:contain;background:transparent;border:0;
+}
+.componentFiveGrid .pendingIcon{
+  display:flex!important;align-items:center;justify-content:center;
+  box-sizing:border-box;background:#243653!important;
+  border:1px solid #405274!important;color:#aebbd0!important;
+  font-size:12px;font-weight:950;
+}
+.componentFiveGrid .fallbackIcon{
+  display:flex!important;align-items:center;justify-content:center;
+  box-sizing:border-box;background:#243653!important;
+  border:1px solid #405274!important;color:#aebbd0!important;
+  font-size:11px;font-weight:950;
+}
+.componentFiveGrid .guideComponent:after{content:'TAP FOR DETAILS';}
