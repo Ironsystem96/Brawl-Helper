@@ -798,3 +798,49 @@ body{color:#f4f7fb}
  .gearOptionGrid{grid-template-columns:1fr}
  .gearOption{padding:7px}
 }
+
+
+/* Component cards v7 — no duplicate/empty icon circles */
+.componentFiveGrid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:5px;overflow:visible}
+.componentFiveGrid .guideComponent{
+  min-width:0;min-height:116px;padding:7px 5px;display:grid;
+  grid-template-rows:34px auto 20px;align-items:center;justify-items:center;
+  gap:3px;border-radius:12px;background:#16233a;
+}
+.componentFiveGrid .guideComponent>.compIcon{
+  width:34px!important;height:34px!important;max-width:34px;max-height:34px;
+  object-fit:contain;display:block!important;background:transparent!important;border:0!important;
+}
+.componentFiveGrid .guideComponent>.grow{
+  width:100%;min-width:0;display:grid;gap:2px;text-align:center;align-self:start
+}
+.componentFiveGrid .guideComponent>.grow small{
+  font-size:7px;letter-spacing:.45px;color:#94a5bd;line-height:1.1
+}
+.componentFiveGrid .guideComponent>.grow b{
+  font-size:8.5px;line-height:1.15;white-space:normal;overflow:hidden;text-overflow:ellipsis;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical
+}
+.componentFiveGrid .guideComponent>.grow em{display:none!important}
+.componentFiveGrid .guideComponent>.guideState{
+  min-width:24px;height:18px;padding:0 6px;border-radius:7px;
+  display:flex;align-items:center;justify-content:center;
+  background:#202f47;border:1px solid #405274;color:#9eacc1;font-size:9px;font-weight:950
+}
+.componentFiveGrid .guideComponent>.guideState.stateOk{
+  background:rgba(97,230,167,.10);border-color:#4e8b72;color:#9ff0c6
+}
+.componentFiveGrid .guideComponent:after{content:none!important}
+.componentFiveGrid .guideComponent:hover{transform:translateY(-1px);border-color:#ffd34e;background:#1a2942}
+.componentFiveGrid .pendingIcon{
+  width:34px!important;height:34px!important;border-radius:9px!important;
+  border:1px dashed #617494!important;background:#18243a!important;color:#7f91aa!important
+}
+.overdrivePending{
+  border-style:dashed!important;border-color:#617494!important;
+}
+@media(max-width:430px){
+  .componentFiveGrid{gap:4px}
+  .componentFiveGrid .guideComponent{min-height:108px;padding:6px 3px}
+  .componentFiveGrid .guideComponent>.compIcon,.componentFiveGrid .guideComponent>.pendingIcon{width:30px!important;height:30px!important}
+}
