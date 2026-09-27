@@ -115,7 +115,7 @@ async function main(){
       const parsed=parseNoff(await get(NOFF+encodeURIComponent(slug)),b);
       noff={sourceUrl:NOFF+slug,stats:parsed.stats,modes:parsed.modes,maps:parsed.maps,sample:parsed.sample};
       if(parsed.gadget.length||parsed.starPower.length||parsed.gears.length||parsed.sample){
-        build={sourceUrl:NOFF+slug,sample:parsed.sample,gadget:parsed.gadget,starPower:parsed.starPower,gears:parsed.gears};
+        build={sourceUrl:NOFF+slug,sample:parsed.sample,gadget:parsed.gadget,starPower:parsed.starPower,gears:parsed.gears,overdrives:parsed.overdrives,buffies:parsed.buffies};
         noffOk++;
       }
     }catch(e){}
@@ -133,6 +133,8 @@ async function main(){
       gadget:build?.gadget||[],
       starPower:build?.starPower||[],
       gears:build?.gears||[],
+      overdrives:build?.overdrives||[],
+      buffies:build?.buffies||[],
       stats,
       noff:noff||previous.entries?.[b.name]?.noff||null
     };
@@ -224,7 +226,6 @@ async function main(){
     starPowers:(b.starPowers||[]).map(x=>({id:x.id,name:x.name,description:x.description||'',descriptionHtml:x.descriptionHtml||'',imageUrl:x.imageUrl||null,released:x.released!==false})),
     gears:(b.gears||[]).map(x=>({id:x.id,name:x.name,description:x.description||'',descriptionHtml:x.descriptionHtml||'',imageUrl:x.imageUrl||null,released:x.released!==false})),
     hyperCharges:(b.hypercharges||b.hyperCharges||[]).map(x=>({id:x.id,name:x.name,description:x.description||'',descriptionHtml:x.descriptionHtml||'',imageUrl:x.imageUrl||null,released:x.released!==false})),
-    buffies:(b.buffies||[]).map(x=>({id:x.id,name:x.name,description:x.description||'',descriptionHtml:x.descriptionHtml||'',imageUrl:x.imageUrl||null,released:x.released!==false})),
     overdrives:(entries[b.name]?.overdrives||[]).map(x=>({id:x.id,name:x.name,description:x.description||'',descriptionHtml:x.descriptionHtml||'',imageUrl:x.imageUrl||null,released:true})),
     buffies:(entries[b.name]?.buffies||[]).map(x=>({id:x.id,name:x.name,slot:x.slot,source:x.source,description:x.description||'',descriptionHtml:x.description||'',imageUrl:x.imageUrl||null,released:true}))
   }));
