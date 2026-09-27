@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-27T10:21:24.805Z",
+  "generatedAt": "2026-09-27T10:24:50.208Z",
   "source": "BrawlAPI game CSV mirror",
   "sources": [
     {
@@ -365,8 +365,20 @@
       ],
       "overdrives": [],
       "buffies": {
-        "gadget": null,
-        "starPower": null,
+        "gadget": {
+          "id": "buffie:gadget:SHELLY",
+          "slot": "gadget",
+          "source": "Fast Forward",
+          "name": "Fast Forward Buffie",
+          "description": "Take no damage while dashing."
+        },
+        "starPower": {
+          "id": "buffie:starPower:SHELLY",
+          "slot": "starPower",
+          "source": "Shell Shock",
+          "name": "Shell Shock Buffie",
+          "description": "Using patented Draco Dragonbreath shells, Shelly leaves a burning area with her Super."
+        },
         "hyperCharge": {
           "id": "buffie:hypercharge:SHELLY",
           "slot": "hypercharge",
@@ -474,8 +486,20 @@
       ],
       "overdrives": [],
       "buffies": {
-        "gadget": null,
-        "starPower": null,
+        "gadget": {
+          "id": "buffie:gadget:COLT",
+          "slot": "gadget",
+          "source": "Speedloader",
+          "name": "Speedloader Buffie",
+          "description": "Each hit steals 1 ammo."
+        },
+        "starPower": {
+          "id": "buffie:starPower:COLT",
+          "slot": "starPower",
+          "source": "Slick Boots",
+          "name": "Slick Boots Buffie",
+          "description": "Gain movement speed when dealing damage."
+        },
         "hyperCharge": {
           "id": "buffie:hypercharge:COLT",
           "slot": "hypercharge",
@@ -583,8 +607,20 @@
       ],
       "overdrives": [],
       "buffies": {
-        "gadget": null,
-        "starPower": null,
+        "gadget": {
+          "id": "buffie:gadget:BULL",
+          "slot": "gadget",
+          "source": "T-Bone Missile",
+          "name": "T-Bone Missile Buffie",
+          "description": "Mark the target for 5 sec, gaining 50% damage against the target as health."
+        },
+        "starPower": {
+          "id": "buffie:starPower:BULL",
+          "slot": "starPower",
+          "source": "Berserker",
+          "name": "Berserker Buffie",
+          "description": "Defeating a Brawler while this effect is active instantly charges Bull's Super."
+        },
         "hyperCharge": {
           "id": "buffie:hypercharge:BULL",
           "slot": "hypercharge",
@@ -692,8 +728,20 @@
       ],
       "overdrives": [],
       "buffies": {
-        "gadget": null,
-        "starPower": null,
+        "gadget": {
+          "id": "buffie:gadget:BROCK",
+          "slot": "gadget",
+          "source": "Rocket Laces",
+          "name": "Rocket Laces Buffie",
+          "description": "Hitting an enemy Brawler gives +2 sec movement speed."
+        },
+        "starPower": {
+          "id": "buffie:starPower:BROCK",
+          "slot": "starPower",
+          "source": "More Rockets",
+          "name": "More Rockets Buffie",
+          "description": "Brock gets +30% movement speed while firing his Super."
+        },
         "hyperCharge": {
           "id": "buffie:hypercharge:BROCK",
           "slot": "hypercharge",
@@ -801,8 +849,20 @@
       ],
       "overdrives": [],
       "buffies": {
-        "gadget": null,
-        "starPower": null,
+        "gadget": {
+          "id": "buffie:gadget:RICO",
+          "slot": "gadget",
+          "source": "Multiball Launcher",
+          "name": "Multiball Launcher Buffie",
+          "description": "When Rico bounces bullets off the vending machine, extra bullets are added to it when it explodes."
+        },
+        "starPower": {
+          "id": "buffie:starPower:RICO",
+          "slot": "starPower",
+          "source": "Super Bouncy",
+          "name": "Super Bouncy Buffie",
+          "description": "Bounced bullets also give 10% Super charge on hit."
+        },
         "hyperCharge": {
           "id": "buffie:hypercharge:RICO",
           "slot": "hypercharge",
@@ -910,8 +970,20 @@
       ],
       "overdrives": [],
       "buffies": {
-        "gadget": null,
-        "starPower": null,
+        "gadget": {
+          "id": "buffie:gadget:SPIKE",
+          "slot": "gadget",
+          "source": "Popping Pincushion",
+          "name": "Popping Pincushion Buffie",
+          "description": "Targets that are hit with 2 needles become rooted for 1 second."
+        },
+        "starPower": {
+          "id": "buffie:starPower:SPIKE",
+          "slot": "starPower",
+          "source": "Fertilize",
+          "name": "Fertilize Buffie",
+          "description": "Super projectile speed is 30% faster."
+        },
         "hyperCharge": {
           "id": "buffie:hypercharge:SPIKE",
           "slot": "hypercharge",
@@ -1225,8 +1297,20 @@
       ],
       "overdrives": [],
       "buffies": {
-        "gadget": null,
-        "starPower": null,
+        "gadget": {
+          "id": "buffie:gadget:NITA",
+          "slot": "gadget",
+          "source": "Bear Paws",
+          "name": "Bear Paws Buffie",
+          "description": "Her bear gains 50% damage for its next attack."
+        },
+        "starPower": {
+          "id": "buffie:starPower:NITA",
+          "slot": "starPower",
+          "source": "Bear With Me",
+          "name": "Bear With Me Buffie",
+          "description": "This ability can overheal Nita or her bear for 2000 health."
+        },
         "hyperCharge": {
           "id": "buffie:hypercharge:NITA",
           "slot": "hypercharge",
@@ -1540,8 +1624,20 @@
       ],
       "overdrives": [],
       "buffies": {
-        "gadget": null,
-        "starPower": null,
+        "gadget": {
+          "id": "buffie:gadget:MORTIS",
+          "slot": "gadget",
+          "source": "Combo Spinner",
+          "name": "Combo Spinner Buffie",
+          "description": "Deals increased damage to low health enemies."
+        },
+        "starPower": {
+          "id": "buffie:starPower:MORTIS",
+          "slot": "starPower",
+          "source": "Creepy Harvest",
+          "name": "Creepy Harvest Buffie",
+          "description": "Gains 250 additional max health until defeated (this stacks)."
+        },
         "hyperCharge": {
           "id": "buffie:hypercharge:MORTIS",
           "slot": "hypercharge",
@@ -1649,8 +1745,20 @@
       ],
       "overdrives": [],
       "buffies": {
-        "gadget": null,
-        "starPower": null,
+        "gadget": {
+          "id": "buffie:gadget:CROW",
+          "slot": "gadget",
+          "source": "Instapoison",
+          "name": "Instapoison Buffie",
+          "description": "Refreshes poison duration."
+        },
+        "starPower": {
+          "id": "buffie:starPower:CROW",
+          "slot": "starPower",
+          "source": "Extra Toxic",
+          "name": "Extra Toxic Buffie",
+          "description": "Crow deals 5% more damage for each poisoned enemy."
+        },
         "hyperCharge": {
           "id": "buffie:hypercharge:CROW",
           "slot": "hypercharge",
@@ -1861,8 +1969,20 @@
       ],
       "overdrives": [],
       "buffies": {
-        "gadget": null,
-        "starPower": null,
+        "gadget": {
+          "id": "buffie:gadget:BO",
+          "slot": "gadget",
+          "source": "Super Totem",
+          "name": "Super Totem Buffie",
+          "description": "The totem has a significantly increased radius."
+        },
+        "starPower": {
+          "id": "buffie:starPower:BO",
+          "slot": "starPower",
+          "source": "Circling Eagle",
+          "name": "Circling Eagle Buffie",
+          "description": "Bo is no longer revealed while attacking from a bush."
+        },
         "hyperCharge": {
           "id": "buffie:hypercharge:BO",
           "slot": "hypercharge",
@@ -2485,8 +2605,20 @@
       ],
       "overdrives": [],
       "buffies": {
-        "gadget": null,
-        "starPower": null,
+        "gadget": {
+          "id": "buffie:gadget:FRANK",
+          "slot": "gadget",
+          "source": "Active Noise Canceling",
+          "name": "Active Noise Canceling Buffie",
+          "description": "Soundwave also destroys enemy projectiles."
+        },
+        "starPower": {
+          "id": "buffie:starPower:FRANK",
+          "slot": "starPower",
+          "source": "Power Grab",
+          "name": "Power Grab Buffie",
+          "description": "Defeating a Brawler increases attack damage by 25% for 12 secs."
+        },
         "hyperCharge": {
           "id": "buffie:hypercharge:FRANK",
           "slot": "hypercharge",
@@ -2800,8 +2932,20 @@
       ],
       "overdrives": [],
       "buffies": {
-        "gadget": null,
-        "starPower": null,
+        "gadget": {
+          "id": "buffie:gadget:LEON",
+          "slot": "gadget",
+          "source": "Clone Projector",
+          "name": "Clone Projector Buffie",
+          "description": "Leon can reactivate the Gadget, while a clone is active, to swap positions with the clone! Lollipop Drop 37% pick Leon creates a stealthy area for his team to hide in."
+        },
+        "starPower": {
+          "id": "buffie:starPower:LEON",
+          "slot": "starPower",
+          "source": "Smoke Trails",
+          "name": "Smoke Trails Buffie",
+          "description": "The first attack after breaking invisibility deals +15% damage."
+        },
         "hyperCharge": {
           "id": "buffie:hypercharge:LEON",
           "slot": "hypercharge",
@@ -3115,8 +3259,20 @@
       ],
       "overdrives": [],
       "buffies": {
-        "gadget": null,
-        "starPower": null,
+        "gadget": {
+          "id": "buffie:gadget:BIBI",
+          "slot": "gadget",
+          "source": "Vitamin Booster",
+          "name": "Vitamin Booster Buffie",
+          "description": "Instantly charges Bibi's Home Run bar and her next attack restores 60% damage as health."
+        },
+        "starPower": {
+          "id": "buffie:starPower:BIBI",
+          "slot": "starPower",
+          "source": "Home Run",
+          "name": "Home Run Buffie",
+          "description": "Instantly charges Bibi's Home Run bar and her next attack restores 60% damage as health."
+        },
         "hyperCharge": {
           "id": "buffie:hypercharge:BIBI",
           "slot": "hypercharge",
@@ -3224,8 +3380,20 @@
       ],
       "overdrives": [],
       "buffies": {
-        "gadget": null,
-        "starPower": null,
+        "gadget": {
+          "id": "buffie:gadget:8_BIT",
+          "slot": "gadget",
+          "source": "Cheat Cartridge",
+          "name": "Cheat Cartridge Buffie",
+          "description": "Heals himself for 1800 , and repairs the booster by 100%."
+        },
+        "starPower": {
+          "id": "buffie:starPower:8_BIT",
+          "slot": "starPower",
+          "source": "Boosted Booster",
+          "name": "Boosted Booster Buffie",
+          "description": "Every 5 sec the Damage Booster spawns an ammo clip lasting 8 sec and reloading 1 ammo."
+        },
         "hyperCharge": {
           "id": "buffie:hypercharge:8_BIT",
           "slot": "hypercharge",
@@ -3539,8 +3707,20 @@
       ],
       "overdrives": [],
       "buffies": {
-        "gadget": null,
-        "starPower": null,
+        "gadget": {
+          "id": "buffie:gadget:EMZ",
+          "slot": "gadget",
+          "source": "Friendzoner",
+          "name": "Friendzoner Buffie",
+          "description": "Knocks enemies back farther and stuns them for 1 sec if knocked into a wall."
+        },
+        "starPower": {
+          "id": "buffie:starPower:EMZ",
+          "slot": "starPower",
+          "source": "Bad Karma",
+          "name": "Bad Karma Buffie",
+          "description": "Reduce damage dealt by enemies hit by Emz's main attack by 15% for 4 sec."
+        },
         "hyperCharge": {
           "id": "buffie:hypercharge:EMZ",
           "slot": "hypercharge",
@@ -3751,8 +3931,20 @@
       ],
       "overdrives": [],
       "buffies": {
-        "gadget": null,
-        "starPower": null,
+        "gadget": {
+          "id": "buffie:gadget:MAX",
+          "slot": "gadget",
+          "source": "Phase Shifter",
+          "name": "Phase Shifter Buffie",
+          "description": "Max can dash a second time 3 sec after the first dash."
+        },
+        "starPower": {
+          "id": "buffie:starPower:MAX",
+          "slot": "starPower",
+          "source": "Super Charged",
+          "name": "Super Charged Buffie",
+          "description": "Teammates affected by Max's Super gain a shield for 4 sec."
+        },
         "hyperCharge": {
           "id": "buffie:hypercharge:MAX",
           "slot": "hypercharge",
@@ -4272,8 +4464,20 @@
       ],
       "overdrives": [],
       "buffies": {
-        "gadget": null,
-        "starPower": null,
+        "gadget": {
+          "id": "buffie:gadget:SURGE",
+          "slot": "gadget",
+          "source": "Power Surge",
+          "name": "Power Surge Buffie",
+          "description": "Power Surge also grants 30% Reload Speed."
+        },
+        "starPower": {
+          "id": "buffie:starPower:SURGE",
+          "slot": "starPower",
+          "source": "To The Max",
+          "name": "To The Max Buffie",
+          "description": "When bouncing off a wall, Surge's Main Attack splits into 2 extra projectiles."
+        },
         "hyperCharge": {
           "id": "buffie:hypercharge:SURGE",
           "slot": "hypercharge",
@@ -4381,8 +4585,20 @@
       ],
       "overdrives": [],
       "buffies": {
-        "gadget": null,
-        "starPower": null,
+        "gadget": {
+          "id": "buffie:gadget:COLETTE",
+          "slot": "gadget",
+          "source": "Na-Ah",
+          "name": "Na-Ah Buffie",
+          "description": "The projectile pierces environments and Brawlers."
+        },
+        "starPower": {
+          "id": "buffie:starPower:COLETTE",
+          "slot": "starPower",
+          "source": "Push It",
+          "name": "Push It Buffie",
+          "description": "Super dash speed is significantly faster."
+        },
         "hyperCharge": {
           "id": "buffie:hypercharge:COLETTE",
           "slot": "hypercharge",
@@ -4799,8 +5015,20 @@
       ],
       "overdrives": [],
       "buffies": {
-        "gadget": null,
-        "starPower": null,
+        "gadget": {
+          "id": "buffie:gadget:EDGAR",
+          "slot": "gadget",
+          "source": "Hardcore",
+          "name": "Hardcore Buffie",
+          "description": "Edgar also gains immunity to Crowd Control for 1 sec."
+        },
+        "starPower": {
+          "id": "buffie:starPower:EDGAR",
+          "slot": "starPower",
+          "source": "Hard Landing",
+          "name": "Hard Landing Buffie",
+          "description": "A direct hit also charges his Super by 25%."
+        },
         "hyperCharge": {
           "id": "buffie:hypercharge:EDGAR",
           "slot": "hypercharge",
@@ -5526,8 +5754,20 @@
       ],
       "overdrives": [],
       "buffies": {
-        "gadget": null,
-        "starPower": null,
+        "gadget": {
+          "id": "buffie:gadget:GRIFF",
+          "slot": "gadget",
+          "source": "Piggy Bank",
+          "name": "Piggy Bank Buffie",
+          "description": "Griff can shoot the piggy bank to charge up and increase its explosion radius and damage! The piggy bank will explode instantly when it's fully charged."
+        },
+        "starPower": {
+          "id": "buffie:starPower:GRIFF",
+          "slot": "starPower",
+          "source": "Keep The Change",
+          "name": "Keep The Change Buffie",
+          "description": "Attacking with full ammo also fires a mega coin that deals extra damage! Business Resilience 54% pick Every 2 seconds, Griff regains up to 15% of his missing health."
+        },
         "hyperCharge": {
           "id": "buffie:hypercharge:GRIFF",
           "slot": "hypercharge",
@@ -5738,8 +5978,20 @@
       ],
       "overdrives": [],
       "buffies": {
-        "gadget": null,
-        "starPower": null,
+        "gadget": {
+          "id": "buffie:gadget:MEG",
+          "slot": "gadget",
+          "source": "Jolting Volts",
+          "name": "Jolting Volts Buffie",
+          "description": "Jolting Volts heals for +1 sec."
+        },
+        "starPower": {
+          "id": "buffie:starPower:MEG",
+          "slot": "starPower",
+          "source": "Force Field",
+          "name": "Force Field Buffie",
+          "description": "Meg gains +20% movement speed while the shield is active."
+        },
         "hyperCharge": {
           "id": "buffie:hypercharge:MEG",
           "slot": "hypercharge",
@@ -6772,7 +7024,15 @@
           "iconExportName": "icon_gear_gadget"
         }
       ],
-      "overdrives": [],
+      "overdrives": [
+        {
+          "id": "overdrive:16000063",
+          "skillKey": "JesterOverchargedUlti",
+          "name": "JesterOverchargedUlti",
+          "description": "",
+          "source": "BrawlAPI game CSV"
+        }
+      ],
       "buffies": {
         "gadget": null,
         "starPower": null,
@@ -6978,7 +7238,15 @@
           "iconExportName": "icon_gear_gadget"
         }
       ],
-      "overdrives": [],
+      "overdrives": [
+        {
+          "id": "overdrive:16000065",
+          "skillKey": "BeamerOverchargedUlti",
+          "name": "BeamerOverchargedUlti",
+          "description": "",
+          "source": "BrawlAPI game CSV"
+        }
+      ],
       "buffies": {
         "gadget": null,
         "starPower": null,
@@ -9553,7 +9821,15 @@
           "iconExportName": "icon_gear_gadget"
         }
       ],
-      "overdrives": [],
+      "overdrives": [
+        {
+          "id": "overdrive:16000090",
+          "skillKey": "SkaterOverchargedUlti",
+          "name": "SkaterOverchargedUlti",
+          "description": "",
+          "source": "BrawlAPI game CSV"
+        }
+      ],
       "buffies": {
         "gadget": null,
         "starPower": null,
@@ -10171,7 +10447,15 @@
           "iconExportName": "icon_gear_gadget"
         }
       ],
-      "overdrives": [],
+      "overdrives": [
+        {
+          "id": "overdrive:16000096",
+          "skillKey": "DomainOverchargedUlti",
+          "name": "DomainOverchargedUlti",
+          "description": "",
+          "source": "BrawlAPI game CSV"
+        }
+      ],
       "buffies": {
         "gadget": null,
         "starPower": null,
@@ -11201,13 +11485,7 @@
           "iconExportName": "icon_gear_gadget"
         }
       ],
-      "overdrives": [
-        {
-          "id": "od:BOLT",
-          "name": "Bolt goes into overdrive, gaining",
-          "description": ""
-        }
-      ],
+      "overdrives": [],
       "buffies": {
         "gadget": null,
         "starPower": null,
