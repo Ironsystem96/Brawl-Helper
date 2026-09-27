@@ -41,11 +41,11 @@ function escRe(s){return String(s||'').replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}
 function parseNoff(html,brawler){
   const text=clean(html);
   const gadgets=[],starPowers=[],gears=[];
-  const parseNamed=(names)=>{const out=[],low=text.toLowerCase();for(const item of names||[]){const name=item?.name||item;const i=low.indexOf(String(name).toLowerCase());if(i<0)continue;const tail=text.slice(i,i+120);const m=tail.match(/\s+(\d{1,3})%pick/i);if(m)out.push({name,pick:Number(m[1])});}return out;};
+  const parseNamed=(names)=>{const out=[],low=text.toLowerCase();for(const item of names||[]){const name=item?.name||item;const i=low.indexOf(String(name).toLowerCase());if(i<0)continue;const tail=text.slice(i,i+120);const m=tail.match(/\s*(\d{1,3})%pick/i);if(m)out.push({name,pick:Number(m[1])});}return out;};
   gadgets.push(...parseNamed(brawler?.gadgets));
   starPowers.push(...parseNamed(brawler?.starPowers));
   const gearNames=['Damage','Shield','Speed','Health','Vision','Gadget Cooldown','Reload','Super Charge','Pet Power','Talk to the Hand','Thicc Head','Exhausting Storm','Quadruplets','Super Turret'];
-  for(const name of gearNames){const i=text.toLowerCase().indexOf(name.toLowerCase());if(i<0)continue;const tail=text.slice(i,i+100);const m=tail.match(/\s+(\d{1,3})%/i);if(m)gears.push({name,pick:Number(m[1])});}
+  for(const name of gearNames){const i=text.toLowerCase().indexOf(name.toLowerCase());if(i<0)continue;const tail=text.slice(i,i+100);const m=tail.match(/\s*(\d{1,3})%/i);if(m)gears.push({name,pick:Number(m[1])});}
   const stats={winRate:Number((text.match(/Win Rate\s*\(?([0-9.]+)%/i)||[])[1]||'NaN'),pickRate:Number((text.match(/Pick Rate\s*\(?([0-9.]+)%/i)||[])[1]||'NaN')};
   if(!Number.isFinite(stats.winRate))stats.winRate=null;
   if(!Number.isFinite(stats.pickRate))stats.pickRate=null;
@@ -54,7 +54,7 @@ function parseNoff(html,brawler){
   const mapBlock=pickSection(text,'Best Maps','Attacks');
   const modeNames=['Showdown','Duo Showdown','Trio Showdown','Bounty','Gem Grab','Heist','Brawl Ball','Hot Zone','Knockout','Wipeout','Basket Brawl','Duels','Hunters'];
   const modes={};
-  for(const name of modeNames){const re=new RegExp(escRe(name)+'\s+([0-9.]+)%\s*([0-9.]+)%\s*([0-9.]+)','i');const m=modeBlock.match(re);if(m)modes[name]={winRate:Number(m[1]),pickRate:Number(m[2]),score:Number(m[3])};}
+  for(const name of modeNames){const re=new RegExp(escRe(name)+'\\s+([0-9.]+)%\\s*([0-9.]+)%\\s*([0-9.]+)','i');const m=modeBlock.match(re);if(m)modes[name]={winRate:Number(m[1]),pickRate:Number(m[2]),score:Number(m[3])};}
   const maps=[];
   const mapRe=/([A-Za-z0-9][A-Za-z0-9'’&.\- ]{1,70}?)\s+([0-9.]+)%\s*([0-9.]+)%\s*([0-9.]+)/g;
   let mm;
