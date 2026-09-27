@@ -60,7 +60,7 @@ jobs:
         working-directory: backend
         run: node meta-review.js
       - name: Validate JSON
-        run: node -e "for (const f of ['data/brawlers.json','data/build-meta.json','data/meta.json','data/meta-agent-report.json','data/meta-review.json','data/recommendation-rules.json','data/asset-manifest.json','data/components.json']) JSON.parse(require('fs').readFileSync(f,'utf8')); console.log('JSON OK')"
+        run: node -e "for (const f of ['data/brawlers.json','data/build-meta.json','data/meta.json','data/meta-agent-report.json','data/meta-review.json','data/recommendation-rules.json','data/asset-manifest.json','data/components.json','data/brawler-profiles.json']) JSON.parse(require('fs').readFileSync(f,'utf8')); console.log('JSON OK')"
       - name: Commit data changes
         id: commit
         run: |
