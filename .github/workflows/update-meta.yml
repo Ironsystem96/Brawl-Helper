@@ -34,6 +34,10 @@ jobs:
       - name: Install backend dependencies
         working-directory: backend
         run: npm install
+      - name: Align with latest main before generating data
+        run: |
+          git fetch origin main
+          git rebase origin/main
       - name: Sync catalog, builds and meta
         working-directory: backend
         run: node sync-meta.js
@@ -50,8 +54,6 @@ jobs:
         run: |
           git config user.name "brawl-helper-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git fetch origin main
-          git rebase origin/main
           git add data/brawlers.json data/build-meta.json data/meta.json data/meta-agent-report.json data/meta-review.json
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
