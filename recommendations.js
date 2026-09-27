@@ -45,7 +45,7 @@
   }
   function upgradePriority(b,ctx){
     const actions=nextActions(b,ctx),meta=ctx.metaEntry(b,ctx.playMode,ctx.playMap),score=metaScore(meta),confidence=confidenceWeight(meta?.confidence),readiness=clamp(num(ctx.readiness(b))),topAction=actions[0]?.priority||0;
-    const evidenceWeight=score==null?.35:.18;
+    const evidenceWeight=score==null?0.35:0.18;
     const finalScore=Math.round(clamp(topAction*(1-evidenceWeight)*.72+(score??50)*evidenceWeight+readiness*.10*confidence));
     return {score:finalScore,actions:actions.slice(0,4),metaScore:score,confidence,readiness,evidence:{mode:ctx.playMode,map:ctx.playMap,metaScore:score,confidence}};
   }
