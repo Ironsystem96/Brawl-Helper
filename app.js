@@ -64,7 +64,7 @@ async function loadMeta(){
 }
 
 function img(kind,id){return 'https://cdn.brawlify.com/'+kind+'/'+id+'.png'}
-function localAsset(type,item,b){const id=b?.id!=null?String(b.id):null,entry=id?ASSET_STATE.entries[id]:null;if(!entry||!item&&type!=='portrait')return null;if(type==='portrait')return entry.portrait||null;const key=({gadgets:'gadgets',starPowers:'starPowers',gears:'gears',hyperCharges:'hyperCharges',buffies:'buffies',overdrives:'overdrives',gadget:'gadgets',star:'starPowers',gear:'gears',hc:'hyperCharges',buffie:'buffies',overdrive:'overdrives'})[type];return key&&item?.id!=null?entry[key]?.[String(item.id)]||null:null}
+function localAsset(type,item,b){const id=b?.id!=null?String(b.id):null,entry=id?ASSET_STATE.entries[id]:null;if(!entry||!item&&type!=='portrait')return null;const path=type==='portrait'?entry.portrait:null;const key=({gadgets:'gadgets',starPowers:'starPowers',gears:'gears',hyperCharges:'hyperCharges',buffies:'buffies',overdrives:'overdrives',gadget:'gadgets',star:'starPowers',gear:'gears',hc:'hyperCharges',buffie:'buffies',overdrive:'overdrives'})[type];const raw=path|| (key&&item?.id!=null?entry[key]?.[String(item.id)]||null:null);if(!raw)return null;return String(raw).replace(/^\//,'./')}
 function catalogEntry(b){if(!b)return null;return CATALOG_STATE.entries[b.name]||Object.values(CATALOG_STATE.entries||{}).find(x=>x&&x.id===b.id)||null}
 function portrait(b){return localAsset('portrait',null,b)||catalogEntry(b)?.imageUrl2||catalogEntry(b)?.imageUrl||b?.imageUrl2||b?.imageUrl||img('brawlers/borders',b?.id)}
 function owned(b){return {gadgets:b?.gadgets?.length||0,stars:b?.starPowers?.length||0,gears:b?.gears?.length||0,hc:b?.hyperCharges?.length||0,buffies:b?.buffies||{}}}
