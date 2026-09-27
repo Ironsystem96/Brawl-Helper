@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-09-27",
+  "purpose": "Documented Brawl Helper recommendation scoring rules. These are product heuristics, not official Supercell recommendations.",
+  "principles": [
+    "Never infer ownership from an absent profile component.",
+    "Prefer validated mode/map data over global data when available.",
+    "Prefer community build usage only when the source has a usable sample.",
+    "Keep confidence separate from score.",
+    "Always explain the reason behind an actionable recommendation."
+  ],
+  "metaScore": {
+    "inputs": {
+      "modeScore": 0.45,
+      "globalScore": 0.2,
+      "buildUsage": 0.2,
+      "confidence": 0.15
+    },
+    "notes": "The normalized meta score is a Brawl Helper derived signal. It must never be presented as an official ranking."
+  },
+  "actionPriority": {
+    "power": {"base": 100, "description": "Progress toward Power 11 for an owned Brawler."},
+    "buy": {"base": 70, "usageWeight": 0.4, "description": "Only when the user explicitly confirms the component is not owned."},
+    "equip": {"base": 55, "usageWeight": 0.3, "description": "Only when the user explicitly confirms the component is owned but it is not equipped."},
+    "check": {"base": 20, "usageWeight": 0.1, "description": "Used when ownership is unknown and the app needs confirmation."},
+    "unlock": {"base": 100, "description": "Catalog-only action for Brawlers not present on the account."}
+  },
+  "confidence": {
+    "high": "Validated source coverage and sufficient sample/observation quality.",
+    "medium": "Usable source data with some uncertainty or incomplete coverage.",
+    "low": "Sparse, stale, or weakly supported data. Do not use it as the sole reason for a strong recommendation."
+  },
+  "fallback": ["map", "mode", "global", "no validated meta"]
+}
