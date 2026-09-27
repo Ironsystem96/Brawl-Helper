@@ -18,7 +18,7 @@ async function download(url,target){
 async function main(){
   const catalog=JSON.parse(fs.readFileSync(CATALOG_PATH,'utf8')),list=Array.isArray(catalog.brawlers)?catalog.brawlers:[];
   if(list.length<90)throw new Error('Catalog unexpectedly small: '+list.length);
-  const manifest={schemaVersion:1,generatedAt:new Date().toISOString(),source:'BrawlAPI catalog image URLs',localRoot:'/assets/brawl/',entries:{}};
+  const manifest={schemaVersion:1,generatedAt:new Date().toISOString(),source:'BrawlAPI catalog image URLs',localRoot:'assets/brawl/',entries:{}};
   let ok=0,failed=0;
   for(const b of list){
     const entry={name:b.name,id:b.id,portrait:null,gadgets:{},starPowers:{},gears:{},hyperCharges:{},buffies:{},overdrives:{}};
@@ -29,7 +29,7 @@ async function main(){
       try{
         const file=(id==null?'portrait':String(id))+'.png',target=path.join(ASSET_ROOT,safe(b.name),type,file);
         await download(url,target);
-        const rel='/assets/brawl/'+safe(b.name)+'/'+type+'/'+file;
+        const rel='assets/brawl/'+safe(b.name)+'/'+type+'/'+file;
         if(type==='portrait')entry.portrait=rel;else entry[type][String(id)]=rel;
         ok++;
       }catch(e){failed++;console.warn('Asset failed:',b.name,type,id,e.message)}
