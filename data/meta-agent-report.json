@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-27T05:26:49.515Z",
+  "agent": "Brawl Helper Meta Agent",
+  "policy": {
+    "externalMetaFirst": true,
+    "accountPersonalizationAfterMeta": true,
+    "mapFallback": "mode -> global",
+    "disagreement": "lower confidence; do not invent a winner"
+  },
+  "providerHealth": [
+    {
+      "id": "brawlmetrics",
+      "name": "BrawlMetrics",
+      "role": "battle_stats",
+      "enabled": true,
+      "coverage": 0,
+      "updatedAt": "2026-09-27T05:25:42.779Z",
+      "ageHours": 0,
+      "status": "missing"
+    },
+    {
+      "id": "brawltime",
+      "name": "Brawl Time Ninja",
+      "role": "battle_stats",
+      "enabled": true,
+      "coverage": 103,
+      "updatedAt": "2026-09-27T05:25:42.779Z",
+      "ageHours": 0,
+      "status": "ok"
+    },
+    {
+      "id": "noff",
+      "name": "NOFF",
+      "role": "builds",
+      "enabled": true,
+      "coverage": 105,
+      "updatedAt": "2026-09-27T05:25:42.779Z",
+      "ageHours": 0,
+      "status": "ok"
+    },
+    {
+      "id": "brawlify",
+      "name": "Brawlify",
+      "role": "events_stats_catalog",
+      "enabled": true,
+      "coverage": 109,
+      "updatedAt": "2026-09-27T05:25:42.779Z",
+      "ageHours": 0,
+      "status": "ok"
+    },
+    {
+      "id": "supercell",
+      "name": "Brawl Stars API",
+      "role": "official_account_game_data",
+      "enabled": true,
+      "coverage": 109,
+      "updatedAt": "2026-09-27T05:25:42.779Z",
+      "ageHours": 0,
+      "status": "ok"
+    }
+  ],
+  "summary": {
+    "brawlersWithGlobalMeta": 109,
+    "brawlersWithModeMeta": 0,
+    "lowConfidence": 6
+  },
+  "warnings": [
+    "Mode coverage is incomplete; keep global fallback visible."
+  ]
+}

@@ -1,6 +1,11 @@
 {
-  "schemaVersion": 1,
-  "updatedAt": "2026-09-24T00:00:00Z",
+  "schemaVersion": 2,
+  "updatedAt": "2026-09-27T05:25:42.779Z",
+  "sourceStatus": {
+    "brawlApi": 109,
+    "noff": 105,
+    "brawlTimeNinja": 103
+  },
   "sources": [
     {
       "name": "NOFF",
@@ -8,298 +13,1507 @@
       "url": "https://www.noff.gg/brawl-stars/app/builds"
     },
     {
+      "name": "Brawl Time Ninja",
+      "type": "brawler_statistics",
+      "url": "https://brawltime.ninja/tier-list/brawler"
+    },
+    {
       "name": "BrawlAPI",
       "type": "game_catalog",
       "url": "https://brawlapi.com/"
     }
   ],
-  "note": "Seed dataset for the recommendation engine. Entries are community build statistics; they are not official Supercell recommendations. The sync pipeline will expand this dataset.",
+  "note": "Automatically synchronized community/build/statistics snapshot. Values are source data, not official Supercell recommendations.",
   "entries": {
-    "BO": {
-      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/bo",
-      "sample": 184,
-      "gadget": [
-        {
-          "name": "SUPER TOTEM",
-          "pick": 50
-        }
-      ],
-      "starPower": [
-        {
-          "name": "SNARE A BEAR",
-          "pick": 79
-        }
-      ],
-      "gears": [
-        {
-          "name": "DAMAGE",
-          "pick": 27
-        },
-        {
-          "name": "SHIELD",
-          "pick": 23
-        }
-      ]
+    "Vince": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/vince",
+      "sample": null,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": null
     },
-    "FANG": {
-      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/fang",
-      "sample": 266,
-      "gadget": [
-        {
-          "name": "ROUNDHOUSE KICK",
-          "pick": 81
-        }
-      ],
-      "starPower": [
-        {
-          "name": "FRESH KICKS",
-          "pick": 78
-        }
-      ],
-      "gears": [
-        {
-          "name": "DAMAGE",
-          "pick": 42
-        },
-        {
-          "name": "SHIELD",
-          "pick": 32
-        }
-      ]
+    "Cosmo": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/cosmo",
+      "sample": 10,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/cosmo",
+        "winRate": 66.4,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
     },
-    "MAX": {
-      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/max",
-      "sample": 164,
-      "gadget": [
-        {
-          "name": "PHASE SHIFTER",
-          "pick": 91
-        }
-      ],
-      "starPower": [
-        {
-          "name": "RUN N GUN",
-          "pick": 63
-        }
-      ],
-      "gears": [
-        {
-          "name": "DAMAGE",
-          "pick": 29
-        },
-        {
-          "name": "SHIELD",
-          "pick": 29
-        }
-      ]
+    "Wendy": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/wendy",
+      "sample": 32,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/wendy",
+        "winRate": 76.2,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
     },
-    "JACKY": {
-      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/jacky",
-      "sample": 93,
-      "gadget": [
-        {
-          "name": "PNEUMATIC BOOSTER",
-          "pick": 95
-        }
-      ],
-      "starPower": [
-        {
-          "name": "COUNTER CRUSH",
-          "pick": 87
-        }
-      ],
-      "gears": [
-        {
-          "name": "DAMAGE",
-          "pick": 31
-        },
-        {
-          "name": "SUPER CHARGE",
-          "pick": 24
-        }
-      ]
+    "Nori": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/nori",
+      "sample": 63,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/nori",
+        "winRate": 67.1,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
     },
-    "ALLI": {
-      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/alli",
-      "sample": 139,
-      "gadget": [
-        {
-          "name": "COLD-BLOODED",
-          "pick": 64
-        }
-      ],
-      "starPower": [
-        {
-          "name": "YOU BETTER RUN, YOU BETTER TAKE COVER",
-          "pick": 80
-        }
-      ],
-      "gears": [
-        {
-          "name": "DAMAGE",
-          "pick": 32
-        },
-        {
-          "name": "SHIELD",
-          "pick": 31
-        }
-      ]
-    },
-    "BOLT": {
+    "Bolt": {
       "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/bolt",
       "sample": 46,
-      "gadget": [
-        {
-          "name": "OIL CHANGE",
-          "pick": 70
-        }
-      ],
-      "starPower": [
-        {
-          "name": "UNSTOPPABALL",
-          "pick": 61
-        }
-      ],
-      "gears": [
-        {
-          "name": "DAMAGE",
-          "pick": 32
-        },
-        {
-          "name": "SHIELD",
-          "pick": 30
-        }
-      ]
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/bolt",
+        "winRate": 73.3,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
     },
-    "RICO": {
-      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/rico",
-      "sample": null,
-      "gadget": [
-        {
-          "name": "MULTIBALL LAUNCHER",
-          "pick": null
-        }
-      ],
-      "starPower": [
-        {
-          "name": "ROBO RETREAT",
-          "pick": null
-        }
-      ],
-      "gears": [
-        {
-          "name": "DAMAGE",
-          "pick": null
-        },
-        {
-          "name": "RELOAD SPEED",
-          "pick": null
-        }
-      ]
-    },
-    "EDGAR": {
-      "sourceUrl": "https://www.noff.gg/brawl-stars/builds/edgar",
-      "sample": null,
-      "gadget": [
-        {
-          "name": "LET'S FLY",
-          "pick": null
-        }
-      ],
-      "starPower": [
-        {
-          "name": "FISTICUFFS",
-          "pick": null
-        }
-      ],
-      "gears": [
-        {
-          "name": "DAMAGE",
-          "pick": null
-        },
-        {
-          "name": "SHIELD",
-          "pick": null
-        }
-      ]
-    },
-    "BIBI": {
-      "sourceUrl": "https://www.noff.gg/brawl-stars/builds/bibi",
-      "sample": null,
-      "gadget": [
-        {
-          "name": "VITAMIN BOOSTER",
-          "pick": null
-        }
-      ],
-      "starPower": [
-        {
-          "name": "HOME RUN",
-          "pick": null
-        }
-      ],
-      "gears": [
-        {
-          "name": "GADGET COOLDOWN",
-          "pick": null
-        },
-        {
-          "name": "SHIELD",
-          "pick": null
-        }
-      ]
-    },
-    "GUS": {
-      "sourceUrl": "https://www.noff.gg/brawl-stars/build/20560/best-build-for-every-map",
-      "sample": null,
-      "gadget": [
-        {
-          "name": "KOOKY POPPER",
-          "pick": null
-        }
-      ],
-      "starPower": [
-        {
-          "name": "SPIRIT ANIMAL",
-          "pick": null
-        }
-      ],
-      "gears": [
-        {
-          "name": "DAMAGE",
-          "pick": null
-        },
-        {
-          "name": "SHIELD",
-          "pick": null
-        }
-      ]
-    },
-    "STARR NOVA": {
+    "Starr Nova": {
       "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/starr-nova",
       "sample": 50,
-      "gadget": [
-        {
-          "name": "SHINING STARR OF FRIENDSHIP AND JUSTICE",
-          "pick": 56
-        }
-      ],
-      "starPower": [
-        {
-          "name": "POWER LEVEL: MAXIMUM",
-          "pick": 88
-        }
-      ],
-      "gears": [
-        {
-          "name": "DAMAGE",
-          "pick": 38
-        },
-        {
-          "name": "SHIELD",
-          "pick": 33
-        }
-      ]
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": null
+    },
+    "Damian": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/damian",
+      "sample": 67,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/damian",
+        "winRate": 69.7,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Najia": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/najia",
+      "sample": 56,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/najia",
+        "winRate": 66,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Sirius": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/sirius",
+      "sample": 176,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/sirius",
+        "winRate": 67.1,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Glowy": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/glowy",
+      "sample": null,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/glowy",
+        "winRate": 70.2,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Gigi": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/gigi",
+      "sample": 34,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/gigi",
+        "winRate": 69.9,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Pierce": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/pierce",
+      "sample": 73,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/pierce",
+        "winRate": 63.4,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Ziggy": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/ziggy",
+      "sample": 55,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/ziggy",
+        "winRate": 69.1,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Mina": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/mina",
+      "sample": 64,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/mina",
+        "winRate": 64.2,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Trunk": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/trunk",
+      "sample": 61,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/trunk",
+        "winRate": 67.3,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Alli": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/alli",
+      "sample": 139,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/alli",
+        "winRate": 66.9,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Kaze": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/kaze",
+      "sample": 142,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/kaze",
+        "winRate": 63.7,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Jae-Yong": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/jae-yong",
+      "sample": 58,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/jae-yong",
+        "winRate": 70.6,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Finx": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/finx",
+      "sample": 115,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/finx",
+        "winRate": 69.1,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Lumi": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/lumi",
+      "sample": 94,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/lumi",
+        "winRate": 65.5,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Ollie": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/ollie",
+      "sample": 93,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/ollie",
+        "winRate": 72.4,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Meeple": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/meeple",
+      "sample": 111,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/meeple",
+        "winRate": 61.9,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Buzz Lightyear": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/buzz-lightyear",
+      "sample": null,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": null
+    },
+    "Juju": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/juju",
+      "sample": 86,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/juju",
+        "winRate": 70.3,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Shade": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/shade",
+      "sample": 189,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/shade",
+        "winRate": 67,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Kenji": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/kenji",
+      "sample": 379,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/kenji",
+        "winRate": 65.8,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Moe": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/moe",
+      "sample": 124,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/moe",
+        "winRate": 68.5,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Clancy": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/clancy",
+      "sample": 183,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/clancy",
+        "winRate": 68.5,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Berry": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/berry",
+      "sample": 234,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/berry",
+        "winRate": 65.2,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Lily": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/lily",
+      "sample": 238,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/lily",
+        "winRate": 64.7,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Draco": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/draco",
+      "sample": 229,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/draco",
+        "winRate": 70.8,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Angelo": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/angelo",
+      "sample": 210,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/angelo",
+        "winRate": 64.8,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Melodie": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/melodie",
+      "sample": 121,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/melodie",
+        "winRate": 66.3,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Larry & Lawrie": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/larry-lawrie",
+      "sample": null,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": null
+    },
+    "Kit": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/kit",
+      "sample": 368,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/kit",
+        "winRate": 62.6,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Mico": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/mico",
+      "sample": 126,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/mico",
+        "winRate": 65.5,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Charlie": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/charlie",
+      "sample": 92,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/charlie",
+        "winRate": 70,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Chuck": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/chuck",
+      "sample": 103,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/chuck",
+        "winRate": 65,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Pearl": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/pearl",
+      "sample": 67,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/pearl",
+        "winRate": 67.4,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Doug": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/doug",
+      "sample": 206,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/doug",
+        "winRate": 68.9,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Cordelius": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/cordelius",
+      "sample": 314,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/cordelius",
+        "winRate": 65.6,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Hank": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/hank",
+      "sample": 174,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/hank",
+        "winRate": 69.9,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Maisie": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/maisie",
+      "sample": 95,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/maisie",
+        "winRate": 67.9,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Willow": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/willow",
+      "sample": 89,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/willow",
+        "winRate": 62.7,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "R-T": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/r-t",
+      "sample": 107,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/r-t",
+        "winRate": 70.7,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Mandy": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/mandy",
+      "sample": 140,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/mandy",
+        "winRate": 60.8,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Gray": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/gray",
+      "sample": 143,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/gray",
+        "winRate": 64.6,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Chester": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/chester",
+      "sample": 308,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/chester",
+        "winRate": 63.9,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Buster": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/buster",
+      "sample": 130,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/buster",
+        "winRate": 70.5,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Gus": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/gus",
+      "sample": 179,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/gus",
+        "winRate": 65.5,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Sam": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/sam",
+      "sample": 99,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/sam",
+        "winRate": 70.4,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Otis": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/otis",
+      "sample": 122,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/otis",
+        "winRate": 65.4,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Bonnie": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/bonnie",
+      "sample": 149,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/bonnie",
+        "winRate": 69.7,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Janet": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/janet",
+      "sample": 100,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/janet",
+        "winRate": 69,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Eve": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/eve",
+      "sample": 70,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/eve",
+        "winRate": 69.1,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Fang": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/fang",
+      "sample": 277,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/fang",
+        "winRate": 63,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Lola": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/lola",
+      "sample": 53,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/lola",
+        "winRate": 68.5,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Meg": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/meg",
+      "sample": 123,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/meg",
+        "winRate": 67,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Ash": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/ash",
+      "sample": 185,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/ash",
+        "winRate": 69.2,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Griff": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/griff",
+      "sample": 142,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/griff",
+        "winRate": 63.7,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Buzz": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/buzz",
+      "sample": 326,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/buzz",
+        "winRate": 63.7,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Grom": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/grom",
+      "sample": 98,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/grom",
+        "winRate": 64.4,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Squeak": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/squeak",
+      "sample": 174,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/squeak",
+        "winRate": 62.7,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Belle": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/belle",
+      "sample": 136,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/belle",
+        "winRate": 65.3,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Stu": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/stu",
+      "sample": 257,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/stu",
+        "winRate": 60.9,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Ruffs": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/ruffs",
+      "sample": 81,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/ruffs",
+        "winRate": 64.5,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Edgar": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/edgar",
+      "sample": 830,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/edgar",
+        "winRate": 61,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Byron": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/byron",
+      "sample": 172,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/byron",
+        "winRate": 60.5,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Lou": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/lou",
+      "sample": 109,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/lou",
+        "winRate": 67.1,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Amber": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/amber",
+      "sample": 290,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/amber",
+        "winRate": 67.3,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Colette": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/colette",
+      "sample": 174,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/colette",
+        "winRate": 61.7,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Surge": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/surge",
+      "sample": 446,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/surge",
+        "winRate": 61.2,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Sprout": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/sprout",
+      "sample": 92,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/sprout",
+        "winRate": 66.1,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Nani": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/nani",
+      "sample": 86,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/nani",
+        "winRate": 63.1,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Gale": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/gale",
+      "sample": 143,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/gale",
+        "winRate": 64.6,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Jacky": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/jacky",
+      "sample": 93,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/jacky",
+        "winRate": 70.4,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Max": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/max",
+      "sample": 164,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/max",
+        "winRate": 62.2,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Mr. P": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/mr-p",
+      "sample": 97,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": null
+    },
+    "Emz": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/emz",
+      "sample": 148,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/emz",
+        "winRate": 63.1,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Bea": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/bea",
+      "sample": 169,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/bea",
+        "winRate": 63.3,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Sandy": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/sandy",
+      "sample": 169,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/sandy",
+        "winRate": 68.8,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "8-Bit": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/8-bit",
+      "sample": 553,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/8-bit",
+        "winRate": 66,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Bibi": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/bibi",
+      "sample": 295,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/bibi",
+        "winRate": 64.7,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Carl": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/carl",
+      "sample": 172,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/carl",
+        "winRate": 65.1,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Rosa": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/rosa",
+      "sample": 81,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/rosa",
+        "winRate": 71,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Leon": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/leon",
+      "sample": 432,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/leon",
+        "winRate": 62.7,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Tick": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/tick",
+      "sample": 201,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/tick",
+        "winRate": 62.3,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Gene": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/gene",
+      "sample": 128,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/gene",
+        "winRate": 62.3,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Frank": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/frank",
+      "sample": 323,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/frank",
+        "winRate": 65.8,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Penny": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/penny",
+      "sample": 96,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/penny",
+        "winRate": 63.9,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Darryl": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/darryl",
+      "sample": 266,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/darryl",
+        "winRate": 66.2,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Tara": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/tara",
+      "sample": 110,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/tara",
+        "winRate": 66.5,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Pam": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/pam",
+      "sample": 70,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/pam",
+        "winRate": 69.4,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Piper": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/piper",
+      "sample": 264,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/piper",
+        "winRate": 60.7,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Bo": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/bo",
+      "sample": 185,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/bo",
+        "winRate": 64.7,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Poco": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/poco",
+      "sample": 200,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/poco",
+        "winRate": 64.2,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Crow": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/crow",
+      "sample": 366,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/crow",
+        "winRate": 60.8,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Mortis": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/mortis",
+      "sample": 488,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/mortis",
+        "winRate": 57.2,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "El Primo": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/el-primo",
+      "sample": 251,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": null
+    },
+    "Dynamike": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/dynamike",
+      "sample": 288,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/dynamike",
+        "winRate": 60.4,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Nita": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/nita",
+      "sample": 185,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/nita",
+        "winRate": 68.8,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Jessie": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/jessie",
+      "sample": 135,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/jessie",
+        "winRate": 66.7,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Barley": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/barley",
+      "sample": 207,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/barley",
+        "winRate": 65.7,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Spike": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/spike",
+      "sample": 302,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/spike",
+        "winRate": 62.2,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Rico": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/rico",
+      "sample": 248,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/rico",
+        "winRate": 61.4,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Brock": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/brock",
+      "sample": 222,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/brock",
+        "winRate": 62,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Bull": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/bull",
+      "sample": 192,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/bull",
+        "winRate": 64.8,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Colt": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/colt",
+      "sample": 367,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/colt",
+        "winRate": 60.4,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
+    },
+    "Shelly": {
+      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/shelly",
+      "sample": 303,
+      "gadget": [],
+      "starPower": [],
+      "gears": [],
+      "stats": {
+        "sourceUrl": "https://brawltime.ninja/tier-list/brawler/shelly",
+        "winRate": 64.3,
+        "pickRate": null,
+        "adjustedWinRate": null,
+        "updatedAt": "2026-09-27T05:25:42.779Z"
+      }
     }
   }
 }

@@ -1,6 +1,1103 @@
 {
-  "schemaVersion": 1,
-  "source": null,
-  "updatedAt": null,
-  "entries": {}
+  "schemaVersion": 2,
+  "updatedAt": "2026-09-27T05:25:42.779Z",
+  "source": "BrawlMetrics + Brawl Time Ninja + NOFF",
+  "method": "Global + mode snapshot. Mode rankings use BrawlMetrics Wilson-adjusted win rate; map-specific data is only shown when a verified map snapshot exists.",
+  "coverage": {
+    "brawlers": 109,
+    "modes": 0,
+    "totalModes": 8
+  },
+  "entries": {
+    "Vince": {
+      "default": {
+        "score": 50,
+        "rank": null,
+        "reason": "Community build data only",
+        "source": "NOFF",
+        "confidence": "low"
+      },
+      "modes": {}
+    },
+    "Cosmo": {
+      "default": {
+        "score": 66,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Wendy": {
+      "default": {
+        "score": 76,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Nori": {
+      "default": {
+        "score": 67,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Bolt": {
+      "default": {
+        "score": 73,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Starr Nova": {
+      "default": {
+        "score": 50,
+        "rank": null,
+        "reason": "Community build data only",
+        "source": "NOFF",
+        "confidence": "low"
+      },
+      "modes": {}
+    },
+    "Damian": {
+      "default": {
+        "score": 70,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Najia": {
+      "default": {
+        "score": 66,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Sirius": {
+      "default": {
+        "score": 67,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Glowy": {
+      "default": {
+        "score": 70,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Gigi": {
+      "default": {
+        "score": 70,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Pierce": {
+      "default": {
+        "score": 63,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Ziggy": {
+      "default": {
+        "score": 69,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Mina": {
+      "default": {
+        "score": 64,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Trunk": {
+      "default": {
+        "score": 67,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Alli": {
+      "default": {
+        "score": 67,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Kaze": {
+      "default": {
+        "score": 64,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Jae-Yong": {
+      "default": {
+        "score": 71,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Finx": {
+      "default": {
+        "score": 69,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Lumi": {
+      "default": {
+        "score": 66,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Ollie": {
+      "default": {
+        "score": 72,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Meeple": {
+      "default": {
+        "score": 62,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Buzz Lightyear": {
+      "default": {
+        "score": 50,
+        "rank": null,
+        "reason": "Community build data only",
+        "source": "NOFF",
+        "confidence": "low"
+      },
+      "modes": {}
+    },
+    "Juju": {
+      "default": {
+        "score": 70,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Shade": {
+      "default": {
+        "score": 67,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Kenji": {
+      "default": {
+        "score": 66,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Moe": {
+      "default": {
+        "score": 69,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Clancy": {
+      "default": {
+        "score": 69,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Berry": {
+      "default": {
+        "score": 65,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Lily": {
+      "default": {
+        "score": 65,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Draco": {
+      "default": {
+        "score": 71,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Angelo": {
+      "default": {
+        "score": 65,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Melodie": {
+      "default": {
+        "score": 66,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Larry & Lawrie": {
+      "default": {
+        "score": 50,
+        "rank": null,
+        "reason": "Community build data only",
+        "source": "NOFF",
+        "confidence": "low"
+      },
+      "modes": {}
+    },
+    "Kit": {
+      "default": {
+        "score": 63,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Mico": {
+      "default": {
+        "score": 66,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Charlie": {
+      "default": {
+        "score": 70,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Chuck": {
+      "default": {
+        "score": 65,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Pearl": {
+      "default": {
+        "score": 67,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Doug": {
+      "default": {
+        "score": 69,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Cordelius": {
+      "default": {
+        "score": 66,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Hank": {
+      "default": {
+        "score": 70,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Maisie": {
+      "default": {
+        "score": 68,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Willow": {
+      "default": {
+        "score": 63,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "R-T": {
+      "default": {
+        "score": 71,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Mandy": {
+      "default": {
+        "score": 61,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Gray": {
+      "default": {
+        "score": 65,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Chester": {
+      "default": {
+        "score": 64,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Buster": {
+      "default": {
+        "score": 71,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Gus": {
+      "default": {
+        "score": 66,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Sam": {
+      "default": {
+        "score": 70,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Otis": {
+      "default": {
+        "score": 65,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Bonnie": {
+      "default": {
+        "score": 70,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Janet": {
+      "default": {
+        "score": 69,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Eve": {
+      "default": {
+        "score": 69,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Fang": {
+      "default": {
+        "score": 63,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Lola": {
+      "default": {
+        "score": 69,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Meg": {
+      "default": {
+        "score": 67,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Ash": {
+      "default": {
+        "score": 69,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Griff": {
+      "default": {
+        "score": 64,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Buzz": {
+      "default": {
+        "score": 64,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Grom": {
+      "default": {
+        "score": 64,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Squeak": {
+      "default": {
+        "score": 63,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Belle": {
+      "default": {
+        "score": 65,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Stu": {
+      "default": {
+        "score": 61,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Ruffs": {
+      "default": {
+        "score": 65,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Edgar": {
+      "default": {
+        "score": 61,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Byron": {
+      "default": {
+        "score": 61,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Lou": {
+      "default": {
+        "score": 67,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Amber": {
+      "default": {
+        "score": 67,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Colette": {
+      "default": {
+        "score": 62,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Surge": {
+      "default": {
+        "score": 61,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Sprout": {
+      "default": {
+        "score": 66,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Nani": {
+      "default": {
+        "score": 63,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Gale": {
+      "default": {
+        "score": 65,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Jacky": {
+      "default": {
+        "score": 70,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Max": {
+      "default": {
+        "score": 62,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Mr. P": {
+      "default": {
+        "score": 50,
+        "rank": null,
+        "reason": "Community build data only",
+        "source": "NOFF",
+        "confidence": "low"
+      },
+      "modes": {}
+    },
+    "Emz": {
+      "default": {
+        "score": 63,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Bea": {
+      "default": {
+        "score": 63,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Sandy": {
+      "default": {
+        "score": 69,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "8-Bit": {
+      "default": {
+        "score": 66,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Bibi": {
+      "default": {
+        "score": 65,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Carl": {
+      "default": {
+        "score": 65,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Rosa": {
+      "default": {
+        "score": 71,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Leon": {
+      "default": {
+        "score": 63,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Tick": {
+      "default": {
+        "score": 62,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Gene": {
+      "default": {
+        "score": 62,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Frank": {
+      "default": {
+        "score": 66,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Penny": {
+      "default": {
+        "score": 64,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Darryl": {
+      "default": {
+        "score": 66,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Tara": {
+      "default": {
+        "score": 67,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Pam": {
+      "default": {
+        "score": 69,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Piper": {
+      "default": {
+        "score": 61,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Bo": {
+      "default": {
+        "score": 65,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Poco": {
+      "default": {
+        "score": 64,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Crow": {
+      "default": {
+        "score": 61,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Mortis": {
+      "default": {
+        "score": 57,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "El Primo": {
+      "default": {
+        "score": 50,
+        "rank": null,
+        "reason": "Community build data only",
+        "source": "NOFF",
+        "confidence": "low"
+      },
+      "modes": {}
+    },
+    "Dynamike": {
+      "default": {
+        "score": 60,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Nita": {
+      "default": {
+        "score": 69,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Jessie": {
+      "default": {
+        "score": 67,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Barley": {
+      "default": {
+        "score": 66,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Spike": {
+      "default": {
+        "score": 62,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Rico": {
+      "default": {
+        "score": 61,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Brock": {
+      "default": {
+        "score": 62,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Bull": {
+      "default": {
+        "score": 65,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Colt": {
+      "default": {
+        "score": 60,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    },
+    "Shelly": {
+      "default": {
+        "score": 64,
+        "rank": null,
+        "reason": "Brawl Time Ninja adjusted win rate",
+        "source": "Brawl Time Ninja",
+        "confidence": "medium"
+      },
+      "modes": {}
+    }
+  }
 }
