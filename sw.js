@@ -1,4 +1,4 @@
-const C='bh-v13';
+const C='bh-v14';
 const ASSETS=['./','./index.html','./style.css','./manifest.webmanifest','./data/game-db.json','./data/changelog.json','./data/brawlers.json','./data/build-meta.json'];
 
 self.addEventListener('install',event=>{
@@ -21,7 +21,7 @@ self.addEventListener('fetch',event=>{
   const sameOrigin=url.origin===self.location.origin;
 
   // HTML and JavaScript must be network-first so deployments cannot be hidden by stale PWA cache.
-  if(sameOrigin && (url.pathname.endsWith('/index.html') || url.pathname.endsWith('/app.js') || url.pathname.endsWith('/style.css') || url.pathname.endsWith('/sw.js'))){
+  if(sameOrigin && (url.pathname.endsWith('/index.html') || url.pathname.endsWith('/app.js') || url.pathname.endsWith('/recommendations.js') || url.pathname.endsWith('/style.css') || url.pathname.endsWith('/sw.js') || url.pathname.endsWith('/data/asset-manifest.json') || url.pathname.endsWith('/data/meta.json') || url.pathname.endsWith('/data/build-meta.json') || url.pathname.endsWith('/data/brawlers.json'))){
     event.respondWith(
       fetch(event.request,{cache:'no-store'})
         .then(response=>{
