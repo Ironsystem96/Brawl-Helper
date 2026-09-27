@@ -5,6 +5,7 @@ on:
       - 'backend/sync-meta.js'
       - 'backend/sync-assets.js'
       - 'backend/sync-components.js'
+      - 'backend/inspect-components.js'
       - '.github/workflows/update-meta.yml'
   schedule:
     - cron: '17 2 * * *'
@@ -43,6 +44,9 @@ jobs:
       - name: Sync catalog, builds and meta
         working-directory: backend
         run: node sync-meta.js
+      - name: Inspect BrawlAPI component schema
+        working-directory: backend
+        run: node inspect-components.js
       - name: Sync component catalog
         working-directory: backend
         run: node sync-components.js
