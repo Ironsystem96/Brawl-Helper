@@ -1,10 +1,10 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-27T10:06:27.470Z",
+  "updatedAt": "2026-09-27T10:20:10.354Z",
   "sourceStatus": {
     "brawlApi": 109,
     "noff": 105,
-    "brawlTimeNinja": 103
+    "brawlTimeNinja": 102
   },
   "sources": [
     {
@@ -31,6 +31,8 @@
       "gadget": [],
       "starPower": [],
       "gears": [],
+      "overdrives": [],
+      "buffies": [],
       "stats": null,
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/vince",
@@ -72,12 +74,14 @@
           "pick": 5
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/cosmo",
         "winRate": 66.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/cosmo",
@@ -256,12 +260,14 @@
           "pick": 6
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/wendy",
         "winRate": 76.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/wendy",
@@ -444,12 +450,14 @@
           "pick": 2
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/nori",
         "winRate": 67.1,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/nori",
@@ -636,12 +644,20 @@
           "pick": 2
         }
       ],
+      "overdrives": [
+        {
+          "id": "od:BOLT",
+          "name": "Bolt goes into overdrive, gaining",
+          "description": ""
+        }
+      ],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/bolt",
         "winRate": 73.3,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bolt",
@@ -832,6 +848,8 @@
           "pick": 3
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": null,
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/starr-nova",
@@ -1014,12 +1032,14 @@
           "pick": 1
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/damian",
         "winRate": 69.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/damian",
@@ -1202,12 +1222,14 @@
           "pick": 4
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/najia",
         "winRate": 66,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/najia",
@@ -1402,12 +1424,14 @@
           "pick": 3
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/sirius",
         "winRate": 67.1,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/sirius",
@@ -1567,12 +1591,14 @@
       "gadget": [],
       "starPower": [],
       "gears": [],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/glowy",
         "winRate": 70.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/glowy",
@@ -1618,12 +1644,14 @@
           "pick": 6
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/gigi",
         "winRate": 69.9,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gigi",
@@ -1797,12 +1825,14 @@
           "pick": 6
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/pierce",
         "winRate": 63.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/pierce",
@@ -1985,12 +2015,14 @@
           "pick": 9
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/ziggy",
         "winRate": 69.1,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/ziggy",
@@ -2173,12 +2205,14 @@
           "pick": 2
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/mina",
         "winRate": 64.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/mina",
@@ -2361,12 +2395,14 @@
           "pick": 2
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/trunk",
         "winRate": 67.3,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/trunk",
@@ -2557,12 +2593,14 @@
           "pick": 4
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/alli",
         "winRate": 66.9,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/alli",
@@ -2745,12 +2783,14 @@
           "pick": 5
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/kaze",
         "winRate": 63.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/kaze",
@@ -2945,12 +2985,14 @@
           "pick": 4
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/jae-yong",
         "winRate": 70.6,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/jae-yong",
@@ -3136,12 +3178,14 @@
           "pick": 4
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/finx",
-        "winRate": 69.1,
+        "winRate": 69.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/finx",
@@ -3324,12 +3368,14 @@
           "pick": 6
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/lumi",
         "winRate": 65.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/lumi",
@@ -3512,12 +3558,14 @@
           "pick": 3
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/ollie",
         "winRate": 72.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/ollie",
@@ -3700,12 +3748,14 @@
           "pick": 5
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/meeple",
         "winRate": 61.9,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/meeple",
@@ -3865,6 +3915,8 @@
       "gadget": [],
       "starPower": [],
       "gears": [],
+      "overdrives": [],
+      "buffies": [],
       "stats": null,
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/buzz-lightyear",
@@ -3906,12 +3958,14 @@
           "pick": 3
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/juju",
         "winRate": 70.3,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/juju",
@@ -4094,12 +4148,14 @@
           "pick": 6
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/shade",
         "winRate": 67,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/shade",
@@ -4282,12 +4338,14 @@
           "pick": 2
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/kenji",
         "winRate": 65.8,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/kenji",
@@ -4474,6 +4532,8 @@
           "pick": 6
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/moe",
         "winRate": 68.5,
@@ -4662,12 +4722,14 @@
           "pick": 3
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/clancy",
         "winRate": 68.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/clancy",
@@ -4850,12 +4912,14 @@
           "pick": 4
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/berry",
         "winRate": 65.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/berry",
@@ -5042,12 +5106,14 @@
           "pick": 3
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/lily",
         "winRate": 64.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/lily",
@@ -5230,12 +5296,14 @@
           "pick": 4
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/draco",
         "winRate": 70.8,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/draco",
@@ -5418,12 +5486,14 @@
           "pick": 6
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/angelo",
         "winRate": 64.8,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/angelo",
@@ -5606,12 +5676,14 @@
           "pick": 5
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/melodie",
         "winRate": 66.3,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/melodie",
@@ -5771,6 +5843,8 @@
       "gadget": [],
       "starPower": [],
       "gears": [],
+      "overdrives": [],
+      "buffies": [],
       "stats": null,
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/larry-lawrie",
@@ -5812,12 +5886,14 @@
           "pick": 4
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/kit",
         "winRate": 62.6,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/kit",
@@ -6000,12 +6076,14 @@
           "pick": 4
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/mico",
         "winRate": 65.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/mico",
@@ -6188,12 +6266,14 @@
           "pick": 5
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/charlie",
         "winRate": 70,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/charlie",
@@ -6384,12 +6464,14 @@
           "pick": 2
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/chuck",
         "winRate": 65,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/chuck",
@@ -6572,12 +6654,14 @@
           "pick": 2
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/pearl",
         "winRate": 67.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/pearl",
@@ -6760,12 +6844,14 @@
           "pick": 4
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/doug",
         "winRate": 68.9,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/doug",
@@ -6948,12 +7034,14 @@
           "pick": 2
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/cordelius",
         "winRate": 65.6,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/cordelius",
@@ -7148,12 +7236,14 @@
           "pick": 3
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/hank",
         "winRate": 69.9,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/hank",
@@ -7336,12 +7426,14 @@
           "pick": 3
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/maisie",
         "winRate": 67.9,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/maisie",
@@ -7524,12 +7616,14 @@
           "pick": 7
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/willow",
         "winRate": 62.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/willow",
@@ -7712,12 +7806,14 @@
           "pick": 5
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/r-t",
         "winRate": 70.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/r-t",
@@ -7900,12 +7996,14 @@
           "pick": 6
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/mandy",
         "winRate": 60.8,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/mandy",
@@ -8088,12 +8186,14 @@
           "pick": 3
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/gray",
         "winRate": 64.6,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gray",
@@ -8276,12 +8376,14 @@
           "pick": 3
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/chester",
         "winRate": 63.9,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/chester",
@@ -8460,12 +8562,14 @@
           "pick": 3
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/buster",
         "winRate": 70.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/buster",
@@ -8644,12 +8748,14 @@
           "pick": 4
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/gus",
         "winRate": 65.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gus",
@@ -8832,12 +8938,14 @@
           "pick": 7
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/sam",
         "winRate": 70.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/sam",
@@ -9024,12 +9132,14 @@
           "pick": 3
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/otis",
         "winRate": 65.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/otis",
@@ -9216,12 +9326,14 @@
           "pick": 4
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/bonnie",
         "winRate": 69.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bonnie",
@@ -9404,12 +9516,14 @@
           "pick": 8
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/janet",
         "winRate": 69,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/janet",
@@ -9596,12 +9710,14 @@
           "pick": 4
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/eve",
         "winRate": 69.1,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/eve",
@@ -9788,12 +9904,14 @@
           "pick": 2
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/fang",
         "winRate": 63,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/fang",
@@ -9976,12 +10094,14 @@
           "pick": 2
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/lola",
         "winRate": 68.6,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/lola",
@@ -10164,12 +10284,22 @@
           "pick": 3
         }
       ],
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:MEG",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "name": "Hypercharge Buffie",
+          "description": "The Mecha's Main Attack explodes, dealing 360 area damage."
+        }
+      ],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/meg",
         "winRate": 67,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/meg",
@@ -10356,12 +10486,14 @@
           "pick": 4
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/ash",
         "winRate": 69.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/ash",
@@ -10544,12 +10676,22 @@
           "pick": 1
         }
       ],
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:GRIFF",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "name": "Hypercharge Buffie",
+          "description": "Griff's main attack also pierces enemies."
+        }
+      ],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/griff",
         "winRate": 63.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/griff",
@@ -10732,12 +10874,14 @@
           "pick": 3
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/buzz",
         "winRate": 63.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/buzz",
@@ -10920,12 +11064,14 @@
           "pick": 9
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/grom",
         "winRate": 64.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/grom",
@@ -11108,12 +11254,14 @@
           "pick": 7
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/squeak",
         "winRate": 62.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/squeak",
@@ -11296,12 +11444,14 @@
           "pick": 2
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/belle",
         "winRate": 65.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/belle",
@@ -11484,12 +11634,14 @@
           "pick": 3
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/stu",
         "winRate": 60.9,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/stu",
@@ -11672,12 +11824,14 @@
           "pick": 7
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/ruffs",
         "winRate": 64.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/ruffs",
@@ -11872,12 +12026,22 @@
           "pick": 4
         }
       ],
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:EDGAR",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "name": "Hypercharge Buffie",
+          "description": "Edgar's main attack has two extra scarf punches with longer range, but -50% damage."
+        }
+      ],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/edgar",
         "winRate": 61,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/edgar",
@@ -12060,12 +12224,14 @@
           "pick": 7
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/byron",
         "winRate": 60.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/byron",
@@ -12252,12 +12418,14 @@
           "pick": 2
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/lou",
         "winRate": 67.1,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/lou",
@@ -12440,12 +12608,14 @@
           "pick": 3
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/amber",
         "winRate": 67.3,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/amber",
@@ -12640,12 +12810,22 @@
           "pick": 3
         }
       ],
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:COLETTE",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "name": "Hypercharge Buffie",
+          "description": "Colette follows up each main attack with a smaller second attack that deals less damage."
+        }
+      ],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/colette",
         "winRate": 61.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/colette",
@@ -12832,12 +13012,22 @@
           "pick": 1
         }
       ],
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:SURGE",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "name": "Hypercharge Buffie",
+          "description": "Surge shoots 'Double the Juice' for Double the Justice."
+        }
+      ],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/surge",
         "winRate": 61.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/surge",
@@ -13020,12 +13210,14 @@
           "pick": 2
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/sprout",
         "winRate": 66.1,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/sprout",
@@ -13212,12 +13404,14 @@
           "pick": 2
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/nani",
         "winRate": 63.1,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/nani",
@@ -13400,12 +13594,14 @@
           "pick": 4
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/gale",
         "winRate": 64.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gale",
@@ -13592,12 +13788,14 @@
           "pick": 1
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/jacky",
         "winRate": 70.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/jacky",
@@ -13784,12 +13982,22 @@
           "pick": 3
         }
       ],
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:MAX",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "name": "Hypercharge Buffie",
+          "description": "Max grants herself and nearby teammates 7% Super charge whenever she hits with her Main Attack."
+        }
+      ],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/max",
         "winRate": 62.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/max",
@@ -13976,6 +14184,8 @@
           "pick": 3
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": null,
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/mr-p",
@@ -14158,12 +14368,22 @@
           "pick": 2
         }
       ],
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:EMZ",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "name": "Hypercharge Buffie",
+          "description": "Sprays will poison enemies! Hypercharge duration: +2 sec."
+        }
+      ],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/emz",
         "winRate": 63.1,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/emz",
@@ -14346,12 +14566,14 @@
           "pick": 4
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/bea",
         "winRate": 63.3,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bea",
@@ -14538,12 +14760,14 @@
           "pick": 4
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/sandy",
         "winRate": 68.8,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/sandy",
@@ -14730,12 +14954,22 @@
           "pick": 4
         }
       ],
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:8_BIT",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "name": "Hypercharge Buffie",
+          "description": "During Hypercharge 8-Bit gains infinite ammo and can interrupt his current Main Attack with another one."
+        }
+      ],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/8-bit",
         "winRate": 66,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/8-bit",
@@ -14918,12 +15152,22 @@
           "pick": 2
         }
       ],
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:BIBI",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "name": "Hypercharge Buffie",
+          "description": "Hypercharged main attack has a shorter wind-up time."
+        }
+      ],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/bibi",
         "winRate": 64.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bibi",
@@ -15106,12 +15350,14 @@
           "pick": 4
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/carl",
         "winRate": 65.1,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/carl",
@@ -15306,12 +15552,14 @@
           "pick": 4
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/rosa",
         "winRate": 70.9,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/rosa",
@@ -15494,12 +15742,22 @@
           "pick": 3
         }
       ],
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:LEON",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "name": "Hypercharge Buffie",
+          "description": "Leon's main attacks do at least 75% damage regardless of distance."
+        }
+      ],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/leon",
         "winRate": 62.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/leon",
@@ -15682,12 +15940,14 @@
           "pick": 4
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/tick",
         "winRate": 62.3,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/tick",
@@ -15874,12 +16134,14 @@
           "pick": 4
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/gene",
         "winRate": 62.3,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gene",
@@ -16062,12 +16324,22 @@
           "pick": 1
         }
       ],
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:FRANK",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "name": "Hypercharge Buffie",
+          "description": "Main attack speed is increased to max while Frank is Hypercharged! Hypercharge duration: +2 sec."
+        }
+      ],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/frank",
         "winRate": 65.8,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/frank",
@@ -16254,12 +16526,14 @@
           "pick": 3
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/penny",
         "winRate": 63.9,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/penny",
@@ -16450,12 +16724,14 @@
           "pick": 1
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/darryl",
         "winRate": 66.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/darryl",
@@ -16642,12 +16918,14 @@
           "pick": 5
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/tara",
         "winRate": 66.5,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/tara",
@@ -16825,12 +17103,14 @@
           "pick": 4
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/pam",
         "winRate": 69.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/pam",
@@ -17013,12 +17293,14 @@
           "pick": 10
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/piper",
         "winRate": 60.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/piper",
@@ -17201,12 +17483,22 @@
           "pick": 2
         }
       ],
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:BO",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "name": "Hypercharge Buffie",
+          "description": "Bo's main attack shoots a 4th arrow, and each arrow has increased area damage radius."
+        }
+      ],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/bo",
         "winRate": 64.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bo",
@@ -17389,12 +17681,14 @@
           "pick": 2
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/poco",
         "winRate": 64.3,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/poco",
@@ -17589,12 +17883,22 @@
           "pick": 3
         }
       ],
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:CROW",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "name": "Hypercharge Buffie",
+          "description": "Main attacks also pierce and return after reaching max distance, dealing 20% less damage when returning."
+        }
+      ],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/crow",
         "winRate": 60.8,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/crow",
@@ -17777,12 +18081,22 @@
           "pick": 2
         }
       ],
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:MORTIS",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "name": "Hypercharge Buffie",
+          "description": "After Mortis uses a main attack, a phantom attack hits the same area, after a delay."
+        }
+      ],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/mortis",
         "winRate": 57.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/mortis",
@@ -17969,6 +18283,8 @@
           "pick": 0
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": null,
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/el-primo",
@@ -18151,12 +18467,14 @@
           "pick": 5
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/dynamike",
         "winRate": 60.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/dynamike",
@@ -18335,12 +18653,22 @@
           "pick": 1
         }
       ],
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:NITA",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "name": "Hypercharge Buffie",
+          "description": "Nita's attacks increase in speed, width, and range."
+        }
+      ],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/nita",
         "winRate": 68.8,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/nita",
@@ -18527,12 +18855,14 @@
           "pick": 2
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/jessie",
         "winRate": 66.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/jessie",
@@ -18715,12 +19045,14 @@
           "pick": 7
         }
       ],
+      "overdrives": [],
+      "buffies": [],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/barley",
         "winRate": 65.7,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/barley",
@@ -18903,12 +19235,22 @@
           "pick": 3
         }
       ],
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:SPIKE",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "name": "Hypercharge Buffie",
+          "description": "Main attack needle grenades detonate twice! Hypercharge duration: +2 sec."
+        }
+      ],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/spike",
         "winRate": 62.2,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/spike",
@@ -19095,12 +19437,22 @@
           "pick": 3
         }
       ],
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:RICO",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "name": "Hypercharge Buffie",
+          "description": "Rico's Main Attack has increased bullet speed and fires additional bullets."
+        }
+      ],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/rico",
         "winRate": 61.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/rico",
@@ -19283,12 +19635,22 @@
           "pick": 3
         }
       ],
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:BROCK",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "name": "Hypercharge Buffie",
+          "description": "Rockin' Rockets fires an additional two small rockets, each dealing 60% damage of the main rocket."
+        }
+      ],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/brock",
         "winRate": 62,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/brock",
@@ -19471,12 +19833,22 @@
           "pick": 1
         }
       ],
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:BULL",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "name": "Hypercharge Buffie",
+          "description": "Bull's main attack deals less damage at long range but pierces all enemies."
+        }
+      ],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/bull",
         "winRate": 64.8,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bull",
@@ -19659,12 +20031,22 @@
           "pick": 2
         }
       ],
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:COLT",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "name": "Hypercharge Buffie",
+          "description": "Fire bullets quicker during Hypercharge."
+        }
+      ],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/colt",
         "winRate": 60.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/colt",
@@ -19847,12 +20229,22 @@
           "pick": 4
         }
       ],
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:SHELLY",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "name": "Hypercharge Buffie",
+          "description": "Main attack projectile speed is greatly increased during Hypercharge."
+        }
+      ],
       "stats": {
         "sourceUrl": "https://brawltime.ninja/tier-list/brawler/shelly",
         "winRate": 64.4,
         "pickRate": null,
         "adjustedWinRate": null,
-        "updatedAt": "2026-09-27T10:06:27.470Z"
+        "updatedAt": "2026-09-27T10:20:10.354Z"
       },
       "noff": {
         "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/shelly",

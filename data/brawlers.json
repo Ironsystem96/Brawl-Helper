@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generatedFrom": "BrawlAPI catalog snapshot",
-  "generatedAt": "2026-09-27T10:06:27.470Z",
+  "generatedAt": "2026-09-27T10:20:10.354Z",
   "count": 109,
   "brawlers": [
     {
@@ -60,6 +60,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -118,6 +119,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -176,6 +178,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -234,6 +237,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -308,6 +312,16 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [
+        {
+          "id": "od:BOLT",
+          "name": "Bolt goes into overdrive, gaining",
+          "description": "",
+          "descriptionHtml": "",
+          "imageUrl": null,
+          "released": true
+        }
+      ],
       "buffies": []
     },
     {
@@ -366,6 +380,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -424,6 +439,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -482,6 +498,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -540,6 +557,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -598,6 +616,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -656,6 +675,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -714,6 +734,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -772,6 +793,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -830,6 +852,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -888,6 +911,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -946,6 +970,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -1004,6 +1029,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -1062,6 +1088,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -1120,6 +1147,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -1178,6 +1206,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -1236,6 +1265,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -1294,6 +1324,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -1352,6 +1383,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -1410,6 +1442,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -1468,6 +1501,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -1526,6 +1560,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -1584,6 +1619,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -1642,6 +1678,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -1700,6 +1737,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -1758,6 +1796,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -1816,6 +1855,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -1874,6 +1914,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -1932,6 +1973,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -1990,6 +2032,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -2048,6 +2091,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -2106,6 +2150,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -2164,6 +2209,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -2222,6 +2268,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -2280,6 +2327,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -2338,6 +2386,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -2396,6 +2445,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -2454,6 +2504,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -2512,6 +2563,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -2570,6 +2622,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -2628,6 +2681,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -2686,6 +2740,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -2744,6 +2799,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -2802,6 +2858,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -2860,6 +2917,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -2918,6 +2976,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -2976,6 +3035,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -3034,6 +3094,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -3092,6 +3153,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -3150,6 +3212,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -3208,6 +3271,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -3266,6 +3330,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -3324,6 +3389,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -3382,7 +3448,19 @@
       ],
       "gears": [],
       "hyperCharges": [],
-      "buffies": []
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:MEG",
+          "name": "Hypercharge Buffie",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "description": "The Mecha's Main Attack explodes, dealing 360 area damage.",
+          "descriptionHtml": "The Mecha's Main Attack explodes, dealing 360 area damage.",
+          "imageUrl": null,
+          "released": true
+        }
+      ]
     },
     {
       "id": 16000051,
@@ -3440,6 +3518,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -3498,7 +3577,19 @@
       ],
       "gears": [],
       "hyperCharges": [],
-      "buffies": []
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:GRIFF",
+          "name": "Hypercharge Buffie",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "description": "Griff's main attack also pierces enemies.",
+          "descriptionHtml": "Griff's main attack also pierces enemies.",
+          "imageUrl": null,
+          "released": true
+        }
+      ]
     },
     {
       "id": 16000049,
@@ -3556,6 +3647,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -3614,6 +3706,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -3672,6 +3765,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -3730,6 +3824,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -3788,6 +3883,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -3846,6 +3942,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -3904,7 +4001,19 @@
       ],
       "gears": [],
       "hyperCharges": [],
-      "buffies": []
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:EDGAR",
+          "name": "Hypercharge Buffie",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "description": "Edgar's main attack has two extra scarf punches with longer range, but -50% damage.",
+          "descriptionHtml": "Edgar's main attack has two extra scarf punches with longer range, but -50% damage.",
+          "imageUrl": null,
+          "released": true
+        }
+      ]
     },
     {
       "id": 16000042,
@@ -3962,6 +4071,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -4020,6 +4130,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -4078,6 +4189,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -4136,7 +4248,19 @@
       ],
       "gears": [],
       "hyperCharges": [],
-      "buffies": []
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:COLETTE",
+          "name": "Hypercharge Buffie",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "description": "Colette follows up each main attack with a smaller second attack that deals less damage.",
+          "descriptionHtml": "Colette follows up each main attack with a smaller second attack that deals less damage.",
+          "imageUrl": null,
+          "released": true
+        }
+      ]
     },
     {
       "id": 16000038,
@@ -4194,7 +4318,19 @@
       ],
       "gears": [],
       "hyperCharges": [],
-      "buffies": []
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:SURGE",
+          "name": "Hypercharge Buffie",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "description": "Surge shoots 'Double the Juice' for Double the Justice.",
+          "descriptionHtml": "Surge shoots 'Double the Juice' for Double the Justice.",
+          "imageUrl": null,
+          "released": true
+        }
+      ]
     },
     {
       "id": 16000037,
@@ -4252,6 +4388,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -4310,6 +4447,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -4368,6 +4506,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -4426,6 +4565,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -4484,7 +4624,19 @@
       ],
       "gears": [],
       "hyperCharges": [],
-      "buffies": []
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:MAX",
+          "name": "Hypercharge Buffie",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "description": "Max grants herself and nearby teammates 7% Super charge whenever she hits with her Main Attack.",
+          "descriptionHtml": "Max grants herself and nearby teammates 7% Super charge whenever she hits with her Main Attack.",
+          "imageUrl": null,
+          "released": true
+        }
+      ]
     },
     {
       "id": 16000031,
@@ -4542,6 +4694,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -4600,7 +4753,19 @@
       ],
       "gears": [],
       "hyperCharges": [],
-      "buffies": []
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:EMZ",
+          "name": "Hypercharge Buffie",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "description": "Sprays will poison enemies! Hypercharge duration: +2 sec.",
+          "descriptionHtml": "Sprays will poison enemies! Hypercharge duration: +2 sec.",
+          "imageUrl": null,
+          "released": true
+        }
+      ]
     },
     {
       "id": 16000029,
@@ -4658,6 +4823,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -4716,6 +4882,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -4774,7 +4941,19 @@
       ],
       "gears": [],
       "hyperCharges": [],
-      "buffies": []
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:8_BIT",
+          "name": "Hypercharge Buffie",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "description": "During Hypercharge 8-Bit gains infinite ammo and can interrupt his current Main Attack with another one.",
+          "descriptionHtml": "During Hypercharge 8-Bit gains infinite ammo and can interrupt his current Main Attack with another one.",
+          "imageUrl": null,
+          "released": true
+        }
+      ]
     },
     {
       "id": 16000026,
@@ -4832,7 +5011,19 @@
       ],
       "gears": [],
       "hyperCharges": [],
-      "buffies": []
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:BIBI",
+          "name": "Hypercharge Buffie",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "description": "Hypercharged main attack has a shorter wind-up time.",
+          "descriptionHtml": "Hypercharged main attack has a shorter wind-up time.",
+          "imageUrl": null,
+          "released": true
+        }
+      ]
     },
     {
       "id": 16000025,
@@ -4890,6 +5081,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -4948,6 +5140,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -5006,7 +5199,19 @@
       ],
       "gears": [],
       "hyperCharges": [],
-      "buffies": []
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:LEON",
+          "name": "Hypercharge Buffie",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "description": "Leon's main attacks do at least 75% damage regardless of distance.",
+          "descriptionHtml": "Leon's main attacks do at least 75% damage regardless of distance.",
+          "imageUrl": null,
+          "released": true
+        }
+      ]
     },
     {
       "id": 16000022,
@@ -5064,6 +5269,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -5122,6 +5328,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -5180,7 +5387,19 @@
       ],
       "gears": [],
       "hyperCharges": [],
-      "buffies": []
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:FRANK",
+          "name": "Hypercharge Buffie",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "description": "Main attack speed is increased to max while Frank is Hypercharged! Hypercharge duration: +2 sec.",
+          "descriptionHtml": "Main attack speed is increased to max while Frank is Hypercharged! Hypercharge duration: +2 sec.",
+          "imageUrl": null,
+          "released": true
+        }
+      ]
     },
     {
       "id": 16000019,
@@ -5238,6 +5457,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -5296,6 +5516,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -5354,6 +5575,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -5412,6 +5634,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -5470,6 +5693,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -5528,7 +5752,19 @@
       ],
       "gears": [],
       "hyperCharges": [],
-      "buffies": []
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:BO",
+          "name": "Hypercharge Buffie",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "description": "Bo's main attack shoots a 4th arrow, and each arrow has increased area damage radius.",
+          "descriptionHtml": "Bo's main attack shoots a 4th arrow, and each arrow has increased area damage radius.",
+          "imageUrl": null,
+          "released": true
+        }
+      ]
     },
     {
       "id": 16000013,
@@ -5586,6 +5822,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -5644,7 +5881,19 @@
       ],
       "gears": [],
       "hyperCharges": [],
-      "buffies": []
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:CROW",
+          "name": "Hypercharge Buffie",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "description": "Main attacks also pierce and return after reaching max distance, dealing 20% less damage when returning.",
+          "descriptionHtml": "Main attacks also pierce and return after reaching max distance, dealing 20% less damage when returning.",
+          "imageUrl": null,
+          "released": true
+        }
+      ]
     },
     {
       "id": 16000011,
@@ -5702,7 +5951,19 @@
       ],
       "gears": [],
       "hyperCharges": [],
-      "buffies": []
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:MORTIS",
+          "name": "Hypercharge Buffie",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "description": "After Mortis uses a main attack, a phantom attack hits the same area, after a delay.",
+          "descriptionHtml": "After Mortis uses a main attack, a phantom attack hits the same area, after a delay.",
+          "imageUrl": null,
+          "released": true
+        }
+      ]
     },
     {
       "id": 16000010,
@@ -5760,6 +6021,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -5818,6 +6080,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -5876,7 +6139,19 @@
       ],
       "gears": [],
       "hyperCharges": [],
-      "buffies": []
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:NITA",
+          "name": "Hypercharge Buffie",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "description": "Nita's attacks increase in speed, width, and range.",
+          "descriptionHtml": "Nita's attacks increase in speed, width, and range.",
+          "imageUrl": null,
+          "released": true
+        }
+      ]
     },
     {
       "id": 16000007,
@@ -5934,6 +6209,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -5992,6 +6268,7 @@
       ],
       "gears": [],
       "hyperCharges": [],
+      "overdrives": [],
       "buffies": []
     },
     {
@@ -6050,7 +6327,19 @@
       ],
       "gears": [],
       "hyperCharges": [],
-      "buffies": []
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:SPIKE",
+          "name": "Hypercharge Buffie",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "description": "Main attack needle grenades detonate twice! Hypercharge duration: +2 sec.",
+          "descriptionHtml": "Main attack needle grenades detonate twice! Hypercharge duration: +2 sec.",
+          "imageUrl": null,
+          "released": true
+        }
+      ]
     },
     {
       "id": 16000004,
@@ -6108,7 +6397,19 @@
       ],
       "gears": [],
       "hyperCharges": [],
-      "buffies": []
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:RICO",
+          "name": "Hypercharge Buffie",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "description": "Rico's Main Attack has increased bullet speed and fires additional bullets.",
+          "descriptionHtml": "Rico's Main Attack has increased bullet speed and fires additional bullets.",
+          "imageUrl": null,
+          "released": true
+        }
+      ]
     },
     {
       "id": 16000003,
@@ -6166,7 +6467,19 @@
       ],
       "gears": [],
       "hyperCharges": [],
-      "buffies": []
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:BROCK",
+          "name": "Hypercharge Buffie",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "description": "Rockin' Rockets fires an additional two small rockets, each dealing 60% damage of the main rocket.",
+          "descriptionHtml": "Rockin' Rockets fires an additional two small rockets, each dealing 60% damage of the main rocket.",
+          "imageUrl": null,
+          "released": true
+        }
+      ]
     },
     {
       "id": 16000002,
@@ -6224,7 +6537,19 @@
       ],
       "gears": [],
       "hyperCharges": [],
-      "buffies": []
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:BULL",
+          "name": "Hypercharge Buffie",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "description": "Bull's main attack deals less damage at long range but pierces all enemies.",
+          "descriptionHtml": "Bull's main attack deals less damage at long range but pierces all enemies.",
+          "imageUrl": null,
+          "released": true
+        }
+      ]
     },
     {
       "id": 16000001,
@@ -6282,7 +6607,19 @@
       ],
       "gears": [],
       "hyperCharges": [],
-      "buffies": []
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:COLT",
+          "name": "Hypercharge Buffie",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "description": "Fire bullets quicker during Hypercharge.",
+          "descriptionHtml": "Fire bullets quicker during Hypercharge.",
+          "imageUrl": null,
+          "released": true
+        }
+      ]
     },
     {
       "id": 16000000,
@@ -6340,7 +6677,19 @@
       ],
       "gears": [],
       "hyperCharges": [],
-      "buffies": []
+      "overdrives": [],
+      "buffies": [
+        {
+          "id": "buffie:hypercharge:SHELLY",
+          "name": "Hypercharge Buffie",
+          "slot": "hypercharge",
+          "source": "Hypercharge",
+          "description": "Main attack projectile speed is greatly increased during Hypercharge.",
+          "descriptionHtml": "Main attack projectile speed is greatly increased during Hypercharge.",
+          "imageUrl": null,
+          "released": true
+        }
+      ]
     }
   ]
 }
