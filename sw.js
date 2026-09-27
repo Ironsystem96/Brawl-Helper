@@ -1,4 +1,4 @@
-const C='bh-v15';
+const C='bh-v16';
 const ASSETS=['./','./index.html','./style.css','./manifest.webmanifest','./data/game-db.json','./data/changelog.json','./data/brawlers.json','./data/build-meta.json'];
 
 self.addEventListener('install',event=>{
