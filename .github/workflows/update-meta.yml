@@ -20,7 +20,7 @@ permissions:
   id-token: write
 concurrency:
   group: brawl-helper-meta-sync
-  cancel-in-progress: false
+  cancel-in-progress: true
 jobs:
   sync:
     runs-on: ubuntu-latest
