@@ -4,6 +4,7 @@ on:
     paths:
       - 'backend/sync-meta.js'
       - 'backend/sync-assets.js'
+      - 'backend/sync-components.js'
       - '.github/workflows/update-meta.yml'
   schedule:
     - cron: '17 2 * * *'
@@ -42,6 +43,9 @@ jobs:
       - name: Sync catalog, builds and meta
         working-directory: backend
         run: node sync-meta.js
+      - name: Sync component catalog
+        working-directory: backend
+        run: node sync-components.js
       - name: Sync local game assets
         working-directory: backend
         run: node sync-assets.js
@@ -52,13 +56,13 @@ jobs:
         working-directory: backend
         run: node meta-review.js
       - name: Validate JSON
-        run: node -e "for (const f of ['data/brawlers.json','data/build-meta.json','data/meta.json','data/meta-agent-report.json','data/meta-review.json','data/recommendation-rules.json','data/asset-manifest.json']) JSON.parse(require('fs').readFileSync(f,'utf8')); console.log('JSON OK')"
+        run: node -e "for (const f of ['data/brawlers.json','data/build-meta.json','data/meta.json','data/meta-agent-report.json','data/meta-review.json','data/recommendation-rules.json','data/asset-manifest.json','data/components.json']) JSON.parse(require('fs').readFileSync(f,'utf8')); console.log('JSON OK')"
       - name: Commit data changes
         id: commit
         run: |
           git config user.name "brawl-helper-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/brawlers.json data/build-meta.json data/meta.json data/meta-agent-report.json data/meta-review.json data/asset-manifest.json
+          git add data/brawlers.json data/build-meta.json data/meta.json data/meta-agent-report.json data/meta-review.json data/asset-manifest.json data/components.json
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
