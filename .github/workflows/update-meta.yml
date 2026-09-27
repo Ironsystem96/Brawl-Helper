@@ -50,12 +50,16 @@ jobs:
         run: |
           git config user.name "brawl-helper-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin main
+          git rebase origin/main
           git add data/brawlers.json data/build-meta.json data/meta.json data/meta-agent-report.json data/meta-review.json
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           git commit -m "chore(meta): automatic meta sync"
+          git fetch origin main
+          git rebase origin/main
           git push
           echo "changed=true" >> "$GITHUB_OUTPUT"
       - name: Publish updated site
