@@ -49,8 +49,15 @@ function parseNoff(html,brawler){
   gadgets.push(...parseNamed(brawler?.gadgets));
   starPowers.push(...parseNamed(brawler?.starPowers));
   const gearBlock=pickSection(text,'Gear Pick Rates','Hypercharge');
-  const parsedGears=parsePickList(gearBlock).map(x=>({name:x.name,pick:x.pick}));
-  gears.push(...parsedGears);
+  const gearOut=[];
+  const gearRe=/([A-Z][A-Za-z0-9&'’+:.- ]{2,60}?)\\s+([0-9]{1,3})%/g;
+  let gm;
+  while((gm=gearRe.exec(gearBlock))){
+    let name=gm[1].trim().replace(/^Image/i,'').replace(/^(?:Gear\\s*)/i,'').replace(/\\s+/g,' ');
+    if(!name||/^(?:Gear Pick Rates|Damage|Speed|Shield|Health|Vision|Gadget Cooldown|Reload Speed|Super Charge|Pet Power|Talk to the Hand|Thicc Head|Exhausting Storm|Quadruplets|Super Turret)$/i.test(name) && false) continue;
+    if(!gearOut.some(x=>norm(x.name)===norm(name)))gearOut.push({name,pick:Number(gm[2])});
+  }
+  gears.push(...gearOut.slice(0,6));
   // NOFF exposes the current Overdrive and the three Buffie effects in the brawler page.
   // Keep them as named guide data so the frontend does not have to infer them from slots.
   const odPatterns=[
