@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-27T18:47:41.925Z",
+  "generatedAt": "2026-09-27T18:55:46.506Z",
   "source": "BrawlAPI game CSV mirror",
   "sources": [
     {
@@ -1118,16 +1118,7 @@
           "imageUrl": "https://cdn.brawlify.com/gears/regular/62000017.png"
         }
       ],
-      "overdrives": [
-        {
-          "id": "overdrive:16000005",
-          "name": "DURATA OVERDRIVE: +2 secondi VELOCITÀ +20% DANNI +5% DIFESA +5%",
-          "description": "OVERDRIVE RISVEGLIO DELLA NATURA SUPER Le spine di Ago-nia coprono il 20% di terreno in più. Le granate vegetali lanciate con l'attacco base esplodono due volte. DURATA OVERDRIVE: +2 secondi VELOCITÀ +20% DANNI +5% DIFESA +5% GADGET PUNTASPILLI DEFLAGRANTE Spike prende la mira e spara una serie di spine, che causano 1000 punti danno. I bersagli colpiti da due spine rimarranno ancorati al suolo per 1 secondi. Periodo di attesa: 17 secondi CACTUS SALVAVITA Spike fa crescere un grosso cactus con 3500 punti salute che offre copertura agli alleati. Il cactus esplode se distrutto, facendo recuperare agli alleati vicini 1800 punti salute. Se distrutto, il cactus causa anche 1200 punti danno ai nemici colpiti nell'area dell'esplosione e li respinge. Periodo di attesa: 20 secondi ABILITÀ STELLARE FERTILIZZANTE La super converte in salute il 75% dei danni causati. La velocità di attivazione della super aumenta del 30% . SPINE FLESSIBILI Le spine che fuoriescono dalla bomba di Spike assumono una traiettoria curva, colpendo così più facilmente gli avversari. Oltre a curvare, le spine raggiungono distanze maggiori. EQUIPAGGIAMENTO VELOCITÀ Migliora del 15% la VELOCITÀ del brawler tra i cespugli. SALUTE La RIGENERAZIONE DELLA SALUTE è più efficace del 50% . DANNI Il brawler causa il 15% di DANNI IN PIÙ quando la salute è sotto il 50% . SUPERVISTA RENDE VISIBILI i nemici per 2 secondi dopo averli colpiti. DIFESA Dà al brawler uno SCUDO danneggiabile da 900 PUNTI SALUTE, che si rigenera in 10 secondi quando il brawler ha la salute piena. ACCELERAGADGET Riduce i tempi di ripristino dei gadget del 15% . Le migliori modalità 19 ORDINA PER Tasso di vittoria Tendenza di vittoria Tasso di scelta Tendenza di scelta Mode Tasso di vittoria: 58,13% (-2,58%) Tasso di scelta: 21,90% (-4,75%) FOOTBRAWL 5V5 Tasso di vittoria: 44,82% (-0,06%) Tasso di scelta: 5,58% (+0,41%) RAPINA Tasso di vittoria: 56,35% (-0,31%) Tasso di scelta: 23,05% (+0,62%) DUELLI Tasso di vittoria: 49,76% (+0,01%) Tasso di scelta: 8,10% (-0,26%) ARRAFFAGEMME Tasso di vittoria: 52,36% Tasso di scelta: 13,91% ARRAFFAGEMME 5V5 Tasso di vittoria: 54,82% (-0,71%) Tasso di scelta: 33,00% (+0,03%) SOPRAVVIVENZA (IN TRE) Tasso di vittoria: 53,08% (+0,83%) Tasso di scelta: 15,56% (+1,34%) ANNIENTAMENTO Tasso di vittoria: 47,68% (-2,16%) Tasso di scelta: 8,72% (-2,99%) K.O. Tasso di vittoria: 49,03% (+0,06%) Tasso di scelta: 7,10% (-1,28%) DOMINIO Tasso di vittoria: 49,30% (+0,47%) Tasso di scelta: 6,61% (-2,18%) FOOTBRAW",
-          "source": "BrawlFind",
-          "sourceUrl": "https://www.brawlfind.com/it/brawlers/spike",
-          "imageUrl": "https://cdn.brawlfind.com/logo.png"
-        }
-      ],
+      "overdrives": [],
       "buffies": {
         "gadget": [
           {
@@ -2516,7 +2507,16 @@
           "imageUrl": "https://cdn.brawlify.com/gears/regular/62000017.png"
         }
       ],
-      "overdrives": [],
+      "overdrives": [
+        {
+          "id": "overdrive:16000016",
+          "name": "GADGET GENERATORE DI IMPULSI Pam fa emettere alla torretta una scarica curativa che fa recuperare a se stessa e agli alleati 2000 punti salute, purché si trovino vicino al dispositivo. Periodo di attesa: 12 secondi RUBAFERRAGLIA Ogni volta che l'attacco di Pam successivo all'attivazione del gadget va a segno, rimuove il 25% dei colpi massimi dei brawler avversari colpiti. Pam si tiene il 50% dei colpi rubati. Periodo di attesa: 17 secondi",
+          "description": "OVERDRIVE AFFETTO MATERNO SUPER La torretta cura quando viene schierata e continua a curare i brawler oltre il valore massimo, dando loro uno scudo che perde efficacia nel tempo. VELOCITÀ +20% DANNI +5% DIFESA +5% GADGET GENERATORE DI IMPULSI Pam fa emettere alla torretta una scarica curativa che fa recuperare a se stessa e agli alleati 2000 punti salute, purché si trovino vicino al dispositivo. Periodo di attesa: 12 secondi RUBAFERRAGLIA Ogni volta che l'attacco di Pam successivo all'attivazione del gadget va a segno, rimuove il 25% dei colpi massimi dei brawler avversari colpiti. Pam si tiene il 50% dei colpi rubati. Periodo di attesa: 17 secondi ABILITÀ STELLARE ABBRACCIO MATERNO Quando Pam colpisce i brawler nemici con la Sparascarti, cura sia sé stessa sia gli alleati vicini con 100 punti salute. VENDETTA MATERNA La torretta guaritrice infligge anche 1000 punti danno al secondo ai nemici. EQUIPAGGIAMENTO VELOCITÀ Migliora del 15% la VELOCITÀ del brawler tra i cespugli. SALUTE La RIGENERAZIONE DELLA SALUTE è più efficace del 50% . DANNI Il brawler causa il 15% di DANNI IN PIÙ quando la salute è sotto il 50% . SUPERVISTA RENDE VISIBILI i nemici per 2 secondi dopo averli colpiti. DIFESA Dà al brawler uno SCUDO danneggiabile da 900 PUNTI SALUTE, che si rigenera in 10 secondi quando il brawler ha la salute piena. ACCELERAGADGET Riduce i tempi di ripristino dei gadget del 15% . SUPERTORRETTA Aumenta le capacità curative della torretta di Pam del 20% . Le migliori modalità 11 ORDINA PER Tasso di vittoria Tendenza di vittoria Tasso di scelta Tendenza di scelta Mode Tasso di vittoria: 71,78% Tasso di scelta: 6,46% K.O. 5V5 Tasso di vittoria: 56,45% (+1,61%) Tasso di scelta: 2,50% (+0,86%) DOMINIO Tasso di vittoria: 59,66% (-4,80%) Tasso di scelta: 3,06% (-0,74%) DUELLI Tasso di vittoria: 56,09% (+3,74%) Tasso di scelta: 2,17% (+0,74%) ARRAFFAGEMME Tasso di vittoria: 53,86% (-2,18%) Tasso di scelta: 1,09% (+0,14%) FOOTBRAWL Tasso di vittoria: 52,73% Tasso di scelta: 1,43% K.O. Tasso di vittoria: 38,29% (+5,83%) Tasso di scelta: 0,87% (-0,11%) BRAWL HOCKEY Tasso di vittoria: 46,26% (+0,15%) Tasso di scelta: 3,12% (-0,26%) SOPRAVVIVENZA (IN TRE) Tasso di vittoria: 51,78% (-0,07%) Tasso di scelta: 1,71% (-0,36%) ARENA DEI BRAWLER Tasso di vittoria: 43,40% (+0,54%) Tasso di scelta: 3,63% (+0,34%) SOPRAVVIVENZA (SOLO) Tasso di vittoria: 35,16% (-4,29%) Tasso di scelta: 4,04% (-0,46%) SOPRAVVIVENZA (IN DUE) Le migliori mappe 132 ORDINA PER Tasso di vittoria Tendenza ",
+          "source": "BrawlFind",
+          "sourceUrl": "https://www.brawlfind.com/it/brawlers/pam",
+          "imageUrl": "https://cdn.brawlfind.com/logo.png"
+        }
+      ],
       "buffies": {
         "gadget": [],
         "starPower": [],
@@ -2843,16 +2843,7 @@
           "imageUrl": "https://cdn.brawlify.com/gears/regular/62000017.png"
         }
       ],
-      "overdrives": [
-        {
-          "id": "overdrive:16000019",
-          "name": "GADGET BARILE DI SALE Penny lascia cadere un barile di sale che blocca i proiettili nemici. È anche utile per spararci contro e rompere i sacchetti d'oro. Periodo di attesa: 18 secondi BINOCOLO DEL CAPITANO Il mortaio di Penny spara a tutti i nemici visibili a portata di tiro. Periodo di attesa: 15 secondi",
-          "description": "OVERDRIVE CIELI DI PIOMBO SUPER Penny schiera un mortaio più grosso che spara contemporaneamente 2 palle di cannone invece di una. VELOCITÀ +20% DANNI +5% DIFESA +5% GADGET BARILE DI SALE Penny lascia cadere un barile di sale che blocca i proiettili nemici. È anche utile per spararci contro e rompere i sacchetti d'oro. Periodo di attesa: 18 secondi BINOCOLO DEL CAPITANO Il mortaio di Penny spara a tutti i nemici visibili a portata di tiro. Periodo di attesa: 15 secondi ABILITÀ STELLARE RICCO BOTTINO L'oro dei sacchetti che si rompono copre un'area più ampia del 100% . MORTAIO PESANTE Quando viene schierato, il mortaio di Penny causa 1372 punti danno ai nemici nelle vicinanze e li respinge. EQUIPAGGIAMENTO VELOCITÀ Migliora del 15% la VELOCITÀ del brawler tra i cespugli. SALUTE La RIGENERAZIONE DELLA SALUTE è più efficace del 50% . DANNI Il brawler causa il 15% di DANNI IN PIÙ quando la salute è sotto il 50% . SUPERVISTA RENDE VISIBILI i nemici per 2 secondi dopo averli colpiti. DIFESA Dà al brawler uno SCUDO danneggiabile da 900 PUNTI SALUTE, che si rigenera in 10 secondi quando il brawler ha la salute piena. ACCELERAGADGET Riduce i tempi di ripristino dei gadget del 15% . ALLEATO IN FORMISSIMA Aumenta del 25% la forza dell'alleato che si schiera con le abilità. Le migliori modalità 18 ORDINA PER Tasso di vittoria Tendenza di vittoria Tasso di scelta Tendenza di scelta Mode Tasso di vittoria: 52,64% (+0,58%) Tasso di scelta: 15,86% (-1,37%) ARENA DEI BRAWLER Tasso di vittoria: 54,25% (+0,18%) Tasso di scelta: 6,79% (+0,05%) ANNIENTAMENTO Tasso di vittoria: 53,72% (-10,16%) Tasso di scelta: 25,66% (-11,19%) ARRAFFAGEMME 5V5 Tasso di vittoria: 50,15% (+0,51%) Tasso di scelta: 11,78% (+0,52%) FOOTBRAWL 5V5 Tasso di vittoria: 51,11% (+1,80%) Tasso di scelta: 5,05% (+1,21%) ARRAFFAGEMME Tasso di vittoria: 52,21% (-0,39%) Tasso di scelta: 18,36% (+0,86%) ANNIENTAMENTO 5V5 Tasso di vittoria: 47,11% (-0,15%) Tasso di scelta: 9,49% (+0,03%) DOMINIO Tasso di vittoria: 50,11% (-0,02%) Tasso di scelta: 5,69% (+0,10%) RICERCATI Tasso di vittoria: 48,41% (-0,22%) Tasso di scelta: 9,73% (-0,43%) K.O. 5V5 Tasso di vittoria: 49,38% (-0,76%) Tasso di scelta: 2,22% (-0,14%) K.O. Tasso di vittoria: 49,40% (+0,08%) Tasso di scelta: 10,18% (-0,71%) SOPRAVVIVENZA (IN TRE) Tasso di vittoria: 45,92% (+0,10%) Tasso di scelta: 9,27% (-1,11%) RAPINA Tasso di vittoria: 45,58% (+0,62%) Tasso di scelta: 1,05% (-0,09%) FOOTBRAWL Tasso di vittoria: 49,86% (+4,72%) Tasso di scelta: 5,68% (",
-          "source": "BrawlFind",
-          "sourceUrl": "https://www.brawlfind.com/it/brawlers/penny",
-          "imageUrl": "https://cdn.brawlfind.com/logo.png"
-        }
-      ],
+      "overdrives": [],
       "buffies": {
         "gadget": [],
         "starPower": [],
@@ -4203,7 +4194,16 @@
           "imageUrl": "https://cdn.brawlify.com/gears/regular/62000017.png"
         }
       ],
-      "overdrives": [],
+      "overdrives": [
+        {
+          "id": "overdrive:16000030",
+          "name": "DURATA OVERDRIVE: +2 secondi VELOCITÀ +20% DANNI +5% DIFESA +5%",
+          "description": "OVERDRIVE ANNEBBIAMENTO TOTALE SUPER Emz sbalza i nemici ai margini dell'aura tossica creata con la super e poi li irrora con una generosa dose di lacca corrosiva. Avvelena i nemici con la lacca. DURATA OVERDRIVE: +2 secondi VELOCITÀ +20% DANNI +5% DIFESA +5% GADGET BRACCIALE DELLA FRIENDZONE Emz spruzza della lacca per capelli, che respinge indietro i nemici e causa 500 punti danno. Respinge ulteriormente i nemici e li lascia storditi per 1 secondi, se vengono sbattuti addosso a un ostacolo. Periodo di attesa: 19 secondi NUBE ACIDA Emz spruzza della lacca, che attraversa gli ostacoli e causa 1120 punti danno. Rallenta i nemici colpiti. Periodo di attesa: 16 secondi ABILITÀ STELLARE ARIA VIZIATA I nemici colpiti dai fumi tossici della lacca di Emz subiscono danni che aumentano del 25% per ogni colpo ricevuto. Gli avversari colpiti con l'attacco base causeranno il 15% dei danni in meno per 4 secondi. HYPE Emz recupera 624 punti salute al secondo per ogni brawler nemico all'interno dell'aura tossica della sua super. Attivando la super, Emz è immune a qualsiasi danno per 0,5 secondi. EQUIPAGGIAMENTO VELOCITÀ Migliora del 15% la VELOCITÀ del brawler tra i cespugli. SALUTE La RIGENERAZIONE DELLA SALUTE è più efficace del 50% . DANNI Il brawler causa il 15% di DANNI IN PIÙ quando la salute è sotto il 50% . SUPERVISTA RENDE VISIBILI i nemici per 2 secondi dopo averli colpiti. DIFESA Dà al brawler uno SCUDO danneggiabile da 900 PUNTI SALUTE, che si rigenera in 10 secondi quando il brawler ha la salute piena. ACCELERAGADGET Riduce i tempi di ripristino dei gadget del 15% . Le migliori modalità 19 ORDINA PER Tasso di vittoria Tendenza di vittoria Tasso di scelta Tendenza di scelta Mode Tasso di vittoria: 71,54% (+19,74%) Tasso di scelta: 11,15% (+5,13%) RAPINA Tasso di vittoria: 49,13% (+1,71%) Tasso di scelta: 5,31% (+1,47%) K.O. Tasso di vittoria: 53,58% (+2,25%) Tasso di scelta: 4,66% (+1,51%) RICERCATI Tasso di vittoria: 59,28% (-1,69%) Tasso di scelta: 26,53% (-2,60%) FOOTBRAWL 5V5 Tasso di vittoria: 64,99% (-0,05%) Tasso di scelta: 45,13% (+1,68%) ARENA DEI BRAWLER Tasso di vittoria: 55,07% (+0,99%) Tasso di scelta: 15,51% (-0,52%) BASKET BRAWL Tasso di vittoria: 54,82% (+0,96%) Tasso di scelta: 24,03% (+1,01%) DOMINIO Tasso di vittoria: 47,22% Tasso di scelta: 13,71% ARRAFFAGEMME 5V5 Tasso di vittoria: 52,25% (-0,91%) Tasso di scelta: 26,61% (-0,36%) SOPRAVVIVENZA (IN TRE) Tasso di vittoria: 51,55% (-0,75%) Tasso di scelta: 12,44% (-4,17%) FOOTBRAWL Tasso di ",
+          "source": "BrawlFind",
+          "sourceUrl": "https://www.brawlfind.com/it/brawlers/emz",
+          "imageUrl": "https://cdn.brawlfind.com/logo.png"
+        }
+      ],
       "buffies": {
         "gadget": [
           {
@@ -4933,16 +4933,7 @@
           "imageUrl": "https://cdn.brawlify.com/gears/regular/62000017.png"
         }
       ],
-      "overdrives": [
-        {
-          "id": "overdrive:16000037",
-          "name": "GADGET FALCIATRICE Semino divora un cespuglio per recuperare 1920 punti salute. Periodo di attesa: 9 secondi SRADICATORE Semino distrugge la sua Siepe improvvisa, ma ricarica istantaneamente la super. Periodo di attesa: 15 secondi",
-          "description": "OVERDRIVE SITUAZIONE SPINOSA SUPER Le siepi di Semino nfliggono 500 danni al secondo i nemici che ci passano vicino. VELOCITÀ +20% DANNI +5% DIFESA +5% GADGET FALCIATRICE Semino divora un cespuglio per recuperare 1920 punti salute. Periodo di attesa: 9 secondi SRADICATORE Semino distrugge la sua Siepe improvvisa, ma ricarica istantaneamente la super. Periodo di attesa: 15 secondi ABILITÀ STELLARE GERMOGLI POTENZIATI Ogni 5 secondi, il germoglio esplosivo avrà un raggio di esplosione maggiore. FOTOSINTESI Semino attiva uno scudo che lo protegge parzialmente da tutti i danni del 30% , a patto di rimanere nei cespugli. EQUIPAGGIAMENTO VELOCITÀ Migliora del 15% la VELOCITÀ del brawler tra i cespugli. SALUTE La RIGENERAZIONE DELLA SALUTE è più efficace del 50% . DANNI Il brawler causa il 15% di DANNI IN PIÙ quando la salute è sotto il 50% . SUPERVISTA RENDE VISIBILI i nemici per 2 secondi dopo averli colpiti. DIFESA Dà al brawler uno SCUDO danneggiabile da 900 PUNTI SALUTE, che si rigenera in 10 secondi quando il brawler ha la salute piena. ACCELERAGADGET Riduce i tempi di ripristino dei gadget del 15% . SUPERCARICA La super SI CARICA più in fretta del 10% . Le migliori modalità 13 ORDINA PER Tasso di vittoria Tendenza di vittoria Tasso di scelta Tendenza di scelta Mode Tasso di vittoria: 69,43% Tasso di scelta: 27,56% ANNIENTAMENTO 5V5 Tasso di vittoria: 67,86% Tasso di scelta: 8,27% K.O. 5V5 Tasso di vittoria: 52,44% (+34,61%) Tasso di scelta: 1,89% (+1,19%) BRAWL HOCKEY Tasso di vittoria: 53,87% (+0,74%) Tasso di scelta: 3,69% (-0,36%) K.O. Tasso di vittoria: 51,99% (-2,33%) Tasso di scelta: 3,29% (-1,35%) SOPRAVVIVENZA (IN TRE) Tasso di vittoria: 53,19% (+1,89%) Tasso di scelta: 5,42% (+1,13%) RICERCATI Tasso di vittoria: 40,44% (-6,33%) Tasso di scelta: 0,87% (-0,48%) FOOTBRAWL Tasso di vittoria: 43,70% (-2,40%) Tasso di scelta: 1,63% (-0,33%) ARRAFFAGEMME Tasso di vittoria: 32,88% Tasso di scelta: 1,84% SOPRAVVIVENZA (IN DUE) Tasso di vittoria: 39,47% (-3,09%) Tasso di scelta: 3,03% (-0,78%) RAPINA Tasso di vittoria: 38,24% (-2,08%) Tasso di scelta: 1,57% (+0,45%) DOMINIO Tasso di vittoria: 26,97% (-18,16%) Tasso di scelta: 0,86% (-1,32%) SOPRAVVIVENZA (SOLO) Tasso di vittoria: 22,68% (+1,53%) Tasso di scelta: 0,37% (+0,16%) ARENA DEI BRAWLER Le migliori mappe 109 ORDINA PER Tasso di vittoria Tendenza di vittoria Tasso di scelta Tendenza di scelta Mode Tasso di vittoria: 69,43% Tasso di scelta: 27,56% Arena di ghiaccio Tasso di vittoria: 67,86% Tasso di s",
-          "source": "BrawlFind",
-          "sourceUrl": "https://www.brawlfind.com/it/brawlers/sprout",
-          "imageUrl": "https://cdn.brawlfind.com/logo.png"
-        }
-      ],
+      "overdrives": [],
       "buffies": {
         "gadget": [],
         "starPower": [],
@@ -6030,7 +6021,16 @@
           "imageUrl": "https://cdn.brawlify.com/gears/regular/62000017.png"
         }
       ],
-      "overdrives": [],
+      "overdrives": [
+        {
+          "id": "overdrive:16000046",
+          "name": "GADGET MALLOPPO ESPLOSIVO Belle posiziona una trappola che esplode quando è innescata da un nemico, infliggendo 624 punti danno e rallentando per 3 secondi chiunque si trovi nel raggio dell'esplosione. Periodo di attesa: 20 secondi INVERTITORE DI POLARITÀ L'elettrocolpo che Belle lancia dopo l'attivazione del gadget rimbalza sulle pareti. Periodo di attesa: 14 secondi",
+          "description": "OVERDRIVE FORZA MAGNETICA SUPER Il colpo con cui Belle marca gli avversari segue automaticamente il bersaglio più vicino. VELOCITÀ +20% DANNI +5% DIFESA +5% GADGET MALLOPPO ESPLOSIVO Belle posiziona una trappola che esplode quando è innescata da un nemico, infliggendo 624 punti danno e rallentando per 3 secondi chiunque si trovi nel raggio dell'esplosione. Periodo di attesa: 20 secondi INVERTITORE DI POLARITÀ L'elettrocolpo che Belle lancia dopo l'attivazione del gadget rimbalza sulle pareti. Periodo di attesa: 14 secondi ABILITÀ STELLARE CARICA POSITIVA Belle riduce i danni ricevuti del 20% ogni volta che l'elettrocolpo va a segno. STATO DI SHOCK Gli avversari marcati dalla super di Belle non possono ricaricare il proprio attacco per 5 secondi. EQUIPAGGIAMENTO VELOCITÀ Migliora del 15% la VELOCITÀ del brawler tra i cespugli. SALUTE La RIGENERAZIONE DELLA SALUTE è più efficace del 50% . DANNI Il brawler causa il 15% di DANNI IN PIÙ quando la salute è sotto il 50% . SUPERVISTA RENDE VISIBILI i nemici per 2 secondi dopo averli colpiti. DIFESA Dà al brawler uno SCUDO danneggiabile da 900 PUNTI SALUTE, che si rigenera in 10 secondi quando il brawler ha la salute piena. ACCELERAGADGET Riduce i tempi di ripristino dei gadget del 15% . VELOCITÀ DI RICARICA RICARICA i colpi più in fretta del 15% . Le migliori modalità 17 ORDINA PER Tasso di vittoria Tendenza di vittoria Tasso di scelta Tendenza di scelta Mode Tasso di vittoria: 67,58% (+1,83%) Tasso di scelta: 11,27% (+0,58%) K.O. 5V5 Tasso di vittoria: 65,79% (-1,61%) Tasso di scelta: 9,10% (-0,41%) FOOTBRAWL 5V5 Tasso di vittoria: 67,06% (+3,86%) Tasso di scelta: 6,71% (+2,26%) BRAWL HOCKEY 5V5 Tasso di vittoria: 55,37% (-5,93%) Tasso di scelta: 9,04% (-0,52%) ANNIENTAMENTO 5V5 Tasso di vittoria: 58,85% (+3,00%) Tasso di scelta: 8,70% (+1,29%) ANNIENTAMENTO Tasso di vittoria: 50,97% (+0,59%) Tasso di scelta: 2,90% (-4,49%) DUELLI Tasso di vittoria: 47,64% (-4,01%) Tasso di scelta: 1,03% (-0,46%) FOOTBRAWL Tasso di vittoria: 51,08% (+1,74%) Tasso di scelta: 7,55% (-1,43%) K.O. Tasso di vittoria: 46,30% (+1,11%) Tasso di scelta: 1,31% (-1,82%) BRAWL HOCKEY Tasso di vittoria: 51,88% (+0,73%) Tasso di scelta: 11,85% (+1,55%) RICERCATI Tasso di vittoria: 47,88% (+1,98%) Tasso di scelta: 2,16% (+0,12%) ARRAFFAGEMME Tasso di vittoria: 47,54% (-2,47%) Tasso di scelta: 5,69% (-0,10%) SOPRAVVIVENZA (IN TRE) Tasso di vittoria: 48,35% (+0,22%) Tasso di scelta: 1,70% (-0,03%) ARENA DEI BRAWLER Tasso di vittoria: 44,16% (+0,9",
+          "source": "BrawlFind",
+          "sourceUrl": "https://www.brawlfind.com/it/brawlers/belle",
+          "imageUrl": "https://cdn.brawlfind.com/logo.png"
+        }
+      ],
       "buffies": {
         "gadget": [],
         "starPower": [],
@@ -6466,16 +6466,7 @@
           "imageUrl": "https://cdn.brawlify.com/gears/regular/62000017.png"
         }
       ],
-      "overdrives": [
-        {
-          "id": "overdrive:16000050",
-          "name": "DURATA OVERDRIVE: +2 secondi VELOCITÀ +20% DANNI +5% DIFESA +5%",
-          "description": "OVERDRIVE RIMBORSO FISCALE SUPER Griff moltiplica le banconote nel punto più lontano dell'attacco della super e fa tornare indietro quelle aggiuntive poco dopo. Le banconote possono attraversare gli ostacoli. L'attacco base di Griff trafigge i nemici. DURATA OVERDRIVE: +2 secondi VELOCITÀ +20% DANNI +5% DIFESA +5% GADGET SALVADANAIO Griff lancia un salvadanaio pieno di petardi che esplode dopo qualche istante, distruggendo ostacoli e infliggendo 1600 punti danno ai nemici a portata. Griff può lanciare il salvadanaio per caricarlo e aumentare il raggio dell'esplosione ei danni che causa. Quando il salvadanaio è completamente carico, esplode all'istante. Periodo di attesa: 20 secondi EROGATORE DI MONETE Griff lancia una pioggia di monete verso un'area, causando 600 punti danno al secondo ai nemici al suo interno. La pioggia di monete diventa sempre più grande col passare del tempo. Periodo di attesa: 15 secondi ABILITÀ STELLARE TIENI IL RESTO Con l'attacco base, Griff lancia una fila di monete in più e copre un'area leggermente maggiore. Quando attacca con tutte le munizioni, spara anche una moneta gigante che causa danni aggiuntivi. TENACIA NEGLI AFFARI Ogni 2 secondi, Griff recupera fino al 15% della salute persa. Quando le banconote della super di Griff ritornano nelle sue mani, il brawler ripristina il 5% della salute persa. EQUIPAGGIAMENTO VELOCITÀ Migliora del 15% la VELOCITÀ del brawler tra i cespugli. SALUTE La RIGENERAZIONE DELLA SALUTE è più efficace del 50% . DANNI Il brawler causa il 15% di DANNI IN PIÙ quando la salute è sotto il 50% . SUPERVISTA RENDE VISIBILI i nemici per 2 secondi dopo averli colpiti. DIFESA Dà al brawler uno SCUDO danneggiabile da 900 PUNTI SALUTE, che si rigenera in 10 secondi quando il brawler ha la salute piena. ACCELERAGADGET Riduce i tempi di ripristino dei gadget del 15% . Le migliori modalità 19 ORDINA PER Tasso di vittoria Tendenza di vittoria Tasso di scelta Tendenza di scelta Mode Tasso di vittoria: 65,00% (+1,37%) Tasso di scelta: 21,47% (+3,65%) BRAWL HOCKEY 5V5 Tasso di vittoria: 57,41% (+3,95%) Tasso di scelta: 13,97% (-0,11%) FOOTBRAWL 5V5 Tasso di vittoria: 56,99% (-2,93%) Tasso di scelta: 16,84% (-3,22%) BASKET BRAWL Tasso di vittoria: 60,87% (-2,46%) Tasso di scelta: 14,18% (-1,30%) ANNIENTAMENTO Tasso di vittoria: 46,73% (-0,28%) Tasso di scelta: 3,30% (-4,06%) K.O. Tasso di vittoria: 50,35% (-0,34%) Tasso di scelta: 23,52% (-8,89%) FOOTBRAWL Tasso di vittoria: 54,75% Tasso di scelta: 13,29% ARRAFFAGEMME 5",
-          "source": "BrawlFind",
-          "sourceUrl": "https://www.brawlfind.com/it/brawlers/griff",
-          "imageUrl": "https://cdn.brawlfind.com/logo.png"
-        }
-      ],
+      "overdrives": [],
       "buffies": {
         "gadget": [
           {
@@ -7525,7 +7516,16 @@
           "imageUrl": "https://cdn.brawlify.com/gears/regular/62000017.png"
         }
       ],
-      "overdrives": [],
+      "overdrives": [
+        {
+          "id": "overdrive:16000060",
+          "name": "GADGET CAMPO MAGNETICO Quando le Zanne metalliche rimangono al suolo, Sam può attivarle per attirare i nemici vicini a loro. Periodo di attesa: 17 secondi REPULSORI Le Zanne metalliche lanciate dopo l'attivazione del gadget rilasciano un impulso elettrico quando toccano il suolo, facendo sbalzare all'indietro i nemici a portata. Periodo di attesa: 11 secondi",
+          "description": "OVERDRIVE ZANNE FAMELICHE SUPER Gli attacchi con le Zanne metalliche sono più veloci e permettono a Sam di ricaricare completamente la super, se colpiscono un brawler nemico mentre l'overdrive è attivo. VELOCITÀ +20% DANNI +5% DIFESA +5% GADGET CAMPO MAGNETICO Quando le Zanne metalliche rimangono al suolo, Sam può attivarle per attirare i nemici vicini a loro. Periodo di attesa: 17 secondi REPULSORI Le Zanne metalliche lanciate dopo l'attivazione del gadget rilasciano un impulso elettrico quando toccano il suolo, facendo sbalzare all'indietro i nemici a portata. Periodo di attesa: 11 secondi ABILITÀ STELLARE RECUPERO ISTANTANEO Quando riprende le Zanne metalliche, Sam recupera istantaneamente il 20% della salute mancante. RICARICA REMOTA Quando le Zanne metalliche rimangono al suolo e i nemici sono accanto a loro, Sam ricarica la super. EQUIPAGGIAMENTO VELOCITÀ Migliora del 15% la VELOCITÀ del brawler tra i cespugli. SALUTE La RIGENERAZIONE DELLA SALUTE è più efficace del 50% . DANNI Il brawler causa il 15% di DANNI IN PIÙ quando la salute è sotto il 50% . SUPERVISTA RENDE VISIBILI i nemici per 2 secondi dopo averli colpiti. DIFESA Dà al brawler uno SCUDO danneggiabile da 900 PUNTI SALUTE, che si rigenera in 10 secondi quando il brawler ha la salute piena. ACCELERAGADGET Riduce i tempi di ripristino dei gadget del 15% . Le migliori modalità 14 ORDINA PER Tasso di vittoria Tendenza di vittoria Tasso di scelta Tendenza di scelta Mode Tasso di vittoria: 61,14% (+1,96%) Tasso di scelta: 2,83% (+1,21%) RAPINA Tasso di vittoria: 57,33% (+17,02%) Tasso di scelta: 1,29% (+0,58%) ARENA DEI BRAWLER Tasso di vittoria: 56,64% (+7,24%) Tasso di scelta: 2,30% (+1,33%) K.O. Tasso di vittoria: 51,01% Tasso di scelta: 3,18% DUELLI Tasso di vittoria: 54,17% (+1,71%) Tasso di scelta: 1,26% (+0,08%) BRAWL HOCKEY Tasso di vittoria: 53,97% (+0,35%) Tasso di scelta: 1,21% (-0,42%) FOOTBRAWL Tasso di vittoria: 56,74% (+3,01%) Tasso di scelta: 3,70% (-0,07%) BASKET BRAWL Tasso di vittoria: 53,57% (-2,51%) Tasso di scelta: 1,02% (+0,02%) DOMINIO Tasso di vittoria: 54,64% Tasso di scelta: 2,98% BRAWL HOCKEY 5V5 Tasso di vittoria: 46,25% (-2,39%) Tasso di scelta: 2,30% (-0,95%) SOPRAVVIVENZA (IN TRE) Tasso di vittoria: 50,54% (+2,27%) Tasso di scelta: 1,07% (+0,24%) ARRAFFAGEMME Tasso di vittoria: 45,54% (+0,54%) Tasso di scelta: 1,99% (-0,72%) SOPRAVVIVENZA (SOLO) Tasso di vittoria: 45,64% (-8,42%) Tasso di scelta: 0,99% (-0,81%) RICERCATI Tasso di vittoria: 34,99% Tasso di scelta: ",
+          "source": "BrawlFind",
+          "sourceUrl": "https://www.brawlfind.com/it/brawlers/sam",
+          "imageUrl": "https://cdn.brawlfind.com/logo.png"
+        }
+      ],
       "buffies": {
         "gadget": [],
         "starPower": [],
@@ -8524,16 +8524,7 @@
           "imageUrl": "https://cdn.brawlify.com/gears/regular/62000017.png"
         }
       ],
-      "overdrives": [
-        {
-          "id": "overdrive:16000069",
-          "name": "GADGET DEFLAGRAZIONE RITARDANTE Il colpo della Bomba d'acqua successivo all'attivazione del gadget rallenta anche i nemici per 3 secondi. Periodo di attesa: 11 secondi BARRICATA Hank subisce il 40% di danni in meno per 3 secondi. Periodo di attesa: 18 secondi",
-          "description": "OVERDRIVE SILURI A RICERCA SUPER I Pesci siluro sparati da Hank con la super inseguono i bersagli. VELOCITÀ +20% DANNI +5% DIFESA +5% GADGET DEFLAGRAZIONE RITARDANTE Il colpo della Bomba d'acqua successivo all'attivazione del gadget rallenta anche i nemici per 3 secondi. Periodo di attesa: 11 secondi BARRICATA Hank subisce il 40% di danni in meno per 3 secondi. Periodo di attesa: 18 secondi ABILITÀ STELLARE VELOCITÀ ESPLOSIVA Se carichi la Bomba d'acqua oltre il 80% , Hank si muove più velocemente del 10% . SCAFO RINFORZATO Quando è al riparo vicino a un muro, Hank subisce il 20% in meno di danni. EQUIPAGGIAMENTO VELOCITÀ Migliora del 15% la VELOCITÀ del brawler tra i cespugli. SALUTE La RIGENERAZIONE DELLA SALUTE è più efficace del 50% . DANNI Il brawler causa il 15% di DANNI IN PIÙ quando la salute è sotto il 50% . SUPERVISTA RENDE VISIBILI i nemici per 2 secondi dopo averli colpiti. DIFESA Dà al brawler uno SCUDO danneggiabile da 900 PUNTI SALUTE, che si rigenera in 10 secondi quando il brawler ha la salute piena. ACCELERAGADGET Riduce i tempi di ripristino dei gadget del 15% . Le migliori modalità 17 ORDINA PER Tasso di vittoria Tendenza di vittoria Tasso di scelta Tendenza di scelta Mode Tasso di vittoria: 78,28% (+9,42%) Tasso di scelta: 11,07% (-1,88%) FOOTBRAWL 5V5 Tasso di vittoria: 63,72% (-6,19%) Tasso di scelta: 2,49% (-3,21%) K.O. Tasso di vittoria: 63,83% (-4,97%) Tasso di scelta: 3,20% (+0,39%) RAPINA Tasso di vittoria: 65,87% (+7,11%) Tasso di scelta: 17,13% (+4,14%) DUELLI Tasso di vittoria: 66,10% (+11,59%) Tasso di scelta: 4,46% (+2,55%) ARENA DEI BRAWLER Tasso di vittoria: 58,19% (-0,35%) Tasso di scelta: 3,06% (-1,22%) ARRAFFAGEMME Tasso di vittoria: 60,14% (+3,49%) Tasso di scelta: 2,46% (-0,43%) RICERCATI Tasso di vittoria: 57,05% (+5,67%) Tasso di scelta: 1,68% (+0,09%) FOOTBRAWL Tasso di vittoria: 71,91% Tasso di scelta: 13,80% ANNIENTAMENTO 5V5 Tasso di vittoria: 57,98% (-12,95%) Tasso di scelta: 3,27% (-2,91%) DOMINIO Tasso di vittoria: 54,26% (-8,57%) Tasso di scelta: 3,26% (-11,45%) SOPRAVVIVENZA (IN TRE) Tasso di vittoria: 64,82% (-3,56%) Tasso di scelta: 15,94% (-9,02%) K.O. 5V5 Tasso di vittoria: 55,10% (+3,71%) Tasso di scelta: 1,62% (+0,23%) BRAWL HOCKEY Tasso di vittoria: 42,21% (-10,41%) Tasso di scelta: 2,85% (-13,11%) SOPRAVVIVENZA (IN DUE) Tasso di vittoria: 51,07% Tasso di scelta: 3,53% BRAWL HOCKEY 5V5 Tasso di vittoria: 48,85% Tasso di scelta: 3,99% BASKET BRAWL Tasso di vittoria: 41,67% (-3,70%) Tasso di scelta: 1",
-          "source": "BrawlFind",
-          "sourceUrl": "https://www.brawlfind.com/it/brawlers/hank",
-          "imageUrl": "https://cdn.brawlfind.com/logo.png"
-        }
-      ],
+      "overdrives": [],
       "buffies": {
         "gadget": [],
         "starPower": [],
@@ -9514,7 +9505,16 @@
           "imageUrl": "https://cdn.brawlify.com/gears/regular/62000017.png"
         }
       ],
-      "overdrives": [],
+      "overdrives": [
+        {
+          "id": "overdrive:16000078",
+          "name": "GADGET INTONATORE Per 5 secondi, la velocità delle note di Melodie aumenta del 25% e la loro orbita copre il 60% di spazio in più. Periodo di attesa: 14 secondi BARRIERA DEL SUONO Ogni nota che orbita attorno a Melodie crea un scudo pari al 10% della sua salute massima. Periodo di attesa: 19 secondi",
+          "description": "OVERDRIVE HIT INSTANTANEA SUPER Attivando l'overdrive, Melodie aggiunge fino a 3 note dell'overdrive quando usa Tormentone, le quali causano 600 punti danno. VELOCITÀ +20% DANNI +5% DIFESA +5% GADGET INTONATORE Per 5 secondi, la velocità delle note di Melodie aumenta del 25% e la loro orbita copre il 60% di spazio in più. Periodo di attesa: 14 secondi BARRIERA DEL SUONO Ogni nota che orbita attorno a Melodie crea un scudo pari al 10% della sua salute massima. Periodo di attesa: 19 secondi ABILITÀ STELLARE RITMO SERRATO La velocità di movimento di Melodie aumenta del 6% per ogni nota che le orbita attorno. VERSIONE ESTESA Le note emesse da Melodie durano il 25% in più, prima di svanire. EQUIPAGGIAMENTO VELOCITÀ Migliora del 15% la VELOCITÀ del brawler tra i cespugli. SALUTE La RIGENERAZIONE DELLA SALUTE è più efficace del 50% . DANNI Il brawler causa il 15% di DANNI IN PIÙ quando la salute è sotto il 50% . SUPERVISTA RENDE VISIBILI i nemici per 2 secondi dopo averli colpiti. DIFESA Dà al brawler uno SCUDO danneggiabile da 900 PUNTI SALUTE, che si rigenera in 10 secondi quando il brawler ha la salute piena. ACCELERAGADGET Riduce i tempi di ripristino dei gadget del 15% . Le migliori modalità 16 ORDINA PER Tasso di vittoria Tendenza di vittoria Tasso di scelta Tendenza di scelta Mode Tasso di vittoria: 58,43% (+2,43%) Tasso di scelta: 18,89% (+3,78%) RAPINA Tasso di vittoria: 63,14% (+0,99%) Tasso di scelta: 13,24% (+0,44%) FOOTBRAWL 5V5 Tasso di vittoria: 68,05% (-1,83%) Tasso di scelta: 19,41% (-1,33%) BRAWL HOCKEY 5V5 Tasso di vittoria: 60,58% Tasso di scelta: 12,78% ANNIENTAMENTO Tasso di vittoria: 51,31% (+4,17%) Tasso di scelta: 1,97% (+0,66%) ARRAFFAGEMME Tasso di vittoria: 53,75% (+0,16%) Tasso di scelta: 8,25% (+0,43%) BRAWL HOCKEY Tasso di vittoria: 54,99% (+3,97%) Tasso di scelta: 4,65% (+1,75%) FOOTBRAWL Tasso di vittoria: 53,20% (+5,98%) Tasso di scelta: 3,77% (-0,53%) BASKET BRAWL Tasso di vittoria: 44,51% (-4,40%) Tasso di scelta: 1,16% (-0,24%) K.O. Tasso di vittoria: 50,24% (+3,12%) Tasso di scelta: 2,79% (+1,13%) ARENA DEI BRAWLER Tasso di vittoria: 49,08% (-2,16%) Tasso di scelta: 1,58% (+0,16%) DOMINIO Tasso di vittoria: 46,09% Tasso di scelta: 2,18% DUELLI Tasso di vittoria: 45,55% (-5,31%) Tasso di scelta: 4,42% (-0,32%) SOPRAVVIVENZA (IN TRE) Tasso di vittoria: 47,38% (+1,62%) Tasso di scelta: 1,05% (-0,06%) RICERCATI Tasso di vittoria: 42,06% (-2,13%) Tasso di scelta: 4,91% (-0,65%) SOPRAVVIVENZA (SOLO) Tasso di vittoria: 35,80% (-3,52",
+          "source": "BrawlFind",
+          "sourceUrl": "https://www.brawlfind.com/it/brawlers/melodie",
+          "imageUrl": "https://cdn.brawlfind.com/logo.png"
+        }
+      ],
       "buffies": {
         "gadget": [],
         "starPower": [],
@@ -10386,16 +10386,7 @@
           "imageUrl": "https://cdn.brawlify.com/gears/regular/62000017.png"
         }
       ],
-      "overdrives": [
-        {
-          "id": "overdrive:16000086",
-          "name": "DURATA OVERDRIVE: +2 secondi VELOCITÀ +20% DANNI +5% DIFESA +5%",
-          "description": "OVERDRIVE MORSA DELLA PAURA SUPER Shade recupera 1000 punti salute per ogni secondo che rimane in un muro. Il centro degli abbracci di Shade è più ampio e provoca più danni. DURATA OVERDRIVE: +2 secondi VELOCITÀ +20% DANNI +5% DIFESA +5% GADGET BRACCIA LUNGHE L'attacco base successivo all'attivazione del gadget ha una portata più lunga del 50% . I nemici colpiti sono trascinati al centro dell'abbraccio. Periodo di attesa: 18 secondi TERRORIZZATORE Shade compie un piccolo balzo, spaventando i nemici per 1 secondo quando atterra. Shade compie un balzo, ottenendo uno scudo del 2000 quando salta. Periodo di attesa: 18 secondi ABILITÀ STELLARE SPETTROSPRINT Colpire i nemici al centro dell'attacco base fa muovere Shade più velocemente per un breve periodo. Colpire i nemici riduce la velocità di ricarica del gadget del 15% . SPIRITO SALDO Shade riduce i danni ricevuti del 30% mentre è incorporeo. La forma incorporea di Shade dura 1 secondo in più. EQUIPAGGIAMENTO VELOCITÀ Migliora del 15% la VELOCITÀ del brawler tra i cespugli. SALUTE La RIGENERAZIONE DELLA SALUTE è più efficace del 50% . DANNI Il brawler causa il 15% di DANNI IN PIÙ quando la salute è sotto il 50% . SUPERVISTA RENDE VISIBILI i nemici per 2 secondi dopo averli colpiti. DIFESA Dà al brawler uno SCUDO danneggiabile da 900 PUNTI SALUTE, che si rigenera in 10 secondi quando il brawler ha la salute piena. ACCELERAGADGET Riduce i tempi di ripristino dei gadget del 15% . Le migliori modalità 13 ORDINA PER Tasso di vittoria Tendenza di vittoria Tasso di scelta Tendenza di scelta Mode Tasso di vittoria: 54,03% (-1,76%) Tasso di scelta: 16,25% (+1,13%) DOMINIO Tasso di vittoria: 65,64% (+3,81%) Tasso di scelta: 11,37% (+2,93%) FOOTBRAWL Tasso di vittoria: 53,92% (-1,06%) Tasso di scelta: 9,59% (+1,50%) ARRAFFAGEMME Tasso di vittoria: 59,77% (-0,38%) Tasso di scelta: 18,32% (+0,64%) RAPINA Tasso di vittoria: 60,02% (+2,56%) Tasso di scelta: 16,25% (+4,14%) SOPRAVVIVENZA (SOLO) Tasso di vittoria: 47,21% (+1,85%) Tasso di scelta: 3,94% (-1,29%) SOPRAVVIVENZA (IN DUE) Tasso di vittoria: 52,48% (-0,99%) Tasso di scelta: 8,48% (+0,44%) K.O. Tasso di vittoria: 58,46% (+0,69%) Tasso di scelta: 2,64% (+0,54%) ARENA DEI BRAWLER Tasso di vittoria: 52,62% (-3,79%) Tasso di scelta: 11,72% (-2,06%) RICERCATI Tasso di vittoria: 54,05% (+0,31%) Tasso di scelta: 3,59% (-1,18%) SOPRAVVIVENZA (IN TRE) Tasso di vittoria: 46,54% Tasso di scelta: 0,78% (+0,10%) BRAWL HOCKEY Tasso di vittoria: 53,02% Tasso di scelta: 3,99% BASKE",
-          "source": "BrawlFind",
-          "sourceUrl": "https://www.brawlfind.com/it/brawlers/shade",
-          "imageUrl": "https://cdn.brawlfind.com/logo.png"
-        }
-      ],
+      "overdrives": [],
       "buffies": {
         "gadget": [],
         "starPower": [],
@@ -11721,7 +11712,16 @@
           "imageUrl": "https://cdn.brawlify.com/gears/regular/62000017.png"
         }
       ],
-      "overdrives": [],
+      "overdrives": [
+        {
+          "id": "overdrive:16000098",
+          "name": "GADGET ACCHIAPPAFULMINI Ziggy colpisce il nemico più vicino con dei fulmini ogni secondo per 5 secondi, senza consumare colpi. Periodo di attesa: 17 secondi TRASLATORE FULMINEO Il fulmine successivo all'attivazione del gadget teletrasporta Ziggy all'area colpita. Periodo di attesa: 13 secondi",
+          "description": "OVERDRIVE TEMPESTA PERFETTA SUPER L'Elettrotempesta lanciata durante l'overdrive torna da Ziggy quando raggiunge la distanza o la durata massima. VELOCITÀ +20% DANNI +5% DIFESA +5% GADGET ACCHIAPPAFULMINI Ziggy colpisce il nemico più vicino con dei fulmini ogni secondo per 5 secondi, senza consumare colpi. Periodo di attesa: 17 secondi TRASLATORE FULMINEO Il fulmine successivo all'attivazione del gadget teletrasporta Ziggy all'area colpita. Periodo di attesa: 13 secondi ABILITÀ STELLARE COLPO DI FULMINE La super di Ziggy riduce del 20% la velocità dei brawler colpiti per 1 secondi. ZIGGY IL MAGNIFICO Quando colpisce con un fulmine, Ziggy aumenta i danni dell'attacco base successivo del 18% . EQUIPAGGIAMENTO VELOCITÀ Migliora del 15% la VELOCITÀ del brawler tra i cespugli. SALUTE La RIGENERAZIONE DELLA SALUTE è più efficace del 50% . DANNI Il brawler causa il 15% di DANNI IN PIÙ quando la salute è sotto il 50% . SUPERVISTA RENDE VISIBILI i nemici per 2 secondi dopo averli colpiti. DIFESA Dà al brawler uno SCUDO danneggiabile da 900 PUNTI SALUTE, che si rigenera in 10 secondi quando il brawler ha la salute piena. ACCELERAGADGET Riduce i tempi di ripristino dei gadget del 15% . Le migliori modalità 12 ORDINA PER Tasso di vittoria Tendenza di vittoria Tasso di scelta Tendenza di scelta Mode Tasso di vittoria: 79,71% Tasso di scelta: 27,12% ANNIENTAMENTO 5V5 Tasso di vittoria: 56,27% (+0,49%) Tasso di scelta: 3,63% (-3,66%) SOPRAVVIVENZA (IN TRE) Tasso di vittoria: 59,58% Tasso di scelta: 1,48% BRAWL HOCKEY Tasso di vittoria: 51,97% (+4,97%) Tasso di scelta: 1,44% (-0,05%) K.O. Tasso di vittoria: 53,97% (+1,68%) Tasso di scelta: 1,89% (-1,17%) FOOTBRAWL Tasso di vittoria: 48,96% (-2,46%) Tasso di scelta: 1,46% (+0,30%) RAPINA Tasso di vittoria: 52,83% Tasso di scelta: 1,36% ARENA DEI BRAWLER Tasso di vittoria: 47,97% (+1,60%) Tasso di scelta: 1,98% (+0,33%) ARRAFFAGEMME Tasso di vittoria: 39,44% (-18,61%) Tasso di scelta: 0,92% (-9,33%) SOPRAVVIVENZA (SOLO) Tasso di vittoria: 47,77% Tasso di scelta: 1,91% SOPRAVVIVENZA (IN DUE) Tasso di vittoria: 46,52% (+1,32%) Tasso di scelta: 0,93% (-0,04%) RICERCATI Tasso di vittoria: 42,36% (-0,17%) Tasso di scelta: 1,80% (+0,06%) DOMINIO Le migliori mappe 78 ORDINA PER Tasso di vittoria Tendenza di vittoria Tasso di scelta Tendenza di scelta Mode Tasso di vittoria: 79,71% Tasso di scelta: 27,12% Arena di ghiaccio Tasso di vittoria: 65,14% Tasso di scelta: 4,01% Carambola stellare Tasso di vittoria: 64,46% Tasso di scelta:",
+          "source": "BrawlFind",
+          "sourceUrl": "https://www.brawlfind.com/it/brawlers/ziggy",
+          "imageUrl": "https://cdn.brawlfind.com/logo.png"
+        }
+      ],
       "buffies": {
         "gadget": [],
         "starPower": [],
@@ -12266,16 +12266,7 @@
           "imageUrl": "https://cdn.brawlify.com/gears/regular/62000017.png"
         }
       ],
-      "overdrives": [
-        {
-          "id": "overdrive:16000103",
-          "name": "GADGET ESTRATTORE DI VELENO Tutti i nemici sotto gli effetti del veleno di Najia creeranno delle pozze velenose per i prossimi 2 secondi. Periodo di attesa: 17 secondi GIARA DI NAJIA Najia si nasconde dentro a un vaso. Quando questo si rompe, la brawler respinge i nemici vicini. Periodo di attesa: 20 secondi",
-          "description": "OVERDRIVE SERPENTI GEMELLI SUPER Najia lancia 6 vasi con la super e i serpenti al loro interno rilasciano una scia di veleno. VELOCITÀ +20% DANNI +5% DIFESA +5% GADGET ESTRATTORE DI VELENO Tutti i nemici sotto gli effetti del veleno di Najia creeranno delle pozze velenose per i prossimi 2 secondi. Periodo di attesa: 17 secondi GIARA DI NAJIA Najia si nasconde dentro a un vaso. Quando questo si rompe, la brawler respinge i nemici vicini. Periodo di attesa: 20 secondi ABILITÀ STELLARE SERPE IN SENO I brawler sconfitti mentre sono sotto gli effetti del veleno di Najia rilasciano un serpente. FLAGELLO TOSSICO Gli effetti del veleno aumentano in base alla percentuale attuale della salute della vittima e possono causare fino a 200 punti danno in più, se l'obiettivo ha il 100% di salute. EQUIPAGGIAMENTO VELOCITÀ Migliora del 15% la VELOCITÀ del brawler tra i cespugli. SALUTE La RIGENERAZIONE DELLA SALUTE è più efficace del 50% . DANNI Il brawler causa il 15% di DANNI IN PIÙ quando la salute è sotto il 50% . SUPERVISTA RENDE VISIBILI i nemici per 2 secondi dopo averli colpiti. DIFESA Dà al brawler uno SCUDO danneggiabile da 900 PUNTI SALUTE, che si rigenera in 10 secondi quando il brawler ha la salute piena. ACCELERAGADGET Riduce i tempi di ripristino dei gadget del 15% . Le migliori modalità 15 ORDINA PER Tasso di vittoria Tendenza di vittoria Tasso di scelta Tendenza di scelta Mode Tasso di vittoria: 73,69% (-0,84%) Tasso di scelta: 18,32% (+3,47%) ANNIENTAMENTO Tasso di vittoria: 51,62% (+8,19%) Tasso di scelta: 1,93% (+0,16%) ARRAFFAGEMME Tasso di vittoria: 56,08% (+2,11%) Tasso di scelta: 10,74% (-0,29%) RICERCATI Tasso di vittoria: 69,05% (+2,28%) Tasso di scelta: 10,77% (+4,47%) FOOTBRAWL 5V5 Tasso di vittoria: 56,85% (+0,08%) Tasso di scelta: 15,72% (-0,91%) K.O. Tasso di vittoria: 65,78% (-1,17%) Tasso di scelta: 5,87% (-2,60%) SOPRAVVIVENZA (IN TRE) Tasso di vittoria: 64,05% (-0,10%) Tasso di scelta: 13,14% (+5,63%) ANNIENTAMENTO 5V5 Tasso di vittoria: 49,80% (+3,11%) Tasso di scelta: 1,84% (+0,60%) DOMINIO Tasso di vittoria: 62,58% (-3,48%) Tasso di scelta: 8,14% (+0,05%) DUELLI Tasso di vittoria: 63,29% (-1,81%) Tasso di scelta: 1,46% (+0,30%) BRAWL HOCKEY Tasso di vittoria: 56,31% (+0,71%) Tasso di scelta: 6,31% (-1,58%) SOPRAVVIVENZA (IN DUE) Tasso di vittoria: 54,38% (+3,38%) Tasso di scelta: 1,81% (+0,25%) FOOTBRAWL Tasso di vittoria: 59,67% Tasso di scelta: 10,01% K.O. 5V5 Tasso di vittoria: 53,36% (-1,99%) Tasso di scelta: 1,95% (-1,62%) SOPRAVVI",
-          "source": "BrawlFind",
-          "sourceUrl": "https://www.brawlfind.com/it/brawlers/najia",
-          "imageUrl": "https://cdn.brawlfind.com/logo.png"
-        }
-      ],
+      "overdrives": [],
       "buffies": {
         "gadget": [],
         "starPower": [],
