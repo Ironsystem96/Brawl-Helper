@@ -11,24 +11,47 @@
   ],
   "metaScore": {
     "inputs": {
-      "modeScore": 0.45,
-      "globalScore": 0.2,
-      "buildUsage": 0.2,
-      "confidence": 0.15
+      "actionPriority": 0.72,
+      "metaSignal": 0.18,
+      "accountReadiness": 0.1
     },
-    "notes": "The normalized meta score is a Brawl Helper derived signal. It must never be presented as an official ranking."
+    "confidenceModifier": "The meta contribution is multiplied by a confidence weight: high 1.0, medium 0.82, low 0.58, unknown 0.4.",
+    "notes": "The resulting priority is a Brawl Helper product heuristic. It is not an official Brawl Stars ranking."
   },
   "actionPriority": {
-    "power": {"base": 100, "description": "Progress toward Power 11 for an owned Brawler."},
-    "buy": {"base": 70, "usageWeight": 0.4, "description": "Only when the user explicitly confirms the component is not owned."},
-    "equip": {"base": 55, "usageWeight": 0.3, "description": "Only when the user explicitly confirms the component is owned but it is not equipped."},
-    "check": {"base": 20, "usageWeight": 0.1, "description": "Used when ownership is unknown and the app needs confirmation."},
-    "unlock": {"base": 100, "description": "Catalog-only action for Brawlers not present on the account."}
+    "power": {
+      "base": 100,
+      "description": "Progress toward Power 11 for an owned Brawler."
+    },
+    "buy": {
+      "base": 70,
+      "usageWeight": 0.4,
+      "description": "Only when the user explicitly confirms the component is not owned."
+    },
+    "equip": {
+      "base": 55,
+      "usageWeight": 0.3,
+      "description": "Only when the user explicitly confirms the component is owned but it is not equipped."
+    },
+    "check": {
+      "base": 20,
+      "usageWeight": 0.1,
+      "description": "Used when ownership is unknown and the app needs confirmation."
+    },
+    "unlock": {
+      "base": 100,
+      "description": "Catalog-only action for Brawlers not present on the account."
+    }
   },
   "confidence": {
     "high": "Validated source coverage and sufficient sample/observation quality.",
     "medium": "Usable source data with some uncertainty or incomplete coverage.",
     "low": "Sparse, stale, or weakly supported data. Do not use it as the sole reason for a strong recommendation."
   },
-  "fallback": ["map", "mode", "global", "no validated meta"]
+  "fallback": [
+    "map",
+    "mode",
+    "global",
+    "no validated meta"
+  ]
 }
