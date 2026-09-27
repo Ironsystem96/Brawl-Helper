@@ -259,7 +259,7 @@ async function main(){
     overdrives:(entries[b.name]?.overdrives||[]).map(x=>({id:x.id,name:x.name,description:x.description||'',descriptionHtml:x.descriptionHtml||'',imageUrl:x.imageUrl||null,released:true})),
     buffies:(entries[b.name]?.buffies||[]).map(x=>({id:x.id,name:x.name,slot:x.slot,source:x.source,description:x.description||'',descriptionHtml:x.description||'',imageUrl:x.imageUrl||null,released:true}))
   }));
-  const catalogDocument={schemaVersion:2,generatedFrom:'BrawlAPI catalog snapshot',generatedAt:now,count:catalogOut.length,brawlers:catalogOut};
+  const catalogDocument={schemaVersion:3,generatedFrom:'BrawlAPI catalog snapshot',generatedAt:now,count:catalogOut.length,brawlers:catalogOut.map(normalizeBrawlerRecord),completeness:{identity:catalogOut.length,portraits:catalogOut.filter(x=>x.imageUrl||x.imageUrl2).length,gadgets:catalogOut.filter(x=>x.gadgets.length===2).length,starPowers:catalogOut.filter(x=>x.starPowers.length===2).length,gears:catalogOut.filter(x=>x.gears.length>0).length,hyperCharges:catalogOut.filter(x=>x.hyperCharges.length>0).length,overdrives:catalogOut.filter(x=>x.overdrives.length>0).length,buffies:catalogOut.filter(x=>x.buffies.length>0).length}};
   fs.writeFileSync(CATALOG_PATH,JSON.stringify(catalogDocument,null,2)+'\n');
 
   if(noffOk<Math.floor(list.length*.5) || btOk<Math.floor(list.length*.5)) {
