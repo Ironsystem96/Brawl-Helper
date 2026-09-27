@@ -8,13 +8,12 @@ async function brawlFindData(name){
   const html=await (async()=>{const ctl=new AbortController(),t=setTimeout(()=>ctl.abort(),8000);try{const r=await fetch(url,{headers:{'user-agent':'BrawlHelper-ComponentSync/1.0'},signal:ctl.signal});if(!r.ok)throw Error('HTTP '+r.status);return await r.text()}finally{clearTimeout(t)}})();
   const clean=x=>String(x||'').replace(/&amp;/g,'&').replace(/&#39;/g,"'").replace(/&quot;/g,'"').replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim();
   const imgs=[];const ir=/<img\b[^>]*>/gi;let m;while((m=ir.exec(html))){const tag=m[0],src=tag.match(/(?:src|data-src)=["']([^"']+)["']/i),alt=tag.match(/(?:alt|title)=["']([^"']+)["']/i);if(src?.[1])imgs.push({url:src[1],alt:clean(alt?.[1]||'')})}
-  const text=clean(html),up=text.toUpperCase(),pos=up.indexOf('OVERDRIVE');
-  if(pos<0)return {url};
-  const tail=text.slice(pos,pos+3000);
-  const m=tail.match(/OVERDRIVE\s+IMAGE:\s*([^]+?)\s+\1/i)||tail.match(/OVERDRIVE\s+IMAGE:\s*([^]+?)\s+[^\n]+?(?=IMAGE:\s*(?:SUPER|BUFFIE)|GADGET|ABILITÀ STELLARE|EQUIPAGGIAMENTO)/i);
-  const nameLine=clean(m?.[1]||'').replace(/^IMAGE:\s*/i,'').trim()||null;
-  const matchImg=imgs.find(x=>x.alt&&nameLine&&x.alt.toUpperCase().trim()===nameLine.toUpperCase().trim())||imgs.find(x=>x.alt&&nameLine&&x.alt.toUpperCase().includes(nameLine.toUpperCase()))||null;
-  return {url,name:nameLine,imageUrl:matchImg?.url||null,raw:tail};
+  const altNorm=x=>clean(x).toUpperCase().replace(/[^A-Z0-9À-ÖØ-Ý]+/g,' ').trim();
+  const overIndex=imgs.findIndex(x=>altNorm(x.alt)==='OVERDRIVE');
+  if(overIndex<0)return {url};
+  const overImg=imgs.slice(overIndex+1).find(x=>x.alt&&altNorm(x.alt)!=='SUPER'&&!altNorm(x.alt).startsWith('BUFFIE'))||null;
+  const text=clean(html),up=text.toUpperCase(),pos=up.indexOf('OVERDRIVE'),tail=pos>=0?text.slice(pos,pos+3500):'';
+  return {url,name:overImg?.alt?clean(overImg.alt):null,imageUrl:overImg?.url||null,raw:tail};
  }catch(e){return {url,error:e.message}}
 }
 const norm=s=>String(s||'').toUpperCase().replace(/[^A-Z0-9]+/g,' ').trim();
