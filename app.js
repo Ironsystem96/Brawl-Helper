@@ -85,13 +85,30 @@ function itemState(b,type,item){return itemStatus(b,type,item)}
 function ownershipControl(b,type,item){if(!item)return '';const s=itemStatus(b,type,item);if(s==='EQUIPPED')return '<span class="ownershipApi">EQUIPPED · API</span>';return '<div class="ownershipControls"><button type="button" onclick="event.stopPropagation();setManualOwnership('+b.id+',\''+type+'\','+item.id+',true)">I OWN IT</button><button type="button" onclick="event.stopPropagation();setManualOwnership('+b.id+',\''+type+'\','+item.id+',false)">BUY</button><button type="button" onclick="event.stopPropagation();setManualOwnership('+b.id+',\''+type+'\','+item.id+',null)">RESET</button></div>'}
 function recommendationAction(b,type,item){return actionForItem(b,type,item)}
 function buildItems(b){const e=buildEntry(b);return [['Gadget','gadgets',bestBuildItem(e,'gadget')],['Star Power','starPowers',bestBuildItem(e,'starPower')],['Gear','gears',bestBuildItem(e,'gears',0)],['Gear','gears',bestBuildItem(e,'gears',1)]].filter(x=>x[2])}
-function guideComponents(b){const e=buildEntry(b),c=catalogEntry(b)||{},gears=e?.gears||[],gadget=bestBuildItem(e,'gadget'),star=bestBuildItem(e,'starPower'),g1=gears[0]||null,g2=gears[1]||null,od=first(c.overdrives||[]);return [['Gadget','gadgets',gadget||{id:'pending:gadget',name:'No validated recommendation',description:'No validated community recommendation is available for this component yet.'}],['Star Power','starPowers',star||{id:'pending:star',name:'No validated recommendation',description:'No validated community recommendation is available for this component yet.'}],['Gear 1','gears',g1||{id:'pending:gear1',name:'No validated recommendation',description:'No validated Gear recommendation is available for this slot yet.'}],['Gear 2','gears',g2||{id:'pending:gear2',name:'No validated recommendation',description:'No validated Gear recommendation is available for this slot yet.'}],['Overdrive','overdrives',od||{id:'pending:overdrive',name:'Not available for this Brawler',description:'No Overdrive is currently validated for this Brawler in the synchronized game-data snapshot.'}] ]}
+function guideComponents(b){
+ const e=buildEntry(b),c=catalogEntry(b)||{},gears=e?.gears||[],gadget=bestBuildItem(e,'gadget'),star=bestBuildItem(e,'starPower');
+ const g1=gears[0]||null,g2=gears[1]||null,od=first(e?.overdrives||[])||first(c.overdrives||[])||first(PROFILE_STATE.entries[String(b.id)]?.overdrives||[]);
+ return [
+  ['Gadget','gadgets',gadget||{id:'pending:gadget',name:'No validated recommendation',description:'No validated community recommendation is available for this component yet.'}],
+  ['Star Power','starPowers',star||{id:'pending:star',name:'No validated recommendation',description:'No validated community recommendation is available for this component yet.'}],
+  ['Gear 1','gears',g1||{id:'pending:gear1',name:'No validated Gear recommendation',description:'No validated Gear recommendation is available for this slot yet.'}],
+  ['Gear 2','gears',g2||{id:'pending:gear2',name:'No validated Gear recommendation',description:'No validated Gear recommendation is available for this slot yet.'}],
+  ['Overdrive','overdrives',od||{id:'pending:overdrive',name:'Overdrive data pending',description:'The Brawler has an Overdrive slot, but the synchronized source has not yet supplied its current name and effect.'}]
+ ];
+}
 function gearOptions(b){const c=catalogEntry(b)||{},e=buildEntry(b),recommended=e?.gears||[],available=Array.isArray(c.gears)?c.gears:[];return available.map(g=>{const r=recommended.find(x=>norm(x.name)===norm(g.name));return {...g,pick:r?.pick||null,recommended:!!r}}).sort((a,z)=>(Number(z.pick)||0)-(Number(a.pick)||0))}
 function gearOptionRows(b){return gearOptions(b).map(g=>`<button class="gearOption ${g.recommended?'gearRecommended':''}" type="button" onclick="componentModalV2ById(${b.id},'gears','${esc(g.id)}')">${compIcon('gears',g,b)}<span><b>${esc(g.name)}</b><small>${g.pick!=null?esc(g.pick)+'% community pick':'available'}</small></span>${g.recommended?'<strong>RECOMMENDED</strong>':''}</button>`).join('')}
 function recommendationContext(){return {isOwnedAccount,buildItems,guideComponents,itemStatus,metaEntry,readiness,playMode,playMap}}
 function nextActions(b){return window.BHRecommendations?window.BHRecommendations.nextActions(b,recommendationContext()):[]}
 function upgradePriority(b){return window.BHRecommendations?window.BHRecommendations.upgradePriority(b,recommendationContext()):{score:0,actions:[],metaScore:null,confidence:.4}}
-function componentCatalogItem(type,item,b=null){if(!item)return null;const c=catalogEntry(b);const key=({gadgets:'gadgets',gadget:'gadgets',starPowers:'starPowers',star:'starPowers',gears:'gears',gear:'gears',hyperCharges:'hyperCharges',hc:'hyperCharges',buffies:'buffies',buffie:'buffies',overdrives:'overdrives',overdrive:'overdrives'})[type];const local=c?.[key]||[];const componentLocal=COMPONENT_STATE.entries[String(b?.id||'')]?.[key]||[];const pool=Object.values(CATALOG_STATE.entries||{}).flatMap(x=>x?.[key]||[]);return [...local,...componentLocal,...pool].find(x=>x&&((x.id!=null&&item.id!=null&&x.id===item.id)||norm(x.name)===norm(item.name)))||null}
+function componentCatalogItem(type,item,b=null){
+ if(!item)return null;
+ const c=catalogEntry(b),key=({gadgets:'gadgets',gadget:'gadgets',starPowers:'starPowers',star:'starPowers',gears:'gears',gear:'gears',hyperCharges:'hyperCharges',hc:'hyperCharges',buffies:'buffies',buffie:'buffies',overdrives:'overdrives',overdrive:'overdrives'})[type];
+ const asArray=v=>Array.isArray(v)?v:Object.values(v||{}).flatMap(x=>Array.isArray(x)?x:[x]).filter(Boolean);
+ const local=asArray(c?.[key]),componentLocal=asArray(COMPONENT_STATE.entries[String(b?.id||'')]?.[key]);
+ const pool=Object.values(CATALOG_STATE.entries||{}).flatMap(x=>asArray(x?.[key]));
+ return [...local,...componentLocal,...pool].find(x=>x&&((x.id!=null&&item.id!=null&&String(x.id)===String(item.id))||norm(x.name)===norm(item.name)))||null;
+}
 function compIcon(type,item,b=null){
  const sym={gadgets:'',starPowers:'',gears:'',hyperCharges:'',buffies:'',overdrives:'',gadget:'',star:'',gear:'',hc:'',buffie:'',overdrive:''}[type]??'';
  if(!item)return '<span class="compIcon fallbackIcon" aria-hidden="true"></span>';
@@ -121,7 +138,20 @@ function ownedNames(b,type){return b?(b[type]||[]).filter(Boolean).map(x=>norm(x
 
 function advisorRow(b,label,type,item){if(!item)return '';const state=itemStatus(b,type,item),act=recommendationAction(b,type,item),pct=item.pick!=null?' · '+item.pick+'% pick':'';return '<div class="advisorRow"><div class="advisorIcon">'+compIcon(type,item,b)+'</div><div class="grow"><b>'+esc(item.name)+'</b><span class="small">'+esc(label)+pct+'</span></div><span class="chip '+(state==='EQUIPPED'?'ok':state==='NOT OWNED'?'miss':'')+'">'+state+'</span><span class="advisorAction">'+act+'</span></div>'}
 function buildActionLine(b){const actions=nextActions(b).slice(0,3);if(!actions.length)return '<span class="actionPill mutedAction">READY</span>';return actions.map(a=>'<span class="actionPill '+(a.type==='BUY'?'buyAction':a.type==='EQUIP'?'equipAction':a.type==='POWER'?'powerAction':'mutedAction')+'">'+esc(a.type==='POWER'?'POWER 11':a.type)+'</span>').join('')}
-function miniBuild(b){const items=buildItems(b);if(!items.length)return '<div class="miniBuild mutedBuild"><span class="miniState">BUILD N/A</span><span class="miniHint">verified build data pending</span></div>';return '<div class="miniBuild">'+items.map(([label,type,item])=>{const s=itemStatus(b,type,item),action=s==='EQUIPPED'?'✓':s==='OWNED'?'●':s==='NOT OWNED'?'＋':'?';return '<span class="miniItem '+(s==='EQUIPPED'?'equippedMini':s==='OWNED'?'ownedMini':s==='NOT OWNED'?'buyMini':'unknownMini')+'">'+compIcon(type,item,b)+'<b>'+esc(label)+'</b><em>'+action+'</em></span>'}).join('')+'</div>'}
+function miniBuild(b){
+ const items=guideComponents(b),buffs=buffieRows(b);
+ const compact=(item,type)=>{
+  const pending=String(item?.id||'').startsWith('pending:');
+  const key=String(item?.id||'').split(':')[1]||'';
+  const bv=type==='buffies'?buffieState(b,key):null;
+  const st=pending?'DATA PENDING':type==='buffies'?(bv===true?'UNLOCKED':bv===false?'NOT UNLOCKED':'UNKNOWN'):itemStatus(b,type,item);
+  const action=st==='EQUIPPED'||st==='UNLOCKED'?'✓':st==='OWNED'?'●':st==='NOT OWNED'||st==='NOT UNLOCKED'?'×':'?';
+  return '<button type="button" class="miniItem '+(pending?'pendingMini':st==='EQUIPPED'||st==='UNLOCKED'?'equippedMini':st==='OWNED'?'ownedMini':st==='NOT OWNED'||st==='NOT UNLOCKED'?'buyMini':'unknownMini')+'" onclick="event.stopPropagation();componentModalV2ById('+b.id+',\''+type+'\',\''+String(item?.id||'').replace(/'/g,"\\'")+'\')">'+compIcon(type,item,b)+'<b>'+esc(item?.name||'Data pending')+'</b><em>'+action+'</em></button>';
+ };
+ const top=items.map(([label,type,item])=>compact(item,type)).join('');
+ const lower=buffs.map(([label,key,opts,state])=>'<button type="button" class="miniBuffie '+(state===true?'buffieOwned':state===false?'buffieMissing':'buffieUnknown')+'" onclick="event.stopPropagation();componentModalV2ById('+b.id+',\'buffies\',\''+key+'\')"><span class="buffieCheck">'+(state===true?'✓':state===false?'×':'?')+'</span><b>'+esc(label)+'</b></button>').join('');
+ return '<div class="miniBuild miniBuildFull"><div class="miniBuildRow">'+top+'</div><div class="miniBuffieRow">'+lower+'</div></div>';
+}
 function metaRankList(mode,map){
  return allBrawlers().map(b=>({b,meta:metaEntry(b,mode,map)})).filter(x=>x.meta?.score!=null).sort((a,z)=>(z.meta.score-a.meta.score)||((a.meta.rank||999)-(z.meta.rank||999)));
 }
