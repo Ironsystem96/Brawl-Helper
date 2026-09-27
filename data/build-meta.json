@@ -248,12 +248,12 @@
       ],
       "gears": [
         {
-          "name": "Vision",
-          "pick": 6
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 11
+        },
+        {
+          "name": "Vision",
+          "pick": 6
         }
       ],
       "stats": {
@@ -620,20 +620,20 @@
       ],
       "gears": [
         {
-          "name": "Shield",
-          "pick": 30
+          "name": "Reload",
+          "pick": 40
         },
         {
-          "name": "Vision",
-          "pick": 2
+          "name": "Shield",
+          "pick": 30
         },
         {
           "name": "Gadget Cooldown",
           "pick": 8
         },
         {
-          "name": "Reload",
-          "pick": 40
+          "name": "Vision",
+          "pick": 2
         }
       ],
       "stats": {
@@ -812,24 +812,24 @@
       ],
       "gears": [
         {
-          "name": "Damage",
-          "pick": 25
-        },
-        {
           "name": "Shield",
           "pick": 33
         },
         {
-          "name": "Vision",
-          "pick": 3
+          "name": "Damage",
+          "pick": 25
+        },
+        {
+          "name": "Reload",
+          "pick": 25
         },
         {
           "name": "Gadget Cooldown",
           "pick": 8
         },
         {
-          "name": "Reload",
-          "pick": 25
+          "name": "Vision",
+          "pick": 3
         }
       ],
       "stats": null,
@@ -1006,12 +1006,12 @@
           "pick": 29
         },
         {
-          "name": "Vision",
-          "pick": 1
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 6
+        },
+        {
+          "name": "Vision",
+          "pick": 1
         }
       ],
       "stats": {
@@ -1382,24 +1382,24 @@
           "pick": 55
         },
         {
-          "name": "Shield",
-          "pick": 36
-        },
-        {
           "name": "Speed",
           "pick": 55
         },
         {
-          "name": "Vision",
-          "pick": 3
+          "name": "Reload",
+          "pick": 55
+        },
+        {
+          "name": "Shield",
+          "pick": 36
         },
         {
           "name": "Gadget Cooldown",
           "pick": 8
         },
         {
-          "name": "Reload",
-          "pick": 55
+          "name": "Vision",
+          "pick": 3
         }
       ],
       "stats": {
@@ -1606,16 +1606,16 @@
           "pick": 35
         },
         {
+          "name": "Super Charge",
+          "pick": 30
+        },
+        {
           "name": "Vision",
           "pick": 6
         },
         {
           "name": "Gadget Cooldown",
           "pick": 6
-        },
-        {
-          "name": "Super Charge",
-          "pick": 30
         }
       ],
       "stats": {
@@ -1977,12 +1977,12 @@
           "pick": 34
         },
         {
-          "name": "Vision",
-          "pick": 9
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 10
+        },
+        {
+          "name": "Vision",
+          "pick": 9
         }
       ],
       "stats": {
@@ -2165,12 +2165,12 @@
           "pick": 32
         },
         {
-          "name": "Vision",
-          "pick": 2
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 11
+        },
+        {
+          "name": "Vision",
+          "pick": 2
         }
       ],
       "stats": {
@@ -2353,12 +2353,12 @@
           "pick": 25
         },
         {
-          "name": "Vision",
-          "pick": 2
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 7
+        },
+        {
+          "name": "Vision",
+          "pick": 2
         }
       ],
       "stats": {
@@ -2537,24 +2537,24 @@
       ],
       "gears": [
         {
-          "name": "Damage",
-          "pick": 25
-        },
-        {
           "name": "Shield",
           "pick": 31
         },
         {
-          "name": "Vision",
-          "pick": 4
+          "name": "Damage",
+          "pick": 25
+        },
+        {
+          "name": "Reload",
+          "pick": 25
         },
         {
           "name": "Gadget Cooldown",
           "pick": 5
         },
         {
-          "name": "Reload",
-          "pick": 25
+          "name": "Vision",
+          "pick": 4
         }
       ],
       "stats": {
@@ -2737,12 +2737,12 @@
           "pick": 31
         },
         {
-          "name": "Vision",
-          "pick": 5
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 8
+        },
+        {
+          "name": "Vision",
+          "pick": 5
         }
       ],
       "stats": {
@@ -2921,28 +2921,28 @@
       ],
       "gears": [
         {
-          "name": "Damage",
-          "pick": 30
-        },
-        {
           "name": "Shield",
           "pick": 34
+        },
+        {
+          "name": "Damage",
+          "pick": 30
         },
         {
           "name": "Speed",
           "pick": 30
         },
         {
-          "name": "Vision",
-          "pick": 4
+          "name": "Reload",
+          "pick": 30
         },
         {
           "name": "Gadget Cooldown",
           "pick": 14
         },
         {
-          "name": "Reload",
-          "pick": 30
+          "name": "Vision",
+          "pick": 4
         }
       ],
       "stats": {
@@ -3116,24 +3116,24 @@
       ],
       "gears": [
         {
-          "name": "Damage",
-          "pick": 25
-        },
-        {
           "name": "Shield",
           "pick": 35
         },
         {
-          "name": "Vision",
-          "pick": 4
+          "name": "Damage",
+          "pick": 25
+        },
+        {
+          "name": "Reload",
+          "pick": 25
         },
         {
           "name": "Gadget Cooldown",
           "pick": 13
         },
         {
-          "name": "Reload",
-          "pick": 25
+          "name": "Vision",
+          "pick": 4
         }
       ],
       "stats": {
@@ -3316,12 +3316,12 @@
           "pick": 37
         },
         {
-          "name": "Vision",
-          "pick": 6
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 8
+        },
+        {
+          "name": "Vision",
+          "pick": 6
         }
       ],
       "stats": {
@@ -3504,12 +3504,12 @@
           "pick": 35
         },
         {
-          "name": "Vision",
-          "pick": 3
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 9
+        },
+        {
+          "name": "Vision",
+          "pick": 3
         }
       ],
       "stats": {
@@ -3692,12 +3692,12 @@
           "pick": 36
         },
         {
-          "name": "Vision",
-          "pick": 5
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 22
+        },
+        {
+          "name": "Vision",
+          "pick": 5
         }
       ],
       "stats": {
@@ -3898,12 +3898,12 @@
           "pick": 77
         },
         {
-          "name": "Vision",
-          "pick": 3
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 15
+        },
+        {
+          "name": "Vision",
+          "pick": 3
         }
       ],
       "stats": {
@@ -4086,12 +4086,12 @@
           "pick": 30
         },
         {
-          "name": "Vision",
-          "pick": 6
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 13
+        },
+        {
+          "name": "Vision",
+          "pick": 6
         }
       ],
       "stats": {
@@ -4274,12 +4274,12 @@
           "pick": 35
         },
         {
-          "name": "Vision",
-          "pick": 2
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 11
+        },
+        {
+          "name": "Vision",
+          "pick": 2
         }
       ],
       "stats": {
@@ -4458,6 +4458,10 @@
       ],
       "gears": [
         {
+          "name": "Super Charge",
+          "pick": 50
+        },
+        {
           "name": "Shield",
           "pick": 35
         },
@@ -4468,10 +4472,6 @@
         {
           "name": "Gadget Cooldown",
           "pick": 6
-        },
-        {
-          "name": "Super Charge",
-          "pick": 50
         }
       ],
       "stats": {
@@ -4654,12 +4654,12 @@
           "pick": 35
         },
         {
-          "name": "Vision",
-          "pick": 3
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 8
+        },
+        {
+          "name": "Vision",
+          "pick": 3
         }
       ],
       "stats": {
@@ -4842,12 +4842,12 @@
           "pick": 36
         },
         {
-          "name": "Vision",
-          "pick": 4
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 13
+        },
+        {
+          "name": "Vision",
+          "pick": 4
         }
       ],
       "stats": {
@@ -5026,20 +5026,20 @@
       ],
       "gears": [
         {
-          "name": "Shield",
-          "pick": 21
-        },
-        {
-          "name": "Vision",
-          "pick": 3
+          "name": "Super Charge",
+          "pick": 33
         },
         {
           "name": "Gadget Cooldown",
           "pick": 29
         },
         {
-          "name": "Super Charge",
-          "pick": 33
+          "name": "Shield",
+          "pick": 21
+        },
+        {
+          "name": "Vision",
+          "pick": 3
         }
       ],
       "stats": {
@@ -5222,12 +5222,12 @@
           "pick": 21
         },
         {
-          "name": "Vision",
-          "pick": 4
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 17
+        },
+        {
+          "name": "Vision",
+          "pick": 4
         }
       ],
       "stats": {
@@ -5410,12 +5410,12 @@
           "pick": 32
         },
         {
-          "name": "Vision",
-          "pick": 6
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 10
+        },
+        {
+          "name": "Vision",
+          "pick": 6
         }
       ],
       "stats": {
@@ -5598,12 +5598,12 @@
           "pick": 76
         },
         {
-          "name": "Vision",
-          "pick": 5
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 14
+        },
+        {
+          "name": "Vision",
+          "pick": 5
         }
       ],
       "stats": {
@@ -5804,12 +5804,12 @@
           "pick": 32
         },
         {
-          "name": "Vision",
-          "pick": 4
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 16
+        },
+        {
+          "name": "Vision",
+          "pick": 4
         }
       ],
       "stats": {
@@ -5992,12 +5992,12 @@
           "pick": 36
         },
         {
-          "name": "Vision",
-          "pick": 4
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 12
+        },
+        {
+          "name": "Vision",
+          "pick": 4
         }
       ],
       "stats": {
@@ -6180,12 +6180,12 @@
           "pick": 30
         },
         {
-          "name": "Vision",
-          "pick": 5
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 17
+        },
+        {
+          "name": "Vision",
+          "pick": 5
         }
       ],
       "stats": {
@@ -6368,20 +6368,20 @@
           "pick": 50
         },
         {
-          "name": "Shield",
-          "pick": 24
+          "name": "Reload",
+          "pick": 50
         },
         {
-          "name": "Vision",
-          "pick": 2
+          "name": "Shield",
+          "pick": 24
         },
         {
           "name": "Gadget Cooldown",
           "pick": 10
         },
         {
-          "name": "Reload",
-          "pick": 50
+          "name": "Vision",
+          "pick": 2
         }
       ],
       "stats": {
@@ -6564,12 +6564,12 @@
           "pick": 79
         },
         {
-          "name": "Vision",
-          "pick": 2
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 11
+        },
+        {
+          "name": "Vision",
+          "pick": 2
         }
       ],
       "stats": {
@@ -6752,12 +6752,12 @@
           "pick": 21
         },
         {
-          "name": "Vision",
-          "pick": 4
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 19
+        },
+        {
+          "name": "Vision",
+          "pick": 4
         }
       ],
       "stats": {
@@ -6940,12 +6940,12 @@
           "pick": 31
         },
         {
-          "name": "Vision",
-          "pick": 2
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 18
+        },
+        {
+          "name": "Vision",
+          "pick": 2
         }
       ],
       "stats": {
@@ -7128,24 +7128,24 @@
           "pick": 50
         },
         {
-          "name": "Shield",
-          "pick": 20
-        },
-        {
           "name": "Speed",
           "pick": 50
         },
         {
-          "name": "Vision",
-          "pick": 3
+          "name": "Reload",
+          "pick": 50
+        },
+        {
+          "name": "Shield",
+          "pick": 20
         },
         {
           "name": "Gadget Cooldown",
           "pick": 4
         },
         {
-          "name": "Reload",
-          "pick": 50
+          "name": "Vision",
+          "pick": 3
         }
       ],
       "stats": {
@@ -7328,12 +7328,12 @@
           "pick": 33
         },
         {
-          "name": "Vision",
-          "pick": 3
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 13
+        },
+        {
+          "name": "Vision",
+          "pick": 3
         }
       ],
       "stats": {
@@ -7704,12 +7704,12 @@
           "pick": 30
         },
         {
-          "name": "Vision",
-          "pick": 5
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 20
+        },
+        {
+          "name": "Vision",
+          "pick": 5
         }
       ],
       "stats": {
@@ -7892,12 +7892,12 @@
           "pick": 40
         },
         {
-          "name": "Vision",
-          "pick": 6
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 7
+        },
+        {
+          "name": "Vision",
+          "pick": 6
         }
       ],
       "stats": {
@@ -8080,12 +8080,12 @@
           "pick": 39
         },
         {
-          "name": "Vision",
-          "pick": 3
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 24
+        },
+        {
+          "name": "Vision",
+          "pick": 3
         }
       ],
       "stats": {
@@ -8268,12 +8268,12 @@
           "pick": 32
         },
         {
-          "name": "Vision",
-          "pick": 3
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 12
+        },
+        {
+          "name": "Vision",
+          "pick": 3
         }
       ],
       "stats": {
@@ -8452,12 +8452,12 @@
       ],
       "gears": [
         {
-          "name": "Vision",
-          "pick": 3
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 14
+        },
+        {
+          "name": "Vision",
+          "pick": 3
         }
       ],
       "stats": {
@@ -8636,12 +8636,12 @@
       ],
       "gears": [
         {
-          "name": "Vision",
-          "pick": 4
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 12
+        },
+        {
+          "name": "Vision",
+          "pick": 4
         }
       ],
       "stats": {
@@ -8824,12 +8824,12 @@
           "pick": 24
         },
         {
-          "name": "Vision",
-          "pick": 7
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 8
+        },
+        {
+          "name": "Vision",
+          "pick": 7
         }
       ],
       "stats": {
@@ -9012,16 +9012,16 @@
           "pick": 21
         },
         {
+          "name": "Super Charge",
+          "pick": 10
+        },
+        {
           "name": "Vision",
           "pick": 4
         },
         {
           "name": "Gadget Cooldown",
           "pick": 3
-        },
-        {
-          "name": "Super Charge",
-          "pick": 10
         }
       ],
       "stats": {
@@ -9204,16 +9204,16 @@
           "pick": 19
         },
         {
-          "name": "Vision",
-          "pick": 4
+          "name": "Super Charge",
+          "pick": 10
         },
         {
           "name": "Gadget Cooldown",
           "pick": 6
         },
         {
-          "name": "Super Charge",
-          "pick": 10
+          "name": "Vision",
+          "pick": 4
         }
       ],
       "stats": {
@@ -9396,12 +9396,12 @@
           "pick": 34
         },
         {
-          "name": "Vision",
-          "pick": 8
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 9
+        },
+        {
+          "name": "Vision",
+          "pick": 8
         }
       ],
       "stats": {
@@ -9580,6 +9580,10 @@
       ],
       "gears": [
         {
+          "name": "Quadruplets",
+          "pick": 35
+        },
+        {
           "name": "Shield",
           "pick": 11
         },
@@ -9590,10 +9594,6 @@
         {
           "name": "Gadget Cooldown",
           "pick": 4
-        },
-        {
-          "name": "Quadruplets",
-          "pick": 35
         }
       ],
       "stats": {
@@ -9776,16 +9776,16 @@
           "pick": 32
         },
         {
-          "name": "Vision",
-          "pick": 2
+          "name": "Super Charge",
+          "pick": 15
         },
         {
           "name": "Gadget Cooldown",
           "pick": 11
         },
         {
-          "name": "Super Charge",
-          "pick": 15
+          "name": "Vision",
+          "pick": 2
         }
       ],
       "stats": {
@@ -10156,12 +10156,12 @@
           "pick": 20
         },
         {
-          "name": "Vision",
-          "pick": 3
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 10
+        },
+        {
+          "name": "Vision",
+          "pick": 3
         }
       ],
       "stats": {
@@ -10344,16 +10344,16 @@
           "pick": 10
         },
         {
-          "name": "Vision",
-          "pick": 4
+          "name": "Super Charge",
+          "pick": 10
         },
         {
           "name": "Gadget Cooldown",
           "pick": 6
         },
         {
-          "name": "Super Charge",
-          "pick": 10
+          "name": "Vision",
+          "pick": 4
         }
       ],
       "stats": {
@@ -10536,12 +10536,12 @@
           "pick": 22
         },
         {
-          "name": "Vision",
-          "pick": 1
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 3
+        },
+        {
+          "name": "Vision",
+          "pick": 1
         }
       ],
       "stats": {
@@ -10724,12 +10724,12 @@
           "pick": 27
         },
         {
-          "name": "Vision",
-          "pick": 3
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 13
+        },
+        {
+          "name": "Vision",
+          "pick": 3
         }
       ],
       "stats": {
@@ -10912,12 +10912,12 @@
           "pick": 32
         },
         {
-          "name": "Vision",
-          "pick": 9
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 17
+        },
+        {
+          "name": "Vision",
+          "pick": 9
         }
       ],
       "stats": {
@@ -11100,12 +11100,12 @@
           "pick": 30
         },
         {
-          "name": "Vision",
-          "pick": 7
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 14
+        },
+        {
+          "name": "Vision",
+          "pick": 7
         }
       ],
       "stats": {
@@ -11476,12 +11476,12 @@
           "pick": 39
         },
         {
-          "name": "Vision",
-          "pick": 3
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 7
+        },
+        {
+          "name": "Vision",
+          "pick": 3
         }
       ],
       "stats": {
@@ -11664,12 +11664,12 @@
           "pick": 37
         },
         {
-          "name": "Vision",
-          "pick": 7
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 12
+        },
+        {
+          "name": "Vision",
+          "pick": 7
         }
       ],
       "stats": {
@@ -11856,20 +11856,20 @@
           "pick": 35
         },
         {
-          "name": "Vision",
-          "pick": 4
-        },
-        {
-          "name": "Gadget Cooldown",
-          "pick": 8
-        },
-        {
           "name": "Reload",
           "pick": 35
         },
         {
           "name": "Super Charge",
           "pick": 10
+        },
+        {
+          "name": "Gadget Cooldown",
+          "pick": 8
+        },
+        {
+          "name": "Vision",
+          "pick": 4
         }
       ],
       "stats": {
@@ -12052,12 +12052,12 @@
           "pick": 39
         },
         {
-          "name": "Vision",
-          "pick": 7
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 11
+        },
+        {
+          "name": "Vision",
+          "pick": 7
         }
       ],
       "stats": {
@@ -12240,16 +12240,16 @@
           "pick": 74
         },
         {
-          "name": "Vision",
-          "pick": 2
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 13
         },
         {
           "name": "Super Charge",
           "pick": 10
+        },
+        {
+          "name": "Vision",
+          "pick": 2
         }
       ],
       "stats": {
@@ -12628,16 +12628,16 @@
           "pick": 39
         },
         {
-          "name": "Vision",
-          "pick": 3
+          "name": "Reload",
+          "pick": 22
         },
         {
           "name": "Gadget Cooldown",
           "pick": 14
         },
         {
-          "name": "Reload",
-          "pick": 22
+          "name": "Vision",
+          "pick": 3
         }
       ],
       "stats": {
@@ -12820,16 +12820,16 @@
           "pick": 74
         },
         {
-          "name": "Vision",
-          "pick": 1
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 50
         },
         {
           "name": "Super Charge",
           "pick": 30
+        },
+        {
+          "name": "Vision",
+          "pick": 1
         }
       ],
       "stats": {
@@ -13008,16 +13008,16 @@
       ],
       "gears": [
         {
-          "name": "Vision",
-          "pick": 2
+          "name": "Super Charge",
+          "pick": 10
         },
         {
           "name": "Gadget Cooldown",
           "pick": 5
         },
         {
-          "name": "Super Charge",
-          "pick": 10
+          "name": "Vision",
+          "pick": 2
         }
       ],
       "stats": {
@@ -13200,16 +13200,16 @@
           "pick": 33
         },
         {
-          "name": "Vision",
-          "pick": 2
+          "name": "Super Charge",
+          "pick": 10
         },
         {
           "name": "Gadget Cooldown",
           "pick": 5
         },
         {
-          "name": "Super Charge",
-          "pick": 10
+          "name": "Vision",
+          "pick": 2
         }
       ],
       "stats": {
@@ -13392,12 +13392,12 @@
           "pick": 37
         },
         {
-          "name": "Vision",
-          "pick": 4
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 10
+        },
+        {
+          "name": "Vision",
+          "pick": 4
         }
       ],
       "stats": {
@@ -13580,16 +13580,16 @@
           "pick": 18
         },
         {
-          "name": "Vision",
-          "pick": 1
+          "name": "Super Charge",
+          "pick": 10
         },
         {
           "name": "Gadget Cooldown",
           "pick": 7
         },
         {
-          "name": "Super Charge",
-          "pick": 10
+          "name": "Vision",
+          "pick": 1
         }
       ],
       "stats": {
@@ -13772,16 +13772,16 @@
           "pick": 63
         },
         {
-          "name": "Vision",
-          "pick": 3
+          "name": "Super Charge",
+          "pick": 37
         },
         {
           "name": "Gadget Cooldown",
           "pick": 18
         },
         {
-          "name": "Super Charge",
-          "pick": 37
+          "name": "Vision",
+          "pick": 3
         }
       ],
       "stats": {
@@ -13960,20 +13960,20 @@
       ],
       "gears": [
         {
-          "name": "Shield",
-          "pick": 22
+          "name": "Pet Power",
+          "pick": 25
         },
         {
-          "name": "Vision",
-          "pick": 3
+          "name": "Shield",
+          "pick": 22
         },
         {
           "name": "Gadget Cooldown",
           "pick": 8
         },
         {
-          "name": "Pet Power",
-          "pick": 25
+          "name": "Vision",
+          "pick": 3
         }
       ],
       "stats": null,
@@ -14150,12 +14150,12 @@
           "pick": 32
         },
         {
-          "name": "Vision",
-          "pick": 2
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 11
+        },
+        {
+          "name": "Vision",
+          "pick": 2
         }
       ],
       "stats": {
@@ -14338,12 +14338,12 @@
           "pick": 41
         },
         {
-          "name": "Vision",
-          "pick": 4
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 9
+        },
+        {
+          "name": "Vision",
+          "pick": 4
         }
       ],
       "stats": {
@@ -14522,20 +14522,20 @@
       ],
       "gears": [
         {
-          "name": "Shield",
-          "pick": 16
+          "name": "Exhausting Storm",
+          "pick": 20
         },
         {
-          "name": "Vision",
-          "pick": 4
+          "name": "Shield",
+          "pick": 16
         },
         {
           "name": "Gadget Cooldown",
           "pick": 11
         },
         {
-          "name": "Exhausting Storm",
-          "pick": 20
+          "name": "Vision",
+          "pick": 4
         }
       ],
       "stats": {
@@ -14714,6 +14714,10 @@
       ],
       "gears": [
         {
+          "name": "Reload",
+          "pick": 35
+        },
+        {
           "name": "Shield",
           "pick": 13
         },
@@ -14724,10 +14728,6 @@
         {
           "name": "Gadget Cooldown",
           "pick": 4
-        },
-        {
-          "name": "Reload",
-          "pick": 35
         }
       ],
       "stats": {
@@ -14910,12 +14910,12 @@
           "pick": 20
         },
         {
-          "name": "Vision",
-          "pick": 2
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 9
+        },
+        {
+          "name": "Vision",
+          "pick": 2
         }
       ],
       "stats": {
@@ -15098,12 +15098,12 @@
           "pick": 31
         },
         {
-          "name": "Vision",
-          "pick": 4
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 14
+        },
+        {
+          "name": "Vision",
+          "pick": 4
         }
       ],
       "stats": {
@@ -15286,12 +15286,16 @@
           "pick": 70
         },
         {
-          "name": "Shield",
-          "pick": 11
-        },
-        {
           "name": "Speed",
           "pick": 70
+        },
+        {
+          "name": "Reload",
+          "pick": 70
+        },
+        {
+          "name": "Shield",
+          "pick": 11
         },
         {
           "name": "Vision",
@@ -15300,10 +15304,6 @@
         {
           "name": "Gadget Cooldown",
           "pick": 4
-        },
-        {
-          "name": "Reload",
-          "pick": 70
         }
       ],
       "stats": {
@@ -15486,12 +15486,12 @@
           "pick": 21
         },
         {
-          "name": "Vision",
-          "pick": 3
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 4
+        },
+        {
+          "name": "Vision",
+          "pick": 3
         }
       ],
       "stats": {
@@ -15670,16 +15670,16 @@
       ],
       "gears": [
         {
-          "name": "Vision",
-          "pick": 4
+          "name": "Thicc Head",
+          "pick": 40
         },
         {
           "name": "Gadget Cooldown",
           "pick": 5
         },
         {
-          "name": "Thicc Head",
-          "pick": 40
+          "name": "Vision",
+          "pick": 4
         }
       ],
       "stats": {
@@ -15858,20 +15858,20 @@
       ],
       "gears": [
         {
-          "name": "Shield",
-          "pick": 17
+          "name": "Talk to the Hand",
+          "pick": 41
         },
         {
           "name": "Vision",
           "pick": 18
         },
         {
-          "name": "Gadget Cooldown",
-          "pick": 4
+          "name": "Shield",
+          "pick": 17
         },
         {
-          "name": "Talk to the Hand",
-          "pick": 41
+          "name": "Gadget Cooldown",
+          "pick": 4
         }
       ],
       "stats": {
@@ -16054,12 +16054,12 @@
           "pick": 26
         },
         {
-          "name": "Vision",
-          "pick": 1
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 11
+        },
+        {
+          "name": "Vision",
+          "pick": 1
         }
       ],
       "stats": {
@@ -16242,16 +16242,16 @@
           "pick": 27
         },
         {
-          "name": "Vision",
-          "pick": 3
+          "name": "Pet Power",
+          "pick": 25
         },
         {
           "name": "Gadget Cooldown",
           "pick": 5
         },
         {
-          "name": "Pet Power",
-          "pick": 25
+          "name": "Vision",
+          "pick": 3
         }
       ],
       "stats": {
@@ -16434,20 +16434,20 @@
           "pick": 50
         },
         {
-          "name": "Shield",
-          "pick": 27
+          "name": "Reload",
+          "pick": 50
         },
         {
-          "name": "Vision",
-          "pick": 1
+          "name": "Shield",
+          "pick": 27
         },
         {
           "name": "Gadget Cooldown",
           "pick": 8
         },
         {
-          "name": "Reload",
-          "pick": 50
+          "name": "Vision",
+          "pick": 1
         }
       ],
       "stats": {
@@ -16626,20 +16626,20 @@
       ],
       "gears": [
         {
-          "name": "Shield",
-          "pick": 22
+          "name": "Pet Power",
+          "pick": 25
         },
         {
-          "name": "Vision",
-          "pick": 5
+          "name": "Shield",
+          "pick": 22
         },
         {
           "name": "Gadget Cooldown",
           "pick": 10
         },
         {
-          "name": "Pet Power",
-          "pick": 25
+          "name": "Vision",
+          "pick": 5
         }
       ],
       "stats": {
@@ -16817,12 +16817,12 @@
           "pick": 14
         },
         {
-          "name": "Vision",
-          "pick": 4
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 9
+        },
+        {
+          "name": "Vision",
+          "pick": 4
         }
       ],
       "stats": {
@@ -17005,12 +17005,12 @@
           "pick": 37
         },
         {
-          "name": "Vision",
-          "pick": 10
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 13
+        },
+        {
+          "name": "Vision",
+          "pick": 10
         }
       ],
       "stats": {
@@ -17381,12 +17381,12 @@
           "pick": 28
         },
         {
-          "name": "Vision",
-          "pick": 2
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 24
+        },
+        {
+          "name": "Vision",
+          "pick": 2
         }
       ],
       "stats": {
@@ -17565,28 +17565,28 @@
       ],
       "gears": [
         {
-          "name": "Damage",
-          "pick": 50
-        },
-        {
           "name": "Shield",
           "pick": 150
+        },
+        {
+          "name": "Damage",
+          "pick": 50
         },
         {
           "name": "Speed",
           "pick": 50
         },
         {
-          "name": "Vision",
-          "pick": 3
+          "name": "Reload",
+          "pick": 50
         },
         {
           "name": "Gadget Cooldown",
           "pick": 5
         },
         {
-          "name": "Reload",
-          "pick": 50
+          "name": "Vision",
+          "pick": 3
         }
       ],
       "stats": {
@@ -17769,12 +17769,12 @@
           "pick": 23
         },
         {
-          "name": "Vision",
-          "pick": 2
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 6
+        },
+        {
+          "name": "Vision",
+          "pick": 2
         }
       ],
       "stats": {
@@ -17957,16 +17957,16 @@
           "pick": 15
         },
         {
-          "name": "Vision",
-          "pick": 0
+          "name": "Super Charge",
+          "pick": 10
         },
         {
           "name": "Gadget Cooldown",
           "pick": 4
         },
         {
-          "name": "Super Charge",
-          "pick": 10
+          "name": "Vision",
+          "pick": 0
         }
       ],
       "stats": null,
@@ -18143,12 +18143,12 @@
           "pick": 35
         },
         {
-          "name": "Vision",
-          "pick": 5
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 28
+        },
+        {
+          "name": "Vision",
+          "pick": 5
         }
       ],
       "stats": {
@@ -18327,12 +18327,12 @@
       ],
       "gears": [
         {
-          "name": "Vision",
-          "pick": 1
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 5
+        },
+        {
+          "name": "Vision",
+          "pick": 1
         }
       ],
       "stats": {
@@ -18511,20 +18511,20 @@
       ],
       "gears": [
         {
-          "name": "Shield",
-          "pick": 24
+          "name": "Pet Power",
+          "pick": 25
         },
         {
-          "name": "Vision",
-          "pick": 2
+          "name": "Shield",
+          "pick": 24
         },
         {
           "name": "Gadget Cooldown",
           "pick": 7
         },
         {
-          "name": "Pet Power",
-          "pick": 25
+          "name": "Vision",
+          "pick": 2
         }
       ],
       "stats": {
@@ -18707,12 +18707,12 @@
           "pick": 38
         },
         {
-          "name": "Vision",
-          "pick": 7
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 11
+        },
+        {
+          "name": "Vision",
+          "pick": 7
         }
       ],
       "stats": {
@@ -19079,20 +19079,20 @@
       ],
       "gears": [
         {
-          "name": "Shield",
-          "pick": 23
+          "name": "Super Charge",
+          "pick": 30
         },
         {
-          "name": "Vision",
-          "pick": 3
+          "name": "Shield",
+          "pick": 23
         },
         {
           "name": "Gadget Cooldown",
           "pick": 5
         },
         {
-          "name": "Super Charge",
-          "pick": 30
+          "name": "Vision",
+          "pick": 3
         }
       ],
       "stats": {
@@ -19275,12 +19275,12 @@
           "pick": 32
         },
         {
-          "name": "Vision",
-          "pick": 3
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 5
+        },
+        {
+          "name": "Vision",
+          "pick": 3
         }
       ],
       "stats": {
@@ -19463,12 +19463,12 @@
           "pick": 30
         },
         {
-          "name": "Vision",
-          "pick": 1
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 6
+        },
+        {
+          "name": "Vision",
+          "pick": 1
         }
       ],
       "stats": {
@@ -19651,12 +19651,12 @@
           "pick": 26
         },
         {
-          "name": "Vision",
-          "pick": 2
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 6
+        },
+        {
+          "name": "Vision",
+          "pick": 2
         }
       ],
       "stats": {
@@ -19839,12 +19839,12 @@
           "pick": 30
         },
         {
-          "name": "Vision",
-          "pick": 4
-        },
-        {
           "name": "Gadget Cooldown",
           "pick": 13
+        },
+        {
+          "name": "Vision",
+          "pick": 4
         }
       ],
       "stats": {
