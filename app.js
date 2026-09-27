@@ -127,15 +127,16 @@ function componentCatalogItem(type,item,b=null){
  return [...local,...componentLocal,...pool].find(x=>x&&((x.id!=null&&item.id!=null&&String(x.id)===String(item.id))||norm(x.name)===norm(item.name)))||null;
 }
 function compIcon(type,item,b=null){
- const sym={gadgets:'',starPowers:'',gears:'',hyperCharges:'',buffies:'',overdrives:'',gadget:'',star:'',gear:'',hc:'',buffie:'',overdrive:''}[type]??'';
- if(!item)return '<span class="compIcon fallbackIcon" aria-hidden="true"></span>';
+ const id=String(item?.id??'');
+ const pending=/^pending:/i.test(id);
+ if(!item)return '<span class="compIcon fallbackIcon" aria-hidden="true">—</span>';
+ if(pending)return '<span class="compIcon pendingIcon" aria-label="Data pending">?</span>';
  const paths={gadgets:'gadgets/borderless',starPowers:'star-powers/borderless',gears:'gears/regular',hyperCharges:'hypercharges/regular',buffies:'buffies/regular',overdrives:'overdrives/regular',gadget:'gadgets/borderless',star:'star-powers/borderless',gear:'gears/regular',hc:'hypercharges/regular',buffie:'buffies/regular',overdrive:'overdrives/regular'};
  const mapped=componentCatalogItem(type,item,b);
- const id=String(item.id??'');
- const fallbackPath=paths[type]&&item.id&&!/^(gear|buffie|overdrive):/i.test(id)?img(paths[type],item.id):'';
+ const fallbackPath=paths[type]&&item.id?img(paths[type],item.id):'';
  const src=localAsset(type,item,b)||mapped?.imageUrl||fallbackPath;
- if(src)return '<img class="compIcon" loading="lazy" src="'+esc(src)+'" alt="" aria-hidden="true" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'"><span class="compIcon fallbackIcon" style="display:none" aria-hidden="true"></span>';
- return '<span class="compIcon fallbackIcon" aria-label="'+esc(item?.name||'Component')+'"></span>';
+ if(!src)return '<span class="compIcon pendingIcon" aria-label="Image unavailable">?</span>';
+ return '<img class="compIcon" loading="lazy" src="'+esc(src)+'" alt="" aria-hidden="true" onerror="this.replaceWith(Object.assign(document.createElement(\'span\'),{className:\'compIcon pendingIcon\',textContent:\'?\'}))">';
 }
 function comp(type,label,item){return '<div class="comp '+(item?'owned':'missing')+'">'+compIcon(type,item)+'<div><span>'+label+'</span><b>'+esc(item?.name||'Not owned')+'</b></div></div>'}
 function first(a){return Array.isArray(a)&&a.length?a[0]:null}
