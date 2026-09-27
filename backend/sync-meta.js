@@ -187,7 +187,8 @@ async function main(){
       maps:Object.fromEntries((e.noff?.maps||[]).map(r=>[r.name,{score:r.score,winRate:r.winRate,pickRate:r.pickRate,source:'NOFF',confidence:r.pickRate>=1?'medium':'low'}]))
     };
   }
-  const meta={schemaVersion:2,updatedAt:now,source:'BrawlMetrics + Brawl Time Ninja + NOFF',method:'Global + mode snapshot. Mode rankings use BrawlMetrics Wilson-adjusted win rate; map-specific data is only shown when a verified map snapshot exists.',coverage:{brawlers:list.length,modes:modeOk,totalModes:Object.keys(modeSlugs).length},entries:metaEntries};
+  const modeBrawlerCoverage=Object.values(metaEntries).filter(e=>Object.keys(e.modes||{}).length>0).length;
+  const meta={schemaVersion:2,updatedAt:now,source:'Brawl Time Ninja + NOFF + optional BrawlMetrics fallback',method:'Global battle signal from Brawl Time Ninja; mode and map context from NOFF when available; BrawlMetrics is an optional fallback.',coverage:{brawlers:list.length,modes:modeBrawlerCoverage,totalModes:Object.keys(modeSlugs).length},entries:metaEntries};
   fs.writeFileSync(META_PATH,JSON.stringify(meta,null,2)+'\n');
 
   const catalogOut=list.map(b=>({
