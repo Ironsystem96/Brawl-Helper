@@ -693,3 +693,11 @@ body{color:#f4f7fb}
 .gearOption small{font-size:8px;color:#9eacc1}
 .gearOption strong{margin-left:auto;color:#ffd34e;font-size:7px;white-space:nowrap}
 .gearRecommended{border-color:#ffd34e;background:rgba(255,211,78,.06)}
+
+
+/* Real component icons: no text baked into fallback containers */
+.compIcon{object-fit:contain;display:block}
+.fallbackIcon{font-size:0!important;line-height:0!important}
+.fallbackIcon:before,.fallbackIcon:after{display:none!important;content:none!important}
+.componentImageFallback{width:32px;height:32px;display:flex;align-items:center;justify-content:center;border:1px solid #405274;border-radius:8px;background:#17243a;overflow:hidden}
+.componentImageFallback i{display:none}
