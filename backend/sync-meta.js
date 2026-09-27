@@ -53,10 +53,15 @@ function parseNoff(html,brawler){
   gears.push(...parsedGears);
   // NOFF exposes the current Overdrive and the three Buffie effects in the brawler page.
   // Keep them as named guide data so the frontend does not have to infer them from slots.
-  const odMatch=text.match(/Overdrive\s+([^%]{2,90}?)(?:\s+Buffs while|\s+Damage|\s+Speed|\s+Shield|\s+Buffie:)/i);
+  const odPatterns=[
+    /Overdrive\s+(?:Image\s*:?\s*)?([A-Z][A-Za-z0-9&'’:+.\- ]{2,70}?)(?=\s+(?:Image\s*:?\s*)?Super\b|\s+Super\b|\s+Buffie\b|\s+Damage\b|\s+Speed\b|\s+Shield\b)/i,
+    /Overdrive[\s\S]{0,250}?(?:Image\s*:?\s*)?([A-Z][A-Za-z0-9&'’:+.\- ]{2,70}?)(?=\s+(?:Super|Buffie))/i
+  ];
+  let odMatch=null;
+  for(const re of odPatterns){const m=text.match(re);if(m){odMatch=m;break}}
   if(odMatch){
-    const name=odMatch[1].trim().replace(/^Image\s+/i,'').replace(/\s+/g,' ');
-    if(name && !/^Buffie$/i.test(name)) overdrives.push({id:'od:'+norm(brawler?.name||name).replace(/ /g,'_'),name,description:''});
+    const name=odMatch[1].trim().replace(/^Image\s*:?\s*/i,'').replace(/\s+/g,' ');
+    if(name && !/^(?:Overdrive|Super|Buffie)$/i.test(name)) overdrives.push({id:'od:'+norm(brawler?.name||name).replace(/ /g,'_'),name,description:''});
   }
   const bNames=[
     ...(brawler?.gadgets||[]).map(x=>({slot:'gadget',name:x?.name})),
@@ -64,7 +69,7 @@ function parseNoff(html,brawler){
   ];
   for(const x of bNames){
     if(!x.name)continue;
-    const re=new RegExp(escRe(x.name)+'[\s\S]{0,900}?Buffie\s*:\s*([^\.]{10,500}\.)','i');
+    const re=new RegExp(escRe(x.name)+'[\\s\\S]{0,1200}?(?:Image\\s*:?\\s*)?Buffie(?:\\s*:\\s*|\\s+)([^\\.]{10,500}\\.)','i');
     const bm=text.match(re);
     if(bm)buffies.push({id:'buffie:'+x.slot+':'+norm(brawler.name).replace(/ /g,'_'),slot:x.slot,source:x.name,name:x.name+' Buffie',description:bm[1].trim()});
   }
