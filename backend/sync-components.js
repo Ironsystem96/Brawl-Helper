@@ -4,16 +4,28 @@ async function get(url){const ctl=new AbortController(),t=setTimeout(()=>ctl.abo
 async function brawlFindData(name){
  const slug=String(name||'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
  const url='https://www.brawlfind.com/it/brawlers/'+slug;
+ const direct=async()=>{const ctl=new AbortController(),t=setTimeout(()=>ctl.abort(),8000);try{const r=await fetch(url,{headers:{'user-agent':'Mozilla/5.0 BrawlHelper/1.0'},signal:ctl.signal});if(!r.ok)throw Error('HTTP '+r.status);return await r.text()}finally{clearTimeout(t)}};
+ const parseHtml=html=>{
+  const clean=x=>String(x||'').replace(/&amp;/g,'&').replace(/&#39;|&apos;/g,"'").replace(/&quot;/g,'"').replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim();
+  const imgs=[],ir=/<img\\b[^>]*>/gi;let m;while((m=ir.exec(html))){const tag=m[0],src=tag.match(/(?:src|data-src)=["']([^"']+)["']/i),alt=tag.match(/(?:alt|title)=["']([^"']+)["']/i);if(src?.[1])imgs.push({url:src[1],alt:clean(alt?.[1]||'')})}
+  const normAlt=x=>clean(x).toUpperCase().replace(/[^A-Z0-9À-ÖØ-Ý]+/g,' ').trim(),oi=imgs.findIndex(x=>normAlt(x.alt)==='OVERDRIVE');
+  if(oi<0)return null;
+  const generic=new Set(['OVERDRIVE','SUPER','BUFFIE DELL OVERDRIVE','BUFFIE DELL\'OVERDRIVE','GADGET','ABILITÀ STELLARE','EQUIPAGGIAMENTO']);
+  const overImg=imgs.slice(oi+1).find(x=>x.alt&&!generic.has(normAlt(x.alt))&&!normAlt(x.alt).startsWith('BUFFIE'));
+  if(!overImg?.alt)return null;
+  const text=clean(html),pos=text.toUpperCase().indexOf('OVERDRIVE'),tail=pos>=0?text.slice(pos,pos+1800):'';
+  return {url,name:overImg.alt,imageUrl:overImg.url||null,raw:tail};
+ };
+ try{const html=await direct();const parsed=parseHtml(html);if(parsed)return parsed}catch(e){}
  try{
-  const html=await (async()=>{const ctl=new AbortController(),t=setTimeout(()=>ctl.abort(),8000);try{const r=await fetch(url,{headers:{'user-agent':'BrawlHelper-ComponentSync/1.0'},signal:ctl.signal});if(!r.ok)throw Error('HTTP '+r.status);return await r.text()}finally{clearTimeout(t)}})();
-  const clean=x=>String(x||'').replace(/&amp;/g,'&').replace(/&#39;/g,"'").replace(/&quot;/g,'"').replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim();
-  const imgs=[];const ir=/<img\b[^>]*>/gi;let m;while((m=ir.exec(html))){const tag=m[0],src=tag.match(/(?:src|data-src)=["']([^"']+)["']/i),alt=tag.match(/(?:alt|title)=["']([^"']+)["']/i);if(src?.[1])imgs.push({url:src[1],alt:clean(alt?.[1]||'')})}
-  const altNorm=x=>clean(x).toUpperCase().replace(/[^A-Z0-9À-ÖØ-Ý]+/g,' ').trim();
-  const overIndex=imgs.findIndex(x=>altNorm(x.alt)==='OVERDRIVE');
-  if(overIndex<0)return {url};
-  const overImg=imgs.slice(overIndex+1).find(x=>x.alt&&altNorm(x.alt)!=='SUPER'&&!altNorm(x.alt).startsWith('BUFFIE'))||null;
-  const text=clean(html),up=text.toUpperCase(),pos=up.indexOf('OVERDRIVE'),tail=pos>=0?text.slice(pos,pos+3500):'';
-  return {url,name:overImg?.alt?clean(overImg.alt):null,imageUrl:overImg?.url||null,raw:tail};
+  const proxy='https://r.jina.ai/http://www.brawlfind.com/it/brawlers/'+slug;
+  const ctl=new AbortController(),t=setTimeout(()=>ctl.abort(),10000);
+  let md;try{const r=await fetch(proxy,{headers:{'user-agent':'BrawlHelper-ComponentSync/1.0'},signal:ctl.signal});if(!r.ok)throw Error('HTTP '+r.status);md=await r.text()}finally{clearTimeout(t)}
+  const lines=md.split(/\r?\n/).map(x=>x.trim()).filter(Boolean),idx=lines.findIndex(x=>/^#+\\s*OVERDRIVE/i.test(x)||/^OVERDRIVE$/i.test(x));if(idx<0)return {url};
+  const candidates=lines.slice(idx+1,idx+12).filter(x=>x&&!/^#+\\s*(SUPER|BUFFIE|GADGET|ABILIT)/i.test(x)&&!/^Image:\s*(Overdrive|Super|Buffie)/i.test(x));
+  const nameLine=candidates.find(x=>!/^\*/.test(x)&&x.length>2)||null;
+  const imageMatch=md.match(/!\\[[^\\]]*\\]\\(([^)]+)\\)/g)?.find(x=>nameLine&&x.toUpperCase().includes(nameLine.toUpperCase()));
+  return {url,name:nameLine?nameLine.replace(/^Image:\s*/i,'').replace(/^#+\s*/,'').trim():null,imageUrl:imageMatch?imageMatch.match(/\\(([^)]+)\\)/)?.[1]||null:null,raw:lines.slice(idx,idx+12).join(' ')};
  }catch(e){return {url,error:e.message}}
 }
 const norm=s=>String(s||'').toUpperCase().replace(/[^A-Z0-9]+/g,' ').trim();
