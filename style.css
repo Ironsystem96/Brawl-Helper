@@ -734,3 +734,17 @@ body{color:#f4f7fb}
  .miniBuffie b{font-size:6.8px}
  .miniBuffie .buffieCheck{width:18px;height:18px;flex-basis:18px}
 }
+
+
+/* Component strip labels: make slot meaning explicit without adding card height */
+.miniBuildRow .miniItem{position:relative;padding-top:14px}
+.miniBuildRow .miniItem:before{
+ position:absolute;top:3px;left:4px;right:4px;text-align:center;
+ font-size:6px;line-height:1;letter-spacing:.45px;font-weight:950;color:#8293ad;
+}
+.miniBuildRow .miniItem:nth-child(1):before{content:'GADGET'}
+.miniBuildRow .miniItem:nth-child(2):before{content:'STAR POWER'}
+.miniBuildRow .miniItem:nth-child(3):before{content:'GEAR 1'}
+.miniBuildRow .miniItem:nth-child(4):before{content:'GEAR 2'}
+.miniBuildRow .miniItem:nth-child(5):before{content:'OVERDRIVE';color:#ffb66b}
+.miniBuildRow .miniItem:nth-child(5){background:linear-gradient(180deg,rgba(255,138,69,.08),rgba(17,28,47,.65))}
