@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-27T18:56:01.035Z",
+  "generatedAt": "2026-09-27T19:55:53.290Z",
   "sources": [
     {
       "name": "BrawlAPI Brawler catalog",
@@ -341,7 +341,7 @@
           "winRate": 64.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/shelly",
@@ -850,7 +850,7 @@
           "winRate": 60.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/colt",
@@ -1359,7 +1359,7 @@
           "winRate": 64.8,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bull",
@@ -1868,7 +1868,7 @@
           "winRate": 62,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/brock",
@@ -2377,7 +2377,7 @@
           "winRate": 61.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/rico",
@@ -2886,7 +2886,7 @@
           "winRate": 62.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/spike",
@@ -3321,7 +3321,7 @@
           "winRate": 65.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/barley",
@@ -3756,7 +3756,7 @@
           "winRate": 66.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/jessie",
@@ -4265,7 +4265,7 @@
           "winRate": 68.8,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/nita",
@@ -4700,7 +4700,7 @@
           "winRate": 60.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/dynamike",
@@ -5638,7 +5638,7 @@
           "winRate": 57.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/mortis",
@@ -6147,7 +6147,7 @@
           "winRate": 60.8,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/crow",
@@ -6582,7 +6582,7 @@
           "winRate": 64.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/poco",
@@ -7091,7 +7091,7 @@
           "winRate": 64.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bo",
@@ -7526,7 +7526,7 @@
           "winRate": 60.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/piper",
@@ -7808,16 +7808,7 @@
           }
         ],
         "hyperCharges": [],
-        "overdrives": [
-          {
-            "id": "overdrive:16000016",
-            "name": "GADGET GENERATORE DI IMPULSI Pam fa emettere alla torretta una scarica curativa che fa recuperare a se stessa e agli alleati 2000 punti salute, purché si trovino vicino al dispositivo. Periodo di attesa: 12 secondi RUBAFERRAGLIA Ogni volta che l'attacco di Pam successivo all'attivazione del gadget va a segno, rimuove il 25% dei colpi massimi dei brawler avversari colpiti. Pam si tiene il 50% dei colpi rubati. Periodo di attesa: 17 secondi",
-            "description": "OVERDRIVE AFFETTO MATERNO SUPER La torretta cura quando viene schierata e continua a curare i brawler oltre il valore massimo, dando loro uno scudo che perde efficacia nel tempo. VELOCITÀ +20% DANNI +5% DIFESA +5% GADGET GENERATORE DI IMPULSI Pam fa emettere alla torretta una scarica curativa che fa recuperare a se stessa e agli alleati 2000 punti salute, purché si trovino vicino al dispositivo. Periodo di attesa: 12 secondi RUBAFERRAGLIA Ogni volta che l'attacco di Pam successivo all'attivazione del gadget va a segno, rimuove il 25% dei colpi massimi dei brawler avversari colpiti. Pam si tiene il 50% dei colpi rubati. Periodo di attesa: 17 secondi ABILITÀ STELLARE ABBRACCIO MATERNO Quando Pam colpisce i brawler nemici con la Sparascarti, cura sia sé stessa sia gli alleati vicini con 100 punti salute. VENDETTA MATERNA La torretta guaritrice infligge anche 1000 punti danno al secondo ai nemici. EQUIPAGGIAMENTO VELOCITÀ Migliora del 15% la VELOCITÀ del brawler tra i cespugli. SALUTE La RIGENERAZIONE DELLA SALUTE è più efficace del 50% . DANNI Il brawler causa il 15% di DANNI IN PIÙ quando la salute è sotto il 50% . SUPERVISTA RENDE VISIBILI i nemici per 2 secondi dopo averli colpiti. DIFESA Dà al brawler uno SCUDO danneggiabile da 900 PUNTI SALUTE, che si rigenera in 10 secondi quando il brawler ha la salute piena. ACCELERAGADGET Riduce i tempi di ripristino dei gadget del 15% . SUPERTORRETTA Aumenta le capacità curative della torretta di Pam del 20% . Le migliori modalità 11 ORDINA PER Tasso di vittoria Tendenza di vittoria Tasso di scelta Tendenza di scelta Mode Tasso di vittoria: 71,78% Tasso di scelta: 6,46% K.O. 5V5 Tasso di vittoria: 56,45% (+1,61%) Tasso di scelta: 2,50% (+0,86%) DOMINIO Tasso di vittoria: 59,66% (-4,80%) Tasso di scelta: 3,06% (-0,74%) DUELLI Tasso di vittoria: 56,09% (+3,74%) Tasso di scelta: 2,17% (+0,74%) ARRAFFAGEMME Tasso di vittoria: 53,86% (-2,18%) Tasso di scelta: 1,09% (+0,14%) FOOTBRAWL Tasso di vittoria: 52,73% Tasso di scelta: 1,43% K.O. Tasso di vittoria: 38,29% (+5,83%) Tasso di scelta: 0,87% (-0,11%) BRAWL HOCKEY Tasso di vittoria: 46,26% (+0,15%) Tasso di scelta: 3,12% (-0,26%) SOPRAVVIVENZA (IN TRE) Tasso di vittoria: 51,78% (-0,07%) Tasso di scelta: 1,71% (-0,36%) ARENA DEI BRAWLER Tasso di vittoria: 43,40% (+0,54%) Tasso di scelta: 3,63% (+0,34%) SOPRAVVIVENZA (SOLO) Tasso di vittoria: 35,16% (-4,29%) Tasso di scelta: 4,04% (-0,46%) SOPRAVVIVENZA (IN DUE) Le migliori mappe 132 ORDINA PER Tasso di vittoria Tendenza ",
-            "source": "BrawlFind",
-            "sourceUrl": "https://www.brawlfind.com/it/brawlers/pam",
-            "imageUrl": "https://cdn.brawlfind.com/logo.png"
-          }
-        ],
+        "overdrives": [],
         "buffies": {
           "gadget": [],
           "starPower": [],
@@ -7965,7 +7956,7 @@
           "winRate": 69.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/pam",
@@ -8123,7 +8114,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 93,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -8136,18 +8127,19 @@
           "starPowers": true,
           "gears": true,
           "hyperCharge": false,
-          "overdrive": true,
+          "overdrive": false,
           "buffies": true,
           "meta": true
         },
-        "optionalKnown": 2,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
-          "overdrive": "VERIFIED",
+          "overdrive": "UNKNOWN",
           "buffies": "VERIFIED"
         },
         "missing": [
-          "hyperCharge"
+          "hyperCharge",
+          "overdrive"
         ]
       },
       "sources": {
@@ -8399,7 +8391,7 @@
           "winRate": 66.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/tara",
@@ -8834,7 +8826,7 @@
           "winRate": 66.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/darryl",
@@ -9269,7 +9261,7 @@
           "winRate": 63.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/penny",
@@ -9778,7 +9770,7 @@
           "winRate": 65.8,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/frank",
@@ -10213,7 +10205,7 @@
           "winRate": 62.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gene",
@@ -10648,7 +10640,7 @@
           "winRate": 62.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/tick",
@@ -11157,7 +11149,7 @@
           "winRate": 62.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/leon",
@@ -11592,7 +11584,7 @@
           "winRate": 71,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/rosa",
@@ -12027,7 +12019,7 @@
           "winRate": 65.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/carl",
@@ -12536,7 +12528,7 @@
           "winRate": 64.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bibi",
@@ -13045,7 +13037,7 @@
           "winRate": 66,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/8-bit",
@@ -13480,7 +13472,7 @@
           "winRate": 68.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/sandy",
@@ -13915,7 +13907,7 @@
           "winRate": 63.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bea",
@@ -14197,16 +14189,7 @@
           }
         ],
         "hyperCharges": [],
-        "overdrives": [
-          {
-            "id": "overdrive:16000030",
-            "name": "DURATA OVERDRIVE: +2 secondi VELOCITÀ +20% DANNI +5% DIFESA +5%",
-            "description": "OVERDRIVE ANNEBBIAMENTO TOTALE SUPER Emz sbalza i nemici ai margini dell'aura tossica creata con la super e poi li irrora con una generosa dose di lacca corrosiva. Avvelena i nemici con la lacca. DURATA OVERDRIVE: +2 secondi VELOCITÀ +20% DANNI +5% DIFESA +5% GADGET BRACCIALE DELLA FRIENDZONE Emz spruzza della lacca per capelli, che respinge indietro i nemici e causa 500 punti danno. Respinge ulteriormente i nemici e li lascia storditi per 1 secondi, se vengono sbattuti addosso a un ostacolo. Periodo di attesa: 19 secondi NUBE ACIDA Emz spruzza della lacca, che attraversa gli ostacoli e causa 1120 punti danno. Rallenta i nemici colpiti. Periodo di attesa: 16 secondi ABILITÀ STELLARE ARIA VIZIATA I nemici colpiti dai fumi tossici della lacca di Emz subiscono danni che aumentano del 25% per ogni colpo ricevuto. Gli avversari colpiti con l'attacco base causeranno il 15% dei danni in meno per 4 secondi. HYPE Emz recupera 624 punti salute al secondo per ogni brawler nemico all'interno dell'aura tossica della sua super. Attivando la super, Emz è immune a qualsiasi danno per 0,5 secondi. EQUIPAGGIAMENTO VELOCITÀ Migliora del 15% la VELOCITÀ del brawler tra i cespugli. SALUTE La RIGENERAZIONE DELLA SALUTE è più efficace del 50% . DANNI Il brawler causa il 15% di DANNI IN PIÙ quando la salute è sotto il 50% . SUPERVISTA RENDE VISIBILI i nemici per 2 secondi dopo averli colpiti. DIFESA Dà al brawler uno SCUDO danneggiabile da 900 PUNTI SALUTE, che si rigenera in 10 secondi quando il brawler ha la salute piena. ACCELERAGADGET Riduce i tempi di ripristino dei gadget del 15% . Le migliori modalità 19 ORDINA PER Tasso di vittoria Tendenza di vittoria Tasso di scelta Tendenza di scelta Mode Tasso di vittoria: 71,54% (+19,74%) Tasso di scelta: 11,15% (+5,13%) RAPINA Tasso di vittoria: 49,13% (+1,71%) Tasso di scelta: 5,31% (+1,47%) K.O. Tasso di vittoria: 53,58% (+2,25%) Tasso di scelta: 4,66% (+1,51%) RICERCATI Tasso di vittoria: 59,28% (-1,69%) Tasso di scelta: 26,53% (-2,60%) FOOTBRAWL 5V5 Tasso di vittoria: 64,99% (-0,05%) Tasso di scelta: 45,13% (+1,68%) ARENA DEI BRAWLER Tasso di vittoria: 55,07% (+0,99%) Tasso di scelta: 15,51% (-0,52%) BASKET BRAWL Tasso di vittoria: 54,82% (+0,96%) Tasso di scelta: 24,03% (+1,01%) DOMINIO Tasso di vittoria: 47,22% Tasso di scelta: 13,71% ARRAFFAGEMME 5V5 Tasso di vittoria: 52,25% (-0,91%) Tasso di scelta: 26,61% (-0,36%) SOPRAVVIVENZA (IN TRE) Tasso di vittoria: 51,55% (-0,75%) Tasso di scelta: 12,44% (-4,17%) FOOTBRAWL Tasso di ",
-            "source": "BrawlFind",
-            "sourceUrl": "https://www.brawlfind.com/it/brawlers/emz",
-            "imageUrl": "https://cdn.brawlfind.com/logo.png"
-          }
-        ],
+        "overdrives": [],
         "buffies": {
           "gadget": [
             {
@@ -14433,7 +14416,7 @@
           "winRate": 63.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/emz",
@@ -14591,7 +14574,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 93,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -14604,18 +14587,19 @@
           "starPowers": true,
           "gears": true,
           "hyperCharge": false,
-          "overdrive": true,
+          "overdrive": false,
           "buffies": true,
           "meta": true
         },
-        "optionalKnown": 2,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
-          "overdrive": "VERIFIED",
+          "overdrive": "UNKNOWN",
           "buffies": "VERIFIED"
         },
         "missing": [
-          "hyperCharge"
+          "hyperCharge",
+          "overdrive"
         ]
       },
       "sources": {
@@ -15370,7 +15354,7 @@
           "winRate": 62.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/max",
@@ -15805,7 +15789,7 @@
           "winRate": 70.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/jacky",
@@ -16240,7 +16224,7 @@
           "winRate": 64.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gale",
@@ -16675,7 +16659,7 @@
           "winRate": 63.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/nani",
@@ -17110,7 +17094,7 @@
           "winRate": 66.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/sprout",
@@ -17619,7 +17603,7 @@
           "winRate": 61.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/surge",
@@ -18128,7 +18112,7 @@
           "winRate": 61.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/colette",
@@ -18563,7 +18547,7 @@
           "winRate": 67.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/amber",
@@ -18998,7 +18982,7 @@
           "winRate": 67.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/lou",
@@ -19433,7 +19417,7 @@
           "winRate": 60.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/byron",
@@ -19928,7 +19912,7 @@
           "winRate": 61,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/edgar",
@@ -20363,7 +20347,7 @@
           "winRate": 64.6,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/ruffs",
@@ -20798,7 +20782,7 @@
           "winRate": 60.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/stu",
@@ -21080,16 +21064,7 @@
           }
         ],
         "hyperCharges": [],
-        "overdrives": [
-          {
-            "id": "overdrive:16000046",
-            "name": "GADGET MALLOPPO ESPLOSIVO Belle posiziona una trappola che esplode quando è innescata da un nemico, infliggendo 624 punti danno e rallentando per 3 secondi chiunque si trovi nel raggio dell'esplosione. Periodo di attesa: 20 secondi INVERTITORE DI POLARITÀ L'elettrocolpo che Belle lancia dopo l'attivazione del gadget rimbalza sulle pareti. Periodo di attesa: 14 secondi",
-            "description": "OVERDRIVE FORZA MAGNETICA SUPER Il colpo con cui Belle marca gli avversari segue automaticamente il bersaglio più vicino. VELOCITÀ +20% DANNI +5% DIFESA +5% GADGET MALLOPPO ESPLOSIVO Belle posiziona una trappola che esplode quando è innescata da un nemico, infliggendo 624 punti danno e rallentando per 3 secondi chiunque si trovi nel raggio dell'esplosione. Periodo di attesa: 20 secondi INVERTITORE DI POLARITÀ L'elettrocolpo che Belle lancia dopo l'attivazione del gadget rimbalza sulle pareti. Periodo di attesa: 14 secondi ABILITÀ STELLARE CARICA POSITIVA Belle riduce i danni ricevuti del 20% ogni volta che l'elettrocolpo va a segno. STATO DI SHOCK Gli avversari marcati dalla super di Belle non possono ricaricare il proprio attacco per 5 secondi. EQUIPAGGIAMENTO VELOCITÀ Migliora del 15% la VELOCITÀ del brawler tra i cespugli. SALUTE La RIGENERAZIONE DELLA SALUTE è più efficace del 50% . DANNI Il brawler causa il 15% di DANNI IN PIÙ quando la salute è sotto il 50% . SUPERVISTA RENDE VISIBILI i nemici per 2 secondi dopo averli colpiti. DIFESA Dà al brawler uno SCUDO danneggiabile da 900 PUNTI SALUTE, che si rigenera in 10 secondi quando il brawler ha la salute piena. ACCELERAGADGET Riduce i tempi di ripristino dei gadget del 15% . VELOCITÀ DI RICARICA RICARICA i colpi più in fretta del 15% . Le migliori modalità 17 ORDINA PER Tasso di vittoria Tendenza di vittoria Tasso di scelta Tendenza di scelta Mode Tasso di vittoria: 67,58% (+1,83%) Tasso di scelta: 11,27% (+0,58%) K.O. 5V5 Tasso di vittoria: 65,79% (-1,61%) Tasso di scelta: 9,10% (-0,41%) FOOTBRAWL 5V5 Tasso di vittoria: 67,06% (+3,86%) Tasso di scelta: 6,71% (+2,26%) BRAWL HOCKEY 5V5 Tasso di vittoria: 55,37% (-5,93%) Tasso di scelta: 9,04% (-0,52%) ANNIENTAMENTO 5V5 Tasso di vittoria: 58,85% (+3,00%) Tasso di scelta: 8,70% (+1,29%) ANNIENTAMENTO Tasso di vittoria: 50,97% (+0,59%) Tasso di scelta: 2,90% (-4,49%) DUELLI Tasso di vittoria: 47,64% (-4,01%) Tasso di scelta: 1,03% (-0,46%) FOOTBRAWL Tasso di vittoria: 51,08% (+1,74%) Tasso di scelta: 7,55% (-1,43%) K.O. Tasso di vittoria: 46,30% (+1,11%) Tasso di scelta: 1,31% (-1,82%) BRAWL HOCKEY Tasso di vittoria: 51,88% (+0,73%) Tasso di scelta: 11,85% (+1,55%) RICERCATI Tasso di vittoria: 47,88% (+1,98%) Tasso di scelta: 2,16% (+0,12%) ARRAFFAGEMME Tasso di vittoria: 47,54% (-2,47%) Tasso di scelta: 5,69% (-0,10%) SOPRAVVIVENZA (IN TRE) Tasso di vittoria: 48,35% (+0,22%) Tasso di scelta: 1,70% (-0,03%) ARENA DEI BRAWLER Tasso di vittoria: 44,16% (+0,9",
-            "source": "BrawlFind",
-            "sourceUrl": "https://www.brawlfind.com/it/brawlers/belle",
-            "imageUrl": "https://cdn.brawlfind.com/logo.png"
-          }
-        ],
+        "overdrives": [],
         "buffies": {
           "gadget": [],
           "starPower": [],
@@ -21242,7 +21217,7 @@
           "winRate": 65.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/belle",
@@ -21400,7 +21375,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 93,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -21413,18 +21388,19 @@
           "starPowers": true,
           "gears": true,
           "hyperCharge": false,
-          "overdrive": true,
+          "overdrive": false,
           "buffies": true,
           "meta": true
         },
-        "optionalKnown": 2,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
-          "overdrive": "VERIFIED",
+          "overdrive": "UNKNOWN",
           "buffies": "VERIFIED"
         },
         "missing": [
-          "hyperCharge"
+          "hyperCharge",
+          "overdrive"
         ]
       },
       "sources": {
@@ -21676,7 +21652,7 @@
           "winRate": 62.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/squeak",
@@ -22111,7 +22087,7 @@
           "winRate": 64.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/grom",
@@ -22546,7 +22522,7 @@
           "winRate": 63.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/buzz",
@@ -23055,7 +23031,7 @@
           "winRate": 63.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/griff",
@@ -23490,7 +23466,7 @@
           "winRate": 69.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/ash",
@@ -23985,7 +23961,7 @@
           "winRate": 67,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/meg",
@@ -24420,7 +24396,7 @@
           "winRate": 68.6,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/lola",
@@ -24855,7 +24831,7 @@
           "winRate": 63,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/fang",
@@ -25290,7 +25266,7 @@
           "winRate": 69.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/eve",
@@ -25725,7 +25701,7 @@
           "winRate": 69.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/janet",
@@ -26160,7 +26136,7 @@
           "winRate": 69.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bonnie",
@@ -26595,7 +26571,7 @@
           "winRate": 65.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/otis",
@@ -26877,16 +26853,7 @@
           }
         ],
         "hyperCharges": [],
-        "overdrives": [
-          {
-            "id": "overdrive:16000060",
-            "name": "GADGET CAMPO MAGNETICO Quando le Zanne metalliche rimangono al suolo, Sam può attivarle per attirare i nemici vicini a loro. Periodo di attesa: 17 secondi REPULSORI Le Zanne metalliche lanciate dopo l'attivazione del gadget rilasciano un impulso elettrico quando toccano il suolo, facendo sbalzare all'indietro i nemici a portata. Periodo di attesa: 11 secondi",
-            "description": "OVERDRIVE ZANNE FAMELICHE SUPER Gli attacchi con le Zanne metalliche sono più veloci e permettono a Sam di ricaricare completamente la super, se colpiscono un brawler nemico mentre l'overdrive è attivo. VELOCITÀ +20% DANNI +5% DIFESA +5% GADGET CAMPO MAGNETICO Quando le Zanne metalliche rimangono al suolo, Sam può attivarle per attirare i nemici vicini a loro. Periodo di attesa: 17 secondi REPULSORI Le Zanne metalliche lanciate dopo l'attivazione del gadget rilasciano un impulso elettrico quando toccano il suolo, facendo sbalzare all'indietro i nemici a portata. Periodo di attesa: 11 secondi ABILITÀ STELLARE RECUPERO ISTANTANEO Quando riprende le Zanne metalliche, Sam recupera istantaneamente il 20% della salute mancante. RICARICA REMOTA Quando le Zanne metalliche rimangono al suolo e i nemici sono accanto a loro, Sam ricarica la super. EQUIPAGGIAMENTO VELOCITÀ Migliora del 15% la VELOCITÀ del brawler tra i cespugli. SALUTE La RIGENERAZIONE DELLA SALUTE è più efficace del 50% . DANNI Il brawler causa il 15% di DANNI IN PIÙ quando la salute è sotto il 50% . SUPERVISTA RENDE VISIBILI i nemici per 2 secondi dopo averli colpiti. DIFESA Dà al brawler uno SCUDO danneggiabile da 900 PUNTI SALUTE, che si rigenera in 10 secondi quando il brawler ha la salute piena. ACCELERAGADGET Riduce i tempi di ripristino dei gadget del 15% . Le migliori modalità 14 ORDINA PER Tasso di vittoria Tendenza di vittoria Tasso di scelta Tendenza di scelta Mode Tasso di vittoria: 61,14% (+1,96%) Tasso di scelta: 2,83% (+1,21%) RAPINA Tasso di vittoria: 57,33% (+17,02%) Tasso di scelta: 1,29% (+0,58%) ARENA DEI BRAWLER Tasso di vittoria: 56,64% (+7,24%) Tasso di scelta: 2,30% (+1,33%) K.O. Tasso di vittoria: 51,01% Tasso di scelta: 3,18% DUELLI Tasso di vittoria: 54,17% (+1,71%) Tasso di scelta: 1,26% (+0,08%) BRAWL HOCKEY Tasso di vittoria: 53,97% (+0,35%) Tasso di scelta: 1,21% (-0,42%) FOOTBRAWL Tasso di vittoria: 56,74% (+3,01%) Tasso di scelta: 3,70% (-0,07%) BASKET BRAWL Tasso di vittoria: 53,57% (-2,51%) Tasso di scelta: 1,02% (+0,02%) DOMINIO Tasso di vittoria: 54,64% Tasso di scelta: 2,98% BRAWL HOCKEY 5V5 Tasso di vittoria: 46,25% (-2,39%) Tasso di scelta: 2,30% (-0,95%) SOPRAVVIVENZA (IN TRE) Tasso di vittoria: 50,54% (+2,27%) Tasso di scelta: 1,07% (+0,24%) ARRAFFAGEMME Tasso di vittoria: 45,54% (+0,54%) Tasso di scelta: 1,99% (-0,72%) SOPRAVVIVENZA (SOLO) Tasso di vittoria: 45,64% (-8,42%) Tasso di scelta: 0,99% (-0,81%) RICERCATI Tasso di vittoria: 34,99% Tasso di scelta: ",
-            "source": "BrawlFind",
-            "sourceUrl": "https://www.brawlfind.com/it/brawlers/sam",
-            "imageUrl": "https://cdn.brawlfind.com/logo.png"
-          }
-        ],
+        "overdrives": [],
         "buffies": {
           "gadget": [],
           "starPower": [],
@@ -27039,7 +27006,7 @@
           "winRate": 70.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/sam",
@@ -27197,7 +27164,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 93,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -27210,18 +27177,19 @@
           "starPowers": true,
           "gears": true,
           "hyperCharge": false,
-          "overdrive": true,
+          "overdrive": false,
           "buffies": true,
           "meta": true
         },
-        "optionalKnown": 2,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
-          "overdrive": "VERIFIED",
+          "overdrive": "UNKNOWN",
           "buffies": "VERIFIED"
         },
         "missing": [
-          "hyperCharge"
+          "hyperCharge",
+          "overdrive"
         ]
       },
       "sources": {
@@ -27473,7 +27441,7 @@
           "winRate": 65.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gus",
@@ -27908,7 +27876,7 @@
           "winRate": 70.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/buster",
@@ -28371,7 +28339,7 @@
           "winRate": 63.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/chester",
@@ -28803,7 +28771,7 @@
           "winRate": 64.6,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gray",
@@ -29266,7 +29234,7 @@
           "winRate": 60.8,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/mandy",
@@ -29698,7 +29666,7 @@
           "winRate": 70.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/r-t",
@@ -30133,7 +30101,7 @@
           "winRate": 62.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/willow",
@@ -30568,7 +30536,7 @@
           "winRate": 67.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/maisie",
@@ -31003,7 +30971,7 @@
           "winRate": 69.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/hank",
@@ -31438,7 +31406,7 @@
           "winRate": 65.6,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/cordelius",
@@ -31873,7 +31841,7 @@
           "winRate": 68.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/doug",
@@ -32308,7 +32276,7 @@
           "winRate": 67.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/pearl",
@@ -32743,7 +32711,7 @@
           "winRate": 65,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/chuck",
@@ -33178,7 +33146,7 @@
           "winRate": 70,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/charlie",
@@ -33613,7 +33581,7 @@
           "winRate": 65.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/mico",
@@ -34048,7 +34016,7 @@
           "winRate": 62.6,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/kit",
@@ -34601,16 +34569,7 @@
           }
         ],
         "hyperCharges": [],
-        "overdrives": [
-          {
-            "id": "overdrive:16000078",
-            "name": "GADGET INTONATORE Per 5 secondi, la velocità delle note di Melodie aumenta del 25% e la loro orbita copre il 60% di spazio in più. Periodo di attesa: 14 secondi BARRIERA DEL SUONO Ogni nota che orbita attorno a Melodie crea un scudo pari al 10% della sua salute massima. Periodo di attesa: 19 secondi",
-            "description": "OVERDRIVE HIT INSTANTANEA SUPER Attivando l'overdrive, Melodie aggiunge fino a 3 note dell'overdrive quando usa Tormentone, le quali causano 600 punti danno. VELOCITÀ +20% DANNI +5% DIFESA +5% GADGET INTONATORE Per 5 secondi, la velocità delle note di Melodie aumenta del 25% e la loro orbita copre il 60% di spazio in più. Periodo di attesa: 14 secondi BARRIERA DEL SUONO Ogni nota che orbita attorno a Melodie crea un scudo pari al 10% della sua salute massima. Periodo di attesa: 19 secondi ABILITÀ STELLARE RITMO SERRATO La velocità di movimento di Melodie aumenta del 6% per ogni nota che le orbita attorno. VERSIONE ESTESA Le note emesse da Melodie durano il 25% in più, prima di svanire. EQUIPAGGIAMENTO VELOCITÀ Migliora del 15% la VELOCITÀ del brawler tra i cespugli. SALUTE La RIGENERAZIONE DELLA SALUTE è più efficace del 50% . DANNI Il brawler causa il 15% di DANNI IN PIÙ quando la salute è sotto il 50% . SUPERVISTA RENDE VISIBILI i nemici per 2 secondi dopo averli colpiti. DIFESA Dà al brawler uno SCUDO danneggiabile da 900 PUNTI SALUTE, che si rigenera in 10 secondi quando il brawler ha la salute piena. ACCELERAGADGET Riduce i tempi di ripristino dei gadget del 15% . Le migliori modalità 16 ORDINA PER Tasso di vittoria Tendenza di vittoria Tasso di scelta Tendenza di scelta Mode Tasso di vittoria: 58,43% (+2,43%) Tasso di scelta: 18,89% (+3,78%) RAPINA Tasso di vittoria: 63,14% (+0,99%) Tasso di scelta: 13,24% (+0,44%) FOOTBRAWL 5V5 Tasso di vittoria: 68,05% (-1,83%) Tasso di scelta: 19,41% (-1,33%) BRAWL HOCKEY 5V5 Tasso di vittoria: 60,58% Tasso di scelta: 12,78% ANNIENTAMENTO Tasso di vittoria: 51,31% (+4,17%) Tasso di scelta: 1,97% (+0,66%) ARRAFFAGEMME Tasso di vittoria: 53,75% (+0,16%) Tasso di scelta: 8,25% (+0,43%) BRAWL HOCKEY Tasso di vittoria: 54,99% (+3,97%) Tasso di scelta: 4,65% (+1,75%) FOOTBRAWL Tasso di vittoria: 53,20% (+5,98%) Tasso di scelta: 3,77% (-0,53%) BASKET BRAWL Tasso di vittoria: 44,51% (-4,40%) Tasso di scelta: 1,16% (-0,24%) K.O. Tasso di vittoria: 50,24% (+3,12%) Tasso di scelta: 2,79% (+1,13%) ARENA DEI BRAWLER Tasso di vittoria: 49,08% (-2,16%) Tasso di scelta: 1,58% (+0,16%) DOMINIO Tasso di vittoria: 46,09% Tasso di scelta: 2,18% DUELLI Tasso di vittoria: 45,55% (-5,31%) Tasso di scelta: 4,42% (-0,32%) SOPRAVVIVENZA (IN TRE) Tasso di vittoria: 47,38% (+1,62%) Tasso di scelta: 1,05% (-0,06%) RICERCATI Tasso di vittoria: 42,06% (-2,13%) Tasso di scelta: 4,91% (-0,65%) SOPRAVVIVENZA (SOLO) Tasso di vittoria: 35,80% (-3,52",
-            "source": "BrawlFind",
-            "sourceUrl": "https://www.brawlfind.com/it/brawlers/melodie",
-            "imageUrl": "https://cdn.brawlfind.com/logo.png"
-          }
-        ],
+        "overdrives": [],
         "buffies": {
           "gadget": [],
           "starPower": [],
@@ -34763,7 +34722,7 @@
           "winRate": 66.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/melodie",
@@ -34921,7 +34880,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 93,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -34934,18 +34893,19 @@
           "starPowers": true,
           "gears": true,
           "hyperCharge": false,
-          "overdrive": true,
+          "overdrive": false,
           "buffies": true,
           "meta": true
         },
-        "optionalKnown": 2,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
-          "overdrive": "VERIFIED",
+          "overdrive": "UNKNOWN",
           "buffies": "VERIFIED"
         },
         "missing": [
-          "hyperCharge"
+          "hyperCharge",
+          "overdrive"
         ]
       },
       "sources": {
@@ -35197,7 +35157,7 @@
           "winRate": 64.8,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/angelo",
@@ -35632,7 +35592,7 @@
           "winRate": 70.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/draco",
@@ -36067,7 +36027,7 @@
           "winRate": 64.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/lily",
@@ -36502,7 +36462,7 @@
           "winRate": 65.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/berry",
@@ -36937,7 +36897,7 @@
           "winRate": 68.6,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/clancy",
@@ -37372,7 +37332,7 @@
           "winRate": 68.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/moe",
@@ -37807,7 +37767,7 @@
           "winRate": 65.8,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/kenji",
@@ -38242,7 +38202,7 @@
           "winRate": 67,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/shade",
@@ -38677,7 +38637,7 @@
           "winRate": 70.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/juju",
@@ -39365,7 +39325,7 @@
           "winRate": 61.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/meeple",
@@ -39828,7 +39788,7 @@
           "winRate": 72.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/ollie",
@@ -40260,7 +40220,7 @@
           "winRate": 65.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/lumi",
@@ -40695,7 +40655,7 @@
           "winRate": 69.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/finx",
@@ -41130,7 +41090,7 @@
           "winRate": 70.6,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/jae-yong",
@@ -41560,7 +41520,7 @@
           "winRate": 63.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/kaze",
@@ -41995,7 +41955,7 @@
           "winRate": 66.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/alli",
@@ -42458,7 +42418,7 @@
           "winRate": 67.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/trunk",
@@ -42909,7 +42869,7 @@
           "winRate": 64.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/mina",
@@ -43190,16 +43150,7 @@
           }
         ],
         "hyperCharges": [],
-        "overdrives": [
-          {
-            "id": "overdrive:16000098",
-            "name": "GADGET ACCHIAPPAFULMINI Ziggy colpisce il nemico più vicino con dei fulmini ogni secondo per 5 secondi, senza consumare colpi. Periodo di attesa: 17 secondi TRASLATORE FULMINEO Il fulmine successivo all'attivazione del gadget teletrasporta Ziggy all'area colpita. Periodo di attesa: 13 secondi",
-            "description": "OVERDRIVE TEMPESTA PERFETTA SUPER L'Elettrotempesta lanciata durante l'overdrive torna da Ziggy quando raggiunge la distanza o la durata massima. VELOCITÀ +20% DANNI +5% DIFESA +5% GADGET ACCHIAPPAFULMINI Ziggy colpisce il nemico più vicino con dei fulmini ogni secondo per 5 secondi, senza consumare colpi. Periodo di attesa: 17 secondi TRASLATORE FULMINEO Il fulmine successivo all'attivazione del gadget teletrasporta Ziggy all'area colpita. Periodo di attesa: 13 secondi ABILITÀ STELLARE COLPO DI FULMINE La super di Ziggy riduce del 20% la velocità dei brawler colpiti per 1 secondi. ZIGGY IL MAGNIFICO Quando colpisce con un fulmine, Ziggy aumenta i danni dell'attacco base successivo del 18% . EQUIPAGGIAMENTO VELOCITÀ Migliora del 15% la VELOCITÀ del brawler tra i cespugli. SALUTE La RIGENERAZIONE DELLA SALUTE è più efficace del 50% . DANNI Il brawler causa il 15% di DANNI IN PIÙ quando la salute è sotto il 50% . SUPERVISTA RENDE VISIBILI i nemici per 2 secondi dopo averli colpiti. DIFESA Dà al brawler uno SCUDO danneggiabile da 900 PUNTI SALUTE, che si rigenera in 10 secondi quando il brawler ha la salute piena. ACCELERAGADGET Riduce i tempi di ripristino dei gadget del 15% . Le migliori modalità 12 ORDINA PER Tasso di vittoria Tendenza di vittoria Tasso di scelta Tendenza di scelta Mode Tasso di vittoria: 79,71% Tasso di scelta: 27,12% ANNIENTAMENTO 5V5 Tasso di vittoria: 56,27% (+0,49%) Tasso di scelta: 3,63% (-3,66%) SOPRAVVIVENZA (IN TRE) Tasso di vittoria: 59,58% Tasso di scelta: 1,48% BRAWL HOCKEY Tasso di vittoria: 51,97% (+4,97%) Tasso di scelta: 1,44% (-0,05%) K.O. Tasso di vittoria: 53,97% (+1,68%) Tasso di scelta: 1,89% (-1,17%) FOOTBRAWL Tasso di vittoria: 48,96% (-2,46%) Tasso di scelta: 1,46% (+0,30%) RAPINA Tasso di vittoria: 52,83% Tasso di scelta: 1,36% ARENA DEI BRAWLER Tasso di vittoria: 47,97% (+1,60%) Tasso di scelta: 1,98% (+0,33%) ARRAFFAGEMME Tasso di vittoria: 39,44% (-18,61%) Tasso di scelta: 0,92% (-9,33%) SOPRAVVIVENZA (SOLO) Tasso di vittoria: 47,77% Tasso di scelta: 1,91% SOPRAVVIVENZA (IN DUE) Tasso di vittoria: 46,52% (+1,32%) Tasso di scelta: 0,93% (-0,04%) RICERCATI Tasso di vittoria: 42,36% (-0,17%) Tasso di scelta: 1,80% (+0,06%) DOMINIO Le migliori mappe 78 ORDINA PER Tasso di vittoria Tendenza di vittoria Tasso di scelta Tendenza di scelta Mode Tasso di vittoria: 79,71% Tasso di scelta: 27,12% Arena di ghiaccio Tasso di vittoria: 65,14% Tasso di scelta: 4,01% Carambola stellare Tasso di vittoria: 64,46% Tasso di scelta:",
-            "source": "BrawlFind",
-            "sourceUrl": "https://www.brawlfind.com/it/brawlers/ziggy",
-            "imageUrl": "https://cdn.brawlfind.com/logo.png"
-          }
-        ],
+        "overdrives": [],
         "buffies": {
           "gadget": [],
           "starPower": [],
@@ -43352,7 +43303,7 @@
           "winRate": 69.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/ziggy",
@@ -43510,7 +43461,7 @@
         "complete": false,
         "usable": true,
         "coreComplete": true,
-        "score": 93,
+        "score": 86,
         "fields": {
           "identity": true,
           "portrait": true,
@@ -43523,18 +43474,19 @@
           "starPowers": true,
           "gears": true,
           "hyperCharge": false,
-          "overdrive": true,
+          "overdrive": false,
           "buffies": true,
           "meta": true
         },
-        "optionalKnown": 2,
+        "optionalKnown": 1,
         "optionalStatus": {
           "hyperCharge": "UNKNOWN",
-          "overdrive": "VERIFIED",
+          "overdrive": "UNKNOWN",
           "buffies": "VERIFIED"
         },
         "missing": [
-          "hyperCharge"
+          "hyperCharge",
+          "overdrive"
         ]
       },
       "sources": {
@@ -43781,7 +43733,7 @@
           "winRate": 63.4,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/pierce",
@@ -44216,7 +44168,7 @@
           "winRate": 69.9,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/gigi",
@@ -44616,7 +44568,7 @@
           "winRate": 70.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/glowy",
@@ -44910,7 +44862,7 @@
           "winRate": 67.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/sirius",
@@ -45345,7 +45297,7 @@
           "winRate": 66,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/najia",
@@ -45780,7 +45732,7 @@
           "winRate": 69.7,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/damian",
@@ -46658,7 +46610,7 @@
           "winRate": 73.3,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/bolt",
@@ -47093,7 +47045,7 @@
           "winRate": 67.1,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/nori",
@@ -47528,7 +47480,7 @@
           "winRate": 76.2,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/wendy",
@@ -47963,7 +47915,7 @@
           "winRate": 66.5,
           "pickRate": null,
           "adjustedWinRate": null,
-          "updatedAt": "2026-09-27T18:54:26.533Z"
+          "updatedAt": "2026-09-27T19:54:06.384Z"
         },
         "noff": {
           "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/cosmo",
@@ -48418,7 +48370,7 @@
     "averageScore": 87,
     "missingByField": {
       "hyperCharge": 103,
-      "overdrive": 99
+      "overdrive": 105
     }
   }
 }
