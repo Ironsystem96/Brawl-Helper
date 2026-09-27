@@ -1,0 +1,6349 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-27T10:04:21.215Z",
+  "sources": [
+    {
+      "name": "Brawl Find",
+      "type": "brawler_ability_catalog",
+      "url": "https://www.brawlfind.com/it/brawlers/"
+    }
+  ],
+  "note": "Supplemental catalog for Overdrive, Buffies and available Gear options. Build recommendations remain separate community/statistics data.",
+  "entries": {
+    "16000000": {
+      "id": 16000000,
+      "name": "Shelly",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/shelly",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000001": {
+      "id": 16000001,
+      "name": "Colt",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/colt",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000002": {
+      "id": 16000002,
+      "name": "Bull",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/bull",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000003": {
+      "id": 16000003,
+      "name": "Brock",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/brock",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000004": {
+      "id": 16000004,
+      "name": "Rico",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/rico",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000005": {
+      "id": 16000005,
+      "name": "Spike",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/spike",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000006": {
+      "id": 16000006,
+      "name": "Barley",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/barley",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000007": {
+      "id": 16000007,
+      "name": "Jessie",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/jessie",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000008": {
+      "id": 16000008,
+      "name": "Nita",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/nita",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000009": {
+      "id": 16000009,
+      "name": "Dynamike",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/dynamike",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000010": {
+      "id": 16000010,
+      "name": "El Primo",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/el%20primo",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000011": {
+      "id": 16000011,
+      "name": "Mortis",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/mortis",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000012": {
+      "id": 16000012,
+      "name": "Crow",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/crow",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000013": {
+      "id": 16000013,
+      "name": "Poco",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/poco",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000014": {
+      "id": 16000014,
+      "name": "Bo",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/bo",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000015": {
+      "id": 16000015,
+      "name": "Piper",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/piper",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000016": {
+      "id": 16000016,
+      "name": "Pam",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/pam",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000017": {
+      "id": 16000017,
+      "name": "Tara",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/tara",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000018": {
+      "id": 16000018,
+      "name": "Darryl",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/darryl",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000019": {
+      "id": 16000019,
+      "name": "Penny",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/penny",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000020": {
+      "id": 16000020,
+      "name": "Frank",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/frank",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000021": {
+      "id": 16000021,
+      "name": "Gene",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/gene",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000022": {
+      "id": 16000022,
+      "name": "Tick",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/tick",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000023": {
+      "id": 16000023,
+      "name": "Leon",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/leon",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000024": {
+      "id": 16000024,
+      "name": "Rosa",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/rosa",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000025": {
+      "id": 16000025,
+      "name": "Carl",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/carl",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000026": {
+      "id": 16000026,
+      "name": "Bibi",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/bibi",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000027": {
+      "id": 16000027,
+      "name": "8-Bit",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/8-bit",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000028": {
+      "id": 16000028,
+      "name": "Sandy",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/sandy",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000029": {
+      "id": 16000029,
+      "name": "Bea",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/bea",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000030": {
+      "id": 16000030,
+      "name": "Emz",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/emz",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000031": {
+      "id": 16000031,
+      "name": "Mr. P",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/mr.%20p",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000032": {
+      "id": 16000032,
+      "name": "Max",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/max",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000034": {
+      "id": 16000034,
+      "name": "Jacky",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/jacky",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000035": {
+      "id": 16000035,
+      "name": "Gale",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/gale",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000036": {
+      "id": 16000036,
+      "name": "Nani",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/nani",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000037": {
+      "id": 16000037,
+      "name": "Sprout",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/sprout",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000038": {
+      "id": 16000038,
+      "name": "Surge",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/surge",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000039": {
+      "id": 16000039,
+      "name": "Colette",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/colette",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000040": {
+      "id": 16000040,
+      "name": "Amber",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/amber",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000041": {
+      "id": 16000041,
+      "name": "Lou",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/lou",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000042": {
+      "id": 16000042,
+      "name": "Byron",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/byron",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000043": {
+      "id": 16000043,
+      "name": "Edgar",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/edgar",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000044": {
+      "id": 16000044,
+      "name": "Ruffs",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/ruffs",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000045": {
+      "id": 16000045,
+      "name": "Stu",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/stu",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000046": {
+      "id": 16000046,
+      "name": "Belle",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/belle",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000047": {
+      "id": 16000047,
+      "name": "Squeak",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/squeak",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000048": {
+      "id": 16000048,
+      "name": "Grom",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/grom",
+      "overdrives": [
+        {
+          "id": "overdrive:16000048",
+          "name": "GROMBA AL QUADRATO",
+          "description": "Con la super, Grom causa una seconda esplosione dopo la prima, questa volta a forma di X, che causa danni, distrugge i muri e respinge i nemici.",
+          "imageUrl": "https://cdn.brawlfind.com/hypercharges/Grom.webp"
+        }
+      ],
+      "gears": [
+        {
+          "id": "gear:15%",
+          "name": "15%",
+          "description": "di DANNI IN PIÙ quando la salute è sotto il",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:2",
+          "name": "2",
+          "description": "secondi dopo averli colpiti.",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:900",
+          "name": "900",
+          "description": "PUNTI SALUTE, che si rigenera in",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:10",
+          "name": "10",
+          "description": "secondi quando il brawler ha la salute piena.",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:.",
+          "name": ".",
+          "description": "Le migliori modalità",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:17",
+          "name": "17",
+          "description": "ORDINA PER",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Tasso di vittoria",
+          "name": "Tasso di vittoria",
+          "description": "Tendenza di vittoria",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Tasso di scelta",
+          "name": "Tasso di scelta",
+          "description": "Tendenza di scelta",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Mode",
+          "name": "Mode",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:68,23%",
+          "name": "68,23%",
+          "description": "(+1,51%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:47,19%",
+          "name": "47,19%",
+          "description": "(+0,63%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:ANNIENTAMENTO 5V5",
+          "name": "ANNIENTAMENTO 5V5",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:50,42%",
+          "name": "50,42%",
+          "description": "(-0,84%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:10,39%",
+          "name": "10,39%",
+          "description": "(-1,97%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:SOPRAVVIVENZA (IN TRE)",
+          "name": "SOPRAVVIVENZA (IN TRE)",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:50,53%",
+          "name": "50,53%",
+          "description": "(-0,70%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:6,43%",
+          "name": "6,43%",
+          "description": "(+0,90%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:RICERCATI",
+          "name": "RICERCATI",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:53,98%",
+          "name": "53,98%",
+          "description": "(+0,18%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:15,46%",
+          "name": "15,46%",
+          "description": "(+0,05%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:ANNIENTAMENTO",
+          "name": "ANNIENTAMENTO",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:51,37%",
+          "name": "51,37%",
+          "description": "(-0,94%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:6,70%",
+          "name": "6,70%",
+          "description": "(+1,44%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:K.O.",
+          "name": "K.O.",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:48,21%",
+          "name": "48,21%",
+          "description": "(+4,06%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:20,10%",
+          "name": "20,10%",
+          "description": "(+0,82%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:K.O. 5V5",
+          "name": "K.O. 5V5",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:49,12%",
+          "name": "49,12%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:2,78%",
+          "name": "2,78%",
+          "description": "(-0,16%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:ARENA DEI BRAWLER",
+          "name": "ARENA DEI BRAWLER",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:39,62%",
+          "name": "39,62%",
+          "description": "(-1,26%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:1,69%",
+          "name": "1,69%",
+          "description": "(-0,03%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:BRAWL HOCKEY",
+          "name": "BRAWL HOCKEY",
+          "description": "Tasso di vittoria:",
+          "imageUrl": "https://cdn.brawlfind.com/gamemodes/Brawl-Hockey.webp"
+        },
+        {
+          "id": "gear:44,10%",
+          "name": "44,10%",
+          "description": "(-2,05%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:1,52%",
+          "name": "1,52%",
+          "description": "(+0,19%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:ARRAFFAGEMME",
+          "name": "ARRAFFAGEMME",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:42,79%",
+          "name": "42,79%",
+          "description": "(-0,32%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:1,04%",
+          "name": "1,04%",
+          "description": "(-0,12%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:FOOTBRAWL",
+          "name": "FOOTBRAWL",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:41,91%",
+          "name": "41,91%",
+          "description": "(+0,02%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:1,67%",
+          "name": "1,67%",
+          "description": "(+0,16%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:RAPINA",
+          "name": "RAPINA",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:46,80%",
+          "name": "46,80%",
+          "description": "(+1,47%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:12,32%",
+          "name": "12,32%",
+          "description": "(+0,37%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:FOOTBRAWL 5V5",
+          "name": "FOOTBRAWL 5V5",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:41,55%",
+          "name": "41,55%",
+          "description": "(-4,81%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:15,23%",
+          "name": "15,23%",
+          "description": "(-5,82%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:ARRAFFAGEMME 5V5",
+          "name": "ARRAFFAGEMME 5V5",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:37,60%",
+          "name": "37,60%",
+          "description": "(-1,16%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:3,30%",
+          "name": "3,30%",
+          "description": "(+1,02%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:DOMINIO",
+          "name": "DOMINIO",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:35,08%",
+          "name": "35,08%",
+          "description": "(-2,98%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:4,51%",
+          "name": "4,51%",
+          "description": "(-0,97%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:SOPRAVVIVENZA (IN DUE)",
+          "name": "SOPRAVVIVENZA (IN DUE)",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:40,39%",
+          "name": "40,39%",
+          "description": "(-1,11%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:4,17%",
+          "name": "4,17%",
+          "description": "(+0,66%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:BRAWL HOCKEY 5V5",
+          "name": "BRAWL HOCKEY 5V5",
+          "description": "Tasso di vittoria:",
+          "imageUrl": "https://cdn.brawlfind.com/gamemodes/Brawl-Hockey-5V5.webp"
+        },
+        {
+          "id": "gear:21,17%",
+          "name": "21,17%",
+          "description": "(-1,16%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:2,05%",
+          "name": "2,05%",
+          "description": "(-0,53%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:SOPRAVVIVENZA (SOLO)",
+          "name": "SOPRAVVIVENZA (SOLO)",
+          "description": "Le migliori mappe",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:207",
+          "name": "207",
+          "description": "ORDINA PER",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Tasso di vittoria",
+          "name": "Tasso di vittoria",
+          "description": "Tendenza di vittoria",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Tasso di scelta",
+          "name": "Tasso di scelta",
+          "description": "Tendenza di scelta",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Mode",
+          "name": "Mode",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:71,99%",
+          "name": "71,99%",
+          "description": "(-1,65%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:65,76%",
+          "name": "65,76%",
+          "description": "(+1,70%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Strada sdrucciolevole",
+          "name": "Strada sdrucciolevole",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:71,89%",
+          "name": "71,89%",
+          "description": "(+5,01%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:46,58%",
+          "name": "46,58%",
+          "description": "(+10,32%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Zuffe tra folli",
+          "name": "Zuffe tra folli",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:70,51%",
+          "name": "70,51%",
+          "description": "(+0,02%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:47,88%",
+          "name": "47,88%",
+          "description": "(+1,17%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Pianura delle battaglie",
+          "name": "Pianura delle battaglie",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:70,12%",
+          "name": "70,12%",
+          "description": "(-0,08%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:53,81%",
+          "name": "53,81%",
+          "description": "(-2,96%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Binari ghiacciati",
+          "name": "Binari ghiacciati",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:69,83%",
+          "name": "69,83%",
+          "description": "(+4,49%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:47,39%",
+          "name": "47,39%",
+          "description": "(-1,66%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Arena di ghiaccio",
+          "name": "Arena di ghiaccio",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:68,85%",
+          "name": "68,85%",
+          "description": "(+3,07%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:31,43%",
+          "name": "31,43%",
+          "description": "(-0,80%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:68,55%",
+          "name": "68,55%",
+          "description": "(+9,16%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:35,73%",
+          "name": "35,73%",
+          "description": "(+25,65%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Caverna rumorosa",
+          "name": "Caverna rumorosa",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:66,38%",
+          "name": "66,38%",
+          "description": "(+10,34%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:49,80%",
+          "name": "49,80%",
+          "description": "(+5,54%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Risa isteriche",
+          "name": "Risa isteriche",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:61,73%",
+          "name": "61,73%",
+          "description": "(+0,77%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:26,57%",
+          "name": "26,57%",
+          "description": "(+5,58%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Don't turn around",
+          "name": "Don't turn around",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:58,70%",
+          "name": "58,70%",
+          "description": "(+3,36%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:31,16%",
+          "name": "31,16%",
+          "description": "(+5,77%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Side by Side",
+          "name": "Side by Side",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:58,10%",
+          "name": "58,10%",
+          "description": "(-0,18%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:35,49%",
+          "name": "35,49%",
+          "description": "(+3,08%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Isola della fine",
+          "name": "Isola della fine",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:57,47%",
+          "name": "57,47%",
+          "description": "(-3,84%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:12,49%",
+          "name": "12,49%",
+          "description": "(-0,94%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:57,45%",
+          "name": "57,45%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:10,79%",
+          "name": "10,79%",
+          "description": "Passaggio temporale",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:56,63%",
+          "name": "56,63%",
+          "description": "(-1,52%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:19,24%",
+          "name": "19,24%",
+          "description": "(-1,01%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Tutta scena",
+          "name": "Tutta scena",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:56,31%",
+          "name": "56,31%",
+          "description": "(+3,78%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:16,56%",
+          "name": "16,56%",
+          "description": "(+0,82%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Match letale",
+          "name": "Match letale",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:55,10%",
+          "name": "55,10%",
+          "description": "(+2,07%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:15,29%",
+          "name": "15,29%",
+          "description": "(-9,84%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Stelle in frantumi",
+          "name": "Stelle in frantumi",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:55,00%",
+          "name": "55,00%",
+          "description": "(-1,30%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:39,79%",
+          "name": "39,79%",
+          "description": "(+0,55%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Valle rocciosa",
+          "name": "Valle rocciosa",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:54,99%",
+          "name": "54,99%",
+          "description": "(+2,32%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:13,99%",
+          "name": "13,99%",
+          "description": "(-2,70%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Carambola stellare",
+          "name": "Carambola stellare",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:54,95%",
+          "name": "54,95%",
+          "description": "(-0,78%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:4,65%",
+          "name": "4,65%",
+          "description": "(-1,97%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Le profondità",
+          "name": "Le profondità",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:54,52%",
+          "name": "54,52%",
+          "description": "(-0,44%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:4,18%",
+          "name": "4,18%",
+          "description": "(+0,42%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Burrone di Bracciodoro",
+          "name": "Burrone di Bracciodoro",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:54,35%",
+          "name": "54,35%",
+          "description": "(+1,19%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:5,62%",
+          "name": "5,62%",
+          "description": "(+0,83%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Piana delle stelle",
+          "name": "Piana delle stelle",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:54,32%",
+          "name": "54,32%",
+          "description": "(-0,75%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:15,93%",
+          "name": "15,93%",
+          "description": "(+2,89%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Saluti e addii",
+          "name": "Saluti e addii",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:54,29%",
+          "name": "54,29%",
+          "description": "(+4,00%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:20,37%",
+          "name": "20,37%",
+          "description": "(+2,71%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Massa pesante",
+          "name": "Massa pesante",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:54,27%",
+          "name": "54,27%",
+          "description": "(+0,58%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:9,98%",
+          "name": "9,98%",
+          "description": "(+0,42%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Chele di granchio",
+          "name": "Chele di granchio",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:54,22%",
+          "name": "54,22%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:13,57%",
+          "name": "13,57%",
+          "description": "Ballata delle costolette",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:54,17%",
+          "name": "54,17%",
+          "description": "(-2,59%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:13,84%",
+          "name": "13,84%",
+          "description": "(-4,37%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:In trappola",
+          "name": "In trappola",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:53,92%",
+          "name": "53,92%",
+          "description": "(+5,08%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:5,03%",
+          "name": "5,03%",
+          "description": "(+1,17%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:53,60%",
+          "name": "53,60%",
+          "description": "(+2,60%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:5,18%",
+          "name": "5,18%",
+          "description": "(+0,04%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Prateria dei serpenti",
+          "name": "Prateria dei serpenti",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:53,47%",
+          "name": "53,47%",
+          "description": "(-0,59%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:10,24%",
+          "name": "10,24%",
+          "description": "(-2,49%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Mossa iniziale",
+          "name": "Mossa iniziale",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:53,36%",
+          "name": "53,36%",
+          "description": "(+1,35%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:16,84%",
+          "name": "16,84%",
+          "description": "(+1,67%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:CRESCENDO",
+          "name": "CRESCENDO",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:53,28%",
+          "name": "53,28%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:10,65%",
+          "name": "10,65%",
+          "description": "Piana delle previsioni",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:53,15%",
+          "name": "53,15%",
+          "description": "(-5,47%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:14,82%",
+          "name": "14,82%",
+          "description": "(-1,17%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Torrente del teschio",
+          "name": "Torrente del teschio",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:52,80%",
+          "name": "52,80%",
+          "description": "(-0,79%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:13,27%",
+          "name": "13,27%",
+          "description": "(-0,54%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Stazione del Parco nord",
+          "name": "Stazione del Parco nord",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:52,70%",
+          "name": "52,70%",
+          "description": "(+1,26%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:3,44%",
+          "name": "3,44%",
+          "description": "(+0,30%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Valle delle sconfitte",
+          "name": "Valle delle sconfitte",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:52,48%",
+          "name": "52,48%",
+          "description": "(-2,06%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:5,63%",
+          "name": "5,63%",
+          "description": "(-1,96%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Fenice sfolgorante",
+          "name": "Fenice sfolgorante",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:52,27%",
+          "name": "52,27%",
+          "description": "(+1,20%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:8,98%",
+          "name": "8,98%",
+          "description": "(+0,02%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Nuova prospettiva",
+          "name": "Nuova prospettiva",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:52,25%",
+          "name": "52,25%",
+          "description": "(-3,12%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:20,89%",
+          "name": "20,89%",
+          "description": "(-0,39%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Universo bitmap",
+          "name": "Universo bitmap",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:52,23%",
+          "name": "52,23%",
+          "description": "(+2,04%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:18,07%",
+          "name": "18,07%",
+          "description": "(+0,46%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Mille passi",
+          "name": "Mille passi",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:52,22%",
+          "name": "52,22%",
+          "description": "(-0,98%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:11,26%",
+          "name": "11,26%",
+          "description": "(-0,65%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Stagno silvestre",
+          "name": "Stagno silvestre",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:52,10%",
+          "name": "52,10%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:3,30%",
+          "name": "3,30%",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:51,91%",
+          "name": "51,91%",
+          "description": "(-2,57%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:7,85%",
+          "name": "7,85%",
+          "description": "(-0,46%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Strada senza nome",
+          "name": "Strada senza nome",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:51,90%",
+          "name": "51,90%",
+          "description": "(-0,14%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:10,83%",
+          "name": "10,83%",
+          "description": "(-0,29%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Canal Grande",
+          "name": "Canal Grande",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:51,87%",
+          "name": "51,87%",
+          "description": "(+1,51%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:10,64%",
+          "name": "10,64%",
+          "description": "(-1,32%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Laghi acidi",
+          "name": "Laghi acidi",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:51,82%",
+          "name": "51,82%",
+          "description": "(+2,51%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:12,91%",
+          "name": "12,91%",
+          "description": "(-0,88%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Sabbie roventi",
+          "name": "Sabbie roventi",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:51,80%",
+          "name": "51,80%",
+          "description": "(+0,83%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:7,15%",
+          "name": "7,15%",
+          "description": "(-0,32%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Quattro livelli",
+          "name": "Quattro livelli",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:51,72%",
+          "name": "51,72%",
+          "description": "(+3,45%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:3,45%",
+          "name": "3,45%",
+          "description": "(+0,25%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Nuovi orizzonti",
+          "name": "Nuovi orizzonti",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:51,56%",
+          "name": "51,56%",
+          "description": "(-0,10%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:10,21%",
+          "name": "10,21%",
+          "description": "(-0,72%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Rifugio d'emergenza",
+          "name": "Rifugio d'emergenza",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:51,46%",
+          "name": "51,46%",
+          "description": "(+2,85%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:1,55%",
+          "name": "1,55%",
+          "description": "(+0,14%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Regno del freddo",
+          "name": "Regno del freddo",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:51,43%",
+          "name": "51,43%",
+          "description": "(+0,51%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:4,41%",
+          "name": "4,41%",
+          "description": "(+0,55%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Lago del kaiju",
+          "name": "Lago del kaiju",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:51,33%",
+          "name": "51,33%",
+          "description": "(+1,05%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:10,89%",
+          "name": "10,89%",
+          "description": "(-3,40%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Area cuscinetto",
+          "name": "Area cuscinetto",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:50,95%",
+          "name": "50,95%",
+          "description": "(-0,96%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:12,43%",
+          "name": "12,43%",
+          "description": "(-1,46%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Impatto imminente",
+          "name": "Impatto imminente",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:50,81%",
+          "name": "50,81%",
+          "description": "(+0,65%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:7,60%",
+          "name": "7,60%",
+          "description": "(-1,48%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Terreno comune equilibrato",
+          "name": "Terreno comune equilibrato",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:50,80%",
+          "name": "50,80%",
+          "description": "(-1,57%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:9,47%",
+          "name": "9,47%",
+          "description": "(-11,14%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:La verità",
+          "name": "La verità",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:50,71%",
+          "name": "50,71%",
+          "description": "(+2,97%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:2,57%",
+          "name": "2,57%",
+          "description": "(-0,38%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Cupola delle risse",
+          "name": "Cupola delle risse",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:50,69%",
+          "name": "50,69%",
+          "description": "(+4,33%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:3,12%",
+          "name": "3,12%",
+          "description": "(+0,96%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Antro velenoso",
+          "name": "Antro velenoso",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:50,69%",
+          "name": "50,69%",
+          "description": "(+3,36%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:9,35%",
+          "name": "9,35%",
+          "description": "(-2,33%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Budello",
+          "name": "Budello",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:50,67%",
+          "name": "50,67%",
+          "description": "(+0,32%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:3,13%",
+          "name": "3,13%",
+          "description": "(-0,55%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Konnakol",
+          "name": "Konnakol",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:50,59%",
+          "name": "50,59%",
+          "description": "(-1,99%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:14,66%",
+          "name": "14,66%",
+          "description": "(-7,69%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Labirinto della sopravvivenza",
+          "name": "Labirinto della sopravvivenza",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:50,56%",
+          "name": "50,56%",
+          "description": "(-0,25%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:10,33%",
+          "name": "10,33%",
+          "description": "(+0,73%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Loto",
+          "name": "Loto",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:50,49%",
+          "name": "50,49%",
+          "description": "(+4,37%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:1,77%",
+          "name": "1,77%",
+          "description": "(+0,55%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Spirale della vittoria",
+          "name": "Spirale della vittoria",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:50,47%",
+          "name": "50,47%",
+          "description": "(-2,39%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:16,85%",
+          "name": "16,85%",
+          "description": "(-3,58%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Piano orbitale",
+          "name": "Piano orbitale",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:50,38%",
+          "name": "50,38%",
+          "description": "(+6,24%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:25,93%",
+          "name": "25,93%",
+          "description": "(+2,23%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Arena dell'infelicità",
+          "name": "Arena dell'infelicità",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:50,36%",
+          "name": "50,36%",
+          "description": "(+0,06%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:6,41%",
+          "name": "6,41%",
+          "description": "(-1,59%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Colpo grosso",
+          "name": "Colpo grosso",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:50,26%",
+          "name": "50,26%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:13,42%",
+          "name": "13,42%",
+          "description": "Catacombe",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:49,72%",
+          "name": "49,72%",
+          "description": "(-0,74%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:6,29%",
+          "name": "6,29%",
+          "description": "(+0,72%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Arena stratificata",
+          "name": "Arena stratificata",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:49,62%",
+          "name": "49,62%",
+          "description": "(+2,92%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:9,50%",
+          "name": "9,50%",
+          "description": "(+0,82%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Camere corali",
+          "name": "Camere corali",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:49,61%",
+          "name": "49,61%",
+          "description": "(+0,93%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:4,38%",
+          "name": "4,38%",
+          "description": "(+0,05%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:49,40%",
+          "name": "49,40%",
+          "description": "(-0,92%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:15,87%",
+          "name": "15,87%",
+          "description": "(+3,53%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Verde speranza",
+          "name": "Verde speranza",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:49,27%",
+          "name": "49,27%",
+          "description": "(+0,92%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:14,26%",
+          "name": "14,26%",
+          "description": "(-4,55%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Landa dei pericoli",
+          "name": "Landa dei pericoli",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:49,10%",
+          "name": "49,10%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:8,83%",
+          "name": "8,83%",
+          "description": "Colpo supersonico",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:49,08%",
+          "name": "49,08%",
+          "description": "(+8,46%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:25,81%",
+          "name": "25,81%",
+          "description": "(-0,20%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Brawliverso",
+          "name": "Brawliverso",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:49,05%",
+          "name": "49,05%",
+          "description": "(-4,73%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:5,26%",
+          "name": "5,26%",
+          "description": "(-3,26%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Rupe di Belle",
+          "name": "Rupe di Belle",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:49,05%",
+          "name": "49,05%",
+          "description": "(-0,18%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:4,82%",
+          "name": "4,82%",
+          "description": "(+0,88%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Steppa arida",
+          "name": "Steppa arida",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:48,92%",
+          "name": "48,92%",
+          "description": "(+7,81%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:1,05%",
+          "name": "1,05%",
+          "description": "(-1,64%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Campetto in erba",
+          "name": "Campetto in erba",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:48,91%",
+          "name": "48,91%",
+          "description": "(+1,75%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:11,92%",
+          "name": "11,92%",
+          "description": "(-4,67%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Distesa delle onde",
+          "name": "Distesa delle onde",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:48,53%",
+          "name": "48,53%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:8,68%",
+          "name": "8,68%",
+          "description": "Lande acquose",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:48,35%",
+          "name": "48,35%",
+          "description": "(-0,40%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:1,79%",
+          "name": "1,79%",
+          "description": "(-0,17%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Giardino Starr",
+          "name": "Giardino Starr",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:48,34%",
+          "name": "48,34%",
+          "description": "(+1,44%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:13,93%",
+          "name": "13,93%",
+          "description": "(+0,41%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Stallo alla siberiana",
+          "name": "Stallo alla siberiana",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:47,91%",
+          "name": "47,91%",
+          "description": "(+1,74%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:10,66%",
+          "name": "10,66%",
+          "description": "(+4,06%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Festa personale",
+          "name": "Festa personale",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:47,84%",
+          "name": "47,84%",
+          "description": "(+3,57%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:7,38%",
+          "name": "7,38%",
+          "description": "(-1,32%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Scaffale di fortuna",
+          "name": "Scaffale di fortuna",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:47,83%",
+          "name": "47,83%",
+          "description": "(-3,96%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:2,03%",
+          "name": "2,03%",
+          "description": "(-1,71%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Nascondiglio",
+          "name": "Nascondiglio",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:47,69%",
+          "name": "47,69%",
+          "description": "(+0,73%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:7,90%",
+          "name": "7,90%",
+          "description": "(-0,17%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Nucleo fuso",
+          "name": "Nucleo fuso",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:47,53%",
+          "name": "47,53%",
+          "description": "(+10,52%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:13,57%",
+          "name": "13,57%",
+          "description": "(+2,69%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Sinibrawlia",
+          "name": "Sinibrawlia",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:47,44%",
+          "name": "47,44%",
+          "description": "(+0,51%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:7,61%",
+          "name": "7,61%",
+          "description": "(+1,40%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Acca boschiva",
+          "name": "Acca boschiva",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:47,38%",
+          "name": "47,38%",
+          "description": "(+0,11%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:0,73%",
+          "name": "0,73%",
+          "description": "(+0,09%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Brawlacanã",
+          "name": "Brawlacanã",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:47,37%",
+          "name": "47,37%",
+          "description": "(-1,21%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:3,56%",
+          "name": "3,56%",
+          "description": "(-0,77%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Buone maniere",
+          "name": "Buone maniere",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:47,31%",
+          "name": "47,31%",
+          "description": "(-6,06%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:4,44%",
+          "name": "4,44%",
+          "description": "(+0,72%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Sorgente di confine",
+          "name": "Sorgente di confine",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:47,19%",
+          "name": "47,19%",
+          "description": "(+2,68%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:1,08%",
+          "name": "1,08%",
+          "description": "(-0,20%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Stamford Brawl",
+          "name": "Stamford Brawl",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:47,17%",
+          "name": "47,17%",
+          "description": "(-4,29%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:8,10%",
+          "name": "8,10%",
+          "description": "(-3,06%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Comunità chiusa",
+          "name": "Comunità chiusa",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:46,99%",
+          "name": "46,99%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:13,62%",
+          "name": "13,62%",
+          "description": "Muri protettivi",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:46,99%",
+          "name": "46,99%",
+          "description": "(+0,69%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:0,92%",
+          "name": "0,92%",
+          "description": "(-0,31%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Dribbling",
+          "name": "Dribbling",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:46,98%",
+          "name": "46,98%",
+          "description": "(-0,98%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:5,58%",
+          "name": "5,58%",
+          "description": "(-0,65%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Castello dell'occhio di cristallo",
+          "name": "Castello dell'occhio di cristallo",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:46,89%",
+          "name": "46,89%",
+          "description": "(-2,27%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:22,62%",
+          "name": "22,62%",
+          "description": "(+8,37%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Afterparty",
+          "name": "Afterparty",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:46,73%",
+          "name": "46,73%",
+          "description": "(-3,05%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:2,27%",
+          "name": "2,27%",
+          "description": "(+0,20%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Alla luce del sole",
+          "name": "Alla luce del sole",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:46,72%",
+          "name": "46,72%",
+          "description": "(-0,35%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:10,02%",
+          "name": "10,02%",
+          "description": "(+2,81%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Angurie",
+          "name": "Angurie",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:46,49%",
+          "name": "46,49%",
+          "description": "(-0,28%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:7,01%",
+          "name": "7,01%",
+          "description": "(-0,63%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Rampicanti attorcigliati",
+          "name": "Rampicanti attorcigliati",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:46,34%",
+          "name": "46,34%",
+          "description": "(+2,46%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:2,19%",
+          "name": "2,19%",
+          "description": "(-0,07%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Arena dei miraggi",
+          "name": "Arena dei miraggi",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:45,99%",
+          "name": "45,99%",
+          "description": "(-1,72%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:7,40%",
+          "name": "7,40%",
+          "description": "(-0,49%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Pianura volante",
+          "name": "Pianura volante",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:45,99%",
+          "name": "45,99%",
+          "description": "(+0,99%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:10,84%",
+          "name": "10,84%",
+          "description": "(-0,52%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Piccoli piaceri",
+          "name": "Piccoli piaceri",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:45,90%",
+          "name": "45,90%",
+          "description": "(-2,98%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:0,93%",
+          "name": "0,93%",
+          "description": "(+0,18%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Campetto incolto",
+          "name": "Campetto incolto",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:45,80%",
+          "name": "45,80%",
+          "description": "(-2,35%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:11,63%",
+          "name": "11,63%",
+          "description": "(-0,09%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Fiumi della follia",
+          "name": "Fiumi della follia",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:45,76%",
+          "name": "45,76%",
+          "description": "(-1,97%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:8,93%",
+          "name": "8,93%",
+          "description": "(-1,22%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Piana della fame",
+          "name": "Piana della fame",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:45,65%",
+          "name": "45,65%",
+          "description": "(+6,65%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:12,50%",
+          "name": "12,50%",
+          "description": "(-9,13%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Imboscata artica",
+          "name": "Imboscata artica",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:45,47%",
+          "name": "45,47%",
+          "description": "(-1,50%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:1,21%",
+          "name": "1,21%",
+          "description": "(-0,05%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Arena dei rimbalzi",
+          "name": "Arena dei rimbalzi",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:45,24%",
+          "name": "45,24%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:13,56%",
+          "name": "13,56%",
+          "description": "Macchina del vuoto",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:45,18%",
+          "name": "45,18%",
+          "description": "(+1,81%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:9,33%",
+          "name": "9,33%",
+          "description": "(-2,74%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Biglietto per l'oltretomba",
+          "name": "Biglietto per l'oltretomba",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:45,02%",
+          "name": "45,02%",
+          "description": "(+11,69%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:0,96%",
+          "name": "0,96%",
+          "description": "(-0,93%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Superspiaggia",
+          "name": "Superspiaggia",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:44,92%",
+          "name": "44,92%",
+          "description": "(+3,34%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:9,27%",
+          "name": "9,27%",
+          "description": "(-0,37%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:44,66%",
+          "name": "44,66%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:1,73%",
+          "name": "1,73%",
+          "description": "Zona Cesarini",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:44,49%",
+          "name": "44,49%",
+          "description": "(+2,61%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:0,88%",
+          "name": "0,88%",
+          "description": "(-0,14%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Santuario",
+          "name": "Santuario",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:44,44%",
+          "name": "44,44%",
+          "description": "(-1,17%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:1,06%",
+          "name": "1,06%",
+          "description": "(-0,52%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Campetto sabbioso",
+          "name": "Campetto sabbioso",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:44,33%",
+          "name": "44,33%",
+          "description": "(-2,98%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:2,30%",
+          "name": "2,30%",
+          "description": "(+0,32%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Arena della gloria",
+          "name": "Arena della gloria",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:44,19%",
+          "name": "44,19%",
+          "description": "(-5,44%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:1,18%",
+          "name": "1,18%",
+          "description": "(+0,29%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Fortino delle gemme",
+          "name": "Fortino delle gemme",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:43,87%",
+          "name": "43,87%",
+          "description": "(-6,36%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:8,63%",
+          "name": "8,63%",
+          "description": "(-4,97%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Caverna rumorosa",
+          "name": "Caverna rumorosa",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:43,68%",
+          "name": "43,68%",
+          "description": "(-6,44%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:1,00%",
+          "name": "1,00%",
+          "description": "(+0,10%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Miniera Rocciadura",
+          "name": "Miniera Rocciadura",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:43,51%",
+          "name": "43,51%",
+          "description": "(+1,68%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:0,60%",
+          "name": "0,60%",
+          "description": "(+0,05%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Campo da beach brawl",
+          "name": "Campo da beach brawl",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:43,43%",
+          "name": "43,43%",
+          "description": "(+1,76%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:12,63%",
+          "name": "12,63%",
+          "description": "(+0,36%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Scalinata interrotta",
+          "name": "Scalinata interrotta",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:43,40%",
+          "name": "43,40%",
+          "description": "(+3,82%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:0,75%",
+          "name": "0,75%",
+          "description": "(-0,01%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Brawl Trafford",
+          "name": "Brawl Trafford",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:43,32%",
+          "name": "43,32%",
+          "description": "(-3,96%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:0,85%",
+          "name": "0,85%",
+          "description": "(-0,28%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Terra bruciata",
+          "name": "Terra bruciata",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:43,25%",
+          "name": "43,25%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:18,69%",
+          "name": "18,69%",
+          "description": "Sentieri paludosi",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:43,07%",
+          "name": "43,07%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:3,11%",
+          "name": "3,11%",
+          "description": "Quintilione",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:42,50%",
+          "name": "42,50%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:1,86%",
+          "name": "1,86%",
+          "description": "Flauti verdi",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:42,48%",
+          "name": "42,48%",
+          "description": "(+18,42%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:0,81%",
+          "name": "0,81%",
+          "description": "(-1,35%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Camp Brawl",
+          "name": "Camp Brawl",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:41,86%",
+          "name": "41,86%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:1,15%",
+          "name": "1,15%",
+          "description": "Campo di scontro n. 1123581321",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:41,60%",
+          "name": "41,60%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:2,78%",
+          "name": "2,78%",
+          "description": "Sala giochi di cristallo",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:41,49%",
+          "name": "41,49%",
+          "description": "(-3,46%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:17,62%",
+          "name": "17,62%",
+          "description": "(-2,28%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Isola dei serpenti",
+          "name": "Isola dei serpenti",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:41,42%",
+          "name": "41,42%",
+          "description": "(+1,18%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:1,08%",
+          "name": "1,08%",
+          "description": "(-0,28%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Vie traverse",
+          "name": "Vie traverse",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:41,34%",
+          "name": "41,34%",
+          "description": "(+4,53%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:1,08%",
+          "name": "1,08%",
+          "description": "(+0,28%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Miniera minacciosa",
+          "name": "Miniera minacciosa",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:41,08%",
+          "name": "41,08%",
+          "description": "(+0,37%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:1,94%",
+          "name": "1,94%",
+          "description": "(+0,77%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Canyon Bum Bum",
+          "name": "Canyon Bum Bum",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:40,63%",
+          "name": "40,63%",
+          "description": "(-5,60%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:0,67%",
+          "name": "0,67%",
+          "description": "(-0,26%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Campetto",
+          "name": "Campetto",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:40,61%",
+          "name": "40,61%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:4,17%",
+          "name": "4,17%",
+          "description": "Pista sottozero",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:40,55%",
+          "name": "40,55%",
+          "description": "(+3,83%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:21,87%",
+          "name": "21,87%",
+          "description": "(+5,45%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Selezione naturale",
+          "name": "Selezione naturale",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:40,53%",
+          "name": "40,53%",
+          "description": "(+3,42%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:5,93%",
+          "name": "5,93%",
+          "description": "(+0,72%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Campo dei giochi fatti",
+          "name": "Campo dei giochi fatti",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:40,15%",
+          "name": "40,15%",
+          "description": "(-1,35%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:4,18%",
+          "name": "4,18%",
+          "description": "(+0,67%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Piazza granatina",
+          "name": "Piazza granatina",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:40,15%",
+          "name": "40,15%",
+          "description": "(-1,77%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:1,92%",
+          "name": "1,92%",
+          "description": "(-0,07%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Iperspazio",
+          "name": "Iperspazio",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:40,11%",
+          "name": "40,11%",
+          "description": "(-0,23%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:2,44%",
+          "name": "2,44%",
+          "description": "(+0,03%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Puck al centro",
+          "name": "Puck al centro",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:39,63%",
+          "name": "39,63%",
+          "description": "(-0,59%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:7,64%",
+          "name": "7,64%",
+          "description": "(+2,18%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Piano orbitale",
+          "name": "Piano orbitale",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:39,52%",
+          "name": "39,52%",
+          "description": "(+6,55%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:4,14%",
+          "name": "4,14%",
+          "description": "(+0,04%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Landa dei pericoli",
+          "name": "Landa dei pericoli",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:39,29%",
+          "name": "39,29%",
+          "description": "(+0,82%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:0,91%",
+          "name": "0,91%",
+          "description": "(-0,10%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Pit stop",
+          "name": "Pit stop",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:39,11%",
+          "name": "39,11%",
+          "description": "(-10,27%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:17,21%",
+          "name": "17,21%",
+          "description": "(-3,61%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Isola del tesoro",
+          "name": "Isola del tesoro",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:38,91%",
+          "name": "38,91%",
+          "description": "(-3,05%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:3,97%",
+          "name": "3,97%",
+          "description": "(-0,41%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Fato fotico",
+          "name": "Fato fotico",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:38,86%",
+          "name": "38,86%",
+          "description": "(-5,18%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:1,83%",
+          "name": "1,83%",
+          "description": "(+0,18%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Campetto cittadino",
+          "name": "Campetto cittadino",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:38,85%",
+          "name": "38,85%",
+          "description": "(+4,68%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:1,63%",
+          "name": "1,63%",
+          "description": "(+0,26%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Ring di fuoco",
+          "name": "Ring di fuoco",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:38,81%",
+          "name": "38,81%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:5,53%",
+          "name": "5,53%",
+          "description": "Abracadabra",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:38,80%",
+          "name": "38,80%",
+          "description": "(-3,34%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:1,40%",
+          "name": "1,40%",
+          "description": "(-0,05%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Oasi dei trionfi",
+          "name": "Oasi dei trionfi",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:38,68%",
+          "name": "38,68%",
+          "description": "(+1,27%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:1,55%",
+          "name": "1,55%",
+          "description": "(+0,33%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Battigia ustionante",
+          "name": "Battigia ustionante",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:38,57%",
+          "name": "38,57%",
+          "description": "(+1,19%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:0,75%",
+          "name": "0,75%",
+          "description": "(+0,18%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Arco doppio",
+          "name": "Arco doppio",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:38,45%",
+          "name": "38,45%",
+          "description": "(-4,22%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:1,34%",
+          "name": "1,34%",
+          "description": "(+0,26%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Ponte",
+          "name": "Ponte",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:37,98%",
+          "name": "37,98%",
+          "description": "(+2,94%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:5,13%",
+          "name": "5,13%",
+          "description": "(+0,19%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Torrente del teschio",
+          "name": "Torrente del teschio",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:37,82%",
+          "name": "37,82%",
+          "description": "(-3,24%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:1,54%",
+          "name": "1,54%",
+          "description": "(+0,33%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Campo aperto",
+          "name": "Campo aperto",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:37,52%",
+          "name": "37,52%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:4,25%",
+          "name": "4,25%",
+          "description": "Casa dei giacinti",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:37,30%",
+          "name": "37,30%",
+          "description": "(-7,01%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:8,77%",
+          "name": "8,77%",
+          "description": "(-0,10%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Stagno dei presidi",
+          "name": "Stagno dei presidi",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:37,30%",
+          "name": "37,30%",
+          "description": "(+0,05%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:4,56%",
+          "name": "4,56%",
+          "description": "(+1,45%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Spazio liminale",
+          "name": "Spazio liminale",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:36,97%",
+          "name": "36,97%",
+          "description": "(-1,52%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:1,87%",
+          "name": "1,87%",
+          "description": "(+0,37%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Distesa degli scarafaggi",
+          "name": "Distesa degli scarafaggi",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:36,94%",
+          "name": "36,94%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:15,23%",
+          "name": "15,23%",
+          "description": "Trasporti pubblici",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:36,79%",
+          "name": "36,79%",
+          "description": "(-3,29%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:8,28%",
+          "name": "8,28%",
+          "description": "(-4,82%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Valle rocciosa",
+          "name": "Valle rocciosa",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:36,78%",
+          "name": "36,78%",
+          "description": "(-1,51%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:4,97%",
+          "name": "4,97%",
+          "description": "(-1,16%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Zona aperta",
+          "name": "Zona aperta",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:36,49%",
+          "name": "36,49%",
+          "description": "(-2,94%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:5,06%",
+          "name": "5,06%",
+          "description": "(-0,36%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Carambola stellare",
+          "name": "Carambola stellare",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:36,11%",
+          "name": "36,11%",
+          "description": "(-0,84%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:1,90%",
+          "name": "1,90%",
+          "description": "(+0,11%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Centro caldo",
+          "name": "Centro caldo",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:36,06%",
+          "name": "36,06%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Budello",
+          "name": "Budello",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:36,04%",
+          "name": "36,04%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:5,10%",
+          "name": "5,10%",
+          "description": "Stazione del Parco nord",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:35,67%",
+          "name": "35,67%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:1,29%",
+          "name": "1,29%",
+          "description": "Tribrawlia",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:34,98%",
+          "name": "34,98%",
+          "description": "(-9,49%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:4,93%",
+          "name": "4,93%",
+          "description": "(-1,31%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:I sette pilastri di Brawl",
+          "name": "I sette pilastri di Brawl",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:34,82%",
+          "name": "34,82%",
+          "description": "(-1,57%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:4,17%",
+          "name": "4,17%",
+          "description": "(-0,09%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Stagno silvestre",
+          "name": "Stagno silvestre",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:34,71%",
+          "name": "34,71%",
+          "description": "(-0,34%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:1,85%",
+          "name": "1,85%",
+          "description": "(+0,04%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:In punta di piedi",
+          "name": "In punta di piedi",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:33,88%",
+          "name": "33,88%",
+          "description": "(+0,55%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:1,80%",
+          "name": "1,80%",
+          "description": "(+0,19%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Voglia di uscire",
+          "name": "Voglia di uscire",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:33,66%",
+          "name": "33,66%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:La verità",
+          "name": "La verità",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:33,30%",
+          "name": "33,30%",
+          "description": "(+0,71%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:4,29%",
+          "name": "4,29%",
+          "description": "(+1,33%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Laghi acidi",
+          "name": "Laghi acidi",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:33,14%",
+          "name": "33,14%",
+          "description": "(-7,72%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:1,52%",
+          "name": "1,52%",
+          "description": "(+0,39%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Sotto zero",
+          "name": "Sotto zero",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:32,82%",
+          "name": "32,82%",
+          "description": "(+0,26%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:4,98%",
+          "name": "4,98%",
+          "description": "(-0,63%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Distesa delle onde",
+          "name": "Distesa delle onde",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:32,75%",
+          "name": "32,75%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:2,67%",
+          "name": "2,67%",
+          "description": "Senza scuse",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:32,33%",
+          "name": "32,33%",
+          "description": "(+1,41%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:3,89%",
+          "name": "3,89%",
+          "description": "(-0,04%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Rifugio d'emergenza",
+          "name": "Rifugio d'emergenza",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:32,14%",
+          "name": "32,14%",
+          "description": "(+3,74%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:1,40%",
+          "name": "1,40%",
+          "description": "(-0,11%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Superficie scivolosa",
+          "name": "Superficie scivolosa",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:31,80%",
+          "name": "31,80%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:3,46%",
+          "name": "3,46%",
+          "description": "Scaffale di fortuna",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:31,71%",
+          "name": "31,71%",
+          "description": "(-2,82%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:4,32%",
+          "name": "4,32%",
+          "description": "(-0,12%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Baia dell'oro",
+          "name": "Baia dell'oro",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:31,14%",
+          "name": "31,14%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:1,01%",
+          "name": "1,01%",
+          "description": "Brawlanello",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:30,79%",
+          "name": "30,79%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:3,69%",
+          "name": "3,69%",
+          "description": "Piana della fame",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:30,76%",
+          "name": "30,76%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:3,41%",
+          "name": "3,41%",
+          "description": "Pianura volante",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:27,82%",
+          "name": "27,82%",
+          "description": "(-8,19%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:1,19%",
+          "name": "1,19%",
+          "description": "(+0,06%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Giocate parallele",
+          "name": "Giocate parallele",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:27,79%",
+          "name": "27,79%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:3,44%",
+          "name": "3,44%",
+          "description": "Rampicanti attorcigliati",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:27,56%",
+          "name": "27,56%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:3,39%",
+          "name": "3,39%",
+          "description": "Nucleo fuso",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:26,85%",
+          "name": "26,85%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:3,40%",
+          "name": "3,40%",
+          "description": "Comunità chiusa",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:26,81%",
+          "name": "26,81%",
+          "description": "(+4,36%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:0,66%",
+          "name": "0,66%",
+          "description": "(-0,71%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Landa dei pericoli",
+          "name": "Landa dei pericoli",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:25,15%",
+          "name": "25,15%",
+          "description": "(+0,53%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:3,36%",
+          "name": "3,36%",
+          "description": "(-0,27%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Piana della fame",
+          "name": "Piana della fame",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:24,19%",
+          "name": "24,19%",
+          "description": "(-11,83%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:4,01%",
+          "name": "4,01%",
+          "description": "(+1,02%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Caverna rumorosa",
+          "name": "Caverna rumorosa",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:24,15%",
+          "name": "24,15%",
+          "description": "(+0,21%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:2,27%",
+          "name": "2,27%",
+          "description": "(+0,13%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Torrente del teschio",
+          "name": "Torrente del teschio",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:23,95%",
+          "name": "23,95%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:2,20%",
+          "name": "2,20%",
+          "description": "Rampicanti attorcigliati",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:23,05%",
+          "name": "23,05%",
+          "description": "(+0,44%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:0,72%",
+          "name": "0,72%",
+          "description": "(-0,52%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Piano orbitale",
+          "name": "Piano orbitale",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:23,02%",
+          "name": "23,02%",
+          "description": "(-6,92%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:2,15%",
+          "name": "2,15%",
+          "description": "(-0,23%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Stazione del Parco nord",
+          "name": "Stazione del Parco nord",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:22,24%",
+          "name": "22,24%",
+          "description": "(-0,12%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:3,39%",
+          "name": "3,39%",
+          "description": "(-0,07%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Valle rocciosa",
+          "name": "Valle rocciosa",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:21,17%",
+          "name": "21,17%",
+          "description": "(+0,08%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:3,65%",
+          "name": "3,65%",
+          "description": "(-0,29%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Rice Field",
+          "name": "Rice Field",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:20,91%",
+          "name": "20,91%",
+          "description": "(+1,13%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:3,37%",
+          "name": "3,37%",
+          "description": "(+0,26%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Carambola stellare",
+          "name": "Carambola stellare",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:20,75%",
+          "name": "20,75%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:3,29%",
+          "name": "3,29%",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:20,60%",
+          "name": "20,60%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:2,17%",
+          "name": "2,17%",
+          "description": "Scaffale di fortuna",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:20,57%",
+          "name": "20,57%",
+          "description": "(+1,30%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:3,52%",
+          "name": "3,52%",
+          "description": "(+0,25%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Rifugio d'emergenza",
+          "name": "Rifugio d'emergenza",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:20,48%",
+          "name": "20,48%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:La verità",
+          "name": "La verità",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:20,00%",
+          "name": "20,00%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:3,23%",
+          "name": "3,23%",
+          "description": "(-0,37%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Loto",
+          "name": "Loto",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:19,77%",
+          "name": "19,77%",
+          "description": "(-2,35%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:2,29%",
+          "name": "2,29%",
+          "description": "(-0,99%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Budello",
+          "name": "Budello",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:19,45%",
+          "name": "19,45%",
+          "description": "(+0,01%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:3,79%",
+          "name": "3,79%",
+          "description": "(+1,59%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Pianura volante",
+          "name": "Pianura volante",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:19,37%",
+          "name": "19,37%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:2,12%",
+          "name": "2,12%",
+          "description": "Comunità chiusa",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:19,27%",
+          "name": "19,27%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:1,01%",
+          "name": "1,01%",
+          "description": "Distesa delle onde",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:19,15%",
+          "name": "19,15%",
+          "description": "(-2,51%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:3,30%",
+          "name": "3,30%",
+          "description": "(+2,03%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Laghi acidi",
+          "name": "Laghi acidi",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:18,65%",
+          "name": "18,65%",
+          "description": "(-1,04%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:3,94%",
+          "name": "3,94%",
+          "description": "(+0,78%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Stagno silvestre",
+          "name": "Stagno silvestre",
+          "description": "Tasso di vittoria:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:18,61%",
+          "name": "18,61%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:3,96%",
+          "name": "3,96%",
+          "description": "Doom Shroom",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:18,51%",
+          "name": "18,51%",
+          "description": "Tasso di scelta:",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:0,81%",
+          "name": "0,81%",
+          "description": "Castello dell'occhio di cristallo",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:18,23%",
+          "name": "18,23%",
+          "description": "(-1,43%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:3,85%",
+          "name": "3,85%",
+          "description": "(+0,55%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:17,13%",
+          "name": "17,13%",
+          "description": "(-5,55%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:3,10%",
+          "name": "3,10%",
+          "description": "(+0,97%)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Nucleo fuso",
+          "name": "Nucleo fuso",
+          "description": "Dati analitici: 199.216 battaglie professionali del periodo attuale rispetto alle 116.268 battaglie professionali del periodo precedente (7 giorni)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:This content is not affiliated with, endorsed, sponsored, or specifically approved by Supercell and Supercell is not responsible for it. For more information see",
+          "name": "This content is not affiliated with, endorsed, sponsored, or specifically approved by Supercell and Supercell is not responsible for it. For more information see",
+          "description": "Supercell’s Fan Content Policy",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:and our",
+          "name": "and our",
+          "description": "Privacy Policy",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Loading...",
+          "name": "Loading...",
+          "description": "&nbsp;&nbsp;Lingua",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:English",
+          "name": "English",
+          "description": "Français",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Español",
+          "name": "Español",
+          "description": "Italiano",
+          "imageUrl": null
+        }
+      ],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      }
+    },
+    "16000049": {
+      "id": 16000049,
+      "name": "Buzz",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/buzz",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000050": {
+      "id": 16000050,
+      "name": "Griff",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/griff",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000051": {
+      "id": 16000051,
+      "name": "Ash",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/ash",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000052": {
+      "id": 16000052,
+      "name": "Meg",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/meg",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000053": {
+      "id": 16000053,
+      "name": "Lola",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/lola",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000054": {
+      "id": 16000054,
+      "name": "Fang",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/fang",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000056": {
+      "id": 16000056,
+      "name": "Eve",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/eve",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000057": {
+      "id": 16000057,
+      "name": "Janet",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/janet",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000058": {
+      "id": 16000058,
+      "name": "Bonnie",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/bonnie",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000059": {
+      "id": 16000059,
+      "name": "Otis",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/otis",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000060": {
+      "id": 16000060,
+      "name": "Sam",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/sam",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000061": {
+      "id": 16000061,
+      "name": "Gus",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/gus",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000062": {
+      "id": 16000062,
+      "name": "Buster",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/buster",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000063": {
+      "id": 16000063,
+      "name": "Chester",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/chester",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000064": {
+      "id": 16000064,
+      "name": "Gray",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/gray",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000065": {
+      "id": 16000065,
+      "name": "Mandy",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/mandy",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000066": {
+      "id": 16000066,
+      "name": "R-T",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/r-t",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000067": {
+      "id": 16000067,
+      "name": "Willow",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/willow",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000068": {
+      "id": 16000068,
+      "name": "Maisie",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/maisie",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000069": {
+      "id": 16000069,
+      "name": "Hank",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/hank",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000070": {
+      "id": 16000070,
+      "name": "Cordelius",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/cordelius",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000071": {
+      "id": 16000071,
+      "name": "Doug",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/doug",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000072": {
+      "id": 16000072,
+      "name": "Pearl",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/pearl",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000073": {
+      "id": 16000073,
+      "name": "Chuck",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/chuck",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000074": {
+      "id": 16000074,
+      "name": "Charlie",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/charlie",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000075": {
+      "id": 16000075,
+      "name": "Mico",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/mico",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000076": {
+      "id": 16000076,
+      "name": "Kit",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/kit",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000077": {
+      "id": 16000077,
+      "name": "Larry & Lawrie",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/larry%20%26%20lawrie",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000078": {
+      "id": 16000078,
+      "name": "Melodie",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/melodie",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000079": {
+      "id": 16000079,
+      "name": "Angelo",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/angelo",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000080": {
+      "id": 16000080,
+      "name": "Draco",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/draco",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000081": {
+      "id": 16000081,
+      "name": "Lily",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/lily",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000082": {
+      "id": 16000082,
+      "name": "Berry",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/berry",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000083": {
+      "id": 16000083,
+      "name": "Clancy",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/clancy",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000084": {
+      "id": 16000084,
+      "name": "Moe",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/moe",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000085": {
+      "id": 16000085,
+      "name": "Kenji",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/kenji",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000086": {
+      "id": 16000086,
+      "name": "Shade",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/shade",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000087": {
+      "id": 16000087,
+      "name": "Juju",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/juju",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000088": {
+      "id": 16000088,
+      "name": "Buzz Lightyear",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/buzz%20lightyear",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000089": {
+      "id": 16000089,
+      "name": "Meeple",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/meeple",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000090": {
+      "id": 16000090,
+      "name": "Ollie",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/ollie",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000091": {
+      "id": 16000091,
+      "name": "Lumi",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/lumi",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000092": {
+      "id": 16000092,
+      "name": "Finx",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/finx",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000093": {
+      "id": 16000093,
+      "name": "Jae-Yong",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/jae-yong",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000094": {
+      "id": 16000094,
+      "name": "Kaze",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/kaze",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000095": {
+      "id": 16000095,
+      "name": "Alli",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/alli",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000096": {
+      "id": 16000096,
+      "name": "Trunk",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/trunk",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000097": {
+      "id": 16000097,
+      "name": "Mina",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/mina",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000098": {
+      "id": 16000098,
+      "name": "Ziggy",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/ziggy",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000099": {
+      "id": 16000099,
+      "name": "Pierce",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/pierce",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000100": {
+      "id": 16000100,
+      "name": "Gigi",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/gigi",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000101": {
+      "id": 16000101,
+      "name": "Glowy",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/glowy",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000102": {
+      "id": 16000102,
+      "name": "Sirius",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/sirius",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000103": {
+      "id": 16000103,
+      "name": "Najia",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/najia",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000104": {
+      "id": 16000104,
+      "name": "Damian",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/damian",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000105": {
+      "id": 16000105,
+      "name": "Starr Nova",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/starr%20nova",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000106": {
+      "id": 16000106,
+      "name": "Bolt",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/bolt",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000107": {
+      "id": 16000107,
+      "name": "Nori",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/nori",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000108": {
+      "id": 16000108,
+      "name": "Wendy",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/wendy",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000109": {
+      "id": 16000109,
+      "name": "Cosmo",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/cosmo",
+      "overdrives": [],
+      "gears": [],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      },
+      "error": "HTTP 503"
+    },
+    "16000110": {
+      "id": 16000110,
+      "name": "Vince",
+      "sourceUrl": "https://www.brawlfind.com/it/brawlers/vince",
+      "overdrives": [],
+      "gears": [
+        {
+          "id": "gear:15%",
+          "name": "15%",
+          "description": "di DANNI IN PIÙ quando la salute è sotto il",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:2",
+          "name": "2",
+          "description": "secondi dopo averli colpiti.",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:900",
+          "name": "900",
+          "description": "PUNTI SALUTE, che si rigenera in",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:10",
+          "name": "10",
+          "description": "secondi quando il brawler ha la salute piena.",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:.",
+          "name": ".",
+          "description": "(No modes data)",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:(No maps data)",
+          "name": "(No maps data)",
+          "description": "This content is not affiliated with, endorsed, sponsored, or specifically approved by Supercell and Supercell is not responsible for it. For more information see",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:and our",
+          "name": "and our",
+          "description": "Privacy Policy",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Loading...",
+          "name": "Loading...",
+          "description": "&nbsp;&nbsp;Lingua",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:English",
+          "name": "English",
+          "description": "Français",
+          "imageUrl": null
+        },
+        {
+          "id": "gear:Español",
+          "name": "Español",
+          "description": "Italiano",
+          "imageUrl": null
+        }
+      ],
+      "buffies": {
+        "gadget": {
+          "id": "buffie:gadget",
+          "name": "Gadget Buffie"
+        },
+        "starPower": {
+          "id": "buffie:starPower",
+          "name": "Star Buffie"
+        },
+        "hyperCharge": {
+          "id": "buffie:hyperCharge",
+          "name": "Hyper Buffie"
+        }
+      }
+    }
+  }
+}
