@@ -24,6 +24,10 @@ function metaEntry(b,mode='Ranked',map='Random'){
  if(Array.isArray(direct)){
   return direct.find(x=>!mode||!x.mode||norm(x.mode)===norm(mode))?.entry||direct[0]||null;
  }
+ if(direct.maps&&map&&map!=='Random'){
+  const mapEntry=direct.maps[map]||direct.maps[norm(map)]||Object.entries(direct.maps).find(([k])=>norm(k)===norm(map))?.[1];
+  if(mapEntry)return mapEntry;
+ }
  if(direct.modes){
   const modeEntry=direct.modes[mode]||direct.modes[norm(mode)]||direct.modes['GLOBAL'];
   if(Array.isArray(modeEntry))return modeEntry.find(x=>!map||!x.map||norm(x.map)===norm(map))||modeEntry[0]||null;
@@ -90,7 +94,7 @@ function norm(s){return String(s||'').toUpperCase().replace(/[’']/g,"'").repla
 function isOwnedAccount(b){if(!b)return false;return !!P?.brawlers?.some(x=>x&&((x.id!=null&&x.id===b.id)||norm(x.name)===norm(b.name)))}
 function accountBrawler(c){if(!c)return null;const a=P?.brawlers?.find(x=>x&&((x.id!=null&&x.id===c.id)||norm(x.name)===norm(c.name)));return a||{...c,power:0,rank:0,trophies:0,highestTrophies:0,gadgets:[],starPowers:[],gears:[],hyperCharges:[],buffies:[],overdrives:[]}}
 function allBrawlers(){const by=Object.values(CATALOG_STATE.entries||{});return (by.length?by.map(accountBrawler):[...(P?.brawlers||[])]).filter(Boolean)}
-function metaScope(b,mode,map){if(!b)return 'NOT AVAILABLE';const e=META_STATE.entries[b.name]||META_STATE.entries[norm(b.name)];if(!e)return 'NOT AVAILABLE';const mk=String(mode||'').trim().toLowerCase().replace(/[^a-z0-9]+([a-z0-9])/g,(_,x)=>x.toUpperCase()).replace(/[^a-z0-9]/g,'');if(map&&map!=='Random'&&(e.maps?.[mk]?.[map]||e.modes?.[mk]?.maps?.[map]))return 'MAP META';if(e.modes?.[mk]||e[mode])return 'MODE META';if(e.default)return 'GLOBAL META';return 'NOT AVAILABLE'}
+function metaScope(b,mode,map){if(!b)return 'NOT AVAILABLE';const e=META_STATE.entries[b.name]||META_STATE.entries[norm(b.name)];if(!e)return 'NOT AVAILABLE';const mk=String(mode||'').trim().toLowerCase().replace(/[^a-z0-9]+([a-z0-9])/g,(_,x)=>x.toUpperCase()).replace(/[^a-z0-9]/g,'');if(map&&map!=='Random'&&e.maps&&Object.keys(e.maps).some(k=>norm(k)===norm(map)))return 'MAP META';if(e.modes?.[mk]||e[mode])return 'MODE META';if(e.default)return 'GLOBAL META';return 'NOT AVAILABLE'}
 function status(b){const r=readiness(b);if((b.power||0)>=11&&r>=75)return ['PLAY NOW','ok'];if((b.power||0)>=9)return ['UPGRADE TO META',''];return ['LOW POWER','miss']}
 const MODES={Ranked:['Random','Open Business','Belle’s Rock','Goldarm Gulch','Kaboom Canyon'],Knockout:['Random','Goldarm Gulch','Belle’s Rock','Out in the Open'],'Gem Grab':['Random','Hard Rock Mine','Last Stop','Minecart Madness'],'Brawl Ball':['Random','Field Goal','Pinball Dreams','Super Beach'],Heist:['Random','Kaboom Canyon','Safe Zone','Hot Potato'],'Hot Zone':['Random','Dueling Beetles','Ring of Fire','Split']};
 function buildEntry(b){if(!b)return null;return BUILD_STATE.entries[b.name]||BUILD_STATE.entries[norm(b.name)]||BUILD_STATE.entries[String(b.name||'').toUpperCase()]||null}
