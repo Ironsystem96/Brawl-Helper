@@ -167,6 +167,7 @@ function buildAdvisor(b){const e=buildEntry(b);if(!e)return '<section class="car
 function nav(){return '<nav class="nav">'+[['home','⌂','Home'],['brawlers','●','Brawlers'],['upgrade','↗','Upgrade']].map(x=>'<button class="'+(tab===x[0]?'active':'')+'" onclick="setTab(\''+x[0]+'\')">'+x[1]+'<br>'+x[2]+'</button>').join('')+'</nav>'}
 function shell(body){document.getElementById('app').innerHTML='<div class="app"><header class="top"><div class="brand"><div class="logo">Brawl <span>Helper</span></div><div class="sync">'+(active?'PROFILE · '+esc(profileStatus):'NO PROFILE')+'</div></div><button class="profileBtn" onclick="profilePanel()">'+esc(P?.name||active||'Connect profile')+'</button></header><main class="content">'+body+'</main>'+nav()+'</div>'}
 function setTab(t){tab=t;selected=null;query='';filter='all';render()}
+function openB(id){const n=Number(id);const source=(P?.brawlers||[]).find(x=>x&&Number(x.id)===n)||allBrawlers().find(x=>x&&Number(x.id)===n);if(!source)return;selected=n;tab='brawlers';render();window.scrollTo({top:0,behavior:'smooth'})}
 
 function imgFallback(el,label){
  if(!el)return;
