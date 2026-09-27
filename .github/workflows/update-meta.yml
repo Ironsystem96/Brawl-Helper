@@ -44,7 +44,7 @@ jobs:
       - name: Sync local game assets
         working-directory: backend
         run: node sync-assets.js
-      - name: un Meta Agent health and confidence pass
+      - name: Run Meta Agent health and confidence pass
         working-directory: backend
         run: node meta-agent.js
       - name: Run Meta review gates
