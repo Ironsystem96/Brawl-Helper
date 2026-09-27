@@ -775,3 +775,26 @@ body{color:#f4f7fb}
   font-size:11px;font-weight:950;
 }
 .componentFiveGrid .guideComponent:after{content:'TAP FOR DETAILS';}
+
+
+/* Component inventory v6 */
+.componentInventory{overflow:hidden}
+.gearOptionGrid{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:8px}
+.gearOption{
+  min-width:0;display:flex;align-items:center;gap:7px;padding:7px 8px;
+  border:1px solid #334765;border-radius:10px;background:#151f34;color:#fff;text-align:left
+}
+.gearOption .compIcon{width:30px;height:30px;flex:0 0 30px}
+.gearOption>span{display:grid;gap:2px;min-width:0}
+.gearOption b{font-size:9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.gearOption small{font-size:7.5px;color:#8fa0b9}
+.gearOption strong{margin-left:auto;color:#ffd34e;font-size:7px;white-space:nowrap}
+.gearRecommended{border-color:#ffd34e;background:rgba(255,211,78,.07)}
+.overdriveSection .overdrivePanel .guideComponent{border:1px solid #405274;background:#17243a;border-radius:12px;padding:9px}
+.overdriveSection .overdrivePanel .compIcon{width:42px;height:42px}
+.buffieUnknown{border-color:#405274;background:#17243a}
+.buffieUnknown .buffieCheck{color:#ffd34e;background:#243653}
+@media(max-width:430px){
+ .gearOptionGrid{grid-template-columns:1fr}
+ .gearOption{padding:7px}
+}
