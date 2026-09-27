@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-27T08:16:44.051Z",
+  "generatedAt": "2026-09-27T08:21:01.076Z",
   "agent": "Brawl Helper Meta Agent",
   "policy": {
     "externalMetaFirst": true,
@@ -15,7 +15,7 @@
       "role": "battle_stats",
       "enabled": true,
       "coverage": 0,
-      "updatedAt": "2026-09-27T08:14:52.451Z",
+      "updatedAt": "2026-09-27T08:19:46.316Z",
       "ageHours": 0,
       "status": "missing"
     },
@@ -25,7 +25,7 @@
       "role": "battle_stats",
       "enabled": true,
       "coverage": 103,
-      "updatedAt": "2026-09-27T08:14:52.451Z",
+      "updatedAt": "2026-09-27T08:19:46.316Z",
       "ageHours": 0,
       "status": "ok"
     },
@@ -35,7 +35,7 @@
       "role": "builds",
       "enabled": true,
       "coverage": 105,
-      "updatedAt": "2026-09-27T08:14:52.451Z",
+      "updatedAt": "2026-09-27T08:19:46.316Z",
       "ageHours": 0,
       "status": "ok"
     },
@@ -45,7 +45,7 @@
       "role": "events_stats_catalog",
       "enabled": true,
       "coverage": 109,
-      "updatedAt": "2026-09-27T08:14:52.451Z",
+      "updatedAt": "2026-09-27T08:19:46.316Z",
       "ageHours": 0,
       "status": "ok"
     },
@@ -55,17 +55,15 @@
       "role": "official_account_game_data",
       "enabled": true,
       "coverage": 109,
-      "updatedAt": "2026-09-27T08:14:52.451Z",
+      "updatedAt": "2026-09-27T08:19:46.316Z",
       "ageHours": 0,
       "status": "ok"
     }
   ],
   "summary": {
     "brawlersWithGlobalMeta": 109,
-    "brawlersWithModeMeta": 0,
+    "brawlersWithModeMeta": 105,
     "lowConfidence": 3
   },
-  "warnings": [
-    "Mode coverage is incomplete; keep global fallback visible."
-  ]
+  "warnings": []
 }
