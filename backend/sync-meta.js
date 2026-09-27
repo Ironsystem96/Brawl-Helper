@@ -48,8 +48,9 @@ function parseNoff(html,brawler){
   const parseNamed=(names)=>{const out=[],low=text.toLowerCase();for(const item of names||[]){const name=item?.name||item,key=String(name).toLowerCase();let i=low.indexOf(key),pick=null;while(i>=0){const m=text.slice(i+key.length,i+key.length+120).match(/\s*(\d{1,3})%\s*pick/i);if(m){pick=Number(m[1]);break}i=low.indexOf(key,i+key.length)}if(pick!=null)out.push({name,pick});}return out;};
   gadgets.push(...parseNamed(brawler?.gadgets));
   starPowers.push(...parseNamed(brawler?.starPowers));
-  const gearNames=['Damage','Shield','Speed','Health','Vision','Gadget Cooldown','Reload','Super Charge','Pet Power','Talk to the Hand','Thicc Head','Exhausting Storm','Quadruplets','Super Turret'];
-  for(const name of gearNames){const i=text.toLowerCase().indexOf(name.toLowerCase());if(i<0)continue;const tail=text.slice(i,i+100);const m=tail.match(/\s*(\d{1,3})%/i);if(m)gears.push({name,pick:Number(m[1])});}
+  const gearBlock=pickSection(text,'Gear Pick Rates','Hypercharge');
+  const parsedGears=parsePickList(gearBlock).map(x=>({name:x.name,pick:x.pick}));
+  gears.push(...parsedGears);
   // NOFF exposes the current Overdrive and the three Buffie effects in the brawler page.
   // Keep them as named guide data so the frontend does not have to infer them from slots.
   const odMatch=text.match(/Overdrive\s+([^%]{2,90}?)(?:\s+Buffs while|\s+Damage|\s+Speed|\s+Shield|\s+Buffie:)/i);
