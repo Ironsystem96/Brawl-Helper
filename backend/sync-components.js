@@ -32,7 +32,8 @@ async function main(){
  const charRows=Object.values(characters||{}),byItem=new Map(charRows.filter(x=>x&&x.ItemName).map(x=>[norm(x.ItemName),x]));
  const skillRows=Object.values(skills||{}),bySkill=new Map(skillRows.filter(x=>x).map(x=>[norm(x.Name||x.name||x.id),x]));
  const build=fs.existsSync(BUILD)?JSON.parse(fs.readFileSync(BUILD,'utf8')):{entries:{}};
- const out={schemaVersion:3,generatedAt:new Date().toISOString(),source:'BrawlAPI game CSV mirror',sources:[{name:'BrawlAPI gear_boosts',url:'https://api.brawlapi.com/game/csv_logic/gear_boosts'},{name:'BrawlAPI characters',url:'https://api.brawlapi.com/game/csv_logic/characters'},{name:'BrawlAPI localization',url:'https://api.brawlapi.com/game/localization/texts'}],note:'Validated game-data catalog for Gear availability and descriptions, supplemented by synchronized community guide data for Overdrive and Buffie descriptions. Community fields remain clearly separated from game-data fields.',globalGears:gears,entries:{}};
+ const bfMap={};let next=0;await Promise.all(Array.from({length:10},async()=>{while(true){const i=next++;if(i>=list.length)return;bfMap[String(list[i].id)]=await brawlFindData(list[i].name)}}));
+ const out={schemaVersion:4,generatedAt:new Date().toISOString(),source:'BrawlAPI game CSV mirror + BrawlFind Overdrive catalog',sources:[{name:'BrawlAPI gear_boosts',url:'https://api.brawlapi.com/game/csv_logic/gear_boosts'},{name:'BrawlAPI characters',url:'https://api.brawlapi.com/game/csv_logic/characters'},{name:'BrawlAPI localization',url:'https://api.brawlapi.com/game/localization/texts'},{name:'BrawlFind Overdrive catalog',url:'https://www.brawlfind.com/it/brawlers/'}],note:'Validated game-data catalog for Gear availability and descriptions. Overdrive data is synchronized from BrawlAPI game data when available and BrawlFind when the game-data mapping is absent. Buffie data is kept separate from build recommendations.',globalGears:gears,entries:{}};
  for(const b of list){
   const internal=norm(b.hash||b.path||b.name),row=byItem.get(internal);
   const available=gears.filter(g=>g.availableToAll||g.extraHeroes.includes(internal)).map(g=>({...g}));
@@ -40,7 +41,7 @@ async function main(){
   const buffieMap={gadget:(be.buffies||[]).filter(x=>x.slot==='gadget'),starPower:(be.buffies||[]).filter(x=>x.slot==='starPower'),hyperCharge:(be.buffies||[]).filter(x=>x.slot==='hypercharge')};
   const odKey=row?.OverchargedUltimateSkill||null,od=odKey?bySkill.get(norm(odKey)):null;
   const odName=od?(textMap.get(od.TID)||textMap.get(od.Name)||od.Name||od.name||odKey):odKey;
-  let overdrive=odKey?{id:'overdrive:'+b.id,skillKey:odKey,name:odName,description:textMap.get(od.InfoTID)||od.Description||od.description||'',source:'BrawlAPI game CSV',imageUrl:null}:null; if(!overdrive){const bf=await brawlFindData(b.name); if(bf.name||bf.imageUrl) overdrive={id:'overdrive:'+b.id,name:bf.name||('Overdrive · '+b.name),description:bf.raw||'',source:'BrawlFind',sourceUrl:bf.url,imageUrl:bf.imageUrl||null}}
+  let overdrive=odKey?{id:'overdrive:'+b.id,skillKey:odKey,name:odName,description:textMap.get(od.InfoTID)||od.Description||od.description||'',source:'BrawlAPI game CSV',imageUrl:null}:null; const bf=bfMap[String(b.id)]||{}; if(!overdrive&&(bf.name||bf.imageUrl)) overdrive={id:'overdrive:'+b.id,name:bf.name||('Overdrive · '+b.name),description:bf.raw||'',source:'BrawlFind',sourceUrl:bf.url,imageUrl:bf.imageUrl||null};
   out.entries[String(b.id)]={id:b.id,name:b.name,gears:available,overdrives:overdrive?[overdrive]:(be.overdrives||[]),buffies:{gadget:buffieMap.gadget,starPower:buffieMap.starPower,hyperCharge:buffieMap.hyperCharge},gameCharacter:row?.Name||null};
  }
  fs.writeFileSync(OUT,JSON.stringify(out,null,2)+'\n');
