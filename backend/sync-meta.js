@@ -6,7 +6,7 @@ const BUILD_PATH=path.join(ROOT,'data','build-meta.json');
 const META_PATH=path.join(ROOT,'data','meta.json');
 const CATALOG_PATH=path.join(ROOT,'data','brawlers.json');
 const BRAWLAPI='https://api.brawlapi.com/v1/brawlers';
-const NOFF='https://www.noff.gg/brawl-stars/app/builds/';
+const NOFF='https://www.noff.gg/brawl-stars/app/brawler/';
 const BT='https://brawltime.ninja/tier-list/brawler/';
 
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
@@ -41,16 +41,26 @@ function parseNoff(html){
   const text=clean(html);
   const gadgets=parsePickList(pickSection(text,'Gadgets','Star Powers'));
   const starPowers=parsePickList(pickSection(text,'Star Powers','Gear Pick Rates'));
-  const gears=parsePickList(pickSection(text,'Gear Pick Rates','Hypercharge'));
-  const sample=(text.match(/Curated from\s+([\d,]+)\s+user-created builds/i)||[])[1];
-  return {
-    sample:sample?Number(sample.replace(/,/g,'')):null,
-    gadget:gadgets.slice(0,1),
-    starPower:starPowers.slice(0,1),
-    gears:gears.slice(0,2)
-  };
+  const gearSection=pickSection(text,'Gear Pick Rates','Hypercharge');
+  const gears=[];
+  const gearRe=/([A-Za-z][A-Za-z0-9'’+&. -]{1,60}?)\s+(\d{1,3})%/g;
+  let gm;
+  while((gm=gearRe.exec(gearSection))){const name=gm[1].trim();if(name&&!/^(?:Gear Pick Rates|Image)$/i.test(name)&&!/^(?:pick|from)$/i.test(name))gears.push({name,pick:Number(gm[2])});}
+  const stats={winRate:Number((text.match(/Win Rate\s*\(?([0-9.]+)%/i)||[])[1]||'NaN'),pickRate:Number((text.match(/Pick Rate\s*\(?([0-9.]+)%/i)||[])[1]||'NaN')};
+  if(!Number.isFinite(stats.winRate))stats.winRate=null;
+  if(!Number.isFinite(stats.pickRate))stats.pickRate=null;
+  const sample=(text.match(/pick % from\s+([\d,]+)\s+builds/i)||text.match(/Curated from\s+([\d,]+)\s+user-created builds/i)||[])[1];
+  const modeBlock=pickSection(text,'Best Game Modes','Best Maps');
+  const mapBlock=pickSection(text,'Best Maps','Attacks');
+  const modeNames=['Showdown','Duo Showdown','Trio Showdown','Bounty','Gem Grab','Heist','Brawl Ball','Hot Zone','Knockout','Wipeout','Basket Brawl','Duels','Hunters'];
+  const modes={};
+  for(const name of modeNames){const re=new RegExp(name+'\\s+([0-9.]+)%\\s*([0-9.]+)%\\s*([0-9.]+)','i');const m=modeBlock.match(re);if(m)modes[name]={winRate:Number(m[1]),pickRate:Number(m[2]),score:Number(m[3])};}
+  const maps=[];
+  const mapRe=/([A-Za-z0-9][A-Za-z0-9'’&.\\- ]{1,70}?)\\s+([0-9.]+)%\\s*([0-9.]+)%\\s*([0-9.]+)/g;
+  let mm;
+  while((mm=mapRe.exec(mapBlock))){const name=mm[1].trim().replace(/^Image\s*/i,'');if(name&&!/^(?:Map|Win Rate|Pick Rate|Score|Show More)$/i.test(name))maps.push({name,winRate:Number(mm[2]),pickRate:Number(mm[3]),score:Number(mm[4])});}
+  return {sample:sample?Number(sample.replace(/,/g,'')):null,gadget:gadgets.slice(0,1),starPower:starPowers.slice(0,1),gears:gears.slice(0,6),stats,modes,maps:maps.slice(0,20)};
 }
-
 function parseBT(html){
   const text=clean(html);
   const win=(text.match(/Win Rate\s*\(?([0-9.]+)%/i)||text.match(/Tasso di Vincita\s*\(?([0-9.]+)%/i)||[])[1];
@@ -72,8 +82,10 @@ async function main(){
   for(const b of list){
     const slug=String(b.name).toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
     let build=previous.entries?.[b.name]||null;
+    let noff=null;
     try{
       const parsed=parseNoff(await get(NOFF+encodeURIComponent(slug)));
+      noff={sourceUrl:NOFF+slug,stats:parsed.stats,modes:parsed.modes,maps:parsed.maps,sample:parsed.sample};
       if(parsed.gadget.length||parsed.starPower.length||parsed.gears.length||parsed.sample){
         build={sourceUrl:NOFF+slug,sample:parsed.sample,gadget:parsed.gadget,starPower:parsed.starPower,gears:parsed.gears};
         noffOk++;
@@ -93,7 +105,8 @@ async function main(){
       gadget:build?.gadget||[],
       starPower:build?.starPower||[],
       gears:build?.gears||[],
-      stats
+      stats,
+      noff:noff||previous.entries?.[b.name]?.noff||null
     };
     await sleep(80);
   }
@@ -153,18 +166,21 @@ async function main(){
   for(const b of list){
     const e=entries[b.name];
     const s=e.stats||{};
-    const base=s.adjustedWinRate??s.winRate;
+    const ns=e.noff?.stats||{};
+    const base=ns.winRate??s.adjustedWinRate??s.winRate;
     const buildPicks=[...(e.gadget||[]),...(e.starPower||[]),...(e.gears||[])].map(x=>Number(x.pick)).filter(Number.isFinite);
     const buildScore=buildPicks.length?Math.min(100,Math.round(buildPicks.reduce((a,v)=>a+v,0)/buildPicks.length)):50;
     const score=base!=null?Math.round(base):buildScore;
     const modesOut={};
+    for(const [modeKey,r] of Object.entries(e.noff?.modes||{}))modesOut[modeKey]={score:r.score,rank:null,winRate:r.winRate,pickRate:r.pickRate,reason:'NOFF battle-trend score',source:'NOFF',confidence:r.pickRate>=0.5?'medium':'low'};
     for(const [modeKey,md] of Object.entries(modeMeta)){
       const r=md.entries?.[b.name];
-      if(r)modesOut[modeKey]={score:r.winRate,rank:r.rank,winRate:r.winRate,pickRate:r.pickRate,reason:md.name+' Wilson-adjusted win rate',source:'BrawlMetrics',confidence:r.rank<=10?'medium':'low'};
+      if(r&&!modesOut[modeKey])modesOut[modeKey]={score:r.winRate,rank:r.rank,winRate:r.winRate,pickRate:r.pickRate,reason:md.name+' Wilson-adjusted win rate',source:'BrawlMetrics',confidence:r.rank<=10?'medium':'low'};
     }
     metaEntries[b.name]={
       default:{score,rank:null,reason:base!=null?'Brawl Time Ninja adjusted win rate':'Community build data only',source:base!=null?'Brawl Time Ninja':'NOFF',confidence:base!=null?'medium':'low'},
-      modes:modesOut
+      modes:modesOut,
+      maps:Object.fromEntries((e.noff?.maps||[]).map(r=>[r.name,{score:r.score,winRate:r.winRate,pickRate:r.pickRate,source:'NOFF',confidence:r.pickRate>=1?'medium':'low'}]))
     };
   }
   const meta={schemaVersion:2,updatedAt:now,source:'BrawlMetrics + Brawl Time Ninja + NOFF',method:'Global + mode snapshot. Mode rankings use BrawlMetrics Wilson-adjusted win rate; map-specific data is only shown when a verified map snapshot exists.',coverage:{brawlers:list.length,modes:modeOk,totalModes:Object.keys(modeSlugs).length},entries:metaEntries};
