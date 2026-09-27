@@ -14,9 +14,13 @@ const clean=s=>String(s||'').replace(/&amp;/g,'&').replace(/&#39;|&apos;/g,"'").
 const norm=s=>String(s||'').toUpperCase().replace(/[’']/g,"'").replace(/[^A-Z0-9]+/g,' ').trim();
 
 async function get(url){
-  const r=await fetch(url,{headers:{'user-agent':'BrawlHelper-MetaSync/1.0'}});
-  if(!r.ok)throw new Error(url+' HTTP '+r.status);
-  return r.text();
+  const controller=new AbortController();
+  const timer=setTimeout(()=>controller.abort(),15000);
+  try{
+    const r=await fetch(url,{headers:{'user-agent':'BrawlHelper-MetaSync/1.0'},signal:controller.signal});
+    if(!r.ok)throw new Error(url+' HTTP '+r.status);
+    return await r.text();
+  }finally{clearTimeout(timer)}
 }
 
 function pickSection(text,start,end){
@@ -108,7 +112,7 @@ async function main(){
       stats,
       noff:noff||previous.entries?.[b.name]?.noff||null
     };
-    await sleep(80);
+    await sleep(25);
   }
 
   const buildMeta={schemaVersion:2,updatedAt:now,sourceStatus:{brawlApi:list.length,noff:noffOk,brawlTimeNinja:btOk},sources:[
