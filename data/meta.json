@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-27T08:09:10.032Z",
+  "updatedAt": "2026-09-27T08:11:44.398Z",
   "source": "BrawlMetrics + Brawl Time Ninja + NOFF",
   "method": "Global + mode snapshot. Mode rankings use BrawlMetrics Wilson-adjusted win rate; map-specific data is only shown when a verified map snapshot exists.",
   "coverage": {
