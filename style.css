@@ -701,3 +701,38 @@ body{color:#f4f7fb}
 .fallbackIcon:before,.fallbackIcon:after{display:none!important;content:none!important}
 .componentImageFallback{width:32px;height:32px;display:flex;align-items:center;justify-content:center;border:1px solid #405274;border-radius:8px;background:#17243a;overflow:hidden}
 .componentImageFallback i{display:none}
+
+
+/* Full component strip: 5 primary slots + 3 Buffies */
+.miniBuildFull{display:grid;gap:5px;margin-top:7px}
+.miniBuildRow{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:4px}
+.miniBuildRow .miniItem{min-width:0;min-height:43px;padding:4px 3px;display:grid;grid-template-columns:24px 1fr 12px;align-items:center;gap:3px;border-radius:9px}
+.miniBuildRow .miniItem .compIcon{width:24px;height:24px}
+.miniBuildRow .miniItem b{font-size:7px;line-height:1.05;white-space:normal;overflow:hidden;text-overflow:ellipsis}
+.miniBuildRow .miniItem em{font-size:9px;font-style:normal;font-weight:950}
+.pendingMini{opacity:.7;border-style:dashed!important}
+.miniBuffieRow{display:grid;grid-template-columns:repeat(3,1fr);gap:4px}
+.miniBuffie{min-width:0;display:flex;align-items:center;gap:4px;padding:4px 5px;border:1px solid #405274;border-radius:8px;background:#111c2f;color:#dce5f7;text-align:left}
+.miniBuffie .buffieCheck{width:19px;height:19px;flex:0 0 19px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:950;background:#243653}
+.miniBuffie b{font-size:7px;line-height:1.05;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.miniBuffie.buffieOwned{border-color:#4e8b72;background:rgba(97,230,167,.06)}
+.miniBuffie.buffieOwned .buffieCheck{color:#9ff0c6;background:#1d5b43}
+.miniBuffie.buffieMissing .buffieCheck{color:#ff9a9a}
+.miniBuffie.buffieUnknown .buffieCheck{color:#ffd34e}
+.gearOptions{display:grid;gap:5px;margin-top:9px}
+.subsectionLabel{font-size:8px;letter-spacing:1px;font-weight:950;color:#9eacc1}
+.gearOption{display:flex;align-items:center;gap:8px;padding:7px 8px;border:1px solid #334765;border-radius:9px;background:#17243a;color:#fff;text-align:left}
+.gearOption .compIcon{width:30px;height:30px;flex:0 0 30px}
+.gearOption span{display:grid;gap:2px;min-width:0}
+.gearOption b{font-size:9px}
+.gearOption small{font-size:7.5px;color:#9eacc1}
+.gearOption strong{margin-left:auto;font-size:7px;color:#ffd34e}
+.gearRecommended{border-color:#ffd34e;background:rgba(255,211,78,.06)}
+@media(max-width:430px){
+ .miniBuildRow{gap:3px}
+ .miniBuildRow .miniItem{grid-template-columns:20px 1fr 9px;min-height:39px;padding:3px 2px}
+ .miniBuildRow .miniItem .compIcon{width:20px;height:20px}
+ .miniBuildRow .miniItem b{font-size:6.5px}
+ .miniBuffie b{font-size:6.5px}
+ .miniBuffie .buffieCheck{width:17px;height:17px;flex-basis:17px}
+}
