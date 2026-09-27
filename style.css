@@ -630,3 +630,36 @@ body{color:#f4f7fb}
 .componentModal .stateBox{padding:9px 10px;border:1px solid #405274;background:#17243a;border-radius:10px}
 .componentModal .ownershipControls{display:flex;flex-wrap:wrap;gap:5px}
 @media(max-width:430px){.componentFiveGrid .guideComponent:after{font-size:5.5px}.componentModal .modalBox{max-height:84vh}}
+
+
+/* Unified navigation + explicit account/build states */
+.metaSelector{display:flex;gap:5px;overflow-x:auto;padding:2px 0 7px;scrollbar-width:none}
+.metaSelector::-webkit-scrollbar{display:none}
+.metaSelector button{flex:0 0 auto;padding:7px 9px;border:1px solid #3a4d6e;border-radius:9px;background:#141f34;color:#b9c6d8;font-size:8px;font-weight:900}
+.metaSelector button.active{background:#243653;border-color:#ffd34e;color:#ffd34e}
+.metaExplain{display:grid;gap:3px;padding:9px 10px;margin:7px 0;border:1px solid #334765;background:#111c2f;border-radius:11px}
+.metaExplain b{font-size:10px;color:#fff}
+.metaExplain span{font-size:8.5px;color:#8fa0b9;line-height:1.35}
+.metaList{display:grid;gap:6px}
+.buildSlotGrid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;margin-top:8px}
+.buildSlot{min-width:0;padding:8px 5px;border:1px solid #405274;border-radius:11px;background:#141f34;color:#fff;display:grid;grid-template-rows:auto 1fr auto;gap:5px;text-align:center}
+.buildSlot .compIcon{width:34px;height:34px;margin:auto}
+.buildSlot>span{display:grid;gap:2px;min-width:0}
+.buildSlot small{font-size:7px;color:#9eacc1;text-transform:uppercase}
+.buildSlot b{font-size:8px;line-height:1.15;overflow-wrap:anywhere}
+.buildSlot em{font-size:6.5px;color:#ffd34e;font-style:normal}
+.buildSlot strong{font-size:7px;letter-spacing:.3px}
+.buildSlot.slotEquipped{border-color:#4e8b72;background:rgba(97,230,167,.05)}
+.buildSlot.slotEquipped strong{color:#9ff0c6}
+.buildSlot.slotOwned{border-color:#627da8}
+.buildSlot.slotOwned strong{color:#c9d7ea}
+.buildSlot.slotUnknown strong{color:#ffd34e}
+.subTitle{margin-top:12px!important}
+.compactDetails{padding:0!important}
+.compactDetails>summary{cursor:pointer;list-style:none;padding:11px 12px;color:#fff;font-size:10px;font-weight:900}
+.compactDetails>summary::-webkit-details-marker{display:none}
+.compactDetails>summary:after{content:'＋';float:right;color:#ffd34e}
+.compactDetails[open]>summary:after{content:'−'}
+.compactDetails .definitionCard{margin:0;border:0;border-top:1px solid #334765;border-radius:0}
+@media(max-width:700px){.buildSlotGrid{grid-template-columns:repeat(5,minmax(58px,1fr));overflow-x:auto;padding-bottom:2px}.buildSlot{min-width:58px}}
+@media(max-width:430px){.buildSlotGrid{gap:4px}.buildSlot{padding:6px 3px}.buildSlot .compIcon{width:29px;height:29px}}
