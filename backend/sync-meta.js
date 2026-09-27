@@ -56,6 +56,7 @@ function parseNoff(html,brawler){
     let name=gm[1].trim().replace(/^Image/i,'').replace(/^Pick Rates\s*/i,'').replace(/^(?:Gear\s*)/i,'').replace(/\s+/g,' ');
     const known=['Damage','Shield','Speed','Health','Vision','Gadget Cooldown','Reload Speed','Super Charge','Pet Power','Talk to the Hand','Thicc Head','Exhausting Storm','Quadruplets','Super Turret'];
     const canonical=known.find(k=>norm(name)===norm(k+k))||known.find(k=>norm(name)===norm(k));
+    if(/^Pick Rates /i.test(name)) name=name.replace(/^Pick Rates /i,'');
     name=canonical||name;
     if(!name) continue;
     if(!gearOut.some(x=>norm(x.name)===norm(name)))gearOut.push({name,pick:Number(gm[2])});
