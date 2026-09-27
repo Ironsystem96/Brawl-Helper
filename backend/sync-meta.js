@@ -63,7 +63,7 @@ function parseNoff(html,brawler){
   const mapRe=/([A-Za-z0-9][A-Za-z0-9'’&.\- ]{1,70}?)\s+([0-9.]+)%\s*([0-9.]+)%\s*([0-9.]+)/g;
   let mm;
   while((mm=mapRe.exec(mapBlock))){const name=mm[1].trim().replace(/^Image\s*/i,'');if(name&&!/^(?:Map|Win Rate|Pick Rate|Score|Show More)$/i.test(name)&&!/^Best Maps Map Win Rate Pick Rate Score/i.test(name))maps.push({name,winRate:Number(mm[2]),pickRate:Number(mm[3]),score:Number(mm[4])});}
-  return {sample:sample?Number(sample.replace(/,/g,'')):null,gadget:gadgets.slice(0,1),starPower:starPowers.slice(0,1),gears:gears.slice(0,6),stats,modes,maps:maps.slice(0,20)};
+  return {sample:sample?Number(sample.replace(/,/g,'')):null,gadget:gadgets.sort((a,b)=>b.pick-a.pick).slice(0,1),starPower:starPowers.sort((a,b)=>b.pick-a.pick).slice(0,1),gears:gears.sort((a,b)=>b.pick-a.pick).slice(0,6),stats,modes,maps:maps.slice(0,20)};
 }
 function parseBT(html){
   const text=clean(html);
