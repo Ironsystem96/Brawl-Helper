@@ -5,6 +5,7 @@ on:
       - 'backend/sync-meta.js'
       - 'backend/sync-assets.js'
       - 'backend/sync-components.js'
+      - 'backend/sync-overdrives.js'
       - 'backend/sync-brawler-profiles.js'
       - '.github/workflows/update-meta.yml'
   schedule:
@@ -44,6 +45,9 @@ jobs:
       - name: Sync catalog, builds and meta
         working-directory: backend
         run: node sync-meta.js
+      - name: Sync official Overdrive catalog
+        working-directory: backend
+        run: node sync-overdrives.js
       - name: Sync component catalog
         working-directory: backend
         run: node sync-components.js
@@ -66,7 +70,7 @@ jobs:
         run: |
           git config user.name "brawl-helper-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/brawlers.json data/build-meta.json data/meta.json data/meta-agent-report.json data/meta-review.json data/asset-manifest.json data/components.json data/brawler-profiles.json
+          git add data/brawlers.json data/build-meta.json data/meta.json data/meta-agent-report.json data/meta-review.json data/asset-manifest.json data/components.json data/overdrives.json data/brawler-profiles.json
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
