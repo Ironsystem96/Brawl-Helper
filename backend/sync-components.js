@@ -8,11 +8,12 @@ async function brawlFindData(name){
   const html=await (async()=>{const ctl=new AbortController(),t=setTimeout(()=>ctl.abort(),8000);try{const r=await fetch(url,{headers:{'user-agent':'BrawlHelper-ComponentSync/1.0'},signal:ctl.signal});if(!r.ok)throw Error('HTTP '+r.status);return await r.text()}finally{clearTimeout(t)}})();
   const clean=x=>String(x||'').replace(/&amp;/g,'&').replace(/&#39;/g,"'").replace(/&quot;/g,'"').replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim();
   const imgs=[];const ir=/<img\b[^>]*>/gi;let m;while((m=ir.exec(html))){const tag=m[0],src=tag.match(/(?:src|data-src)=["']([^"']+)["']/i),alt=tag.match(/(?:alt|title)=["']([^"']+)["']/i);if(src?.[1])imgs.push({url:src[1],alt:clean(alt?.[1]||'')})}
-  const text=clean(html),pos=text.toUpperCase().indexOf('OVERDRIVE');
+  const text=clean(html),up=text.toUpperCase(),pos=up.indexOf('OVERDRIVE');
   if(pos<0)return {url};
-  const tail=text.slice(pos,pos+2500),lines=tail.split(/(?=IMAGE:)|(?=GADGET)|(?=ABILITÀ STELLARE)|(?=DURATA OVERDRIVE)/);
-  const nameLine=lines.find(x=>!/^OVERDRIVE/i.test(x)&&!/^IMAGE:/i.test(x)&&x.length>2)?.trim()||null;
-  const matchImg=imgs.find(x=>x.alt&&nameLine&&x.alt.toUpperCase().includes(nameLine.toUpperCase()))||imgs.slice(0,1)[0]||null;
+  const tail=text.slice(pos,pos+3000);
+  const m=tail.match(/OVERDRIVE\s+IMAGE:\s*([^]+?)\s+\1/i)||tail.match(/OVERDRIVE\s+IMAGE:\s*([^]+?)\s+[^\n]+?(?=IMAGE:\s*(?:SUPER|BUFFIE)|GADGET|ABILITÀ STELLARE|EQUIPAGGIAMENTO)/i);
+  const nameLine=clean(m?.[1]||'').replace(/^IMAGE:\s*/i,'').trim()||null;
+  const matchImg=imgs.find(x=>x.alt&&nameLine&&x.alt.toUpperCase().trim()===nameLine.toUpperCase().trim())||imgs.find(x=>x.alt&&nameLine&&x.alt.toUpperCase().includes(nameLine.toUpperCase()))||null;
   return {url,name:nameLine,imageUrl:matchImg?.url||null,raw:tail};
  }catch(e){return {url,error:e.message}}
 }
