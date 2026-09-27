@@ -40,8 +40,11 @@ jobs:
       - name: Run Meta Agent health and confidence pass
         working-directory: backend
         run: node meta-agent.js
+      - name: Run Meta review gates
+        working-directory: backend
+        run: node meta-review.js
       - name: Validate JSON
-        run: node -e "for (const f of ['data/brawlers.json','data/build-meta.json','data/meta.json','data/meta-agent-report.json']) JSON.parse(require('fs').readFileSync(f,'utf8')); console.log('JSON OK')"
+        run: node -e "for (const f of ['data/brawlers.json','data/build-meta.json','data/meta.json','data/meta-agent-report.json','data/recommendation-rules.json','data/asset-manifest.json']) JSON.parse(require('fs').readFileSync(f,'utf8')); console.log('JSON OK')"
       - name: Commit data changes
         id: commit
         run: |
