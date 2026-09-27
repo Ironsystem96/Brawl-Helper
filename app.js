@@ -72,7 +72,24 @@ function portrait(b){return localAsset('portrait',null,b)||catalogEntry(b)?.imag
 function owned(b){return {gadgets:b?.gadgets?.length||0,stars:b?.starPowers?.length||0,gears:b?.gears?.length||0,hc:b?.hyperCharges?.length||0,buffies:b?.buffies||{}}}
 function readiness(b){if(!b)return 0;const e=b.power||1;const eq=(b.gadgets?.length||0)+(b.starPowers?.length||0)+(b.gears?.length||0)+(b.hyperCharges?.length||0);return Math.min(100,Math.round(e*6+Math.min(eq,6)*3))}
 function equippedNames(b,type){if(type==='buffies')return [];return (b?.[type]||[]).filter(Boolean).map(x=>norm(x?.name))}
-function buffieState(b,key){if(!b?.buffies||typeof b.buffies!=='object')return null;const v=b.buffies[key];return v===true?true:v===false?false:null}
+function buffieState(b,key){
+ const v=b?.buffies;
+ if(v==null)return null;
+ if(!Array.isArray(v)&&typeof v==='object'){
+  const x=v[key];
+  if(x===true||x===false)return x;
+  if(Array.isArray(x))return x.length>0?true:null;
+ }
+ if(Array.isArray(v)){
+  const hit=v.some(x=>{
+   const slot=String(x?.slot||x?.type||x?.category||'').toLowerCase();
+   return slot===String(key).toLowerCase()||(key==='hyperCharge'&&slot==='hypercharge');
+  });
+  return hit?true:null;
+ }
+ return null;
+}
+function buffieGroup(b,key){return buffieOptions(b,key)}
 function buffieRows(b){const c=COMPONENT_STATE.entries[String(b?.id||'')]?.buffies||{};return [['Gadget Buffie','gadget',Array.isArray(c.gadget)?c.gadget:[],buffieState(b,'gadget')],['Star Power Buffie','starPower',Array.isArray(c.starPower)?c.starPower:[],buffieState(b,'starPower')],['Hypercharge Buffie','hyperCharge',Array.isArray(c.hyperCharge)?c.hyperCharge:[],buffieState(b,'hyperCharge')]]}
 function buffieOptions(b,key){const c=COMPONENT_STATE.entries[String(b?.id||'')]?.buffies||{};const v=c[key];return Array.isArray(v)?v:[]}
 function ownedMapKey(b){return 'bh_owned_'+active+'_'+(b?.id||'unknown')}
@@ -185,7 +202,18 @@ function componentModalV2(b,type,item){
 }
 function componentTitle(type){return type==='gadgets'?'Gadget':type==='starPowers'?'Star Power':type==='gears'?'Gear':type==='hyperCharges'?'Hypercharge':type==='buffies'?'Buffie':type==='overdrives'?'Overdrive':'Component'}
 function buildAlternatives(b,type){const e=buildEntry(b),c=guideEntry(b)||{},key=type==='starPowers'?'starPower':type==='gadgets'?'gadget':type,source=Array.isArray(e?.[key])?e[key]:[],catalog=Array.isArray(c?.[type])?c[type]:[],merged=[...source,...catalog],seen=new Set();return merged.filter(x=>{const k=norm(x?.name);if(!k||seen.has(k))return false;seen.add(k);return true}).sort((a,z)=>(Number(z.pick)||0)-(Number(a.pick)||0))}
-function componentModalV2ById(bid,type,itemId){const b=allBrawlers().find(x=>x&&x.id===bid);if(!b)return;const c=guideEntry(b);let item=null;if(type==='buffies'){const key=String(itemId||'').startsWith('buffie:')?String(itemId).split(':')[1]:itemId,opts=buffieOptions(b,key);item=opts.find(x=>String(x.id)===String(itemId))||opts[0]||{id:'buffie:'+key,name:key==='gadget'?'Gadget Buffie':key==='starPower'?'Star Power Buffie':'Hypercharge Buffie',description:'No detailed Buffie entry is available in the current synchronized snapshot.'}}else item=(c?.[type]||[]).find(x=>x&&String(x.id)===String(itemId))||null;if(!item){const cc=catalogEntry(b)?.[type]||[];item=cc.find(x=>x&&String(x.id)===String(itemId))||null;}const fallback=type==='buffies'?null:buildAlternatives(b,type).find(x=>x&&x.id===itemId)||null;const resolved=item||fallback||{id:itemId,name:type==='overdrives'?'Overdrive data pending':type==='gears'?'Gear data pending':type==='gadgets'?'Gadget data pending':type==='starPowers'?'Star Power data pending':'Component data pending',description:'This component does not yet have a validated recommendation in the synchronized snapshot. Open the popup to see the current data status and source.'};componentModalV2(b,type,resolved)}
+function componentModalV2ById(bid,type,itemId){
+ const b=allBrawlers().find(x=>x&&x.id===bid);if(!b)return;
+ if(type==='buffies'){
+  const options=buffieGroup(b,itemId),state=buffieState(b,itemId);
+  const title=itemId==='gadget'?'Gadget Buffie':itemId==='starPower'?'Star Power Buffie':'Hypercharge Buffie';
+  const body=options.length?options.map(x=>'<div class="buffieDetailItem"><b>'+esc(x.name||title)+'</b><p>'+esc(cleanGuideText(x.description||'No description available.'))+'</p></div>').join(''):'<p class="small">No individual Buffie effect is available in the synchronized catalog yet.</p>';
+  document.body.insertAdjacentHTML('beforeend','<div class="modal componentModal"><div class="modalBox"><div class="modalHead"><h2>'+title+'</h2><button onclick="closeModal()">×</button></div><div class="componentDetail">'+compIcon('buffies',options[0]||{id:'buffie:'+itemId,name:title},b)+'<div class="eyebrow">BUFFIE</div><div class="stateBox"><b>'+(state===true?'UNLOCKED':state===false?'NOT UNLOCKED':'UNKNOWN')+'</b><span>'+options.length+' effect'+(options.length===1?'':'s')+' in this category</span></div><div class="buffieDetailList">'+body+'</div><p class="small">Buffies permanently enhance the related Gadget, Star Power or Hypercharge. The exact effects shown here come from the synchronized guide/game-data sources.</p></div><button class="close" onclick="closeModal()">Close</button></div></div>');
+  return;
+ }
+ const c=guideEntry(b),item=(c?.[type]||[]).find(x=>x&&String(x.id)===String(itemId))||buildAlternatives(b,type).find(x=>x&&String(x.id)===String(itemId))||null;
+ componentModalV2(b,type,item);
+}
 function guideComponent(b,label,type,item){if(!item)return '';const pending=String(item.id||'').startsWith('pending:');const x=guideItem(b,type,item),desc=cleanGuideText(x?.description||''),state=pending?'DATA PENDING':type==='buffies'?(buffieState(b,String(item.id||'').split(':')[1])?'UNLOCKED':'NOT UNLOCKED'):itemStatus(b,type,item),act=pending?'CHECK DATA':recommendationAction(b,type,item);return '<button class="guideComponent '+(state==='EQUIPPED'?'equipped':state==='OWNED'?'owned':state==='NOT OWNED'?'missing':'unknown')+'" onclick="componentModalV2ById('+b.id+',\''+type+'\','+(item.id||0)+')" type="button">'+compIcon(type,item,b)+'<span class="grow"><small>'+esc(label)+'</small><b>'+esc(item.name)+'</b><em>'+esc(desc||'View details')+'</em></span><strong>'+state+'</strong><span class="guideAction">'+act+'</span></button>'}
 function componentModalById(bid,type,itemId){const b=allBrawlers().find(x=>x&&x.id===bid);if(!b)return;const c=guideEntry(b);let item=null;if(type==='buffies'){const bc=COMPONENT_STATE.entries[String(b.id)]?.buffies||{};item=bc[itemId]||{id:'buffie:'+itemId,name:itemId==='gadget'?'Gadget Buffie':itemId==='starPower'?'Star Buffie':'Overdrive Buffie',description:'Permanent Buffie state reported by the player profile.'}}else item=(c?.[type]||[]).find(x=>x&&x.id===itemId)||null;const fallback=type==='buffies'?null:buildAlternatives(b,type).find(x=>x&&x.id===itemId)||null;componentModalV2(b,type,item||fallback)}
 function dataProvenance(b){
