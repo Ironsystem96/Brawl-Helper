@@ -304,10 +304,11 @@ function detail(){
  const accountOwned=isOwnedAccount(b),actions=nextActions(b),m=metaEntry(b,playMode,playMap),build=guideComponents(b),buffies=buffieRows(b);
  const statusFor=(type,item)=>item?(type==='buffies'?(buffieState(b,String(item.id||'').split(':')[1])?'OWNED':'UNKNOWN'):itemStatus(b,type,item)):'DATA PENDING';
  const slotHtml=build.map(([label,type,item])=>{
-   const pending=String(item?.id||'').startsWith('pending:');
+   const id=String(item?.id||''),pending=id.startsWith('pending:'),unavailable=id.startsWith('none:');
    const state=statusFor(type,item);
-   const cls=pending?'buildSlot pendingSlot':state==='EQUIPPED'?'buildSlot equippedSlot':'buildSlot';
-   return '<button class="'+cls+'" type="button" onclick="componentModalV2ById('+b.id+',\''+type+'\',\''+esc(String(item?.id||''))+'\')">'+compIcon(type,item,b)+'<small>'+esc(label.replace(' slot 1','').replace(' slot 2',''))+'</small><b>'+esc(item?.name||'—')+'</b><span class="slotState">'+(pending?'DATA PENDING':state)+'</span></button>';
+   const cls=(pending||unavailable)?'buildSlot pendingSlot':state==='EQUIPPED'?'buildSlot equippedSlot':'buildSlot';
+   const click=(pending||unavailable)?'':' onclick="componentModalV2ById('+b.id+',\\''+type+'\\',\\''+esc(id)+'\\')"';
+   return '<button class="'+cls+'" type="button"'+click+'>'+compIcon(type,item,b)+'<small>'+esc(label.replace(' slot 1','').replace(' slot 2',''))+'</small><b>'+esc(item?.name||'—')+'</b><span class="slotState">'+(unavailable?'NOT AVAILABLE':pending?'DATA PENDING':state)+'</span></button>';
  }).join('');
  const buffieHtml=buffies.map(([label,key,items,owned])=>{
    const available=items.length>0,cls=owned===true?'buffieOwned':available?'buffieAvailable':'buffieMissing',mark=owned===true?'✓':available?'?':'—',state=owned===true?'UNLOCKED':available?'AVAILABLE':'NOT AVAILABLE';
