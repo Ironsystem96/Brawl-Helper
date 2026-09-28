@@ -307,7 +307,7 @@ function detail(){
    const id=String(item?.id||''),pending=id.startsWith('pending:'),unavailable=id.startsWith('none:');
    const state=statusFor(type,item);
    const cls=(pending||unavailable)?'buildSlot pendingSlot':state==='EQUIPPED'?'buildSlot equippedSlot':'buildSlot';
-   const click=(pending||unavailable)?'':' onclick="componentModalV2ById('+b.id+',\\''+type+'\\',\\''+esc(id)+'\\')"';
+   const click=(pending||unavailable)?'':' onclick="componentModalV2ById('+b.id+',\''+type+'\',\''+esc(id)+'\')"';
    return '<button class="'+cls+'" type="button"'+click+'>'+compIcon(type,item,b)+'<small>'+esc(label.replace(' slot 1','').replace(' slot 2',''))+'</small><b>'+esc(item?.name||'—')+'</b><span class="slotState">'+(unavailable?'NOT AVAILABLE':pending?'DATA PENDING':state)+'</span></button>';
  }).join('');
  const buffieHtml=buffies.map(([label,key,items,owned])=>{
