@@ -57,8 +57,8 @@ window.detail=detailV2;
 function bcardV2(b,compact=false,mode=window.playMode,map=window.playMap,rank=null,kind=''){
  if(!b)return '';
  const m=window.metaEntry?.(b,mode,map),r=rank||window.metaRankOf?.(b,mode,map),own=window.isOwnedAccount?.(b),build=window.guideComponents?.(b)||[];
- const aligned=build.filter(x=>x[2]&&!String(x[2].id||'').startsWith('pending:')).length;
- return '<div class="bhBrawlerCard" onclick="openB('+b.id+')"><div class="bhRank">'+(r?'#'+r:'•')+'</div><img class="bhCardPortrait" src="'+window.portrait(b)+'" onerror="imgFallback(this,'+JSON.stringify(b.name)+')"><div class="bhCardMain"><div class="bhCardTop"><b>'+E(b.name)+'</b><span class="bhPower">'+(own?'P'+b.power:'NOT OWNED')+'</span></div><div class="bhCardSub">'+(own?F(b.trophies)+' trophies':'')+' · '+(m?'META':'META N/A')+'</div><div class="bhMetricRow"><span><b>'+(m?.score!=null?Math.round(m.score):'—')+'</b><small>META</small></span><span><b>'+(m?.pickRate!=null?pct(m.pickRate):'—')+'</b><small>PICK</small></span><span><b>'+(m?.winRate!=null?pct(m.winRate):'—')+'</b><small>WIN</small></span><span><b>'+aligned+'/5</b><small>BUILD</small></span></div></div></div>';
+ const quick=build.map(([label,type,item])=>'<button class="bhMiniLoadout" type="button" onclick="event.stopPropagation();componentModalV2ById('+b.id+',\''+type+'\','+JSON.stringify(String(item?.id||0))+')">'+window.compIcon(type,item,b)+'<small>'+(label.startsWith('Gear')?'GEAR':label.toUpperCase())+'</small></button>').join('');
+ return '<div class="bhBrawlerCard" onclick="openB('+b.id+')"><div class="bhRank">'+(r?'#'+r:'•')+'</div><img class="bhCardPortrait" src="'+window.portrait(b)+'" onerror="imgFallback(this,'+JSON.stringify(b.name)+')"><div class="bhCardMain"><div class="bhCardTop"><b>'+E(b.name)+'</b><span class="bhPower">'+(own?'P'+b.power:'NOT OWNED')+'</span></div><div class="bhCardSub">'+(own?F(b.trophies)+' trophies':'')+' · '+(m?'META':'META N/A')+'</div><div class="bhMiniLoadoutRow">'+quick+'</div></div></div>';
 }
 window.bcard=bcardV2;
 
@@ -92,6 +92,8 @@ const css=String.raw\`
 .bhBuffSection{padding:10px!important}.bhBuffSection .bhBuffGrid{grid-template-columns:repeat(3,1fr);gap:5px}.bhBuffSection .bhBuffie{padding:7px 6px;border-radius:10px}.bhBuffSection .bhBuffIcon{width:21px;height:21px;font-size:10px}.bhBuffSection .bhBuffie b{font-size:7.5px}.bhBuffSection .bhBuffie small{font-size:6px}
 .bhActionCompact{padding:10px!important}.bhActionCompact .bhActionRow{padding:8px;margin-top:4px}.compactDetails{border-radius:14px}.compactDetails>summary{padding:10px 11px;font-size:10px}
 @media(max-width:430px){.bhQuickLoadout .bhBuildGrid{grid-template-columns:repeat(5,minmax(55px,1fr));overflow-x:auto}.bhQuickLoadout .bhBuildSlot{min-width:55px}.bhBuffSection .bhBuffGrid{grid-template-columns:repeat(3,1fr)}}
+
+.bhMiniLoadoutRow{display:grid;grid-template-columns:repeat(5,1fr);gap:3px;margin-top:6px}.bhMiniLoadout{min-width:0;border:1px solid #293c57;background:#111d30;color:#cbd7e8;border-radius:7px;padding:3px 1px;display:flex;flex-direction:column;align-items:center;gap:2px}.bhMiniLoadout .compIcon{width:22px!important;height:22px!important}.bhMiniLoadout small{font-size:5px;font-weight:950;color:#7f90a9;line-height:1}.bhMiniLoadout:hover{border-color:#ffd34e}.bhCardMain{min-width:0}
 \`;
 const st=document.createElement('style');st.id='bh-ui-v2';st.textContent=css;document.head.appendChild(st);
 setTimeout(()=>{try{if(window.P&&window.render)window.render()}catch(e){console.error(e)}},0);
