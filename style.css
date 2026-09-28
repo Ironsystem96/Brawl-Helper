@@ -875,3 +875,57 @@ body{color:#f4f7fb}
 .gearOption span{display:grid;gap:2px;min-width:0}
 .gearOption b{font-size:9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .gearOption small{font-size:7.5px;color:#9eacc1}
+
+
+/* Detail UX v6 — single visual build, no repeated component sections */
+.compactHero{padding:12px 14px}
+.compactHero .heroMeta{margin-top:5px;font-size:8px;color:#aebbd0;line-height:1.3}
+.buildOverview{padding:11px}
+.buildFive{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;margin-top:8px}
+.buildSlot{
+  min-width:0;min-height:112px;display:grid;grid-template-rows:38px auto auto 1fr;
+  align-content:start;gap:4px;padding:8px 5px;border-radius:12px;
+  border:1px solid #3d5277;background:linear-gradient(160deg,#1a2944,#111b2f);
+  color:#fff;text-align:center;position:relative
+}
+.buildSlot .compIcon{width:36px;height:36px;margin:0 auto;object-fit:contain}
+.buildSlot small{font-size:7px;letter-spacing:.5px;color:#9eacc1;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.buildSlot b{font-size:9px;line-height:1.15;display:block;overflow:hidden}
+.buildSlot .guideState{font-size:7px}
+.buildSlot.equipped{border-color:#4e8b72;background:linear-gradient(160deg,#19362e,#111f2c)}
+.buildSlot.owned{border-color:#526b92}
+.buildSlot.missing{border-color:#80644b}
+.buildSlot.unknown{border-color:#405274}
+.buildSlot .slotEmpty{font-size:24px;color:#60708a;line-height:36px}
+.buildLegend{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
+.buildLegend>span{font-size:7.5px;color:#9eacc1;padding:4px 6px;border:1px solid #30435f;border-radius:7px;background:#111b2d}
+.buildLegend .legendDot{font-size:8px}
+.buffieCard{padding:11px}
+.buffieGrid{grid-template-columns:repeat(3,1fr);gap:6px}
+.buffieBox{min-height:55px}
+.buffieAvailable{border-color:#637b54;background:rgba(255,211,78,.04)}
+.buffieAvailable .buffieCheck{color:#ffd34e;border-color:#806d2d}
+.detailsIntro{display:grid;gap:3px;padding:7px 0 8px}
+.detailsIntro b{font-size:9px;color:#fff}
+.detailsIntro span{font-size:8px;color:#8fa0b9;line-height:1.35}
+.componentInventory[open]{border-color:#536987}
+.componentInventory>summary,.compactDetails>summary{cursor:pointer;list-style:none;font-weight:900;color:#f4f7fb;font-size:11px}
+.componentInventory>summary::-webkit-details-marker,.compactDetails>summary::-webkit-details-marker{display:none}
+.componentInventory>summary:after,.compactDetails>summary:after{content:'＋';float:right;color:#ffd34e;font-size:13px}
+.componentInventory[open]>summary:after,.compactDetails[open]>summary:after{content:'−'}
+.nextActionsCompact .nextAction{padding:8px 9px;margin-top:5px}
+.nextActionsCompact .nextAction b{font-size:9px}
+.nextActionsCompact .nextAction span{font-size:8px}
+.compactNext{border-left:2px solid #ffd34e}
+.gearOptionGrid{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;margin-top:8px}
+.gearOption{min-width:0}
+@media(max-width:520px){
+ .buildFive{gap:4px}
+ .buildSlot{min-height:104px;padding:7px 3px}
+ .buildSlot .compIcon{width:31px;height:31px}
+ .buildSlot b{font-size:8px}
+ .buildSlot small{font-size:6.5px}
+ .buffieBox{padding:6px 5px}
+ .buffieBox b{font-size:8px}
+ .buffieBox small{font-size:6.5px}
+}
