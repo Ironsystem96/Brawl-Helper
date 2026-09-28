@@ -111,7 +111,7 @@ function guideComponents(b){
   ['Star Power','starPowers',star||{id:'pending:star',name:'No validated recommendation',description:'No validated community recommendation is available for this component yet.'}],
   ['Gear 1','gears',g1||{id:'pending:gear1',name:'No validated Gear recommendation',description:'No validated Gear recommendation is available for this slot yet.'}],
   ['Gear 2','gears',g2||{id:'pending:gear2',name:'No validated Gear recommendation',description:'No validated Gear recommendation is available for this slot yet.'}],
-  ['Overdrive','overdrives',od||{id:'pending:overdrive',name:'Overdrive data pending',description:'The Brawler has an Overdrive slot, but the synchronized source has not yet supplied its current name and effect.'}]
+  ['Overdrive','overdrives',od||{id:'none:overdrive',name:'No Overdrive',description:'No Overdrive is currently listed for this Brawler in the synchronized component catalog.'}]
  ];
 }
 function gearOptions(b){
