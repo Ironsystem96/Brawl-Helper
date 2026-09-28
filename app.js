@@ -301,32 +301,28 @@ function buildSlotRows(b){
 }
 function detail(){
  const b=P.brawlers.find(x=>x&&x.id===selected)||allBrawlers().find(x=>x&&x.id===selected);if(!b)return '';
- const accountOwned=isOwnedAccount(b),actions=nextActions(b),guide=COMPONENT_STATE.entries[String(b.id)]||{},buffies=buffieRows(b),m=metaEntry(b,playMode,playMap);
- const slots=guideComponents(b);
- const slotMap={};
- slots.forEach(([label,type,item])=>{slotMap[label]=item});
- const slot=(label,type,item)=>item?guideComponent(b,label,type,item):'<div class="buildSlot emptySlot"><span class="slotEmpty">—</span><small>'+label+'</small><b>DATA PENDING</b></div>';
- const recommendedGear=(buildEntry(b)?.gears||[]).slice(0,2);
- const gearRows=gearOptionRows(b);
- const buffieHtml=buffies.slice(0,3).map(([label,key,items,owned])=>{
-   const available=items.length>0,cls=owned===true?'buffieOwned':available?'buffieAvailable':'buffieMissing';
-   const mark=owned===true?'✓':available?'?':'—';
-   const status=owned===true?'UNLOCKED':available?'AVAILABLE':'NOT AVAILABLE';
-   return '<button class="buffieBox '+cls+'" type="button" onclick="componentModalV2ById('+b.id+',\'buffies\',\''+key+'\')"><span class="buffieCheck">'+mark+'</span><span><b>'+label+'</b><small>'+status+(items.length?' · '+items.length+' effect'+(items.length===1?'':'s'):'')+'</small></span></button>';
+ const accountOwned=isOwnedAccount(b),actions=nextActions(b),m=metaEntry(b,playMode,playMap),build=guideComponents(b),buffies=buffieRows(b);
+ const statusFor=(type,item)=>item?(type==='buffies'?(buffieState(b,String(item.id||'').split(':')[1])?'OWNED':'UNKNOWN'):itemStatus(b,type,item)):'DATA PENDING';
+ const slotHtml=build.map(([label,type,item])=>{
+   const pending=String(item?.id||'').startsWith('pending:');
+   const state=statusFor(type,item);
+   const cls=pending?'buildSlot pendingSlot':state==='EQUIPPED'?'buildSlot equippedSlot':'buildSlot';
+   return '<button class="'+cls+'" type="button" onclick="componentModalV2ById('+b.id+',\''+type+'\',\''+esc(String(item?.id||''))+'\')">'+compIcon(type,item,b)+'<small>'+esc(label.replace(' slot 1','').replace(' slot 2',''))+'</small><b>'+esc(item?.name||'—')+'</b><span class="slotState">'+(pending?'DATA PENDING':state)+'</span></button>';
  }).join('');
- const actionsHtml=actions.slice(0,3).map(a=>'<div class="nextAction compactNext"><b>'+esc(a.label)+'</b><span>'+esc(a.reason)+'</span></div>').join('');
- const metaText=m?('Pick '+(m.pickRate??'—')+'% · Win '+(m.winRate??'—')+'% · Score '+(m.score??'—')):'No validated context';
+ const buffieHtml=buffies.map(([label,key,items,owned])=>{
+   const available=items.length>0,cls=owned===true?'buffieOwned':available?'buffieAvailable':'buffieMissing',mark=owned===true?'✓':available?'?':'—',state=owned===true?'UNLOCKED':available?'AVAILABLE':'NOT AVAILABLE';
+   return '<button class="buffieBox '+cls+'" type="button" onclick="componentModalV2ById('+b.id+',\'buffies\',\''+key+'\')"><span class="buffieCheck">'+mark+'</span><span><b>'+esc(label)+'</b><small>'+state+'</small></span></button>';
+ }).join('');
+ const metaLine=m?'Pick '+(m.pickRate??'—')+'% · Win '+(m.winRate??'—')+'% · Score '+(m.score??'—'):'No validated meta context';
+ const primary=actions[0];
  return '<button class="back" onclick="selected=null;render()">← Back</button>'+
- '<section class="hero brawlerHero compactHero"><div class="row"><img class="portrait heroPortrait" src="'+portrait(b)+'" onerror="imgFallback(this)"><div class="grow"><div class="eyebrow">BRAWLER GUIDE</div><h1>'+esc(b.name)+'</h1><div class="muted">'+(accountOwned?'Power '+b.power+' · '+fmt(b.trophies)+' trophies':'Not owned')+'</div><div class="heroMeta">'+esc(playMode)+(playMap!=='Random'?' · '+esc(playMap):'')+(m?' · '+esc(metaText):'')+'</div></div></div></section>'+
- '<section class="card buildOverview"><div class="sectionTitle"><div><h2>Recommended Build</h2><span class="small">5 core slots · tap any item for details</span></div><span class="chip '+(actions[0]?'':'ok')+'">'+(actions[0]?esc(actions[0].type):'READY')+'</span></div>'+
- '<div class="buildFive">'+slot('GADGET','gadgets',slotMap['Gadget'])+slot('STAR POWER','starPowers',slotMap['Star Power'])+slot('GEAR 1','gears',recommendedGear[0]||slotMap['Gear slot 1'])+slot('GEAR 2','gears',recommendedGear[1]||slotMap['Gear slot 2'])+slot('OVERDRIVE','overdrives',guide.overdrives?.[0]||catalogEntry(b)?.overdrives?.[0])+'</div>'+
- '<div class="buildLegend"><span><i class="legendDot equippedDot">✓</i> Equipped</span><span><i class="legendDot ownedDot">●</i> Owned</span><span><i class="legendDot buyDot">★</i> Build signal</span><span><i class="legendDot unknownDot">?</i> Unknown</span></div></section>'+
- '<section class="card buffieCard"><div class="sectionTitle"><div><h2>Buffies</h2><span class="small">3 permanent enhancement slots</span></div><span class="small">tap to inspect</span></div><div class="buffieGrid">'+buffieHtml+'</div></section>'+
- '<details class="card compactDetails componentInventory"><summary>All available Gear</summary><div class="detailsIntro"><b>Choose the second slot based on context.</b><span>Highlighted options are supported by the current community build snapshot. This section contains the full valid Gear pool without duplicating it in the main build.</span></div><div class="gearOptionGrid">'+gearRows+'</div></details>'+
- '<details class="card compactDetails"><summary>Why this build?</summary><div class="guideWhy"><b>Community signal</b><p>'+esc(buildEntry(b)?'The highlighted build is derived from synchronized community/statistical data, not an official Supercell recommendation.':'No verified community build is available for this Brawler yet.')+'</p><div class="guideFreshness"><span>DATA FRESHNESS</span><b>'+(BUILD_STATE.updatedAt?esc(new Date(BUILD_STATE.updatedAt).toLocaleString('en-US')):'—')+'</b><small>Component catalog: '+esc(COMPONENT_STATE.generatedAt||'—')+'</small></div></div></details>'+
- (actions.length?'<section class="card nextActionsCompact"><div class="sectionTitle"><h2>Next action</h2><span class="small">account-specific</span></div>'+actionsHtml+'</section>':'')+
- '<details class="card compactDetails"><summary>Meta context</summary><div class="metaContextCard"><b>'+esc(m?.reason||'No validated context for this selection')+'</b><span>'+esc(metaText)+'</span></div></details>'+
- '<details class="card compactDetails"><summary>Game information & sources</summary>'+brawlerDefinition(b)+'<p class="small">Meta/build: '+esc(BUILD_STATE.updatedAt||'—')+' · Components: '+esc(COMPONENT_STATE.generatedAt||'—')+'.</p></details>';
+ '<section class="hero brawlerHero compactHero"><div class="row"><img class="portrait heroPortrait" src="'+portrait(b)+'" onerror="imgFallback(this)"><div class="grow"><div class="eyebrow">BRAWLER GUIDE</div><h1>'+esc(b.name)+'</h1><div class="muted">'+(accountOwned?'Power '+b.power+' · '+fmt(b.trophies)+' trophies':'Not owned')+'</div><div class="heroMeta">'+esc(playMode)+(playMap!=='Random'?' · '+esc(playMap):'')+(m?' · '+esc(metaLine):'')+'</div></div></div></section>'+
+ '<section class="card selectionBuild"><div class="selectionHeader"><div><span class="eyebrow">QUICK LOADOUT</span><h2>Recommended setup</h2></div><span class="chip">'+(primary?esc(primary.type):'READY')+'</span></div><div class="buildFive">'+slotHtml+'</div><p class="small buildHint">Tap an icon to see its effect, current status, community signal and alternatives.</p></section>'+
+ '<section class="card buffieCard compactBuffies"><div class="selectionHeader"><div><span class="eyebrow">PERMANENT UPGRADES</span><h2>Buffies</h2></div><span class="small">3</span></div><div class="buffieGrid">'+buffieHtml+'</div></section>'+
+ '<details class="card compactDetails"><summary>Other Gear options</summary><div class="detailsIntro"><b>Available Gear for this Brawler</b><span>The highlighted Gear is part of the current community build signal. The two slots above are the actual recommended pair.</span></div><div class="gearOptionGrid">'+gearOptionRows(b)+'</div></details>'+
+ (actions.length?'<section class="card nextActionsCompact"><div class="selectionHeader"><div><span class="eyebrow">ACCOUNT</span><h2>Next action</h2></div><span class="chip">'+esc(primary?.type||'READY')+'</span></div>'+actions.slice(0,2).map(a=>'<div class="nextAction compactNext"><b>'+esc(a.label)+'</b><span>'+esc(a.reason)+'</span></div>').join('')+'</section>':'')+
+ '<details class="card compactDetails"><summary>Why this build?</summary><div class="guideWhy"><p>'+esc(buildEntry(b)?'The highlighted setup comes from synchronized community/statistical build data. It is not an official Supercell recommendation.':'No verified community build is available for this Brawler yet.')+'</p><div class="guideFreshness"><span>DATA FRESHNESS</span><b>'+(BUILD_STATE.updatedAt?esc(new Date(BUILD_STATE.updatedAt).toLocaleString('en-US')):'—')+'</b><small>Components: '+esc(COMPONENT_STATE.generatedAt||'—')+'</small></div></div></details>'+
+ '<details class="card compactDetails"><summary>Meta & sources</summary><div class="metaContextCard"><b>'+esc(m?.reason||'No validated context for this selection')+'</b><span>'+esc(metaLine)+'</span></div>'+brawlerDefinition(b)+'</details>';
 }
 function play(){
  const general=playMode==='General',names=general?[]:(MODES[playMode]||MODES.Ranked);
