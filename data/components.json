@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "generatedAt": "2026-09-27T21:09:24.134Z",
+  "generatedAt": "2026-09-28T16:49:06.400Z",
   "source": "BrawlAPI game CSV mirror + BrawlFind Overdrive catalog",
   "sources": [
     {
@@ -3257,7 +3257,16 @@
           "imageUrl": "https://cdn.brawlify.com/gears/regular/62000017.png"
         }
       ],
-      "overdrives": [],
+      "overdrives": [
+        {
+          "id": "overdrive:16000022",
+          "name": "A TESTA BASSA",
+          "description": "La testa di Tick punta più in fretta ai nemici e, una volta esplosa, lascia dietro di sé 6 minimine.",
+          "source": "BrawlFind",
+          "sourceUrl": "https://www.brawlfind.com/it/brawlers/tick",
+          "imageUrl": "https://cdn.brawlfind.com/hypercharges/Tick.webp"
+        }
+      ],
       "buffies": {
         "gadget": [],
         "starPower": [],
