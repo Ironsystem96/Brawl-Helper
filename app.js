@@ -436,7 +436,7 @@ async function loadProfile(tag){
 function render(){
  try{
   if(!P){shell('<section class="hero"><div class="eyebrow">ACCOUNT</div><h1>No active profile</h1><p class="muted">Connect your Player Tag to load your profile. Development test profiles are not available in production.</p><button class="primary" onclick="profilePanel()">Manage profile</button></section>');return}
-  if(selected)shell(detail());
+  if(selected)shell(window.detailV3?window.detailV3((P.brawlers||[]).find(x=>x&&x.id===selected)||allBrawlers().find(x=>x&&x.id===selected)):detail());
   else if(tab==='home')shell(home());
   else if(tab==='brawlers')shell(brawlers());
   else if(tab==='play')shell(play());
