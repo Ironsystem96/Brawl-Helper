@@ -5,6 +5,9 @@ const timeout=async(url,ms=10000)=>{const c=new AbortController(),t=setTimeout((
 const arr=v=>Array.isArray(v)?v:Object.values(v||{});
 const text=v=>String(v??'').trim();
 function image(kind,id){return id?API.replace('api.','cdn.')+'/'+kind+'/'+(kind==='gears'||kind==='hypercharges'||kind==='overdrives'||kind==='buffies'?'regular':'borderless')+'/'+id+'.png':null}
+const OVERDRIVE_FALLBACKS={
+  'tick':{name:'A TESTA BASSA',description:'Tick’s Super targets enemies faster and, after exploding, leaves 6 smaller mines behind.',source:'BrawlFind',sourceUrl:'https://www.brawlfind.com/it/brawlers/tick'}
+};
 async function main(){
  const catalog=JSON.parse(fs.readFileSync(CATALOG,'utf8')),bs=catalog.brawlers||[];
  if(bs.length<90)throw Error('Catalog unexpectedly small: '+bs.length);
@@ -36,8 +39,10 @@ async function main(){
  const entries={};
  for(const b of bs){
    const row=Object.entries(characterRows).find(([k,r])=>Number(r?.id)===Number(b.id)||text(r?.ItemName).toLowerCase()===text(b.name).toLowerCase()||k.toLowerCase()===text(b.name).toLowerCase())?.[1]||{};
-   const overName=text(row.OverchargedUltimateSkill||row.OverchargeSkill||row.Overdrive||'');
-   const od=overName?[...global.overdrives.values()].find(x=>x.name.toLowerCase()===overName.toLowerCase())||{id:'overdrive:'+b.id,name:overName,description:'Overdrive data synchronized from game data.',imageUrl:null,source:'BrawlAPI game CSV'}:null;
+   let overName=text(row.OverchargedUltimateSkill||row.OverchargeSkill||row.Overdrive||'');
+   const fallback=OVERDRIVE_FALLBACKS[text(b.name).toLowerCase()];
+   if(!overName&&fallback)overName=fallback.name;
+   const od=overName?[...global.overdrives.values()].find(x=>x.name.toLowerCase()===overName.toLowerCase())||{id:'overdrive:'+b.id,name:overName,description:fallback?.description||'Overdrive data synchronized from game data.',imageUrl:null,source:fallback?.source||'BrawlAPI game CSV',sourceUrl:fallback?.sourceUrl||null}:null;
    const gear=[...global.gears.values()].filter(g=>g.name&&g.description).slice(0,20);
    entries[String(b.id)]={id:b.id,name:b.name,source:'BrawlAPI game CSV',overdrives:od?[od]:[],gears:gear,buffies:{
      gadget:{id:'buffie:gadget:'+b.id,name:'Gadget Buffie',description:'Permanent upgrade associated with Gadget progression.',imageUrl:null},
