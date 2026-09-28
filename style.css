@@ -982,3 +982,17 @@ body{color:#f4f7fb}
  .buffieBox b{font-size:8px}
  .buffieBox small{font-size:6.5px}
 }
+
+
+/* Interaction clarity v6 */
+.guideComponent,.gearOption,.buffieBox{cursor:pointer;-webkit-tap-highlight-color:rgba(255,211,78,.16)}
+.guideComponent:active,.gearOption:active,.buffieBox:active{transform:translateY(1px)}
+.guideComponent:hover,.gearOption:hover{border-color:#ffd34e}
+.gearOptions{margin-top:9px;padding:9px 10px;border:1px solid #334765;border-radius:12px;background:#111c2f}
+.subsectionLabel{font-size:8px;letter-spacing:.9px;font-weight:950;color:#aebbd0;margin-bottom:6px}
+.gearOption{display:flex;align-items:center;gap:8px;width:100%;padding:7px 8px;margin-top:5px;border:1px solid #334765;border-radius:10px;background:#18243a;color:#fff;text-align:left}
+.gearOption .compIcon{width:30px;height:30px;flex:0 0 30px}
+.gearOption span{display:grid;gap:2px;min-width:0}
+.gearOption b{font-size:9px}
+.gearOption small{font-size:8px;color:#8fa0b9}
+.gearSignal{border-color:#ffd34e;background:rgba(255,211,78,.06)}
