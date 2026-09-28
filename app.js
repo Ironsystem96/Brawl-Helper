@@ -33,9 +33,13 @@ function metaEntry(b,mode='Ranked',map='Random'){
  }
  if(direct.modes){
   const modeEntry=direct.modes[mode]||direct.modes[norm(mode)]||direct.modes['GLOBAL'];
-  if(Array.isArray(modeEntry))return modeEntry.find(x=>!map||!x.map||norm(x.map)===norm(map))||modeEntry[0]||null;
-  return modeEntry||direct.global||null;
+  if(Array.isArray(modeEntry)){
+    const hit=modeEntry.find(x=>!map||!x.map||norm(x.map)===norm(map));
+    if(hit)return hit;
+  }else if(modeEntry)return modeEntry;
+  if(direct.global)return direct.global;
  }
+ return direct.default||direct.global||direct;
  if(direct.mode&&mode&&norm(direct.mode)!==norm(mode))return null;
  if(direct.map&&map&&direct.map!=='Random'&&norm(direct.map)!==norm(map))return null;
  return direct;
@@ -405,7 +409,7 @@ async function loadProfile(tag){
    try{
      const c=JSON.parse(cachedRaw);
      if(c?.data){
-       P=c.data;profileStatus='OFFLINE';profileSyncAt=c.savedAt?new Date(c.savedAt).toLocaleString('en-US'):'cached';
+       P=c.data;profileStatus='CACHE';profileSyncAt=c.savedAt?new Date(c.savedAt).toLocaleString('en-US'):'cached';
        render();
        setStage('stage: profile cache loaded · syncing…');
      }
@@ -433,7 +437,7 @@ async function loadProfile(tag){
  }catch(e){
    if(P){
      // Keep the cached profile visible and explain that only synchronization failed.
-     profileStatus='OFFLINE';
+     profileStatus='CACHE';
      setStage('stage: profile cache · sync unavailable');
      render();
      return P;
