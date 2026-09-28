@@ -929,3 +929,56 @@ body{color:#f4f7fb}
  .buffieBox b{font-size:8px}
  .buffieBox small{font-size:6.5px}
 }
+
+
+/* UX pass v6 — Brawl Stars quick-selection language */
+.homeHero{padding-bottom:14px}
+.compactQuick{margin-top:7px}
+.compactQuick button{min-height:62px}
+.homeGuideHint{margin-top:10px}
+.homeGuideHint p{max-width:620px}
+.selectionBuild,.compactBuffies{padding:11px}
+.selectionHeader{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:8px}
+.selectionHeader h2{margin:1px 0 0;font-size:18px;line-height:1.05}
+.selectionHeader .eyebrow{font-size:8px;letter-spacing:1px}
+.buildFive{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr));gap:5px}
+.buildSlot{
+  min-width:0;min-height:118px;padding:8px 4px;border:1px solid #3c5072;border-radius:12px;
+  background:linear-gradient(180deg,#1a2942,#111b2d);color:#fff;display:grid;grid-template-rows:35px auto auto auto;
+  justify-items:center;align-content:center;gap:4px;text-align:center
+}
+.buildSlot .compIcon{width:35px;height:35px;object-fit:contain}
+.buildSlot small{font-size:7px;letter-spacing:.7px;font-weight:950;color:#aebbd0;line-height:1}
+.buildSlot b{font-size:9px;line-height:1.15;max-width:100%;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.buildSlot .slotState{font-size:7px;color:#8798b2;line-height:1;text-transform:uppercase}
+.buildSlot.equippedSlot{border-color:#4e8b72;background:linear-gradient(180deg,#18352f,#13262a)}
+.buildSlot.equippedSlot .slotState{color:#9ff0c6}
+.buildSlot.pendingSlot{opacity:.65;border-style:dashed}
+.buildHint{margin:7px 2px 0;text-align:center;color:#8798b2}
+.compactBuffies .buffieGrid{margin-top:0}
+.buffieBox{min-height:52px}
+.buffieBox.buffieAvailable{border-color:#596d91;background:#17243a}
+.buffieBox.buffieAvailable .buffieCheck{color:#ffd34e;background:#293957}
+.compactDetails{padding:0!important;overflow:hidden}
+.compactDetails>summary{padding:12px 13px;font-size:11px;font-weight:950;cursor:pointer;list-style:none}
+.compactDetails>summary::-webkit-details-marker{display:none}
+.compactDetails>summary:after{content:'＋';float:right;color:#ffd34e}
+.compactDetails[open]>summary:after{content:'−'}
+.compactDetails .detailsIntro,.compactDetails .gearOptionGrid,.compactDetails .guideWhy,.compactDetails .metaContextCard,.compactDetails>.small{margin-left:12px;margin-right:12px}
+.compactDetails .detailsIntro{padding-top:3px}
+.nextActionsCompact{padding:11px}
+.nextActionsCompact .selectionHeader{margin-bottom:5px}
+.nextActionsCompact .nextAction{border-radius:9px}
+@media(max-width:520px){
+ .selectionBuild,.compactBuffies{padding:9px}
+ .selectionHeader h2{font-size:16px}
+ .buildFive{gap:3px}
+ .buildSlot{min-height:105px;padding:6px 2px;border-radius:10px}
+ .buildSlot .compIcon{width:31px;height:31px}
+ .buildSlot b{font-size:8px}
+ .buildSlot small{font-size:6px}
+ .buildSlot .slotState{font-size:6px}
+ .buffieBox{padding:6px 5px;gap:5px}
+ .buffieBox b{font-size:8px}
+ .buffieBox small{font-size:6.5px}
+}
