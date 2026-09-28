@@ -63,7 +63,7 @@ function hyperchargeBlock(b){
  if(!h&&!buffs.length)return '<section class="v3Card v3Missing"><div>'+sectionTitle('HYPERCHARGE','Hypercharge','data status')+'</div><p>Hypercharge is not yet present in the synchronized game-data profile for this Brawler. The app will not invent its name or effect.</p><a target="_blank" rel="noopener" href="'+E(sourceUrl(b))+'">Open source page →</a></section>';
  return '<section class="v3Card v3Hyper"><div>'+sectionTitle('HYPERCHARGE',h?.name||'Hypercharge','verified data when available')+'</div><div class="v3HyperBody">'+(h?icon('hyperCharges',h,b):'<span class="v3UnknownIcon">?</span>')+'<div><b>'+E(h?.name||'Hypercharge effect pending')+'</b><p>'+E(h?.description||'The current synchronized source exposes the Hypercharge Buffie but not the complete Hypercharge definition.')+'</p></div></div>'+
  (buffs.length?'<div class="v3BuffieEffect"><b>BUFFIE</b><span>'+E(buffs[0].description||'')+'</span></div>':'')+
- '<div class="v3HcStats"><span>Damage <b>+5%</b></span><span>Speed <b>+20%</b></span><span>Shield <b>+5%</b></span></div></section>';
+ '<div class="v3HcStats"><span>Hypercharge <b>ACTIVE</b></span><span>Buffie <b>'+(buffs.length?'AVAILABLE':'N/A')+'</b></span><span>Effect <b>SEE ABOVE</b></span></div></section>';
 }
 function attackBlock(b){
  const p=profile(b),st=p?.baseStats||{},a=p?.attack,s=p?.super;
@@ -88,7 +88,7 @@ function loadoutBlock(b){
  const list=(label,title,arr,type)=>'<section class="v3Card">'+sectionTitle(label,title,arr.length+' available')+(arr.length?'<div class="v3ComponentList">'+arr.map(x=>componentCard(b,type,x)).join('')+'</div>':'<div class="v3Missing">No synchronized options for this section.</div>')+'</section>';
  return list('GADGETS','Gadgets',g,'gadgets')+list('STAR POWERS','Star Powers',s,'starPowers')+
  '<section class="v3Card">'+sectionTitle('GEAR PICK RATES','Gears',sample?sample+' community builds':'community signal')+
- '<div class="v3GearList">'+gears.map((x,i)=>'<button type="button" class="v3GearRow '+(x.recommended?'recommended':'')+'" onclick="componentModalV2ById('+b.id+\\'gears\\','+JSON.stringify(String(x.id))+')">'+icon('gears',x,b)+'<span><b>'+E(x.name)+'</b><small>'+(x.recommended?'CURRENT BUILD SIGNAL':'AVAILABLE GEAR')+'</small></span><strong>'+(x.pick!=null?PCT(x.pick):'—')+'</strong></button>').join('')+'</div><p class="v3Footnote">Gear percentages are community build pick rates. They are not account ownership rates.</p></section>';
+ '<div class="v3GearList">'+gears.map((x,i)=>'<button type="button" class="v3GearRow '+(x.recommended?'recommended':'')+'" onclick="componentModalV2ById('+b.id+',\\'gears\\','+JSON.stringify(String(x.id))+')">'+icon('gears',x,b)+'<span><b>'+E(x.name)+'</b><small>'+(x.recommended?'CURRENT BUILD SIGNAL':'AVAILABLE GEAR')+'</small></span><strong>'+(x.pick!=null?PCT(x.pick):'—')+'</strong></button>').join('')+'</div><p class="v3Footnote">Gear percentages are community build pick rates. They are not account ownership rates.</p></section>';
 }
 function buildsBlock(b){
  const e=build(b),url=sourceUrl(b),items=window.guideComponents?.(b)||[];
