@@ -294,26 +294,32 @@ function buildSlotRows(b){
 }
 function detail(){
  const b=P.brawlers.find(x=>x&&x.id===selected)||allBrawlers().find(x=>x&&x.id===selected);if(!b)return '';
- const accountOwned=isOwnedAccount(b),actions=nextActions(b),guide=COMPONENT_STATE.entries[String(b.id)]||{},buffies=buffieRows(b);
- const m=metaEntry(b,playMode,playMap);
- return '<button class="back" onclick="selected=null;render()">← Back to Brawlers</button>'+
- '<section class="hero brawlerHero"><div class="row"><img class="portrait heroPortrait" src="'+portrait(b)+'" onerror="imgFallback(this)"><div class="grow"><div class="eyebrow">BRAWLER</div><h1>'+esc(b.name)+'</h1><div class="muted">'+(accountOwned?'Power '+b.power+' · '+fmt(b.trophies)+' trophies':'Not owned')+'</div></div></div></section>'+
- '<section class="card"><div class="sectionTitle"><h2>Build & status</h2><span class="chip">'+(actions[0]?esc(actions[0].type):'READY')+'</span></div>'+
- '<div class="stateLegend"><span><i class="legendDot equippedDot">✓</i> EQUIPPED</span><span><i class="legendDot ownedDot">●</i> OWNED</span><span><i class="legendDot unknownDot">?</i> UNKNOWN</span><span><i class="legendDot buyDot">★</i> RECOMMENDED</span></div>'+
- '<div class="buildSlotGrid">'+buildSlotRows(b)+'</div>'+
- '<div class="sectionTitle subTitle"><h3>Buffies</h3><span class="small">functional upgrades</span></div>'+
- '<div class="buffieGrid">'+buffies.slice(0,3).map(([label,key,items,owned])=>{const available=items.length>0,cls=owned===true?'buffieOwned':available?'buffieAvailable':'buffieMissing',mark=owned===true?'✓':available?'✓':'×',status=owned===true?'OWNED':available?'AVAILABLE · ownership unknown':'NOT AVAILABLE';return '<button class="buffieBox '+cls+'" type="button" onclick="componentModalV2ById('+b.id+',\'buffies\',\''+key+'\')"><span class="buffieCheck">'+mark+'</span><span><b>'+label+'</b><small>'+status+(items.length?' · '+items.length+' effects':'')+'</small></span></button>'}).join('')+'</div>'+
- '<p class="small">Equipped means reported by the profile. Owned means you manually confirmed ownership. Recommended means the current community/statistical build for the selected context. These states are intentionally separate.</p></section>'+
- '<section class="card componentInventory"><div class="sectionTitle"><h2>Gear options</h2><span class="small">all valid options</span></div><p class="small">All Gears available to this Brawler. The recommended pair is shown above; this list is only for comparing the other valid choices.</p><div class="gearOptionGrid">'+gearOptionRows(b)+'</div></section>'+'<section class="card componentInventory"><div class="sectionTitle"><h2>Available Gear</h2><span class="small">all valid options</span></div><p class="small">These are the Gear options available to this Brawler. A highlighted option is supported by the current community build snapshot; the two build slots above show the current recommended pair.</p><div class="gearOptionGrid">'+gearOptionRows(b)+'</div></section>'+'<section class="card overdriveSection"><div class="sectionTitle"><h2>Overdrive</h2><span class="small">special slot</span></div><div class="overdrivePanel">'+guideComponent(b,'Overdrive','overdrives',guide.overdrives?.[0]||catalogEntry(b)?.overdrives?.[0]||{id:'pending:overdrive',name:'Overdrive data pending',description:'No validated Overdrive description is available yet.'})+'</div><p class="small">Tap the Overdrive to see its effect, source context and available data.</p></section>'+'<section class="card"><div class="sectionTitle"><h2>Meta context</h2><span class="chip">'+esc(playMode)+'</span></div>'+
- '<div class="metaSelector"><button class="'+(playMode==='General'?'active':'')+'" onclick="playMode=\'General\';playMap=\'Random\';render()">GENERAL</button>'+Object.keys(MODES).slice(0,7).map(x=>'<button class="'+(playMode===x?'active':'')+'" onclick="playMode=\''+x+'\';playMap=\'Random\';render()">'+esc(x)+'</button>').join('')+'</div>'+
- '<select class="search" onchange="playMap=this.value;render()"><option value="Random">Random / overall</option>'+((MODES[playMode]||[]).map(x=>'<option '+(playMap===x?'selected':'')+'>'+esc(x)+'</option>').join(''))+'</select>'+
- '<div class="metaContextCard"><b>'+(m?esc(m.reason||'Current meta signal available'):'No validated context for this selection')+'</b><span>'+(m?('Pick '+(m.pickRate??'—')+'% · Win '+(m.winRate??'—')+'% · Meta score '+(m.score??'—')):'The app will not invent a recommendation.')+'</span></div>'+
- '</section>'+
- '<section class="card"><div class="sectionTitle"><h2>Next actions</h2><span class="small">account-specific</span></div>'+
- (actions.length?actions.slice(0,4).map(a=>'<div class="nextAction"><b>'+esc(a.label)+'</b><span>'+esc(a.reason)+'</span></div>').join(''):'<div class="emptyState"><b>No confirmed action.</b><span class="small">The current build is either equipped or ownership data is incomplete.</span></div>')+
- '</section>'+
- '<details class="card compactDetails"><summary>Game information & all available components</summary>'+brawlerDefinition(b)+'</details>'+
- '<section class="card"><div class="sectionTitle"><h3>Data sources</h3><span class="small">freshness</span></div><p class="small">Meta/build data: '+esc(BUILD_STATE.updatedAt||'—')+' · Component catalog: '+esc(COMPONENT_STATE.generatedAt||'—')+'. Tap any component above to inspect its description and alternatives.</p></section>';
+ const accountOwned=isOwnedAccount(b),actions=nextActions(b),guide=COMPONENT_STATE.entries[String(b.id)]||{},buffies=buffieRows(b),m=metaEntry(b,playMode,playMap);
+ const slots=guideComponents(b);
+ const slotMap={};
+ slots.forEach(([label,type,item])=>{slotMap[label]=item});
+ const slot=(label,type,item)=>item?guideComponent(b,label,type,item):'<div class="buildSlot emptySlot"><span class="slotEmpty">—</span><small>'+label+'</small><b>DATA PENDING</b></div>';
+ const recommendedGear=(buildEntry(b)?.gears||[]).slice(0,2);
+ const gearRows=gearOptionRows(b);
+ const buffieHtml=buffies.slice(0,3).map(([label,key,items,owned])=>{
+   const available=items.length>0,cls=owned===true?'buffieOwned':available?'buffieAvailable':'buffieMissing';
+   const mark=owned===true?'✓':available?'?':'—';
+   const status=owned===true?'UNLOCKED':available?'AVAILABLE':'NOT AVAILABLE';
+   return '<button class="buffieBox '+cls+'" type="button" onclick="componentModalV2ById('+b.id+',\'buffies\',\''+key+'\')"><span class="buffieCheck">'+mark+'</span><span><b>'+label+'</b><small>'+status+(items.length?' · '+items.length+' effect'+(items.length===1?'':'s'):'')+'</small></span></button>';
+ }).join('');
+ const actionsHtml=actions.slice(0,3).map(a=>'<div class="nextAction compactNext"><b>'+esc(a.label)+'</b><span>'+esc(a.reason)+'</span></div>').join('');
+ const metaText=m?('Pick '+(m.pickRate??'—')+'% · Win '+(m.winRate??'—')+'% · Score '+(m.score??'—')):'No validated context';
+ return '<button class="back" onclick="selected=null;render()">← Back</button>'+
+ '<section class="hero brawlerHero compactHero"><div class="row"><img class="portrait heroPortrait" src="'+portrait(b)+'" onerror="imgFallback(this)"><div class="grow"><div class="eyebrow">BRAWLER GUIDE</div><h1>'+esc(b.name)+'</h1><div class="muted">'+(accountOwned?'Power '+b.power+' · '+fmt(b.trophies)+' trophies':'Not owned')+'</div><div class="heroMeta">'+esc(playMode)+(playMap!=='Random'?' · '+esc(playMap):'')+(m?' · '+esc(metaText):'')+'</div></div></div></section>'+
+ '<section class="card buildOverview"><div class="sectionTitle"><div><h2>Recommended Build</h2><span class="small">5 core slots · tap any item for details</span></div><span class="chip '+(actions[0]?'':'ok')+'">'+(actions[0]?esc(actions[0].type):'READY')+'</span></div>'+
+ '<div class="buildFive">'+slot('GADGET','gadgets',slotMap['Gadget'])+slot('STAR POWER','starPowers',slotMap['Star Power'])+slot('GEAR 1','gears',recommendedGear[0]||slotMap['Gear slot 1'])+slot('GEAR 2','gears',recommendedGear[1]||slotMap['Gear slot 2'])+slot('OVERDRIVE','overdrives',guide.overdrives?.[0]||catalogEntry(b)?.overdrives?.[0])+'</div>'+
+ '<div class="buildLegend"><span><i class="legendDot equippedDot">✓</i> Equipped</span><span><i class="legendDot ownedDot">●</i> Owned</span><span><i class="legendDot buyDot">★</i> Build signal</span><span><i class="legendDot unknownDot">?</i> Unknown</span></div></section>'+
+ '<section class="card buffieCard"><div class="sectionTitle"><div><h2>Buffies</h2><span class="small">3 permanent enhancement slots</span></div><span class="small">tap to inspect</span></div><div class="buffieGrid">'+buffieHtml+'</div></section>'+
+ '<details class="card compactDetails componentInventory"><summary>All available Gear</summary><div class="detailsIntro"><b>Choose the second slot based on context.</b><span>Highlighted options are supported by the current community build snapshot. This section contains the full valid Gear pool without duplicating it in the main build.</span></div><div class="gearOptionGrid">'+gearRows+'</div></details>'+
+ '<details class="card compactDetails"><summary>Why this build?</summary><div class="guideWhy"><b>Community signal</b><p>'+esc(buildEntry(b)?'The highlighted build is derived from synchronized community/statistical data, not an official Supercell recommendation.':'No verified community build is available for this Brawler yet.')+'</p><div class="guideFreshness"><span>DATA FRESHNESS</span><b>'+(BUILD_STATE.updatedAt?esc(new Date(BUILD_STATE.updatedAt).toLocaleString('en-US')):'—')+'</b><small>Component catalog: '+esc(COMPONENT_STATE.generatedAt||'—')+'</small></div></div></details>'+
+ (actions.length?'<section class="card nextActionsCompact"><div class="sectionTitle"><h2>Next action</h2><span class="small">account-specific</span></div>'+actionsHtml+'</section>':'')+
+ '<details class="card compactDetails"><summary>Meta context</summary><div class="metaContextCard"><b>'+esc(m?.reason||'No validated context for this selection')+'</b><span>'+esc(metaText)+'</span></div></details>'+
+ '<details class="card compactDetails"><summary>Game information & sources</summary>'+brawlerDefinition(b)+'<p class="small">Meta/build: '+esc(BUILD_STATE.updatedAt||'—')+' · Components: '+esc(COMPONENT_STATE.generatedAt||'—')+'.</p></details>';
 }
 function play(){
  const general=playMode==='General',names=general?[]:(MODES[playMode]||MODES.Ranked);
