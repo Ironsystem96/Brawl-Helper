@@ -324,16 +324,19 @@ function detail(){
  const b=P.brawlers.find(x=>x&&x.id===selected)||allBrawlers().find(x=>x&&x.id===selected);if(!b)return '';
  const accountOwned=isOwnedAccount(b),actions=nextActions(b),m=metaEntry(b,playMode,playMap),build=guideComponents(b),buffies=buffieRows(b);
  const statusFor=(type,item)=>item?(type==='buffies'?(buffieState(b,String(item.id||'').split(':')[1])?'OWNED':'UNKNOWN'):itemStatus(b,type,item)):'DATA PENDING';
- const slotHtml=build.map(([label,type,item])=>{
+ const slotHtml=build.map(([label,type,item],index)=>{
    const id=String(item?.id||''),pending=id.startsWith('pending:'),unavailable=id.startsWith('none:');
    const state=statusFor(type,item);
-   const cls=(pending||unavailable)?'buildSlot pendingSlot':state==='EQUIPPED'?'buildSlot equippedSlot':'buildSlot';
+   const shownState=unavailable?'NOT AVAILABLE':pending?'DATA PENDING':state;
+   const cls=(pending||unavailable)?'buildSlot pendingSlot':state==='EQUIPPED'?'buildSlot equippedSlot':state==='OWNED'?'buildSlot ownedSlot':state==='NOT OWNED'?'buildSlot missingSlot':'buildSlot unknownSlot';
    const click=(pending||unavailable)?'':' onclick="componentModalV2ById('+b.id+',\''+type+'\',\''+esc(id)+'\')"';
-   return '<button class="'+cls+'" type="button"'+click+'>'+compIcon(type,item,b)+'<small>'+esc(label.replace(' slot 1','').replace(' slot 2',''))+'</small><b>'+esc(item?.name||'—')+'</b><span class="slotState">'+(unavailable?'NOT AVAILABLE':pending?'DATA PENDING':state)+'</span></button>';
+   const slotLabel=type==='gears'?'GEAR '+(index===2?'1':'2'):label.toUpperCase();
+   return '<button class="'+cls+'" type="button"'+click+'>'+compIcon(type,item,b)+'<small>'+slotLabel+'</small><b>'+esc(item?.name||'—')+'</b><span class="slotState">'+shownState+'</span></button>';
  }).join('');
  const buffieHtml=buffies.map(([label,key,items,owned])=>{
    const available=items.length>0,cls=owned===true?'buffieOwned':available?'buffieAvailable':'buffieMissing',mark=owned===true?'✓':available?'?':'—',state=owned===true?'UNLOCKED':available?'AVAILABLE':'NOT AVAILABLE';
-   return '<button class="buffieBox '+cls+'" type="button" onclick="componentModalV2ById('+b.id+',\'buffies\',\''+key+'\')"><span class="buffieCheck">'+mark+'</span><span><b>'+esc(label)+'</b><small>'+state+'</small></span></button>';
+   const icon=items[0]||{id:'buffie:'+key,name:label};
+   return '<button class="buffieBox '+cls+'" type="button" onclick="componentModalV2ById('+b.id+',\'buffies\',\''+key+'\')">'+compIcon('buffies',icon,b)+'<span><b>'+esc(label)+'</b><small>'+state+(available?' · '+items.length+' effect'+(items.length===1?'':'s'):'')+'</small></span><strong class="buffieState">'+mark+'</strong></button>';
  }).join('');
  const metaLine=m?'Pick '+(m.pickRate??'—')+'% · Win '+(m.winRate??'—')+'% · Score '+(m.score??'—'):'No validated meta context';
  const primary=actions[0];
