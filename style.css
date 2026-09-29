@@ -744,8 +744,7 @@ body{color:#f4f7fb}
 }
 .miniBuildRow .miniItem:nth-child(1):before{content:'GADGET'}
 .miniBuildRow .miniItem:nth-child(2):before{content:'STAR POWER'}
-.miniBuildRow .miniItem:nth-child(3):before{content:'GEAR 1'}
-.miniBuildRow .miniItem:nth-child(4):before{content:'GEAR 2'}
+.miniBuildRow .miniItem:nth-child(3):before,.miniBuildRow .miniItem:nth-child(4):before{content:'GEAR'}
 .miniBuildRow .miniItem:nth-child(5):before{content:'OVERDRIVE';color:#ffb66b}
 .miniBuildRow .miniItem:nth-child(5){background:linear-gradient(180deg,rgba(255,138,69,.08),rgba(17,28,47,.65))}
 
