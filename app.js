@@ -106,9 +106,54 @@ function actionForItem(b,type,item){const s=itemStatus(b,type,item);return s==='
 
 function ownershipControl(b,type,item){if(!item)return '';const s=itemStatus(b,type,item);if(s==='EQUIPPED')return '<span class="ownershipApi">EQUIPPED · API</span>';return '<div class="ownershipControls"><button type="button" onclick="event.stopPropagation();setManualOwnership('+b.id+',\''+type+'\','+jsq(item.id)+',true)">I OWN IT</button><button type="button" onclick="event.stopPropagation();setManualOwnership('+b.id+',\''+type+'\','+jsq(item.id)+',false)">BUY</button><button type="button" onclick="event.stopPropagation();setManualOwnership('+b.id+',\''+type+'\','+jsq(item.id)+',null)">RESET</button></div>'}
 function recommendationAction(b,type,item){return actionForItem(b,type,item)}
-function buildItems(b){const e=buildEntry(b);return [['Gadget','gadgets',bestBuildItem(e,'gadget')],['Star Power','starPowers',bestBuildItem(e,'starPower')],['Gear','gears',bestBuildItem(e,'gears',0)],['Gear','gears',bestBuildItem(e,'gears',1)]].filter(x=>x[2])}
+function extractGearSignals(source){
+ const out=[];
+ const push=(v,scope)=>{
+  if(Array.isArray(v)){
+   v.forEach(x=>{
+    if(typeof x==='string')out.push({name:x,pick:null,scope});
+    else if(x?.name)out.push({name:x.name,pick:Number.isFinite(Number(x.pick))?Number(x.pick):Number.isFinite(Number(x.score))?Number(x.score):null,scope});
+   });
+  }else if(v&&typeof v==='object'){
+   Object.entries(v).forEach(([name,x])=>{
+    if(typeof x==='number')out.push({name,pick:x,scope});
+    else if(x?.name)out.push({name:x.name,pick:Number.isFinite(Number(x.pick))?Number(x.pick):Number.isFinite(Number(x.score))?Number(x.score):null,scope});
+    else if(x&&typeof x==='object')push([{name,pick:x.pick??x.score}],scope);
+   });
+  }
+ };
+ if(!source||typeof source!=='object')return out;
+ const modeKeys=['gear','gears','gearBuild','gearBuilds','recommendedGears'];
+ push(source.gears,'GLOBAL');
+ modeKeys.forEach(k=>{if(k!=='gears'&&source[k])push(source[k],'CONTEXT');});
+ const modes=source.modes||source.noff?.modes;
+ if(modes&&typeof modes==='object')Object.entries(modes).forEach(([mode,v])=>{
+   if(v?.gears||v?.gear||v?.recommendedGears)push(v.gears||v.gear||v.recommendedGears,'MODE:'+mode);
+ });
+ const maps=source.maps;
+ if(maps&&typeof maps==='object'&&!Array.isArray(maps))Object.entries(maps).forEach(([map,v])=>{
+   if(v?.gears||v?.gear||v?.recommendedGears)push(v.gears||v.gear||v.recommendedGears,'MAP:'+map);
+ });
+ return out;
+}
+function contextualGearSignals(b){
+ const e=buildEntry(b);
+ const wantedMode=norm(playMode),wantedMap=norm(playMap);
+ const all=extractGearSignals(e);
+ const contextual=all.filter(x=>{
+   const scope=norm(x.scope);
+   return (wantedMap&&wantedMap!=='RANDOM'&&scope===norm('MAP:'+playMap)) ||
+          (wantedMode&&scope===norm('MODE:'+playMode));
+ });
+ const global=all.filter(x=>x.scope==='GLOBAL');
+ return {contextual,global};
+}
+function buildItems(b){
+ const e=buildEntry(b),gears=gearOptions(b).filter(x=>x.recommended).slice(0,2);
+ return [['Gadget','gadgets',bestBuildItem(e,'gadget')],['Star Power','starPowers',bestBuildItem(e,'starPower')],['Gear','gears',gears[0]],['Gear','gears',gears[1]]].filter(x=>x[2]);
+}
 function guideComponents(b){
- const e=buildEntry(b),c=catalogEntry(b)||{},gears=e?.gears||[],gadget=bestBuildItem(e,'gadget'),star=bestBuildItem(e,'starPower');
+ const e=buildEntry(b),c=catalogEntry(b)||{},gears=gearOptions(b).filter(x=>x.recommended).slice(0,2),gadget=bestBuildItem(e,'gadget'),star=bestBuildItem(e,'starPower');
  const g1=gears[0]||null,g2=gears[1]||null,od=first(e?.overdrives||[])||first(c.overdrives||[])||first(PROFILE_STATE.entries[String(b.id)]?.overdrives||[]);
  return [
   ['Gadget','gadgets',gadget||{id:'pending:gadget',name:'No validated recommendation',description:'No validated community recommendation is available for this component yet.'}],
@@ -119,13 +164,20 @@ function guideComponents(b){
  ];
 }
 function gearOptions(b){
- const c=catalogEntry(b)||{},e=buildEntry(b);
- const signal=(e?.gears||[]).slice(0,2);
+ const c=catalogEntry(b)||{},e=buildEntry(b),signals=contextualGearSignals(b);
  const available=Array.isArray(c.gears)?c.gears:[];
- return available.map(g=>{
-   const r=signal.find(x=>norm(x.name)===norm(g.name));
-   return {...g,pick:r?.pick??null,recommended:!!r};
- }).sort((a,z)=>(z.recommended?1:0)-(a.recommended?1:0)||(Number(z.pick)||0)-(Number(a.pick)||0));
+ const pool=available.length?available:(e?.gears||[]);
+ const contextualMap=new Map(signals.contextual.map(x=>[norm(x.name),x]));
+ const globalMap=new Map(signals.global.map(x=>[norm(x.name),x]));
+ return pool.map(g=>{
+   const name=norm(g.name),cx=contextualMap.get(name),gl=globalMap.get(name);
+   const hasContext=!!cx;
+   const pick=cx?.pick??gl?.pick??g.pick??null;
+   return {...g,pick,recommended:false,contextual:hasContext,signalScope:cx?.scope||gl?.scope||'CATALOG',signalPick:pick};
+ }).sort((a,z)=>{
+   const ac=a.contextual?1:0,zc=z.contextual?1:0;
+   return (zc-ac)||((Number(z.signalPick)||0)-(Number(a.signalPick)||0));
+ }).map((g,i)=>({...g,recommended:i<2}));
 }
 function gearOptionRows(b){
  return gearOptions(b).map(g=>'<button class="gearOption '+(g.recommended?'gearSignal':'')+'" type="button" onclick="componentModalV2ById('+b.id+',\'gears\',\''+esc(g.id)+'\')">'+compIcon('gears',g,b)+'<span><b>'+esc(g.name)+'</b><small>'+(g.pick!=null?esc(g.pick)+'% community pick':'available option')+'</small></span></button>').join('');
@@ -205,12 +257,21 @@ function guideItem(b,type,item){
 }
 function cleanGuideText(v){return String(v||'').replace(/<[^>]*>/g,' ').replace(/<![^>]*>/g,' ').replace(/\s+/g,' ').trim()}
 function componentDescription(item){if(!item)return '';let d=String(item.description||item.descriptionHtml||'');const n=item.modifierValue!=null?String(item.modifierValue):'';d=d.replace(/<NUM>/gi,n).replace(/<c[^>]*>/gi,'').replace(/<\/c>/gi,'');return cleanGuideText(d)}
-function componentSignal(b,type,item){const e=buildEntry(b),key=type==='starPowers'?'starPower':type==='gadgets'?'gadget':type,list=Array.isArray(e?.[key])?e[key]:[],score=metaEntry(b,playMode,playMap)?.score,ranked=[...list].sort((a,z)=>(Number(z.pick)||0)-(Number(a.pick)||0)),rank=ranked.findIndex(x=>norm(x.name)===norm(item?.name))+1,pick=item?.pick!=null?Number(item.pick):null;return {label:score==null?'COMMUNITY BUILD SIGNAL':rank===1?'TOP COMMUNITY PICK':rank===2?'HIGH USAGE PICK':'ALTERNATIVE',rank:rank>0?rank:null,pick:Number.isFinite(pick)?pick:null,score:Number.isFinite(Number(score))?Number(score):null}}
+function componentSignal(b,type,item){
+ const e=buildEntry(b),score=metaEntry(b,playMode,playMap)?.score;
+ if(type==='gears'){
+  const ranked=gearOptions(b),hit=ranked.find(x=>norm(x.name)===norm(item?.name)),rank=hit?ranked.indexOf(hit)+1:null,pick=hit?.signalPick??item?.pick??null;
+  const label=hit?.contextual?'CONTEXTUAL GEAR SIGNAL':rank===1?'TOP COMMUNITY PICK':rank===2?'HIGH USAGE PICK':'ALTERNATIVE';
+  return {label,rank,pick:Number.isFinite(Number(pick))?Number(pick):null,score:Number.isFinite(Number(score))?Number(score):null,scope:hit?.signalScope||'CATALOG'};
+ }
+ const key=type==='starPowers'?'starPower':type==='gadgets'?'gadget':type,list=Array.isArray(e?.[key])?e[key]:[],ranked=[...list].sort((a,z)=>(Number(z.pick)||0)-(Number(a.pick)||0)),rank=ranked.findIndex(x=>norm(x.name)===norm(item?.name))+1,pick=item?.pick!=null?Number(item.pick):null;
+ return {label:score==null?'COMMUNITY BUILD SIGNAL':rank===1?'TOP COMMUNITY PICK':rank===2?'HIGH USAGE PICK':'ALTERNATIVE',rank:rank>0?rank:null,pick:Number.isFinite(pick)?pick:null,score:Number.isFinite(Number(score))?Number(score):null}
+}
 
 function componentModalV2(b,type,item){
  const x=guideItem(b,type,item); if(!x)return;
  const title=componentTitle(type),desc=componentDescription(x)||'No description available.';
- const e=buildEntry(b), key=type==='starPowers'?'starPower':type==='gadgets'?'gadget':type, recommendedSet=type==='gears'?(e?.gears||[]).slice(0,2):(type==='buffies'?[]:[bestBuildItem(e,key,0)].filter(Boolean)), equipped=(b?.[type]||[]).filter(Boolean);
+ const e=buildEntry(b), key=type==='starPowers'?'starPower':type==='gadgets'?'gadget':type, recommendedSet=type==='gears'?gearOptions(b).filter(x=>x.recommended).slice(0,2):(type==='buffies'?[]:[bestBuildItem(e,key,0)].filter(Boolean)), equipped=(b?.[type]||[]).filter(Boolean);
  const catalog=componentCatalogItem(type,item,b), componentSource=catalog?.source||((type==='gears')?'BrawlAPI game data':type==='overdrives'?'BrawlAPI game data':'Community build data'), sample=e?.sample||null, confidence=e?.confidence||null, signal=componentSignal(b,type,item);
  const options=type==='buffies'?buffieOptions(b,item?.id?.split(':')[1]||''):type==='gears'?gearOptions(b).slice(0,8):buildAlternatives(b,type).slice(0,6);
  const rows=options.map(a=>{const aid=String(a.id||'0').replace(/'/g,"\\'");return `<button class="altComponent ${recommendedSet.some(r=>norm(r.name)===norm(a.name))?'recommendedAlt':''}" type="button" onclick="componentModalV2ById(${b.id},'${type}','${aid}')">${compIcon(type,a,b)}<span><b>${esc(a.name)}</b><small>${a.pick!=null?esc(a.pick)+'% community pick':'Available option'}</small></span>${recommendedSet.some(r=>norm(r.name)===norm(a.name))?'<strong>CURRENT SIGNAL</strong>':''}</button>`}).join('');
