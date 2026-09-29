@@ -8308,7 +8308,15 @@
           "imageUrl": "https://cdn.brawlify.com/gears/regular/62000017.png"
         }
       ],
-      "overdrives": [],
+      "overdrives": [
+        {
+          "id": "overdrive:16000066",
+          "name": "SORVEGLIANZA A 360°",
+          "description": "Quando usa la Super sotto l'effetto dell'Overdrive, R-T e le sue gambe vengono circondati da raggi laser che causano danni a chi colpiscono.",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/game-updates/note-di-rilascio-di-giugno-del-2025/"
+        }
+      ],
       "buffies": {
         "gadget": [],
         "starPower": [],
