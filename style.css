@@ -996,3 +996,43 @@ body{color:#f4f7fb}
 .gearOption b{font-size:9px}
 .gearOption small{font-size:8px;color:#8fa0b9}
 .gearSignal{border-color:#ffd34e;background:rgba(255,211,78,.06)}
+
+/* Home Top 10 — clear separation between account upgrades and owned meta */
+.top10Section{margin-top:16px}
+.top10Section>.sectionTitle{align-items:flex-end;margin-bottom:9px}
+.top10Section>.sectionTitle h2{font-size:20px;margin-bottom:2px}
+.top10Group{margin-top:10px}
+.top10GroupHead{
+ display:flex;align-items:center;justify-content:space-between;gap:8px;
+ padding:9px 11px;border:1px solid #334765;border-radius:12px 12px 8px 8px;
+ background:linear-gradient(90deg,#182742,#111c30);color:#fff
+}
+.top10GroupHead b{font-size:11px}
+.top10GroupHead span{font-size:8px;color:#9eacc1}
+.top10Group .upgradeCard{margin-top:6px;border-radius:12px}
+.top10Group .upgradeCard+.upgradeCard{margin-top:5px}
+.top10Group .upgradeTop{padding:8px 9px}
+.top10Group .priorityNum{width:25px;height:25px;min-width:25px;font-size:10px}
+.top10Group .upgradePortrait{width:45px;height:45px}
+.top10Group .upgradeTop .grow>b{font-size:12px}
+.top10Group .upgradeTop .small{font-size:9px}
+.top10Group .primaryUpgradeAction{padding:8px 9px;margin:0 7px}
+.top10Group .upgradeMore{font-size:8px;padding:5px 8px}
+.top10Group .miniBuildFull{margin:6px 7px 7px}
+.top10Group .miniBuildRow .miniItem{min-height:54px}
+.top10Group .miniBuffie{min-height:27px}
+.top10Group .bcard{margin-top:6px}
+.top10Group .bcard .miniBuildFull{margin-top:6px}
+.top10Group .bcard .portrait{width:52px;height:52px}
+.top10Group .bcard .rankBadge{width:25px;min-width:25px;height:25px}
+.top10Group .bcard .bname{font-size:13px}
+.top10Group .bcard .bMetaLine{font-size:9px}
+.top10Group .bcard .chips{margin-top:5px}
+@media(max-width:430px){
+ .top10GroupHead{padding:8px 9px}
+ .top10GroupHead b{font-size:10px}
+ .top10Group .upgradePortrait{width:42px;height:42px}
+ .top10Group .miniBuildRow .miniItem{min-height:51px}
+ .top10Group .miniBuildRow .miniItem b{font-size:6.4px}
+ .top10Group .miniBuffie b{font-size:6.4px}
+}
