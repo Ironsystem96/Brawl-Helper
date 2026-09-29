@@ -95,7 +95,7 @@ function buffieState(b,key){
  return null;
 }
 function buffieGroup(b,key){return buffieOptions(b,key)}
-function buffieRows(b){const c=COMPONENT_STATE.entries[String(b?.id||'')]?.buffies||{};return [['Gadget Buffie','gadget',Array.isArray(c.gadget)?c.gadget:[],buffieState(b,'gadget')],['Star Buffie','starPower',Array.isArray(c.starPower)?c.starPower:[],buffieState(b,'starPower')],['Hyper Buffie','hyperCharge',Array.isArray(c.hyperCharge)?c.hyperCharge:[],buffieState(b,'hyperCharge')]]}
+function buffieRows(b){const c=COMPONENT_STATE.entries[String(b?.id||'')]?.buffies||{};const row=(label,key)=>{const items=Array.isArray(c[key])?c[key]:[];return [label,key,items,items.length?buffieState(b,key):null]};return [row('Gadget Buffie','gadget'),row('Star Buffie','starPower'),row('Hyper Buffie','hyperCharge')]}
 function buffieOptions(b,key){const c=COMPONENT_STATE.entries[String(b?.id||'')]?.buffies||{};const v=c[key];return Array.isArray(v)?v:[]}
 function ownedMapKey(b){return 'bh_owned_'+active+'_'+(b?.id||'unknown')}
 function manualOwnership(b){try{return JSON.parse(localStorage.getItem(ownedMapKey(b)||'{}')||'{}')||{}}catch{return {}}}
