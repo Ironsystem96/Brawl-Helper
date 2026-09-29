@@ -95,7 +95,7 @@ function buffieState(b,key){
  return null;
 }
 function buffieGroup(b,key){return buffieOptions(b,key)}
-function buffieRows(b){const c=COMPONENT_STATE.entries[String(b?.id||'')]?.buffies||{};return [['Gadget Buffie','gadget',Array.isArray(c.gadget)?c.gadget:[],buffieState(b,'gadget')],['Star Power Buffie','starPower',Array.isArray(c.starPower)?c.starPower:[],buffieState(b,'starPower')],['Hypercharge Buffie','hyperCharge',Array.isArray(c.hyperCharge)?c.hyperCharge:[],buffieState(b,'hyperCharge')]]}
+function buffieRows(b){const c=COMPONENT_STATE.entries[String(b?.id||'')]?.buffies||{};return [['Gadget Buffie','gadget',Array.isArray(c.gadget)?c.gadget:[],buffieState(b,'gadget')],['Star Buffie','starPower',Array.isArray(c.starPower)?c.starPower:[],buffieState(b,'starPower')],['Hyper Buffie','hyperCharge',Array.isArray(c.hyperCharge)?c.hyperCharge:[],buffieState(b,'hyperCharge')]]}
 function buffieOptions(b,key){const c=COMPONENT_STATE.entries[String(b?.id||'')]?.buffies||{};const v=c[key];return Array.isArray(v)?v:[]}
 function ownedMapKey(b){return 'bh_owned_'+active+'_'+(b?.id||'unknown')}
 function manualOwnership(b){try{return JSON.parse(localStorage.getItem(ownedMapKey(b)||'{}')||'{}')||{}}catch{return {}}}
@@ -224,7 +224,7 @@ function componentModalV2ById(bid,type,itemId){
  const b=allBrawlers().find(x=>x&&x.id===bid);if(!b)return;
  if(type==='buffies'){
   const options=buffieGroup(b,itemId),state=buffieState(b,itemId);
-  const title=itemId==='gadget'?'Gadget Buffie':itemId==='starPower'?'Star Power Buffie':'Hypercharge Buffie';
+  const title=itemId==='gadget'?'Gadget Buffie':itemId==='starPower'?'Star Buffie':'Hyper Buffie';
   const body=options.length?options.map(x=>'<div class="buffieDetailItem"><b>'+esc(x.name||title)+'</b><p>'+esc(cleanGuideText(x.description||'No description available.'))+'</p></div>').join(''):'<p class="small">No individual Buffie effect is available in the synchronized catalog yet.</p>';
   document.body.insertAdjacentHTML('beforeend','<div class="modal componentModal"><div class="modalBox"><div class="modalHead"><h2>'+title+'</h2><button onclick="closeModal()">×</button></div><div class="componentDetail">'+compIcon('buffies',options[0]||{id:'buffie:'+itemId,name:title},b)+'<div class="eyebrow">BUFFIE</div><div class="stateBox"><b>'+(state===true?'UNLOCKED':state===false?'NOT UNLOCKED':'UNKNOWN')+'</b><span>'+options.length+' effect'+(options.length===1?'':'s')+' in this category</span></div><div class="buffieDetailList">'+body+'</div><p class="small">Buffies permanently enhance the related Gadget, Star Power or Hypercharge. The exact effects shown here come from the synchronized guide/game-data sources.</p></div><button class="close" onclick="closeModal()">Close</button></div></div>');
   return;
@@ -262,10 +262,27 @@ function bcard(b,compact=false,mode=playMode,map=playMap,rank=null,kind=''){
 function home(){
  const ownedList=[...(P?.brawlers||[])].filter(Boolean);
  const plans=ownedList.map(b=>({b,plan:upgradePriority(b)}));
- const upgrades=plans.filter(x=>x.plan.actions.some(a=>['BUY','POWER','EQUIP'].includes(a.type))).sort((a,z)=>z.plan.score-a.plan.score).slice(0,3);
- const quick='<section class="quickGrid compactQuick"><button onclick="setTab(\'upgrade\')"><span class="quickIcon">↗</span><b>Upgrade</b><small>What next?</small></button><button onclick="setTab(\'brawlers\')"><span class="quickIcon">●</span><b>Brawlers</b><small>Builds & guide</small></button><button onclick="tab=\'play\';render()"><span class="quickIcon">▶</span><b>Modes</b><small>Meta & maps</small></button></section>';
- const actions=upgrades.length?upgrades.map((x,i)=>upgradeCard(x,i+1)).join(''):'<div class="emptyState"><b>No confirmed upgrade actions.</b><span class="small">Open a Brawler to confirm missing items.</span></div>';
- return '<section class="hero homeHero"><div class="eyebrow">ACCOUNT</div><h1>'+esc(P.name)+'</h1><div class="tag">'+esc(P.tag)+' · Level '+P.expLevel+'</div><div class="stats"><div class="stat"><b>'+fmt(P.trophies)+'</b><span>TROPHIES</span></div><div class="stat"><b>'+P.brawlers.length+'</b><span>BRAWLERS</span></div><div class="stat"><b>'+fmt(P['3vs3Victories'])+'</b><span>3v3 WINS</span></div></div></section>'+quick+'<section class="section"><div class="sectionTitle"><h2>Next upgrades</h2><span class="small">'+(upgrades.length?'Top '+upgrades.length:'None yet')+'</span></div>'+actions+'</section><section class="section homeGuideHint"><div class="sectionTitle"><h2>Quick guide</h2><span class="small">tap a Brawler</span></div><p class="small">Each Brawler has one compact build strip with the recommended Gadget, two real Gear choices, Star Power and Overdrive. Tap an item to inspect what it does and why it is suggested.</p><button class="browseCta" onclick="setTab(\'brawlers\')">Open Brawler Browser <span>→</span></button></section>'
+ const upgrades=plans
+  .filter(x=>x.plan.actions.some(a=>['BUY','POWER','EQUIP'].includes(a.type)))
+  .sort((a,z)=>z.plan.score-a.plan.score)
+  .slice(0,5);
+ const upgradeIds=new Set(upgrades.map(x=>Number(x.b.id)));
+ const ownedMeta=ownedList
+  .map(b=>({b,meta:metaEntry(b,playMode,playMap)}))
+  .filter(x=>x.meta?.score!=null&&!upgradeIds.has(Number(x.b.id)))
+  .sort((a,z)=>(Number(z.meta.score)||0)-(Number(a.meta.score)||0)||((z.meta.rank||999)-(a.meta.rank||999)))
+  .slice(0,5);
+ const upgradeHtml=upgrades.length
+  ? upgrades.map((x,i)=>upgradeCard(x,i+1)).join('')
+  : '<div class="emptyState"><b>No confirmed upgrade actions.</b><span class="small">Open a Brawler to confirm missing items.</span></div>';
+ const ownedHtml=ownedMeta.length
+  ? ownedMeta.map((x,i)=>bcard(x.b,true,playMode,playMap,x.meta?.rank||i+1,'ownedTop')).join('')
+  : '<div class="emptyState"><b>No validated meta ranking available.</b><span class="small">The app will not fabricate a ranking.</span></div>';
+ return '<section class="hero homeHero"><div class="eyebrow">ACCOUNT</div><h1>'+esc(P.name)+'</h1><div class="tag">'+esc(P.tag)+' · Level '+P.expLevel+'</div><div class="stats"><div class="stat"><b>'+fmt(P.trophies)+'</b><span>TROPHIES</span></div><div class="stat"><b>'+P.brawlers.length+'</b><span>BRAWLERS</span></div><div class="stat"><b>'+fmt(P['3vs3Victories'])+'</b><span>3v3 WINS</span></div></div></section>'+
+ '<section class="section top10Section"><div class="sectionTitle"><div><h2>Top 10</h2><span class="small">Personalized for your account</span></div><span class="small">'+(upgrades.length+ownedMeta.length)+'/10</span></div>'+
+ '<div class="top10Group"><div class="top10GroupHead"><b>5 da potenziare</b><span>Priorità account</span></div>'+upgradeHtml+'</div>'+
+ '<div class="top10Group"><div class="top10GroupHead"><b>5 migliori posseduti</b><span>Meta '+esc(playMode)+(playMap!=='Random'?' · '+esc(playMap):'')+'</span></div>'+ownedHtml+'</div></section>'+
+ '<section class="section homeGuideHint"><div class="sectionTitle"><h2>Quick guide</h2><span class="small">tap a Brawler</span></div><p class="small">Each Brawler has one compact build strip with the recommended Gadget, two real Gear choices, Star Power and Overdrive. Tap an item to inspect what it does and why it is suggested.</p><button class="browseCta" onclick="setTab(\'brawlers\')">Open Brawler Browser <span>→</span></button></section>'
 }
 function upgradeCard(x,rank){
  const b=x.b,plan=x.plan,primary=plan.actions[0],more=Math.max(0,plan.actions.length-1);
