@@ -50,14 +50,14 @@ function bcardV2(b,compact=false,mode=window.playMode,map=window.playMap,rank=nu
  return '<div class="bhBrawlerCard" onclick="openB('+b.id+')"><div class="bhRank">'+(r?'#'+r:'•')+'</div><img class="bhCardPortrait" src="'+window.portrait(b)+'" onerror="imgFallback(this,'+JSON.stringify(b.name)+')"><div class="bhCardMain"><div class="bhCardTop"><b>'+E(b.name)+'</b><span class="bhPower">'+(own?'P'+b.power:'NOT OWNED')+'</span></div><div class="bhCardSub">'+(own?F(b.trophies)+' trophies':'')+' · '+(m?'META':'META N/A')+'</div><div class="bhActionBadge '+(primary?'hasAction':'readyAction')+'"><b>'+E(actionLabel)+'</b><span>'+E(actionText)+'</span></div><div class="bhMiniLoadoutRow">'+quick+'</div></div></div>';
 }
 function homeV2(){
- const owned=[...(window.P?.brawlers||[])].filter(Boolean),ranked=window.metaRankList?.(window.playMode,window.playMap)||window.globalRankList?.()||[];
+ const owned=[...(P?.brawlers||[])].filter(Boolean),ranked=window.metaRankList?.(window.playMode,window.playMap)||window.globalRankList?.()||[];
  const plans=owned.map(b=>({b,plan:window.upgradePriority?.(b)})).filter(x=>x.plan?.actions?.some(a=>['BUY','POWER','EQUIP'].includes(a.type))).sort((a,z)=>(z.plan.score||0)-(a.plan.score||0)).slice(0,5);
  const upgradeIds=new Set(plans.map(x=>Number(x.b.id)));
  const best=ranked.filter(x=>window.isOwnedAccount?.(x.b)&&!upgradeIds.has(Number(x.b.id))).slice(0,5);
  const sync=window.profileStatus||'OFFLINE';
  const upgradeHtml=plans.length?plans.map((x,i)=>window.upgradeCard(x,i+1)).join(''):'<div class="bhEmpty card"><b>No immediate improvement identified.</b><span>Open a Brawler to verify ownership or inspect the meta context.</span></div>';
  const bestHtml=best.length?best.map((x,i)=>bcardV2(x.b,true,'General','Random',x.meta?.rank||i+1,'ownedTop')).join(''):'<div class="bhEmpty card"><b>No validated meta available.</b><span>The synchronized meta snapshot is required here.</span></div>';
- return '<section class="bhHomeHero"><div><span class="bhEyebrow">ACCOUNT DASHBOARD</span><h1>'+E(window.P.name)+'</h1><p>'+E(window.P.tag)+' · Profile '+E(sync)+'</p></div><div class="bhHomeStats"><div><b>'+F(window.P.trophies)+'</b><span>TROPHIES</span></div><div><b>'+F(owned.length)+'</b><span>BRAWLERS</span></div><div><b>'+F(window.P['3vs3Victories'])+'</b><span>3V3 WINS</span></div></div></section>'+
+ return '<section class="bhHomeHero"><div><span class="bhEyebrow">ACCOUNT DASHBOARD</span><h1>'+E(P?.name)+'</h1><p>'+E(P?.tag)+' · Profile '+E(sync)+'</p></div><div class="bhHomeStats"><div><b>'+F(P?.trophies)+'</b><span>TROPHIES</span></div><div><b>'+F(owned.length)+'</b><span>BRAWLERS</span></div><div><b>'+F(P?.['3vs3Victories'])+'</b><span>3V3 WINS</span></div></div></section>'+
  '<section class="bhQuickActions"><button onclick="setTab(\'brawlers\')"><b>Brawlers</b><span>Builds & status</span></button><button onclick="setTab(\'play\')"><b>Meta</b><span>Modes & maps</span></button><button onclick="setTab(\'upgrade\')"><b>Upgrade</b><span>Next actions</span></button></section>'+
  '<section class="section top10Section"><div class="bhSectionHead"><div><span class="bhEyebrow">ACCOUNT-SPECIFIC</span><h2>Top 10</h2></div><span class="small">'+(plans.length+best.length)+'/10</span></div>'+
  '<div class="top10Group"><div class="top10GroupHead"><b>5 da potenziare</b><span>Priorità account</span></div>'+upgradeHtml+'</div>'+
@@ -93,5 +93,5 @@ const css=String.raw`
 .bhActionBadge{display:grid;grid-template-columns:auto 1fr;gap:5px;align-items:center;margin-top:6px;padding:5px 7px;border-radius:8px;background:#111d30;border:1px solid #334765}.bhActionBadge b{font-size:6px;letter-spacing:.5px;color:#ffd34e}.bhActionBadge span{font-size:7px;color:#e2e8f2;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.bhActionBadge.hasAction{border-color:#66572b;background:rgba(255,211,78,.05)}.bhActionBadge.readyAction{border-color:#3f8067}.bhActionBadge.readyAction b{color:#9ff0c6}.top10Group{margin-top:8px}.top10GroupHead{display:flex;justify-content:space-between;align-items:center;margin-bottom:5px}.top10GroupHead b{font-size:11px}.top10GroupHead span{font-size:7px;color:#8fa0b9}.top10Section .upgradeCard{margin:6px 0}.top10Section .bhBrawlerCard{margin:6px 0}
 `;
 const st=document.createElement('style');st.id='bh-ui-v2';st.textContent=css;document.head.appendChild(st);
-setTimeout(()=>{try{if(window.P&&window.render)window.render()}catch(e){console.error(e)}},0);
+setTimeout(()=>{try{if(P&&window.render)window.render()}catch(e){console.error(e)}},0);
 })();
