@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "game": "Brawl Stars",
   "databaseVersion": "2026.09.24",
-  "lastSyncedAt": "2026-09-24T00:00:00Z",
+  "lastSyncedAt": "2026-10-01T19:45:00.000Z",
   "sources": [
     {
       "type": "official_release_notes",
@@ -15,7 +15,7 @@
     "title": "Release Notes August 2026",
     "publishedAt": "2026-09-01",
     "latestMaintenance": "2026-09-16",
-    "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-august-2026/"
+    "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-di-agosto-2026/"
   },
   "entities": {
     "brawlers": {},
@@ -26,7 +26,7 @@
     "gameModes": {},
     "maps": {},
     "rankedSeasons": {},
-    "brawlersCount": 106,
+    "brawlersCount": 107,
     "catalogFile": "data/brawlers.json"
   },
   "meta": {
@@ -38,9 +38,12 @@
       "starPowers",
       "gears",
       "hypercharges",
+      "overdrives",
+      "buffies",
       "gameModes",
       "maps",
       "rankedSeasons"
-    ]
+    ],
+    "componentCatalog": "data/components.json"
   }
 }
