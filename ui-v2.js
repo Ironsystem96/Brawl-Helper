@@ -64,6 +64,7 @@ function homeV2(){
  '<div class="top10Group"><div class="top10GroupHead"><b>5 migliori posseduti</b><span>Current mode / map</span></div>'+bestHtml+'</div></section>'+
  '<section class="card bhHomeData"><div class="bhSectionHead"><div><span class="bhEyebrow">SYNC</span><h2>Data status</h2></div><span class="bhSyncDot">● '+E(sync)+'</span></div><div class="bhDataGrid"><span>Meta <b>'+(window.META_STATE?.loaded?'READY':'PENDING')+'</b></span><span>Builds <b>'+(window.BUILD_STATE?.loaded?'READY':'PENDING')+'</b></span><span>Components <b>'+F(window.CATALOG_STATE?.count||0)+'</b></span><span>Overdrive <b>'+((window.COMPONENT_STATE?.entries&&Object.values(window.COMPONENT_STATE.entries).some(x=>x?.overdrives?.length))?'READY':'DATA N/A')+'</span></div></section>';
 }
+window.bcard=bcardV2;
 window.home=homeV2;
 
 const css=String.raw\`
