@@ -1,74 +1,9 @@
 {
   "schemaVersion": 3,
   "generatedFrom": "BrawlAPI catalog snapshot",
-  "generatedAt": "2026-10-01T06:07:07.001Z",
-  "count": 109,
+  "generatedAt": "2026-10-01T19:14:07.620Z",
+  "count": 107,
   "brawlers": [
-    {
-      "id": 16000110,
-      "name": "Vince",
-      "assetId": 16000110,
-      "avatarId": 28001338,
-      "imageUrl": "https://cdn.brawlify.com/brawlers/borders/16000110.png",
-      "imageUrl2": "https://cdn.brawlify.com/brawlers/borderless/16000110.png",
-      "rarity": {
-        "id": 5,
-        "name": "Mythic",
-        "color": "#fe5e72"
-      },
-      "class": {
-        "id": 107,
-        "name": "Collect Caterpillars To Become More Powerful"
-      },
-      "description": "Vince tends to both the espresso machine and his many-legged friends, much to his customers' dismay. He walks slowly around his Creepy Café, careful not to step on any of his beloved bugs. His companions, Mocha and Doppio, follow him everywhere.",
-      "shortDescription": "",
-      "gadgets": [
-        {
-          "id": 23001452,
-          "name": "Hot Coffee",
-          "description": "Vince throws an explosive cappuccino, dealing area damage.",
-          "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23001452.png",
-          "released": true
-        },
-        {
-          "id": 23001453,
-          "name": "Metamothosis",
-          "description": "Vince turns all nearby caterpillars into moths, gaining an additional moth for each collected.",
-          "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23001453.png",
-          "released": true
-        }
-      ],
-      "starPowers": [
-        {
-          "id": 23001450,
-          "name": "Come To Papa",
-          "description": "Nearby caterpillars crawl towards Vince.",
-          "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23001450.png",
-          "released": true
-        },
-        {
-          "id": 23001451,
-          "name": "Bug Bandage",
-          "description": "Turning a caterpillar into a moth heals Vince for .",
-          "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23001451.png",
-          "released": true
-        }
-      ],
-      "gears": [],
-      "hyperCharges": [],
-      "overdrives": [],
-      "buffies": [],
-      "dataCompleteness": {
-        "identity": true,
-        "portrait": true,
-        "gadgets": true,
-        "starPowers": true,
-        "gears": false,
-        "hyperCharges": false,
-        "overdrives": false,
-        "buffies": false
-      }
-    },
     {
       "id": 16000109,
       "name": "Cosmo",
@@ -1442,71 +1377,6 @@
         "portrait": true,
         "gadgets": true,
         "starPowers": true,
-        "gears": false,
-        "hyperCharges": false,
-        "overdrives": false,
-        "buffies": false
-      }
-    },
-    {
-      "id": 16000088,
-      "name": "Buzz Lightyear",
-      "assetId": 16000088,
-      "avatarId": 28000678,
-      "imageUrl": "https://cdn.brawlify.com/brawlers/borders/16000088.png",
-      "imageUrl2": "https://cdn.brawlify.com/brawlers/borderless/16000088.png",
-      "rarity": {
-        "id": 6,
-        "name": "Legendary",
-        "color": "#fff11ev"
-      },
-      "class": {
-        "id": 0,
-        "name": "Unknown"
-      },
-      "description": "Buzz Lightyear has arrived in Starr Park! Starting his journey with an accidental delivery to the Gift Shop, Buzz has since been impressing Brawlers with his three different Brawling modes!",
-      "shortDescription": "",
-      "gadgets": [
-        {
-          "id": 23000869,
-          "name": "Turbo Boosters",
-          "description": "Buzz Lightyear activates his turbo, sprinting forward in his current direction.",
-          "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000869.png",
-          "released": true
-        }
-      ],
-      "starPowers": [
-        {
-          "id": 23000866,
-          "name": "Laser Mode",
-          "description": "Buzz Lightyear's laser has extended range, allowing him to hit targets from farther away.",
-          "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000866.png",
-          "released": true
-        },
-        {
-          "id": 23000867,
-          "name": "Saber Mode",
-          "description": "Buzz Lightyear charges his Super by absorbing damage taken and benefits from increased health.",
-          "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000867.png",
-          "released": true
-        },
-        {
-          "id": 23000868,
-          "name": "Wing Mode",
-          "description": "Buzz deploys his wings, gaining a boost in movement speed.",
-          "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000868.png",
-          "released": true
-        }
-      ],
-      "gears": [],
-      "hyperCharges": [],
-      "overdrives": [],
-      "buffies": [],
-      "dataCompleteness": {
-        "identity": true,
-        "portrait": true,
-        "gadgets": false,
-        "starPowers": false,
         "gears": false,
         "hyperCharges": false,
         "overdrives": false,
