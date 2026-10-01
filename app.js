@@ -83,22 +83,38 @@ function buffieState(b,key){
  const v=b?.buffies;
  if(v==null)return null;
  if(!Array.isArray(v)&&typeof v==='object'){
-  const x=v[key];
-  if(x===true||x===false)return x;
-  if(Array.isArray(x))return x.length>0?true:null;
+   const x=v[key];
+   if(x===true||x===false)return x;
+   if(Array.isArray(x))return x.length>0?true:null;
+   if(x&&typeof x==='object')return true;
  }
  if(Array.isArray(v)){
-  const hit=v.some(x=>{
-   const slot=String(x?.slot||x?.type||x?.category||'').toLowerCase();
-   return slot===String(key).toLowerCase()||(key==='hyperCharge'&&slot==='hypercharge');
-  });
-  return hit?true:null;
+   const hit=v.some(x=>{
+     const slot=String(x?.slot||x?.type||x?.category||'').toLowerCase();
+     return slot===String(key).toLowerCase()||(key==='hyperCharge'&&slot==='hypercharge');
+   });
+   return hit?true:null;
  }
  return null;
 }
 function buffieGroup(b,key){return buffieOptions(b,key)}
-function buffieRows(b){const c=COMPONENT_STATE.entries[String(b?.id||'')]?.buffies||{};const row=(label,key)=>{const items=Array.isArray(c[key])?c[key]:[];return [label,key,items,items.length?buffieState(b,key):null]};return [row('Gadget Buffie','gadget'),row('Star Buffie','starPower'),row('Hyper Buffie','hyperCharge')]}
-function buffieOptions(b,key){const c=COMPONENT_STATE.entries[String(b?.id||'')]?.buffies||{};const v=c[key];return Array.isArray(v)?v:[]}
+function buffieSetsFor(b){
+ const e=COMPONENT_STATE.entries[String(b?.id||'')]||{};
+ const sets=e.buffieSets||{};
+ return ['gadget','starPower','hyperCharge'].map(key=>sets[key]||null);
+}
+function buffieRows(b){
+ const labels={gadget:'Gadget Buffie',starPower:'Star Buffie',hyperCharge:'Hyper Buffie'};
+ return buffieSetsFor(b).map((set,i)=>{
+   const key=['gadget','starPower','hyperCharge'][i];
+   const state=buffieState(b,key);
+   return [labels[key],key,set?[set]:[],state];
+ }).filter(x=>x[2].length);
+}
+function buffieOptions(b,key){
+ const set=(COMPONENT_STATE.entries[String(b?.id||'')]||{}).buffieSets?.[key];
+ return set?[set]:[];
+}
 function ownedMapKey(b){return 'bh_owned_'+active+'_'+(b?.id||'unknown')}
 function manualOwnership(b){try{return JSON.parse(localStorage.getItem(ownedMapKey(b)||'{}')||'{}')||{}}catch{return {}}}
 function manualItemState(b,type,item){if(!item)return null;const m=manualOwnership(b),k=type+':'+(item.id??norm(item.name));return Object.prototype.hasOwnProperty.call(m,k)?m[k]:null}
@@ -189,9 +205,15 @@ function nextActions(b){return window.BHRecommendations?window.BHRecommendations
 function upgradePriority(b){return window.BHRecommendations?window.BHRecommendations.upgradePriority(b,recommendationContext()):{score:0,actions:[],metaScore:null,confidence:.4}}
 function componentCatalogItem(type,item,b=null){
  if(!item)return null;
- const c=catalogEntry(b),key=({gadgets:'gadgets',gadget:'gadgets',starPowers:'starPowers',star:'starPowers',gears:'gears',gear:'gears',hyperCharges:'hyperCharges',hc:'hyperCharges',buffies:'buffies',buffie:'buffies',overdrives:'overdrives',overdrive:'overdrives'})[type];
+ const c=catalogEntry(b),entry=COMPONENT_STATE.entries[String(b?.id||'')]||{};
+ if(type==='buffies'||type==='buffie'){
+   const sets=entry.buffieSets||{};
+   const hit=Object.values(sets).find(x=>x&&((x.id!=null&&item.id!=null&&String(x.id)===String(item.id))||norm(x.name)===norm(item.name)));
+   if(hit)return hit;
+ }
+ const key=({gadgets:'gadgets',gadget:'gadgets',starPowers:'starPowers',star:'starPowers',gears:'gears',gear:'gears',hyperCharges:'hyperCharges',hc:'hyperCharges',buffies:'buffies',buffie:'buffies',overdrives:'overdrives',overdrive:'overdrives'})[type];
  const asArray=v=>Array.isArray(v)?v:Object.values(v||{}).flatMap(x=>Array.isArray(x)?x:[x]).filter(Boolean);
- const local=asArray(c?.[key]),componentLocal=asArray(COMPONENT_STATE.entries[String(b?.id||'')]?.[key]);
+ const local=asArray(c?.[key]),componentLocal=asArray(entry?.[key]);
  const pool=Object.values(CATALOG_STATE.entries||{}).flatMap(x=>asArray(x?.[key]));
  return [...local,...componentLocal,...pool].find(x=>x&&((x.id!=null&&item.id!=null&&String(x.id)===String(item.id))||norm(x.name)===norm(item.name)))||null;
 }
@@ -207,6 +229,31 @@ function compIcon(type,item,b=null){
  if(!src)return '<span class="compIcon pendingIcon" aria-label="Image unavailable">?</span>';
  return '<img class="compIcon" loading="lazy" src="'+esc(src)+'" alt="" aria-hidden="true" onerror="this.replaceWith(Object.assign(document.createElement(\'span\'),{className:\'compIcon pendingIcon\',textContent:\'?\'}))">';
 }
+function componentModalV2ById(bid,type,itemId){
+ const b=allBrawlers().find(x=>String(x?.id)===String(bid))||catalogEntry({id:bid});
+ if(!b)return;
+ let item=null;
+ if(type==='buffies'){
+   const key=String(itemId||'').includes(':')?String(itemId).split(':')[1]:String(itemId);
+   item=buffieOptions(b,key)[0]||buffieSetsFor(b).find(x=>x&&x.id===itemId);
+ }else{
+   const pools={gadgets:b?.gadgets,starPowers:b?.starPowers,gears:b?.gears,hyperCharges:b?.hyperCharges,overdrives:b?.overdrives};
+   const local=pools[type]||[];
+   const component=COMPONENT_STATE.entries[String(b.id)]?.[type]||[];
+   item=[...local,...component].find(x=>String(x?.id)===String(itemId))||component.find(x=>norm(x?.name)===norm(itemId))||null;
+ }
+ if(!item)return;
+ const set=type==='buffies'?item:null;
+ const effects=set?.abilities||[];
+ const state=type==='buffies'?buffieState(b,String(item.id).split(':')[1]):itemStatus(b,type,item);
+ const body=type==='buffies'
+  ? '<div class="componentModalEffects">'+effects.map((x,i)=>'<div class="componentEffect"><b>'+esc(x.source||('Effect '+(i+1)))+'</b><p>'+esc(x.description||'')+'</p></div>').join('')+'</div>'
+  : '<p class="small">'+esc(item.description||'No additional description available.')+'</p>';
+ const status=state===true?'UNLOCKED':state===false?'NOT UNLOCKED':state||'UNKNOWN';
+ document.body.insertAdjacentHTML('beforeend','<div class="modal componentModal" onclick="if(event.target===this)this.remove()"><div class="modalBox"><div class="modalHead"><div><span class="small">'+esc(type==='buffies'?set.name:type)+'</span><h2>'+esc(item.name)+'</h2></div><button onclick="this.closest(\'.modal\').remove()">×</button></div>'+body+'<div class="notice"><b>'+esc(status)+'</b><br><span class="small">Source: '+esc(set?.source||item.source||'catalog')+'</span></div><button class="close" onclick="this.closest(\'.modal\').remove()">Close</button></div></div>');
+}
+window.componentModalV2ById=componentModalV2ById;
+
 function comp(type,label,item){return '<div class="comp '+(item?'owned':'missing')+'">'+compIcon(type,item)+'<div><span>'+label+'</span><b>'+esc(item?.name||'Not owned')+'</b></div></div>'}
 function first(a){return Array.isArray(a)&&a.length?a[0]:null}
 
