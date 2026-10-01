@@ -314,37 +314,8 @@ function imgFallback(el,label){
  wrap.textContent=String(label||'?').slice(0,2).toUpperCase();
  el.replaceWith(wrap);
 }
-function bcard(b,compact=false,mode=playMode,map=playMap,rank=null,kind=''){
- if(!b)return '';
- const st=status(b),m=metaEntry(b,mode,map),metaRank=rank||metaRankOf(b,mode,map),ownedAccount=isOwnedAccount(b),actions=nextActions(b);
- const primary=actions[0],guide=COMPONENT_STATE.entries[String(b.id)]||{},coverage=[b.gadgets?.length===2,b.starPowers?.length===2,guide.gears?.length>0,b.hyperCharges?.length>0,guide.overdrives?.length>0].filter(Boolean).length;
- return '<div class="card bcard '+(kind==='recommended'?'recommendedCard':'')+'" onclick="openB('+b.id+')"><div class="row"><div class="rankBadge">'+(metaRank?'<span class="metaRank">#'+metaRank+'</span>':'•')+'</div><img class="portrait" src="'+portrait(b)+'" alt="" onerror="imgFallback(this)"><div class="grow"><div class="bname">'+esc(b.name)+'</div><div class="small bMetaLine">'+(ownedAccount?'P'+b.power+' · '+fmt(b.trophies)+' trophies':'NOT OWNED')+' · '+(m?'META':'META N/A')+'</div><div class="chips"><span class="chip '+st[1]+'">'+(ownedAccount?st[0]:'UNLOCK')+'</span><span class="chip">'+(primary?esc(primary.type):'READY')+'</span></div>'+miniBuild(b)+'</div></div></div>';
-}
-function home(){
- const ownedList=[...(P?.brawlers||[])].filter(Boolean);
- const plans=ownedList.map(b=>({b,plan:upgradePriority(b)}));
- const upgrades=plans
-  .filter(x=>x.plan.actions.some(a=>['BUY','POWER','EQUIP'].includes(a.type)))
-  .sort((a,z)=>z.plan.score-a.plan.score)
-  .slice(0,5);
- const upgradeIds=new Set(upgrades.map(x=>Number(x.b.id)));
- const ownedMeta=ownedList
-  .map(b=>({b,meta:metaEntry(b,playMode,playMap)}))
-  .filter(x=>x.meta?.score!=null&&!upgradeIds.has(Number(x.b.id)))
-  .sort((a,z)=>(Number(z.meta.score)||0)-(Number(a.meta.score)||0)||((z.meta.rank||999)-(a.meta.rank||999)))
-  .slice(0,5);
- const upgradeHtml=upgrades.length
-  ? upgrades.map((x,i)=>upgradeCard(x,i+1)).join('')
-  : '<div class="emptyState"><b>No confirmed upgrade actions.</b><span class="small">Open a Brawler to confirm missing items.</span></div>';
- const ownedHtml=ownedMeta.length
-  ? ownedMeta.map((x,i)=>bcard(x.b,true,playMode,playMap,x.meta?.rank||i+1,'ownedTop')).join('')
-  : '<div class="emptyState"><b>No validated meta ranking available.</b><span class="small">The app will not fabricate a ranking.</span></div>';
- return '<section class="hero homeHero"><div class="eyebrow">ACCOUNT</div><h1>'+esc(P.name)+'</h1><div class="tag">'+esc(P.tag)+' · Level '+P.expLevel+'</div><div class="stats"><div class="stat"><b>'+fmt(P.trophies)+'</b><span>TROPHIES</span></div><div class="stat"><b>'+P.brawlers.length+'</b><span>BRAWLERS</span></div><div class="stat"><b>'+fmt(P['3vs3Victories'])+'</b><span>3v3 WINS</span></div></div></section>'+
- '<section class="section top10Section"><div class="sectionTitle"><div><h2>Top 10</h2><span class="small">Personalized for your account</span></div><span class="small">'+(upgrades.length+ownedMeta.length)+'/10</span></div>'+
- '<div class="top10Group"><div class="top10GroupHead"><b>5 da potenziare</b><span>Priorità account</span></div>'+upgradeHtml+'</div>'+
- '<div class="top10Group"><div class="top10GroupHead"><b>5 migliori posseduti</b><span>Meta '+esc(playMode)+(playMap!=='Random'?' · '+esc(playMap):'')+'</span></div>'+ownedHtml+'</div></section>'+
- '<section class="section homeGuideHint"><div class="sectionTitle"><h2>Quick guide</h2><span class="small">tap a Brawler</span></div><p class="small">Each Brawler has one compact build strip with the recommended Gadget, two real Gear choices, Star Power and Overdrive. Tap an item to inspect what it does and why it is suggested.</p><button class="browseCta" onclick="setTab(\'brawlers\')">Open Brawler Browser <span>→</span></button></section>'
-}
+
+
 function upgradeCard(x,rank){
  const b=x.b,plan=x.plan,primary=plan.actions[0],more=Math.max(0,plan.actions.length-1);
  return '<div class="upgradeCard" onclick="openB('+b.id+')"><div class="upgradeTop"><span class="priorityNum">'+rank+'</span><img class="upgradePortrait" src="'+portrait(b)+'" alt="" onerror="imgFallback(this)"><div class="grow"><b>'+esc(b.name)+'</b><span class="small">Power '+b.power+' · '+fmt(b.trophies)+' trophies</span></div><span class="priorityLabel">'+(primary?esc(primary.type):'READY')+'</span></div>'+(primary?'<div class="primaryUpgradeAction"><span class="priorityIcon">'+(primary.type==='BUY'?'＋':primary.type==='POWER'?'↑':primary.type==='EQUIP'?'✓':'?')+'</span><div><b>'+esc(primary.label)+'</b><span>'+esc(primary.reason)+'</span></div></div>':'')+(more?'<div class="upgradeMore">+'+more+' more action'+(more===1?'':'s')+' · open Brawler for details</div>':'')+miniBuild(b)+'</div>';
@@ -391,35 +362,7 @@ function buildSlotRows(b){
    return '<button class="buildSlot '+(state==='EQUIPPED'?'slotEquipped':state==='OWNED'?'slotOwned':'slotUnknown')+'" type="button" onclick="componentModalV2ById('+b.id+',\''+type+'\','+(item.id||0)+')">'+compIcon(type,item,b)+'<span><small>'+esc(label)+'</small><b>'+esc(item.name)+'</b><em>'+rec+'</em></span><strong>'+state+'</strong></button>';
  }).join('');
 }
-function detail(){
- const b=P.brawlers.find(x=>x&&x.id===selected)||allBrawlers().find(x=>x&&x.id===selected);if(!b)return '';
- const accountOwned=isOwnedAccount(b),actions=nextActions(b),m=metaEntry(b,playMode,playMap),build=guideComponents(b),buffies=buffieRows(b);
- const statusFor=(type,item)=>item?(type==='buffies'?(buffieState(b,String(item.id||'').split(':')[1])?'OWNED':'NOT VERIFIED'):itemStatus(b,type,item)):'DATA PENDING';
- const slotHtml=build.map(([label,type,item],index)=>{
-   const id=String(item?.id||''),pending=id.startsWith('pending:'),unavailable=id.startsWith('none:');
-   const state=statusFor(type,item);
-   const shownState=unavailable?'NOT AVAILABLE':pending?'DATA PENDING':state;
-   const cls=(pending||unavailable)?'buildSlot pendingSlot':state==='EQUIPPED'?'buildSlot equippedSlot':state==='OWNED'?'buildSlot ownedSlot':state==='NOT OWNED'?'buildSlot missingSlot':'buildSlot unknownSlot';
-   const click=(pending||unavailable)?'':' onclick="componentModalV2ById('+b.id+',\''+type+'\',\''+esc(id)+'\')"';
-   const slotLabel=type==='gears'?'GEAR '+(index===2?'1':'2'):label.toUpperCase();
-   return '<button class="'+cls+'" type="button"'+click+'>'+compIcon(type,item,b)+'<small>'+slotLabel+'</small><b>'+esc(item?.name||'—')+'</b><span class="slotState">'+shownState+'</span></button>';
- }).join('');
- const buffieHtml=buffies.map(([label,key,items,owned])=>{
-   const available=items.length>0,cls=owned===true?'buffieOwned':available?'buffieAvailable':'buffieMissing',mark=owned===true?'✓':available?'?':'—',state=owned===true?'UNLOCKED':available?'AVAILABLE':'NOT AVAILABLE';
-   const icon=items[0]||{id:'buffie:'+key,name:label};
-   return '<button class="buffieBox '+cls+'" type="button" onclick="componentModalV2ById('+b.id+',\'buffies\',\''+key+'\')">'+compIcon('buffies',icon,b)+'<span><b>'+esc(label)+'</b><small>'+state+(available?' · '+items.length+' effect'+(items.length===1?'':'s'):'')+'</small></span><strong class="buffieState">'+mark+'</strong></button>';
- }).join('');
- const metaLine=m?'Pick '+(m.pickRate??'—')+'% · Win '+(m.winRate??'—')+'% · Score '+(m.score??'—'):'No validated meta context';
- const primary=actions[0];
- return '<button class="back" onclick="selected=null;render()">← Back</button>'+
- '<section class="hero brawlerHero compactHero"><div class="row"><img class="portrait heroPortrait" src="'+portrait(b)+'" onerror="imgFallback(this)"><div class="grow"><div class="eyebrow">BRAWLER GUIDE</div><h1>'+esc(b.name)+'</h1><div class="muted">'+(accountOwned?'Power '+b.power+' · '+fmt(b.trophies)+' trophies':'Not owned')+'</div><div class="heroMeta">'+esc(playMode)+(playMap!=='Random'?' · '+esc(playMap):'')+(m?' · '+esc(metaLine):'')+'</div></div></div></section>'+
- '<section class="card selectionBuild"><div class="selectionHeader"><div><span class="eyebrow">QUICK LOADOUT</span><h2>Recommended setup</h2></div><span class="chip">'+(primary?esc(primary.type):'READY')+'</span></div><div class="buildFive">'+slotHtml+'</div><p class="small buildHint">Tap an icon to see its effect, current status, community signal and alternatives.</p></section>'+
- '<section class="card buffieCard compactBuffies"><div class="selectionHeader"><div><span class="eyebrow">PERMANENT UPGRADES</span><h2>Buffies</h2></div><span class="small">3</span></div><div class="buffieGrid">'+buffieHtml+'</div></section>'+
- '<details class="card compactDetails"><summary>Other Gear options</summary><div class="detailsIntro"><b>Available Gear for this Brawler</b><span>The highlighted Gear is part of the current community build signal. The two slots above are the actual recommended pair.</span></div><div class="gearOptionGrid">'+gearOptionRows(b)+'</div></details>'+
- (actions.length?'<section class="card nextActionsCompact"><div class="selectionHeader"><div><span class="eyebrow">ACCOUNT</span><h2>Next action</h2></div><span class="chip">'+esc(primary?.type||'READY')+'</span></div>'+actions.slice(0,2).map(a=>'<div class="nextAction compactNext"><b>'+esc(a.label)+'</b><span>'+esc(a.reason)+'</span></div>').join('')+'</section>':'')+
- '<details class="card compactDetails"><summary>Why this build?</summary><div class="guideWhy"><p>'+esc(buildEntry(b)?'The highlighted setup comes from synchronized community/statistical build data. It is not an official Supercell recommendation.':'No verified community build is available for this Brawler yet.')+'</p><div class="guideFreshness"><span>DATA FRESHNESS</span><b>'+(BUILD_STATE.updatedAt?esc(new Date(BUILD_STATE.updatedAt).toLocaleString('en-US')):'—')+'</b><small>Components: '+esc(COMPONENT_STATE.generatedAt||'—')+'</small></div></div></details>'+
- '<details class="card compactDetails"><summary>Meta & sources</summary><div class="metaContextCard"><b>'+esc(m?.reason||'No validated context for this selection')+'</b><span>'+esc(metaLine)+'</span></div>'+brawlerDefinition(b)+'</details>';
-}
+
 function play(){
  const general=playMode==='General',names=general?[]:(MODES[playMode]||MODES.Ranked);
  const ranked=general?globalRankList():metaRankList(playMode,playMap);
@@ -430,8 +373,8 @@ function play(){
  Object.keys(MODES).map(m=>'<button class="'+(!general&&playMode===m?'active':'')+'" onclick="playMode=\''+m+'\';playMap=\'Random\';render()">'+esc(m)+'</button>').join('')+'</div>'+
  (general?'':'<select class="search" onchange="playMap=this.value;render()">'+names.map(m=>'<option '+(playMap===m?'selected':'')+'>'+esc(m)+'</option>').join('')+'</select>')+
  '<div class="metaExplain"><b>'+(general?'Overall meta snapshot':'Contextual meta snapshot')+'</b><span>'+(general?'A global view of the current validated meta. Select a mode and map to narrow the context.':'The ranking changes with the selected mode/map. The Brawler detail page uses the same context for build guidance.')+'</span></div>'+
- '<div class="metaList">'+(top.length?top.map((x,i)=>bcard(x.b,true,playMode,playMap,x.meta?.rank||i+1,'metaTop')).join(''):'<div class="emptyState"><b>No validated meta yet.</b><span class="small">The app will not fabricate a ranking.</span></div>')+'</div>'+
- (ready.length?'<div class="section"><div class="sectionTitle"><h3>Your owned options</h3><span class="small">same context</span></div>'+ready.map(x=>bcard(x.b,true,playMode,playMap,x.meta?.rank||metaRankOf(x.b,playMode,playMap),'ownedTop')).join('')+'</div>':'')+
+ '<div class="metaList">'+(top.length?top.map((x,i)=>window.bcard(x.b,true,playMode,playMap,x.meta?.rank||i+1,'metaTop')).join(''):'<div class="emptyState"><b>No validated meta yet.</b><span class="small">The app will not fabricate a ranking.</span></div>')+'</div>'+
+ (ready.length?'<div class="section"><div class="sectionTitle"><h3>Your owned options</h3><span class="small">same context</span></div>'+ready.map(x=>window.bcard(x.b,true,playMode,playMap,x.meta?.rank||metaRankOf(x.b,playMode,playMap),'ownedTop')).join('')+'</div>':'')+
  '<div class="card"><div class="sectionTitle"><h3>Sources & freshness</h3><span class="small">'+esc(META_STATE.updatedAt||'—')+'</span></div><p class="small">Meta is derived from the validated external snapshot. It is not an official Supercell recommendation.</p></div></section>';
 }
 function upgrade(){const list=[...(P.brawlers||[])].filter(Boolean).map(b=>({b,plan:upgradePriority(b)})).filter(x=>x.plan.actions.length).sort((a,z)=>z.plan.score-a.plan.score);return '<section class="section"><div class="sectionTitle"><h2>Upgrade Queue</h2><span class="small">one task at a time</span></div><div class="notice upgradeIntro"><b>BUY</b> = not owned. <b>EQUIP</b> = owned but not equipped. <b>VERIFY</b> = ownership not exposed by the API.</div>'+(list.length?list.map((x,i)=>upgradeCard(x,i+1)).join(''):'<div class="card emptyState"><b>Queue is empty.</b><span class="small">Open a Brawler and confirm your items.</span></div>')+'</section>'}
@@ -444,7 +387,7 @@ function meta(){
  '</div>'+
  '<div class="card"><b>Meta Agent</b><p class="small">External providers, freshness and confidence are kept separate from account data. Contextual meta is applied before personalization.</p><div class="grid"><div class="action"><b>'+PROVIDER_STATE.providers.filter(x=>x.enabled).length+'</b><span class="small">Active providers</span></div><div class="action"><b>'+esc(PROVIDER_STATE.report?.summary?.brawlersWithGlobalMeta??'—')+'</b><span class="small">Brawlers with meta</span></div></div></div><div class="card"><b>Game Database</b><div class="grid"><div class="action"><b>'+fmt(CATALOG_STATE.count)+'</b><span class="small">Brawlers in catalog</span></div><div class="action"><b>'+esc(DB_STATE.patch||'—')+'</b><span class="small">Current patch</span></div><div class="action"><b>'+esc(DB_STATE.version||'—')+'</b><span class="small">DB version</span></div></div><p class="small">Last sync: '+esc(DB_STATE.lastSyncedAt||'—')+'</p></div>'+
  '<div class="card"><b>Official changelog</b>'+ (releases.length?releases.slice(0,5).map(c=>'<div class="action"><b>'+esc(c.title)+'</b><span class="small">'+esc(c.publishedAt||'')+' · '+esc(c.highlights?.[0]||c.status||'Official game source')+'</span></div>').join(''):'<p class="small">No changelog available.</p>')+'</div>'+
- (names.length?'<div class="card"><b>Meta snapshot</b>'+names.map(n=>{const b=P.brawlers.find(x=>x&&x.name===n);return b?bcard(b,true):''}).join('')+'</div>':'<div class="card"><b>Meta provider</b><p class="small">The structure is ready for verified snapshots by patch, mode and map.</p></div>')+
+ (names.length?'<div class="card"><b>Meta snapshot</b>'+names.map(n=>{const b=P.brawlers.find(x=>x&&x.name===n);return b?window.bcard(b,true):''}).join('')+'</div>':'<div class="card"><b>Meta provider</b><p class="small">The structure is ready for verified snapshots by patch, mode and map.</p></div>')+
  '</section>'
 }
 
@@ -541,8 +484,8 @@ async function loadProfile(tag){
 function render(){
  try{
   if(!P){shell('<section class="hero"><div class="eyebrow">ACCOUNT</div><h1>No active profile</h1><p class="muted">Connect your Player Tag to load your profile. Development test profiles are not available in production.</p><button class="primary" onclick="profilePanel()">Manage profile</button></section>');return}
-  if(selected)shell(window.detailV3?window.detailV3((P.brawlers||[]).find(x=>x&&x.id===selected)||allBrawlers().find(x=>x&&x.id===selected)):detail());
-  else if(tab==='home')shell(home());
+  if(selected)shell(window.detail((P.brawlers||[]).find(x=>x&&x.id===selected)||allBrawlers().find(x=>x&&x.id===selected)));
+  else if(tab==='home')shell(window.home());
   else if(tab==='brawlers')shell(brawlers());
   else if(tab==='play')shell(play());
   else if(tab==='upgrade')shell(upgrade());
