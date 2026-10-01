@@ -58,7 +58,7 @@ window.homeContext=homeContext;
 
 function homeV2(){
  const owned=[...(P?.brawlers||[])].filter(Boolean);
- const mode=window.playMode||'Ranked', map=window.playMap||'Random';
+ const mode=playMode||'Ranked', map=playMap||'Random';
  const ranked=window.metaRankList?.(mode,map)||window.globalRankList?.()||[];
  const plans=owned.map(b=>({b,plan:window.upgradePriority?.(b)})).filter(x=>x.plan?.actions?.some(a=>['BUY','POWER','EQUIP'].includes(a.type))).sort((a,z)=>(z.plan.score||0)-(a.plan.score||0)).slice(0,5);
  const upgradeIds=new Set(plans.map(x=>Number(x.b.id)));
@@ -69,7 +69,7 @@ function homeV2(){
  const actionable=owned.filter(b=>(window.nextActions?.(b)||[]).some(a=>['BUY','POWER','EQUIP'].includes(a.type))).length;
  const buildReady=owned.filter(b=>{const rows=window.guideComponents?.(b)||[];return rows.length>=5&&rows.slice(0,5).every(([,t,i])=>i&&!String(i.id||'').startsWith('pending:'))}).length;
  const topAction=plans[0]?.plan?.actions?.[0]||null,topBrawler=plans[0]?.b||null;
- const modes=window.MODES||{},modeOptions=Object.keys(modes).map(x=>'<option value="'+E(x)+'" '+(x===mode?'selected':'')+'>'+E(x)+'</option>').join('');
+ const modes=MODES||{},modeOptions=Object.keys(modes).map(x=>'<option value="'+E(x)+'" '+(x===mode?'selected':'')+'>'+E(x)+'</option>').join('');
  const maps=Array.isArray(modes[mode])?modes[mode]:['Random'],mapOptions=maps.map(x=>'<option value="'+E(x)+'" '+(x===map?'selected':'')+'>'+E(x)+'</option>').join('');
  const upgradeHtml=plans.length?plans.map((x,i)=>window.upgradeCard(x,i+1)).join(''):'<div class="bhEmpty card"><b>Nessuna azione immediata rilevata.</b><span>Verifica ownership e build dai dettagli dei Brawler.</span></div>';
  const bestHtml=best.length?best.map((x,i)=>bcardV2(x,true,mode,map,x.meta?.rank||i+1,'ownedTop')).join(''):'<div class="bhEmpty card"><b>Nessun dato meta validato.</b><span>Serve uno snapshot meta sincronizzato per questo contesto.</span></div>';
