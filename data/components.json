@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-10-01T19:55:00.000Z",
+  "generatedAt": "2026-10-01T20:05:00.000Z",
   "source": "BrawlAPI game CSV mirror + BrawlFind Overdrive catalog",
   "sources": [
     {
@@ -1818,7 +1818,7 @@
             "slot": "gadget",
             "source": "Supercell",
             "name": "Suplex Supplement Buffie",
-            "description": "Il nemico colpito viene sbattuto a terra, causando 800 danni ad area.",
+            "description": "The affected enemy is slammed down, dealing 800 area damage.",
             "status": "VALIDATED",
             "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-di-agosto-2026/",
             "updatedAt": "2026-10-01"
@@ -1828,7 +1828,7 @@
             "slot": "gadget",
             "source": "Supercell",
             "name": "Asteroid Belt Buffie",
-            "description": "I proiettili eliminati caricano la Super.",
+            "description": "Destroyed projectiles charge El Primo's Super.",
             "status": "VALIDATED",
             "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-di-agosto-2026/",
             "updatedAt": "2026-10-01"
@@ -1840,7 +1840,7 @@
             "slot": "starPower",
             "source": "Supercell",
             "name": "El Fuego Buffie",
-            "description": "Colpire con un pugno un nemico in fiamme aumenta la durata dell'incendio di 1,5 secondi.",
+            "description": "Hitting a burning enemy with a punch increases the burn duration by 1.5 seconds.",
             "status": "VALIDATED",
             "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-di-agosto-2026/",
             "updatedAt": "2026-10-01"
@@ -1850,7 +1850,7 @@
             "slot": "starPower",
             "source": "Supercell",
             "name": "Meteor Rush Buffie",
-            "description": "L'aumento di velocità attiva anche uno scudo del 30%.",
+            "description": "The speed boost also activates a 15% shield.",
             "status": "VALIDATED",
             "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-di-agosto-2026/",
             "updatedAt": "2026-10-01"
@@ -1862,7 +1862,7 @@
             "slot": "hyperCharge",
             "source": "Supercell",
             "name": "Gravity Leap Buffie",
-            "description": "I pugni diventano più grandi del 20% e bruciano i nemici per 400 danni in 2 secondi.",
+            "description": "Punches become 20% larger and burn enemies for 400 damage over 2 seconds.",
             "status": "VALIDATED",
             "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-di-agosto-2026/",
             "updatedAt": "2026-10-01"
@@ -2284,7 +2284,7 @@
             "slot": "gadget",
             "source": "Supercell",
             "name": "Tuning Fork Buffie",
-            "description": "Gli alleati curati aumentano del 25% la velocità di ricarica per 2 secondi.",
+            "description": "Healing an ally also grants them 25% reload speed for 2 seconds.",
             "status": "VALIDATED",
             "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-di-agosto-2026/",
             "updatedAt": "2026-10-01"
@@ -2294,7 +2294,7 @@
             "slot": "gadget",
             "source": "Supercell",
             "name": "Protective Tunes Buffie",
-            "description": "L'area è più grande del 20% e dura 2 secondi in più.",
+            "description": "Protective Tunes area is 20% larger and lasts 2 seconds longer.",
             "status": "VALIDATED",
             "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-di-agosto-2026/",
             "updatedAt": "2026-10-01"
@@ -2306,7 +2306,7 @@
             "slot": "starPower",
             "source": "Supercell",
             "name": "Da Capo! Buffie",
-            "description": "Colpendo alleati con salute al massimo, il Super aumenta la loro velocità di caricamento del Super del 10% per 3 secondi.",
+            "description": "When hitting allies at full health, Power Chord grants them 10% Super Charge Rate for 3 seconds.",
             "status": "VALIDATED",
             "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-di-agosto-2026/",
             "updatedAt": "2026-10-01"
@@ -2316,7 +2316,7 @@
             "slot": "starPower",
             "source": "Supercell",
             "name": "Screeching Solo Buffie",
-            "description": "I nemici colpiti dal Super rimangono inibiti per 0,5 secondi.",
+            "description": "Enemies hit by Encore are Silenced for 0.5 seconds.",
             "status": "VALIDATED",
             "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-di-agosto-2026/",
             "updatedAt": "2026-10-01"
@@ -2328,7 +2328,7 @@
             "slot": "hyperCharge",
             "source": "Supercell",
             "name": "Medic's Melody Buffie",
-            "description": "I proiettili di Vibrattacco vengono sparati a 180° durante l'Overdrive.",
+            "description": "Projectiles from Power Chord spawn in a 180° arc while Hypercharge is active.",
             "status": "VALIDATED",
             "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-di-agosto-2026/",
             "updatedAt": "2026-10-01"
@@ -5620,7 +5620,7 @@
             "slot": "gadget",
             "source": "Supercell",
             "name": "Fire Starters Buffie",
-            "description": "Permette di posizionare due barili invece di uno.",
+            "description": "Allows Amber to place two oil puddles instead of one.",
             "status": "VALIDATED",
             "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-di-agosto-2026/",
             "updatedAt": "2026-10-01"
@@ -5630,7 +5630,7 @@
             "slot": "gadget",
             "source": "Supercell",
             "name": "Dancing Flames Buffie",
-            "description": "Amber ottiene +20% velocità e infligge 400 danni ai nemici che tocca.",
+            "description": "Amber gains 20% movement speed and deals 400 damage to enemies she touches.",
             "status": "VALIDATED",
             "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-di-agosto-2026/",
             "updatedAt": "2026-10-01"
@@ -5642,7 +5642,7 @@
             "slot": "starPower",
             "source": "Supercell",
             "name": "Wild Flames Buffie",
-            "description": "Amber ottiene +15% velocità quando è vicina al fuoco o al liquido incendiario.",
+            "description": "Amber gains 15% movement speed while near fire or burning oil.",
             "status": "VALIDATED",
             "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-di-agosto-2026/",
             "updatedAt": "2026-10-01"
@@ -5652,7 +5652,7 @@
             "slot": "starPower",
             "source": "Supercell",
             "name": "Scorching Siphon Buffie",
-            "description": "La durata della combustione aumenta di 1 secondo.",
+            "description": "Burn duration is increased by 1 second.",
             "status": "VALIDATED",
             "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-di-agosto-2026/",
             "updatedAt": "2026-10-01"
@@ -5664,7 +5664,7 @@
             "slot": "hyperCharge",
             "source": "Supercell",
             "name": "Overdrive Buffie",
-            "description": "Anche i proiettili dell'attacco base applicano la combustione.",
+            "description": "Main Attack projectiles also apply the burn effect.",
             "status": "VALIDATED",
             "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-di-agosto-2026/",
             "updatedAt": "2026-10-01"
@@ -8020,7 +8020,7 @@
             "slot": "gadget",
             "source": "Supercell",
             "name": "Kooky Popper Buffie",
-            "description": "I nemici colpiti perdono un colpo.",
+            "description": "Enemies hit by the spirit are knocked back.",
             "status": "VALIDATED",
             "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-di-agosto-2026/",
             "updatedAt": "2026-10-01"
@@ -8030,7 +8030,7 @@
             "slot": "gadget",
             "source": "Supercell",
             "name": "Spooky Pop Buffie",
-            "description": "Genera uno spirito per ogni Brawler colpito.",
+            "description": "Generates a spirit for each Brawler hit.",
             "status": "VALIDATED",
             "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-di-agosto-2026/",
             "updatedAt": "2026-10-01"
@@ -8042,7 +8042,7 @@
             "slot": "starPower",
             "source": "Supercell",
             "name": "Health Bonanza Buffie",
-            "description": "Gli spiriti si muovono lentamente verso l'alleato più vicino.",
+            "description": "Healing from spirits is increased by 75%.",
             "status": "VALIDATED",
             "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-di-agosto-2026/",
             "updatedAt": "2026-10-01"
@@ -8052,7 +8052,7 @@
             "slot": "starPower",
             "source": "Supercell",
             "name": "Spirit Animal Buffie",
-            "description": "Gli alleati ottengono +15% velocità per 5 secondi.",
+            "description": "Allies gain 15% movement speed for 5 seconds.",
             "status": "VALIDATED",
             "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-di-agosto-2026/",
             "updatedAt": "2026-10-01"
@@ -8064,7 +8064,7 @@
             "slot": "hyperCharge",
             "source": "Supercell",
             "name": "Overdrive Buffie",
-            "description": "I palloncini sono più grandi e perforano le mura.",
+            "description": "Balloons become larger and pierce walls.",
             "status": "VALIDATED",
             "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-di-agosto-2026/",
             "updatedAt": "2026-10-01"
@@ -9443,7 +9443,7 @@
             "slot": "gadget",
             "source": "Supercell",
             "name": "Wandering Sound Buffie",
-            "description": "Rimuovendo un segnale, Chuck ottiene uno scudo che riduce i danni del 20% per 5 secondi.",
+            "description": "Removing a pole grants Chuck a shield that reduces damage by 20% for 5 seconds.",
             "status": "VALIDATED",
             "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-di-agosto-2026/",
             "updatedAt": "2026-10-01"
@@ -9453,7 +9453,7 @@
             "slot": "gadget",
             "source": "Supercell",
             "name": "Ghost Train Buffie",
-            "description": "La Super successiva lascia una scia infuocata che infligge 1200 danni e brucia per 3 secondi.",
+            "description": "Chuck's next Super leaves a burning trail dealing damage over time.",
             "status": "VALIDATED",
             "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-di-agosto-2026/",
             "updatedAt": "2026-10-01"
@@ -9465,7 +9465,7 @@
             "slot": "starPower",
             "source": "Supercell",
             "name": "Pit Stop Buffie",
-            "description": "Quando piazza un segnale, crea un'area che infligge 200 danni nell'arco di 4 secondi.",
+            "description": "Placing a pole creates an area that deals damage over time.",
             "status": "VALIDATED",
             "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-di-agosto-2026/",
             "updatedAt": "2026-10-01"
@@ -9475,7 +9475,7 @@
             "slot": "starPower",
             "source": "Supercell",
             "name": "Tickets Please Buffie",
-            "description": "La velocità dello scatto della Super aumenta del 25%.",
+            "description": "Super dash speed is increased by 25%.",
             "status": "VALIDATED",
             "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-di-agosto-2026/",
             "updatedAt": "2026-10-01"
@@ -9487,7 +9487,7 @@
             "slot": "hyperCharge",
             "source": "Supercell",
             "name": "Wheels of Steel Buffie",
-            "description": "Con l'attacco base, Chuck spara tre nuvole di vapore in un'area a cono.",
+            "description": "Chuck fires three additional steam clouds in a cone with his Main Attack.",
             "status": "VALIDATED",
             "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-di-agosto-2026/",
             "updatedAt": "2026-10-01"
@@ -10940,7 +10940,7 @@
             "slot": "gadget",
             "source": "Supercell",
             "name": "Long Arms Buffie",
-            "description": "I nemici colpiti vengono trascinati al centro dell'abbraccio.",
+            "description": "Enemies hit by the gadget are pulled toward the center.",
             "status": "VALIDATED",
             "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-di-agosto-2026/",
             "updatedAt": "2026-10-01"
@@ -10950,7 +10950,7 @@
             "slot": "gadget",
             "source": "Supercell",
             "name": "Jump Scare Buffie",
-            "description": "Quando salta, ottiene uno scudo da 1000 punti salute.",
+            "description": "When Shade jumps, he gains a shield; the fear radius is reduced to 600.",
             "status": "VALIDATED",
             "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-di-agosto-2026/",
             "updatedAt": "2026-10-01"
@@ -10962,7 +10962,7 @@
             "slot": "starPower",
             "source": "Supercell",
             "name": "Spooky Speedster Buffie",
-            "description": "I colpi critici aumentano anche la velocità di ricarica dei gadget del 15%.",
+            "description": "Critical hits also increase Gadget recharge speed by 15%.",
             "status": "VALIDATED",
             "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-di-agosto-2026/",
             "updatedAt": "2026-10-01"
@@ -10972,7 +10972,7 @@
             "slot": "starPower",
             "source": "Supercell",
             "name": "Unprepared Buffie",
-            "description": "La Super dura 2 secondi in più.",
+            "description": "The Super lasts 2 seconds longer.",
             "status": "VALIDATED",
             "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-di-agosto-2026/",
             "updatedAt": "2026-10-01"
@@ -10984,7 +10984,7 @@
             "slot": "hyperCharge",
             "source": "Supercell",
             "name": "Hypercharge Buffie",
-            "description": "I danni e la dimensione del centro degli abbracci aumentano del 50%.",
+            "description": "Hypercharge Buffie bonus damage is 30%.",
             "status": "VALIDATED",
             "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-di-agosto-2026/",
             "updatedAt": "2026-10-01"
@@ -13468,6 +13468,6 @@
     "overdrives": 34,
     "buffies": 133,
     "buffieBrawlers": 27,
-    "updatedAt": "2026-10-01T19:55:00.000Z"
+    "updatedAt": "2026-10-01T20:05:00.000Z"
   }
 }
