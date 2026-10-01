@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 5,
-  "generatedAt": "2026-10-01T20:05:00.000Z",
+  "schemaVersion": 6,
+  "generatedAt": "2026-10-01T20:30:00.000Z",
   "source": "BrawlAPI game CSV mirror + BrawlFind Overdrive catalog",
   "sources": [
     {
@@ -25,7 +25,7 @@
       "scope": "official changes and newly introduced Overdrive/Buffie data"
     }
   ],
-  "note": "Validated component catalog. Gear availability is synchronized from BrawlAPI game data. Overdrive data is sourced from BrawlAPI/BrawlFind and official Supercell release notes when mapped. Buffies are stored per brawler and per ability with stable unique IDs; VALIDATED entries are confirmed against official Supercell release notes. Empty slots mean no validated Buffie data yet, not necessarily unavailable.",
+  "note": "Validated component catalog. Gear availability is synchronized from BrawlAPI game data. Overdrive data is sourced from BrawlAPI/BrawlFind and official Supercell release notes when mapped. Buffies are stored per brawler and per ability with stable unique IDs; VALIDATED entries are confirmed against official Supercell release notes. Empty slots mean no validated Buffie data yet, not necessarily unavailable. Canonical buffieSets contains the 3 actual Buffies per Brawler (Gadget, Star, Hypercharge); legacy per-ability buffies arrays are retained for backward compatibility.",
   "globalGears": [
     {
       "id": "gear:ForestSpeed",
@@ -441,7 +441,59 @@
           }
         ]
       },
-      "gameCharacter": "f12191a373cbc743d1f7554b27999006a017d2eb"
+      "gameCharacter": "f12191a373cbc743d1f7554b27999006a017d2eb",
+      "buffieSets": {
+        "gadget": {
+          "id": "buffie:gadget:16000000",
+          "name": "Gadget Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/news/new-power-brawl-pass-changes-and-a-new-starr-drop-2/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Fast Forward",
+              "description": "Take no damage while dashing."
+            },
+            {
+              "source": "Clay Pigeons",
+              "description": "Attacks slow enemies."
+            }
+          ]
+        },
+        "starPower": {
+          "id": "buffie:star:16000000",
+          "name": "Star Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/news/new-power-brawl-pass-changes-and-a-new-starr-drop-2/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Shell Shock",
+              "description": "Using patented Draco Dragonbreath shells, Shelly leaves a burning area with her Super."
+            },
+            {
+              "source": "Band-Aid",
+              "description": "Gain 15% movement speed for 3 secs."
+            }
+          ]
+        },
+        "hyperCharge": {
+          "id": "buffie:hyper:16000000",
+          "name": "Hyper Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/news/new-power-brawl-pass-changes-and-a-new-starr-drop-2/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Hypercharge",
+              "description": "Main attack projectile speed is greatly increased during Hypercharge."
+            }
+          ]
+        }
+      }
     },
     "16000001": {
       "id": 16000001,
@@ -593,7 +645,59 @@
           }
         ]
       },
-      "gameCharacter": "Gunslinger"
+      "gameCharacter": "Gunslinger",
+      "buffieSets": {
+        "gadget": {
+          "id": "buffie:gadget:16000001",
+          "name": "Gadget Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/news/new-power-brawl-pass-changes-and-a-new-starr-drop-2/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Speedloader",
+              "description": "Each hit steals 1 ammo."
+            },
+            {
+              "source": "Silver Bullet",
+              "description": "Shoot a larger bullet that deals more damage."
+            }
+          ]
+        },
+        "starPower": {
+          "id": "buffie:star:16000001",
+          "name": "Star Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/news/new-power-brawl-pass-changes-and-a-new-starr-drop-2/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Slick Boots",
+              "description": "Gain movement speed when dealing damage."
+            },
+            {
+              "source": "Magnum Special",
+              "description": "Deal increased damage to distant targets."
+            }
+          ]
+        },
+        "hyperCharge": {
+          "id": "buffie:hyper:16000001",
+          "name": "Hyper Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/news/new-power-brawl-pass-changes-and-a-new-starr-drop-2/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Hypercharge",
+              "description": "Fire bullets quicker during Hypercharge."
+            }
+          ]
+        }
+      }
     },
     "16000002": {
       "id": 16000002,
@@ -745,7 +849,59 @@
           }
         ]
       },
-      "gameCharacter": "BullDude"
+      "gameCharacter": "BullDude",
+      "buffieSets": {
+        "gadget": {
+          "id": "buffie:gadget:16000002",
+          "name": "Gadget Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-february-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "T-Bone Missile",
+              "description": "Mark the target for 5 sec, gaining 50% damage against the target as health."
+            },
+            {
+              "source": "Stomper",
+              "description": "Stunning an enemy grants +30% movement speed for 3 sec."
+            }
+          ]
+        },
+        "starPower": {
+          "id": "buffie:star:16000002",
+          "name": "Star Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-february-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Berserker",
+              "description": "Defeating a Brawler while this effect is active instantly charges Bull's Super."
+            },
+            {
+              "source": "Tough Guy",
+              "description": "Defeating a Brawler while this effect is active makes Bull immune to damage for 0."
+            }
+          ]
+        },
+        "hyperCharge": {
+          "id": "buffie:hyper:16000002",
+          "name": "Hyper Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-february-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Hypercharge",
+              "description": "Bull's main attack deals less damage at long range but pierces all enemies."
+            }
+          ]
+        }
+      }
     },
     "16000003": {
       "id": 16000003,
@@ -897,7 +1053,59 @@
           }
         ]
       },
-      "gameCharacter": "RocketGirl"
+      "gameCharacter": "RocketGirl",
+      "buffieSets": {
+        "gadget": {
+          "id": "buffie:gadget:16000003",
+          "name": "Gadget Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-june-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Rocket Laces",
+              "description": "Hitting an enemy Brawler gives +2 sec movement speed."
+            },
+            {
+              "source": "Rocket Fuel",
+              "description": "The rocket breaks into 4 smaller rockets after exploding, dealing +75% damage of the large rocket."
+            }
+          ]
+        },
+        "starPower": {
+          "id": "buffie:star:16000003",
+          "name": "Star Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-june-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "More Rockets",
+              "description": "Brock gets +30% movement speed while firing his Super."
+            },
+            {
+              "source": "Rocket No. 4",
+              "description": "Every 6 sec Brock's next attack has increased range."
+            }
+          ]
+        },
+        "hyperCharge": {
+          "id": "buffie:hyper:16000003",
+          "name": "Hyper Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-june-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Hypercharge",
+              "description": "Rockin' Rockets fires two additional small rockets; each deals 60% of the main rocket's damage."
+            }
+          ]
+        }
+      }
     },
     "16000004": {
       "id": 16000004,
@@ -1049,7 +1257,59 @@
           }
         ]
       },
-      "gameCharacter": null
+      "gameCharacter": null,
+      "buffieSets": {
+        "gadget": {
+          "id": "buffie:gadget:16000004",
+          "name": "Gadget Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-june-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Multiball Launcher",
+              "description": "When Rico bounces bullets off the vending machine, extra bullets are added to it when it explodes."
+            },
+            {
+              "source": "Multiball",
+              "description": "When Rico bounces bullets off the vending machine, extra bullets are added to it when it explodes."
+            }
+          ]
+        },
+        "starPower": {
+          "id": "buffie:star:16000004",
+          "name": "Star Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-june-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Super Bouncy",
+              "description": "Bounced bullets also give 10% Super charge on hit."
+            },
+            {
+              "source": "Robo Retreat",
+              "description": "Increase movement speed by up to 50% when Rico is at 10% health."
+            }
+          ]
+        },
+        "hyperCharge": {
+          "id": "buffie:hyper:16000004",
+          "name": "Hyper Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-june-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Hypercharge",
+              "description": "Rico's Main Attack has increased bullet speed and fires additional bullets."
+            }
+          ]
+        }
+      }
     },
     "16000005": {
       "id": 16000005,
@@ -1210,7 +1470,59 @@
           }
         ]
       },
-      "gameCharacter": "Cactus"
+      "gameCharacter": "Cactus",
+      "buffieSets": {
+        "gadget": {
+          "id": "buffie:gadget:16000005",
+          "name": "Gadget Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/news/new-power-brawl-pass-changes-and-a-new-starr-drop-2/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Popping Pincushion",
+              "description": "Targets that are hit with 2 needles become rooted for 1 second."
+            },
+            {
+              "source": "Life Plant",
+              "description": "When destroyed, the plant also deals 600 area damage that pushes enemies back."
+            }
+          ]
+        },
+        "starPower": {
+          "id": "buffie:star:16000005",
+          "name": "Star Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/news/new-power-brawl-pass-changes-and-a-new-starr-drop-2/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Fertilize",
+              "description": "Super projectile speed is 30% faster."
+            },
+            {
+              "source": "Curveball",
+              "description": "Curving spikes have extended range."
+            }
+          ]
+        },
+        "hyperCharge": {
+          "id": "buffie:hyper:16000005",
+          "name": "Hyper Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/news/new-power-brawl-pass-changes-and-a-new-starr-drop-2/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Hypercharge",
+              "description": "Main attack needle grenades detonate twice! Hypercharge duration: +2 sec."
+            }
+          ]
+        }
+      }
     },
     "16000006": {
       "id": 16000006,
@@ -1598,7 +1910,59 @@
           }
         ]
       },
-      "gameCharacter": "Shaman"
+      "gameCharacter": "Shaman",
+      "buffieSets": {
+        "gadget": {
+          "id": "buffie:gadget:16000008",
+          "name": "Gadget Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-february-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Bear Paws",
+              "description": "Her bear gains 50% damage for its next attack."
+            },
+            {
+              "source": "Faux Fur",
+              "description": "Nita and her bear become invulnerable for 0."
+            }
+          ]
+        },
+        "starPower": {
+          "id": "buffie:star:16000008",
+          "name": "Star Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-february-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Bear With Me",
+              "description": "This ability can overheal Nita or her bear for 2000 health."
+            },
+            {
+              "source": "Hyper Bear",
+              "description": "Summoning Nita's bear gives her +25% reload speed for 3 sec."
+            }
+          ]
+        },
+        "hyperCharge": {
+          "id": "buffie:hyper:16000008",
+          "name": "Hyper Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-february-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Hypercharge",
+              "description": "Nita's attacks increase in speed, width, and range."
+            }
+          ]
+        }
+      }
     },
     "16000009": {
       "id": 16000009,
@@ -1869,7 +2233,59 @@
           }
         ]
       },
-      "gameCharacter": null
+      "gameCharacter": null,
+      "buffieSets": {
+        "gadget": {
+          "id": "buffie:gadget:16000010",
+          "name": "Gadget Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-august-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Supercell",
+              "description": "The affected enemy is slammed down, dealing 800 area damage."
+            },
+            {
+              "source": "Supercell",
+              "description": "Destroyed projectiles charge El Primo's Super."
+            }
+          ]
+        },
+        "starPower": {
+          "id": "buffie:star:16000010",
+          "name": "Star Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-august-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Supercell",
+              "description": "Hitting a burning enemy with a punch increases the burn duration by 1.5 seconds."
+            },
+            {
+              "source": "Supercell",
+              "description": "The speed boost also activates a 15% shield."
+            }
+          ]
+        },
+        "hyperCharge": {
+          "id": "buffie:hyper:16000010",
+          "name": "Hyper Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-august-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Supercell",
+              "description": "Punches become 20% larger and burn enemies for 400 damage over 2 seconds."
+            }
+          ]
+        }
+      }
     },
     "16000011": {
       "id": 16000011,
@@ -2021,7 +2437,59 @@
           }
         ]
       },
-      "gameCharacter": "Undertaker"
+      "gameCharacter": "Undertaker",
+      "buffieSets": {
+        "gadget": {
+          "id": "buffie:gadget:16000011",
+          "name": "Gadget Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/news/new-power-brawl-pass-changes-and-a-new-starr-drop-2/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Combo Spinner",
+              "description": "Deals increased damage to low health enemies."
+            },
+            {
+              "source": "Creature Of The Night",
+              "description": "Deals 760 damage when passing through enemies and heals for the damage dealt."
+            }
+          ]
+        },
+        "starPower": {
+          "id": "buffie:star:16000011",
+          "name": "Star Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/news/new-power-brawl-pass-changes-and-a-new-starr-drop-2/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Creepy Harvest",
+              "description": "Gains 250 additional max health until defeated (this stacks)."
+            },
+            {
+              "source": "Coiled Snake",
+              "description": "Gains 40% damage reduction during his long dash."
+            }
+          ]
+        },
+        "hyperCharge": {
+          "id": "buffie:hyper:16000011",
+          "name": "Hyper Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/news/new-power-brawl-pass-changes-and-a-new-starr-drop-2/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Hypercharge",
+              "description": "After Mortis uses a main attack, a phantom attack hits the same area, after a delay."
+            }
+          ]
+        }
+      }
     },
     "16000012": {
       "id": 16000012,
@@ -2173,7 +2641,59 @@
           }
         ]
       },
-      "gameCharacter": "Crow"
+      "gameCharacter": "Crow",
+      "buffieSets": {
+        "gadget": {
+          "id": "buffie:gadget:16000012",
+          "name": "Gadget Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-february-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Instapoison",
+              "description": "Refreshes poison duration."
+            },
+            {
+              "source": "Slowing Toxin",
+              "description": "The kunai also bounces to nearby targets, causing the same effect."
+            }
+          ]
+        },
+        "starPower": {
+          "id": "buffie:star:16000012",
+          "name": "Star Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-february-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Extra Toxic",
+              "description": "Crow deals 5% more damage for each poisoned enemy."
+            },
+            {
+              "source": "Carrion Crow",
+              "description": "Crow's poison duration is increased by 1 sec."
+            }
+          ]
+        },
+        "hyperCharge": {
+          "id": "buffie:hyper:16000012",
+          "name": "Hyper Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-february-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Hypercharge",
+              "description": "Main attacks also pierce and return after reaching max distance, dealing 20% less damage when returning."
+            }
+          ]
+        }
+      }
     },
     "16000013": {
       "id": 16000013,
@@ -2335,7 +2855,59 @@
           }
         ]
       },
-      "gameCharacter": "DeadMariachi"
+      "gameCharacter": "DeadMariachi",
+      "buffieSets": {
+        "gadget": {
+          "id": "buffie:gadget:16000013",
+          "name": "Gadget Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-august-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Supercell",
+              "description": "Healing an ally also grants them 25% reload speed for 2 seconds."
+            },
+            {
+              "source": "Supercell",
+              "description": "Protective Tunes area is 20% larger and lasts 2 seconds longer."
+            }
+          ]
+        },
+        "starPower": {
+          "id": "buffie:star:16000013",
+          "name": "Star Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-august-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Supercell",
+              "description": "When hitting allies at full health, Power Chord grants them 10% Super Charge Rate for 3 seconds."
+            },
+            {
+              "source": "Supercell",
+              "description": "Enemies hit by Encore are Silenced for 0.5 seconds."
+            }
+          ]
+        },
+        "hyperCharge": {
+          "id": "buffie:hyper:16000013",
+          "name": "Hyper Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-august-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Supercell",
+              "description": "Projectiles from Power Chord spawn in a 180° arc while Hypercharge is active."
+            }
+          ]
+        }
+      }
     },
     "16000014": {
       "id": 16000014,
@@ -2487,7 +3059,59 @@
           }
         ]
       },
-      "gameCharacter": "BowDude"
+      "gameCharacter": "BowDude",
+      "buffieSets": {
+        "gadget": {
+          "id": "buffie:gadget:16000014",
+          "name": "Gadget Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-february-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Super Totem",
+              "description": "The totem has a significantly increased radius."
+            },
+            {
+              "source": "Tripwire",
+              "description": "Detonated mines have a bigger blast radius."
+            }
+          ]
+        },
+        "starPower": {
+          "id": "buffie:star:16000014",
+          "name": "Star Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-february-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Circling Eagle",
+              "description": "Bo is no longer revealed while attacking from a bush."
+            },
+            {
+              "source": "Snare A Bear",
+              "description": "Trap placement speed in increased significantly."
+            }
+          ]
+        },
+        "hyperCharge": {
+          "id": "buffie:hyper:16000014",
+          "name": "Hyper Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-february-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Hypercharge",
+              "description": "Bo's main attack shoots a 4th arrow, and each arrow has increased area damage radius."
+            }
+          ]
+        }
+      }
     },
     "16000015": {
       "id": 16000015,
@@ -3211,7 +3835,59 @@
           }
         ]
       },
-      "gameCharacter": "HammerDude"
+      "gameCharacter": "HammerDude",
+      "buffieSets": {
+        "gadget": {
+          "id": "buffie:gadget:16000020",
+          "name": "Gadget Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/news/new-power-brawl-pass-changes-and-a-new-starr-drop-2/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Active Noise Canceling",
+              "description": "Soundwave also destroys enemy projectiles."
+            },
+            {
+              "source": "Irresistible Attraction",
+              "description": "Enemies are slowed for 5 sec when hit."
+            }
+          ]
+        },
+        "starPower": {
+          "id": "buffie:star:16000020",
+          "name": "Star Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/news/new-power-brawl-pass-changes-and-a-new-starr-drop-2/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Power Grab",
+              "description": "Defeating a Brawler increases attack damage by 25% for 12 secs."
+            },
+            {
+              "source": "Sponge",
+              "description": "Take 15% less damage when above 50% health."
+            }
+          ]
+        },
+        "hyperCharge": {
+          "id": "buffie:hyper:16000020",
+          "name": "Hyper Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/news/new-power-brawl-pass-changes-and-a-new-starr-drop-2/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Hypercharge",
+              "description": "Main attack speed is increased to max while Frank is Hypercharged! Hypercharge duration: +2 sec."
+            }
+          ]
+        }
+      }
     },
     "16000021": {
       "id": 16000021,
@@ -3589,7 +4265,59 @@
           }
         ]
       },
-      "gameCharacter": "Ninja"
+      "gameCharacter": "Ninja",
+      "buffieSets": {
+        "gadget": {
+          "id": "buffie:gadget:16000023",
+          "name": "Gadget Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-february-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Clone Projector",
+              "description": "Leon can reactivate the Gadget, while a clone is active, to swap positions with the clone! Lollipop Drop 37% pick Leon creates a stealthy area for his team to hide in."
+            },
+            {
+              "source": "Lollipop Drop",
+              "description": "Leon and teammates gain 15% movement speed inside the area."
+            }
+          ]
+        },
+        "starPower": {
+          "id": "buffie:star:16000023",
+          "name": "Star Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-february-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Smoke Trails",
+              "description": "The first attack after breaking invisibility deals +15% damage."
+            },
+            {
+              "source": "Invisiheal",
+              "description": "Leon's Super duration is +1 sec longer."
+            }
+          ]
+        },
+        "hyperCharge": {
+          "id": "buffie:hyper:16000023",
+          "name": "Hyper Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-february-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Hypercharge",
+              "description": "Leon's main attacks do at least 75% damage regardless of distance."
+            }
+          ]
+        }
+      }
     },
     "16000024": {
       "id": 16000024,
@@ -3959,7 +4687,59 @@
           }
         ]
       },
-      "gameCharacter": "Baseball"
+      "gameCharacter": "Baseball",
+      "buffieSets": {
+        "gadget": {
+          "id": "buffie:gadget:16000026",
+          "name": "Gadget Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-february-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Vitamin Booster",
+              "description": "Instantly charges Bibi's Home Run bar and her next attack restores 60% damage as health."
+            },
+            {
+              "source": "Extra Sticky",
+              "description": "The slowing effect increases the longer the gum stays on the ground."
+            }
+          ]
+        },
+        "starPower": {
+          "id": "buffie:star:16000026",
+          "name": "Star Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-february-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Home Run",
+              "description": "Instantly charges Bibi's Home Run bar and her next attack restores 60% damage as health."
+            },
+            {
+              "source": "Batting Stance",
+              "description": "Bibi gains a shield for 5 sec when her Super hits an enemy Brawler."
+            }
+          ]
+        },
+        "hyperCharge": {
+          "id": "buffie:hyper:16000026",
+          "name": "Hyper Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-february-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Hypercharge",
+              "description": "Hypercharged main attack has a shorter wind-up time."
+            }
+          ]
+        }
+      }
     },
     "16000027": {
       "id": 16000027,
@@ -4111,7 +4891,59 @@
           }
         ]
       },
-      "gameCharacter": null
+      "gameCharacter": null,
+      "buffieSets": {
+        "gadget": {
+          "id": "buffie:gadget:16000027",
+          "name": "Gadget Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-june-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Cheat Cartridge",
+              "description": "Heals himself for 3600, and fully repairs the Damage Booster."
+            },
+            {
+              "source": "Extra Credits",
+              "description": "These projectiles bounce to nearby enemies."
+            }
+          ]
+        },
+        "starPower": {
+          "id": "buffie:star:16000027",
+          "name": "Star Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-june-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Boosted Booster",
+              "description": "Every 5 sec the Damage Booster spawns an ammo clip lasting 8 sec and reloading 1 ammo."
+            },
+            {
+              "source": "Plugged In",
+              "description": "Teammates get a 15% Speed Boost."
+            }
+          ]
+        },
+        "hyperCharge": {
+          "id": "buffie:hyper:16000027",
+          "name": "Hyper Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-june-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Hypercharge",
+              "description": "During Hypercharge 8-Bit gains infinite ammo and can interrupt his current Main Attack with another one."
+            }
+          ]
+        }
+      }
     },
     "16000028": {
       "id": 16000028,
@@ -4499,7 +5331,59 @@
           }
         ]
       },
-      "gameCharacter": "Mummy"
+      "gameCharacter": "Mummy",
+      "buffieSets": {
+        "gadget": {
+          "id": "buffie:gadget:16000030",
+          "name": "Gadget Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/news/new-power-brawl-pass-changes-and-a-new-starr-drop-2/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Friendzoner",
+              "description": "Knocks enemies back farther and stuns them for 1 sec if knocked into a wall."
+            },
+            {
+              "source": "Acid Spray",
+              "description": "Slows enemies on hit."
+            }
+          ]
+        },
+        "starPower": {
+          "id": "buffie:star:16000030",
+          "name": "Star Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/news/new-power-brawl-pass-changes-and-a-new-starr-drop-2/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Bad Karma",
+              "description": "Reduce damage dealt by enemies hit by Emz's main attack by 15% for 4 sec."
+            },
+            {
+              "source": "Hype",
+              "description": "Emz takes no damage for 1 sec when activating Super."
+            }
+          ]
+        },
+        "hyperCharge": {
+          "id": "buffie:hyper:16000030",
+          "name": "Hyper Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/news/new-power-brawl-pass-changes-and-a-new-starr-drop-2/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Hypercharge",
+              "description": "Sprays will poison enemies! Hypercharge duration: +2 sec."
+            }
+          ]
+        }
+      }
     },
     "16000031": {
       "id": 16000031,
@@ -4769,7 +5653,59 @@
           }
         ]
       },
-      "gameCharacter": "Speedy"
+      "gameCharacter": "Speedy",
+      "buffieSets": {
+        "gadget": {
+          "id": "buffie:gadget:16000032",
+          "name": "Gadget Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-june-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Phase Shifter",
+              "description": "Max can dash a second time 3 sec after the first dash."
+            },
+            {
+              "source": "Sneaky Sneakers",
+              "description": "When blinking back, Max fully refills her ammo and heals teammates near the lightning bolt for the same amount that she healed."
+            }
+          ]
+        },
+        "starPower": {
+          "id": "buffie:star:16000032",
+          "name": "Star Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-june-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Super Charged",
+              "description": "Teammates affected by Max's Super gain a shield for 4 sec."
+            },
+            {
+              "source": "Run N Gun",
+              "description": "Max gains a burst of movement speed when hitting enemies with her Main Attack."
+            }
+          ]
+        },
+        "hyperCharge": {
+          "id": "buffie:hyper:16000032",
+          "name": "Hyper Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-june-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Hypercharge",
+              "description": "Max grants herself and nearby teammates 6% Super charge whenever she hits with her Main Attack."
+            }
+          ]
+        }
+      }
     },
     "16000034": {
       "id": 16000034,
@@ -5357,7 +6293,59 @@
           }
         ]
       },
-      "gameCharacter": "PowerLeveler"
+      "gameCharacter": "PowerLeveler",
+      "buffieSets": {
+        "gadget": {
+          "id": "buffie:gadget:16000038",
+          "name": "Gadget Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-june-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Power Surge",
+              "description": "Power Surge also grants 30% Reload Speed."
+            },
+            {
+              "source": "Power Shield",
+              "description": "If Surge is hit during Power Shield, Gadget cooldown is decreased by 50%."
+            }
+          ]
+        },
+        "starPower": {
+          "id": "buffie:star:16000038",
+          "name": "Star Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-june-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "To The Max",
+              "description": "When bouncing off a wall, Surge's Main Attack splits into 2 extra projectiles."
+            },
+            {
+              "source": "Serve Ice Cold",
+              "description": "While in Stage 3, Surge gains a burst of movement speed when using his Super."
+            }
+          ]
+        },
+        "hyperCharge": {
+          "id": "buffie:hyper:16000038",
+          "name": "Hyper Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-june-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Hypercharge",
+              "description": "Surge shoots 'Double the Juice' for Double the Justice."
+            }
+          ]
+        }
+      }
     },
     "16000039": {
       "id": 16000039,
@@ -5509,7 +6497,59 @@
           }
         ]
       },
-      "gameCharacter": "Percenter"
+      "gameCharacter": "Percenter",
+      "buffieSets": {
+        "gadget": {
+          "id": "buffie:gadget:16000039",
+          "name": "Gadget Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-april-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Na-Ah",
+              "description": "The projectile pierces environments and Brawlers."
+            },
+            {
+              "source": "Gotcha",
+              "description": "Can overheal, creating a shield of 1000 maximum health."
+            }
+          ]
+        },
+        "starPower": {
+          "id": "buffie:star:16000039",
+          "name": "Star Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-april-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Push It",
+              "description": "Super dash speed is significantly faster."
+            },
+            {
+              "source": "Mass Tax",
+              "description": "Colette steals 33% ammo of any Brawlers she hits."
+            }
+          ]
+        },
+        "hyperCharge": {
+          "id": "buffie:hyper:16000039",
+          "name": "Hyper Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-april-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Hypercharge",
+              "description": "Colette follows up each main attack with a smaller second attack that deals less damage."
+            }
+          ]
+        }
+      }
     },
     "16000040": {
       "id": 16000040,
@@ -5671,7 +6711,59 @@
           }
         ]
       },
-      "gameCharacter": "FireDude"
+      "gameCharacter": "FireDude",
+      "buffieSets": {
+        "gadget": {
+          "id": "buffie:gadget:16000040",
+          "name": "Gadget Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-august-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Supercell",
+              "description": "Allows Amber to place two oil puddles instead of one."
+            },
+            {
+              "source": "Supercell",
+              "description": "Amber gains 20% movement speed and deals 400 damage to enemies she touches."
+            }
+          ]
+        },
+        "starPower": {
+          "id": "buffie:star:16000040",
+          "name": "Star Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-august-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Supercell",
+              "description": "Amber gains 15% movement speed while near fire or burning oil."
+            },
+            {
+              "source": "Supercell",
+              "description": "Burn duration is increased by 1 second."
+            }
+          ]
+        },
+        "hyperCharge": {
+          "id": "buffie:hyper:16000040",
+          "name": "Hyper Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-august-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Supercell",
+              "description": "Main Attack projectiles also apply the burn effect."
+            }
+          ]
+        }
+      }
     },
     "16000041": {
       "id": 16000041,
@@ -6051,7 +7143,55 @@
           }
         ]
       },
-      "gameCharacter": "Enrager"
+      "gameCharacter": "Enrager",
+      "buffieSets": {
+        "gadget": {
+          "id": "buffie:gadget:16000043",
+          "name": "Gadget Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-april-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Hardcore",
+              "description": "Edgar also gains immunity to Crowd Control for 1 sec."
+            }
+          ]
+        },
+        "starPower": {
+          "id": "buffie:star:16000043",
+          "name": "Star Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-april-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Hard Landing",
+              "description": "A direct hit also charges his Super by 25%."
+            },
+            {
+              "source": "Fisticuffs",
+              "description": "Taking down a Brawler instantly heals Edgar for 20% of his max health."
+            }
+          ]
+        },
+        "hyperCharge": {
+          "id": "buffie:hyper:16000043",
+          "name": "Hyper Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-april-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Hypercharge",
+              "description": "Edgar's main attack has two extra scarf punches with longer range, but -50% damage."
+            }
+          ]
+        }
+      }
     },
     "16000044": {
       "id": 16000044,
@@ -6857,7 +7997,59 @@
           }
         ]
       },
-      "gameCharacter": "AssaultShotgun"
+      "gameCharacter": "AssaultShotgun",
+      "buffieSets": {
+        "gadget": {
+          "id": "buffie:gadget:16000050",
+          "name": "Gadget Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-april-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Piggy Bank",
+              "description": "Griff can shoot the piggy bank to charge up and increase its explosion radius and damage! The piggy bank will explode instantly when it's fully charged."
+            },
+            {
+              "source": "Coin Shower",
+              "description": "The coin shower grows in size throughout its duration."
+            }
+          ]
+        },
+        "starPower": {
+          "id": "buffie:star:16000050",
+          "name": "Star Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-april-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Keep The Change",
+              "description": "Attacking with full ammo also fires a mega coin that deals extra damage! Business Resilience 54% pick Every 2 seconds, Griff regains up to 15% of his missing health."
+            },
+            {
+              "source": "Business Resilience",
+              "description": "When Griff's Super projectiles return, they heal Griff for 5% of his missing health."
+            }
+          ]
+        },
+        "hyperCharge": {
+          "id": "buffie:hyper:16000050",
+          "name": "Hyper Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-april-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Hypercharge",
+              "description": "Griff's main attack also pierces enemies."
+            }
+          ]
+        }
+      }
     },
     "16000051": {
       "id": 16000051,
@@ -7110,7 +8302,55 @@
           }
         ]
       },
-      "gameCharacter": "MechaDude"
+      "gameCharacter": "MechaDude",
+      "buffieSets": {
+        "gadget": {
+          "id": "buffie:gadget:16000052",
+          "name": "Gadget Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-june-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Jolting Volts",
+              "description": "Jolting Volts heals for +1 sec."
+            }
+          ]
+        },
+        "starPower": {
+          "id": "buffie:star:16000052",
+          "name": "Star Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-june-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Force Field",
+              "description": "Meg gains +20% movement speed while the shield is active."
+            },
+            {
+              "source": "Heavy Metal",
+              "description": "Feel the Steel also steals 1 Ammo from enemy Brawlers."
+            }
+          ]
+        },
+        "hyperCharge": {
+          "id": "buffie:hyper:16000052",
+          "name": "Hyper Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-june-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Hypercharge",
+              "description": "The Mecha's Main Attack explodes, dealing 360 area damage."
+            }
+          ]
+        }
+      }
     },
     "16000053": {
       "id": 16000053,
@@ -8071,7 +9311,59 @@
           }
         ]
       },
-      "gameCharacter": "SoulCollector"
+      "gameCharacter": "SoulCollector",
+      "buffieSets": {
+        "gadget": {
+          "id": "buffie:gadget:16000061",
+          "name": "Gadget Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-august-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Supercell",
+              "description": "Enemies hit by the spirit are knocked back."
+            },
+            {
+              "source": "Supercell",
+              "description": "Generates a spirit for each Brawler hit."
+            }
+          ]
+        },
+        "starPower": {
+          "id": "buffie:star:16000061",
+          "name": "Star Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-august-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Supercell",
+              "description": "Healing from spirits is increased by 75%."
+            },
+            {
+              "source": "Supercell",
+              "description": "Allies gain 15% movement speed for 5 seconds."
+            }
+          ]
+        },
+        "hyperCharge": {
+          "id": "buffie:hyper:16000061",
+          "name": "Hyper Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-august-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Supercell",
+              "description": "Balloons become larger and pierce walls."
+            }
+          ]
+        }
+      }
     },
     "16000062": {
       "id": 16000062,
@@ -9494,7 +10786,59 @@
           }
         ]
       },
-      "gameCharacter": "Conductor"
+      "gameCharacter": "Conductor",
+      "buffieSets": {
+        "gadget": {
+          "id": "buffie:gadget:16000073",
+          "name": "Gadget Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-august-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Supercell",
+              "description": "Removing a pole grants Chuck a shield that reduces damage by 20% for 5 seconds."
+            },
+            {
+              "source": "Supercell",
+              "description": "Chuck's next Super leaves a burning trail dealing damage over time."
+            }
+          ]
+        },
+        "starPower": {
+          "id": "buffie:star:16000073",
+          "name": "Star Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-august-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Supercell",
+              "description": "Placing a pole creates an area that deals damage over time."
+            },
+            {
+              "source": "Supercell",
+              "description": "Super dash speed is increased by 25%."
+            }
+          ]
+        },
+        "hyperCharge": {
+          "id": "buffie:hyper:16000073",
+          "name": "Hyper Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-august-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Supercell",
+              "description": "Chuck fires three additional steam clouds in a cone with his Main Attack."
+            }
+          ]
+        }
+      }
     },
     "16000074": {
       "id": 16000074,
@@ -10991,7 +12335,59 @@
           }
         ]
       },
-      "gameCharacter": "Ghost"
+      "gameCharacter": "Ghost",
+      "buffieSets": {
+        "gadget": {
+          "id": "buffie:gadget:16000086",
+          "name": "Gadget Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-august-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Supercell",
+              "description": "Enemies hit by the gadget are pulled toward the center."
+            },
+            {
+              "source": "Supercell",
+              "description": "When Shade jumps, he gains a shield; the fear radius is reduced to 600."
+            }
+          ]
+        },
+        "starPower": {
+          "id": "buffie:star:16000086",
+          "name": "Star Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-august-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Supercell",
+              "description": "Critical hits also increase Gadget recharge speed by 15%."
+            },
+            {
+              "source": "Supercell",
+              "description": "The Super lasts 2 seconds longer."
+            }
+          ]
+        },
+        "hyperCharge": {
+          "id": "buffie:hyper:16000086",
+          "name": "Hyper Buffie",
+          "status": "VALIDATED",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/blog/release-notes/release-notes-august-2026/",
+          "updatedAt": "2026-10-01",
+          "abilities": [
+            {
+              "source": "Supercell",
+              "description": "Hypercharge Buffie bonus damage is 30%."
+            }
+          ]
+        }
+      }
     },
     "16000087": {
       "id": 16000087,
@@ -13468,6 +14864,7 @@
     "overdrives": 34,
     "buffies": 133,
     "buffieBrawlers": 27,
-    "updatedAt": "2026-10-01T20:05:00.000Z"
+    "updatedAt": "2026-10-01T20:30:00.000Z",
+    "canonicalBuffieSets": 81
   }
 }
