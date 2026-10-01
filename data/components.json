@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-10-01T19:30:00.000Z",
+  "generatedAt": "2026-10-01T19:45:00.000Z",
   "source": "BrawlAPI game CSV mirror + BrawlFind Overdrive catalog",
   "sources": [
     {
@@ -892,7 +892,7 @@
             "slot": "hyperCharge",
             "source": "Hypercharge",
             "name": "Hypercharge Buffie",
-            "description": "Rockin' Rockets fires an additional two small rockets, each dealing 60% damage of the main rocket.",
+            "description": "Rockin' Rockets fires two additional small rockets; each deals 60% of the main rocket's damage.",
             "status": "CATALOG"
           }
         ]
@@ -1034,7 +1034,7 @@
             "slot": "starPower",
             "source": "Robo Retreat",
             "name": "Robo Retreat Buffie",
-            "description": "Increase movement speed by up to 60% when Rico is at 10% health.",
+            "description": "Increase movement speed by up to 50% when Rico is at 10% health.",
             "status": "CATALOG"
           }
         ],
@@ -4070,7 +4070,7 @@
             "slot": "gadget",
             "source": "Cheat Cartridge",
             "name": "Cheat Cartridge Buffie",
-            "description": "Heals himself for 1800 , and repairs the booster by 100%.",
+            "description": "Heals himself for 3600, and fully repairs the Damage Booster.",
             "status": "CATALOG"
           },
           {
@@ -4764,7 +4764,7 @@
             "slot": "hyperCharge",
             "source": "Hypercharge",
             "name": "Hypercharge Buffie",
-            "description": "Max grants herself and nearby teammates 7% Super charge whenever she hits with her Main Attack.",
+            "description": "Max grants herself and nearby teammates 6% Super charge whenever she hits with her Main Attack.",
             "status": "CATALOG"
           }
         ]
@@ -13468,6 +13468,6 @@
     "overdrives": 34,
     "buffies": 133,
     "buffieBrawlers": 27,
-    "updatedAt": "2026-10-01T19:30:00.000Z"
+    "updatedAt": "2026-10-01T19:45:00.000Z"
   }
 }
