@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-01T06:07:07.001Z",
+  "updatedAt": "2026-10-01T19:14:17.717Z",
   "sourceStatus": {
     "brawlApi": 109,
     "noff": 105,
@@ -25,26 +25,6 @@
   ],
   "note": "Automatically synchronized community/build/statistics snapshot. Values are source data, not official Supercell recommendations.",
   "entries": {
-    "Vince": {
-      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/vince",
-      "sample": null,
-      "gadget": [],
-      "starPower": [],
-      "gears": [],
-      "overdrives": [],
-      "buffies": [],
-      "stats": null,
-      "noff": {
-        "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/vince",
-        "stats": {
-          "winRate": null,
-          "pickRate": null
-        },
-        "modes": {},
-        "maps": [],
-        "sample": null
-      }
-    },
     "Cosmo": {
       "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/cosmo",
       "sample": 11,
@@ -4088,26 +4068,6 @@
           }
         ],
         "sample": 111
-      }
-    },
-    "Buzz Lightyear": {
-      "sourceUrl": "https://www.noff.gg/brawl-stars/app/builds/buzz-lightyear",
-      "sample": null,
-      "gadget": [],
-      "starPower": [],
-      "gears": [],
-      "overdrives": [],
-      "buffies": [],
-      "stats": null,
-      "noff": {
-        "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/buzz-lightyear",
-        "stats": {
-          "winRate": null,
-          "pickRate": null
-        },
-        "modes": {},
-        "maps": [],
-        "sample": null
       }
     },
     "Juju": {
