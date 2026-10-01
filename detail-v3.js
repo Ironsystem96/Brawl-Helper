@@ -28,14 +28,8 @@ function modeRows(b){
 }
 function mapRows(b){return (noff(b)?.maps||[]).filter(x=>N(x.score)!=null).sort((a,z)=>z.score-a.score)}
 function gearRows(b){
- const e=build(b), c=window.catalogEntry?.(b)||{};
- const sig=Array.isArray(e?.gears)?e.gears:[];
- const available=window.gearOptions?.(b)||[];
- const src=available.length?available:(Array.isArray(c.gears)?c.gears:[]);
- return src.map(g=>{
-  const s=sig.find(x=>window.norm?.(x.name)===window.norm?.(g.name));
-  return {...g,pick:N(s?.pick),recommended:!!s};
- }).sort((a,z)=>(z.pick??-1)-(a.pick??-1));
+ const available=window.gearOptions?.(b)||[], e=build(b), sample=e?.sample||noff(b)?.sample;
+ return available.map(g=>({...g,pick:N(g.signalPick??g.pick),recommended:!!g.recommended}));
 }
 function componentRows(b,type){
  const e=build(b), c=window.catalogEntry?.(b)||{};
@@ -45,7 +39,7 @@ function componentRows(b,type){
  return arr.map(x=>{const s=signal.find(y=>window.norm?.(y.name)===window.norm?.(x.name));return {...x,pick:N(s?.pick),recommended:!!s}});
 }
 function componentCard(b,type,x){
- const state=window.itemStatus?.(b,type,x)||'UNKNOWN';
+ const state=window.itemStatus?.(b,type,x)||'NOT VERIFIED';
  return '<button class="v3Component" type="button" onclick="componentModalV2ById('+b.id+','+JSON.stringify(type)+','+JSON.stringify(String(x.id))+')">'+
    '<div class="v3CompHead">'+icon(type,x,b)+'<span class="v3CompName"><b>'+E(x.name)+'</b><small>'+(x.pick!=null?PCT(x.pick)+' pick':'Community usage unavailable')+'</small></span>'+
    (x.recommended?'<em class="v3Rec">CURRENT SIGNAL</em>':'')+'</div>'+
@@ -109,7 +103,7 @@ function detailV3(b){
  '<section class="v3Hero"><div class="v3HeroImage"><img src="'+E(window.portrait(b))+'" alt="" onerror="imgFallback(this,'+JSON.stringify(b.name)+')"></div><div class="v3HeroCopy"><span class="v3Eyebrow">'+E(role)+'</span><h1>'+E(b.name)+'</h1><div class="v3HeroBadges"><span>'+E(rarity||'—')+'</span><span class="'+(owned?'owned':'')+'">'+(owned?'POWER '+E(b.power):'NOT OWNED')+'</span></div><p>'+E(id.description||window.catalogEntry?.(b)?.description||'')+'</p></div></section>'+
  '<section class="v3Overview"><div><span>WIN RATE</span><b>'+PCT(s.winRate)+'</b></div><div><span>PICK RATE</span><b>'+PCT(s.pickRate)+'</b></div><div><span>META SAMPLE</span><b>'+F(n?.sample||build(b)?.sample||0)+'</b></div><div><span>ACCOUNT</span><b>'+(owned?'OWNED':'CATALOG')+'</b></div></section>'+
  '<section class="v3Card v3MetaContext">'+sectionTitle('LIVE CONTEXT','Mode & map',window.playMode+(window.playMap!=='Random'?' · '+window.playMap:''))+'<div class="v3ContextControls"><div class="v3Pills">'+['General',...(Object.keys(window.MODES||{}).slice(0,7))].map(x=>'<button class="'+((window.playMode===x||(x==='General'&&window.playMode==='General'))?'active':'')+'" onclick="playMode=\\''+x+'\\';playMap=\\'Random\\';render()">'+E(x)+'</button>').join('')+'</div><select class="search" onchange="playMap=this.value;render()"><option value="Random">Random / overall</option>'+((window.MODES?.[window.playMode]||[]).map(x=>'<option '+(window.playMap===x?'selected':'')+'>'+E(x)+'</option>').join(''))+'</select></div><div class="v3SelectedMeta">'+(window.metaEntry?.(b,window.playMode,window.playMap)?'Context score '+Math.round(window.metaEntry(b,window.playMode,window.playMap).score||0)+' · Win '+PCT(window.metaEntry(b,window.playMode,window.playMap).winRate)+' · Pick '+PCT(window.metaEntry(b,window.playMode,window.playMap).pickRate):'No validated context for this selection')+'</div></section>'+
- '<section class="v3Card">'+sectionTitle('GUIDE','What to play',actions.length?'account-specific guidance':'current build signal')+'<div class="v3ActionStrip">'+(actions.length?actions.slice(0,3).map(a=>'<div><b>'+E(a.type)+'</b><span>'+E(a.label)+'</span><small>'+E(a.reason)+'</small></div>').join(''):'<div><b>BUILD</b><span>Review the recommended loadout</span><small>Ownership remains separate from community recommendations.</small></div>')+'</div></section>'+
+ '<section class="v3Card">'+sectionTitle('GUIDE','What to play',actions.length?'account-specific guidance':'current build signal')+'<div class="v3ActionStrip">'+(actions.length?actions.slice(0,3).map(a=>'<div><b>'+E(a.type==='POWER'?'IMPROVE':a.type==='BUY'?'BUY':a.type==='EQUIP'?'EQUIP':a.type==='VERIFY'?'VERIFY':'REVIEW')+'</b><span>'+E(a.label)+'</span><small>'+E(a.reason)+'</small></div>').join(''):'<div><b>BUILD</b><span>Review the recommended loadout</span><small>Ownership remains separate from community recommendations.</small></div>')+'</div></section>'+
  attackBlock(b)+
  trendsBlock(b)+
  loadoutBlock(b)+
