@@ -18,6 +18,11 @@
     {
       "name": "BrawlFind Overdrive catalog",
       "url": "https://www.brawlfind.com/it/brawlers/"
+    },
+    {
+      "name": "Supercell official release notes",
+      "url": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-di-agosto-2026/",
+      "scope": "official changes and newly introduced Overdrive/Buffie data"
     }
   ],
   "note": "Validated component catalog. Gear availability is synchronized from BrawlAPI game data. Overdrive data is sourced from BrawlAPI/BrawlFind and official Supercell release notes when mapped. Buffies are stored per brawler and per ability with stable unique IDs; absence means not yet validated, not necessarily unavailable.",
@@ -13138,5 +13143,13 @@
       },
       "gameCharacter": null
     }
+  },
+  "catalogStats": {
+    "brawlers": 107,
+    "gears": 14,
+    "overdrives": 34,
+    "buffies": 103,
+    "buffieBrawlers": 21,
+    "updatedAt": "2026-10-01T19:14:44.530Z"
   }
 }
