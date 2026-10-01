@@ -508,4 +508,3 @@ async function boot(){
   Promise.allSettled([loadMeta(),loadCatalog(),loadAssets()]).then(()=>{if(P)render()});
  }catch(e){showFatal(e)}
 }
-boot().catch(showFatal);
