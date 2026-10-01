@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-01T06:07:07.001Z",
+  "updatedAt": "2026-10-01T19:14:14.751Z",
   "source": "Brawl Time Ninja + NOFF + optional BrawlMetrics fallback",
   "method": "Global battle signal from Brawl Time Ninja; mode and map context from NOFF when available; BrawlMetrics is an optional fallback.",
   "coverage": {
@@ -9,39 +9,6 @@
     "totalModes": 8
   },
   "entries": {
-    "Vince": {
-      "completeness": {
-        "checks": {
-          "identity": true,
-          "portrait": true,
-          "gadgets": true,
-          "starPowers": true,
-          "gears": false,
-          "hyperCharges": false,
-          "overdrives": false,
-          "buffies": false
-        },
-        "components": {
-          "gadgets": 2,
-          "starPowers": 2,
-          "gears": 0,
-          "hyperCharges": 0,
-          "overdrives": 0,
-          "buffies": 0
-        },
-        "score": 50,
-        "status": "INCOMPLETE"
-      },
-      "default": {
-        "score": 50,
-        "rank": null,
-        "reason": "Community build data only",
-        "source": "NOFF",
-        "confidence": "low"
-      },
-      "modes": {},
-      "maps": {}
-    },
     "Cosmo": {
       "completeness": {
         "checks": {
@@ -4640,39 +4607,6 @@
           "confidence": "low"
         }
       }
-    },
-    "Buzz Lightyear": {
-      "completeness": {
-        "checks": {
-          "identity": true,
-          "portrait": true,
-          "gadgets": false,
-          "starPowers": false,
-          "gears": false,
-          "hyperCharges": false,
-          "overdrives": false,
-          "buffies": false
-        },
-        "components": {
-          "gadgets": 1,
-          "starPowers": 3,
-          "gears": 0,
-          "hyperCharges": 0,
-          "overdrives": 0,
-          "buffies": 0
-        },
-        "score": 25,
-        "status": "INCOMPLETE"
-      },
-      "default": {
-        "score": 50,
-        "rank": null,
-        "reason": "Community build data only",
-        "source": "NOFF",
-        "confidence": "low"
-      },
-      "modes": {},
-      "maps": {}
     },
     "Juju": {
       "completeness": {
