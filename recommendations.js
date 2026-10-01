@@ -20,7 +20,7 @@
     return 'AVAILABLE OPTION';
   }
   function componentPriority(type,usageValue,score,confidence){
-    const base={POWER:100,BUY:70,EQUIP:55,CHECK:20,UNLOCK:100}[type]||30;
+    const base={POWER:100,BUY:70,EQUIP:55,VERIFY:18,CHECK:18,UNLOCK:100}[type]||30;
     return base+usageValue*.4+(score==null?0:score*.12)+confidence*.1;
   }
   function addComponentAction(actions,b,type,item,ctx,meta,confidence){
@@ -31,7 +31,7 @@
     const evidence={pick:signal.pick,rank:signal.rank,available:signal.total,contextScore:score,confidence};
     if(state==='NOT OWNED')actions.push({type:'BUY',componentType:type,label:'Buy '+labelFor(type)+': '+item.name,priority,reason:cname+'; confirmed not owned.',evidence});
     else if(state==='OWNED')actions.push({type:'EQUIP',componentType:type,label:'Equip '+labelFor(type)+': '+item.name,priority,reason:cname+'; confirmed owned but not equipped.',evidence});
-    else if(state==='UNKNOWN')actions.push({type:'CHECK',componentType:type,label:'Check '+labelFor(type)+': '+item.name,priority,reason:cname+'; ownership is not exposed reliably by the public profile.',evidence});
+    else if(state==='NOT VERIFIED'||state==='UNKNOWN')actions.push({type:'VERIFY',componentType:type,label:'Verify '+labelFor(type)+': '+item.name,priority,reason:cname+'; ownership is not exposed by the public profile. Mark OWN IT or BUY to personalize the recommendation.',evidence});
   }
   function labelFor(type){return type==='starPowers'?'Star Power':type==='hyperCharges'?'Hypercharge':type==='overdrives'?'Overdrive':type==='gears'?'Gear':'Gadget'}
   function nextActions(b,ctx){
