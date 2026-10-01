@@ -125,6 +125,35 @@ const css=String.raw`
 .v3BuildHero{display:grid;grid-template-columns:repeat(4,1fr);gap:5px}.v3BuildHero button{background:#202a3d;border:1px solid #414d65;border-radius:9px;color:#fff;padding:8px 4px}.v3BuildHero .compIcon{width:38px;height:38px}.v3BuildHero span{display:block;font-size:8px;font-weight:900;line-height:1.15;margin-top:4px}.v3BuildHero small{display:block;color:#8795aa;font-size:6px;margin-top:2px}.v3Why{margin-top:8px;background:#252d40;border-left:3px solid #ffd34e;padding:8px}.v3Why b{font-size:9px}.v3Why p{font-size:8px;color:#aab6c8;line-height:1.4;margin:3px 0}
 .v3Coverage{display:grid;grid-template-columns:1fr 1fr;gap:5px}.v3Coverage span{font-size:8px;color:#aab6c8;background:#252d40;padding:8px;border-radius:8px}.v3Coverage b{float:right;color:#fff}.v3Missing{padding:10px;border:1px dashed #53627c;background:#252d40;border-radius:9px;color:#aab6c8;font-size:9px;line-height:1.45}
 @media(max-width:430px){.v3Hero{min-height:245px}.v3HeroImage img{height:220px}.v3Hero h1{font-size:42px}.v3Overview{grid-template-columns:1fr 1fr}.v3ActionStrip{grid-template-columns:1fr}.v3StatsGrid{grid-template-columns:1fr 1fr}.v3AbilityGrid{grid-template-columns:1fr}.v3TableRow{grid-template-columns:1.5fr .7fr .7fr .5fr}.v3BuffGrid{grid-template-columns:1fr}.v3BuildHero{grid-template-columns:repeat(4,1fr)}}
+
+/* Visual refresh: component-first Brawler detail */
+.v3Hero{background:linear-gradient(145deg,#101b2d 0%,#172842 58%,#1c2d48 100%)!important;border:1px solid #405879!important;box-shadow:0 18px 45px rgba(0,0,0,.28)!important}
+.v3HeroImage{filter:drop-shadow(0 12px 18px rgba(0,0,0,.35));transform:scale(1.04)}
+.v3HeroCopy h1{font-size:clamp(28px,7vw,42px)!important;letter-spacing:-.8px}
+.v3HeroBadges span,.v3Pills span{border-color:#4a6286!important;background:#111d30!important}
+.v3Card{background:linear-gradient(145deg,#152238,#101a2b)!important;border-color:#334b6d!important;box-shadow:0 8px 22px rgba(0,0,0,.16)!important}
+.v3ComponentList{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:7px!important}
+.v3Component{min-height:138px!important;padding:9px!important;border-radius:14px!important;background:linear-gradient(160deg,#1a2b45,#101b2c)!important;border:1px solid #3b5477!important;position:relative;overflow:hidden}
+.v3Component:after{content:"";position:absolute;inset:auto 0 0;height:3px;background:#334b6d}
+.v3Component:has(.v3State.good):after{background:#63e6a7}
+.v3Component:has(.v3State.owned):after{background:#ffd34e}
+.v3Component:has(.v3State.missing):after{background:#ff6b6b}
+.v3CompHead{min-height:38px!important}
+.v3CompName{font-size:10px!important;font-weight:950!important;color:#fff!important}
+.v3Component .compIcon{width:48px!important;height:48px!important;object-fit:contain!important;filter:drop-shadow(0 4px 6px rgba(0,0,0,.35))}
+.v3CompFoot{margin-top:auto!important}
+.v3State{font-size:7px!important;font-weight:950!important;letter-spacing:.5px}
+.v3Rec{font-size:7px!important;color:#ffd34e!important}
+.v3Card.v3Hyper{border-color:#705f2c!important;background:linear-gradient(145deg,#2a2414,#111b2d)!important}
+.v3BuffGrid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:8px!important}
+.v3BuffGrid button{min-height:105px!important;padding:10px!important;border-radius:13px!important;background:linear-gradient(145deg,#182945,#101a2b)!important;border:1px solid #3c5578!important}
+.v3BuffGrid button:hover{border-color:#ffd34e!important;transform:translateY(-1px)}
+.v3BuffIcon{width:34px!important;height:34px!important;display:grid!important;place-items:center!important;border-radius:10px!important;background:#0d1726!important;border:1px solid #4b6385!important;color:#ffd34e!important;font-weight:950}
+.v3BuffGrid b{font-size:9px!important;color:#fff!important}
+.v3BuffGrid small{font-size:6px!important;letter-spacing:.5px}
+.v3BuffGrid p{font-size:7px!important;color:#aebbd0!important;line-height:1.35!important}
+@media(max-width:700px){.v3ComponentList{grid-template-columns:repeat(2,minmax(0,1fr))!important}.v3Component{min-height:126px!important}.v3Component:last-child{grid-column:1/-1}.v3BuffGrid{grid-template-columns:1fr!important}.v3BuffGrid button{min-height:84px!important}}
+@media(min-width:701px) and (max-width:1050px){.v3ComponentList{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
 `;
 const st=document.createElement('style');st.id='bh-detail-v3';st.textContent=css;document.head.appendChild(st);
 })();
