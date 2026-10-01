@@ -56,7 +56,7 @@ window.detail=detailV2;
 
 function bcardV2(b,compact=false,mode=window.playMode,map=window.playMap,rank=null,kind=''){
  if(!b)return '';
- const m=window.metaEntry?.(b,mode,map),r=rank||window.metaRankOf?.(b,mode,map),own=window.isOwnedAccount?.(b),build=window.guideComponents?.(b)||[],actions=window.nextActions?.(b)||[],primary=actions[0];
+ const m=window.metaEntry?.(b,mode,map),r=rank||window.metaRankOf?.(b,mode,map),own=window.isOwnedAccount?.(b),build=window.guideComponents?.(b)||[],actions=window.nextActions?.(b)||[],primary=actions.find(a=>['POWER','BUY','EQUIP'].includes(a.type))||actions.find(a=>a.type==='VERIFY')||actions[0];
  const quick=build.map(([label,type,item])=>'<button class="bhMiniLoadout" type="button" onclick="event.stopPropagation();componentModalV2ById('+b.id+',\''+type+'\','+JSON.stringify(String(item?.id||0))+')">'+window.compIcon(type,item,b)+'<small>'+(label.startsWith('Gear')?'GEAR':label.toUpperCase())+'</small></button>').join('');
  const actionLabel=primary?(primary.type==='POWER'?'IMPROVE POWER':primary.type==='BUY'?'BUY / UPGRADE':primary.type==='EQUIP'?'EQUIP':primary.type==='VERIFY'?'VERIFY OWNERSHIP':'REVIEW'):own?'READY':'UNLOCK';
  const actionText=primary?primary.label:(own?'No immediate action':'Unlock Brawler');
@@ -64,7 +64,7 @@ function bcardV2(b,compact=false,mode=window.playMode,map=window.playMap,rank=nu
 }
 function homeV2(){
  const owned=[...(window.P?.brawlers||[])].filter(Boolean),ranked=window.globalRankList?.()||[];
- const plans=owned.map(b=>({b,plan:window.upgradePriority?.(b)})).filter(x=>x.plan?.actions?.some(a=>['BUY','POWER','EQUIP','VERIFY'].includes(a.type))).sort((a,z)=>(z.plan.score||0)-(a.plan.score||0)).slice(0,5);
+ const plans=owned.map(b=>({b,plan:window.upgradePriority?.(b)})).filter(x=>x.plan?.actions?.some(a=>['BUY','POWER','EQUIP'].includes(a.type))).sort((a,z)=>(z.plan.score||0)-(a.plan.score||0)).slice(0,5);
  const upgradeIds=new Set(plans.map(x=>Number(x.b.id)));
  const best=ranked.filter(x=>window.isOwnedAccount?.(x.b)&&!upgradeIds.has(Number(x.b.id))).slice(0,5);
  const sync=window.profileStatus||'OFFLINE';
