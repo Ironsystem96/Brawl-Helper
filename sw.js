@@ -1,4 +1,4 @@
-const C='bh-v23';
+const C='bh-v24';
 const ASSETS=['./','./index.html','./style.css','./manifest.webmanifest','./ui-v2.js','./detail-v3.js','./recommendations.js','./data/game-db.json','./data/changelog.json','./data/brawlers.json','./data/build-meta.json'];
 
 self.addEventListener('install',event=>{
