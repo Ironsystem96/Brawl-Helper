@@ -353,7 +353,8 @@ function brawlers(){let bs=allBrawlers().filter(Boolean);if(query)bs=bs.filter(b
 bs.sort((a,z)=>{
  const ao=isOwnedAccount(a),zo=isOwnedAccount(z);
  if(zo!==ao)return zo-ao;
- const ap=ao?(upgradePriority(a).score||0):0,zp=zo?(upgradePriority(z).score||0):0;
+ const aa=ao?nextActions(a).filter(x=>['BUY','POWER','EQUIP'].includes(x.type)):[],za=zo?nextActions(z).filter(x=>['BUY','POWER','EQUIP'].includes(x.type)):[];
+ const ap=aa.length?(upgradePriority(a).score||0):0,zp=za.length?(upgradePriority(z).score||0):0;
  if(zp!==ap)return zp-ap;
  const am=metaEntry(a,playMode,playMap)?.score??-1,zm=metaEntry(z,playMode,playMap)?.score??-1;
  if(zm!==am)return zm-am;
