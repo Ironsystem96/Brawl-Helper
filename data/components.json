@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "generatedAt": "2026-10-01T19:45:00.000Z",
+  "generatedAt": "2026-10-01T19:55:00.000Z",
   "source": "BrawlAPI game CSV mirror + BrawlFind Overdrive catalog",
   "sources": [
     {
@@ -8286,11 +8286,11 @@
       "overdrives": [
         {
           "id": "overdrive:16000063",
-          "skillKey": "JesterOverchargedUlti",
-          "name": "JesterOverchargedUlti",
-          "description": "",
-          "source": "BrawlAPI game CSV",
-          "imageUrl": null
+          "name": "CARAMELLA MULTIGUSTO",
+          "description": "Chester fonde tre delle sue abilità nella stessa Super: la caramella esplode, crea una nube tossica e poi rallenta i nemici nell'area.",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-lumi-finx-e-modifiche-sostanziali-alla-modalita-classificata-2/",
+          "status": "VALIDATED"
         }
       ],
       "buffies": {
@@ -8513,11 +8513,11 @@
       "overdrives": [
         {
           "id": "overdrive:16000065",
-          "skillKey": "BeamerOverchargedUlti",
-          "name": "BeamerOverchargedUlti",
-          "description": "",
-          "source": "BrawlAPI game CSV",
-          "imageUrl": null
+          "name": "ZUCCHERI AGGIUNTI",
+          "description": "Con la Super, Mandy spara tre raggi, ognuno in una direzione diversa.",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-lumi-finx-e-modifiche-sostanziali-alla-modalita-classificata-2/",
+          "status": "VALIDATED"
         }
       ],
       "buffies": {
@@ -11324,11 +11324,11 @@
       "overdrives": [
         {
           "id": "overdrive:16000090",
-          "skillKey": "SkaterOverchargedUlti",
-          "name": "SkaterOverchargedUlti",
-          "description": "",
-          "source": "BrawlAPI game CSV",
-          "imageUrl": null
+          "name": "OLLIEDRIVE",
+          "description": "Ollie salta; l'esplosione musicale è più ampia e non consuma colpi mentre inizia a caricarsi.",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-di-settembre-2025/",
+          "status": "VALIDATED"
         }
       ],
       "buffies": {
@@ -11987,11 +11987,11 @@
       "overdrives": [
         {
           "id": "overdrive:16000096",
-          "skillKey": "DomainOverchargedUlti",
-          "name": "DomainOverchargedUlti",
-          "description": "",
-          "source": "BrawlAPI game CSV",
-          "imageUrl": null
+          "name": "FORMICAOS",
+          "description": "La Super di Trunk sparge formiche sui nemici, che subiscono danni nel tempo.",
+          "source": "Supercell",
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-di-settembre-2025/",
+          "status": "VALIDATED"
         }
       ],
       "buffies": {
@@ -13468,6 +13468,6 @@
     "overdrives": 34,
     "buffies": 133,
     "buffieBrawlers": 27,
-    "updatedAt": "2026-10-01T19:45:00.000Z"
+    "updatedAt": "2026-10-01T19:55:00.000Z"
   }
 }
