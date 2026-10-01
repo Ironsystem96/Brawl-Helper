@@ -63,7 +63,7 @@ function bcardV2(b,compact=false,mode=window.playMode,map=window.playMap,rank=nu
  return '<div class="bhBrawlerCard" onclick="openB('+b.id+')"><div class="bhRank">'+(r?'#'+r:'•')+'</div><img class="bhCardPortrait" src="'+window.portrait(b)+'" onerror="imgFallback(this,'+JSON.stringify(b.name)+')"><div class="bhCardMain"><div class="bhCardTop"><b>'+E(b.name)+'</b><span class="bhPower">'+(own?'P'+b.power:'NOT OWNED')+'</span></div><div class="bhCardSub">'+(own?F(b.trophies)+' trophies':'')+' · '+(m?'META':'META N/A')+'</div><div class="bhActionBadge '+(primary?'hasAction':'readyAction')+'"><b>'+E(actionLabel)+'</b><span>'+E(actionText)+'</span></div><div class="bhMiniLoadoutRow">'+quick+'</div></div></div>';
 }
 function homeV2(){
- const owned=[...(window.P?.brawlers||[])].filter(Boolean),ranked=window.globalRankList?.()||[];
+ const owned=[...(window.P?.brawlers||[])].filter(Boolean),ranked=window.metaRankList?.(window.playMode,window.playMap)||window.globalRankList?.()||[];
  const plans=owned.map(b=>({b,plan:window.upgradePriority?.(b)})).filter(x=>x.plan?.actions?.some(a=>['BUY','POWER','EQUIP'].includes(a.type))).sort((a,z)=>(z.plan.score||0)-(a.plan.score||0)).slice(0,5);
  const upgradeIds=new Set(plans.map(x=>Number(x.b.id)));
  const best=ranked.filter(x=>window.isOwnedAccount?.(x.b)&&!upgradeIds.has(Number(x.b.id))).slice(0,5);
@@ -74,7 +74,7 @@ function homeV2(){
  '<section class="bhQuickActions"><button onclick="setTab(\'brawlers\')"><b>Brawlers</b><span>Builds & status</span></button><button onclick="setTab(\'play\')"><b>Meta</b><span>Modes & maps</span></button><button onclick="setTab(\'upgrade\')"><b>Upgrade</b><span>Next actions</span></button></section>'+
  '<section class="section top10Section"><div class="bhSectionHead"><div><span class="bhEyebrow">ACCOUNT-SPECIFIC</span><h2>Top 10</h2></div><span class="small">'+(plans.length+best.length)+'/10</span></div>'+
  '<div class="top10Group"><div class="top10GroupHead"><b>5 da potenziare</b><span>Priorità account</span></div>'+upgradeHtml+'</div>'+
- '<div class="top10Group"><div class="top10GroupHead"><b>5 migliori posseduti</b><span>Meta overall</span></div>'+bestHtml+'</div></section>'+
+ '<div class="top10Group"><div class="top10GroupHead"><b>5 migliori posseduti</b><span>Current mode / map</span></div>'+bestHtml+'</div></section>'+
  '<section class="card bhHomeData"><div class="bhSectionHead"><div><span class="bhEyebrow">SYNC</span><h2>Data status</h2></div><span class="bhSyncDot">● '+E(sync)+'</span></div><div class="bhDataGrid"><span>Meta <b>'+(window.META_STATE?.loaded?'READY':'PENDING')+'</b></span><span>Builds <b>'+(window.BUILD_STATE?.loaded?'READY':'PENDING')+'</b></span><span>Components <b>'+F(window.CATALOG_STATE?.count||0)+'</b></span><span>Overdrive <b>'+((window.COMPONENT_STATE?.entries&&Object.values(window.COMPONENT_STATE.entries).some(x=>x?.overdrives?.length))?'READY':'DATA N/A')+'</span></div></section>';
 }
 window.home=homeV2;
