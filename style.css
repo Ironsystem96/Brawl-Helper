@@ -1209,3 +1209,153 @@ body{background:
 .v3Source{color:#2468dc!important}
 @media(min-width:700px){.app{background:rgba(246,250,255,.76)!important;box-shadow:0 10px 50px rgba(37,68,110,.10)!important}}
 
+
+
+
+/* v10 MOBILE-FIRST POLISH
+   Keep the game-like light theme, but remove desktop density and overflow on phones.
+*/
+html,body{width:100%;max-width:100%;overflow-x:hidden}
+body{-webkit-text-size-adjust:100%}
+.app{width:100%;max-width:560px;min-height:100svh;padding-bottom:calc(82px + env(safe-area-inset-bottom));overflow-x:clip}
+.content{padding:0 12px}
+.top{padding:11px 12px 9px}
+.brand{gap:7px}
+.logo{font-size:21px}
+.sync{font-size:9px;padding:5px 7px}
+.profileBtn{max-width:150px;margin-top:7px;padding:7px 9px;font-size:10px}
+
+.hero{margin:9px 0;padding:14px;border-radius:18px}
+.hero h1{font-size:24px;line-height:1.05}
+.stats{gap:6px;margin-top:10px}
+.stat{padding:8px;border-radius:12px}
+.stat b{font-size:16px}
+.stat span{font-size:8px}
+.section{margin:14px 0}
+.section h2{font-size:16px;margin-bottom:7px}
+.card,.action,.upgradeRow{border-radius:14px;padding:11px}
+.row{gap:8px}
+.portrait{width:52px;height:52px;border-radius:13px}
+.bname{font-size:14px}
+.small{font-size:10px}
+.chips{gap:4px;margin-top:5px}
+.chip{font-size:9px;padding:4px 5px}
+
+.search{height:42px!important;font-size:14px!important}
+.filters{margin-right:-12px;padding-right:12px!important}
+.filters button{height:32px!important;font-size:10px!important;padding:6px 10px!important}
+
+.grid{grid-template-columns:1fr 1fr;gap:6px}
+.componentGrid{grid-template-columns:1fr 1fr;gap:6px}
+.comp{padding:7px;border-radius:12px;gap:7px}
+.compIcon{width:34px;height:34px}
+.comp span{font-size:8px}
+.comp b{font-size:9px}
+.build{gap:4px}
+.slot{padding:6px 3px;font-size:8px}
+
+.nav{max-width:560px;padding:6px 5px calc(6px + env(safe-area-inset-bottom))!important}
+.nav button{min-height:42px;font-size:8px!important}
+.nav button .navIcon{width:20px;height:17px;font-size:14px}
+
+.v3QuickNav{margin:0 -12px 7px;padding:6px 12px}
+.v3QuickNav a{font-size:8px;padding:7px 9px}
+
+.v3Hero{margin:0 -12px 8px!important;min-height:215px!important;border-radius:0 0 19px 19px!important;padding:12px!important}
+.v3HeroImage{inset:0 0 28px}
+.v3HeroImage img{height:190px!important;max-width:86%!important}
+.v3HeroCopy{padding:0}
+.v3Eyebrow{font-size:9px}
+.v3Hero h1{font-size:34px!important;line-height:.92}
+.v3HeroCopy p{font-size:10px;line-height:1.3;margin-top:5px}
+.v3HeroBadges{gap:4px;flex-wrap:wrap}
+.v3HeroBadges span{font-size:8px;padding:5px 7px}
+
+.v3Overview{gap:5px;margin-bottom:8px}
+.v3Overview>div{padding:7px;border-radius:10px}
+.v3Overview span{font-size:7px}
+.v3Overview b{font-size:13px}
+
+.v3DecisionPanel{padding:10px;border-radius:14px;margin:7px 0 8px}
+.v3DecisionMain{gap:7px}
+.v3DecisionMain h2{font-size:16px}
+.v3DecisionMain p{font-size:9px}
+.v3DecisionMain small{font-size:7px}
+.v3DecisionIcon{width:34px;height:34px;border-radius:10px;font-size:17px}
+
+.v3QuickCard{padding:10px;border-radius:14px}
+.v3QuickHead h2{font-size:17px}
+.v3QuickHead p{font-size:8px}
+.v3QuickSlots{gap:5px;padding-top:8px}
+.v3QuickSlot{flex-basis:132px;min-height:88px;padding:7px;border-radius:10px}
+.v3QuickIcon,.v3QuickIcon .compIcon{width:36px;height:36px}
+.v3QuickInfo b{font-size:9px}
+.v3QuickInfo small{font-size:6px}
+.v3QuickInfo em{font-size:6px}
+.v3QuickFoot{font-size:6.5px}
+
+.v3Card{padding:11px;border-radius:13px;margin:8px 0}
+.v3Title{margin-bottom:8px}
+.v3Title h2{font-size:19px}
+.v3Title>div>span{font-size:8px}
+.v3Title small{font-size:8px}
+
+.v3ActionStrip{gap:5px}
+.v3ActionStrip>div{padding:8px;border-radius:9px}
+.v3ActionStrip span{font-size:9px}
+.v3ActionStrip small{font-size:7px}
+
+.v3StatsGrid{gap:5px}
+.v3StatsGrid>div{padding:7px;border-radius:8px}
+.v3StatsGrid span{font-size:7px}
+.v3StatsGrid b{font-size:12px}
+
+.v3ComponentList{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:5px!important}
+.v3Component{min-height:116px!important;padding:8px!important;border-radius:11px!important}
+.v3CompHead{gap:6px;align-items:flex-start}
+.v3Component .compIcon{width:38px!important;height:38px!important}
+.v3CompName b{font-size:9px!important;line-height:1.1}
+.v3CompName small{font-size:6.5px!important}
+.v3Component p{font-size:7px!important;line-height:1.3!important;margin:6px 0}
+.v3State{font-size:6px!important;padding:3px 4px}
+.v3Rec{font-size:6px!important;padding:3px 4px}
+
+.v3BuffGrid{gap:5px!important}
+.v3BuffGrid button{min-height:72px!important;padding:8px!important;border-radius:10px!important}
+.v3BuffIcon{width:28px!important;height:28px!important}
+.v3BuffGrid b{font-size:8px!important}
+.v3BuffGrid small{font-size:6px!important}
+.v3BuffGrid p{font-size:7px!important}
+
+.v3TableRow{min-height:42px;padding:5px 6px;font-size:8px}
+.v3Name{gap:5px}
+.v3Index{width:18px;height:18px}
+.v3Source{font-size:9px}
+
+.modal{padding:10px}
+.modalBox{max-height:92svh;border-radius:18px;padding:13px}
+.onboardingModal .modalBox{padding:15px;border-radius:19px}
+.onboardIntro{gap:9px;margin-bottom:12px}
+.onboardIcon{width:40px;height:40px;flex-basis:40px;border-radius:11px}
+.onboardIntro h3{font-size:18px}
+.onboardIntro p{font-size:10px}
+.onboardForm{padding:11px;border-radius:14px}
+.tagInput{font-size:18px!important;padding:12px!important}
+.profileForm{gap:5px}
+
+@media(max-width:360px){
+ .content{padding:0 10px}
+ .top{padding-left:10px;padding-right:10px}
+ .logo{font-size:19px}
+ .sync{font-size:8px}
+ .profileBtn{max-width:130px}
+ .v3Hero{margin-left:-10px!important;margin-right:-10px!important}
+ .v3Hero h1{font-size:30px!important}
+ .v3HeroImage img{height:176px!important}
+ .v3ComponentList{grid-template-columns:1fr!important}
+ .v3Component:last-child{grid-column:auto}
+ .v3Overview>div{padding:6px}
+ .v3Overview b{font-size:12px}
+ .v3QuickSlot{flex-basis:124px}
+ .nav button{font-size:7px!important}
+}
