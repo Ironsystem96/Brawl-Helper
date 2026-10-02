@@ -1552,3 +1552,187 @@ body{-webkit-text-size-adjust:100%}
 .bhDashNav button{cursor:pointer}
 .bhDashPanel{box-shadow:var(--shadow)!important}
 .bhDashFooter{opacity:.9}
+
+
+
+/* v12 DESKTOP GAME DASHBOARD POLISH */
+@media(min-width:760px){
+  .bhDashHero{
+    position:relative;
+    overflow:hidden;
+    background:
+      radial-gradient(circle at 88% 15%,rgba(255,202,40,.24),transparent 22%),
+      radial-gradient(circle at 72% 100%,rgba(47,115,232,.18),transparent 32%),
+      linear-gradient(135deg,#ffffff 0%,#edf5ff 58%,#e5efff 100%)!important;
+    border:1px solid #c8d9ed!important;
+    box-shadow:0 12px 30px rgba(45,83,130,.10)!important;
+  }
+  .bhDashHero:after{
+    content:"PLAY • BUILD • UPGRADE";
+    position:absolute;right:28px;bottom:20px;
+    font-size:9px;font-weight:1000;letter-spacing:1.4px;color:#6d87a7;
+  }
+  .bhDashHero h1{color:#16243a!important;text-shadow:none!important}
+  .bhDashHero p{color:#6f829b!important}
+  .bhDashHero .bhEyebrow{color:#2f73e8!important}
+  .bhProfileButton{background:#16243a!important;color:#fff!important;border-color:#16243a!important}
+
+  .bhDashContext>div{
+    background:#fff!important;
+    border:1px solid #cfdded!important;
+    box-shadow:0 6px 16px rgba(43,76,116,.07)!important;
+  }
+  .bhDashContext>div>span{
+    color:#71849e!important;
+    font-weight:950!important;
+    letter-spacing:1px!important;
+  }
+  .bhDashContext select{
+    background:#f4f8fd!important;
+    color:#17263c!important;
+    border-color:#c7d7e9!important;
+  }
+  .bhDashStat b{color:#16243a!important}
+  .bhDashStat small{color:#2f73e8!important}
+
+  .bhDashNav button{
+    position:relative;
+    overflow:hidden;
+    background:#fff!important;
+    border:1px solid #cfdded!important;
+    box-shadow:0 7px 18px rgba(43,76,116,.07)!important;
+  }
+  .bhDashNav button:before{
+    display:block;
+    width:28px;height:28px;
+    margin-bottom:7px;
+    border-radius:9px;
+    display:grid;
+    place-items:center;
+    font-size:14px;font-weight:1000;
+    background:#eaf2ff;
+    color:#2f73e8;
+  }
+  .bhDashNav button:nth-child(1):before{content:"★"}
+  .bhDashNav button:nth-child(2):before{content:"◆";background:#fff5d7;color:#d99b00}
+  .bhDashNav button:nth-child(3):before{content:"↑";background:#e8f8f0;color:#20a86b}
+  .bhDashNav button:nth-child(4):before{content:"⌘";background:#f0ebff;color:#7957d5}
+  .bhDashNav b{color:#17263c!important}
+  .bhDashNav span{color:#7b8da4!important}
+
+  .bhDashFocus{
+    position:relative;
+    overflow:hidden;
+    background:
+      radial-gradient(circle at 92% 18%,rgba(47,115,232,.11),transparent 25%),
+      linear-gradient(135deg,#ffffff,#f3f8ff)!important;
+    border:1px solid #c6d8ec!important;
+    box-shadow:0 14px 32px rgba(38,73,116,.10)!important;
+  }
+  .bhDashFocus:after{
+    content:"RECOMMENDED PLAN";
+    position:absolute;right:20px;top:17px;
+    color:#2f73e8;font-size:8px;font-weight:1000;letter-spacing:1.2px;
+    background:#eaf2ff;border:1px solid #c9dcf3;border-radius:999px;padding:6px 8px;
+  }
+  .bhDashFocusHead h2{color:#16243a!important}
+  .bhDashFocusHead small{color:#71849e!important}
+  .bhDashFocusHead img{
+    background:#eaf2ff!important;
+    border:3px solid #fff!important;
+    box-shadow:0 10px 22px rgba(31,71,120,.16)!important;
+  }
+  .bhDashBuild{position:relative;z-index:1}
+  .bhHomeBuildSlot{
+    background:#fff!important;
+    border:1px solid #cfdded!important;
+    box-shadow:0 5px 12px rgba(42,77,119,.06)!important;
+  }
+  .bhHomeBuildSlot:hover{border-color:#7ca9dc!important;transform:translateY(-2px)}
+  .bhHomeBuildSlot small{color:#7c8fa8!important}
+  .bhHomeBuildSlot b{color:#17263c!important}
+  .bhDashAction{
+    background:#f3f8ff!important;
+    border:1px solid #cbddef!important;
+  }
+  .bhDashAction span{color:#2f73e8!important}
+  .bhDashAction b{color:#17263c!important}
+  .bhDashAction small{color:#71849e!important}
+  .bhPrimaryOpen{
+    background:#ffca28!important;
+    color:#17263c!important;
+    border:1px solid #e0ad11!important;
+    box-shadow:0 7px 16px rgba(221,169,19,.20)!important;
+  }
+
+  .bhDashPanel{
+    background:#fff!important;
+    border:1px solid #cfdded!important;
+    box-shadow:0 9px 22px rgba(43,76,116,.07)!important;
+  }
+  .bhPanelHead h3{color:#17263c!important}
+  .bhPanelHead button{
+    background:#edf4ff!important;
+    color:#2f73e8!important;
+    border:1px solid #c9dcf3!important;
+  }
+  .bhHomeMetaRow,.bhHomeActionRow{
+    background:#f7faff!important;
+    border-color:#d7e3ef!important;
+  }
+  .bhHomeMetaRow b,.bhHomeActionRow b{color:#17263c!important}
+  .bhHomeMetaRow small,.bhHomeActionRow small{color:#7a8ca3!important}
+  .bhHomeMetaRow span,.bhHomeActionRow span{color:#2f73e8!important}
+  .bhHomeMetaRow img,.bhHomeActionRow img{
+    background:#eaf2ff!important;
+    border:1px solid #d1dfef!important;
+  }
+  .bhHomeActionRow em{color:#2f73e8!important}
+
+  .bhDashFooter div{
+    background:#fff!important;
+    border:1px solid #d4e0ec!important;
+  }
+  .bhDashFooter span{color:#7b8da4!important}
+  .bhDashFooter b{color:#344b68!important}
+
+  /* desktop detail: keep the character as the visual anchor */
+  .v3Hero{
+    min-height:390px!important;
+    background:
+      radial-gradient(circle at 75% 20%,rgba(255,202,40,.24),transparent 22%),
+      linear-gradient(145deg,#dff1ff 0%,#b9ddf5 45%,#edf5ff 100%)!important;
+    border:1px solid #bfd4e9!important;
+    box-shadow:0 15px 32px rgba(37,74,117,.10)!important;
+  }
+  .v3Hero:after{
+    background:linear-gradient(0deg,rgba(22,36,58,.88) 3%,rgba(22,36,58,.05) 70%)!important;
+  }
+  .v3Hero h1{font-size:58px!important}
+  .v3HeroCopy p{color:#e9f4ff!important}
+  .v3HeroBadges span{background:rgba(22,36,58,.86)!important;border-color:#6684a7!important}
+  .v3Card{
+    background:#fff!important;
+    border-color:#cfdded!important;
+    color:#17263c!important;
+    box-shadow:0 9px 22px rgba(43,76,116,.07)!important;
+  }
+  .v3Title h2,.v3Component,.v3GearRow{color:#17263c!important}
+  .v3Title>div>span{color:#2f73e8!important}
+  .v3Title small{color:#71849e!important}
+  .v3Component{
+    background:linear-gradient(145deg,#ffffff,#f5f9ff)!important;
+    border-color:#cfdded!important;
+  }
+  .v3CompName b{color:#17263c!important}
+  .v3CompName small,.v3Component p{color:#71849e!important}
+  .v3QuickCard,.v3DecisionPanel{
+    background:linear-gradient(145deg,#ffffff,#f3f8ff)!important;
+    border-color:#c9dcf3!important;
+  }
+  .v3QuickHead h2,.v3DecisionMain h2,.v3DecisionMain p{color:#17263c!important}
+  .v3QuickHead p,.v3DecisionMain small{color:#71849e!important}
+  .v3QuickSlot{background:#fff!important;border-color:#cfdded!important;color:#17263c!important}
+  .v3QuickInfo b{color:#17263c!important}
+  .v3QuickInfo small,.v3QuickFoot{color:#71849e!important}
+}
