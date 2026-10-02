@@ -30,6 +30,8 @@ jobs:
           node --check backend/sync-assets.js
           node --check preboot.js
           node --check cache-cleanup.js
+          node --check detail-v3.js
+          node --check ui-v2.js
 
       - name: Build local game assets
         run: node backend/sync-assets.js
