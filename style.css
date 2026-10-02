@@ -1736,3 +1736,91 @@ body{-webkit-text-size-adjust:100%}
   .v3QuickInfo b{color:#17263c!important}
   .v3QuickInfo small,.v3QuickFoot{color:#71849e!important}
 }
+
+
+
+/* v13 FINAL LIGHT DASHBOARD SURFACE
+   Explicitly overrides legacy UI-v2 dark tokens on every viewport.
+*/
+.bhDashboard,.bhHomeHeroV2,.bhHomeGrid,.bhHomeData{color:#17263c}
+.bhDashboard .bhDashHero,.bhDashboard .bhDashContext>div,.bhDashboard .bhDashNav button,
+.bhDashboard .bhDashFocus,.bhDashboard .bhDashPanel,.bhDashboard .bhDashFooter div,
+.bhDashboard .bhHomeBuildSlot,.bhDashboard .bhDashAction{
+  color:#17263c!important;
+}
+.bhDashboard .bhDashHero{
+  background:linear-gradient(135deg,#fff,#edf5ff)!important;
+  border-color:#c8d9ed!important;
+  box-shadow:0 10px 26px rgba(38,73,116,.08)!important;
+}
+.bhDashboard .bhDashHero h1,.bhDashboard .bhDashFocusHead h2,
+.bhDashboard .bhDashPanel h3,.bhDashboard .bhHomeBuildSlot b,
+.bhDashboard .bhDashAction b{color:#17263c!important}
+.bhDashboard .bhDashHero p,.bhDashboard .bhDashFocusHead small,
+.bhDashboard .bhDashPanel small,.bhDashboard .bhDashFooter span,
+.bhDashboard .bhDashFooter b{color:#71849e!important}
+.bhDashboard .bhDashContext>div{
+  background:#fff!important;border-color:#cfdded!important;
+}
+.bhDashboard .bhDashContext select{
+  background:#f4f8fd!important;color:#17263c!important;
+  border:1px solid #d0deed!important;border-radius:8px!important;
+}
+.bhDashboard .bhDashNav button{
+  background:#fff!important;border-color:#cfdded!important;
+  box-shadow:0 6px 15px rgba(38,73,116,.06)!important;
+}
+.bhDashboard .bhDashNav span{color:#7b8da4!important}
+.bhDashboard .bhDashFocus{
+  background:linear-gradient(145deg,#fff,#f2f7ff)!important;
+  border-color:#c6d8ec!important;
+}
+.bhDashboard .bhDashFocusHead img{
+  background:#eaf2ff!important;border:2px solid #fff!important;
+  filter:drop-shadow(0 8px 12px rgba(38,73,116,.14))!important;
+}
+.bhDashboard .bhHomeBuildSlot{
+  background:#fff!important;border-color:#cfdded!important;
+}
+.bhDashboard .bhHomeBuildSlot small{color:#7b8da4!important}
+.bhDashboard .bhDashAction{
+  background:#f2f7ff!important;border:1px solid #cfdded!important;
+  border-left:3px solid #ffca28!important;
+}
+.bhDashboard .bhDashAction span{color:#2f73e8!important}
+.bhDashboard .bhPrimaryOpen{
+  background:#ffca28!important;color:#17263c!important;
+  border-color:#e0ad11!important;
+}
+.bhDashboard .bhDashPanel{
+  background:#fff!important;border-color:#cfdded!important;
+}
+.bhDashboard .bhHomeMetaRow,.bhDashboard .bhHomeActionRow{
+  background:#f7faff!important;border-top-color:#d7e3ef!important;color:#17263c!important;
+}
+.bhDashboard .bhHomeMetaRow b,.bhDashboard .bhHomeActionRow b{color:#17263c!important}
+.bhDashboard .bhHomeMetaRow small,.bhDashboard .bhHomeActionRow small{color:#7b8da4!important}
+.bhDashboard .bhHomeMetaRow span,.bhDashboard .bhHomeActionRow em{color:#2f73e8!important}
+.bhDashboard .bhDashFooter div{
+  background:#fff!important;border-color:#d4e0ec!important;
+}
+
+@media(max-width:759px){
+  .bhDashboard{gap:8px!important}
+  .bhDashHero{padding:14px!important;border-radius:18px!important}
+  .bhDashHero h1{font-size:26px!important}
+  .bhDashContext{gap:6px!important}
+  .bhDashContext>div{padding:9px!important}
+  .bhDashNav{gap:6px!important}
+  .bhDashNav button{min-height:60px!important;padding:9px!important}
+  .bhDashFocus{padding:12px!important;border-radius:17px!important}
+  .bhDashFocusHead h2{font-size:21px!important}
+  .bhDashBuild{gap:5px!important}
+  .bhHomeBuildSlot{min-height:96px!important;padding:7px 3px!important}
+  .bhHomeBuildSlot .compIcon{width:32px!important;height:32px!important}
+  .bhHomeBuildSlot b{font-size:7px!important}
+  .bhHomeBuildSlot small{font-size:5.5px!important}
+  .bhDashAction{padding:8px!important}
+  .bhPrimaryOpen{min-height:42px!important}
+  .bhDashPanel{padding:11px!important}
+}
