@@ -28,6 +28,7 @@ jobs:
           node --check app.js
           node --check recommendations.js
           node --check backend/sync-assets.js
+      node --check backend/server.js
           node --check preboot.js
           node --check cache-cleanup.js
           node --check detail-v3.js
