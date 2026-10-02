@@ -83,7 +83,7 @@ function homeV2(){
  '<section class="bhNewSection"><div class="bhNewSectionHead"><div><span>NEEDS ATTENTION</span><h3>Your next upgrades</h3></div><button type="button" onclick="setTab(\'upgrade\')">VIEW ALL →</button></div><div class="bhNewActions">'+(actions||'<span class="bhNewMuted">No immediate actions.</span>')+'</div></section>'+
  '</section>';
 }}window.bcard=bcardV2;
-window.home=homeV2;
+window.BHHome=homeV2;
 
 const css=String.raw`
 .bhEyebrow{display:block;font-size:9px;letter-spacing:1.5px;font-weight:950;color:#9eb0cb}.bhSectionHead{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:9px}.bhSectionHead h2{margin:2px 0 0;font-size:19px}.bhRole,.bhBuildMatch,.bhContextScore{font-size:9px;font-weight:950;padding:7px 9px;border-radius:999px;border:1px solid #405274;background:#18243a;color:#aebbd0}.bhBuildMatch{color:#9ff0c6;border-color:#3f8067;background:rgba(97,230,167,.08)}
