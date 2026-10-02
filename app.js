@@ -507,7 +507,7 @@ async function loadProfile(tag){
 function homeFallback(){
  const name=esc(P?.name||'Player');
  const tag=esc(P?.tag||active||'');
- return '<section class="hero"><div class="eyebrow">BRAWL HELPER</div><h1>What should I do?</h1><p class="muted">'+name+' · '+tag+'</p><p class="muted">The Home presentation layer is loading. Your profile is connected.</p><div style="display:flex;gap:8px;flex-wrap:wrap"><button class="primary" onclick="setTab('brawlers')">BRAWLERS</button><button class="primary" onclick="setTab('upgrade')">UPGRADE</button><button class="primary" onclick="setTab('play')">PLAY</button></div></section>';
+ return '<section class="hero"><div class="eyebrow">BRAWL HELPER</div><h1>What should I do?</h1><p class="muted">'+name+' · '+tag+'</p><p class="muted">The Home presentation layer is loading. Your profile is connected.</p><div style="display:flex;gap:8px;flex-wrap:wrap"><button class="primary" onclick="setTab(&#39;brawlers&#39;)">BRAWLERS</button><button class="primary" onclick="setTab(&#39;upgrade&#39;)">UPGRADE</button><button class="primary" onclick="setTab(&#39;play&#39;)">PLAY</button></div></section>';
 }
 function render(){
  try{
