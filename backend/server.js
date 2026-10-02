@@ -6,7 +6,10 @@ const app = express();
 
 const PORT = Number(process.env.PORT || 3000);
 const TOKEN = process.env.BRAWL_STARS_API_TOKEN;
-const ALLOWED_ORIGINS = String(process.env.ALLOWED_ORIGINS || process.env.ALLOWED_ORIGIN || 'https://ironsystem96.github.io').split(',').map(x => x.trim()).filter(Boolean);\n// Capacitor Android serves the web app from a local HTTPS origin. Keep the\n// GitHub Pages origin and explicitly allow the native app origins as well.\nconst NATIVE_ORIGINS = ['https://localhost', 'http://localhost', 'capacitor://localhost'];
+const ALLOWED_ORIGINS = String(process.env.ALLOWED_ORIGINS || process.env.ALLOWED_ORIGIN || 'https://ironsystem96.github.io').split(',').map(x => x.trim()).filter(Boolean);
+// Capacitor Android serves the web app from a local HTTPS origin. Keep the
+// GitHub Pages origin and explicitly allow the native app origins as well.
+const NATIVE_ORIGINS = ['https://localhost', 'http://localhost', 'capacitor://localhost'];
 const CACHE_TTL_MS = Number(process.env.PLAYER_CACHE_TTL_MS || 5 * 60 * 1000);
 const REQUEST_TIMEOUT_MS = Number(process.env.BRAWL_API_TIMEOUT_MS || 8000);
 
