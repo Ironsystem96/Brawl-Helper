@@ -504,11 +504,16 @@ async function loadProfile(tag){
    return null;
  }
 }
+function homeFallback(){
+ const name=esc(P?.name||'Player');
+ const tag=esc(P?.tag||active||'');
+ return '<section class="hero"><div class="eyebrow">BRAWL HELPER</div><h1>What should I do?</h1><p class="muted">'+name+' · '+tag+'</p><p class="muted">The Home presentation layer is loading. Your profile is connected.</p><div style="display:flex;gap:8px;flex-wrap:wrap"><button class="primary" onclick="setTab('brawlers')">BRAWLERS</button><button class="primary" onclick="setTab('upgrade')">UPGRADE</button><button class="primary" onclick="setTab('play')">PLAY</button></div></section>';
+}
 function render(){
  try{
   if(!P){shell('<section class="hero"><div class="eyebrow">ACCOUNT</div><h1>No active profile</h1><p class="muted">Connect your Player Tag to load your profile. Development test profiles are not available in production.</p><button class="primary" onclick="profilePanel()">Manage profile</button></section>');return}
   if(selected)shell(window.detailV3((P.brawlers||[]).find(x=>x&&x.id===selected)||allBrawlers().find(x=>x&&x.id===selected)));
-  else if(tab==='home')shell(window.home());
+  else if(tab==='home')shell(typeof window.BHHome==='function'?window.BHHome():homeFallback());
   else if(tab==='brawlers')shell(brawlers());
   else if(tab==='play')shell(play());
   else if(tab==='upgrade')shell(upgrade());
