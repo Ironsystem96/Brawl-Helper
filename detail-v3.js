@@ -96,20 +96,27 @@ function loadoutBlock(b){
  '<div class="v3GearList">'+gears.map((x,i)=>'<button type="button" class="v3GearRow '+(x.recommended?'recommended':'')+'" onclick="componentModalV2ById('+b.id+',\'gears\','+JSON.stringify(String(x.id))+')">'+icon('gears',x,b)+'<span><b>'+E(x.name)+'</b><small>'+(x.recommended?'CURRENT BUILD SIGNAL':'AVAILABLE GEAR')+'</small></span><strong>'+(x.pick!=null?PCT(x.pick):'—')+'</strong></button>').join('')+'</div><p class="v3Footnote">Gear percentages are community build pick rates. They are not account ownership rates.</p></section>';
 }
 function quickBuildBlock(b){
- const items=window.guideComponents?.(b)||[];
+ const items=window.guideComponents?.(b)||[],actions=window.nextActions?.(b)||[];
  const labels=['GADGET','STAR POWER','GEAR 1','GEAR 2','OVERDRIVE'];
  const types=['gadgets','starPowers','gears','gears','overdrives'];
+ const actionable=actions.filter(a=>['POWER','BUY','EQUIP','VERIFY'].includes(a.type));
+ const next=actionable[0];
  const cards=items.slice(0,5).map((x,i)=>{
    const item=x?.[2]||{},type=types[i]||x?.[1],state=window.itemStatus?.(b,type,item)||'NOT VERIFIED';
    const pending=!item.id||String(item.id).startsWith('pending:')||String(item.id).startsWith('none:');
+   const status=pending?'DATA N/A':state==='EQUIPPED'?'EQUIPPED':state==='OWNED'?'OWNED':state==='NOT OWNED'?'BUY':'VERIFY';
    return '<button class="v3QuickSlot '+(pending?'pending':'')+'" type="button" '+(pending?'disabled':'onclick="componentModalV2ById('+b.id+','+JSON.stringify(type)+','+JSON.stringify(String(item.id))+')"')+'>'+
      '<span class="v3QuickNum">'+(i+1)+'</span>'+
      '<span class="v3QuickIcon">'+(pending?'?':icon(type,item,b))+'</span>'+
-     '<span class="v3QuickInfo"><small>'+labels[i]+'</small><b>'+E(item.name||'Data pending')+'</b><em>'+E(pending?'DATA PENDING':state)+'</em></span>'+
+     '<span class="v3QuickInfo"><small>'+labels[i]+'</small><b>'+E(item.name||'Data pending')+'</b><em class="v3QuickState '+(status==='EQUIPPED'?'good':status==='BUY'?'buy':status==='OWNED'?'owned':'')+'">'+E(status)+'</em></span>'+
      '</button>';
  }).join('');
- return '<section class="v3QuickCard" id="build"><div class="v3QuickHead"><div><span>DECISION FIRST</span><h2>Build da usare</h2><p>Qui trovi subito i 5 componenti della build consigliata per questo Brawler.</p></div><span class="v3QuickBadge">QUICK BUILD</span></div><div class="v3QuickSlots">'+cards+'</div><div class="v3QuickFoot"><span>1–2</span> Gadget + Star Power · <span>3–4</span> Gear · <span>5</span> Overdrive</div></section>';
+ const nextHtml=next
+   ? '<div class="v3Decision"><span>NEXT STEP</span><div><b>'+E(next.label||next.type)+'</b><small>'+E(next.reason||'Open the component to see the details.')+'</small></div></div>'
+   : '<div class="v3Decision ready"><span>READY TO PLAY</span><div><b>Build has no immediate action</b><small>Use the selected mode/map context below to fine-tune your setup.</small></div></div>';
+ return '<section class="v3QuickCard" id="build"><div class="v3QuickHead"><div><span>START HERE</span><h2>Recommended build</h2><p>These are the five components to check first for this Brawler.</p></div><span class="v3QuickBadge">5 SLOTS</span></div>'+nextHtml+'<div class="v3QuickSlots">'+cards+'</div><div class="v3QuickFoot"><b>Gadget + Star Power</b> · <b>2 Gears</b> · <b>Overdrive</b><span> · Tap a slot for details</span></div></section>';
 }
+
 function buildsBlock(b){
  const e=build(b),url=sourceUrl(b),items=window.guideComponents?.(b)||[];
  return '<section class="v3Card">'+sectionTitle('COMMUNITY BUILDS','Recommended loadout',e?.sample?F(e.sample)+' builds analyzed':'snapshot')+
@@ -196,6 +203,16 @@ const css=String.raw`
 .v3QuickNav::-webkit-scrollbar{display:none}
 .v3QuickNav a{flex:0 0 auto;text-decoration:none;color:#b9c7dc;background:#17253c;border:1px solid #3d5475;border-radius:999px;padding:7px 10px;font-size:8px;font-weight:950;letter-spacing:.5px}
 .v3QuickNav a:first-child{background:#ffd34e;color:#111827;border-color:#ffe68a}
+
+.v3Decision{display:flex;align-items:center;gap:9px;margin:9px 0 2px;padding:9px 10px;border:1px solid #66572b;border-left:3px solid #ffd34e;border-radius:10px;background:rgba(255,211,78,.06)}
+.v3Decision.ready{border-color:#3d8067;border-left-color:#63e6a7;background:rgba(99,230,167,.05)}
+.v3Decision>span{flex:none;color:#ffd34e;font-size:7px;font-weight:950;letter-spacing:.8px}
+.v3Decision.ready>span{color:#9ff0c6}
+.v3Decision b{display:block;color:#fff;font-size:9px;line-height:1.2}
+.v3Decision small{display:block;color:#9aaac0;font-size:7px;line-height:1.3;margin-top:2px}
+.v3QuickState.good{color:#9ff0c6!important;border-color:#3d8067!important}
+.v3QuickState.owned{color:#9ecbff!important;border-color:#41678f!important}
+.v3QuickState.buy{color:#ffd07a!important;border-color:#80633a!important}
 .v3QuickCard{margin:8px 0 10px;padding:12px;border:1px solid #5a6f91;border-radius:16px;background:linear-gradient(145deg,#1b2d49,#101a2c);box-shadow:0 10px 25px rgba(0,0,0,.2)}
 .v3QuickHead{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
 .v3QuickHead span:first-child{display:block;color:#ffd34e;font-size:8px;font-weight:950;letter-spacing:1.5px}
