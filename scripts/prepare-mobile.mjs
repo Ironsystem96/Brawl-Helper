@@ -1,4 +1,4 @@
-import { cp, mkdir, rm, readdir, stat } from 'node:fs/promises';
+import { cp, mkdir, rm, access } from 'node:fs/promises';
 import { join } from 'node:path';
 
 const root = process.cwd();
@@ -25,7 +25,14 @@ for (const file of files) {
 }
 
 for (const dir of dirs) {
-  await cp(join(root, dir), join(out, dir), { recursive: true });
+  const src = join(root, dir);
+  try {
+    await access(src);
+    await cp(src, join(out, dir), { recursive: true });
+  } catch (err) {
+    if (err?.code !== 'ENOENT') throw err;
+    console.log(`Optional directory ${dir}/ not present; skipping.`);
+  }
 }
 
 console.log('Brawl Helper mobile web bundle prepared in ./www');
