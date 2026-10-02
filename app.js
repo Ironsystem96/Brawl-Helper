@@ -226,7 +226,16 @@ function compIcon(type,item,b=null){
  const mapped=componentCatalogItem(type,item,b);
  const fallbackPath=paths[type]&&item.id?img(paths[type],item.id):'';
  const src=localAsset(type,item,b)||mapped?.imageUrl||fallbackPath;
- if(!src){if(type==='buffies'||type==='buffie'){const k=String(item?.id||'').split(':')[1]||'';const mark=k==='gadget'?'G':k==='starPower'?'S':k==='hyperCharge'?'H':'B';return '<span class="compIcon buffieVisual '+esc(k)+'" aria-label="'+esc(item?.name||'Buffie')+'">'+mark+'</span>';}return '<span class="compIcon pendingIcon" aria-label="Image unavailable">?</span>';}
+ if(!src){
+   if(type==='buffies'||type==='buffie'){
+     const k=String(item?.id||'').split(':')[1]||'';
+     const mark=k==='gadget'?'G':k==='starPower'?'S':k==='hyperCharge'?'H':'B';
+     return '<span class="compIcon buffieVisual '+esc(k)+'" aria-label="'+esc(item?.name||'Buffie')+'">'+mark+'</span>';
+   }
+   if(type==='hyperCharges'||type==='hc')return '<span class="compIcon buffieVisual hyperCharge" aria-label="Hypercharge">H</span>';
+   if(type==='overdrives'||type==='overdrive')return '<span class="compIcon buffieVisual overdriveVisual" aria-label="Overdrive">O</span>';
+   return '<span class="compIcon pendingIcon" aria-label="Image unavailable">?</span>';
+ }
  return '<img class="compIcon" loading="lazy" src="'+esc(src)+'" alt="" aria-hidden="true" onerror="this.replaceWith(Object.assign(document.createElement(\'span\'),{className:\'compIcon pendingIcon\',textContent:\'?\'}))">';
 }
 function componentModalV2ById(bid,type,itemId){
