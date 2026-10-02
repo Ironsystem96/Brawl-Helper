@@ -82,7 +82,7 @@ function homeV2(){
  '<section class="bhNewTwoCol"><div class="bhNewPanel"><div class="bhNewSectionHead"><div><span>ACCOUNT</span><h3>Progress</h3></div></div><div class="bhNewProgress"><div><b>'+ready+'%</b><span>ROSTER READY</span></div><div><b>'+F(owned.length)+'</b><span>BRAWLERS OWNED</span></div><div><b>'+F(actionable.length)+'</b><span>ACTIONS</span></div></div><button class="bhNewPanelLink" type="button" onclick="setTab(\'upgrade\')">SEE UPGRADE PLAN →</button></div><div class="bhNewPanel"><div class="bhNewSectionHead"><div><span>UPDATE</span><h3>'+E(update.title||'Meta & data synchronized')+'</h3></div></div><p class="bhNewUpdateText">'+E(update.summary||'Build, component and meta data are synchronized from the current data layer.')+'</p><button class="bhNewPanelLink" type="button" onclick="setTab(\'meta\')">SEE DATA & SOURCES →</button></div></section>'+
  '<section class="bhNewSection"><div class="bhNewSectionHead"><div><span>NEEDS ATTENTION</span><h3>Your next upgrades</h3></div><button type="button" onclick="setTab(\'upgrade\')">VIEW ALL →</button></div><div class="bhNewActions">'+(actions||'<span class="bhNewMuted">No immediate actions.</span>')+'</div></section>'+
  '</section>';
-}}window.bcard=bcardV2;
+}window.bcard=bcardV2;
 window.BHHome=homeV2;
 
 const css=String.raw`
