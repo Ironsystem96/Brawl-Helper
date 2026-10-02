@@ -120,7 +120,7 @@ function quickBuildBlock(b){
 function buildsBlock(b){
  const e=build(b),url=sourceUrl(b),items=window.guideComponents?.(b)||[];
  return '<section class="v3Card">'+sectionTitle('COMMUNITY BUILDS','Recommended loadout',e?.sample?F(e.sample)+' builds analyzed':'snapshot')+
- '<div class="v3BuildHero">'+items.slice(0,4).map(([label,type,item])=>'<button type="button" onclick="componentModalV2ById('+b.id+','+JSON.stringify(type)+','+JSON.stringify(String(item?.id||0))+')">'+icon(type,item,b)+'<span>'+E(item?.name||'Data pending')+'</span><small>'+E(label)+'</small></button>').join('')+'</div>'+
+ '<div class="v3BuildHero">'+items.slice(0,5).map(([label,type,item])=>'<button type="button" onclick="componentModalV2ById('+b.id+','+JSON.stringify(type)+','+JSON.stringify(String(item?.id||0))+')">'+icon(type,item,b)+'<span>'+E(item?.name||'Data pending')+'</span><small>'+E(label)+'</small></button>').join('')+'</div>'+
  '<div class="v3Why"><b>What the current signal says</b><p>'+(e?'The recommended components are taken from the synchronized community build snapshot. Ownership/equipped status is shown separately in the account layer.':'No validated community build is available yet.')+'</p></div>'+
  (url?'<a class="v3Source" target="_blank" rel="noopener" href="'+E(url)+'">Open full community builds on NOFF →</a>':'')+'</section>';
 }
