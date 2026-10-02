@@ -95,6 +95,21 @@ function loadoutBlock(b){
  '<section class="v3Card">'+sectionTitle('GEAR PICK RATES','Gears',sample?sample+' community builds':'community signal')+
  '<div class="v3GearList">'+gears.map((x,i)=>'<button type="button" class="v3GearRow '+(x.recommended?'recommended':'')+'" onclick="componentModalV2ById('+b.id+',\'gears\','+JSON.stringify(String(x.id))+')">'+icon('gears',x,b)+'<span><b>'+E(x.name)+'</b><small>'+(x.recommended?'CURRENT BUILD SIGNAL':'AVAILABLE GEAR')+'</small></span><strong>'+(x.pick!=null?PCT(x.pick):'—')+'</strong></button>').join('')+'</div><p class="v3Footnote">Gear percentages are community build pick rates. They are not account ownership rates.</p></section>';
 }
+function quickBuildBlock(b){
+ const items=window.guideComponents?.(b)||[];
+ const labels=['GADGET','STAR POWER','GEAR 1','GEAR 2','OVERDRIVE'];
+ const types=['gadgets','starPowers','gears','gears','overdrives'];
+ const cards=items.slice(0,5).map((x,i)=>{
+   const item=x?.[2]||{},type=types[i]||x?.[1],state=window.itemStatus?.(b,type,item)||'NOT VERIFIED';
+   const pending=!item.id||String(item.id).startsWith('pending:')||String(item.id).startsWith('none:');
+   return '<button class="v3QuickSlot '+(pending?'pending':'')+'" type="button" '+(pending?'disabled':'onclick="componentModalV2ById('+b.id+','+JSON.stringify(type)+','+JSON.stringify(String(item.id))+')"')+'>'+
+     '<span class="v3QuickNum">'+(i+1)+'</span>'+
+     '<span class="v3QuickIcon">'+(pending?'?':icon(type,item,b))+'</span>'+
+     '<span class="v3QuickInfo"><small>'+labels[i]+'</small><b>'+E(item.name||'Data pending')+'</b><em>'+E(pending?'DATA PENDING':state)+'</em></span>'+
+     '</button>';
+ }).join('');
+ return '<section class="v3QuickCard" id="build"><div class="v3QuickHead"><div><span>DECISION FIRST</span><h2>Build da usare</h2><p>Qui trovi subito i 5 componenti della build consigliata per questo Brawler.</p></div><span class="v3QuickBadge">QUICK BUILD</span></div><div class="v3QuickSlots">'+cards+'</div><div class="v3QuickFoot"><span>1–2</span> Gadget + Star Power · <span>3–4</span> Gear · <span>5</span> Overdrive</div></section>';
+}
 function buildsBlock(b){
  const e=build(b),url=sourceUrl(b),items=window.guideComponents?.(b)||[];
  return '<section class="v3Card">'+sectionTitle('COMMUNITY BUILDS','Recommended loadout',e?.sample?F(e.sample)+' builds analyzed':'snapshot')+
@@ -116,9 +131,10 @@ function buffieBlock(b){
 function detailV3(b){
  const p=profile(b)||{},id=p.identity||{},n=noff(b),s=n?.stats||{},owned=window.isOwnedAccount?.(b),actions=window.nextActions?.(b)||[];
  const role=id.class?.name||window.catalogEntry?.(b)?.class?.name||'Brawler',rarity=id.rarity?.name||window.catalogEntry?.(b)?.rarity?.name||'';
- return '<button class="back v3Back" onclick="selected=null;render()">← Back to Brawlers</button>'+
+ return '<button class="back v3Back" onclick="selected=null;render()">← Back to Brawlers</button><div class="v3QuickNav"><a href="#build">BUILD</a><a href="#game-data">ABILITÀ</a><a href="#trends">META</a><a href="#loadout">COMPONENTI</a><a href="#extras">EXTRA</a></div>'+
  '<section class="v3Hero"><div class="v3HeroImage"><img src="'+E(window.portrait(b))+'" alt="" onerror="imgFallback(this,'+JSON.stringify(b.name)+')"></div><div class="v3HeroCopy"><span class="v3Eyebrow">'+E(role)+'</span><h1>'+E(b.name)+'</h1><div class="v3HeroBadges"><span>'+E(rarity||'—')+'</span><span class="'+(owned?'owned':'')+'">'+(owned?'POWER '+E(b.power):'NOT OWNED')+'</span></div><p>'+E(id.description||window.catalogEntry?.(b)?.description||'')+'</p></div></section>'+
  '<section class="v3Overview"><div><span>WIN RATE</span><b>'+PCT(s.winRate)+'</b></div><div><span>PICK RATE</span><b>'+PCT(s.pickRate)+'</b></div><div><span>META SAMPLE</span><b>'+F(n?.sample||build(b)?.sample||0)+'</b></div><div><span>ACCOUNT</span><b>'+(owned?'OWNED':'CATALOG')+'</b></div></section>'+
+quickBuildBlock(b)+
  '<section class="v3Card v3MetaContext">'+sectionTitle('LIVE CONTEXT','Mode & map',window.playMode+(window.playMap!=='Random'?' · '+window.playMap:''))+'<div class="v3ContextControls"><div class="v3Pills">'+['General',...(Object.keys(window.MODES||{}).slice(0,7))].map(x=>'<button class="'+((window.playMode===x||(x==='General'&&window.playMode==='General'))?'active':'')+'" onclick="playMode=\''+x+'\';playMap=\'Random\';render()">'+E(x)+'</button>').join('')+'</div><select class="search" onchange="playMap=this.value;render()"><option value="Random">Random / overall</option>'+((window.MODES?.[window.playMode]||[]).map(x=>'<option '+(window.playMap===x?'selected':'')+'>'+E(x)+'</option>').join(''))+'</select></div><div class="v3SelectedMeta">'+(window.metaEntry?.(b,window.playMode,window.playMap)?'Context score '+Math.round(window.metaEntry(b,window.playMode,window.playMap).score||0)+' · Win '+PCT(window.metaEntry(b,window.playMode,window.playMap).winRate)+' · Pick '+PCT(window.metaEntry(b,window.playMode,window.playMap).pickRate):'No validated context for this selection')+'</div></section>'+
  '<section class="v3Card">'+sectionTitle('GUIDE','What to play',actions.length?'account-specific guidance':'current build signal')+'<div class="v3ActionStrip">'+(actions.length?actions.slice(0,3).map(a=>'<div><b>'+E(a.type==='POWER'?'IMPROVE':a.type==='BUY'?'BUY':a.type==='EQUIP'?'EQUIP':a.type==='VERIFY'?'VERIFY':'REVIEW')+'</b><span>'+E(a.label)+'</span><small>'+E(a.reason)+'</small></div>').join(''):'<div><b>BUILD</b><span>Review the recommended loadout</span><small>Ownership remains separate from community recommendations.</small></div>')+'</div></section>'+
  attackBlock(b)+
