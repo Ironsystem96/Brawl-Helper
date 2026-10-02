@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json.schemastore.org/capacitor-config.json",
+  "appId": "com.brawlhelper.app",
+  "appName": "Brawl Helper",
+  "webDir": ".",
+  "server": {
+    "androidScheme": "https"
+  },
+  "android": {
+    "allowMixedContent": false
+  }
+}
