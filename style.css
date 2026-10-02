@@ -1359,3 +1359,196 @@ body{-webkit-text-size-adjust:100%}
  .v3QuickSlot{flex-basis:124px}
  .nav button{font-size:7px!important}
 }
+
+
+
+/* v11 RESPONSIVE PRODUCT LAYOUT
+   Desktop gets a real companion dashboard; phones keep the compact single-column experience.
+*/
+@media(min-width:760px){
+  html,body{min-width:100%;overflow-x:hidden}
+  body{background:
+    radial-gradient(circle at 12% 0%,rgba(93,164,255,.18),transparent 28%),
+    radial-gradient(circle at 88% 8%,rgba(121,87,213,.12),transparent 24%),
+    #eef5ff}
+  .app{
+    max-width:1180px;
+    min-height:100vh;
+    padding-bottom:34px;
+    margin:0 auto;
+    background:rgba(248,251,255,.78)!important;
+    border-left:1px solid #d9e3ef;
+    border-right:1px solid #d9e3ef;
+    box-shadow:0 18px 70px rgba(37,68,110,.12)!important;
+    overflow:visible;
+  }
+  .top{
+    position:sticky;
+    top:0;
+    padding:14px 28px 12px;
+    border-radius:0;
+    z-index:20;
+  }
+  .content{padding:0 28px;max-width:1180px;margin:0 auto}
+  .logo{font-size:26px}
+  .profileBtn{margin-top:8px}
+  
+  /* Dashboard */
+  .bhDashboard{display:block;padding:8px 0 20px}
+  .bhDashHero{
+    min-height:148px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:24px;
+    padding:24px 28px!important;
+    margin:12px 0!important;
+    border-radius:24px!important;
+  }
+  .bhDashHero h1{font-size:38px!important;letter-spacing:-1.1px}
+  .bhDashHero p{font-size:11px}
+  .bhProfileButton{
+    flex:0 0 auto;
+    padding:10px 14px!important;
+    border-radius:11px!important;
+  }
+  .bhDashContext{
+    display:grid!important;
+    grid-template-columns:1.15fr 1.15fr .8fr .8fr;
+    gap:10px!important;
+    margin:10px 0!important;
+  }
+  .bhDashContext>div{
+    min-height:72px;
+    padding:12px!important;
+    border-radius:14px!important;
+  }
+  .bhDashContext select{font-size:11px!important}
+  .bhDashStat b{font-size:24px!important}
+  .bhDashStat small{font-size:8px!important}
+  
+  .bhDashNav{
+    display:grid!important;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px!important;
+    margin:10px 0 16px!important;
+  }
+  .bhDashNav button{
+    min-height:64px;
+    text-align:left;
+    padding:12px 14px!important;
+    border-radius:14px!important;
+    transition:transform .18s,border-color .18s,box-shadow .18s;
+  }
+  .bhDashNav button:hover{transform:translateY(-2px);border-color:#8bb4e9!important;box-shadow:0 8px 20px rgba(47,115,232,.10)}
+  .bhDashNav b{font-size:11px!important}
+  .bhDashNav span{font-size:8px!important}
+  
+  .bhDashFocus{
+    padding:20px!important;
+    border-radius:22px!important;
+    margin:0 0 14px!important;
+  }
+  .bhDashFocusHead{min-height:72px}
+  .bhDashFocusHead h2{font-size:28px!important}
+  .bhDashFocusHead img{width:92px!important;height:92px!important}
+  .bhDashBuild{
+    display:grid!important;
+    grid-template-columns:repeat(5,1fr);
+    gap:8px!important;
+    margin:14px 0!important;
+  }
+  .bhHomeBuildSlot{
+    min-height:118px!important;
+    padding:10px!important;
+    border-radius:13px!important;
+  }
+  .bhHomeBuildSlot .compIcon{width:44px!important;height:44px!important}
+  .bhHomeBuildSlot b{font-size:9px!important}
+  .bhHomeBuildSlot small{font-size:7px!important}
+  .bhDashAction{
+    min-height:56px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:11px 13px!important;
+    border-radius:12px!important;
+  }
+  .bhDashAction span{flex:none}
+  .bhDashAction b{font-size:11px!important}
+  .bhDashAction small{font-size:8px!important}
+  .bhPrimaryOpen{
+    min-height:44px!important;
+    border-radius:11px!important;
+    margin-top:10px!important;
+  }
+  
+  .bhDashGrid{
+    display:grid!important;
+    grid-template-columns:1fr 1fr;
+    gap:14px!important;
+    margin:0 0 14px!important;
+  }
+  .bhDashPanel{
+    min-height:230px;
+    padding:17px!important;
+    border-radius:18px!important;
+  }
+  .bhPanelHead h3{font-size:17px!important}
+  .bhHomeMetaRow,.bhHomeActionRow{
+    min-height:54px!important;
+    padding:7px 9px!important;
+  }
+  .bhHomeMetaRow img,.bhHomeActionRow img{width:38px!important;height:38px!important}
+  .bhDashFooter{
+    display:grid!important;
+    grid-template-columns:1fr 1fr;
+    gap:10px!important;
+  }
+  .bhDashFooter div{padding:12px!important;border-radius:13px!important}
+  
+  /* Brawler/detail */
+  .v3QuickNav{margin:0 0 10px!important;padding:8px 0!important;border-radius:0}
+  .v3Hero{
+    min-height:340px!important;
+    margin:0 0 12px!important;
+    border-radius:0 0 26px 26px!important;
+  }
+  .v3HeroImage img{height:315px!important}
+  .v3Hero h1{font-size:54px!important}
+  .v3Card{border-radius:18px!important;padding:18px!important}
+  .v3ComponentList{grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:9px!important}
+  .v3Component{min-height:150px!important}
+  .v3BuffGrid{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+  .v3QuickSlot{flex-basis:170px}
+  
+  /* Generic lists */
+  .grid{gap:10px}
+  .componentGrid{gap:10px}
+  .card,.action,.upgradeRow{border-radius:16px}
+  .bcard{padding:13px}
+}
+
+@media(min-width:1100px){
+  .top{padding-left:34px;padding-right:34px}
+  .content{padding-left:34px;padding-right:34px}
+  .bhDashHero{padding:28px 32px!important}
+  .bhDashHero h1{font-size:42px!important}
+  .bhDashFocus{padding:22px!important}
+  .v3Hero{min-height:390px!important}
+  .v3HeroImage img{height:360px!important}
+}
+
+/* Dashboard visual hierarchy: clear action > data */
+.bhDashFocus{position:relative;overflow:hidden}
+.bhDashFocus:before{
+  content:"";
+  position:absolute;inset:0 auto 0 0;width:4px;
+  background:#ffca28;border-radius:20px 0 0 20px;
+}
+.bhDashFocusHead{position:relative}
+.bhDashFocusHead .bhEyebrow{color:#2f73e8!important}
+.bhPrimaryOpen{font-weight:950;letter-spacing:.2px;box-shadow:0 5px 16px rgba(226,175,23,.18)}
+.bhDashNav button{cursor:pointer}
+.bhDashPanel{box-shadow:var(--shadow)!important}
+.bhDashFooter{opacity:.9}
