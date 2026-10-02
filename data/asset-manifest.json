@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-01T19:45:37.287Z",
+  "generatedAt": "2026-10-02T14:07:26.164Z",
   "source": "BrawlAPI catalog image URLs",
   "localRoot": "assets/brawl/",
   "entries": {
@@ -146,7 +146,9 @@
       },
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {}
+      "overdrives": {
+        "overdrive:16000005": "https://cdn.brawlfind.com/hypercharges/Spike.webp"
+      }
     },
     "16000006": {
       "name": "Barley",
@@ -170,7 +172,9 @@
       },
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {}
+      "overdrives": {
+        "overdrive:16000006": "https://cdn.brawlfind.com/hypercharges/Barley.webp"
+      }
     },
     "16000007": {
       "name": "Jessie",
@@ -194,7 +198,9 @@
       },
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {}
+      "overdrives": {
+        "overdrive:16000007": "https://cdn.brawlfind.com/hypercharges/Jessie.webp"
+      }
     },
     "16000008": {
       "name": "Nita",
@@ -434,7 +440,9 @@
       },
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {}
+      "overdrives": {
+        "overdrive:16000017": "https://cdn.brawlfind.com/hypercharges/Tara.webp"
+      }
     },
     "16000018": {
       "name": "Darryl",
@@ -458,7 +466,9 @@
       },
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {}
+      "overdrives": {
+        "overdrive:16000018": "https://cdn.brawlfind.com/hypercharges/Darryl.webp"
+      }
     },
     "16000019": {
       "name": "Penny",
@@ -506,7 +516,9 @@
       },
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {}
+      "overdrives": {
+        "overdrive:16000020": "https://cdn.brawlfind.com/hypercharges/Frank.webp"
+      }
     },
     "16000021": {
       "name": "Gene",
@@ -722,7 +734,9 @@
       },
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {}
+      "overdrives": {
+        "overdrive:16000029": "https://cdn.brawlfind.com/hypercharges/Bea.webp"
+      }
     },
     "16000030": {
       "name": "Emz",
@@ -746,7 +760,9 @@
       },
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {}
+      "overdrives": {
+        "overdrive:16000030": "https://cdn.brawlfind.com/hypercharges/Emz.webp"
+      }
     },
     "16000031": {
       "name": "Mr. P",
@@ -794,7 +810,9 @@
       },
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {}
+      "overdrives": {
+        "overdrive:16000032": "https://cdn.brawlfind.com/hypercharges/Max.webp"
+      }
     },
     "16000034": {
       "name": "Jacky",
@@ -1010,7 +1028,9 @@
       },
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {}
+      "overdrives": {
+        "overdrive:16000042": "https://cdn.brawlfind.com/hypercharges/Byron.webp"
+      }
     },
     "16000043": {
       "name": "Edgar",
@@ -1034,7 +1054,9 @@
       },
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {}
+      "overdrives": {
+        "overdrive:16000043": "https://cdn.brawlfind.com/hypercharges/Edgar.webp"
+      }
     },
     "16000044": {
       "name": "Ruffs",
@@ -1298,7 +1320,9 @@
       },
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {}
+      "overdrives": {
+        "overdrive:16000054": "https://cdn.brawlfind.com/hypercharges/Fang.webp"
+      }
     },
     "16000056": {
       "name": "Eve",
@@ -1322,7 +1346,9 @@
       },
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {}
+      "overdrives": {
+        "overdrive:16000056": "https://cdn.brawlfind.com/hypercharges/Eve.webp"
+      }
     },
     "16000057": {
       "name": "Janet",
@@ -1346,7 +1372,9 @@
       },
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {}
+      "overdrives": {
+        "overdrive:16000057": "https://cdn.brawlfind.com/hypercharges/Janet.webp"
+      }
     },
     "16000058": {
       "name": "Bonnie",
@@ -1370,7 +1398,9 @@
       },
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {}
+      "overdrives": {
+        "overdrive:16000058": "https://cdn.brawlfind.com/hypercharges/Bonnie.webp"
+      }
     },
     "16000059": {
       "name": "Otis",
@@ -1610,7 +1640,9 @@
       },
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {}
+      "overdrives": {
+        "overdrive:16000068": "https://cdn.brawlfind.com/hypercharges/Maisie.webp"
+      }
     },
     "16000069": {
       "name": "Hank",
@@ -1634,7 +1666,9 @@
       },
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {}
+      "overdrives": {
+        "overdrive:16000069": "https://cdn.brawlfind.com/hypercharges/Hank.webp"
+      }
     },
     "16000070": {
       "name": "Cordelius",
@@ -1658,7 +1692,9 @@
       },
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {}
+      "overdrives": {
+        "overdrive:16000070": "https://cdn.brawlfind.com/hypercharges/Cordelius.webp"
+      }
     },
     "16000071": {
       "name": "Doug",
@@ -1682,7 +1718,9 @@
       },
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {}
+      "overdrives": {
+        "overdrive:16000071": "https://cdn.brawlfind.com/hypercharges/Doug.webp"
+      }
     },
     "16000072": {
       "name": "Pearl",
@@ -1922,7 +1960,9 @@
       },
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {}
+      "overdrives": {
+        "overdrive:16000081": "https://cdn.brawlfind.com/hypercharges/Lily.webp"
+      }
     },
     "16000082": {
       "name": "Berry",
@@ -2018,7 +2058,9 @@
       },
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {}
+      "overdrives": {
+        "overdrive:16000085": "https://cdn.brawlfind.com/hypercharges/Kenji.webp"
+      }
     },
     "16000086": {
       "name": "Shade",
@@ -2042,7 +2084,9 @@
       },
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {}
+      "overdrives": {
+        "overdrive:16000086": "https://cdn.brawlfind.com/hypercharges/Shade.webp"
+      }
     },
     "16000087": {
       "name": "Juju",
@@ -2066,7 +2110,9 @@
       },
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {}
+      "overdrives": {
+        "overdrive:16000087": "https://cdn.brawlfind.com/hypercharges/Juju.webp"
+      }
     },
     "16000089": {
       "name": "Meeple",
@@ -2294,7 +2340,9 @@
       },
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {}
+      "overdrives": {
+        "overdrive:16000098": "https://cdn.brawlfind.com/hypercharges/Ziggy.webp"
+      }
     },
     "16000099": {
       "name": "Pierce",
@@ -2312,7 +2360,9 @@
       },
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {}
+      "overdrives": {
+        "overdrive:16000099": "https://cdn.brawlfind.com/hypercharges/Pierce.webp"
+      }
     },
     "16000100": {
       "name": "Gigi",
@@ -2330,7 +2380,9 @@
       },
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {}
+      "overdrives": {
+        "overdrive:16000100": "https://cdn.brawlfind.com/hypercharges/Gigi.webp"
+      }
     },
     "16000101": {
       "name": "Glowy",
