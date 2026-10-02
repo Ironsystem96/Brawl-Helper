@@ -105,11 +105,11 @@ function buffieSetsFor(b){
 }
 function buffieRows(b){
  const labels={gadget:'Gadget Buffie',starPower:'Star Buffie',hyperCharge:'Hyper Buffie'};
- return buffieSetsFor(b).map((set,i)=>{
-   const key=['gadget','starPower','hyperCharge'][i];
+ return ['gadget','starPower','hyperCharge'].map(key=>{
+   const set=(COMPONENT_STATE.entries[String(b?.id||'')]||{}).buffieSets?.[key]||null;
    const state=buffieState(b,key);
    return [labels[key],key,set?[set]:[],state];
- }).filter(x=>x[2].length);
+ });
 }
 function buffieOptions(b,key){
  const set=(COMPONENT_STATE.entries[String(b?.id||'')]||{}).buffieSets?.[key];
@@ -233,7 +233,7 @@ function compIcon(type,item,b=null){
      return '<span class="compIcon buffieVisual '+esc(k)+'" aria-label="'+esc(item?.name||'Buffie')+'">'+mark+'</span>';
    }
    if(type==='hyperCharges'||type==='hc')return '<span class="compIcon buffieVisual hyperCharge" aria-label="Hypercharge">H</span>';
-   if(type==='overdrives'||type==='overdrive')return '<span class="compIcon buffieVisual overdriveVisual" aria-label="Overdrive">O</span>';
+   if(type==='overdrives'||type==='overdrive')return '<span class="compIcon buffieVisual overdriveVisual" aria-label="Overdrive">⚡</span>';
    return '<span class="compIcon pendingIcon" aria-label="Image unavailable">?</span>';
  }
  return '<img class="compIcon" loading="lazy" src="'+esc(src)+'" alt="" aria-hidden="true" onerror="this.replaceWith(Object.assign(document.createElement(\'span\'),{className:\'compIcon pendingIcon\',textContent:\'?\'}))">';
