@@ -55,7 +55,7 @@ function hyperchargeBlock(b){
  const p=profile(b),c=window.catalogEntry?.(b)||{},h=p?.hyperCharge||c?.hyperCharges?.[0]||null;
  const buffs=window.buffieOptions?.(b,'hyperCharge')||[];
  if(!h&&!buffs.length)return '<section class="v3Card v3Missing"><div>'+sectionTitle('HYPERCHARGE','Hypercharge','data status')+'</div><p>Hypercharge is not yet present in the synchronized game-data profile for this Brawler. The app will not invent its name or effect.</p><a target="_blank" rel="noopener" href="'+E(sourceUrl(b))+'">Open source page →</a></section>';
- return '<section class="v3Card v3Hyper"><div>'+sectionTitle('HYPERCHARGE',h?.name||'Hypercharge','verified data when available')+'</div><div class="v3HyperBody">'+(h?icon('hyperCharges',h,b):'<span class="v3UnknownIcon">?</span>')+'<div><b>'+E(h?.name||'Hypercharge effect pending')+'</b><p>'+E(h?.description||'The current synchronized source exposes the Hypercharge Buffie but not the complete Hypercharge definition.')+'</p></div></div>'+
+ return '<section class="v3Card v3Hyper" id="extras"><div>'+sectionTitle('HYPERCHARGE',h?.name||'Hypercharge','verified data when available')+'</div><div class="v3HyperBody">'+(h?icon('hyperCharges',h,b):'<span class="v3UnknownIcon">?</span>')+'<div><b>'+E(h?.name||'Hypercharge effect pending')+'</b><p>'+E(h?.description||'The current synchronized source exposes the Hypercharge Buffie but not the complete Hypercharge definition.')+'</p></div></div>'+
  (buffs.length?'<div class="v3BuffieEffect"><b>BUFFIE</b><span>'+E(buffs[0].description||'')+'</span></div>':'')+
  '<div class="v3HcStats"><span>Hypercharge <b>ACTIVE</b></span><span>Buffie <b>'+(buffs.length?'AVAILABLE':'N/A')+'</b></span><span>Effect <b>SEE ABOVE</b></span></div></section>';
 }
@@ -70,7 +70,7 @@ function attackBlock(b){
  const p=profile(b),st=p?.baseStats||{},a=p?.attack,s=p?.super;
  const stats=[['Health',st.health],['Movement Speed',st.speed],['Attack Damage',st.attackDamage],['Attack Range',st.attackRange],['Reload',st.reloadMs?Math.round(st.reloadMs/100):null],['Super Charge',st.superChargeMultiplier]];
  const attackType=JSON.stringify('attack'),superType=JSON.stringify('super');
- return '<section class="v3Card"><div>'+sectionTitle('GAME DATA','Stats & abilities',p?.coverage?.fields?.attack?'BrawlAPI':'partial')+
+ return '<section class="v3Card" id="game-data"><div>'+sectionTitle('GAME DATA','Stats & abilities',p?.coverage?.fields?.attack?'BrawlAPI':'partial')+
  '<div class="v3StatsGrid">'+stats.map(x=>'<div><span>'+E(x[0])+'</span><b>'+E(x[1]==null?'—':String(x[1]))+'</b></div>').join('')+'</div>'+
  '<div class="v3AbilityGrid">'+
  '<button class="v3AbilityCard attack" type="button" onclick="abilityModalV3('+b.id+','+attackType+')"><div class="v3AbilityTag">ATTACK</div><b>'+E(a?.name||'Attack')+'</b><p>'+E(a?.description||'Description not available in synchronized game data.')+'</p><span class="v3TapHint">TAP FOR DETAILS</span></button>'+
@@ -80,7 +80,7 @@ function attackBlock(b){
 function trendsBlock(b){
  const n=noff(b),m=n?.stats||{};
  const rows=modeRows(b),maps=mapRows(b);
- return '<section class="v3Card">'+sectionTitle('BATTLE TRENDS','Current statistics',(n?.sample?F(n.sample)+' builds':'NOFF snapshot'))+
+ return '<section class="v3Card" id="trends">'+sectionTitle('BATTLE TRENDS','Current statistics',(n?.sample?F(n.sample)+' builds':'NOFF snapshot'))+
  '<div class="v3TrendHero"><div><span>WIN RATE</span><b>'+PCT(m.winRate)+'</b></div><div><span>PICK RATE</span><b>'+PCT(m.pickRate)+'</b></div><div><span>DATA SAMPLE</span><b>'+F(n?.sample||build(b)?.sample||0)+'</b></div></div>'+
  '<div class="v3ContextText">Mode and map values below are synchronized from the current NOFF community snapshot. They are contextual statistics, not official Supercell recommendations.</div>'+
  '<div class="v3SubTitle">BEST GAME MODES</div><div class="v3Table">'+rows.map((x,i)=>'<button type="button" class="v3TableRow v3TableButton '+(i<3?'hot':'')+'" onclick="infoModalV3('+JSON.stringify(x.name)+',\'MODE STATISTICS\',\'Contextual community statistics for this game mode.\','+JSON.stringify([['Win rate',PCT(x.winRate)],['Pick rate',PCT(x.pickRate)],['Context score',stat(x.score)]]).replace(/"/g,'&quot;')+')"><div class="v3Name"><span class="v3Index">'+(i+1)+'</span><b>'+E(x.name)+'</b></div><span>'+PCT(x.winRate)+'</span><span>'+PCT(x.pickRate)+'</span><strong>'+stat(x.score)+'</strong></button>').join('')+'</div>'+
@@ -191,5 +191,38 @@ const css=String.raw`
 @media(max-width:700px){.v3ComponentList{grid-template-columns:repeat(2,minmax(0,1fr))!important}.v3Component{min-height:126px!important}.v3Component:last-child{grid-column:1/-1}.v3BuffGrid{grid-template-columns:1fr!important}.v3BuffGrid button{min-height:84px!important}}
 @media(min-width:701px) and (max-width:1050px){.v3ComponentList{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
 .v3AbilityCard{appearance:none;width:100%;text-align:left;color:#fff;background:linear-gradient(145deg,#1b2a43,#111b2c);border:1px solid #405778;border-radius:13px;padding:12px;cursor:pointer;transition:transform .16s,border-color .16s,box-shadow .16s}.v3AbilityCard:hover,.v3AbilityCard:focus-visible{transform:translateY(-2px);border-color:#ffd34e;box-shadow:0 10px 22px rgba(0,0,0,.24);outline:none}.v3AbilityCard p{min-height:44px}.v3AbilityCard.super{background:linear-gradient(145deg,#302b18,#111b2c)}.v3TapHint{display:block;margin-top:7px;color:#ffd34e;font-size:7px;font-weight:950;letter-spacing:1px}.v3AbilityBox{max-width:560px}.abilityModalHero{display:flex;align-items:center;gap:10px;border:1px solid #3e5575;border-radius:12px;padding:12px;background:#17263d}.abilityModalHero.super{background:#2a2517}.abilityModalHero span{font-size:8px;font-weight:950;color:#ffd34e;letter-spacing:1px}.abilityModalHero b{font-size:16px}.abilityModalDescription{font-size:12px;line-height:1.55;color:#d2dbe8}.abilityModalStats{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}.abilityModalStats span{background:#202c41;border:1px solid #3b4b65;border-radius:8px;padding:8px;font-size:8px;color:#9eacc0}.abilityModalStats b{display:block;color:#fff;font-size:13px;margin-top:2px}.abilityModalNote{margin-top:9px;padding:9px;border-left:3px solid #ffd34e;background:rgba(255,211,78,.06);font-size:9px;color:#aebbd0;line-height:1.4}.buffieVisual{display:grid!important;place-items:center!important;font-weight:1000!important;font-size:18px!important;color:#fff!important;background:linear-gradient(145deg,#6c4c7d,#30213d)!important;border:1px solid #c88df0!important;border-radius:12px!important;box-shadow:inset 0 0 0 2px rgba(255,255,255,.08),0 5px 10px rgba(0,0,0,.25)!important}.buffieVisual.gadget{background:linear-gradient(145deg,#496a9b,#1d2d4b)!important;border-color:#7eb3ff!important}.buffieVisual.starPower{background:linear-gradient(145deg,#8a5c42,#3d2418)!important;border-color:#ffbd78!important}.buffieVisual.hyperCharge{background:linear-gradient(145deg,#6b4aa0,#291c49)!important;border-color:#d5a4ff!important}.overdriveVisual{background:linear-gradient(145deg,#7c5a2d,#352513)!important;border-color:#e0b15b!important}`;
+
+.v3QuickNav{position:sticky;top:0;z-index:4;display:flex;gap:6px;overflow:auto;padding:7px 0;margin:0 0 8px;background:rgba(8,13,25,.88);backdrop-filter:blur(12px);scrollbar-width:none}
+.v3QuickNav::-webkit-scrollbar{display:none}
+.v3QuickNav a{flex:0 0 auto;text-decoration:none;color:#b9c7dc;background:#17253c;border:1px solid #3d5475;border-radius:999px;padding:7px 10px;font-size:8px;font-weight:950;letter-spacing:.5px}
+.v3QuickNav a:first-child{background:#ffd34e;color:#111827;border-color:#ffe68a}
+.v3QuickCard{margin:8px 0 10px;padding:12px;border:1px solid #5a6f91;border-radius:16px;background:linear-gradient(145deg,#1b2d49,#101a2c);box-shadow:0 10px 25px rgba(0,0,0,.2)}
+.v3QuickHead{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.v3QuickHead span:first-child{display:block;color:#ffd34e;font-size:8px;font-weight:950;letter-spacing:1.5px}
+.v3QuickHead h2{margin:2px 0 3px;color:#fff;font-size:21px}
+.v3QuickHead p{margin:0;color:#aebbd0;font-size:9px;line-height:1.35}
+.v3QuickBadge{font-size:7px;font-weight:950;color:#111827;background:#ffd34e;border-radius:7px;padding:5px 6px;white-space:nowrap}
+.v3QuickSlots{display:flex;gap:6px;overflow-x:auto;padding:10px 1px 4px;scroll-snap-type:x mandatory;scrollbar-width:none}
+.v3QuickSlots::-webkit-scrollbar{display:none}
+.v3QuickSlot{position:relative;flex:0 0 142px;min-height:104px;display:flex;align-items:center;gap:7px;text-align:left;color:#fff;background:#17253b;border:1px solid #405778;border-radius:12px;padding:8px;scroll-snap-align:start}
+.v3QuickSlot:active{transform:scale(.98)}
+.v3QuickSlot.pending{opacity:.58;cursor:default}
+.v3QuickNum{position:absolute;top:6px;right:7px;font-size:8px;font-weight:950;color:#8fa0b8}
+.v3QuickIcon{width:43px;height:43px;display:grid;place-items:center;flex:none}
+.v3QuickIcon .compIcon{width:43px;height:43px;object-fit:contain;filter:drop-shadow(0 3px 5px rgba(0,0,0,.3))}
+.v3QuickInfo{min-width:0}
+.v3QuickInfo small{display:block;color:#8ea1bc;font-size:7px;font-weight:950;letter-spacing:.6px}
+.v3QuickInfo b{display:block;color:#fff;font-size:10px;line-height:1.15;margin:3px 0;word-break:break-word}
+.v3QuickInfo em{display:inline-block;font-style:normal;color:#9ff0c6;border:1px solid #3d8067;border-radius:5px;padding:2px 4px;font-size:6px;font-weight:950}
+.v3QuickSlot.pending .v3QuickInfo em{color:#ffd34e;border-color:#806d2f}
+.v3QuickFoot{font-size:7px;color:#8f9db2;border-top:1px solid #304564;padding-top:7px}
+.v3QuickFoot span{color:#ffd34e;font-weight:950}
+.v3MetaContext,.v3Card[id="game-data"],.v3Card[id="trends"]{scroll-margin-top:48px}
+@media(max-width:430px){
+ .v3QuickHead h2{font-size:19px}
+ .v3QuickSlot{flex-basis:148px}
+ .v3QuickNav a{padding:7px 9px}
+}
+
 const st=document.createElement('style');st.id='bh-detail-v3';st.textContent=css;document.head.appendChild(st);
 })();
