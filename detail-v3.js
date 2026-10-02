@@ -132,7 +132,14 @@ function overdriveBlock(b){
 }
 function buffieBlock(b){
  const rows=window.buffieRows?.(b)||[];
- return '<section class="v3Card">'+sectionTitle('BUFFIES','Functional upgrades','3 categories')+'<div class="v3BuffGrid">'+rows.map(([label,key,items,own])=>'<button type="button" onclick="componentModalV2ById('+b.id+',\'buffies\',\''+key+'\')"><span class="v3BuffIcon">'+(own===true?'✓':items.length?'•':'×')+'</span><div><b>'+E(label)+'</b><small>'+E(own===true?'UNLOCKED':items.length?'AVAILABLE':'DATA N/A')+'</small><p>'+E(items[0]?.description||'Tap to inspect the available Buffie effects.')+'</p></div></button>').join('')+'</div></section>';
+ return '<section class="v3Card v3BuffiesCard">'+sectionTitle('BUFFIES','Functional upgrades','3 slots per Brawler')+'<div class="v3BuffGrid">'+rows.map(([label,key,items,own])=>{
+ const available=items.length>0,cls=own===true?'owned':available?'available':'missing';
+ const click=available?'onclick="componentModalV2ById('+b.id+',\'buffies\',\''+key+'\')"':'';
+ const icon=own===true?'✓':available?'•':'—';
+ const text=own===true?'UNLOCKED':available?'AVAILABLE':'NOT AVAILABLE';
+ const desc=items[0]?.description||'No validated Buffie data is currently linked to this Brawler.';
+ return '<button type="button" class="'+cls+'" '+click+'><span class="v3BuffIcon">'+icon+'</span><div><b>'+E(label)+'</b><small>'+text+'</small><p>'+E(desc)+'</p></div>'+(available?'<strong>OPEN →</strong>':'')+'</button>';
+}).join('')+'</div><p class="v3BuffieNote">Brawl Helper shows the three Buffie slots separately. If a Brawler has no validated Buffie yet, it is marked as such instead of inventing an effect.</p></section>';
 }
 
 function detailV3(b){
