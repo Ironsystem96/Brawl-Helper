@@ -69,9 +69,14 @@ window.infoModalV3=infoModalV3;
 function attackBlock(b){
  const p=profile(b),st=p?.baseStats||{},a=p?.attack,s=p?.super;
  const stats=[['Health',st.health],['Movement Speed',st.speed],['Attack Damage',st.attackDamage],['Attack Range',st.attackRange],['Reload',st.reloadMs?Math.round(st.reloadMs/100):null],['Super Charge',st.superChargeMultiplier]];
- return '<section class="v3Card"><div>'+sectionTitle('GAME DATA','Stats & abilities',p?.coverage?.fields?.attack?'BrawlAPI':'partial')+'</div>'+
+ const attackType=JSON.stringify('attack'),superType=JSON.stringify('super');
+ return '<section class="v3Card"><div>'+sectionTitle('GAME DATA','Stats & abilities',p?.coverage?.fields?.attack?'BrawlAPI':'partial')+
  '<div class="v3StatsGrid">'+stats.map(x=>'<div><span>'+E(x[0])+'</span><b>'+E(x[1]==null?'—':String(x[1]))+'</b></div>').join('')+'</div>'+
- '<div class="v3AbilityGrid"><button class="v3AbilityCard attack" type="button" onclick="abilityModalV3('+b.id+',\'attack\')"><div class="v3AbilityTag">ATTACK</div><b>'+E(a?.name||'Attack')+'</b><p>'+E(a?.description||'Description not available in synchronized game data.')+'</p><span class="v3TapHint">TAP FOR DETAILS</span></button><button class="v3AbilityCard super" type="button" onclick="abilityModalV3('+b.id+',\'super\')"><div class="v3AbilityTag super">SUPER</div><b>'+E(s?.name||'Super')+'</b><p>'+E(s?.description||'Description not available in synchronized game data.')+'</p><span class="v3TapHint">TAP FOR DETAILS</span></button></div></section>}
+ '<div class="v3AbilityGrid">'+
+ '<button class="v3AbilityCard attack" type="button" onclick="abilityModalV3('+b.id+','+attackType+')"><div class="v3AbilityTag">ATTACK</div><b>'+E(a?.name||'Attack')+'</b><p>'+E(a?.description||'Description not available in synchronized game data.')+'</p><span class="v3TapHint">TAP FOR DETAILS</span></button>'+
+ '<button class="v3AbilityCard super" type="button" onclick="abilityModalV3('+b.id+','+superType+')"><div class="v3AbilityTag super">SUPER</div><b>'+E(s?.name||'Super')+'</b><p>'+E(s?.description||'Description not available in synchronized game data.')+'</p><span class="v3TapHint">TAP FOR DETAILS</span></button>'+
+ '</div></section>';
+}
 function trendsBlock(b){
  const n=noff(b),m=n?.stats||{};
  const rows=modeRows(b),maps=mapRows(b);
