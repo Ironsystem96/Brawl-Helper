@@ -1103,3 +1103,109 @@ body{color:#f4f7fb}
 .sectionTitle h2{letter-spacing:-.35px!important}
 .bcard{background:linear-gradient(145deg,#16253d,#101a2b)!important;border-color:#344b6b!important;box-shadow:0 8px 20px rgba(0,0,0,.14)!important}
 .bcard:hover{border-color:#607a9f!important}
+
+
+/* v9 LIGHT GAME-COMPANION UX
+   Direction: bright Brawl Stars-inspired surface, game-card hierarchy, build-first decisions.
+*/
+:root{
+ --bg:#eef5ff;--surface:#ffffff;--surface2:#f5f8fd;--surface3:#e8f0fb;
+ --line:#d3deec;--text:#17233a;--muted:#687a95;--accent:#ffca28;
+ --strong:#101a2d;--good:#20a86b;--warn:#e79a21;--bad:#e85c69;
+ --blue:#2f73e8;--blue2:#5da4ff;--purple:#7957d5;
+ --shadow:0 8px 24px rgba(37,68,110,.10);--shadow2:0 16px 42px rgba(37,68,110,.14)
+}
+html{background:var(--bg)}
+body{background:
+ radial-gradient(circle at 10% -5%,rgba(93,164,255,.24),transparent 30%),
+ radial-gradient(circle at 100% 8%,rgba(121,87,213,.16),transparent 25%),
+ linear-gradient(180deg,#edf6ff 0%,#e8f0fb 100%);
+ color:var(--text)}
+.app{background:transparent}
+.top{background:rgba(247,251,255,.90)!important;border-bottom:1px solid #cfdbeb!important;box-shadow:0 4px 18px rgba(40,72,110,.07);backdrop-filter:blur(18px) saturate(1.1)}
+.logo{color:#17233a!important;text-shadow:none}.logo span{color:#2f73e8!important}
+.sync{background:#ffcf32!important;color:#17233a!important;border-color:#f2b91e!important}
+.profileBtn{background:#fff!important;color:#344967!important;border-color:#cfdaea!important;box-shadow:0 4px 12px rgba(37,68,110,.08)}
+.content{color:var(--text)}
+.hero{background:linear-gradient(145deg,#ffffff,#eaf3ff)!important;border-color:#cbd9ea!important;box-shadow:var(--shadow)!important}
+.hero h1,.section h2,.section h3,.card h2,.card h3,.bname,.action b,.comp b,.rank b,.stat b,.upgradeName{color:#17233a!important}
+.eyebrow{color:#557092!important}.tag,.small,.muted{color:#6d7f99!important}
+.card,.action,.comp,.upgradeRow{background:#fff!important;color:#17233a!important;border-color:#d3deec!important;box-shadow:var(--shadow)!important}
+.stat{background:#f5f9ff!important;border-color:#d5e0ef!important}.stat span{color:#70819a!important}
+.rank{background:linear-gradient(90deg,#fff8da,#eef7ff)!important;color:#263a59!important;border-color:#e5d68c!important}
+.chip{background:#eef4fc!important;color:#395170!important;border-color:#ccd9ea!important}
+.search{background:#fff!important;color:#17233a!important;border-color:#c7d6e8!important}
+.filters button{background:#fff!important;color:#50647f!important;border-color:#cbd8e8!important}
+.filters button.active{background:#ffcf32!important;color:#17233a!important;border-color:#eab51c!important;box-shadow:0 4px 12px rgba(235,181,28,.20)}
+.componentGrid .comp:hover{background:#f6faff!important}
+.portrait{background:linear-gradient(145deg,#e9f2ff,#dce9fa)!important;border-color:#c4d5ea!important}
+.notice{background:linear-gradient(90deg,#eef7ff,#f6f0ff)!important;border-color:#ccd9eb!important;color:#435a78!important}
+.nav{background:rgba(255,255,255,.94)!important;border-top:1px solid #cbd8e8!important;box-shadow:0 -8px 25px rgba(37,68,110,.10)!important}
+.nav button{color:#71839d!important}.nav button.active{color:#2468dc!important;background:#edf5ff!important}.nav button.active .navIcon{color:#2468dc!important}
+.back{color:#304867!important}
+.primary,.modal .primary{background:#ffca28!important;color:#17233a!important;border-color:#e4af17!important;box-shadow:0 7px 18px rgba(226,175,23,.20)!important}
+.close,.secondaryBtn{background:#edf3fb!important;color:#304867!important;border-color:#cbd8e8!important}
+.modal{background:rgba(23,35,58,.38)!important}
+.modalBox{background:#fff!important;color:#17233a!important;border-color:#cfdaea!important}
+.modalHead h2,.modalBox h2,.modalBox h3{color:#17233a!important}
+.modalHead button{background:#eef3fa!important;color:#304867!important;border-color:#cbd8e8!important}
+.modal input,.profileForm input{background:#fff!important;color:#17233a!important;border-color:#c7d6e8!important}
+.profileForm label{color:#344b69!important}.fieldHint,.onboardHelp span{color:#71839b!important}
+.onboardForm{background:#f4f8fd!important;border-color:#d1ddea!important}.onboardHelp{background:#edf5ff!important;border-color:#cfdaea!important;color:#344b69!important}
+.onboardIcon{background:#fff!important;color:#2f73e8!important;border-color:#ffca28!important}
+.modalBrand{color:#2f73e8!important}
+.profileRow>button:first-child{background:#f4f8fd!important;color:#304867!important;border-color:#d0dcea!important}
+.del{background:#edf3fb!important;color:#344967!important;border-color:#c5d3e4!important}
+.miniItem,.miniState{background:#edf4fc!important;color:#4b617d!important;border-color:#cfdaea!important}
+.miniItem.ownedMini{background:#e6f7ef!important;color:#16774e!important;border-color:#a8dcc4!important}
+.miniItem.buyMini{background:#fff4da!important;color:#9a6500!important;border-color:#edcf87!important}
+.actionPill{background:#edf4fc!important;color:#45607f!important;border-color:#cbd9e9!important}
+.buyAction{background:#ffcf32!important;color:#17233a!important;border-color:#e7b61d!important}
+.equipAction{background:#e5f7ef!important;color:#16774e!important;border-color:#9fd7bd!important}
+.powerAction{background:#e8f4ff!important;color:#2368aa!important;border-color:#a8d3f5!important}
+.mutedAction{background:#f1f4f8!important;color:#71819a!important;border-color:#d6dfe9!important}
+.rankBadge,.num{background:#edf4fc!important;color:#2468dc!important;border-color:#cbd9e9!important}
+.recommendedCard{background:linear-gradient(145deg,#fff8dc,#fff)!important;border-color:#e7cf76!important}
+.top10Legend span{background:#edf4fc!important;color:#405777!important;border-color:#cbd9e9!important}
+.guideContext{background:#f4f8fd!important;border-color:#cfdaea!important}.guideContext span,.guideComponent small{color:#70829c!important}.guideContext b{color:#17233a!important}
+.guideComponent{background:#fff!important;color:#17233a!important;border-color:#d0dcea!important;box-shadow:0 4px 12px rgba(37,68,110,.07)}
+.guideComponent:hover{border-color:#76a7e9!important}
+.bhEyebrow{color:#567093!important}.bhRole,.bhBuildMatch,.bhContextScore{background:#edf4fc!important;color:#55708e!important;border-color:#cfdaea!important}
+.bhHero,.bhHomeHero,.bhDashHero{background:linear-gradient(145deg,#fff,#edf6ff)!important;border-color:#cbd9ea!important;box-shadow:var(--shadow)!important}
+.bhHero h1,.bhDashHero h1,.bhHomeHero h1{color:#17233a!important}
+.bhHeroMeta span,.bhHomeStats>div,.bhDashContext>div,.bhDashNav button,.bhDashPanel,.bhDashFooter div{background:#f5f9ff!important;border-color:#d1ddea!important;color:#304867!important}
+.bhBuildCard,.bhQuickGuide,.bhDashFocus,.bhMetaPanel,.bhAccountPulse{background:#fff!important;border-color:#d1ddea!important}
+.bhBuildSlot,.bhQuickLoadout .bhBuildSlot,.bhHomeBuildSlot{background:#f2f7fd!important;border-color:#cbd9ea!important;color:#17233a!important}
+.bhSlotText b,.bhQuickSlot .v3QuickInfo b{color:#17233a!important}
+.bhStatus{background:#edf4fc!important}
+.bhMetaGood,.bhEquipped{background:#e5f7ef!important;color:#16774e!important;border-color:#a8dcc4!important}
+.bhMetaOwned,.bhOwned{background:#eaf4ff!important;color:#2868a7!important;border-color:#b7d3ee!important}
+.bhMetaMissing,.bhMissing{background:#fff4da!important;color:#986500!important;border-color:#edcf87!important}
+.bhActionBadge,.bhFocusAction,.bhDashAction{background:#f4f8fd!important;border-color:#d0dcea!important}
+.bhPrimaryOpen{background:#ffca28!important;color:#17233a!important;border-color:#e3b21b!important}
+.bhMetaPick,.bhHomeMetaRow,.bhHomeActionRow{background:#fff!important;color:#17233a!important;border-color:#dbe3ed!important}
+.bhMetaScore{color:#2468dc!important}.bhPulseGrid>div{background:#f4f8fd!important;border-color:#d0dcea!important}
+.bhQuickCard{background:linear-gradient(145deg,#fff9df,#fff)!important;border-color:#e2cb70!important;box-shadow:var(--shadow)!important}
+.v3QuickNav{background:rgba(247,251,255,.94)!important}.v3QuickNav a{background:#edf4fc!important;color:#506782!important;border-color:#cbd9e9!important}.v3QuickNav a:first-child{background:#ffca28!important;color:#17233a!important;border-color:#e3b21b!important}
+.v3DecisionPanel{background:linear-gradient(145deg,#fff8dc,#fff)!important;border-color:#e0c86b!important;box-shadow:var(--shadow)!important}.v3DecisionPanel.ready{background:linear-gradient(145deg,#e9f8f1,#fff)!important;border-color:#a8d9c1!important}
+.v3DecisionMain h2,.v3DecisionMain p,.v3QuickHead h2{color:#17233a!important}.v3DecisionMain small,.v3QuickHead p{color:#687b96!important}
+.v3DecisionIcon{background:#ffefb0!important;color:#9a6900!important;border-color:#dfc25c!important}.v3DecisionPanel.ready .v3DecisionIcon{background:#dff5eb!important;color:#17774f!important;border-color:#a5d7be!important}
+.v3ContextPill,.v3QuickSlot{background:#f1f6fc!important;color:#17233a!important;border-color:#cad8e8!important}
+.v3QuickInfo b{color:#17233a!important}.v3QuickInfo small{color:#687b96!important}.v3QuickSlot .v3QuickState.good{color:#16774e!important;border-color:#a8d7bf!important}.v3QuickSlot .v3QuickState.buy{color:#9a6500!important;border-color:#e6c77a!important}
+.v3Card{background:#fff!important;border-color:#d0dcea!important;color:#17233a!important;box-shadow:var(--shadow)!important}
+.v3Title h2,.v3AbilityCard b,.v3Component,.v3Component b,.v3TrendHero b{color:#17233a!important}
+.v3Title>div>span,.v3Eyebrow{color:#2f73e8!important}.v3Title small,.v3ContextText,.v3Footnote{color:#71839c!important}
+.v3MetaContext{background:linear-gradient(145deg,#edf6ff,#fff)!important}.v3Pills button{background:#fff!important;color:#526b89!important;border-color:#cad8e8!important}.v3Pills button.active{background:#ffca28!important;color:#17233a!important;border-color:#e3b21b!important}
+.v3SelectedMeta{background:#fff8dc!important;color:#50627c!important;border-left-color:#ffca28!important}
+.v3ActionStrip>div,.v3StatsGrid>div,.v3TrendHero>div,.v3TableRow,.v3Component,.v3BuildHero button,.v3Why,.v3Coverage span{background:#f4f8fd!important;border-color:#d0dcea!important}
+.v3ActionStrip b,.v3Rec,.v3Why b{color:#2f73e8!important}.v3ActionStrip span,.v3Component p,.v3Why p{color:#304867!important}
+.v3State.good{color:#16774e!important;border-color:#a8d7bf!important}.v3State.owned{color:#2868a7!important}.v3State.missing{color:#b64d5c!important}
+.v3Hyper,.v3Card.v3Hyper{background:linear-gradient(145deg,#f2eaff,#fff)!important;border-color:#cbb9ed!important}
+.v3BuffGrid button{background:#f5f8fd!important;border-color:#d0dcea!important;color:#17233a!important}
+.v3BuffGrid b{color:#17233a!important}.v3BuffGrid small,.v3BuffGrid p{color:#71839c!important}
+.v3Hero{background:linear-gradient(180deg,#8bd5ff 0%,#5aa5e7 37%,#edf5ff 73%,#e9f1fb 100%)!important;border-color:#b8d4ed!important}
+.v3Hero:after{background:linear-gradient(0deg,rgba(236,245,255,.96) 4%,rgba(236,245,255,.05) 100%)!important}
+.v3Hero h1{color:#17233a!important;text-shadow:2px 3px rgba(255,255,255,.65)!important}.v3HeroCopy p{color:#314b6a!important;text-shadow:none!important}.v3HeroBadges span{background:rgba(255,255,255,.82)!important;color:#35516f!important;border-color:#c3d6e9!important}.v3HeroBadges span.owned{color:#16774e!important;border-color:#9fd6bc!important}
+.v3Source{color:#2468dc!important}
+@media(min-width:700px){.app{background:rgba(246,250,255,.76)!important;box-shadow:0 10px 50px rgba(37,68,110,.10)!important}}
+
