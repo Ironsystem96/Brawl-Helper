@@ -164,7 +164,7 @@ function detailV3(b){
  const buffAvailable=buffRows.filter(x=>x[2]?.length).length;
  const buffOwned=buffRows.filter(x=>x[3]===true).length;
  const modes=Object.keys(window.MODES||{}).map(name=>({name,m:window.metaEntry?.(b,name,'Random')})).filter(x=>x.m?.score!=null).sort((a,z)=>Number(z.m.score)-Number(a.m.score));
- const modeCards=modes.slice(0,7).map(x=>'<button class="rhModeRow" type="button" onclick="playMode='+JSON.stringify(x.name)+';playMap=\\'Random\\';render()"><span class="rhModeIcon">'+(x.name==='Ranked'?'◉':x.name==='Gem Grab'?'⬢':x.name==='Brawl Ball'?'◈':x.name==='Knockout'?'◌':'●')+'</span><b>'+E(x.name)+'</b><strong>'+E(x.m.winRate!=null?x.m.winRate+'%':'—')+'</strong><small>WR</small><strong>'+E(x.m.pickRate!=null?x.m.pickRate+'%':'—')+'</strong><small>USE</small><em>'+E(x.m.score!=null?Math.round(x.m.score):'—')+'</em><i>›</i></button>').join('');
+ const modeCards=modes.slice(0,7).map(x=>'<button class="rhModeRow" type="button" onclick="playMode='+H(x.name)+';playMap=\\'Random\\';render()"><span class="rhModeIcon">'+(x.name==='Ranked'?'◉':x.name==='Gem Grab'?'⬢':x.name==='Brawl Ball'?'◈':x.name==='Knockout'?'◌':'●')+'</span><b>'+E(x.name)+'</b><strong>'+E(x.m.winRate!=null?x.m.winRate+'%':'—')+'</strong><small>WR</small><strong>'+E(x.m.pickRate!=null?x.m.pickRate+'%':'—')+'</strong><small>USE</small><em>'+E(x.m.score!=null?Math.round(x.m.score):'—')+'</em><i>›</i></button>').join('');
  const buildSlots=buildItems.slice(0,5).map(([label,type,item])=>{
    const pending=!item||String(item.id||'').startsWith('pending:')||String(item.id||'').startsWith('none:');
    const st=pending?'DA OTTENERE':window.itemStatus?.(b,type,item)||'NON VERIFICATO';
