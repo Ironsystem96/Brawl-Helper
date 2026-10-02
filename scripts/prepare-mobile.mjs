@@ -13,6 +13,7 @@ const files = [
   'app.js',
   'ui-v2.js',
   'detail-v3.js',
+  'component-modal.js',
   'recommendations.js',
   'sw.js',
   'manifest.webmanifest'
