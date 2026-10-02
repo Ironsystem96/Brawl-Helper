@@ -13,9 +13,9 @@
     "mobile:build:release": "npm run mobile:sync && cd android && gradlew.bat bundleRelease"
   },
   "devDependencies": {
-    "@capacitor/cli": "^8.0.0",
-    "@capacitor/core": "^8.0.0",
-    "@capacitor/android": "^8.0.0",
+    "@capacitor/cli": "^8.5.2",
+    "@capacitor/core": "^8.5.2",
+    "@capacitor/android": "^8.5.2",
     "typescript": "^5.9.3"
   }
 }
