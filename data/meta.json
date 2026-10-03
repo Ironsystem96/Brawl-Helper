@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
   "updatedAt": "2026-10-03T05:26:44.265Z",
-  "source": "Brawl Time Ninja + NOFF + optional BrawlMetrics fallback",
-  "method": "Global battle signal from Brawl Time Ninja; mode and map context from NOFF when available; BrawlMetrics is an optional fallback.",
+  "source": "Brawl Time Ninja + NOFF + Brawl Planet validation + optional BrawlMetrics fallback",
+  "method": "Global battle signal from Brawl Time Ninja; mode and map context from NOFF when available; Brawl Planet is used as an independent live-meta validation source; BrawlMetrics remains an optional fallback.",
   "coverage": {
     "brawlers": 109,
     "modes": 105,
@@ -24273,5 +24273,15 @@
         }
       }
     }
+  },
+  "validation": {
+    "validatedAt": "2026-10-03T23:07:00.000Z",
+    "sources": [
+      "Brawl Time Ninja",
+      "NOFF",
+      "Brawl Planet"
+    ],
+    "officialBalanceSource": "Supercell Release Notes",
+    "officialBalanceCheckedAt": "2026-10-03T23:07:00.000Z"
   }
 }
