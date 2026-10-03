@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-03T05:26:44.265Z",
+  "updatedAt": "2026-10-03T21:07:00.000Z",
   "sourceStatus": {
     "brawlApi": 109,
     "noff": 105,
@@ -21,9 +21,14 @@
       "name": "BrawlAPI",
       "type": "game_catalog",
       "url": "https://brawlapi.com/"
+    },
+    {
+      "name": "Brawl Planet",
+      "type": "live_meta_validation",
+      "url": "https://www.brawlplanet.com/meta"
     }
   ],
-  "note": "Automatically synchronized community/build/statistics snapshot. Values are source data, not official Supercell recommendations.",
+  "note": "Automatically synchronized community/build/statistics snapshot. Values are source data, not official Supercell recommendations. Official balance values must be validated against Supercell release notes.",
   "entries": {
     "Vince": {
       "sourceUrl": "https://www.noff.gg/brawl-stars/app/brawler/vince",
@@ -14876,7 +14881,7 @@
           "slot": "hypercharge",
           "source": "Hypercharge",
           "name": "Hypercharge Buffie",
-          "description": "Max grants herself and nearby teammates 7% Super charge whenever she hits with her Main Attack."
+          "description": "Max grants herself and nearby teammates 6% Super charge whenever she hits with her Main Attack."
         }
       ],
       "stats": {
