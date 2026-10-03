@@ -58,30 +58,32 @@ window.homeContext=homeContext;
 
 function homeV2(){
  const owned=[...(P?.brawlers||[])].filter(Boolean);
- const mode=playMode||'Ranked', map=playMap||'Random';
- const ranked=window.metaRankList?.(mode,map)||[];
+ const mode=playMode||'Ranked',map=playMap||'Random';
+ const ranked=(window.metaRankList?.(mode,map)||[]).slice(0,5);
  const actionable=owned.map(b=>({b,plan:window.upgradePriority?.(b)})).filter(x=>x.plan?.actions?.length).sort((a,z)=>(z.plan.score||0)-(a.plan.score||0));
  const focus=actionable[0]?.b||owned[0]||null;
- const fm=focus?window.metaEntry?.(focus,mode,map):null;
- const quick=focus?window.guideComponents?.(focus)||[]:[];
- const next=focus&&actionable[0]?.plan?.actions?.[0];
+ const build=focus?window.guideComponents?.(focus)||[]:[];
+ const next=focus?window.nextActions?.(focus)?.find(a=>['POWER','BUY','EQUIP','VERIFY'].includes(a.type)):null;
  const modeOptions=Object.keys(MODES||{}).map(x=>'<option value="'+E(x)+'" '+(x===mode?'selected':'')+'>'+E(x)+'</option>').join('');
  const maps=Array.isArray((MODES||{})[mode])?(MODES||{})[mode]:['Random'];
  const mapOptions=maps.map(x=>'<option value="'+E(x)+'" '+(x===map?'selected':'')+'>'+E(x)+'</option>').join('');
- const top5=ranked.slice(0,5).map((x,i)=>'<button class="bhNewTopPick" type="button" onclick="openB('+x.b.id+')"><span>#'+(i+1)+'</span><img src="'+window.portrait(x.b)+'" alt=""><b>'+E(x.b.name)+'</b><small>'+(x.meta?.winRate!=null?E(x.meta.winRate)+'% WR':'—')+'</small></button>').join('');
- const build=quick.slice(0,5).map(([label,type,item],i)=>'<button class="bhNewBuildSlot" type="button" onclick="componentModalV2ById('+focus.id+',\''+type+'\','+JSON.stringify(String(item?.id||0))+')"><span>'+(i+1)+'</span>'+window.compIcon(type,item,focus)+'<small>'+E(label.startsWith('Gear')?'GEAR':label.toUpperCase())+'</small><b>'+E(item?.name||'Data unavailable')+'</b></button>').join('');
- const actions=actionable.slice(0,4).map((x,i)=>'<button class="bhNewAction" type="button" onclick="openB('+x.b.id+')"><span>'+(i+1)+'</span><img src="'+window.portrait(x.b)+'" alt=""><div><b>'+E(x.b.name)+'</b><small>'+E(x.plan.actions[0]?.label||'Review build')+'</small></div><strong>OPEN</strong></button>').join('');
+ const actions=actionable.slice(0,3).map((x,i)=>'<button class="refAction" type="button" onclick="openB('+x.b.id+')"><span class="refActionIcon">'+(i===0?'↑':i===1?'⚡':'🎮')+'</span><div><b>'+E(x.plan.actions[0]?.label||x.b.name)+'</b><small>'+E(x.plan.actions[0]?.reason||'Open the Brawler plan')+'</small></div><strong>›</strong></button>').join('');
+ const top5=ranked.map((x,i)=>'<button class="refTopCard" type="button" onclick="openB('+x.b.id+')"><span>#'+(i+1)+'</span><img src="'+window.portrait(x.b)+'" alt=""><b>'+E(x.b.name)+'</b><small>'+E(x.meta?.tier||'META')+'</small></button>').join('');
+ const slots=build.slice(0,5).map(([label,type,item])=>'<button class="refBuildSlot" type="button" onclick="componentModalV2ById('+focus.id+',\''+type+'\','+JSON.stringify(String(item?.id||0))+')">'+window.compIcon(type,item,focus)+'<small>'+E(label.startsWith('Gear')?'GEAR':label.toUpperCase())+'</small><b>'+E(item?.name||'Data unavailable')+'</b></button>').join('');
  const update=(Array.isArray(DB_STATE?.changelog)&&DB_STATE.changelog[0])||{};
- const ready=owned.length?Math.round(owned.filter(b=>window.readiness?.(b)>=70).length/owned.length*100):0;
- return '<section class="bhNewHome">'+
- '<header class="bhNewHeader"><div><span class="bhNewKicker">BRAWL HELPER</span><h1>What should I do?</h1><p>'+E(P?.name||'Player')+' · '+E(P?.tag||active)+'</p></div><button type="button" onclick="profilePanel(false)">PROFILE</button></header>'+
- '<section class="bhNewContext"><div><label>MODE</label><select onchange="homeContext(this.value,document.getElementById(\'bhNewMap\').value)">'+modeOptions+'</select></div><div><label>MAP</label><select id="bhNewMap" onchange="homeContext(document.querySelector(\'.bhNewContext select\').value,this.value)">'+mapOptions+'</select></div><div class="bhNewContextStat"><b>'+F(P?.trophies)+'</b><span>TROPHIES</span></div><div class="bhNewContextStat"><b>'+F(owned.length)+'</b><span>BRAWLERS</span></div></section>'+
- (focus?'<section class="bhNewMission"><div class="bhNewMissionTop"><span>YOUR NEXT MOVE</span><em>'+E(mode)+(map!=='Random'?' · '+E(map):'')+'</em></div><div class="bhNewFocus"><div class="bhNewFocusArt"><img src="'+window.portrait(focus)+'" alt=""></div><div class="bhNewFocusInfo"><small>PLAY THIS BRAWLER</small><h2>'+E(focus.name)+'</h2><p>Power '+F(focus.power)+' · '+F(focus.trophies)+' trophies'+(fm?' · '+(fm.winRate!=null?E(fm.winRate)+'% WR':''):'')+'</p><div class="bhNewActionCall"><b>'+(next?E(next.label||next.type):'READY TO PLAY')+'</b><span>'+(next?E(next.reason||'Open the plan to see the exact action.'): 'Your current setup has no urgent account action.')+'</span></div></div></div><button class="bhNewPrimary" type="button" onclick="openB('+focus.id+')">OPEN FULL PLAN <span>→</span></button></section>'+
- '<section class="bhNewBuild"><div class="bhNewSectionHead"><div><span>BUILD</span><h3>Use these 5 slots</h3></div><small>Meta + account state</small></div><div class="bhNewBuildGrid">'+build+'</div></section>':'<section class="bhNewEmpty"><b>Connect your Brawl Stars profile</b><span>Your personalized plan, ownership state and upgrade actions appear here.</span><button type="button" onclick="profilePanel(false)">CONNECT PROFILE →</button></section>')+
- '<section class="bhNewSection"><div class="bhNewSectionHead"><div><span>PLAY NOW</span><h3>Top 5 for this context</h3></div><button type="button" onclick="setTab(\'play\')">VIEW ALL →</button></div><div class="bhNewTopRail">'+(top5||'<span class="bhNewMuted">No validated meta for this mode/map.</span>')+'</div></section>'+
- '<section class="bhNewTwoCol"><div class="bhNewPanel"><div class="bhNewSectionHead"><div><span>ACCOUNT</span><h3>Progress</h3></div></div><div class="bhNewProgress"><div><b>'+ready+'%</b><span>ROSTER READY</span></div><div><b>'+F(owned.length)+'</b><span>BRAWLERS OWNED</span></div><div><b>'+F(actionable.length)+'</b><span>ACTIONS</span></div></div><button class="bhNewPanelLink" type="button" onclick="setTab(\'upgrade\')">SEE UPGRADE PLAN →</button></div><div class="bhNewPanel"><div class="bhNewSectionHead"><div><span>UPDATE</span><h3>'+E(update.title||'Meta & data synchronized')+'</h3></div></div><p class="bhNewUpdateText">'+E(update.summary||'Build, component and meta data are synchronized from the current data layer.')+'</p><button class="bhNewPanelLink" type="button" onclick="setTab(\'meta\')">SEE DATA & SOURCES →</button></div></section>'+
- '<section class="bhNewSection"><div class="bhNewSectionHead"><div><span>NEEDS ATTENTION</span><h3>Your next upgrades</h3></div><button type="button" onclick="setTab(\'upgrade\')">VIEW ALL →</button></div><div class="bhNewActions">'+(actions||'<span class="bhNewMuted">No immediate actions.</span>')+'</div></section>'+
+ return '<section class="refHome">'+
+ '<header class="refHeader"><div><h1>Brawl Helper</h1><p>Il tuo coach per Brawl Stars</p></div><button type="button" class="refSettings" onclick="profilePanel(false)">⚙</button></header>'+
+ '<section class="refProfile"><div class="refProfileArt"><img src="'+(focus?window.portrait(focus):'')+'" alt=""></div><div class="refProfileMain"><b>'+E(P?.name||'BlackShark')+'</b><span>'+E(P?.tag||active||'')+'</span><div class="refProfileStats"><strong>🏆 '+F(P?.trophies)+'</strong><strong>♟ '+F(owned.length)+' Brawlers</strong></div></div><div class="refProfileBadge">★</div></section>'+
+ '<section class="refSection"><div class="refSectionTitle"><h2>Cosa fare adesso</h2></div><div class="refActions">'+
+ (actions||'<button class="refAction" type="button" onclick="setTab(\'brawlers\')"><span class="refActionIcon">◈</span><div><b>Esplora i tuoi Brawler</b><small>Apri il roster e scegli il prossimo piano</small></div><strong>›</strong></button>')+
+ '</div></section>'+
+ '<section class="refContext"><div><label>MODALITÀ</label><select onchange="homeContext(this.value,document.getElementById(\'refMap\').value)">'+modeOptions+'</select></div><div><label>MAPPA</label><select id="refMap" onchange="homeContext(document.querySelector(\'.refContext select\').value,this.value)">'+mapOptions+'</select></div></section>'+
+ (focus?'<section class="refSection"><div class="refSectionTitle"><h2>Top 5 da giocare ora</h2><button type="button" onclick="setTab(\'play\')">Vedi tutti ›</button></div><div class="refTopRail">'+top5+'</div></section>':'')+
+ (focus?'<section class="refSection"><div class="refSectionTitle"><h2>Build consigliata</h2><span>5 SLOT</span></div><div class="refBuildGrid">'+slots+'</div></section>':'')+
+ '<section class="refUpdate"><div class="refUpdateImage"></div><div><small>AGGIORNAMENTI META</small><b>'+E(update.title||'Meta e dati sincronizzati')+'</b><span>'+E(update.summary||'Le build e le informazioni vengono aggiornate dal data layer.')+'</span></div><button type="button" onclick="setTab(\'meta\')">Vedi ›</button></section>'+
+ '<section class="refBottomNote"><b>'+E(next?.label||'Il tuo prossimo passo')+'</b><span>'+E(next?.reason||'Apri un Brawler per vedere build, modalità, statistiche, Overdrive e Buffies.')+'</span></section>'+
  '</section>';
+}
 }window.bcard=bcardV2;
 window.BHHome=homeV2;
 
