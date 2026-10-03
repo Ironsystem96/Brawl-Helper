@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-02T14:07:26.164Z",
+  "generatedAt": "2026-10-03T05:28:36.652Z",
   "source": "BrawlAPI catalog image URLs",
   "localRoot": "assets/brawl/",
   "entries": {
@@ -16,14 +16,7 @@
         "23000076": "assets/brawl/Shelly/starPowers/23000076.png",
         "23000135": "assets/brawl/Shelly/starPowers/23000135.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -40,14 +33,7 @@
         "23000077": "assets/brawl/Colt/starPowers/23000077.png",
         "23000138": "assets/brawl/Colt/starPowers/23000138.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -64,14 +50,7 @@
         "23000078": "assets/brawl/Bull/starPowers/23000078.png",
         "23000137": "assets/brawl/Bull/starPowers/23000137.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -88,14 +67,7 @@
         "23000079": "assets/brawl/Brock/starPowers/23000079.png",
         "23000150": "assets/brawl/Brock/starPowers/23000150.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -112,14 +84,7 @@
         "23000080": "assets/brawl/Rico/starPowers/23000080.png",
         "23000156": "assets/brawl/Rico/starPowers/23000156.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -136,19 +101,10 @@
         "23000081": "assets/brawl/Spike/starPowers/23000081.png",
         "23000151": "assets/brawl/Spike/starPowers/23000151.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {
-        "overdrive:16000005": "https://cdn.brawlfind.com/hypercharges/Spike.webp"
-      }
+      "overdrives": {}
     },
     "16000006": {
       "name": "Barley",
@@ -162,19 +118,10 @@
         "23000082": "assets/brawl/Barley/starPowers/23000082.png",
         "23000158": "assets/brawl/Barley/starPowers/23000158.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {
-        "overdrive:16000006": "https://cdn.brawlfind.com/hypercharges/Barley.webp"
-      }
+      "overdrives": {}
     },
     "16000007": {
       "name": "Jessie",
@@ -188,19 +135,10 @@
         "23000083": "assets/brawl/Jessie/starPowers/23000083.png",
         "23000149": "assets/brawl/Jessie/starPowers/23000149.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {
-        "overdrive:16000007": "https://cdn.brawlfind.com/hypercharges/Jessie.webp"
-      }
+      "overdrives": {}
     },
     "16000008": {
       "name": "Nita",
@@ -214,14 +152,7 @@
         "23000084": "assets/brawl/Nita/starPowers/23000084.png",
         "23000136": "assets/brawl/Nita/starPowers/23000136.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -238,14 +169,7 @@
         "23000085": "assets/brawl/Dynamike/starPowers/23000085.png",
         "23000155": "assets/brawl/Dynamike/starPowers/23000155.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -262,14 +186,7 @@
         "23000086": "assets/brawl/El_Primo/starPowers/23000086.png",
         "23000140": "assets/brawl/El_Primo/starPowers/23000140.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -286,14 +203,7 @@
         "23000087": "assets/brawl/Mortis/starPowers/23000087.png",
         "23000154": "assets/brawl/Mortis/starPowers/23000154.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -310,14 +220,7 @@
         "23000088": "assets/brawl/Crow/starPowers/23000088.png",
         "23000143": "assets/brawl/Crow/starPowers/23000143.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -334,14 +237,7 @@
         "23000089": "assets/brawl/Poco/starPowers/23000089.png",
         "23000144": "assets/brawl/Poco/starPowers/23000144.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -358,14 +254,7 @@
         "23000090": "assets/brawl/Bo/starPowers/23000090.png",
         "23000148": "assets/brawl/Bo/starPowers/23000148.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -382,14 +271,7 @@
         "23000091": "assets/brawl/Piper/starPowers/23000091.png",
         "23000152": "assets/brawl/Piper/starPowers/23000152.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -406,14 +288,7 @@
         "23000092": "assets/brawl/Pam/starPowers/23000092.png",
         "23000139": "assets/brawl/Pam/starPowers/23000139.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -430,19 +305,10 @@
         "23000093": "assets/brawl/Tara/starPowers/23000093.png",
         "23000160": "assets/brawl/Tara/starPowers/23000160.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {
-        "overdrive:16000017": "https://cdn.brawlfind.com/hypercharges/Tara.webp"
-      }
+      "overdrives": {}
     },
     "16000018": {
       "name": "Darryl",
@@ -456,19 +322,10 @@
         "23000094": "assets/brawl/Darryl/starPowers/23000094.png",
         "23000157": "assets/brawl/Darryl/starPowers/23000157.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {
-        "overdrive:16000018": "https://cdn.brawlfind.com/hypercharges/Darryl.webp"
-      }
+      "overdrives": {}
     },
     "16000019": {
       "name": "Penny",
@@ -482,14 +339,7 @@
         "23000099": "assets/brawl/Penny/starPowers/23000099.png",
         "23000142": "assets/brawl/Penny/starPowers/23000142.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -506,19 +356,10 @@
         "23000104": "assets/brawl/Frank/starPowers/23000104.png",
         "23000153": "assets/brawl/Frank/starPowers/23000153.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {
-        "overdrive:16000020": "https://cdn.brawlfind.com/hypercharges/Frank.webp"
-      }
+      "overdrives": {}
     },
     "16000021": {
       "name": "Gene",
@@ -532,14 +373,7 @@
         "23000109": "assets/brawl/Gene/starPowers/23000109.png",
         "23000159": "assets/brawl/Gene/starPowers/23000159.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -556,14 +390,7 @@
         "23000114": "assets/brawl/Tick/starPowers/23000114.png",
         "23000161": "assets/brawl/Tick/starPowers/23000161.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -580,14 +407,7 @@
         "23000119": "assets/brawl/Leon/starPowers/23000119.png",
         "23000141": "assets/brawl/Leon/starPowers/23000141.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -604,14 +424,7 @@
         "23000124": "assets/brawl/Rosa/starPowers/23000124.png",
         "23000147": "assets/brawl/Rosa/starPowers/23000147.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -628,14 +441,7 @@
         "23000129": "assets/brawl/Carl/starPowers/23000129.png",
         "23000145": "assets/brawl/Carl/starPowers/23000145.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -652,14 +458,7 @@
         "23000134": "assets/brawl/Bibi/starPowers/23000134.png",
         "23000146": "assets/brawl/Bibi/starPowers/23000146.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -676,14 +475,7 @@
         "23000168": "assets/brawl/8-Bit/starPowers/23000168.png",
         "23000181": "assets/brawl/8-Bit/starPowers/23000181.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -700,14 +492,7 @@
         "23000186": "assets/brawl/Sandy/starPowers/23000186.png",
         "23000187": "assets/brawl/Sandy/starPowers/23000187.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -724,19 +509,10 @@
         "23000192": "assets/brawl/Bea/starPowers/23000192.png",
         "23000193": "assets/brawl/Bea/starPowers/23000193.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {
-        "overdrive:16000029": "https://cdn.brawlfind.com/hypercharges/Bea.webp"
-      }
+      "overdrives": {}
     },
     "16000030": {
       "name": "Emz",
@@ -750,19 +526,10 @@
         "23000198": "assets/brawl/Emz/starPowers/23000198.png",
         "23000199": "assets/brawl/Emz/starPowers/23000199.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {
-        "overdrive:16000030": "https://cdn.brawlfind.com/hypercharges/Emz.webp"
-      }
+      "overdrives": {}
     },
     "16000031": {
       "name": "Mr. P",
@@ -776,14 +543,7 @@
         "23000204": "assets/brawl/Mr_P/starPowers/23000204.png",
         "23000205": "assets/brawl/Mr_P/starPowers/23000205.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -800,19 +560,10 @@
         "23000210": "assets/brawl/Max/starPowers/23000210.png",
         "23000211": "assets/brawl/Max/starPowers/23000211.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {
-        "overdrive:16000032": "https://cdn.brawlfind.com/hypercharges/Max.webp"
-      }
+      "overdrives": {}
     },
     "16000034": {
       "name": "Jacky",
@@ -826,14 +577,7 @@
         "23000222": "assets/brawl/Jacky/starPowers/23000222.png",
         "23000223": "assets/brawl/Jacky/starPowers/23000223.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -850,14 +594,7 @@
         "23000228": "assets/brawl/Gale/starPowers/23000228.png",
         "23000229": "assets/brawl/Gale/starPowers/23000229.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -874,14 +611,7 @@
         "23000234": "assets/brawl/Nani/starPowers/23000234.png",
         "23000235": "assets/brawl/Nani/starPowers/23000235.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -898,14 +628,7 @@
         "23000240": "assets/brawl/Sprout/starPowers/23000240.png",
         "23000241": "assets/brawl/Sprout/starPowers/23000241.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -922,14 +645,7 @@
         "23000283": "assets/brawl/Surge/starPowers/23000283.png",
         "23000284": "assets/brawl/Surge/starPowers/23000284.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -946,14 +662,7 @@
         "23000300": "assets/brawl/Colette/starPowers/23000300.png",
         "23000301": "assets/brawl/Colette/starPowers/23000301.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -970,14 +679,7 @@
         "23000307": "assets/brawl/Amber/starPowers/23000307.png",
         "23000308": "assets/brawl/Amber/starPowers/23000308.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -994,14 +696,7 @@
         "23000324": "assets/brawl/Lou/starPowers/23000324.png",
         "23000325": "assets/brawl/Lou/starPowers/23000325.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -1018,19 +713,10 @@
         "23000331": "assets/brawl/Byron/starPowers/23000331.png",
         "23000332": "assets/brawl/Byron/starPowers/23000332.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {
-        "overdrive:16000042": "https://cdn.brawlfind.com/hypercharges/Byron.webp"
-      }
+      "overdrives": {}
     },
     "16000043": {
       "name": "Edgar",
@@ -1044,19 +730,10 @@
         "23000338": "assets/brawl/Edgar/starPowers/23000338.png",
         "23000339": "assets/brawl/Edgar/starPowers/23000339.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {
-        "overdrive:16000043": "https://cdn.brawlfind.com/hypercharges/Edgar.webp"
-      }
+      "overdrives": {}
     },
     "16000044": {
       "name": "Ruffs",
@@ -1070,14 +747,7 @@
         "23000345": "assets/brawl/Ruffs/starPowers/23000345.png",
         "23000346": "assets/brawl/Ruffs/starPowers/23000346.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -1094,14 +764,7 @@
         "23000362": "assets/brawl/Stu/starPowers/23000362.png",
         "23000363": "assets/brawl/Stu/starPowers/23000363.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -1118,14 +781,7 @@
         "23000369": "assets/brawl/Belle/starPowers/23000369.png",
         "23000370": "assets/brawl/Belle/starPowers/23000370.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -1142,14 +798,7 @@
         "23000376": "assets/brawl/Squeak/starPowers/23000376.png",
         "23000377": "assets/brawl/Squeak/starPowers/23000377.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -1166,14 +815,7 @@
         "23000383": "assets/brawl/Grom/starPowers/23000383.png",
         "23000384": "assets/brawl/Grom/starPowers/23000384.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -1190,14 +832,7 @@
         "23000390": "assets/brawl/Buzz/starPowers/23000390.png",
         "23000391": "assets/brawl/Buzz/starPowers/23000391.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -1214,14 +849,7 @@
         "23000397": "assets/brawl/Griff/starPowers/23000397.png",
         "23000398": "assets/brawl/Griff/starPowers/23000398.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -1238,14 +866,7 @@
         "23000414": "assets/brawl/Ash/starPowers/23000414.png",
         "23000415": "assets/brawl/Ash/starPowers/23000415.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -1262,14 +883,7 @@
         "23000421": "assets/brawl/Meg/starPowers/23000421.png",
         "23000422": "assets/brawl/Meg/starPowers/23000422.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -1286,14 +900,7 @@
         "23000431": "assets/brawl/Lola/starPowers/23000431.png",
         "23000432": "assets/brawl/Lola/starPowers/23000432.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -1310,19 +917,10 @@
         "23000438": "assets/brawl/Fang/starPowers/23000438.png",
         "23000439": "assets/brawl/Fang/starPowers/23000439.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {
-        "overdrive:16000054": "https://cdn.brawlfind.com/hypercharges/Fang.webp"
-      }
+      "overdrives": {}
     },
     "16000056": {
       "name": "Eve",
@@ -1336,19 +934,10 @@
         "23000452": "assets/brawl/Eve/starPowers/23000452.png",
         "23000453": "assets/brawl/Eve/starPowers/23000453.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {
-        "overdrive:16000056": "https://cdn.brawlfind.com/hypercharges/Eve.webp"
-      }
+      "overdrives": {}
     },
     "16000057": {
       "name": "Janet",
@@ -1362,19 +951,10 @@
         "23000470": "assets/brawl/Janet/starPowers/23000470.png",
         "23000471": "assets/brawl/Janet/starPowers/23000471.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {
-        "overdrive:16000057": "https://cdn.brawlfind.com/hypercharges/Janet.webp"
-      }
+      "overdrives": {}
     },
     "16000058": {
       "name": "Bonnie",
@@ -1388,19 +968,10 @@
         "23000478": "assets/brawl/Bonnie/starPowers/23000478.png",
         "23000479": "assets/brawl/Bonnie/starPowers/23000479.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {
-        "overdrive:16000058": "https://cdn.brawlfind.com/hypercharges/Bonnie.webp"
-      }
+      "overdrives": {}
     },
     "16000059": {
       "name": "Otis",
@@ -1414,14 +985,7 @@
         "23000495": "assets/brawl/Otis/starPowers/23000495.png",
         "23000496": "assets/brawl/Otis/starPowers/23000496.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -1438,14 +1002,7 @@
         "23000503": "assets/brawl/Sam/starPowers/23000503.png",
         "23000504": "assets/brawl/Sam/starPowers/23000504.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -1462,14 +1019,7 @@
         "23000511": "assets/brawl/Gus/starPowers/23000511.png",
         "23000512": "assets/brawl/Gus/starPowers/23000512.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -1486,14 +1036,7 @@
         "23000519": "assets/brawl/Buster/starPowers/23000519.png",
         "23000520": "assets/brawl/Buster/starPowers/23000520.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -1510,14 +1053,7 @@
         "23000527": "assets/brawl/Chester/starPowers/23000527.png",
         "23000528": "assets/brawl/Chester/starPowers/23000528.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -1534,14 +1070,7 @@
         "23000535": "assets/brawl/Gray/starPowers/23000535.png",
         "23000536": "assets/brawl/Gray/starPowers/23000536.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -1558,14 +1087,7 @@
         "23000543": "assets/brawl/Mandy/starPowers/23000543.png",
         "23000544": "assets/brawl/Mandy/starPowers/23000544.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -1582,14 +1104,7 @@
         "23000553": "assets/brawl/R-T/starPowers/23000553.png",
         "23000554": "assets/brawl/R-T/starPowers/23000554.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -1606,14 +1121,7 @@
         "23000561": "assets/brawl/Willow/starPowers/23000561.png",
         "23000562": "assets/brawl/Willow/starPowers/23000562.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -1630,19 +1138,10 @@
         "23000569": "assets/brawl/Maisie/starPowers/23000569.png",
         "23000570": "assets/brawl/Maisie/starPowers/23000570.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {
-        "overdrive:16000068": "https://cdn.brawlfind.com/hypercharges/Maisie.webp"
-      }
+      "overdrives": {}
     },
     "16000069": {
       "name": "Hank",
@@ -1656,19 +1155,10 @@
         "23000577": "assets/brawl/Hank/starPowers/23000577.png",
         "23000578": "assets/brawl/Hank/starPowers/23000578.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {
-        "overdrive:16000069": "https://cdn.brawlfind.com/hypercharges/Hank.webp"
-      }
+      "overdrives": {}
     },
     "16000070": {
       "name": "Cordelius",
@@ -1682,19 +1172,10 @@
         "23000585": "assets/brawl/Cordelius/starPowers/23000585.png",
         "23000586": "assets/brawl/Cordelius/starPowers/23000586.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {
-        "overdrive:16000070": "https://cdn.brawlfind.com/hypercharges/Cordelius.webp"
-      }
+      "overdrives": {}
     },
     "16000071": {
       "name": "Doug",
@@ -1708,19 +1189,10 @@
         "23000593": "assets/brawl/Doug/starPowers/23000593.png",
         "23000594": "assets/brawl/Doug/starPowers/23000594.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {
-        "overdrive:16000071": "https://cdn.brawlfind.com/hypercharges/Doug.webp"
-      }
+      "overdrives": {}
     },
     "16000072": {
       "name": "Pearl",
@@ -1734,14 +1206,7 @@
         "23000601": "assets/brawl/Pearl/starPowers/23000601.png",
         "23000602": "assets/brawl/Pearl/starPowers/23000602.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -1758,14 +1223,7 @@
         "23000609": "assets/brawl/Chuck/starPowers/23000609.png",
         "23000610": "assets/brawl/Chuck/starPowers/23000610.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -1782,14 +1240,7 @@
         "23000623": "assets/brawl/Charlie/starPowers/23000623.png",
         "23000624": "assets/brawl/Charlie/starPowers/23000624.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -1806,14 +1257,7 @@
         "23000637": "assets/brawl/Mico/starPowers/23000637.png",
         "23000638": "assets/brawl/Mico/starPowers/23000638.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -1830,14 +1274,7 @@
         "23000646": "assets/brawl/Kit/starPowers/23000646.png",
         "23000647": "assets/brawl/Kit/starPowers/23000647.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -1854,14 +1291,7 @@
         "23000659": "assets/brawl/Larry_Lawrie/starPowers/23000659.png",
         "23000660": "assets/brawl/Larry_Lawrie/starPowers/23000660.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -1878,14 +1308,7 @@
         "23000667": "assets/brawl/Melodie/starPowers/23000667.png",
         "23000668": "assets/brawl/Melodie/starPowers/23000668.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -1902,14 +1325,7 @@
         "23000675": "assets/brawl/Angelo/starPowers/23000675.png",
         "23000676": "assets/brawl/Angelo/starPowers/23000676.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -1926,14 +1342,7 @@
         "23000734": "assets/brawl/Draco/starPowers/23000734.png",
         "23000735": "assets/brawl/Draco/starPowers/23000735.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -1950,19 +1359,10 @@
         "23000752": "assets/brawl/Lily/starPowers/23000752.png",
         "23000753": "assets/brawl/Lily/starPowers/23000753.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {
-        "overdrive:16000081": "https://cdn.brawlfind.com/hypercharges/Lily.webp"
-      }
+      "overdrives": {}
     },
     "16000082": {
       "name": "Berry",
@@ -1976,14 +1376,7 @@
         "23000764": "assets/brawl/Berry/starPowers/23000764.png",
         "23000765": "assets/brawl/Berry/starPowers/23000765.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -2000,14 +1393,7 @@
         "23000772": "assets/brawl/Clancy/starPowers/23000772.png",
         "23000773": "assets/brawl/Clancy/starPowers/23000773.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -2024,14 +1410,7 @@
         "23000804": "assets/brawl/Moe/starPowers/23000804.png",
         "23000805": "assets/brawl/Moe/starPowers/23000805.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -2048,19 +1427,10 @@
         "23000815": "assets/brawl/Kenji/starPowers/23000815.png",
         "23000816": "assets/brawl/Kenji/starPowers/23000816.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {
-        "overdrive:16000085": "https://cdn.brawlfind.com/hypercharges/Kenji.webp"
-      }
+      "overdrives": {}
     },
     "16000086": {
       "name": "Shade",
@@ -2074,19 +1444,10 @@
         "23000832": "assets/brawl/Shade/starPowers/23000832.png",
         "23000833": "assets/brawl/Shade/starPowers/23000833.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {
-        "overdrive:16000086": "https://cdn.brawlfind.com/hypercharges/Shade.webp"
-      }
+      "overdrives": {}
     },
     "16000087": {
       "name": "Juju",
@@ -2100,19 +1461,27 @@
         "23000848": "assets/brawl/Juju/starPowers/23000848.png",
         "23000849": "assets/brawl/Juju/starPowers/23000849.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {
-        "overdrive:16000087": "https://cdn.brawlfind.com/hypercharges/Juju.webp"
-      }
+      "overdrives": {}
+    },
+    "16000088": {
+      "name": "Buzz Lightyear",
+      "id": 16000088,
+      "portrait": "assets/brawl/Buzz_Lightyear/portrait/portrait.png",
+      "gadgets": {
+        "23000869": "assets/brawl/Buzz_Lightyear/gadgets/23000869.png"
+      },
+      "starPowers": {
+        "23000866": "assets/brawl/Buzz_Lightyear/starPowers/23000866.png",
+        "23000867": "assets/brawl/Buzz_Lightyear/starPowers/23000867.png",
+        "23000868": "assets/brawl/Buzz_Lightyear/starPowers/23000868.png"
+      },
+      "gears": {},
+      "hyperCharges": {},
+      "buffies": {},
+      "overdrives": {}
     },
     "16000089": {
       "name": "Meeple",
@@ -2126,14 +1495,7 @@
         "23000875": "assets/brawl/Meeple/starPowers/23000875.png",
         "23000876": "assets/brawl/Meeple/starPowers/23000876.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -2150,14 +1512,7 @@
         "23000883": "assets/brawl/Ollie/starPowers/23000883.png",
         "23000884": "assets/brawl/Ollie/starPowers/23000884.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -2174,14 +1529,7 @@
         "23000905": "assets/brawl/Lumi/starPowers/23000905.png",
         "23000906": "assets/brawl/Lumi/starPowers/23000906.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -2198,14 +1546,7 @@
         "23000915": "assets/brawl/Finx/starPowers/23000915.png",
         "23000916": "assets/brawl/Finx/starPowers/23000916.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -2222,14 +1563,7 @@
         "23000929": "assets/brawl/Jae-Yong/starPowers/23000929.png",
         "23000930": "assets/brawl/Jae-Yong/starPowers/23000930.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -2246,14 +1580,7 @@
         "23000938": "assets/brawl/Kaze/starPowers/23000938.png",
         "23000939": "assets/brawl/Kaze/starPowers/23000939.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -2270,14 +1597,7 @@
         "23000989": "assets/brawl/Alli/starPowers/23000989.png",
         "23000990": "assets/brawl/Alli/starPowers/23000990.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -2294,14 +1614,7 @@
         "23000998": "assets/brawl/Trunk/starPowers/23000998.png",
         "23000999": "assets/brawl/Trunk/starPowers/23000999.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -2312,14 +1625,7 @@
       "portrait": "assets/brawl/Mina/portrait/portrait.png",
       "gadgets": {},
       "starPowers": {},
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -2330,19 +1636,10 @@
       "portrait": "assets/brawl/Ziggy/portrait/portrait.png",
       "gadgets": {},
       "starPowers": {},
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {
-        "overdrive:16000098": "https://cdn.brawlfind.com/hypercharges/Ziggy.webp"
-      }
+      "overdrives": {}
     },
     "16000099": {
       "name": "Pierce",
@@ -2350,19 +1647,10 @@
       "portrait": "assets/brawl/Pierce/portrait/portrait.png",
       "gadgets": {},
       "starPowers": {},
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {
-        "overdrive:16000099": "https://cdn.brawlfind.com/hypercharges/Pierce.webp"
-      }
+      "overdrives": {}
     },
     "16000100": {
       "name": "Gigi",
@@ -2370,19 +1658,10 @@
       "portrait": "assets/brawl/Gigi/portrait/portrait.png",
       "gadgets": {},
       "starPowers": {},
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
-      "overdrives": {
-        "overdrive:16000100": "https://cdn.brawlfind.com/hypercharges/Gigi.webp"
-      }
+      "overdrives": {}
     },
     "16000101": {
       "name": "Glowy",
@@ -2390,14 +1669,7 @@
       "portrait": "assets/brawl/Glowy/portrait/portrait.png",
       "gadgets": {},
       "starPowers": {},
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -2408,14 +1680,7 @@
       "portrait": "assets/brawl/Sirius/portrait/portrait.png",
       "gadgets": {},
       "starPowers": {},
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -2426,14 +1691,7 @@
       "portrait": "assets/brawl/Najia/portrait/portrait.png",
       "gadgets": {},
       "starPowers": {},
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -2450,14 +1708,7 @@
         "23001245": "assets/brawl/Damian/starPowers/23001245.png",
         "23001246": "assets/brawl/Damian/starPowers/23001246.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -2474,14 +1725,7 @@
         "23001253": "assets/brawl/Starr_Nova/starPowers/23001253.png",
         "23001254": "assets/brawl/Starr_Nova/starPowers/23001254.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -2500,14 +1744,7 @@
         "23001279": "assets/brawl/Bolt/starPowers/23001279.png",
         "23001280": "assets/brawl/Bolt/starPowers/23001280.png"
       },
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -2518,14 +1755,7 @@
       "portrait": "assets/brawl/Nori/portrait/portrait.png",
       "gadgets": {},
       "starPowers": {},
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -2536,14 +1766,7 @@
       "portrait": "assets/brawl/Wendy/portrait/portrait.png",
       "gadgets": {},
       "starPowers": {},
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
@@ -2554,14 +1777,18 @@
       "portrait": null,
       "gadgets": {},
       "starPowers": {},
-      "gears": {
-        "gear:ForestSpeed": "https://cdn.brawlify.com/gears/regular/62000000.png",
-        "gear:HealthRegen": "https://cdn.brawlify.com/gears/regular/62000001.png",
-        "gear:LowHealthDamage": "https://cdn.brawlify.com/gears/regular/62000002.png",
-        "gear:Vision": "https://cdn.brawlify.com/gears/regular/62000003.png",
-        "gear:ConsumableShield": "https://cdn.brawlify.com/gears/regular/62000004.png",
-        "gear:GadgetCooldown": "https://cdn.brawlify.com/gears/regular/62000017.png"
-      },
+      "gears": {},
+      "hyperCharges": {},
+      "buffies": {},
+      "overdrives": {}
+    },
+    "16000110": {
+      "name": "Vince",
+      "id": 16000110,
+      "portrait": null,
+      "gadgets": {},
+      "starPowers": {},
+      "gears": {},
       "hyperCharges": {},
       "buffies": {},
       "overdrives": {}
