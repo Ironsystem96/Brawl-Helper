@@ -156,7 +156,7 @@ function buffieBlock(b){
  return '<section class="v3Card v3BuffiesCard">'+sectionTitle('BUFFIES','Functional upgrades','3 slots per Brawler')+'<div class="v3BuffGrid">'+rows.map(([label,key,items,own])=>{
  const set=(window.COMPONENT_STATE?.entries?.[String(b.id)]?.buffieSets||{})[key]||null;
  const available=items.length>0||!!set,cls=own===true?'owned':available?'available':'missing';
- const click=available?'onclick="componentModalV2ById('+b.id+',\\'buffies\\','+JSON.stringify(key)+')"':'';
+ const click=available?'onclick="componentModalV2ById('+b.id+',\'buffies\',\''+esc(key)+'\')"':'';
  const iconHtml=resolveBuffieImage(key,set);
  const text=own===true?'UNLOCKED':available?'AVAILABLE':'NOT AVAILABLE';
  const desc=set?.abilities?.map(a=>a.source+': '+a.description).join(' • ')||items[0]?.description||'No validated Buffie data is currently linked to this Brawler.';
