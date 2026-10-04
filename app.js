@@ -231,26 +231,26 @@ function componentCatalogItem(type,item,b=null){
  const pool=Object.values(CATALOG_STATE.entries||{}).flatMap(x=>asArray(x?.[key]));
  return [...local,...componentLocal,...pool].find(x=>x&&((x.id!=null&&item.id!=null&&String(x.id)===String(item.id))||norm(x.name)===norm(item.name)))||null;
 }
+function svgComponentIcon(kind,label){
+ const k=String(kind||'component'),txt=String(label||'').slice(0,2).toUpperCase();
+ const palettes={buffie:['#8d42e7','#c66bff'],overdrive:['#ff9f1c','#ffd166'],hyperCharge:['#18b6ff','#7de3ff'],hypercharge:['#18b6ff','#7de3ff']};
+ const p=palettes[k]||['#344c70','#6f8fbf'];
+ const svg='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="'+p[0]+'"/><stop offset="1" stop-color="'+p[1]+'"/></linearGradient></defs><rect x="4" y="4" width="88" height="88" rx="22" fill="url(#g)"/><path d="M48 16 61 40 78 47 58 54 48 80 38 54 18 47 35 40Z" fill="#fff" opacity=".9"/><text x="48" y="57" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="900" fill="#15213a">'+esc(txt)+'</text></svg>';
+ return 'data:image/svg+xml;charset=UTF-8,'+encodeURIComponent(svg);
+}
 function compIcon(type,item,b=null){
  const id=String(item?.id??'');
  const pending=/^pending:/i.test(id);
  if(!item)return '<span class="compIcon fallbackIcon" aria-hidden="true">—</span>';
- if(pending)return '<span class="compIcon pendingIcon" aria-label="Data pending">?</span>';
+ if(pending)return '<img class="compIcon generatedIcon" src="'+svgComponentIcon(type,'?')+'" alt="Data pending">';
  const paths={gadgets:'gadgets/borderless',starPowers:'star-powers/borderless',gears:'gears/regular',hyperCharges:'hypercharges/regular',buffies:'buffies/regular',overdrives:'overdrives/regular',gadget:'gadgets/borderless',star:'star-powers/borderless',gear:'gears/regular',hc:'hypercharges/regular',buffie:'buffies/regular',overdrive:'overdrives/regular'};
  const mapped=componentCatalogItem(type,item,b);
  const fallbackPath=paths[type]&&item.id?img(paths[type],item.id):'';
  const src=localAsset(type,item,b)||mapped?.imageUrl||fallbackPath;
  if(!src){
-   if(type==='buffies'||type==='buffie'){
-     const k=String(item?.id||'').split(':')[1]||'';
-     const mark=k==='gadget'?'G':k==='starPower'?'S':k==='hyperCharge'?'H':'B';
-     return '<span class="compIcon buffieVisual '+esc(k)+'" aria-label="'+esc(item?.name||'Buffie')+'">'+mark+'</span>';
-   }
-   if(type==='hyperCharges'||type==='hc')return '<span class="compIcon buffieVisual hyperCharge" aria-label="Hypercharge">H</span>';
-   if(type==='overdrives'||type==='overdrive')return '<span class="compIcon buffieVisual overdriveVisual" aria-label="Overdrive">⚡</span>';
-   return '<span class="compIcon pendingIcon" aria-label="Image unavailable">?</span>';
+   return '<img class="compIcon generatedIcon" loading="lazy" src="'+svgComponentIcon(type,item?.name||type)+'" alt="'+esc(item?.name||type)+'">';
  }
- return '<img class="compIcon" loading="lazy" src="'+esc(src)+'" alt="" aria-hidden="true" onerror="this.replaceWith(Object.assign(document.createElement(\'span\'),{className:\'compIcon pendingIcon\',textContent:\'?\'}))">';
+ return '<img class="compIcon" loading="lazy" src="'+esc(src)+'" alt="'+esc(item?.name||'')+'" aria-hidden="true" onerror="this.onerror=null;this.src='+JSON.stringify(svgComponentIcon(type,item?.name||type))+'">';
 }
 
 function comp(type,label,item){return '<div class="comp '+(item?'owned':'missing')+'">'+compIcon(type,item)+'<div><span>'+label+'</span><b>'+esc(item?.name||'Not owned')+'</b></div></div>'}
