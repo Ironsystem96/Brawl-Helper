@@ -139,14 +139,29 @@ function overdriveBlock(b){
 }
 function buffieBlock(b){
  const rows=window.buffieRows?.(b)||[];
+ const resolveBuffieImage=(key,set)=>{
+   if(key==='gadget'){
+     const src=set?.abilities?.[0]?.source;
+     const item=src?itemByName(b,'gadget',src):null;
+     return item?icon('gadgets',item,b):'<img class="compIcon generatedIcon" src="'+(window.svgComponentIcon?window.svgComponentIcon('buffie','G'):'')+'" alt="Gadget Buffie">';
+   }
+   if(key==='starPower'){
+     const src=set?.abilities?.[0]?.source;
+     const item=src?itemByName(b,'starPower',src):null;
+     return item?icon('starPowers',item,b):'<img class="compIcon generatedIcon" src="'+(window.svgComponentIcon?window.svgComponentIcon('buffie','S'):'')+'" alt="Star Power Buffie">';
+   }
+   const h=profile(b)?.hyperCharge||window.catalogEntry?.(b)?.hyperCharges?.[0];
+   return h?icon('hyperCharges',h,b):'<img class="compIcon generatedIcon" src="'+(window.svgComponentIcon?window.svgComponentIcon('hyperCharge','H'):'')+'" alt="Hypercharge Buffie">';
+ };
  return '<section class="v3Card v3BuffiesCard">'+sectionTitle('BUFFIES','Functional upgrades','3 slots per Brawler')+'<div class="v3BuffGrid">'+rows.map(([label,key,items,own])=>{
- const available=items.length>0,cls=own===true?'owned':available?'available':'missing';
- const click=available?'onclick="componentModalV2ById('+b.id+',\'buffies\',\''+key+'\')"':'';
- const icon=own===true?'✓':available?'•':'—';
+ const set=(window.COMPONENT_STATE?.entries?.[String(b.id)]?.buffieSets||{})[key]||null;
+ const available=items.length>0||!!set,cls=own===true?'owned':available?'available':'missing';
+ const click=available?'onclick="componentModalV2ById('+b.id+',\\'buffies\\','+JSON.stringify(key)+')"':'';
+ const iconHtml=resolveBuffieImage(key,set);
  const text=own===true?'UNLOCKED':available?'AVAILABLE':'NOT AVAILABLE';
- const desc=items[0]?.description||'No validated Buffie data is currently linked to this Brawler.';
- return '<button type="button" class="'+cls+'" '+click+'><span class="v3BuffIcon">'+icon+'</span><div><b>'+E(label)+'</b><small>'+text+'</small><p>'+E(desc)+'</p></div>'+(available?'<strong>OPEN →</strong>':'')+'</button>';
-}).join('')+'</div><p class="v3BuffieNote">Brawl Helper shows the three Buffie slots separately. If a Brawler has no validated Buffie yet, it is marked as such instead of inventing an effect.</p></section>';
+ const desc=set?.abilities?.map(a=>a.source+': '+a.description).join(' • ')||items[0]?.description||'No validated Buffie data is currently linked to this Brawler.';
+ return '<button type="button" class="'+cls+'" '+click+'><span class="v3BuffIcon">'+iconHtml+'</span><div><b>'+E(label)+'</b><small>'+text+'</small><p>'+E(desc)+'</p></div>'+(available?'<strong>OPEN →</strong>':'')+'</button>';
+ }).join('')+'</div><p class="v3BuffieNote">Brawl Helper shows the three Buffie slots separately with a real component image or generated visual fallback. Missing source data is never presented as a fake gameplay effect.</p></section>';
 }
 
 function detailV3(b){
