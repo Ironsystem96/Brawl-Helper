@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "generatedFrom": "BrawlAPI catalog snapshot",
-  "generatedAt": "2026-10-03T05:26:44.265Z",
+  "generatedAt": "2026-10-04T06:02:01.519Z",
   "count": 109,
   "brawlers": [
     {
@@ -17,8 +17,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 107,
-        "name": "Collect Caterpillars To Become More Powerful"
+        "id": 1,
+        "name": "Damage Dealer"
       },
       "description": "Vince tends to both the espresso machine and his many-legged friends, much to his customers' dismay. He walks slowly around his Creepy Café, careful not to step on any of his beloved bugs. His companions, Mocha and Doppio, follow him everywhere.",
       "shortDescription": "",
@@ -49,7 +49,7 @@
         {
           "id": 23001451,
           "name": "Bug Bandage",
-          "description": "Turning a caterpillar into a moth heals Vince for .",
+          "description": "Turning a caterpillar into a moth heals Vince for x.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23001451.png",
           "released": true
         }
@@ -82,8 +82,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 106,
-        "name": "Use Gravity To Target Enemies"
+        "id": 5,
+        "name": "Controller"
       },
       "description": "Cosmo is the lead astronomer at Starr Park's Observatory. Besides teaching visitors about the universe, he is constantly gazing at the stars searching for something...",
       "shortDescription": "",
@@ -98,7 +98,7 @@
         {
           "id": 23001445,
           "name": "Telescope Trap",
-          "description": "Cosmo uses his telescope to reveal an area for s sec, including invisible enemies. Enemy Brawlers inside this area cannot use movement abilities (dashes, jumps, teleports, etc.).",
+          "description": "Cosmo uses his telescope to reveal an area for xs sec, including invisible enemies. Enemy Brawlers inside this area cannot use movement abilities (dashes, jumps, teleports, etc.).",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23001445.png",
           "released": true
         }
@@ -107,14 +107,14 @@
         {
           "id": 23001442,
           "name": "Precession",
-          "description": "Increases the orbit speed of Cosmo's main attack by %.",
+          "description": "Increases the orbit speed of Cosmo's main attack by x%.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23001442.png",
           "released": true
         },
         {
           "id": 23001443,
           "name": "Ammo Attractor",
-          "description": "Hitting an enemy with Cosmo's Super reloads ammo.",
+          "description": "Hitting an enemy with Cosmo's Super reloads 2 ammo.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23001443.png",
           "released": true
         }
@@ -147,8 +147,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 105,
-        "name": "Shield Teammates And Hold Ground."
+        "id": 7,
+        "name": "Support"
       },
       "description": "A smart scientist, with a nostalgic soul. After years working in shady corporate laboratories, she left to build Windstock and help the planet, not harm it!",
       "shortDescription": "",
@@ -179,7 +179,7 @@
         {
           "id": 23001319,
           "name": "Solar Shield",
-          "description": "Wendy's shield generator gains an additional health.",
+          "description": "Wendy's shield generator gains an additional x health.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23001319.png",
           "released": true
         }
@@ -209,11 +209,11 @@
       "rarity": {
         "id": 6,
         "name": "Legendary",
-        "color": "#fff11ev"
+        "color": "#fff11e"
       },
       "class": {
-        "id": 104,
-        "name": "Jump Around The Map And Cause Chaos"
+        "id": 6,
+        "name": "Assassin"
       },
       "description": "As the child of Kenji and Kaze, Nori was always destined for great things. Being the first Brawler ever born in Starr Park has also given him extraordinary powers! He's not too bad at cooking either.",
       "shortDescription": "",
@@ -221,14 +221,14 @@
         {
           "id": 23001297,
           "name": "Sushi Snack",
-          "description": "Nori eats up to fish to heal himself for per fish.",
+          "description": "Nori eats up to x fish to heal himself for x per fish.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23001297.png",
           "released": true
         },
         {
           "id": 23001298,
           "name": "Gonna Need A Bigger Net",
-          "description": "Aim a fishing net that roots the first Brawler hit for sec and deals damage.",
+          "description": "Aim a fishing net that roots the first Brawler hit for x sec and deals x damage.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23001298.png",
           "released": true
         }
@@ -237,14 +237,14 @@
         {
           "id": 23001295,
           "name": "Big Haul",
-          "description": "Nori catches fish when his Super hits enemy Brawlers.",
+          "description": "Nori catches 3 fish when his Super hits enemy Brawlers.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23001295.png",
           "released": true
         },
         {
           "id": 23001296,
           "name": "His Mothers Son",
-          "description": "Nori gains + % speed for sec whenever he hits an enemy with his Main Attack.",
+          "description": "Nori gains +20% speed for 1 sec whenever he hits an enemy with his Main Attack.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23001296.png",
           "released": true
         }
@@ -277,26 +277,12 @@
         "color": "#d850ff"
       },
       "class": {
-        "id": 103,
-        "name": "Avoid Walls And Sharp Turns For Speed"
+        "id": 2,
+        "name": "Tank"
       },
       "description": "Bolt is a toy from the Battle Bumperz line, designed to deal damage by rolling into things! He was built to battle, but always wanted to be a race car, so he reaches dangerous speeds to live out his dreams. Don't get in his way!",
       "shortDescription": "",
       "gadgets": [
-        {
-          "id": 23000245,
-          "name": "Rocket Laces",
-          "description": "Brock jumps to targeted area, knocking back nearby enemies on takeoff and landing and dealing minor damage.",
-          "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000245.png",
-          "released": true
-        },
-        {
-          "id": 23000316,
-          "name": "Rocket Fuel",
-          "description": "Brock fires a large rocket that destroys terrain and deals damage",
-          "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000316.png",
-          "released": true
-        },
         {
           "id": 23001281,
           "name": "Oil Change",
@@ -323,7 +309,7 @@
         {
           "id": 23001280,
           "name": "Unstoppaball",
-          "description": "Bolt is immune to crowd control for seconds after activating his Super.",
+          "description": "Bolt is immune to crowd control for 1 seconds after activating his Super.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23001280.png",
           "released": true
         }
@@ -335,7 +321,7 @@
       "dataCompleteness": {
         "identity": true,
         "portrait": true,
-        "gadgets": false,
+        "gadgets": true,
         "starPowers": true,
         "gears": false,
         "hyperCharges": false,
@@ -356,8 +342,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 102,
-        "name": "Poke Then Transform And Strike"
+        "id": 6,
+        "name": "Assassin"
       },
       "description": "A cosplayer who believes they are the anime character Starr Nova! This can get a bit awkward, as she believes problems in the real world can *also* be solved by hitting them with a massive sword.",
       "shortDescription": "",
@@ -372,7 +358,7 @@
         {
           "id": 23001256,
           "name": "Shining Starr Of Friendship And Justice",
-          "description": "Starr Nova fires an energy ball that damages enemies and heals teammates for . This energy ball can also be teleported to before it hits a target!",
+          "description": "Starr Nova fires an energy ball that damages enemies and heals teammates for x. This energy ball can also be teleported to before it hits a target!",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23001256.png",
           "released": true
         }
@@ -381,14 +367,14 @@
         {
           "id": 23001253,
           "name": "Power Level Maximum",
-          "description": "Hitting an enemy Brawler while transformed increases your damage by % to a maximum of %.",
+          "description": "Hitting an enemy Brawler while transformed increases your damage by 4% to a maximum of x%.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23001253.png",
           "released": true
         },
         {
           "id": 23001254,
           "name": "Mystical Starr Technique",
-          "description": "Starr Nova's main attack also heals teammates for , charging her Super based on healing.",
+          "description": "Starr Nova's main attack also heals teammates for x, charging her Super based on healing.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23001254.png",
           "released": true
         }
@@ -421,8 +407,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 101,
-        "name": "Jump In To Unleash Chaos"
+        "id": 2,
+        "name": "Tank"
       },
       "description": "Damian LOVES to make noise. He fronts a band with his brother, Draco, but music puts him into an uncontrollable rage, where he destroys anything in sight! His shows usually end with him smashing everything near the stage… including other Brawlers.",
       "shortDescription": "",
@@ -430,7 +416,7 @@
         {
           "id": 23001247,
           "name": "Spiritual Healing",
-          "description": "Damian throws his microphone to a target location. The first teammate to pick it up is healed for health.",
+          "description": "Damian throws his microphone to a target location. The first teammate to pick it up is healed for x health.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23001247.png",
           "released": true
         },
@@ -446,7 +432,7 @@
         {
           "id": 23001245,
           "name": "Crowdkill",
-          "description": "Knocking a target into a wall stuns them for sec.",
+          "description": "Knocking a target into a wall stuns them for 0.5 sec.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23001245.png",
           "released": true
         },
@@ -486,8 +472,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 100,
-        "name": "Massive Range With Added Poison"
+        "id": 1,
+        "name": "Damage Dealer"
       },
       "description": "Hired by Finx to make Pyramid Quest's puzzles harder, her good nature actually led her to help those trapped by his time-warping mischief instead.",
       "shortDescription": "",
@@ -495,7 +481,7 @@
         {
           "id": 23001218,
           "name": "Poison Puddles",
-          "description": "All enemies currently poisoned by Najia will create poisonous puddles for the next sec.",
+          "description": "All enemies currently poisoned by Najia will create poisonous puddles for the next x sec.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23001218.png",
           "released": true
         },
@@ -518,7 +504,7 @@
         {
           "id": 23001217,
           "name": "Venomous",
-          "description": "Poison damage scales with the target Brawler's current percent health, dealing up to an extra damage when a target is at 100% health.",
+          "description": "Poison damage scales with the target Brawler's current percent health, dealing up to an extra x damage when a target is at 100% health.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23001217.png",
           "released": true
         }
@@ -551,8 +537,8 @@
         "color": "#e1fb2a"
       },
       "class": {
-        "id": 99,
-        "name": "Use Shadows To Control The Map."
+        "id": 5,
+        "name": "Controller"
       },
       "description": "His identity is as mysterious as his powers. He had the very first attraction at Starr Park, but rumor has it he was kicked out unfairly, and banned from ever returning. Now... he's back for REVENGE.",
       "shortDescription": "",
@@ -560,14 +546,14 @@
         {
           "id": 23001191,
           "name": "A Starr Is Born",
-          "description": "Sirius fires a projectile that summons a Shadow on hit, also slowing the hit target by % for sec.",
+          "description": "Sirius fires a projectile that summons a Shadow on hit, also slowing the hit target by x% for x sec.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23001191.png",
           "released": true
         },
         {
           "id": 23001192,
           "name": "Master Of Shadows",
-          "description": "Summoned Shadows return to Sirius, who heals them for % of their health.",
+          "description": "Summoned Shadows return to Sirius, who heals them for 25% of their health.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23001192.png",
           "released": true
         }
@@ -576,7 +562,7 @@
         {
           "id": 23001189,
           "name": "Dusk Runners",
-          "description": "Shadows have + % movement speed.",
+          "description": "Shadows have +15% movement speed.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23001189.png",
           "released": true
         },
@@ -616,8 +602,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 98,
-        "name": "Heal Teammates And Fear Enemies."
+        "id": 7,
+        "name": "Support"
       },
       "description": "A marine biologist working at the Starr Park aquarium, Glowy is obsessed with sea life, wanting to introduce it to as many visitors as he can. Although he might seem a bit creepy, he's actually a nice guy! Maybe.",
       "shortDescription": "",
@@ -625,7 +611,7 @@
         {
           "id": 23001183,
           "name": "Slippery Savior",
-          "description": "Glowy dashes in a target direction, healing himself and teammates for on arrival.",
+          "description": "Glowy dashes in a target direction, healing himself and teammates for x on arrival.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23001183.png",
           "released": true
         },
@@ -681,8 +667,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 97,
-        "name": "Dodge Enemies Then Jump In To Finish Them."
+        "id": 6,
+        "name": "Assassin"
       },
       "description": "A cursed puppet who brings an unsettling vibe, Gigi and her bonded magician's glove are never found apart. You can find her in the Oddities Shop, dancing between the bookshelves.",
       "shortDescription": "",
@@ -743,11 +729,11 @@
       "rarity": {
         "id": 6,
         "name": "Legendary",
-        "color": "#fff11ev"
+        "color": "#fff11e"
       },
       "class": {
-        "id": 96,
-        "name": "The Last Shot Is Key For Damage."
+        "id": 3,
+        "name": "Marksman"
       },
       "description": "You know pool lifeguards? Pierce is one of those. Except he shoots people instead of saving them. OK maybe he isn't like a lifeguard at all. When Buzz decides there has been too much pee in the pool, he calls in Pierce to 'clean up'.",
       "shortDescription": "",
@@ -778,7 +764,7 @@
         {
           "id": 23001061,
           "name": "Slip N Snipe",
-          "description": "When collecting a shell, Pierce gains a short burst ( %) of movement speed.",
+          "description": "When collecting a shell, Pierce gains a short burst (15%) of movement speed.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23001061.png",
           "released": true
         }
@@ -811,8 +797,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 95,
-        "name": "Call Lightning To Control Space."
+        "id": 5,
+        "name": "Controller"
       },
       "description": "Ziggy is an uber theatrical magician who excels at using electricity in his act. He's a bit full of himself, but hey, he can literally control lightning. Just remember... they're not tricks, they're illusions.",
       "shortDescription": "",
@@ -876,8 +862,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 94,
-        "name": "Combo Your Super With Main Attacks."
+        "id": 1,
+        "name": "Damage Dealer"
       },
       "description": "Mina is a b-girl who mixes capoeira into her breakdance battles like it's second nature. She hangs out at SK8 Beats with Ollie and uses his mixtapes to practice new moves!",
       "shortDescription": "",
@@ -941,8 +927,8 @@
         "color": "#d850ff"
       },
       "class": {
-        "id": 93,
-        "name": "Use Ants For Speed And Charge In"
+        "id": 2,
+        "name": "Tank"
       },
       "description": "Trunk is a suspiciously uncanny-looking tree. It couldn't be because Trunk is actually a colony of hyper-intelligent ants controlling a fake mechanical tree? No, that would be ridiculous.",
       "shortDescription": "",
@@ -1006,8 +992,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 92,
-        "name": "Ambush From Bushes And Water"
+        "id": 6,
+        "name": "Assassin"
       },
       "description": "Alli is the shy mechanic of the Love Swamp. She loves to get her hands dirty, by either fixing broken machines or... mercilessly stalking other Brawlers. If you're walking home late at night and hear an odd noise, it's probably Alli trying to say hello.",
       "shortDescription": "",
@@ -1071,8 +1057,8 @@
         "color": "#e1fb2a"
       },
       "class": {
-        "id": 91,
-        "name": "Zone As Geisha Strike As Ninja."
+        "id": 6,
+        "name": "Assassin"
       },
       "description": "Kaze was raised to be a living weapon by her parents, but this was not the life she wanted. After escaping to Starr Park with Kenji, she can now live how she wants. However, she is still torn between the two aspects of her life, being a humble geisha and a deadly ninja.",
       "shortDescription": "",
@@ -1136,8 +1122,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 90,
-        "name": "Use Speed For Aggression And Heal For Safety."
+        "id": 7,
+        "name": "Support"
       },
       "description": "By day, Jae-yong is your average office worker. By night, he is a karaoke GOD... or so he thinks. The jury is still out on his singing skills.",
       "shortDescription": "",
@@ -1161,7 +1147,7 @@
         {
           "id": 23000929,
           "name": "The Crowd Goes Mild",
-          "description": "Being near teammates gives Jae-yong a % speed boost per teammate in range.",
+          "description": "Being near teammates gives Jae-yong a 15% speed boost per teammate in range.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000929.png",
           "released": true
         },
@@ -1201,8 +1187,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 89,
-        "name": "Slow Enemy Projectiles To Take Space."
+        "id": 5,
+        "name": "Controller"
       },
       "description": "The owner of Starr Park's escape room, Finx is meant to help visitors complete tasks. Instead, he uses his time controlling abilities to cause mischief! Also, he LOVES cats.",
       "shortDescription": "",
@@ -1226,7 +1212,7 @@
         {
           "id": 23000915,
           "name": "Hieroglyph Halt",
-          "description": "Finx reduces the reload speed of any enemy Brawlers hit by his main attack by % for seconds.",
+          "description": "Finx reduces the reload speed of any enemy Brawlers hit by his main attack by 25% for 3 seconds.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000915.png",
           "released": true
         },
@@ -1266,8 +1252,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 88,
-        "name": "Recall Weapons To Create New Angles Of Attack."
+        "id": 1,
+        "name": "Damage Dealer"
       },
       "description": "A passionate metalhead and a talented drummer, Lumi traded her drumsticks for morning stars when she got her job at Starr Park. She controls elements of ice and fire, which reflects her shy nature and her burning passion for music!",
       "shortDescription": "",
@@ -1331,8 +1317,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 87,
-        "name": "Soak Up Damage Then Hypnotize."
+        "id": 2,
+        "name": "Tank"
       },
       "description": "Ollie rides his customized hoverboard around Starr Park, grinding rails and causing trouble! A fan of old school hip hop, Ollie blasts his favorite tunes wherever he goes. His music is infectious... literally. Brawlers can't help but dance when they hear it.",
       "shortDescription": "",
@@ -1356,14 +1342,14 @@
         {
           "id": 23000883,
           "name": "Kick Push",
-          "description": "While near walls, Ollie kicks off his hoverboard and gains % extra movement speed.",
+          "description": "While near walls, Ollie kicks off his hoverboard and gains 20% extra movement speed.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000883.png",
           "released": true
         },
         {
           "id": 23000884,
           "name": "Renegade",
-          "description": "After dashing forward with his Super, Ollie gains a decaying shield over seconds.",
+          "description": "After dashing forward with his Super, Ollie gains a 3000 decaying shield over 4 seconds.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000884.png",
           "released": true
         }
@@ -1396,8 +1382,8 @@
         "color": "#d850ff"
       },
       "class": {
-        "id": 86,
-        "name": "Shoot Through Walls And Control The Map"
+        "id": 5,
+        "name": "Controller"
       },
       "description": "Meeple knows the rules to every board game in existence and if you break them... Well let's just say you don't want to break them. They hate cheaters and those who break the rules. There's only one exception... Meeple themselves!",
       "shortDescription": "",
@@ -1428,7 +1414,7 @@
         {
           "id": 23000876,
           "name": "Rule Bending",
-          "description": "Critical success also increases allies reload speed within the area by %.",
+          "description": "Critical success also increases allies reload speed within the area by x%.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000876.png",
           "released": true
         }
@@ -1458,11 +1444,11 @@
       "rarity": {
         "id": 6,
         "name": "Legendary",
-        "color": "#fff11ev"
+        "color": "#fff11e"
       },
       "class": {
-        "id": 0,
-        "name": "Unknown"
+        "id": 1,
+        "name": "Damage Dealer"
       },
       "description": "Buzz Lightyear has arrived in Starr Park! Starting his journey with an accidental delivery to the Gift Shop, Buzz has since been impressing Brawlers with his three different Brawling modes!",
       "shortDescription": "",
@@ -1526,8 +1512,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 85,
-        "name": "Use Terrain Unleash Gris-Gris"
+        "id": 4,
+        "name": "Artillery"
       },
       "description": "Juju owns the Oddities Shop and is followed everywhere by her \"pet\" voodoo doll, Gris-Gris (pronounced Gregory). Although she can control the elements, Juju is also a talented toymaker who makes dolls to sell to Starr Park's many visitors.",
       "shortDescription": "",
@@ -1558,7 +1544,7 @@
         {
           "id": 23000849,
           "name": "Numbing Needles",
-          "description": "Gris-Gris' attack now also slows the enemy for sec",
+          "description": "Gris-Gris' attack now also slows the enemy for x sec",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000849.png",
           "released": true
         }
@@ -1591,8 +1577,8 @@
         "color": "#d850ff"
       },
       "class": {
-        "id": 84,
-        "name": "Use Walls To Avoid Damage And Get Close."
+        "id": 6,
+        "name": "Assassin"
       },
       "description": "Not much is known about this mysterious pile of clothes, other than the fact it has some cool sunglasses. Discovered by Gus, Shade was given a name and now the two spooky Brawlers haunt the Ghost Station together.",
       "shortDescription": "",
@@ -1600,14 +1586,14 @@
         {
           "id": 23000834,
           "name": "Longarms",
-          "description": "The next main attack has % longer range.",
+          "description": "The next main attack has 50% longer range.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000834.png",
           "released": true
         },
         {
           "id": 23000835,
           "name": "Jump Scare",
-          "description": "Shade jumps a short distance, fearing enemies for sec when landing.",
+          "description": "Shade jumps a short distance, fearing enemies for x sec when landing.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000835.png",
           "released": true
         }
@@ -1623,7 +1609,7 @@
         {
           "id": 23000833,
           "name": "Hardened Hoodie",
-          "description": "Shade gets % damage reduction while in its Incorporeal Form.",
+          "description": "Shade gets 30% damage reduction while in its Incorporeal Form.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000833.png",
           "released": true
         }
@@ -1653,11 +1639,11 @@
       "rarity": {
         "id": 6,
         "name": "Legendary",
-        "color": "#fff11ev"
+        "color": "#fff11e"
       },
       "class": {
-        "id": 83,
-        "name": "Stay Aggressive And Heal With Attacks."
+        "id": 6,
+        "name": "Assassin"
       },
       "description": "This highly skilled sushi chef has a wholesome life running his restaurant in Starr Park, but it feels like he's trying to hide something about his past... though his sushi tastes so good, nobody cares!",
       "shortDescription": "",
@@ -1712,7 +1698,7 @@
       "id": 16000084,
       "name": "Moe",
       "assetId": 16000084,
-      "avatarId": 28000663,
+      "avatarId": 28000613,
       "imageUrl": "https://cdn.brawlify.com/brawlers/borders/16000084.png",
       "imageUrl2": "https://cdn.brawlify.com/brawlers/borderless/16000084.png",
       "rarity": {
@@ -1721,8 +1707,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 82,
-        "name": "Chase Down Enemies With The Drill."
+        "id": 1,
+        "name": "Damage Dealer"
       },
       "description": "Moe is a blind rat, found living in the Starr Park sewers by Grom, who then quickly adopted him! Now part of Starr Park's maintenance team, Moe uses his special digging machine, Driller, to traverse the sewer tunnels... and also cause a bit of destruction throughout the park, much to Ash's dismay.",
       "shortDescription": "",
@@ -1753,7 +1739,7 @@
         {
           "id": 23000805,
           "name": "Speeding Ticket",
-          "description": "Moe's Driller has % increased travel speed.",
+          "description": "Moe's Driller has 25% increased travel speed.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000805.png",
           "released": true
         }
@@ -1786,8 +1772,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 81,
-        "name": "Poke To Level Up And Take Over"
+        "id": 1,
+        "name": "Damage Dealer"
       },
       "description": "There's no turning back with Clancy (unless Hank orders him to). He's fully embraced his fake crustacean life and will do anything for his comrades.",
       "shortDescription": "",
@@ -1851,8 +1837,8 @@
         "color": "#d850ff"
       },
       "class": {
-        "id": 80,
-        "name": "Control Space And Heal Teammates."
+        "id": 7,
+        "name": "Support"
       },
       "description": "Working at Mandy's Candy Shop, what could go wrong? EVERYTHING! Luckily, Berry has the patience and toughness of a workhorse. He seems to hate every second of his job, but at the end of his shift, you might catch a brief smile.",
       "shortDescription": "",
@@ -1916,8 +1902,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 79,
-        "name": "Use Bushes And A Super To Get Close."
+        "id": 6,
+        "name": "Assassin"
       },
       "description": "A nerd at heart and a total witchcraft buff, Lily's thirst for knowledge once led her into the Enchanted Woods, where an incident involving a firefly and a carnivorous plant would change her life forever...",
       "shortDescription": "",
@@ -1948,7 +1934,7 @@
         {
           "id": 23000753,
           "name": "Vigilance",
-          "description": "Gain % movement speed while an enemy is in her Super charge radius.",
+          "description": "Gain 15% movement speed while an enemy is in her Super charge radius.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000753.png",
           "released": true
         }
@@ -1978,11 +1964,11 @@
       "rarity": {
         "id": 6,
         "name": "Legendary",
-        "color": "#fff11ev"
+        "color": "#fff11e"
       },
       "class": {
-        "id": 78,
-        "name": "Poke Transform Then Dominate"
+        "id": 2,
+        "name": "Tank"
       },
       "description": "Riding his inflatable dragon and setting off fireworks, Draco promises a show-stopping finale every night. With his electric guitar blaring and his flame-spewing ride rocking the crowd, he turns the fantasy up to eleven!",
       "shortDescription": "",
@@ -2046,8 +2032,8 @@
         "color": "#d850ff"
       },
       "class": {
-        "id": 77,
-        "name": "Use Charged Attacks To Snipe"
+        "id": 3,
+        "name": "Marksman"
       },
       "description": "Angelo is the Love Swamp's resident cupid-turned-mosquito. They buzz around the canals looking for lovebirds to dazzle with their irresistible charm, even if those require a little extra, pointy incentive.",
       "shortDescription": "",
@@ -2078,7 +2064,7 @@
         {
           "id": 23000676,
           "name": "Flow",
-          "description": "Angelo gains % increased movement speed after entering water.",
+          "description": "Angelo gains 25% increased movement speed after entering water.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000676.png",
           "released": true
         }
@@ -2111,8 +2097,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 76,
-        "name": "Build Up Notes Then Dive In"
+        "id": 6,
+        "name": "Assassin"
       },
       "description": "When it comes to Karaoke, Melodie shows no mercy. Armed with her kawaii looks and devilish set of pipes, she never fails to steal the limelight.",
       "shortDescription": "",
@@ -2136,7 +2122,7 @@
         {
           "id": 23000667,
           "name": "Fast Beats",
-          "description": "Melodie gains % increased movement speed from each note orbiting her.",
+          "description": "Melodie gains 6% increased movement speed from each note orbiting her.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000667.png",
           "released": true
         },
@@ -2176,8 +2162,8 @@
         "color": "#d850ff"
       },
       "class": {
-        "id": 75,
-        "name": "Overwhelm With Teamwork"
+        "id": 4,
+        "name": "Artillery"
       },
       "description": "Larry sells tickets to Starr Park visitors under the watchful eye of his twin, Lawrie. Larry loves rules, they make life easier! Lawrie doesn't love rules so much as enforcing them. They make a good team.",
       "shortDescription": "",
@@ -2238,11 +2224,11 @@
       "rarity": {
         "id": 6,
         "name": "Legendary",
-        "color": "#fff11ev"
+        "color": "#fff11e"
       },
       "class": {
-        "id": 74,
-        "name": "Heal Teammates Or Assassinate Enemies"
+        "id": 7,
+        "name": "Support"
       },
       "description": "Stuck giving autographs to his rabid fans at Starr Toon Studios, cartoony superstar Kit often daydreams of becoming relevant in the industry again, respected for his acting chops rather than his looks.",
       "shortDescription": "",
@@ -2306,8 +2292,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 73,
-        "name": "Leap Over Walls And Enemy Attacks"
+        "id": 6,
+        "name": "Assassin"
       },
       "description": "Mico's the sound guy in Brawlywood, but one could be forgiven for thinking he's actually a celebrity given all the bragging and name-dropping. Hot-tempered and unstable, he cannot take a joke. Don't ever call him funny...",
       "shortDescription": "",
@@ -2315,7 +2301,7 @@
         {
           "id": 23000639,
           "name": "Clipping Scream",
-          "description": "Mico lets out a deafening scream towards the nearest enemy, dealing damage and slowing down enemies for seconds on hit.",
+          "description": "Mico lets out a deafening scream towards the nearest enemy, dealing x damage and slowing down enemies for x seconds on hit.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000639.png",
           "released": true
         },
@@ -2371,8 +2357,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 72,
-        "name": "Cocoon Enemies To Remove Them From Play"
+        "id": 5,
+        "name": "Controller"
       },
       "description": "Itsy bitsy Charlie Put on a crazy show She let down her hair And made off with all your dough In came the crowd It filled up the circus tent So Charlie weaved away while Taking every cent!",
       "shortDescription": "",
@@ -2436,8 +2422,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 71,
-        "name": "Lay Down Tracks For Offense And Retreats."
+        "id": 5,
+        "name": "Controller"
       },
       "description": "Once a brilliant maestro, now a train conductor, Chuck traded the symphonies of the concert halls for the cacophonies of the Ghost Station, all in the hope of discovering the next big thing in music!",
       "shortDescription": "",
@@ -2445,14 +2431,14 @@
         {
           "id": 23000611,
           "name": "Rerouting",
-          "description": "Chuck removes the nearest Post and charges % of his Super.",
+          "description": "Chuck removes the nearest Post and charges 50% of his Super.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000611.png",
           "released": true
         },
         {
           "id": 23000612,
           "name": "Ghost Train",
-          "description": "Chuck's Supers can go through walls for seconds!",
+          "description": "Chuck's Supers can go through walls for 8 seconds!",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000612.png",
           "released": true
         }
@@ -2461,14 +2447,14 @@
         {
           "id": 23000609,
           "name": "Pit Stop",
-          "description": "Placing a Pole slows % any hit enemy for sec.",
+          "description": "Placing a Pole slows x% any hit enemy for x sec.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000609.png",
           "released": true
         },
         {
           "id": 23000610,
           "name": "Tickets Please",
-          "description": "Dashing through enemies with his Super will also steal % of their ammo.",
+          "description": "Dashing through enemies with his Super will also steal x% of their ammo.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000610.png",
           "released": true
         }
@@ -2501,8 +2487,8 @@
         "color": "#d850ff"
       },
       "class": {
-        "id": 70,
-        "name": "Build Up Heat For Burst Damage"
+        "id": 1,
+        "name": "Damage Dealer"
       },
       "description": "Against all odds, Pearl found her way into Belle and Sam's hardened hearts thanks to her disarmingly warm nature. Besides, who can resist chocolate cookies?",
       "shortDescription": "",
@@ -2566,8 +2552,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 69,
-        "name": "Big Close Range Damage And Self-Revival"
+        "id": 7,
+        "name": "Support"
       },
       "description": "Doug's hot dogs will extend your friends' shelf life.",
       "shortDescription": "",
@@ -2628,11 +2614,11 @@
       "rarity": {
         "id": 6,
         "name": "Legendary",
-        "color": "#fff11ev"
+        "color": "#fff11e"
       },
       "class": {
-        "id": 68,
-        "name": "Use The Shadow Realm To Isolate Targets"
+        "id": 6,
+        "name": "Assassin"
       },
       "description": "Gardener and caretaker of the Enchanted Forest. Obsesses over mushrooms and is hostile towards strangers.",
       "shortDescription": "",
@@ -2696,8 +2682,8 @@
         "color": "#d850ff"
       },
       "class": {
-        "id": 67,
-        "name": "Charge Up Your Attack Then Engage."
+        "id": 2,
+        "name": "Tank"
       },
       "description": "Hank is a one-shrimp, one-tank army on a mission to liberate sea life from kitchens and markets everywhere. Chefs, consider yourselves on notice!",
       "shortDescription": "",
@@ -2721,7 +2707,7 @@
         {
           "id": 23000577,
           "name": "Its Gonna Blow",
-          "description": "When Balloon Blast is charged over %, Hank gains % extra movement speed.",
+          "description": "When Balloon Blast is charged over 80%, Hank gains 10% extra movement speed.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000577.png",
           "released": true
         },
@@ -2761,8 +2747,8 @@
         "color": "#d850ff"
       },
       "class": {
-        "id": 66,
-        "name": "Punish Advancing Enemies."
+        "id": 3,
+        "name": "Marksman"
       },
       "description": "Maisie works as a safety coordinator, but deep down she enjoys dangerous situations. Sometimes, it almost feels like she has a hand in creating them.",
       "shortDescription": "",
@@ -2826,8 +2812,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 65,
-        "name": "Turn Enemies Against Themselves"
+        "id": 5,
+        "name": "Controller"
       },
       "description": "Willow works as a gondoliera in the Swamp of Love. She gives couples in search of a romantic evening the creepiest, most unsettling time they could imagine.",
       "shortDescription": "",
@@ -2851,14 +2837,14 @@
         {
           "id": 23000561,
           "name": "Love Is Blind",
-          "description": "Lantern's Curse also reduces reload speed of affected Brawlers by % for seconds.",
+          "description": "Lantern's Curse also reduces reload speed of affected Brawlers by 30% for 3 seconds.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000561.png",
           "released": true
         },
         {
           "id": 23000562,
           "name": "Obsession",
-          "description": "Hexed enemies gain % movement speed while mind controlled.",
+          "description": "Hexed enemies gain 33% movement speed while mind controlled.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000562.png",
           "released": true
         }
@@ -2891,8 +2877,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 64,
-        "name": "Mark Targets Then Deal Burst Damage"
+        "id": 1,
+        "name": "Damage Dealer"
       },
       "description": "R-T is designed to be a helpful information kiosk, but he's also been given the task of monitoring all activity within Starr Park. For safety reasons, of course.",
       "shortDescription": "",
@@ -2956,8 +2942,8 @@
         "color": "#d850ff"
       },
       "class": {
-        "id": 63,
-        "name": "Hold Your Ground For Huge Range."
+        "id": 3,
+        "name": "Marksman"
       },
       "description": "Mandy runs a candy store where she dresses in costume and doles out sweet treats. She's a little too into the act and rules her candy kingdom with an iron fist.",
       "shortDescription": "",
@@ -2965,7 +2951,7 @@
         {
           "id": 23000545,
           "name": "Caramelize",
-          "description": "Mandy's next candy from her Candy Dispenser slows down enemies on hit for seconds.",
+          "description": "Mandy's next candy from her Candy Dispenser slows down enemies on hit for 2.5 seconds.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000545.png",
           "released": true
         },
@@ -3021,8 +3007,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 62,
-        "name": "Get Your Team Into The Action With Portals"
+        "id": 7,
+        "name": "Support"
       },
       "description": "Gray styles himself as a character in an old silent film. He takes the act seriously but sometimes forgets to keep his mouth shut when doing finger bullets.",
       "shortDescription": "",
@@ -3046,14 +3032,14 @@
         {
           "id": 23000535,
           "name": "Fake Injury",
-          "description": "When Gray has full health, the next damage taken is reduced by %.",
+          "description": "When Gray has full health, the next damage taken is reduced by x%.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000535.png",
           "released": true
         },
         {
           "id": 23000536,
           "name": "New Perspective",
-          "description": "When Gray or his Allies use Doors, they recover % of their max hit points.",
+          "description": "When Gray or his Allies use Doors, they recover x% of their max hit points.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000536.png",
           "released": true
         }
@@ -3083,11 +3069,11 @@
       "rarity": {
         "id": 6,
         "name": "Legendary",
-        "color": "#fff11ev"
+        "color": "#fff11e"
       },
       "class": {
-        "id": 61,
-        "name": "Master Randomness To Control The Map."
+        "id": 1,
+        "name": "Damage Dealer"
       },
       "description": "Chester makes vicious fun of anyone in sight, trying to get under their skin. The more hate he gets, the better... especially if that hater is Mandy!",
       "shortDescription": "",
@@ -3151,8 +3137,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 60,
-        "name": "Reflect Enemy Projectiles For Big Damage."
+        "id": 2,
+        "name": "Tank"
       },
       "description": "Buster took a film projector from the movie theater where he works so he can play around with it like a prop. It's dangerous and highly unprofessional!",
       "shortDescription": "",
@@ -3216,8 +3202,8 @@
         "color": "#5ab3ff"
       },
       "class": {
-        "id": 59,
-        "name": "Buff Teammates And Snipe Enemies."
+        "id": 7,
+        "name": "Support"
       },
       "description": "Gus looks so much like a ghost child that he's often mistaken for one. Perhaps fittingly, he's an enthusiast of all things Supernatural, since he's too innocent to be scared.",
       "shortDescription": "",
@@ -3232,7 +3218,7 @@
         {
           "id": 23000514,
           "name": "Knockback Spirit",
-          "description": "Gus throws a spirit, knocking back enemies and dealing damage.",
+          "description": "Gus throws a spirit, knocking back enemies and dealing x damage.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000514.png",
           "released": true
         }
@@ -3248,7 +3234,7 @@
         {
           "id": 23000512,
           "name": "Spirit Animal",
-          "description": "Spooky increases the damage of a teammate by % for seconds.",
+          "description": "Spooky increases the damage of a teammate by x% for x seconds.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000512.png",
           "released": true
         }
@@ -3281,8 +3267,8 @@
         "color": "#d850ff"
       },
       "class": {
-        "id": 58,
-        "name": "Throw Fists Reclaim Repeat."
+        "id": 6,
+        "name": "Assassin"
       },
       "description": "A former factory worker turned wanted member of the Goldarm Gang, Sam is always there to ensure Belle doesn't go too far on their latest heist!",
       "shortDescription": "",
@@ -3346,8 +3332,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 57,
-        "name": "Burst Tanks And Silence Threats."
+        "id": 5,
+        "name": "Controller"
       },
       "description": "Otis is a young street artist on the come-up who works by shooting ink at the walls. Nobody knows his true identity, which only adds to his mystique!",
       "shortDescription": "",
@@ -3411,8 +3397,8 @@
         "color": "#d850ff"
       },
       "class": {
-        "id": 56,
-        "name": "Snipe Then Jump In For Big Damage."
+        "id": 3,
+        "name": "Marksman"
       },
       "description": "Bonnie is a bundle of uncontrollable and totally destructive energy. Her dream is to be fired from her cannon, all the way to the moon!",
       "shortDescription": "",
@@ -3420,7 +3406,7 @@
         {
           "id": 23000480,
           "name": "Sugar Rush",
-          "description": "Clyde's movement and reload speed are increased by % for seconds.",
+          "description": "Clyde's movement and reload speed are increased by 30% for 5 seconds.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000480.png",
           "released": true
         },
@@ -3476,8 +3462,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 55,
-        "name": "Super To Drop Bombs Safely From Above"
+        "id": 3,
+        "name": "Marksman"
       },
       "description": "Janet will do whatever it takes to reach the top! As a bonus, her performing skills come in handy for rescuing her sister Bonnie, whenever she gets into trouble.",
       "shortDescription": "",
@@ -3541,8 +3527,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 54,
-        "name": "Walk Over Water And Spawn Hatchlings"
+        "id": 1,
+        "name": "Damage Dealer"
       },
       "description": "Eve's purpose in life is to mother and protect her precious babies! She'll do whatever it takes to find them a good home... preferably in Ruffs' fur",
       "shortDescription": "",
@@ -3606,8 +3592,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 53,
-        "name": "Poke With Range Then Jump In To Finish."
+        "id": 6,
+        "name": "Assassin"
       },
       "description": "Fang has absorbed so many kung-fu movies he practically lives in one. He's confident, charming, and never uses his hands if he can kick instead!",
       "shortDescription": "",
@@ -3671,8 +3657,8 @@
         "color": "#d850ff"
       },
       "class": {
-        "id": 52,
-        "name": "Control Multiple Lanes With Ego"
+        "id": 1,
+        "name": "Damage Dealer"
       },
       "description": "Lola makes sure everyone knows when she enters a room. She's an expert in the fine art of causing a scene to get what she wants, and she's proud of it!",
       "shortDescription": "",
@@ -3733,11 +3719,11 @@
       "rarity": {
         "id": 6,
         "name": "Legendary",
-        "color": "#fff11ev"
+        "color": "#fff11e"
       },
       "class": {
-        "id": 51,
-        "name": "Use The Mecha For Space Then Run"
+        "id": 2,
+        "name": "Tank"
       },
       "description": "Content to work behind the scenes with her trusty mecha suit, Meg takes care of real problems, while Max and Surge are out entertaining the crowds.",
       "shortDescription": "",
@@ -3752,7 +3738,7 @@
         {
           "id": 23000489,
           "name": "Repurpose",
-          "description": "Meg ejects from the Mecha, launching it forward, dealing damage on the way. Charges Super after during the next seconds.",
+          "description": "Meg ejects from the Mecha, launching it forward, dealing x damage on the way. Charges Super after during the next x seconds.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000489.png",
           "released": true
         }
@@ -3768,7 +3754,7 @@
         {
           "id": 23000422,
           "name": "Heavy Metal",
-          "description": "The Mecha recovers health for each enemy hit with Feel the Steel (Super in Mech).",
+          "description": "The Mecha recovers x health for each enemy hit with Feel the Steel (Super in Mech).",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000422.png",
           "released": true
         }
@@ -3830,8 +3816,8 @@
         "color": "#d850ff"
       },
       "class": {
-        "id": 50,
-        "name": "Unleash An Army Of Rats"
+        "id": 2,
+        "name": "Tank"
       },
       "description": "Ash has the thankless job of keeping the park clean. He's climbed into a trash can to protect himself from broken glass and rat bites. It makes him grumpy!",
       "shortDescription": "",
@@ -3895,8 +3881,8 @@
         "color": "#d850ff"
       },
       "class": {
-        "id": 49,
-        "name": "Burst Down Enemies From Mid-Range."
+        "id": 5,
+        "name": "Controller"
       },
       "description": "Griff acts like a rich, successful entrepreneur, but his only business is the failing Starr Park Gift Shop. Oddly, he's never around when the bank calls.",
       "shortDescription": "",
@@ -3904,14 +3890,14 @@
         {
           "id": 23000399,
           "name": "Piggy Bank",
-          "description": "Griff throws a firecracker-filled piggy bank that explodes after a short delay, destroying obstacles and dealing damage to opponents within range.",
+          "description": "Griff throws a firecracker-filled piggy bank that explodes after a short delay, destroying obstacles and dealing x damage to opponents within range.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000399.png",
           "released": true
         },
         {
           "id": 23000487,
           "name": "Coin Shower",
-          "description": "Griff throws a shower of coins at target area, dealing damage per sec to opponents inside.",
+          "description": "Griff throws a shower of coins at target area, dealing x damage per sec to opponents inside.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000487.png",
           "released": true
         }
@@ -3927,7 +3913,7 @@
         {
           "id": 23000398,
           "name": "Business Resilience",
-          "description": "Every seconds, Griff regains up to % of his missing health.",
+          "description": "Every 2 seconds, Griff regains up to 15% of his missing health.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000398.png",
           "released": true
         }
@@ -3996,8 +3982,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 48,
-        "name": "Travel Around The Map And Stun Enemies."
+        "id": 6,
+        "name": "Assassin"
       },
       "description": "Buzz is a lifeguard at the Velocirapids water park and a real stickler for the rules. He clearly enjoys wielding the tiny bit of authority he has to the greatest degree possible.",
       "shortDescription": "",
@@ -4061,8 +4047,8 @@
         "color": "#d850ff"
       },
       "class": {
-        "id": 10,
-        "name": "Bombard Safely From Behind Walls."
+        "id": 4,
+        "name": "Artillery"
       },
       "description": "Grom is a brawny security guard with one weak point: the flashbacks he gets from his time working at a kindergarten. Those kids were merciless.",
       "shortDescription": "",
@@ -4086,7 +4072,7 @@
         {
           "id": 23000383,
           "name": "Foot Patrol",
-          "description": "When Grom's Super is fully charged, he gains + % faster movement speed!",
+          "description": "When Grom's Super is fully charged, he gains +15% faster movement speed!",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000383.png",
           "released": true
         },
@@ -4126,8 +4112,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 47,
-        "name": "Hit Enemies Through Walls With Explosions"
+        "id": 5,
+        "name": "Controller"
       },
       "description": "Squeak is a blob of happy energy who loves his creator, Ruffs. He's a joy to be around, at least if you are unaware that he's made of dog slobber",
       "shortDescription": "",
@@ -4191,8 +4177,8 @@
         "color": "#d850ff"
       },
       "class": {
-        "id": 46,
-        "name": "Snipe With Bouncing Bullets."
+        "id": 3,
+        "name": "Marksman"
       },
       "description": "The leader of the notorious Goldarm Gang, Belle is after more than money. She wants to find out the truth behind Starr Park and bring it down!",
       "shortDescription": "",
@@ -4200,7 +4186,7 @@
         {
           "id": 23000371,
           "name": "Nest Egg",
-          "description": "Belle places a trap on the ground that will explode when triggered by an opponent. The trap deals damage, and slows down anyone within its blast radius for seconds.",
+          "description": "Belle places a trap on the ground that will explode when triggered by an opponent. The trap deals x damage, and slows down anyone within its blast radius for x seconds.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000371.png",
           "released": true
         },
@@ -4256,8 +4242,8 @@
         "color": "#d850ff"
       },
       "class": {
-        "id": 45,
-        "name": "Use Your Dash To Get Close Or Dodge."
+        "id": 6,
+        "name": "Assassin"
       },
       "description": "A little punch-drunk from too many bumps, bruises, and gasoline fumes over his long stunt performing career, Stu is a bit wobbly on his wheel these days.",
       "shortDescription": "",
@@ -4321,8 +4307,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 44,
-        "name": "Buff Teammates And Poke Enemies."
+        "id": 7,
+        "name": "Support"
       },
       "description": "Ruffs is a loyal, highly disciplined space colonel who runs a tight ship and does everything by the book. But deep down, he just wants to be a good boy!",
       "shortDescription": "",
@@ -4386,8 +4372,8 @@
         "color": "#d850ff"
       },
       "class": {
-        "id": 43,
-        "name": "Jump To Take Out Isolated Enemies."
+        "id": 6,
+        "name": "Assassin"
       },
       "description": "Edgar believes nobody understands him. Certainly not his mom, who thinks he's going through a phase. Only he knows the darkness in his soul is eternal.",
       "shortDescription": "",
@@ -4402,7 +4388,7 @@
         {
           "id": 23000403,
           "name": "Hardcore",
-          "description": "Edgar gets a shield that protects him from the next damage. The shield gets weaker over time.",
+          "description": "Edgar gets a shield that protects him from the next x damage. The shield gets weaker over time.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000403.png",
           "released": true
         }
@@ -4411,14 +4397,14 @@
         {
           "id": 23000338,
           "name": "Hard Landing",
-          "description": "Edgar's Super and Let's Fly Gadget will also deal damage to nearby enemies upon landing, or damage on a direct hit.",
+          "description": "Edgar's Super and Let's Fly Gadget will also deal x damage to nearby enemies upon landing, or x damage on a direct hit.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000338.png",
           "released": true
         },
         {
           "id": 23000339,
           "name": "Fisticuffs",
-          "description": "Edgar receives % more healing from damage he deals.",
+          "description": "Edgar receives 30% more healing from damage he deals.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000339.png",
           "released": true
         }
@@ -4480,8 +4466,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 42,
-        "name": "Heal Teammates Or Snipe With Poison."
+        "id": 7,
+        "name": "Support"
       },
       "description": "Byron has invented many concoctions and tinctures that heal or harm in various ways.... but most of them fall into the harming category",
       "shortDescription": "",
@@ -4545,8 +4531,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 41,
-        "name": "Control The Map With A Huge Freeze."
+        "id": 5,
+        "name": "Controller"
       },
       "description": "Lou is a robot snow cone salesman who's yet to make his first sale. Being located on a snowy mountain peak might have something to do with that.",
       "shortDescription": "",
@@ -4607,11 +4593,11 @@
       "rarity": {
         "id": 6,
         "name": "Legendary",
-        "color": "#fff11ev"
+        "color": "#fff11e"
       },
       "class": {
-        "id": 40,
-        "name": "Destroy Bushes And Control Space With Fire."
+        "id": 5,
+        "name": "Controller"
       },
       "description": "Amber brings the heat, literally! She's overconfident about her fire abilities despite being a bit of a klutz. With her, it's spectacle first, and safety last.",
       "shortDescription": "",
@@ -4619,14 +4605,14 @@
         {
           "id": 23000309,
           "name": "Fire Starters",
-          "description": "Amber summons an Oil barrel with health, spilling oil when destroyed.",
+          "description": "Amber summons an Oil barrel with x health, spilling oil when destroyed.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000309.png",
           "released": true
         },
         {
           "id": 23000488,
           "name": "Dancing Flames",
-          "description": "Amber creates orbiting flames around her for seconds, dealing damage on hit.",
+          "description": "Amber creates x orbiting flames around her for x seconds, dealing x damage on hit.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000488.png",
           "released": true
         }
@@ -4642,7 +4628,7 @@
         {
           "id": 23000308,
           "name": "Scorchin Siphon",
-          "description": "Amber reloads % of her fire-breathing when an enemy takes fire damage.",
+          "description": "Amber reloads x% of her fire-breathing when an enemy takes fire damage.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000308.png",
           "released": true
         }
@@ -4675,8 +4661,8 @@
         "color": "#d850ff"
       },
       "class": {
-        "id": 39,
-        "name": "Shred High-Health Enemies And Objectives."
+        "id": 1,
+        "name": "Damage Dealer"
       },
       "description": "Colette has collected every single figurine, plushie, and toy of every single Brawler. Is she obsessed? Yes. But has she lost touch with reality? Also yes.",
       "shortDescription": "",
@@ -4684,14 +4670,14 @@
         {
           "id": 23000302,
           "name": "Na-Ah",
-          "description": "Colette fires a projectile that charms a Brawler for sec. Uses ammo.",
+          "description": "Colette fires a projectile that charms a Brawler for x sec. Uses ammo.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000302.png",
           "released": true
         },
         {
           "id": 23000457,
           "name": "Gotcha",
-          "description": "Colette fires a projectile that heals for % of damage dealt. Uses ammo and can be fired 3 times before cooldown.",
+          "description": "Colette fires a projectile that heals for x% of damage dealt. Uses ammo and can be fired 3 times before cooldown.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000457.png",
           "released": true
         }
@@ -4700,14 +4686,14 @@
         {
           "id": 23000300,
           "name": "Push It",
-          "description": "All enemy Brawlers hit by Colette's charge are carried to the farthest point of the attack! At max distance, they are stunned for sec.",
+          "description": "All enemy Brawlers hit by Colette's charge are carried to the farthest point of the attack! At max distance, they are stunned for 0.2 sec.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000300.png",
           "released": true
         },
         {
           "id": 23000301,
           "name": "Mass Tax",
-          "description": "Colette takes % less damage during her Super and gains 30% shield for 3 sec if she hits a Brawler.",
+          "description": "Colette takes x% less damage during her Super and gains 30% shield for 3 sec if she hits a Brawler.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000301.png",
           "released": true
         }
@@ -4773,11 +4759,11 @@
       "rarity": {
         "id": 6,
         "name": "Legendary",
-        "color": "#fff11ev"
+        "color": "#fff11e"
       },
       "class": {
-        "id": 38,
-        "name": "Use Supers To Level Up Or Dive In"
+        "id": 1,
+        "name": "Damage Dealer"
       },
       "description": "Surge is a souped-up soda fountain, always ready to get the party started! He's got the beats, the moves, and an endless supply of energy drinks.",
       "shortDescription": "",
@@ -4785,14 +4771,14 @@
         {
           "id": 23000285,
           "name": "Power Surge",
-          "description": "Surge's power surges! Increase Super charge rate by % for sec.",
+          "description": "Surge's power surges! Increase Super charge rate by 30% for 5 sec.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000285.png",
           "released": true
         },
         {
           "id": 23000485,
           "name": "Power Shield",
-          "description": "Within the next seconds, Surge consumes % of the damage of the next incoming hit and uses the energy to reload ammo.",
+          "description": "Within the next 2 seconds, Surge consumes 50% of the damage of the next incoming hit and uses the energy to reload x ammo.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000485.png",
           "released": true
         }
@@ -4877,8 +4863,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 37,
-        "name": "Make Walls And Bounce Projectiles Off Of Them."
+        "id": 4,
+        "name": "Artillery"
       },
       "description": "Sprout appears to be a cute gardening robot who helps Rosa around the Biodome, but it's actually an incubator with arms and wheels for a strange pink seed!",
       "shortDescription": "",
@@ -4942,8 +4928,8 @@
         "color": "#d850ff"
       },
       "class": {
-        "id": 36,
-        "name": "Poke With Outside Shots Or Burst With All"
+        "id": 3,
+        "name": "Marksman"
       },
       "description": "Originally a security camera, Nani was modified to keep an eye on Jessie. Unfortunately, she can hardly keep up with the precocious girl!",
       "shortDescription": "",
@@ -5007,8 +4993,8 @@
         "color": "#d850ff"
       },
       "class": {
-        "id": 35,
-        "name": "Push Enemies Away To Control The Map."
+        "id": 5,
+        "name": "Controller"
       },
       "description": "Gale's job is to use his snowblower to clear the areas around Mr. P's Snowtel. Nobody mentioned anything about stopping when the guests were around...",
       "shortDescription": "",
@@ -5039,7 +5025,7 @@
         {
           "id": 23000229,
           "name": "Freezing Snow",
-          "description": "Gale's snow balls now also slow down opponents for seconds.",
+          "description": "Gale's snow balls now also slow down opponents for 0.5 seconds.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000229.png",
           "released": true
         }
@@ -5072,8 +5058,8 @@
         "color": "#5ab3ff"
       },
       "class": {
-        "id": 34,
-        "name": "Get Close To Deal Large Area Damage."
+        "id": 2,
+        "name": "Tank"
       },
       "description": "Jacky is a miner who can't resist mouthing off about her wild work experiences using very colorful language! Luckily, the bad words are drowned out by the noise of her jackhammer",
       "shortDescription": "",
@@ -5081,7 +5067,7 @@
         {
           "id": 23000256,
           "name": "Pneumatic Booster",
-          "description": "Jacky gets a burst of energy and moves % faster for seconds.",
+          "description": "Jacky gets a burst of energy and moves 25% faster for 4 seconds.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000256.png",
           "released": true
         },
@@ -5137,8 +5123,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 33,
-        "name": "Buff Your Team With Tons Of Speed"
+        "id": 7,
+        "name": "Support"
       },
       "description": "Fuelled by energy drinks, Max speeds to the scene whenever someone needs help. She never sticks around long enough to do much... but she sure is fast!",
       "shortDescription": "",
@@ -5153,7 +5139,7 @@
         {
           "id": 23000311,
           "name": "Sneaky Sneakers",
-          "description": "Max throws a lightning bolt. If she reactivates the Gadget, or after seconds, she blinks back to the lightning bolt and heals any damage taken since.",
+          "description": "Max throws a lightning bolt. If she reactivates the Gadget, or after x seconds, she blinks back to the lightning bolt and heals any damage taken since.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000311.png",
           "released": true
         }
@@ -5162,7 +5148,7 @@
         {
           "id": 23000210,
           "name": "Super Charged",
-          "description": "Hitting an enemy with Max's Main Attack extends the duration of her Super by sec.",
+          "description": "Hitting an enemy with Max's Main Attack extends the duration of her Super by x sec.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000210.png",
           "released": true
         },
@@ -5238,8 +5224,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 32,
-        "name": "Use Porters To Control The Map."
+        "id": 5,
+        "name": "Controller"
       },
       "description": "Mr. P is in over his head trying to run a hotel. He's always yelling at his employees to work faster, as if they could understand his gibberish!",
       "shortDescription": "",
@@ -5303,8 +5289,8 @@
         "color": "#d850ff"
       },
       "class": {
-        "id": 31,
-        "name": "Control The Map With Large Attacks."
+        "id": 5,
+        "name": "Controller"
       },
       "description": "Emz supposedly works for her uncle Mortis at the mortuary, but she rarely makes an appearance there. She's too busy hawking her hairspray brand online.",
       "shortDescription": "",
@@ -5312,14 +5298,14 @@
         {
           "id": 23000274,
           "name": "Friendzoner",
-          "description": "Emz fires off some hairspray that pushes enemies back. Deals damage.",
+          "description": "Emz fires off some hairspray that pushes enemies back. Deals x damage.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000274.png",
           "released": true
         },
         {
           "id": 23000459,
           "name": "Acid Spray",
-          "description": "Emz squirts out hairspray that goes through walls! Deals damage.",
+          "description": "Emz squirts out hairspray that goes through walls! Deals x damage.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000459.png",
           "released": true
         }
@@ -5404,8 +5390,8 @@
         "color": "#d850ff"
       },
       "class": {
-        "id": 30,
-        "name": "Land Hits Then Punish"
+        "id": 3,
+        "name": "Marksman"
       },
       "description": "Bea spends her day watching bugs as they go about their lives, imagining what they'd say if she could understand them... or even what it's like to be one.",
       "shortDescription": "",
@@ -5466,11 +5452,11 @@
       "rarity": {
         "id": 6,
         "name": "Legendary",
-        "color": "#fff11ev"
+        "color": "#fff11e"
       },
       "class": {
-        "id": 29,
-        "name": "Use Sandstorm To Control Objectives"
+        "id": 5,
+        "name": "Controller"
       },
       "description": "On the rare occasions Sandy wakes from his slumber, he tries to help his big sister Tara around their store. But it's never long before he falls asleep again.",
       "shortDescription": "",
@@ -5534,8 +5520,8 @@
         "color": "#5ab3ff"
       },
       "class": {
-        "id": 28,
-        "name": "Hold Ground And Boost Your Team"
+        "id": 1,
+        "name": "Damage Dealer"
       },
       "description": "An arcade game famous for its brutal difficulty, 8-Bit always hated its players. Now that it's missing one of its guns, it's angrier than ever before.",
       "shortDescription": "",
@@ -5550,7 +5536,7 @@
         {
           "id": 23000318,
           "name": "Extra Credits",
-          "description": "8-Bit fires projectiles. Consumes ammo.",
+          "description": "8-Bit fires x projectiles. Consumes ammo.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000318.png",
           "released": true
         }
@@ -5559,14 +5545,14 @@
         {
           "id": 23000168,
           "name": "Boosted Booster",
-          "description": "Increases the Damage Booster's range by % and boosts damage by an additional %.",
+          "description": "Increases the Damage Booster's range by x% and boosts damage by an additional x%.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000168.png",
           "released": true
         },
         {
           "id": 23000181,
           "name": "Plugged In",
-          "description": "While near the Damage Booster 8-Bit gains + % Movement Speed.",
+          "description": "While near the Damage Booster 8-Bit gains +x% Movement Speed.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000181.png",
           "released": true
         }
@@ -5635,8 +5621,8 @@
         "color": "#d850ff"
       },
       "class": {
-        "id": 27,
-        "name": "Charge In And Knock Em Back"
+        "id": 2,
+        "name": "Tank"
       },
       "description": "Bibi is a tough punk with a baseball bat and an attitude to match. She's a bit of a nerd too, but she'd never show it. She's got an image to maintain!",
       "shortDescription": "",
@@ -5644,14 +5630,14 @@
         {
           "id": 23000275,
           "name": "Vitamin Booster",
-          "description": "Bibi heals health per second for seconds.",
+          "description": "Bibi heals 1000 health per second for 4 seconds.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000275.png",
           "released": true
         },
         {
           "id": 23000458,
           "name": "Extra Sticky",
-          "description": "Bibi throws bubble gum that slows all enemies in it by %",
+          "description": "Bibi throws bubble gum that slows all enemies in it by x%",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000458.png",
           "released": true
         }
@@ -5660,7 +5646,7 @@
         {
           "id": 23000134,
           "name": "Home Run",
-          "description": "Bibi's movement speed is increased by % when her Home Run bar is fully charged.",
+          "description": "Bibi's movement speed is increased by 12% when her Home Run bar is fully charged.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000134.png",
           "released": true
         },
@@ -5736,8 +5722,8 @@
         "color": "#5ab3ff"
       },
       "class": {
-        "id": 26,
-        "name": "Boomerang Your Pickaxe For More Damage"
+        "id": 1,
+        "name": "Damage Dealer"
       },
       "description": "Carl is a mining robot who's fascinated by rocks and stones of all kinds. Don't let him get started on his latest obsession: the effects of Gems!",
       "shortDescription": "",
@@ -5801,8 +5787,8 @@
         "color": "#68fd58"
       },
       "class": {
-        "id": 25,
-        "name": "Use Bushes Whenever Possible"
+        "id": 2,
+        "name": "Tank"
       },
       "description": "Rosa is a botanist with a strong connection to plants. She's also a boxer, and won't hesitate to punch one of her specimens if it goes out of control!",
       "shortDescription": "",
@@ -5817,7 +5803,7 @@
         {
           "id": 23000348,
           "name": "Unfriendly Bushes",
-          "description": "All opponents hiding in bushes take damage and get slowed down for seconds.",
+          "description": "All opponents hiding in bushes take x damage and get slowed down for 3 seconds.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000348.png",
           "released": true
         }
@@ -5863,11 +5849,11 @@
       "rarity": {
         "id": 6,
         "name": "Legendary",
-        "color": "#fff11ev"
+        "color": "#fff11e"
       },
       "class": {
-        "id": 24,
-        "name": "Sneak In And Assassinate."
+        "id": 6,
+        "name": "Assassin"
       },
       "description": "Since Leon doesn't like hanging with other people much, his ability to become invisible comes in handy. Only his little sister, Nita, seems to get through to him.",
       "shortDescription": "",
@@ -5891,14 +5877,14 @@
         {
           "id": 23000119,
           "name": "Smoke Trails",
-          "description": "When Leon is not visible, he gains a % movement speed for the duration of his invisibility.",
+          "description": "When Leon is not visible, he gains a 30% movement speed for the duration of his invisibility.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000119.png",
           "released": true
         },
         {
           "id": 23000141,
           "name": "Invisiheal",
-          "description": "Leon recovers health per second while his Super is active.",
+          "description": "Leon recovers x health per second while his Super is active.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000141.png",
           "released": true
         }
@@ -5967,8 +5953,8 @@
         "color": "#5ab3ff"
       },
       "class": {
-        "id": 23,
-        "name": "Control Space From Safety."
+        "id": 4,
+        "name": "Artillery"
       },
       "description": "Tick follows Penny around like a pet as she plots her next big scheme. He isn't good for much besides blowing things up, but that's usually plenty!",
       "shortDescription": "",
@@ -6032,8 +6018,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 22,
-        "name": "Single Out Enemies With Long Range Pulls"
+        "id": 5,
+        "name": "Controller"
       },
       "description": "Most people look at Gene and see a funny little guy in a costume. What they don't see is that his personality is split between his body and his teapot.",
       "shortDescription": "",
@@ -6097,8 +6083,8 @@
         "color": "#d850ff"
       },
       "class": {
-        "id": 21,
-        "name": "Control Space With Stuns And High Health."
+        "id": 2,
+        "name": "Tank"
       },
       "description": "Frank is a good-natured giant who helps out at the mortuary by day and spins tunes at the Club by night. He doesn't get a lot of sleep, and it shows.",
       "shortDescription": "",
@@ -6106,14 +6092,14 @@
         {
           "id": 23000261,
           "name": "Active Noise Canceling",
-          "description": "Fires a soundwave in a target direction, dealing damage to Brawlers. Frank becomes immune to Crowd Control for secs.",
+          "description": "Fires a soundwave in a target direction, dealing x damage to Brawlers. Frank becomes immune to Crowd Control for x secs.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000261.png",
           "released": true
         },
         {
           "id": 23000351,
           "name": "Irresistible Attraction",
-          "description": "Frank aims a long-range attack that pulls enemies towards him. Consumes ammo. Does damage.",
+          "description": "Frank aims a long-range attack that pulls enemies towards him. Consumes ammo. Does x damage.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000351.png",
           "released": true
         }
@@ -6198,8 +6184,8 @@
         "color": "#5ab3ff"
       },
       "class": {
-        "id": 20,
-        "name": "Use Your Cannon To Take Over The Map"
+        "id": 5,
+        "name": "Controller"
       },
       "description": "Penny doesn't care about studying old maps or puzzling over sea shanty riddles. She's a pirate so she can blow stuff up and grab whatever she wants!",
       "shortDescription": "",
@@ -6263,8 +6249,8 @@
         "color": "#5ab3ff"
       },
       "class": {
-        "id": 19,
-        "name": "Roll In And Burst Damage Targets."
+        "id": 2,
+        "name": "Tank"
       },
       "description": "Darryl put on the pirate captain's hat in a bid to avoid work, but now he's forced to defend his ship! Who knew being in charge took actual effort?",
       "shortDescription": "",
@@ -6328,8 +6314,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 18,
-        "name": "Punish Grouped Enemies."
+        "id": 1,
+        "name": "Damage Dealer"
       },
       "description": "Tara has seen in the cards that great difficulties lie ahead! But don't despair... she has a terrific selection of magical trinkets for sale to help with that.",
       "shortDescription": "",
@@ -6393,8 +6379,8 @@
         "color": "#d850ff"
       },
       "class": {
-        "id": 17,
-        "name": "Hold Ground And Heal Teammates."
+        "id": 7,
+        "name": "Support"
       },
       "description": "Pam handles an enormous workload at the junkyard and always gets it done! It's just a shame it keeps her away from her daughter, Jessie...",
       "shortDescription": "",
@@ -6458,8 +6444,8 @@
         "color": "#d850ff"
       },
       "class": {
-        "id": 16,
-        "name": "Poke From Range And Escape With A Super"
+        "id": 3,
+        "name": "Marksman"
       },
       "description": "Piper wants nothing more than to be the local village baker who hands out pies, cookies and other sweet treats! Just don't ask about her past.",
       "shortDescription": "",
@@ -6523,8 +6509,8 @@
         "color": "#d850ff"
       },
       "class": {
-        "id": 15,
-        "name": "Control Space With Hidden Traps."
+        "id": 5,
+        "name": "Controller"
       },
       "description": "Bo has survived in the Rumble Jungle for a long time. It's all the more impressive considering he's been using toys he got on sale from the Gift Shop.",
       "shortDescription": "",
@@ -6532,7 +6518,7 @@
         {
           "id": 23000263,
           "name": "Super Totem",
-          "description": "Bo places a totem that increases allies' Super charging rate by %. The totem slowly loses its health over time.",
+          "description": "Bo places a totem that increases allies' Super charging rate by x%. The totem slowly loses its health over time.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000263.png",
           "released": true
         },
@@ -6624,8 +6610,8 @@
         "color": "#68fd58"
       },
       "class": {
-        "id": 14,
-        "name": "Instant Heals Keep Your Team Fighting"
+        "id": 7,
+        "name": "Support"
       },
       "description": "Poco believes music can change people's lives. He's so enthusiastic about it that he never stops playing, even after people ask him to!",
       "shortDescription": "",
@@ -6633,14 +6619,14 @@
         {
           "id": 23000267,
           "name": "Tuning Fork",
-          "description": "Poco and all nearby allies heal for health times.",
+          "description": "Poco and all nearby allies heal for x health x times.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000267.png",
           "released": true
         },
         {
           "id": 23000350,
           "name": "Protective Tunes",
-          "description": "Poco creates a large AoE lasting seconds that removes all adverse effects and grants them immunity while inside.",
+          "description": "Poco creates a large AoE lasting x seconds that removes all adverse effects and grants them immunity while inside.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000350.png",
           "released": true
         }
@@ -6656,7 +6642,7 @@
         {
           "id": 23000144,
           "name": "Screeching Solo",
-          "description": "Poco's Super now also hits enemies, dealing damage.",
+          "description": "Poco's Super now also hits enemies, dealing x damage.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000144.png",
           "released": true
         }
@@ -6686,11 +6672,11 @@
       "rarity": {
         "id": 6,
         "name": "Legendary",
-        "color": "#fff11ev"
+        "color": "#fff11e"
       },
       "class": {
-        "id": 13,
-        "name": "Poison Enemies From A Distance."
+        "id": 6,
+        "name": "Assassin"
       },
       "description": "Crow trusts no one and keeps to himself. The most anyone knows about him is that he's often found at the diner, hanging out with Bull and Bibi.",
       "shortDescription": "",
@@ -6698,14 +6684,14 @@
         {
           "id": 23000243,
           "name": "Instapoison",
-          "description": "Crow instantly deals remaining poison damage to all Crow-poisoned enemies and gains a shield for % of the value.",
+          "description": "Crow instantly deals remaining poison damage to all Crow-poisoned enemies and gains a shield for 150% of the value.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000243.png",
           "released": true
         },
         {
           "id": 23000286,
           "name": "Slowing Toxin",
-          "description": "Throw a kunai that damages, slows and poisons the first enemy hit for sec.",
+          "description": "Throw a kunai that damages, slows and poisons the first enemy hit for x sec.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000286.png",
           "released": true
         }
@@ -6790,8 +6776,8 @@
         "color": "#fe5e72"
       },
       "class": {
-        "id": 12,
-        "name": "Jump In On Weak Or Isolated Enemies."
+        "id": 6,
+        "name": "Assassin"
       },
       "description": "Mortis had grand designs built around being a mortician and a vampire, but the fact that nobody is dying at Starr Park has put a huge damper on his plans.",
       "shortDescription": "",
@@ -6799,7 +6785,7 @@
         {
           "id": 23000265,
           "name": "Combo Spinner",
-          "description": "Mortis spins his shovel dealing damage. Can also be aimed for a short-distance bat attack.",
+          "description": "Mortis spins his shovel dealing x damage. Can also be aimed for a short-distance bat attack.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000265.png",
           "released": true
         },
@@ -6891,8 +6877,8 @@
         "color": "#68fd58"
       },
       "class": {
-        "id": 11,
-        "name": "Jump In But Stay Away From Crowds."
+        "id": 2,
+        "name": "Tank"
       },
       "description": "El Primo is always in the spotlight and that's right where he wants to be! There's no audience he can't win over, except maybe his fellow performers...",
       "shortDescription": "",
@@ -6907,7 +6893,7 @@
         {
           "id": 23000292,
           "name": "Asteroid Belt",
-          "description": "El primo flexes his pecs and destroys any incoming projectiles for sec.",
+          "description": "El primo flexes his pecs and destroys any incoming projectiles for x sec.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000292.png",
           "released": true
         }
@@ -6923,7 +6909,7 @@
         {
           "id": 23000140,
           "name": "Meteor Rush",
-          "description": "El Primo gains a % speed boost for seconds after using his Super.",
+          "description": "El Primo gains a 25% speed boost for 3 seconds after using his Super.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000140.png",
           "released": true
         }
@@ -6956,8 +6942,8 @@
         "color": "#5ab3ff"
       },
       "class": {
-        "id": 10,
-        "name": "Bombard Safely From Behind Walls."
+        "id": 4,
+        "name": "Artillery"
       },
       "description": "Dynamike is an old miner and prospector who's become obsessed with explosions. Nothing makes him happier than a big boom!",
       "shortDescription": "",
@@ -6965,7 +6951,7 @@
         {
           "id": 23000258,
           "name": "Fidget Spinner",
-          "description": "Dynamike spins furiously with % increased movement speed and throws multiple sticks of dynamite around himself. Each dynamite deals damage to enemies.",
+          "description": "Dynamike spins furiously with 20% increased movement speed and throws multiple sticks of dynamite around himself. Each dynamite deals x damage to enemies.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000258.png",
           "released": true
         },
@@ -7021,8 +7007,8 @@
         "color": "#68fd58"
       },
       "class": {
-        "id": 9,
-        "name": "Pressure With Bruce The Bear"
+        "id": 1,
+        "name": "Damage Dealer"
       },
       "description": "Nita is a ferocious child who never backs down from a fight! The teddy bear on her head serves as a warning to others: don't poke the bear.",
       "shortDescription": "",
@@ -7037,7 +7023,7 @@
         {
           "id": 23000314,
           "name": "Faux Fur",
-          "description": "For the next seconds, Nita's bear gets a % shield against damage.",
+          "description": "For the next x seconds, Nita's bear gets a x% shield against damage.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000314.png",
           "released": true
         }
@@ -7122,8 +7108,8 @@
         "color": "#5ab3ff"
       },
       "class": {
-        "id": 8,
-        "name": "Place Your Turret To Dominate The Map"
+        "id": 5,
+        "name": "Controller"
       },
       "description": "Jessie is a prodigy who builds guns and gadgets from parts she finds in the junkyard. Maybe one day her mother Pam will see she can fend for herself!",
       "shortDescription": "",
@@ -7187,8 +7173,8 @@
         "color": "#68fd58"
       },
       "class": {
-        "id": 7,
-        "name": "Deny Space By Throwing Fiery Bottles."
+        "id": 4,
+        "name": "Artillery"
       },
       "description": "A bartending robot designed to mix drinks and banter with patrons, Barley also makes sure to keep his bar clean, to the detriment of anyone who makes a mess.",
       "shortDescription": "",
@@ -7249,11 +7235,11 @@
       "rarity": {
         "id": 6,
         "name": "Legendary",
-        "color": "#fff11ev"
+        "color": "#fff11e"
       },
       "class": {
-        "id": 6,
-        "name": "Zone Enemies With A Super And Spikes."
+        "id": 1,
+        "name": "Damage Dealer"
       },
       "description": "Most people think Spike is Colt and Shelly's cute sidekick at the Ranger Ranch. Nobody could begin to guess the depths of his trauma",
       "shortDescription": "",
@@ -7261,14 +7247,14 @@
         {
           "id": 23000247,
           "name": "Popping Pincushion",
-          "description": "Spike aims and fires a wave of needles that deal damage.",
+          "description": "Spike aims and fires a wave of needles that deal x damage.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000247.png",
           "released": true
         },
         {
           "id": 23000406,
           "name": "Life Plant",
-          "description": "Spike throws a large cactus with health to give cover to teammates. If destroyed, the cactus bursts, and all nearby teammates recover health.",
+          "description": "Spike throws a large cactus with x health to give cover to teammates. If destroyed, the cactus bursts, and all nearby teammates recover x health.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000406.png",
           "released": true
         }
@@ -7353,8 +7339,8 @@
         "color": "#5ab3ff"
       },
       "class": {
-        "id": 5,
-        "name": "Bounce Shots For Extra Range"
+        "id": 1,
+        "name": "Damage Dealer"
       },
       "description": "Rico is definitely a real space bounty hunter who tracks down the galaxy's most wanted criminals, not a gumball machine pretending to be cool.",
       "shortDescription": "",
@@ -7362,14 +7348,14 @@
         {
           "id": 23000246,
           "name": "Multiball Launcher",
-          "description": "Rico Deploys a vending machine that has health - when destroyed fires bouncing projectiles in all directions.",
+          "description": "Rico Deploys a vending machine that has x health - when destroyed fires bouncing projectiles in all directions.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000246.png",
           "released": true
         },
         {
           "id": 23000409,
           "name": "Multiball",
-          "description": "Rico fires a big bullet that, on hitting a wall or Brawler, splits into smaller bullets.",
+          "description": "Rico fires a big bullet that, on hitting a wall or Brawler, splits into x smaller bullets.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000409.png",
           "released": true
         }
@@ -7385,7 +7371,7 @@
         {
           "id": 23000156,
           "name": "Robo Retreat",
-          "description": "Rico runs % faster when his health falls below %.",
+          "description": "Rico runs x% faster when his health falls below x%.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000156.png",
           "released": true
         }
@@ -7454,8 +7440,8 @@
         "color": "#68fd58"
       },
       "class": {
-        "id": 4,
-        "name": "Explode Brawlers And Walls"
+        "id": 3,
+        "name": "Marksman"
       },
       "description": "Brock is a smack-talking video game enthusiast. His big attitude hides a more introverted personality, but he'll still do whatever it takes to win!",
       "shortDescription": "",
@@ -7555,8 +7541,8 @@
         "color": "#68fd58"
       },
       "class": {
-        "id": 3,
-        "name": "Super To Break Walls And Close The Distance"
+        "id": 2,
+        "name": "Tank"
       },
       "description": "Bull isn't as carefree as he was in his youth, but just because his rowdy days are behind him doesn't mean he won't still crush someone who's asking for it.",
       "shortDescription": "",
@@ -7564,7 +7550,7 @@
         {
           "id": 23000272,
           "name": "T-Bone Missile",
-          "description": "Bull throws a projectile at the target Brawler, dealing damage and healing for if he hits.",
+          "description": "Bull throws a projectile at the target Brawler, dealing x damage and healing for x if he hits.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000272.png",
           "released": true
         },
@@ -7656,8 +7642,8 @@
         "color": "#68fd58"
       },
       "class": {
-        "id": 2,
-        "name": "Long Range Consistent Damage."
+        "id": 1,
+        "name": "Damage Dealer"
       },
       "description": "Colt is the star attraction at Starr Park! His good looks, charisma and gun twirling tricks win over any audience, except maybe Shelly.",
       "shortDescription": "",
@@ -7665,14 +7651,14 @@
         {
           "id": 23000273,
           "name": "Speedloader",
-          "description": "Colt fires two quick shots that slow targets. Deals damage.",
+          "description": "Colt fires two quick shots that slow targets. Deals x damage.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000273.png",
           "released": true
         },
         {
           "id": 23000319,
           "name": "Silver Bullet",
-          "description": "Colt fires a bullet that destroys the environment and pierces Brawlers. Deals damage. Consumes ammo.",
+          "description": "Colt fires a bullet that destroys the environment and pierces Brawlers. Deals x damage. Consumes ammo.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000319.png",
           "released": true
         }
@@ -7681,7 +7667,7 @@
         {
           "id": 23000077,
           "name": "Slick Boots",
-          "description": "Colt's movement speed is increased by %.",
+          "description": "Colt's movement speed is increased by x%.",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000077.png",
           "released": true
         },
@@ -7758,7 +7744,7 @@
       },
       "class": {
         "id": 1,
-        "name": "Counter Tanks And Assassins With Burst Damage."
+        "name": "Damage Dealer"
       },
       "description": "Shelly's the perfect ranger: reliable, tough, and terrific with her shotgun. She never understood why Colt got to steal the limelight...",
       "shortDescription": "",
@@ -7773,7 +7759,7 @@
         {
           "id": 23000288,
           "name": "Clay Pigeons",
-          "description": "Shelly focuses her fire to a smaller area with an increased range. Can be used times per activation.",
+          "description": "Shelly focuses her fire to a smaller area with an increased range. Can be used x times per activation.",
           "imageUrl": "https://cdn.brawlify.com/gadgets/borderless/23000288.png",
           "released": true
         }
@@ -7782,7 +7768,7 @@
         {
           "id": 23000076,
           "name": "Shell Shock",
-          "description": "Shelly's Super shells slow down enemies for sec!",
+          "description": "Shelly's Super shells slow down enemies for 2 sec!",
           "imageUrl": "https://cdn.brawlify.com/star-powers/borderless/23000076.png",
           "released": true
         },
@@ -7849,7 +7835,7 @@
   "completeness": {
     "identity": 109,
     "portraits": 109,
-    "gadgets": 107,
+    "gadgets": 108,
     "starPowers": 108,
     "gears": 0,
     "hyperCharges": 0,
