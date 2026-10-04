@@ -18,6 +18,20 @@ const ASSET_STATE={loaded:false,generatedAt:null,entries:{}};
 const COMPONENT_STATE={loaded:false,generatedAt:null,entries:{}};
 const PROFILE_STATE={loaded:false,generatedAt:null,entries:{}};
 
+// Safe UI bridge: the browser list must never crash if the optional presentation layer fails to load.
+// ui-v2.js replaces this with the full reference-style card when available.
+if(typeof window.bcard!=='function'){
+ window.bcard=function(b,compact=false,mode=playMode,map=playMap,rank=null,kind=''){
+  if(!b)return '';
+  const image=typeof portrait==='function'?portrait(b):(b.imageUrl2||b.imageUrl||'');
+  const owned=typeof isOwnedAccount==='function'&&isOwnedAccount(b);
+  const meta=typeof metaEntry==='function'?metaEntry(b,mode,map):null;
+  return '<button class="card brawlerCardFallback" type="button" onclick="selected=\''+esc(b.id)+'\';render()">'+
+    (image?'<img src="'+esc(image)+'" alt="" loading="lazy">':'')+
+    '<div><b>'+esc(b.name||'Brawler')+'</b><span>'+(owned?'OWNED':'CATALOG')+(meta?.winRate!=null?' · '+esc(meta.winRate)+'% WR':'')+'</span></div></button>';
+ };
+}
+
 async function fetchJson(url,ms=7000){const ctl=new AbortController();const t=setTimeout(()=>ctl.abort(),ms);try{const r=await fetch(url,{cache:'no-store',signal:ctl.signal});if(!r.ok)throw new Error('HTTP '+r.status+' · '+url);return await r.json()}finally{clearTimeout(t)}}
 
 function metaEntry(b,mode='Ranked',map='Random'){
