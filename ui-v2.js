@@ -84,7 +84,6 @@ function homeV2(){
  '<section class="refBottomNote"><b>'+E(next?.label||'Il tuo prossimo passo')+'</b><span>'+E(next?.reason||'Apri un Brawler per vedere build, modalità, statistiche, Overdrive e Buffies.')+'</span></section>'+
  '</section>';
 }
-})();
 window.bcard=bcardV2;
 window.BHHome=homeV2;
 
