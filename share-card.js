@@ -15,7 +15,28 @@ function catalogById(id){
   return window.allBrawlers?.().find(x=>String(x.id)===String(id))||null;
 }
 function imageUrl(type,item,b){
-  return window.compIcon?.(type,item,b)||'';
+  if(!item)return '';
+  if(item.imageUrl)return item.imageUrl;
+  const html=window.compIcon?.(type,item,b)||'';
+  if(!html)return '';
+  const holder=document.createElement('div');holder.innerHTML=html;
+  return holder.querySelector('img')?.currentSrc||holder.querySelector('img')?.src||'';
+}
+function accountItems(acc,b){
+  const c=window.catalogEntry?.(b)||{};
+  const out=[];
+  const push=(type,arr,key)=>{
+    for(const raw of (Array.isArray(arr)?arr:[])){
+      const id=String(raw?.id??raw);
+      const item=(Array.isArray(c[key])?c[key]:[]).find(x=>String(x?.id)===id)||raw;
+      if(item)out.push([type,item]);
+    }
+  };
+  push('gadgets',acc?.gadgets,'gadgets');
+  push('starPowers',acc?.starPowers,'starPowers');
+  push('gears',acc?.gears,'gears');
+  push('hyperCharges',acc?.hyperCharges,'hyperCharges');
+  return out.slice(0,4);
 }
 function rawImgSrc(el){
   return el?.currentSrc||el?.src||'';
@@ -134,16 +155,16 @@ async function generateAccountCard(){
     ctx.fillStyle=acc?'#ffd34e':'#66758d';ctx.font='900 11px Arial';ctx.fillText('P'+power,x+63,y+39);
     ctx.fillStyle=acc?'#b9c8dc':'#53627a';ctx.font='700 9px Arial';ctx.fillText(trophies+' T',x+63,y+53);
 
-    const c=window.catalogEntry?.(b)||b;
-    const items=[
-      ...(Array.isArray(c.gadgets)?c.gadgets.slice(0,2).map(v=>['gadgets',v]):[]),
-      ...(Array.isArray(c.starPowers)?c.starPowers.slice(0,2).map(v=>['starPowers',v]):[])
-    ];
-    let ix=x+cardW-38;
-    for(const [type,item] of items.slice(0,2)){
+    const items=accountItems(acc,b);
+    let ix=x+cardW-50, iy=y+8, count=0;
+    for(const [type,item] of items){
       const src=imageUrl(type,item,b);
       const icon=await loadImage(src);
-      if(icon){ctx.drawImage(icon,ix,y+8,22,22);ix-=24}
+      if(icon){
+        ctx.drawImage(icon,ix,iy,20,20);
+        count++;
+        if(count%2===0){ix=x+cardW-50;iy+=22}else ix+=22;
+      }
     }
   }
 
