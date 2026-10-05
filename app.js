@@ -248,6 +248,7 @@ function compIcon(type,item,b=null){
  const fallbackPath=paths[type]&&item.id?img(paths[type],item.id):'';
  const src=localAsset(type,item,b)||mapped?.imageUrl||fallbackPath;
  if(!src){
+   if(type==='overdrives'||type==='overdrive') return '<span class="compIcon overdriveVisual" role="img" aria-label="'+esc(item?.name||'Overdrive')+'"></span>';
    return '<img class="compIcon generatedIcon" loading="lazy" src="'+svgComponentIcon(type,item?.name||type)+'" alt="'+esc(item?.name||type)+'">';
  }
  return '<img class="compIcon" loading="lazy" src="'+esc(src)+'" alt="'+esc(item?.name||'')+'" aria-hidden="true" onerror="this.onerror=null;this.src='+JSON.stringify(svgComponentIcon(type,item?.name||type))+'">';
