@@ -1,5 +1,5 @@
-const C='bh-v27';
-const ASSETS=['./','./index.html','./style.css','./manifest.webmanifest','./ui-v2.js','./detail-v3.js','./component-modal.js','./recommendations.js','./data/game-db.json','./data/changelog.json','./data/brawlers.json','./data/build-meta.json','./data/components.json','./data/asset-manifest.json'];
+const C='bh-v28';
+const ASSETS=['./','./index.html','./style.css','./manifest.webmanifest','./ui-v2.js','./detail-v3.js','./component-modal.js','./share-card.js','./recommendations.js','./data/game-db.json','./data/changelog.json','./data/brawlers.json','./data/build-meta.json','./data/components.json','./data/asset-manifest.json'];
 
 self.addEventListener('install',event=>{
   event.waitUntil(
@@ -19,9 +19,7 @@ self.addEventListener('fetch',event=>{
   if(event.request.method!=='GET')return;
   const url=new URL(event.request.url);
   const sameOrigin=url.origin===self.location.origin;
-
-  // HTML and JavaScript must be network-first so deployments cannot be hidden by stale PWA cache.
-  if(sameOrigin && (url.pathname.endsWith('/index.html') || url.pathname.endsWith('/app.js') || url.pathname.endsWith('/ui-v2.js') || url.pathname.endsWith('/detail-v3.js') || url.pathname.endsWith('/recommendations.js') || url.pathname.endsWith('/style.css') || url.pathname.endsWith('/sw.js') || url.pathname.endsWith('/data/asset-manifest.json') || url.pathname.endsWith('/data/meta.json') || url.pathname.endsWith('/data/build-meta.json') || url.pathname.endsWith('/data/brawlers.json') || url.pathname.endsWith('/data/components.json') || url.pathname.endsWith('/data/game-db.json'))){
+  if(sameOrigin && (url.pathname.endsWith('/index.html') || url.pathname.endsWith('/app.js') || url.pathname.endsWith('/ui-v2.js') || url.pathname.endsWith('/detail-v3.js') || url.pathname.endsWith('/component-modal.js') || url.pathname.endsWith('/share-card.js') || url.pathname.endsWith('/recommendations.js') || url.pathname.endsWith('/style.css') || url.pathname.endsWith('/sw.js') || url.pathname.endsWith('/data/asset-manifest.json') || url.pathname.endsWith('/data/meta.json') || url.pathname.endsWith('/data/build-meta.json') || url.pathname.endsWith('/data/brawlers.json') || url.pathname.endsWith('/data/components.json') || url.pathname.endsWith('/data/game-db.json'))){
     event.respondWith(
       fetch(event.request,{cache:'no-store'})
         .then(response=>{
@@ -33,7 +31,6 @@ self.addEventListener('fetch',event=>{
     );
     return;
   }
-
   event.respondWith(
     caches.match(event.request).then(cached=>cached||fetch(event.request).then(response=>{
       const copy=response.clone();
