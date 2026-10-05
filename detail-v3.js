@@ -179,6 +179,7 @@ function detailV3(b){
  const buffAvailable=buffRows.filter(x=>x[2]?.length).length;
  const buffOwned=buffRows.filter(x=>x[3]===true).length;
  const modes=Object.keys(window.MODES||{}).map(name=>({name,m:window.metaEntry?.(b,name,'Random')})).filter(x=>x.m?.score!=null).sort((a,z)=>Number(z.m.score)-Number(a.m.score));
+ const modeCards=modes.map(x=>'<button class="rhModeRow" type="button" onclick="playMode='+H(x.name)+';render()"><span class="rhModeIcon">'+E(String(x.name).slice(0,1).toUpperCase())+'</span><div><b>'+E(x.name)+'</b><small>'+E(PCT(x.m.winRate))+' WR · '+E(PCT(x.m.pickRate))+' USE</small></div><em>'+E(Math.round(Number(x.m.score)||0))+'</em><i>›</i></button>').join('');
  const bestMaps=(noff(b)?.maps||[]).filter(x=>Number.isFinite(Number(x.score))).sort((a,z)=>Number(z.score)-Number(a.score)).slice(0,3);
  const mapSlug=v=>String(v||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/&/g,'and').replace(/[^a-z0-9]+/g,'_').replace(/^_|_$/g,'');
  const mapCards=bestMaps.map((x,i)=>{
