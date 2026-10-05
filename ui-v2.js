@@ -72,7 +72,7 @@ function homeV2(){
  const slots=build.slice(0,5).map(([label,type,item])=>'<button class="refBuildSlot" type="button" onclick="componentModalV2ById('+focus.id+',\''+type+'\','+JSON.stringify(String(item?.id||0))+')">'+window.compIcon(type,item,focus)+'<small>'+E(label.startsWith('Gear')?'GEAR':label.toUpperCase())+'</small><b>'+E(item?.name||'Data unavailable')+'</b></button>').join('');
  const update=(Array.isArray(DB_STATE?.changelog)&&DB_STATE.changelog[0])||{};
  return '<section class="refHome">'+
- '<header class="refHeader"><div><h1>Brawl Helper</h1><p>Il tuo coach per Brawl Stars</p></div><button type="button" class="refSettings" onclick="profilePanel(false)">⚙</button></header>'+
+ '<header class="refHeader"><div><h1>Brawl Helper</h1><p>Il tuo coach per Brawl Stars</p></div><div class="refHeaderActions"><button type="button" class="refShare" onclick="shareAccountCard()">↗ CONDIVIDI</button><button type="button" class="refSettings" onclick="profilePanel(false)">⚙</button></div></header>'+
  '<section class="refProfile"><div class="refProfileArt"><img src="'+(focus?window.portrait(focus):'')+'" alt=""></div><div class="refProfileMain"><b>'+E(P?.name||'BlackShark')+'</b><span>'+E(P?.tag||active||'')+'</span><div class="refProfileStats"><strong>🏆 '+F(P?.trophies)+'</strong><strong>♟ '+F(owned.length)+' Brawlers</strong></div></div><div class="refProfileBadge">★</div></section>'+
  '<section class="refSection"><div class="refSectionTitle"><h2>Cosa fare adesso</h2></div><div class="refActions">'+
  (actions||'<button class="refAction" type="button" onclick="setTab(\'brawlers\')"><span class="refActionIcon">◈</span><div><b>Esplora i tuoi Brawler</b><small>Apri il roster e scegli il prossimo piano</small></div><strong>›</strong></button>')+
@@ -131,6 +131,9 @@ const css=String.raw`
 .bhDashFooter{display:grid;grid-template-columns:1fr 1fr;gap:6px}.bhDashFooter div{padding:8px;border:1px solid #2e435f;border-radius:9px;background:#101c2d}.bhDashFooter span{display:block;font-size:6px;color:#7f91ab}.bhDashFooter b{display:block;font-size:7px;color:#c8d4e5;margin-top:3px}
 @media(max-width:600px){.bhDashContext{grid-template-columns:1fr 1fr}.bhDashStat{display:none}.bhDashNav{grid-template-columns:repeat(2,1fr)}.bhDashGrid{grid-template-columns:1fr}.bhDashBuild{grid-template-columns:repeat(5,minmax(55px,1fr));overflow-x:auto}.bhDashHero h1{font-size:25px}.bhDashFocusHead img{width:58px;height:58px}}
 .bhDashFocus{border-color:#806d2f!important;background:linear-gradient(145deg,#1d2d47,#101b2c)!important}.bhDashFocusHead .bhEyebrow{color:#ffd34e!important}.bhDashAction{min-height:54px!important}.bhPrimaryOpen{background:linear-gradient(180deg,#3a3218,#292414)!important;box-shadow:0 6px 16px rgba(0,0,0,.18)!important}.bhDashNav button{transition:transform .16s,border-color .16s,background .16s}.bhDashNav button:active{transform:scale(.98)}
+
+.refHeaderActions{display:flex;align-items:center;gap:6px}.refShare{border:1px solid #66572b;background:#2a2617;color:#ffd34e;border-radius:9px;padding:7px 9px;font-size:7px;font-weight:950}.refShare:active{transform:scale(.97)}
+@media(max-width:430px){.refShare{padding:7px 7px;font-size:6px}}
 `;
 const st=document.createElement('style');st.id='bh-ui-v2';st.textContent=css;document.head.appendChild(st);
 setTimeout(()=>{try{if(P&&window.render)window.render()}catch(e){console.error(e)}},0);
