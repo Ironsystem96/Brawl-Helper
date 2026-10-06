@@ -8370,6 +8370,152 @@
           }
         ],
         "sample": 107
+      },
+      "modeBuilds": {
+        "Sopravvivenza": {
+          "gadget": [
+            {
+              "name": "Out Of Line",
+              "pick": 78
+            }
+          ],
+          "starPower": [
+            {
+              "name": "Recording",
+              "pick": 62
+            }
+          ],
+          "gears": [
+            {
+              "name": "Shield",
+              "pick": 39.9
+            },
+            {
+              "name": "Damage",
+              "pick": 33
+            }
+          ]
+        },
+        "Heist": {
+          "gadget": [
+            {
+              "name": "Out Of Line"
+            }
+          ],
+          "starPower": [
+            {
+              "name": "Recording"
+            }
+          ],
+          "gears": [
+            {
+              "name": "Damage"
+            },
+            {
+              "name": "Gadget Cooldown"
+            }
+          ]
+        },
+        "Gem Grab": {
+          "gadget": [
+            {
+              "name": "Out Of Line"
+            }
+          ],
+          "starPower": [
+            {
+              "name": "Quick Maths"
+            }
+          ],
+          "gears": [
+            {
+              "name": "Super Charge"
+            },
+            {
+              "name": "Shield"
+            }
+          ]
+        },
+        "Brawl Ball": {
+          "gadget": [
+            {
+              "name": "Out Of Line"
+            }
+          ],
+          "starPower": [
+            {
+              "name": "Recording"
+            }
+          ],
+          "gears": [
+            {
+              "name": "Damage"
+            },
+            {
+              "name": "Shield"
+            }
+          ]
+        },
+        "Hot Zone": {
+          "gadget": [
+            {
+              "name": "Out Of Line"
+            }
+          ],
+          "starPower": [
+            {
+              "name": "Quick Maths"
+            }
+          ],
+          "gears": [
+            {
+              "name": "Damage"
+            },
+            {
+              "name": "Super Charge"
+            }
+          ]
+        },
+        "Knockout": {
+          "gadget": [
+            {
+              "name": "Out Of Line"
+            }
+          ],
+          "starPower": [
+            {
+              "name": "Recording"
+            }
+          ],
+          "gears": [
+            {
+              "name": "Shield"
+            },
+            {
+              "name": "Gadget Cooldown"
+            }
+          ]
+        },
+        "Bounty": {
+          "gadget": [
+            {
+              "name": "Out Of Line"
+            }
+          ],
+          "starPower": [
+            {
+              "name": "Quick Maths"
+            }
+          ],
+          "gears": [
+            {
+              "name": "Damage"
+            },
+            {
+              "name": "Vision"
+            }
+          ]
+        }
       }
     },
     "Mandy": {
