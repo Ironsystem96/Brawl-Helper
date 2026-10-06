@@ -37,6 +37,12 @@ jobs:
       - name: Build local game assets
         run: node backend/sync-assets.js
 
+      - name: Build Brawl Helper V2
+        working-directory: v2-src
+        run: |
+          npm install
+          npm run build
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
