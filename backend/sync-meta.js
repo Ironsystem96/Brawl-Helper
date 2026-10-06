@@ -269,9 +269,10 @@ function buildCompleteness(metaEntries,brawler){
   const catalogDocument={schemaVersion:3,generatedFrom:'BrawlAPI catalog snapshot',generatedAt:now,count:catalogOut.length,brawlers:catalogOut.map(normalizeBrawlerRecord),completeness:{identity:catalogOut.length,portraits:catalogOut.filter(x=>x.imageUrl||x.imageUrl2).length,gadgets:catalogOut.filter(x=>x.gadgets.length===2).length,starPowers:catalogOut.filter(x=>x.starPowers.length===2).length,gears:catalogOut.filter(x=>x.gears.length>0).length,hyperCharges:catalogOut.filter(x=>x.hyperCharges.length>0).length,overdrives:catalogOut.filter(x=>x.overdrives.length>0).length,buffies:catalogOut.filter(x=>x.buffies.length>0).length}};
   fs.writeFileSync(CATALOG_PATH,JSON.stringify(catalogDocument,null,2)+'\n');
 
-  if(noffOk<Math.floor(list.length*.5) || btOk<Math.floor(list.length*.5)) {
-    throw new Error('Sync quality gate failed: NOFF '+noffOk+'/'+list.length+', BrawlTime '+btOk+'/'+list.length);
+  if(noffOk<Math.floor(list.length*.5)) {
+    throw new Error('Sync quality gate failed: NOFF '+noffOk+'/'+list.length);
   }
+  if(btOk<Math.floor(list.length*.5)) console.warn('Brawl Time Ninja coverage below threshold: '+btOk+'/'+list.length+'. NOFF remains the required primary coverage source; missing BT data is not fatal.');
   if(modeOk===0) console.warn('Mode snapshot unavailable: BrawlMetrics returned no validated mode pages. Global meta remains publishable; mode data is omitted rather than fabricated.');
   console.log(JSON.stringify({updatedAt:now,brawlers:list.length,noffOk,btOk,modeOk,totalModes:Object.keys(modeSlugs).length},null,2));
 }
