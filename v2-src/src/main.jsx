@@ -3,6 +3,8 @@ import {createRoot} from 'react-dom/client';
 import './styles.css';
 
 const ROOT='/Brawl-Helper/';
+const BACKEND='https://brawl-helper-backend.onrender.com';
+const DEFAULT_TAG='22QYOQRGY';
 const DEMO=['Edgar','8-Bit','Mortis'];
 const TABS=['Panoramica','Build','Modalità','Stat','Altro'];
 const pct=v=>v==null?'—':Number(v).toFixed(1)+'%';
@@ -25,20 +27,22 @@ function buildFor(b,build,components){
 }
 
 function App(){
- const [catalog,setCatalog]=useState([]),[build,setBuild]=useState(null),[components,setComponents]=useState(null),[selected,setSelected]=useState(null),[loading,setLoading]=useState(true);
+ const [catalog,setCatalog]=useState([]),[build,setBuild]=useState(null),[components,setComponents]=useState(null),[profile,setProfile]=useState(null),[selected,setSelected]=useState(null),[loading,setLoading]=useState(true),[profileLoading,setProfileLoading]=useState(true),[profileError,setProfileError]=useState('');
  useEffect(()=>{Promise.all([fetch(ROOT+'data/brawlers.json').then(r=>r.json()),fetch(ROOT+'data/build-meta.json').then(r=>r.json()),fetch(ROOT+'data/components.json').then(r=>r.json())]).then(([c,b,co])=>{setCatalog(c.brawlers||[]);setBuild(b);setComponents(co)}).finally(()=>setLoading(false))},[]);
  const demos=useMemo(()=>DEMO.map(n=>catalog.find(b=>b.name===n)).filter(Boolean),[catalog]);
  if(loading)return <div className="v2Loading"><b>BRAWL HELPER</b><span>Caricamento interfaccia…</span></div>;
- return <main className="v2App">{selected?<BrawlerProfile b={selected} build={build} components={components} onBack={()=>setSelected(null)}/>:<Chooser demos={demos} onSelect={setSelected}/>}</main>;
+ const owned=new Map((profile?.brawlers||[]).map(x=>[x.name,x]));
+ const accountDemos=demos.map(b=>({...b,account:owned.get(b.name)||null}));
+ return <main className="v2App">{selected?<BrawlerProfile b={selected} build={build} components={components} profile={profile} onBack={()=>setSelected(null)}/>:<Chooser demos={accountDemos} profile={profile} profileLoading={profileLoading} profileError={profileError} onSelect={setSelected}/>}</main>;
 }
 
-function Chooser({demos,onSelect}){
- return <section className="chooser"><div className="brand"><span>BRAWL HELPER</span><h1>Brawlers</h1><p>Master UI · base rebuild</p></div><div className="chooserGrid">{demos.map((b,i)=><button className="demoCard" key={b.id} onClick={()=>onSelect(b)}><div className="demoNo">0{i+1}</div><img src={b.imageUrl2||b.imageUrl} alt=""/><div><small>{b.class?.name}</small><strong>{b.name}</strong><span>{b.rarity?.name}</span></div><i>›</i></button>)}</div></section>;
+function Chooser({demos,profile,profileLoading,profileError,onSelect}){
+ return <section className="chooser"><div className="brand"><span>BRAWL HELPER</span><h1>Brawlers</h1><p>Master UI · real account data</p></div><div className="accountHeader"><div><small>ACCOUNT</small><strong>{profile?.name||'BlackShark'}</strong><span>#{profile?.tag||DEFAULT_TAG}</span></div><div><b>{profile?.trophies?.toLocaleString()||'—'}</b><small>TROPHIES</small></div><div><b>{profile?.brawlers?.length||'—'}</b><small>BRAWLERS</small></div></div>{profileError&&<div className="profileError">Profilo reale non raggiungibile: {profileError}</div>}<div className="chooserGrid">{demos.map((b,i)=><button className="demoCard" key={b.id} onClick={()=>onSelect(b)}><div className="demoNo">0{i+1}</div><img src={b.imageUrl2||b.imageUrl} alt=""/><div><small>{b.class?.name}</small><strong>{b.name}</strong><span>{b.rarity?.name} · {b.account?`Power ${b.account.power}`:'Non posseduto'}</span></div><i>›</i></button>)}</div></section>;
 }
 
-function BrawlerProfile({b,build,components,onBack}){
+function BrawlerProfile({b,build,components,profile,onBack}){
  const [tab,setTab]=useState('Panoramica');
- const e=build?.entries?.[b.name]||{}, loadout=buildFor(b,build,components), stats=e.noff?.stats||{};
+ const e=build?.entries?.[b.name]||{}, loadout=buildFor(b,build,components), stats=e.noff?.stats||{}, account=(profile?.brawlers||[]).find(x=>x.name===b.name)||null;
  const modes=Object.entries(e.noff?.modes||{}).sort((a,z)=>(z[1].score||0)-(a[1].score||0)).slice(0,6), maps=(e.noff?.maps||[]).slice(0,3), buffies=(e.buffies||[]).slice(0,3);
  return <div className="profile">
   <header className="appTop"><button onClick={onBack}>‹</button><strong>{b.name}</strong><button>⚙</button></header>
@@ -50,7 +54,7 @@ function BrawlerProfile({b,build,components,onBack}){
   {tab==='Panoramica'&&<Overview b={b} e={e} stats={stats} loadout={loadout} modes={modes} maps={maps} buffies={buffies}/>}
   {tab==='Build'&&<BuildPage b={b} loadout={loadout}/>}
   {tab==='Modalità'&&<ModesPage modes={modes}/>}
-  {tab==='Stat'&&<StatsPage b={b} e={e}/>}
+  {tab==='Stat'&&<StatsPage b={b} e={e} account={account}/>}
   {tab==='Altro'&&<ExtrasPage b={b} buffies={buffies}/>}
   <BottomNav active="Brawler"/>
  </div>;
@@ -76,7 +80,7 @@ function BuildPage({b,loadout}){
  return <div className="content"><section className="sectionHeading"><h2>Dettaglio build</h2><span>Top Ranked</span></section><div className="detailList">{loadout.map((x,i)=><LoadoutDetail key={x.label} {...x} index={i}/>)}</div><section className="sectionHeading"><h2>Build alternativa</h2><button>Vedi tutte ›</button></section><div className="filterRow"><button className="selected">Ranked</button><button>Gem Grab</button><button>Brawl Ball</button><button>Knockout</button></div><div className="alternative"><div className="altIcons">{loadout.map((x,i)=><LoadoutMini key={x.label} {...x} index={i}/>)}</div><button className="yellowBtn">Usa questa build</button></div></div>;
 }
 function ModesPage({modes}){return <div className="content"><section className="sectionHeading"><h2>Prestazioni per modalità</h2></section><div className="modeList">{modes.map(([name,x],i)=><div className="modeRow" key={name}><ModeIcon index={i}/><strong>{name}</strong><b className={'tier tier'+i}>{i<1?'S':i<3?'A':i<6?'B':'C'}</b><span>Win Rate<br/><b>{pct(x.winRate)}</b></span><span>Uso<br/><b>{pct(x.pickRate)}</b></span><i>›</i></div>)}</div></div>}
-function StatsPage({b,e}){return <div className="content"><section className="sectionHeading"><h2>Statistiche</h2></section><div className="powerTabs"><button>Power 9</button><button>Power 10</button><button className="selected">Power 11</button></div><div className="statGrid"><Data label="SALUTE" value={b.name==='R-T'?'8200':'—'}/><Data label="ATTACCO" value={b.name==='R-T'?'1400':'—'}/><Data label="SUPER" value={b.name==='R-T'?'2800':'—'}/><Data label="VELOCITÀ" value="Normale"/><Data label="RICARICA SUPER" value="Normale"/><Data label="PORTATA" value="Lunga"/></div><section className="sectionHeading compactHead"><h2>Progressione</h2></section><div className="growthChart"><span>● Salute</span><span>● Attacco</span><span>● Super</span><div className="chartLines"><i/><i/><i/><i/><i/></div></div></div>}
+function StatsPage({b,e,account}){return <div className="content"><section className="sectionHeading"><h2>Statistiche</h2></section><div className="powerTabs"><button>Power 9</button><button>Power 10</button><button className="selected">Power 11</button></div><div className="statGrid"><Data label="SALUTE" value={account?.power?account.power:'—'}/><Data label="ATTACCO" value={account?.trophies?.toLocaleString()||'—'}/><Data label="SUPER" value={account?.highestTrophies?.toLocaleString()||'—'}/><Data label="VELOCITÀ" value="Normale"/><Data label="RICARICA SUPER" value="Normale"/><Data label="PORTATA" value="Lunga"/></div><section className="sectionHeading compactHead"><h2>Progressione</h2></section><div className="growthChart"><span>● Salute</span><span>● Attacco</span><span>● Super</span><div className="chartLines"><i/><i/><i/><i/><i/></div></div></div>}
 function ExtrasPage({b,buffies}){return <div className="content"><section className="sectionHeading"><h2>Cosa ti manca</h2></section><div className="missingList"><div><b>⚡</b><strong>Overdrive</strong><span>{b.name} · Non posseduto</span><em>Non posseduto</em></div><div><b>◉</b><strong>Buffies</strong><span>Disponibili</span><em>0/3</em></div><div><b>◈</b><strong>Hypercharge</strong><span>Non disponibile</span><em>—</em></div></div><section className="sectionHeading compactHead"><h2>Buffies disponibili</h2><button>Vedi tutti ›</button></section>{buffies.length?<div className="buffies">{buffies.map(x=><div className="buffie" key={x.id+x.name}><div className="buffieIcon">✦</div><div><span>{x.slot}</span><strong>{x.name.replace(' Buffie','')}</strong><p>{x.description}</p></div></div>)}</div>:<div className="emptyState">Nessun Buffie validato per questo Brawler.</div>}</div>}
 
 function LoadoutSlot({label,item,pick,status,index}){const type=label==='Gadget'?'gadgets':label==='Star Power'?'starPowers':label.startsWith('Gear')?'gears':'overdrives',src=item?.imageUrl||gearSrc(item?.name);return <div className={'slot '+(type==='overdrives'?'overdrive':'')}><small>{label}</small><div className="slotVisual">{src?<img src={src} alt=""/>:<div className="emptyIcon">⚡</div>}</div><strong>{item?.name||'Non disponibile'}</strong><em className={item?'owned':''}>{item?status:'DA OTTENERE'}</em></div>}
