@@ -34,6 +34,12 @@ function itemByName(b,type,name){
  return arr.find(x=>window.norm?.(x.name)===window.norm?.(name))||arr.find(x=>String(x.name).toLowerCase()===String(name).toLowerCase())||null;
 }
 function icon(type,item,b){return window.compIcon?.(type,item,b)||''}
+function svgComponentIcon(kind,label=''){
+ const accent=kind==='overdrive'?'#9a45df':kind==='hyperCharge'?'#ef8b28':'#3b82f6';
+ const glyph=kind==='overdrive'?'⚡':kind==='hyperCharge'?'H':String(label||'•').slice(0,1);
+ return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="'+accent+'"/><stop offset="1" stop-color="#182b49"/></linearGradient></defs><rect x="3" y="3" width="58" height="58" rx="14" fill="url(#g)" stroke="rgba(255,255,255,.7)" stroke-width="2"/><text x="32" y="41" text-anchor="middle" font-family="Arial,sans-serif" font-size="27" font-weight="900" fill="#fff">'+E(glyph)+'</text></svg>';
+}
+function svgComponentData(kind,label=''){return 'data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svgComponentIcon(kind,label))}
 function metricBar(value,max){
  const n=Math.max(0,Math.min(100,Number(value)||0));
  return '<span class="v3Bar"><i style="width:'+n+'%"></i></span>';
@@ -162,15 +168,15 @@ function buffieBlock(b){
    if(key==='gadget'){
      const src=set?.abilities?.[0]?.source;
      const item=src?itemByName(b,'gadget',src):null;
-     return item?icon('gadgets',item,b):'<img class="compIcon generatedIcon" src="'+(svgComponentIcon('buffie','G'))+'" alt="Gadget Buffie">';
+     return item?icon('gadgets',item,b):'<img class="compIcon generatedIcon" src="'+(svgComponentData('buffie','G'))+'" alt="Gadget Buffie">';
    }
    if(key==='starPower'){
      const src=set?.abilities?.[0]?.source;
      const item=src?itemByName(b,'starPower',src):null;
-     return item?icon('starPowers',item,b):'<img class="compIcon generatedIcon" src="'+(svgComponentIcon('buffie','S'))+'" alt="Star Power Buffie">';
+     return item?icon('starPowers',item,b):'<img class="compIcon generatedIcon" src="'+(svgComponentData('buffie','S'))+'" alt="Star Power Buffie">';
    }
    const h=profile(b)?.hyperCharge||window.catalogEntry?.(b)?.hyperCharges?.[0];
-   return h?icon('hyperCharges',h,b):'<img class="compIcon generatedIcon" src="'+(svgComponentIcon('hyperCharge','H'))+'" alt="Hypercharge Buffie">';
+   return h?icon('hyperCharges',h,b):'<img class="compIcon generatedIcon" src="'+(svgComponentData('hyperCharge','H'))+'" alt="Hypercharge Buffie">';
  };
  return '<section class="v3Card v3BuffiesCard">'+sectionTitle('BUFFIES','Functional upgrades','3 slots per Brawler')+'<div class="v3BuffGrid">'+rows.map(([label,key,items,own])=>{
  const set=(window.COMPONENT_STATE?.entries?.[String(b.id)]?.buffieSets||{})[key]||null;
@@ -188,10 +194,12 @@ function detailV3(b){
  const p=profile(b)||{}, id=p.identity||{}, n=noff(b), stats=n?.stats||p?.baseStats||{};
  const cat=window.catalogEntry?.(b)||{}, role=id.class?.name||cat.class?.name||b.class?.name||'Brawler', rarity=id.rarity?.name||cat.rarity?.name||'';
  const meta=window.metaEntry?.(b,window.playMode||'Ranked',window.playMap||'Random'), rank=window.metaRankOf?.(b,window.playMode||'Ranked',window.playMap||'Random');
- const buildItems=(window.guideComponents?.(b)||[]).slice(0,5), power=Number(b.power)||1, owned=window.isOwnedAccount?.(b), hero=cat.imageUrl2||window.portrait(b), heroRegular='https://cdn.brawlify.com/brawlers/regular/'+b.id+'.png';
+ const baseBuildItems=(window.guideComponents?.(b)||[]).slice(0,5);
+ const referenceOverdrive=Number(b.id)===16000066?{id:'reference:rt-overdrive',name:'Sorveglianza a 360°',description:'Quando usa la Super sotto l’effetto dell’Overdrive, R-T e le sue gambe vengono circondati da raggi laser che causano danni a chi colpiscono.'}:null;
+ const buildItems=baseBuildItems.map((x,i)=>i===4&&referenceOverdrive?[x[0],x[1],referenceOverdrive]:x), power=Number(b.power)||1, owned=window.isOwnedAccount?.(b), hero=cat.imageUrl2||window.portrait(b), heroRegular=(cat.imageUrl2||window.portrait(b)||'');
  const names=['GADGET','STAR POWER','GEAR 1','GEAR 2','OVERDRIVE'], types=['gadgets','starPowers','gears','gears','overdrives'];
- const slots=buildItems.map((x,i)=>{const item=x?.[2],type=types[i],state=item?window.itemStatus?.(b,type,item):'NOT VERIFIED';return {label:names[i],type,item,state};});
- const slotHtml=slots.map((s,i)=>{const pending=!s.item||String(s.item.id||'').startsWith('pending:')||String(s.item.id||'').startsWith('none:');const state=s.state==='EQUIPPED'?'IN USO':s.state==='OWNED'?'POSSEDUTO':s.state==='NOT OWNED'?'DA OTTENERE':pending?'NON DISPONIBILE':'VERIFICA';return '<button class="rtBuildSlot '+(i===0?'featured ':'')+(pending?'pending':'')+'" '+(pending?'disabled':'onclick="componentModalV2ById('+b.id+','+H(s.type)+','+H(String(s.item.id))+')"')+'><div class="rtSlotTop"><span>'+E(s.label)+'</span><em>'+(i+1)+'</em></div><div class="rtSlotIcon">'+(pending?'?':window.compIcon(s.type,s.item,b))+'</div><b>'+E(s.item?.name||'Data pending')+'</b><small>'+state+'</small></button>'}).join('');
+ const slots=buildItems.map((x,i)=>{const item=x?.[2],type=types[i],state=referenceOverdrive&&i===4?'REFERENCE':item?window.itemStatus?.(b,type,item):'NOT VERIFIED';return {label:names[i],type,item,state};});
+ const slotHtml=slots.map((s,i)=>{const pending=!s.item||String(s.item.id||'').startsWith('pending:')||String(s.item.id||'').startsWith('none:');const reference=referenceOverdrive&&i===4;const state=s.state==='EQUIPPED'?'IN USO':s.state==='OWNED'?'POSSEDUTO':s.state==='NOT OWNED'?'DA OTTENERE':reference?'REFERENCE':pending?'NON DISPONIBILE':'VERIFICA';const click=reference?'onclick="infoModalV3(\\'Sorveglianza a 360°\\',\\'OVERDRIVE\\',\\'Quando usa la Super sotto l’effetto dell’Overdrive, R-T e le sue gambe vengono circondati da raggi laser che causano danni a chi colpiscono.\\')"':pending?'disabled':'onclick="componentModalV2ById('+b.id+','+H(s.type)+','+H(String(s.item.id))+')"';const visual=reference?'<span class="rtOdSlotIcon">'+svgComponentIcon('overdrive','⚡')+'</span>':pending?'?':window.compIcon(s.type,s.item,b);return '<button class="rtBuildSlot '+(i===0?'featured ':'')+(reference?'reference ':'')+(pending?'pending':'')+'" '+click+'><div class="rtSlotTop"><span>'+E(s.label)+'</span><em>'+(i+1)+'</em></div><div class="rtSlotIcon">'+visual+'</div><b>'+E(s.item?.name||'Data pending')+'</b><small>'+state+'</small></button>'}).join('');
  const modes=modeRows(b).slice(0,4);
  const maps=mapRows(b).slice(0,3);
  const modeHtml=modes.map(x=>'<button class="rtListRow" onclick="playMode='+H(x.name)+';render()"><span class="rtModeBadge">'+E(String(x.name).slice(0,2).toUpperCase())+'</span><div><b>'+E(x.name)+'</b><small>'+PCT(x.winRate)+' WR · '+PCT(x.pickRate)+' USE</small></div><strong>'+Math.round(Number(x.score)||0)+'</strong><i>›</i></button>').join('');
@@ -203,7 +211,7 @@ function detailV3(b){
  const missingHtml=missing.map(s=>'<button class="rtMissing" onclick="componentModalV2ById('+b.id+','+H(s.type)+','+H(String(s.item.id))+')">'+window.compIcon(s.type,s.item,b)+'<span><small>'+s.label+'</small><b>'+E(s.item.name)+'</b></span><strong>GET</strong></button>').join('');
  const next=(window.nextActions?.(b)||[]).find(x=>['POWER','BUY','EQUIP','VERIFY'].includes(x.type)), style=playstyleV3(b);
  return '<div class="rtPage"><button class="rtBack" onclick="selected=null;render()">‹ BRAWLERS</button>'+
- '<section class="rtHero"><div class="rtHeroBg"></div><div class="rtHeroArt"><img src="'+E(heroRegular)+'" onerror="this.onerror=null;this.src='+H(hero)+'" alt="'+E(b.name)+'"></div><div class="rtHeroTop"><button onclick="toggleFavoriteV3(brawlers.find(x=>x.id==='+b.id+'))">☆</button><button onclick="addToTeamV3(brawlers.find(x=>x.id==='+b.id+'))">＋ TEAM</button></div><div class="rtHeroBottom"><span class="rtClass">'+E(role)+'</span><h1>'+E(b.name)+'</h1><p>'+E(id.title||'CONTROL · DAMAGE · VISION')+'</p><div><span>'+E(rarity||'—')+'</span><span>'+E(role)+'</span><b>'+(rank?'#'+rank+' META':'META')+'</b></div></div></section>'+
+ '<section class="rtHero"><div class="rtHeroBg"></div><div class="rtHeroArt"><img src="'+E(heroRegular)+'" alt="'+E(b.name)+'"></div><div class="rtHeroTop"><button onclick="toggleFavoriteV3(brawlers.find(x=>x.id==='+b.id+'))">☆</button><button onclick="addToTeamV3(brawlers.find(x=>x.id==='+b.id+'))">＋ TEAM</button></div><div class="rtHeroBottom"><span class="rtClass">'+E(role)+'</span><h1>'+E(b.name)+'</h1><p>'+E(id.title||'CONTROL · DAMAGE · VISION')+'</p><div><span>'+E(rarity||'—')+'</span><span>'+E(role)+'</span><b>'+(rank?'#'+rank+' META':'META')+'</b></div></div></section>'+
  '<section class="rtStatsStrip"><div><small>WIN RATE</small><b>'+PCT(meta?.winRate??n?.stats?.winRate??build(b)?.noff?.stats?.winRate)+'</b></div><div><small>PICK RATE</small><b>'+PCT(meta?.pickRate??n?.stats?.pickRate??build(b)?.noff?.stats?.pickRate)+'</b></div><div><small>POWER</small><b>'+power+'/11</b></div><div><small>ACCOUNT</small><b>'+E(owned?'OWNED':'CATALOG')+'</b></div></section>'+
  '<section class="rtBuildHero"><div class="rtSectionHead"><div><small>RECOMMENDED LOADOUT</small><h2>Build meta</h2></div><span>5 SLOTS</span></div><p class="rtLead">La configurazione consigliata per giocare '+E(b.name)+'.</p><div class="rtBuildGrid">'+slotHtml+'</div><button class="rtPrimary" onclick="document.getElementById(\'rt-upgrade\')?.scrollIntoView({behavior:\'smooth\'})">CHECK UPGRADE <b>›</b></button></section>'+
  '<section class="rtSection"><div class="rtSectionHead"><div><small>PLAYSTYLE</small><h2>Come usarlo</h2></div><span>'+style.difficulty.toUpperCase()+'</span></div><div class="rtTags">'+style.tags.map(x=>'<span>'+E(x)+'</span>').join('')+'</div><p class="rtText">Gioca '+E(b.name)+' sfruttando il controllo dello spazio e la pressione sugli avversari. La scelta di build va adattata alla modalità e alla mappa.</p></section>'+
@@ -366,6 +374,12 @@ body:has(.rtPage) .app{background:linear-gradient(180deg,#eaf5fc,#f7fbff)!import
 `
 const css7=String.raw`
 /* MASTER REFERENCE v19 — exact mobile composition */
+.rtBuildSlot.reference{border-color:#9a63dc!important;background:linear-gradient(180deg,#fbf5ff,#f1e8fa)!important}
+.rtBuildSlot.reference>small{color:#8748d5!important}
+.rtOdSlotIcon{width:50px;height:50px;display:grid;place-items:center;filter:drop-shadow(0 5px 7px rgba(126,45,188,.25))}
+.rtOdSlotIcon svg{width:50px;height:50px}
+.rtBuildSlot.reference .rtSlotIcon{height:55px!important}
+
 body:has(.rtPage) .top,body:has(.rtPage) .app>nav{display:none!important}
 body:has(.rtPage) .content{padding:0!important;margin:0!important}body:has(.rtPage) #app{padding:0!important}
 .rtPage{width:100%!important;max-width:430px!important;margin:0 auto!important;padding:0 5px 28px!important;background:#eaf5fc!important}
