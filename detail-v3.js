@@ -5,7 +5,16 @@
 const E=window.esc||((v)=>String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m])));
 const F=window.fmt||((n)=>Number(n||0).toLocaleString('en-US'));
 const PCT=v=>{const n=Number(v);return Number.isFinite(n)?n.toFixed(n%1?1:0)+'%':'—'};
+
 const N=v=>Number.isFinite(Number(v))?Number(v):null;
+function uiIcon(kind){
+ const p={home:'<path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10.5V20h13v-9.5"/><path d="M9 20v-5h6v5"/>',build:'<path d="m14.5 5.5-9 9 4 4 9-9"/><path d="m13 7 4 4"/><path d="m17.5 3.5 3 3"/><path d="M4 20h5"/>',upgrade:'<path d="M12 20V5"/><path d="m6.5 11 5.5-6 5.5 6"/><path d="M5 20h14"/>',modes:'<circle cx="12" cy="12" r="8"/><path d="m9 9 6 3-6 3Z"/>',map:'<path d="m4 6 5-2 6 2 5-2v14l-5 2-6-2-5 2Z"/><path d="M9 4v14M15 6v14"/>',stats:'<path d="M5 19V11M12 19V6M19 19V3"/><path d="M3 19h18"/>',video:'<rect x="3" y="5" width="18" height="14" rx="3"/><path d="m10 9 5 3-5 3Z"/>',more:'<circle cx="5" cy="12" r="1.2"/><circle cx="12" cy="12" r="1.2"/><circle cx="19" cy="12" r="1.2"/>',team:'<circle cx="9" cy="9" r="3"/><circle cx="17" cy="10" r="2.5"/><path d="M3.5 20c.6-3.2 2.4-5 5.5-5s4.9 1.8 5.5 5"/><path d="M14.5 16c2.8-.6 5.1.8 5.8 4"/>'};
+ return '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">'+(p[kind]||p.more)+'</svg>';
+}
+function toggleFavoriteV3(b){const key='bh_favorites_v3',arr=JSON.parse(localStorage.getItem(key)||'[]'),id=String(b?.id||'');localStorage.setItem(key,JSON.stringify(arr.includes(id)?arr.filter(x=>x!==id):arr.concat(id)));render()}
+function addToTeamV3(b){const key='bh_team_v3',arr=JSON.parse(localStorage.getItem(key)||'[]'),id=String(b?.id||'');if(!arr.includes(id))arr.push(id);localStorage.setItem(key,JSON.stringify(arr.slice(-5)));const el=document.querySelector('.rhTeamStatus');if(el){el.textContent='Aggiunto';setTimeout(()=>{if(el)el.textContent='Nel Team'},900)}}
+function copyBuildV3(b){const items=window.guideComponents?.(b)||[];const text=[b?.name||'Brawler',...items.slice(0,5).map(x=>x?.[2]?.name||'—')].join(' · ');if(navigator.clipboard?.writeText)navigator.clipboard.writeText(text).then(()=>{const el=document.querySelector('.rhCopyStatus');if(el){el.textContent='Copiata';setTimeout(()=>el.textContent='Copia build',900)}}).catch(()=>{})}
+
 
 function profile(b){return window.PROFILE_STATE?.entries?.[String(b?.id)]||b?.profile||null}
 function build(b){return window.buildEntry?.(b)||null}
