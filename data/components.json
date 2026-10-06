@@ -1,7 +1,7 @@
 {
   "schemaVersion": 6,
-  "generatedAt": "2026-10-01T20:30:00.000Z",
-  "source": "BrawlAPI game CSV mirror + BrawlFind Overdrive catalog",
+  "generatedAt": "2026-10-06T09:45:33.542Z",
+  "source": "BrawlAPI game CSV mirror + BrawlFind Overdrive catalog + synchronized CDN assets",
   "sources": [
     {
       "name": "BrawlAPI gear_boosts",
@@ -4105,7 +4105,9 @@
           "name": "A TESTA BASSA",
           "description": "La testa di Tick punta più in fretta ai nemici e, una volta esplosa, lascia dietro di sé 6 minimine.",
           "source": "BrawlFind",
-          "sourceUrl": "https://www.brawlfind.com/it/brawlers/tick"
+          "sourceUrl": "https://www.brawlfind.com/it/brawlers/tick",
+          "imageUrl": "https://cdn.brawlfind.com/hypercharges/Tick.webp",
+          "imageSource": "BrawlFind CDN"
         }
       ],
       "buffies": {
@@ -9582,7 +9584,9 @@
           "description": "Chester fonde tre delle sue abilità nella stessa Super: la caramella esplode, crea una nube tossica e poi rallenta i nemici nell'area.",
           "source": "Supercell",
           "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-lumi-finx-e-modifiche-sostanziali-alla-modalita-classificata-2/",
-          "status": "VALIDATED"
+          "status": "VALIDATED",
+          "imageUrl": "https://cdn.brawlfind.com/hypercharges/Chester.webp",
+          "imageSource": "BrawlFind CDN"
         }
       ],
       "buffies": {
@@ -9809,7 +9813,9 @@
           "description": "Con la Super, Mandy spara tre raggi, ognuno in una direzione diversa.",
           "source": "Supercell",
           "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-lumi-finx-e-modifiche-sostanziali-alla-modalita-classificata-2/",
-          "status": "VALIDATED"
+          "status": "VALIDATED",
+          "imageUrl": "https://cdn.brawlfind.com/hypercharges/Mandy.webp",
+          "imageSource": "BrawlFind CDN"
         }
       ],
       "buffies": {
@@ -9926,7 +9932,9 @@
           "name": "SORVEGLIANZA A 360°",
           "description": "Quando usa la Super sotto l'effetto dell'Overdrive, R-T e le sue gambe vengono circondati da raggi laser che causano danni a chi colpiscono.",
           "source": "Supercell",
-          "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/game-updates/note-di-rilascio-di-giugno-del-2025/"
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/game-updates/note-di-rilascio-di-giugno-del-2025/",
+          "imageUrl": "https://cdn.brawlfind.com/hypercharges/R-T.webp",
+          "imageSource": "BrawlFind CDN"
         }
       ],
       "buffies": {
@@ -12724,7 +12732,9 @@
           "description": "Ollie salta; l'esplosione musicale è più ampia e non consuma colpi mentre inizia a caricarsi.",
           "source": "Supercell",
           "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-di-settembre-2025/",
-          "status": "VALIDATED"
+          "status": "VALIDATED",
+          "imageUrl": "https://cdn.brawlfind.com/hypercharges/Ollie.webp",
+          "imageSource": "BrawlFind CDN"
         }
       ],
       "buffies": {
@@ -13387,7 +13397,9 @@
           "description": "La Super di Trunk sparge formiche sui nemici, che subiscono danni nel tempo.",
           "source": "Supercell",
           "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-di-settembre-2025/",
-          "status": "VALIDATED"
+          "status": "VALIDATED",
+          "imageUrl": "https://cdn.brawlfind.com/hypercharges/Trunk.webp",
+          "imageSource": "BrawlFind CDN"
         }
       ],
       "buffies": {
@@ -14621,7 +14633,9 @@
           "name": "MULINELLO",
           "description": "Quando Nori si tuffa in acqua, attira a sé tutti i nemici e poi causa danni ad area.",
           "source": "Supercell",
-          "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-di-agosto-2026/"
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-di-agosto-2026/",
+          "imageUrl": "https://cdn.brawlfind.com/hypercharges/Nori.webp",
+          "imageSource": "BrawlFind CDN"
         }
       ],
       "buffies": {
@@ -14738,7 +14752,9 @@
           "name": "ENERGIA PULITA",
           "description": "Lo scudo ha più salute e assorbe il 90% dei danni subiti da Wendy o dai suoi alleati.",
           "source": "Supercell",
-          "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-di-agosto-2026/"
+          "sourceUrl": "https://supercell.com/en/games/brawlstars/it/blog/release-notes/note-di-rilascio-di-agosto-2026/",
+          "imageUrl": "https://cdn.brawlfind.com/hypercharges/Wendy.webp",
+          "imageSource": "BrawlFind CDN"
         }
       ],
       "buffies": {
