@@ -19,11 +19,11 @@ function buildFor(b,build,components,account){
  const gears=(e.gears||[]).slice(0,2).map(x=>gearByName(x.name));
  const overdrive=(ce.overdrives&&ce.overdrives[0])||(e.overdrives||[])[0]||null;
  return [
-  {label:'Gadget',item:gadget,pick:e.gadget?.[0]?.pick,status:account?.gadgets?.some(x=>String(x.name||'').toLowerCase()===String(gadget?.name||'').toLowerCase())?'IN USO':'DA OTTENERE'},
-  {label:'Star Power',item:star,pick:e.starPower?.[0]?.pick,status:account?.starPowers?.some(x=>String(x.name||'').toLowerCase()===String(star?.name||'').toLowerCase())?'IN USO':'DA OTTENERE'},
-  {label:'Gear 1',item:gears[0],pick:e.gears?.[0]?.pick,status:account?.gears?.some(x=>String(x.name||'').toLowerCase()===String(gears[0]?.name||'').toLowerCase())?'IN USO':'DA OTTENERE'},
-  {label:'Gear 2',item:gears[1],pick:e.gears?.[1]?.pick,status:account?.gears?.some(x=>String(x.name||'').toLowerCase()===String(gears[1]?.name||'').toLowerCase())?'IN USO':'DA OTTENERE'},
-  {label:'Overdrive',item:overdrive,pick:overdrive?.pick,status:account?.overdrives?.some(x=>x.name===overdrive?.name)?'IN USO':overdrive?'DA OTTENERE':'NON DISPONIBILE'}
+  {label:'Gadget',item:gadget,pick:e.gadget?.[0]?.pick,status:account?.gadgets?.some(x=>String(x.name||'').toLowerCase()===String(gadget?.name||'').toLowerCase())?'POSSEDUTO':'DA OTTENERE'},
+  {label:'Star Power',item:star,pick:e.starPower?.[0]?.pick,status:account?.starPowers?.some(x=>String(x.name||'').toLowerCase()===String(star?.name||'').toLowerCase())?'POSSEDUTO':'DA OTTENERE'},
+  {label:'Gear 1',item:gears[0],pick:e.gears?.[0]?.pick,status:account?.gears?.some(x=>String(x.name||'').toLowerCase()===String(gears[0]?.name||'').toLowerCase())?'POSSEDUTO':'DA OTTENERE'},
+  {label:'Gear 2',item:gears[1],pick:e.gears?.[1]?.pick,status:account?.gears?.some(x=>String(x.name||'').toLowerCase()===String(gears[1]?.name||'').toLowerCase())?'POSSEDUTO':'DA OTTENERE'},
+  {label:'Overdrive',item:overdrive,pick:overdrive?.pick,status:account?.overdrives?.some(x=>x.name===overdrive?.name)?'POSSEDUTO':overdrive?'DA OTTENERE':'NON DISPONIBILE'}
  ];
 }
 
@@ -52,7 +52,7 @@ function BrawlerProfile({b,build,components,profile,onBack}){
   <header className="appTop"><button onClick={onBack}>‹</button><strong>{b.name}</strong><button>⚙</button></header>
   <section className="heroBanner" data-brawler={b.name.replace(/[^a-z0-9]/gi,'').toLowerCase()}>
    <div className="heroGradient"/><div className="heroTexture"/><div className="heroText"><small>{b.class?.name||'BRAWLER'}</small><h1>{b.name}</h1><p>{b.shortDescription||b.description||'Brawler profile'}</p><div className="chips"><span>● {b.class?.name}</span><span>{b.rarity?.name}</span></div></div><img className="heroArt" src={b.imageUrl2||b.imageUrl} alt=""/>
-   <button className="heroStar">☆</button>
+   <button className="heroTeam">+ TEAM</button><button className="heroStar">☆</button>
   </section>
   <nav className="tabs">{TABS.map(x=><button className={tab===x?'active':''} key={x} onClick={()=>setTab(x)}>{x}</button>)}</nav>
   {tab==='Panoramica'&&<Overview b={b} e={e} account={account} stats={stats} loadout={loadout} modeBuild={modeBuild} selectedMode={selectedMode} setSelectedMode={setSelectedMode} modes={modes} maps={maps} buffies={buffies}/>}
