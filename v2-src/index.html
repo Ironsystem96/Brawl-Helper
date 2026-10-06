@@ -11,9 +11,25 @@ body{background:#07143b;color:#f7fbff;font-family:system-ui,-apple-system,Segoe 
 #boot{min-height:100vh;display:grid;place-items:center;text-align:center}
 #boot strong{display:block;font-size:20px}#boot span{display:block;margin-top:6px;font-size:12px;opacity:.65}
 </style>
+<script>
+(function(){
+  try{
+    if('serviceWorker' in navigator){
+      navigator.serviceWorker.getRegistrations().then(function(rs){
+        return Promise.all(rs.map(function(r){return r.unregister();}));
+      }).catch(function(){});
+    }
+    if('caches' in window){
+      caches.keys().then(function(ks){
+        return Promise.all(ks.map(function(k){return caches.delete(k);}));
+      }).catch(function(){});
+    }
+  }catch(e){}
+})();
+</script>
 </head>
 <body>
-<div id="root"><div id="boot"><div><strong>BRAWL HELPER</strong><span>Avvio interfaccia…</span></div></div></div>
-<script type="module" src="/src/main.jsx"></script>
+<div id="root"><div id="boot"><div><strong>BRAWL HELPER V2</strong><span>Avvio interfaccia…</span></div></div></div>
+<script type="module" src="/Brawl-Helper/v2/assets/index-DHxs7tP3.js?v=2"></script>
 </body>
 </html>
