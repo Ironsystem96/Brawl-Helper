@@ -8429,10 +8429,10 @@
           ],
           "gears": [
             {
-              "name": "Super Charge"
+              "name": "Shield"
             },
             {
-              "name": "Shield"
+              "name": "Vision"
             }
           ]
         },
@@ -8472,7 +8472,7 @@
               "name": "Damage"
             },
             {
-              "name": "Super Charge"
+              "name": "Shield"
             }
           ]
         },
