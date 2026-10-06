@@ -369,5 +369,32 @@ body:has(.rhHero) .app{background:radial-gradient(circle at 50% -10%,#12345d 0,#
 const st=document.createElement('style');st.id='bh-detail-v3';const css4=String.raw`
 /* v17 configuration consolidation + reliable overdrive visuals */
 .rhConfigIntro{margin:-2px 0 10px;color:#71819a;font-size:10px;line-height:1.4}.rhConfigList{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}.rhConfigSlot{min-width:0;min-height:118px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:9px 6px;border:1px solid #d8e5f1;border-radius:15px;background:linear-gradient(180deg,#fbfdff,#eef6fd);color:#172443;text-align:center}.rhConfigSlot .compIcon{width:48px;height:48px;object-fit:contain}.rhConfigSlot div{min-width:0;width:100%}.rhConfigSlot small{display:block;color:#8190a4;font-size:7px;font-weight:900;letter-spacing:.5px}.rhConfigSlot b{display:block;font-size:9px;line-height:1.15}.rhConfigSlot>span{font-size:7px;font-weight:950;border-radius:999px;padding:4px 6px;background:#e6edf4;color:#53647c}.rhConfigSlot.ok>span{background:#bff3cd;color:#16763e}.rhConfigSlot.missing>span{background:#ffd1d5;color:#ad3844}.rhConfigSlot.owned>span{background:#dcecff;color:#176be9}.rhConfigSlot.verify>span{background:#fff1bf;color:#866b00}.rhConfigSlot:hover{border-color:#79b5f1;transform:translateY(-1px)}.rhConfigCount{background:#176be9;color:#fff;border-radius:999px;padding:6px 9px;font-size:9px;font-weight:950}.overdriveVisual{width:48px!important;height:48px!important;display:grid!important;place-items:center!important;border-radius:13px!important;background:linear-gradient(145deg,#ffb52e,#ef7d1d)!important;border:2px solid #ffe08a!important;box-shadow:0 5px 12px rgba(239,125,29,.25)!important;color:#fff!important}.overdriveVisual:before{content:'⚡';filter:drop-shadow(0 2px 1px rgba(0,0,0,.2));font-size:26px!important}@media(max-width:650px){.rhConfigList{grid-template-columns:repeat(3,minmax(0,1fr))}.rhConfigSlot{min-height:112px}.rhConfigSlot .compIcon{width:44px;height:44px}}@media(max-width:390px){.rhConfigList{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* MOBILE-FIRST CANVAS: detail is always designed as a phone UI */
+body:has(.rhHero){width:100%;min-width:0;overflow-x:hidden}
+body:has(.rhHero) .app{width:100%;max-width:430px!important;margin:0 auto!important;padding:0 10px!important;box-sizing:border-box!important;overflow-x:hidden!important}
+body:has(.rhHero) .rhHero{margin-left:-10px!important;margin-right:-10px!important;border-radius:0 0 22px 22px!important;padding-left:14px!important;padding-right:14px!important;min-height:300px!important}
+.rhHeroArt{inset:0 0 66px!important}
+.rhHeroArt img{height:250px!important;max-width:92%!important}
+.rhHeroInfo{left:14px!important;bottom:16px!important;max-width:82%!important}
+.rhHeroInfo h1{font-size:39px!important;line-height:.9!important}
+.rhToolRail{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:7px!important}
+.rhToolRail>button{min-height:58px!important;padding:8px!important}
+.rhTabs{overflow-x:auto!important;white-space:nowrap!important;display:flex!important}
+.rhTabs button{flex:1 0 auto!important;padding:8px 10px!important}
+.rhOverviewStats{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+.rhPanel{padding:12px!important;border-radius:14px!important}
+.rhPanelHead{gap:7px!important}
+.rhPanelHead h2{font-size:20px!important}
+.rhMapList,.rhModeList,.rhMissingList,.rhBuffList{width:100%!important;min-width:0!important}
+.rhMapCard,.rhModeRow,.rhMissingRow,.rhBuffRow{min-width:0!important;box-sizing:border-box!important}
+.rhConfigList{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:7px!important}
+.rhConfigSlot{min-height:108px!important;padding:8px 5px!important}
+.rhConfigSlot .compIcon{width:44px!important;height:44px!important}
+.rhStatGrid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+.rhDecision{padding:12px!important}
+.rhNextAction{width:100%!important;box-sizing:border-box!important}
+@media(min-width:431px){body:has(.rhHero) .app{max-width:430px!important}.rhHeroArt img{height:250px!important}.rhHeroInfo h1{font-size:39px!important}}
+@media(max-width:390px){body:has(.rhHero) .app{padding:0 8px!important}.rhHero{min-height:286px!important}.rhHeroArt img{height:235px!important}.rhHeroInfo{left:12px!important}.rhHeroInfo h1{font-size:35px!important}.rhPanel{padding:10px!important}.rhToolRail>button{min-height:54px!important}.rhConfigSlot{min-height:102px!important}}
 `;st.textContent=css+css2+css3+css4;document.head.appendChild(st);
 })();
