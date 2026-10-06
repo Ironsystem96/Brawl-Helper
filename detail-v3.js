@@ -8,7 +8,7 @@ const PCT=v=>{const n=Number(v);return Number.isFinite(n)?n.toFixed(n%1?1:0)+'%'
 
 const N=v=>Number.isFinite(Number(v))?Number(v):null;
 function uiIcon(kind){
- const p={home:'<path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10.5V20h13v-9.5"/><path d="M9 20v-5h6v5"/>',build:'<path d="m14.5 5.5-9 9 4 4 9-9"/><path d="m13 7 4 4"/><path d="m17.5 3.5 3 3"/><path d="M4 20h5"/>',upgrade:'<path d="M12 20V5"/><path d="m6.5 11 5.5-6 5.5 6"/><path d="M5 20h14"/>',modes:'<circle cx="12" cy="12" r="8"/><path d="m9 9 6 3-6 3Z"/>',map:'<path d="m4 6 5-2 6 2 5-2v14l-5 2-6-2-5 2Z"/><path d="M9 4v14M15 6v14"/>',stats:'<path d="M5 19V11M12 19V6M19 19V3"/><path d="M3 19h18"/>',video:'<rect x="3" y="5" width="18" height="14" rx="3"/><path d="m10 9 5 3-5 3Z"/>',more:'<circle cx="5" cy="12" r="1.2"/><circle cx="12" cy="12" r="1.2"/><circle cx="19" cy="12" r="1.2"/>',team:'<circle cx="9" cy="9" r="3"/><circle cx="17" cy="10" r="2.5"/><path d="M3.5 20c.6-3.2 2.4-5 5.5-5s4.9 1.8 5.5 5"/><path d="M14.5 16c2.8-.6 5.1.8 5.8 4"/>'};
+ const p={star:'<path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9Z"/>',home:'<path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10.5V20h13v-9.5"/><path d="M9 20v-5h6v5"/>',build:'<path d="m14.5 5.5-9 9 4 4 9-9"/><path d="m13 7 4 4"/><path d="m17.5 3.5 3 3"/><path d="M4 20h5"/>',upgrade:'<path d="M12 20V5"/><path d="m6.5 11 5.5-6 5.5 6"/><path d="M5 20h14"/>',modes:'<circle cx="12" cy="12" r="8"/><path d="m9 9 6 3-6 3Z"/>',map:'<path d="m4 6 5-2 6 2 5-2v14l-5 2-6-2-5 2Z"/><path d="M9 4v14M15 6v14"/>',stats:'<path d="M5 19V11M12 19V6M19 19V3"/><path d="M3 19h18"/>',video:'<rect x="3" y="5" width="18" height="14" rx="3"/><path d="m10 9 5 3-5 3Z"/>',more:'<circle cx="5" cy="12" r="1.2"/><circle cx="12" cy="12" r="1.2"/><circle cx="19" cy="12" r="1.2"/>',team:'<circle cx="9" cy="9" r="3"/><circle cx="17" cy="10" r="2.5"/><path d="M3.5 20c.6-3.2 2.4-5 5.5-5s4.9 1.8 5.5 5"/><path d="M14.5 16c2.8-.6 5.1.8 5.8 4"/>'};
  return '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">'+(p[kind]||p.more)+'</svg>';
 }
 function toggleFavoriteV3(b){const key='bh_favorites_v3',arr=JSON.parse(localStorage.getItem(key)||'[]'),id=String(b?.id||'');localStorage.setItem(key,JSON.stringify(arr.includes(id)?arr.filter(x=>x!==id):arr.concat(id)));render()}
@@ -405,6 +405,69 @@ const css5=String.raw`
 @media(max-width:390px){.rhHeroActions{right:8px}.rhTeam{padding:0 7px}.rhTeam span{display:none}.rhToolRail>button{min-height:54px!important}.rhUpgradeTrack{gap:2px}.rhUpgradeTrack span{height:26px;font-size:6px}}
 
 `;
+
+/* MASTER REFERENCE OVERRIDE v2 — visual system, not a generic dashboard */
+body:has(.rhHero){background:#050b15!important}
+body:has(.rhHero) .app{background:#07111f!important;box-shadow:0 0 60px rgba(0,0,0,.45);min-height:100vh}
+.rhBack{height:34px!important;padding:0 10px!important;margin:5px 0!important;background:#0b1a2c!important;border:1px solid #294562!important;color:#bcd2e9!important;border-radius:10px!important;font-size:9px!important;font-weight:900!important}
+.rhHero{min-height:360px!important;border:0!important;border-radius:0 0 26px 26px!important;margin:0 -10px 10px!important;background:#071a38!important}
+.rhHero:before{background:
+radial-gradient(circle at 76% 25%,rgba(71,174,255,.82),transparent 27%),
+radial-gradient(circle at 18% 62%,rgba(21,92,205,.5),transparent 38%),
+linear-gradient(135deg,#051a40 0%,#0a3c91 46%,#10152f 100%)!important}
+.rhHero:after{height:56%!important;background:linear-gradient(transparent 0%,rgba(3,9,20,.12) 10%,rgba(3,9,20,.94) 100%)!important}
+.rhHeroArt{inset:0 0 92px!important;align-items:center!important;justify-content:center!important}
+.rhHeroArt img{height:315px!important;max-width:96%!important;filter:drop-shadow(0 18px 12px rgba(0,0,0,.45))!important}
+.rhHeroGlow{background:radial-gradient(circle,rgba(84,186,255,.34),transparent 68%)!important}
+.rhHeroActions{top:12px!important;right:12px!important}
+.rhFav,.rhTeam{background:rgba(5,16,31,.82)!important;backdrop-filter:blur(8px);border-color:rgba(144,190,231,.4)!important;box-shadow:0 8px 20px rgba(0,0,0,.2)}
+.rhFav{width:40px!important}
+.rhHeroInfo{left:18px!important;bottom:16px!important;max-width:90%!important}
+.rhHeroInfo h1{font-size:48px!important;letter-spacing:-1.5px!important;text-shadow:0 4px 0 #06101e,0 7px 18px rgba(0,0,0,.65)!important}
+.rhRole{font-size:8px!important;letter-spacing:1.3px!important;color:#8dd6ff!important}
+.rhHeroInfo>p:not(.rhHeroDescription){font-size:9px!important;color:#d4e4f5!important;margin:4px 0!important}
+.rhBadges{gap:5px!important}.rhBadges span,.rhBadges b{padding:5px 8px!important;border-radius:999px!important;font-size:7px!important;background:rgba(8,22,40,.82)!important;border-color:#456987!important}
+.rhBadges b{background:#ffd52f!important;border-color:#ffe99a!important}
+.rhHeroDescription{font-size:8px!important;max-width:340px!important;color:#b9cce1!important}
+.rhHeroSummary{margin:0 0 9px!important;gap:5px!important}
+.rhHeroSummary>div{background:linear-gradient(145deg,#0e2137,#091525)!important;border:1px solid #284661!important;border-radius:12px!important;padding:9px 5px!important;box-shadow:inset 0 1px rgba(255,255,255,.035)}
+.rhHeroSummary span{font-size:6px!important}.rhHeroSummary b{font-size:10px!important}
+.rhPowerCard{position:relative!important;overflow:hidden!important;margin:0 0 9px!important;padding:13px!important;background:linear-gradient(135deg,#351b69,#1d1743)!important;border:1px solid #7549bd!important}
+.rhPowerCard:after{content:"";position:absolute;right:-30px;top:-40px;width:140px;height:140px;border-radius:50%;background:rgba(169,79,255,.15);filter:blur(4px)}
+.rhPowerCard>*{position:relative;z-index:1}.rhPowerCard small{font-size:7px!important}.rhPowerCard h2{font-size:21px!important}.rhPowerCard p{max-width:280px}
+.rhPowerCard button{height:38px!important;box-shadow:0 5px 14px rgba(0,0,0,.2)}
+.rhToolRail{margin:0 0 9px!important;gap:6px!important}
+.rhToolRail>button{min-height:55px!important;border-radius:12px!important;background:linear-gradient(145deg,#10243b,#091522)!important;border-color:#294a69!important;box-shadow:0 5px 12px rgba(0,0,0,.12)!important}
+.rhToolRail>button b{font-size:9px!important}.rhToolRail>button small{font-size:6px!important}
+.rhPanel{margin:8px 0!important;background:linear-gradient(150deg,#0d1c2e,#091421)!important;border:1px solid #263f59!important;border-radius:17px!important;padding:13px!important;box-shadow:0 10px 24px rgba(0,0,0,.18)!important}
+.rhPanelHead{border-bottom:1px solid #1d344b!important;padding-bottom:9px!important;margin-bottom:10px!important}
+.rhPanelHead small{font-size:7px!important;letter-spacing:1px!important;color:#62baff!important}.rhPanelHead h2{font-size:19px!important;letter-spacing:-.3px!important}.rhPanelHead>span{font-size:7px!important}
+.rhConfigList{gap:6px!important}
+.rhConfigSlot{min-height:126px!important;padding:8px 5px!important;border-radius:13px!important;background:linear-gradient(160deg,#142941,#0b1828)!important;border-color:#2d4b69!important;box-shadow:inset 0 1px rgba(255,255,255,.025)!important}
+.rhConfigSlot .compIcon{width:50px!important;height:50px!important;filter:drop-shadow(0 5px 6px rgba(0,0,0,.35))}
+.rhConfigSlot small{font-size:6px!important;color:#7894af!important}.rhConfigSlot b{font-size:8px!important;color:#f5f9ff!important}
+.rhConfigSlot>span{font-size:6px!important;padding:4px 6px!important;background:#1b3048!important;color:#9eb5cc!important}
+.rhConfigSlot.ok>span{background:#124b37!important;color:#6cf0af!important}.rhConfigSlot.missing>span{background:#51222a!important;color:#ff9da8!important}
+.rhPlaystylePanel .rhStyleTags span{font-size:7px!important;padding:5px 7px!important}.rhDescription{font-size:8px!important;line-height:1.5!important}
+.rhUpgradeTrack span{height:30px!important;border-radius:7px!important}.rhUpgradeSummary>div{padding:9px!important}
+.rhModeRow,.rhMapCard,.rhMissingRow,.rhBuffRow{border-radius:12px!important;background:linear-gradient(145deg,#10243a,#0b1828)!important;border-color:#294862!important}
+.rhModeRow{min-height:58px!important}.rhModeIcon{width:32px!important;height:32px!important;border-radius:9px!important}
+.rhMapCard{padding:6px!important}.rhMapThumb{height:58px!important;border-radius:9px!important}
+.rhMapCard b,.rhModeRow b{font-size:9px!important}.rhMapCard small,.rhModeRow small{font-size:6px!important}
+.rhVideoCard{background:linear-gradient(145deg,#111f32,#0b1726)!important;border-color:#294862!important}
+.rhMissingRow.static{background:#0d1b2b!important}
+.v3Hyper,.v3BuffiesCard{border-radius:17px!important}
+.v3FeatureComponent{background:linear-gradient(145deg,#172b44,#0b1829)!important;border-color:#355777!important;border-radius:13px!important}
+@media(max-width:430px){
+ body:has(.rhHero) .app{padding:0 8px!important}
+ .rhHero{margin-left:-8px!important;margin-right:-8px!important;min-height:340px!important}
+ .rhHeroArt{inset:0 0 84px!important}.rhHeroArt img{height:285px!important}
+ .rhHeroInfo{left:15px!important;bottom:14px!important}.rhHeroInfo h1{font-size:42px!important}
+ .rhHeroSummary>div{padding:8px 3px!important}
+ .rhPowerCard{padding:11px!important}
+ .rhConfigSlot{min-height:116px!important}.rhConfigSlot .compIcon{width:46px!important;height:46px!important}
+}
+
 const st=document.createElement('style');st.id='bh-detail-v3';const css4=String.raw`
 /* v17 configuration consolidation + reliable overdrive visuals */
 .rhConfigIntro{margin:-2px 0 10px;color:#71819a;font-size:10px;line-height:1.4}.rhConfigList{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}.rhConfigSlot{min-width:0;min-height:118px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:9px 6px;border:1px solid #d8e5f1;border-radius:15px;background:linear-gradient(180deg,#fbfdff,#eef6fd);color:#172443;text-align:center}.rhConfigSlot .compIcon{width:48px;height:48px;object-fit:contain}.rhConfigSlot div{min-width:0;width:100%}.rhConfigSlot small{display:block;color:#8190a4;font-size:7px;font-weight:900;letter-spacing:.5px}.rhConfigSlot b{display:block;font-size:9px;line-height:1.15}.rhConfigSlot>span{font-size:7px;font-weight:950;border-radius:999px;padding:4px 6px;background:#e6edf4;color:#53647c}.rhConfigSlot.ok>span{background:#bff3cd;color:#16763e}.rhConfigSlot.missing>span{background:#ffd1d5;color:#ad3844}.rhConfigSlot.owned>span{background:#dcecff;color:#176be9}.rhConfigSlot.verify>span{background:#fff1bf;color:#866b00}.rhConfigSlot:hover{border-color:#79b5f1;transform:translateY(-1px)}.rhConfigCount{background:#176be9;color:#fff;border-radius:999px;padding:6px 9px;font-size:9px;font-weight:950}.overdriveVisual{width:48px!important;height:48px!important;display:grid!important;place-items:center!important;border-radius:13px!important;background:linear-gradient(145deg,#ffb52e,#ef7d1d)!important;border:2px solid #ffe08a!important;box-shadow:0 5px 12px rgba(239,125,29,.25)!important;color:#fff!important}.overdriveVisual:before{content:'⚡';filter:drop-shadow(0 2px 1px rgba(0,0,0,.2));font-size:26px!important}@media(max-width:650px){.rhConfigList{grid-template-columns:repeat(3,minmax(0,1fr))}.rhConfigSlot{min-height:112px}.rhConfigSlot .compIcon{width:44px;height:44px}}@media(max-width:390px){.rhConfigList{grid-template-columns:repeat(2,minmax(0,1fr))}}
