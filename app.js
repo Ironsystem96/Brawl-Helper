@@ -290,6 +290,21 @@ function metaRankList(mode,map){
  return allBrawlers().map(b=>({b,meta:metaEntry(b,mode,map)})).filter(x=>x.meta?.score!=null).sort((a,z)=>(z.meta.score-a.meta.score)||((a.meta.rank||999)-(z.meta.rank||999)));
 }
 function globalRankList(){return metaRankList('','Random').sort((a,z)=>(z.meta.score-a.meta.score)||((a.meta.rank||999)-(z.meta.rank||999)))}
+function personalizedTop5(mode,map){
+ const owned=allBrawlers().filter(b=>isOwnedAccount(b));
+ return owned.map(b=>{
+   const m=metaEntry(b,mode,map)||metaEntry(b,'','Random');
+   if(!m||m.score==null)return null;
+   const meta=Number(m.score)||0;
+   const power=Math.max(0,Math.min(11,Number(b.power)||0))/11*100;
+   const readinessScore=readiness(b);
+   const build=buildEntry(b);
+   const buildConfidence=Number(build?.confidence);
+   const confidence=Number.isFinite(buildConfidence)?buildConfidence*100:60;
+   const score=Math.round(meta*.58+power*.20+readinessScore*.12+confidence*.10);
+   return {b,meta:m,personalScore:score};
+ }).filter(Boolean).sort((a,z)=>(z.personalScore-a.personalScore)||(Number(z.meta?.score)||0)-(Number(a.meta?.score)||0)).slice(0,5);
+}
 function metaRankOf(b,mode,map){
  if(!b)return null;
  const list=metaRankList(mode,map);
@@ -404,15 +419,16 @@ function buildSlotRows(b){
 function play(){
  const general=playMode==='General',names=general?[]:(MODES[playMode]||MODES.Ranked);
  const ranked=general?globalRankList():metaRankList(playMode,playMap);
- const ready=ranked.filter(x=>isOwnedAccount(x.b)).slice(0,5);
+ const personal=personalizedTop5(general?'':playMode,playMap);
  const top=ranked.slice(0,10);
+ const contextLabel=general?'Overall':playMode+(playMap!=='Random'?' · '+playMap:'');
  return '<section class="section"><div class="sectionTitle"><h2>Meta</h2><span class="small">'+(general?'Overall':'Mode / map')+'</span></div>'+
  '<div class="metaSelector"><button class="'+(general?'active':'')+'" onclick="playMode=\'General\';playMap=\'Random\';render()">GENERAL</button>'+
  Object.keys(MODES).map(m=>'<button class="'+(!general&&playMode===m?'active':'')+'" onclick="playMode=\''+m+'\';playMap=\'Random\';render()">'+esc(m)+'</button>').join('')+'</div>'+
  (general?'':'<select class="search" onchange="playMap=this.value;render()">'+names.map(m=>'<option '+(playMap===m?'selected':'')+'>'+esc(m)+'</option>').join('')+'</select>')+
  '<div class="metaExplain"><b>'+(general?'Overall meta snapshot':'Contextual meta snapshot')+'</b><span>'+(general?'A global view of the current validated meta. Select a mode and map to narrow the context.':'The ranking changes with the selected mode/map. The Brawler detail page uses the same context for build guidance.')+'</span></div>'+
+ (personal.length?'<div class="card personalTop5"><div class="sectionTitle"><h3>Your Top 5</h3><span class="small">personalized · '+esc(contextLabel)+'</span></div><p class="small">Only your owned Brawlers are considered. The score combines current meta context, Power Level, readiness and build confidence.</p><div class="metaList">'+personal.map((x,i)=>window.bcard(x.b,true,playMode,playMap,x.meta?.rank||metaRankOf(x.b,playMode,playMap),'personalTop5')).join('')+'</div></div>':'')+
  '<div class="metaList">'+(top.length?top.map((x,i)=>window.bcard(x.b,true,playMode,playMap,x.meta?.rank||i+1,'metaTop')).join(''):'<div class="emptyState"><b>No validated meta yet.</b><span class="small">The app will not fabricate a ranking.</span></div>')+'</div>'+
- (ready.length?'<div class="section"><div class="sectionTitle"><h3>Your owned options</h3><span class="small">same context</span></div>'+ready.map(x=>window.bcard(x.b,true,playMode,playMap,x.meta?.rank||metaRankOf(x.b,playMode,playMap),'ownedTop')).join('')+'</div>':'')+
  '<div class="card"><div class="sectionTitle"><h3>Sources & freshness</h3><span class="small">'+esc(META_STATE.updatedAt||'—')+'</span></div><p class="small">Meta is derived from the validated external snapshot. It is not an official Supercell recommendation.</p></div></section>';
 }
 function upgrade(){const list=[...(P.brawlers||[])].filter(Boolean).map(b=>({b,plan:upgradePriority(b)})).filter(x=>x.plan.actions.length).sort((a,z)=>z.plan.score-a.plan.score);return '<section class="section"><div class="sectionTitle"><h2>Upgrade Queue</h2><span class="small">one task at a time</span></div><div class="notice upgradeIntro"><b>BUY</b> = not owned. <b>EQUIP</b> = owned but not equipped. <b>VERIFY</b> = ownership not exposed by the API.</div>'+(list.length?list.map((x,i)=>upgradeCard(x,i+1)).join(''):'<div class="card emptyState"><b>Queue is empty.</b><span class="small">Open a Brawler and confirm your items.</span></div>')+'</section>'}
