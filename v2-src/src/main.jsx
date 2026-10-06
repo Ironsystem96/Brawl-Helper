@@ -4,86 +4,87 @@ import './styles.css';
 
 const ROOT='/Brawl-Helper/';
 const DEMO=['Edgar','8-Bit','Mortis'];
+const TABS=['Panoramica','Build','Modalità','Stat','Altro'];
 const pct=v=>v==null?'—':Number(v).toFixed(1)+'%';
-
 const gearImage={'SPEED':'62000000','HEALTH':'62000001','DAMAGE':'62000002','VISION':'62000003','SHIELD':'62000004','RELOAD SPEED':'62000005','SUPER CHARGE':'62000006','GADGET COOLDOWN':'62000017'};
 const gearSrc=name=>gearImage[String(name||'').toUpperCase()]?'https://cdn.brawlify.com/gears/regular/'+gearImage[String(name||'').toUpperCase()]+'.png':'';
-function findItem(list,name){return (list||[]).find(x=>x.name===name)||null}
+const findItem=(list,name)=>(list||[]).find(x=>x.name===name)||null;
 
 function buildFor(b,build,components){
-  const e=build?.entries?.[b.name]||{};
-  const ce=components?.entries?.[String(b.id)]||{};
-  const gadget=findItem(b.gadgets,e.gadget?.[0]?.name);
-  const star=findItem(b.starPowers,e.starPower?.[0]?.name);
-  const gearPool=ce.gears||[];
-  const gearByName=name=>gearPool.find(x=>x.name===name)||{name};
-  const gears=(e.gears||[]).slice(0,2).map(x=>gearByName(x.name));
-  return [
-    {label:'GADGET',item:gadget,pick:e.gadget?.[0]?.pick,status:'VERIFIED'},
-    {label:'STAR POWER',item:star,pick:e.starPower?.[0]?.pick,status:'IN USE'},
-    {label:'GEAR 1',item:gears[0],pick:e.gears?.[0]?.pick,status:'VERIFIED'},
-    {label:'GEAR 2',item:gears[1],pick:e.gears?.[1]?.pick,status:'VERIFIED'},
-    {label:'OVERDRIVE',item:(e.overdrives||[])[0]||null,pick:(e.overdrives||[])[0]?.pick,status:e.overdrives?.length?'VERIFIED':'NOT AVAILABLE'}
-  ];
+ const e=build?.entries?.[b.name]||{}, ce=components?.entries?.[String(b.id)]||{};
+ const gadget=findItem(b.gadgets,e.gadget?.[0]?.name), star=findItem(b.starPowers,e.starPower?.[0]?.name);
+ const gearPool=ce.gears||[], gearByName=name=>gearPool.find(x=>x.name===name)||{name};
+ const gears=(e.gears||[]).slice(0,2).map(x=>gearByName(x.name));
+ return [
+  {label:'Gadget',item:gadget,pick:e.gadget?.[0]?.pick,status:'IN USO'},
+  {label:'Star Power',item:star,pick:e.starPower?.[0]?.pick,status:'IN USO'},
+  {label:'Gear 1',item:gears[0],pick:e.gears?.[0]?.pick,status:'IN USO'},
+  {label:'Gear 2',item:gears[1],pick:e.gears?.[1]?.pick,status:'IN USO'},
+  {label:'Overdrive',item:(e.overdrives||[])[0]||null,pick:e.overdrives?.[0]?.pick,status:e.overdrives?.length?'IN USO':'DA OTTENERE'}
+ ];
 }
 
 function App(){
-  const [catalog,setCatalog]=useState([]);
-  const [build,setBuild]=useState(null);
-  const [components,setComponents]=useState(null);
-  const [selected,setSelected]=useState(null);
-  const [loading,setLoading]=useState(true);
-  useEffect(()=>{
-    Promise.all([
-      fetch(ROOT+'data/brawlers.json').then(r=>r.json()),
-      fetch(ROOT+'data/build-meta.json').then(r=>r.json()),
-      fetch(ROOT+'data/components.json').then(r=>r.json())
-    ]).then(([c,b,co])=>{
-      const all=c.brawlers||[];setCatalog(all);setBuild(b);setComponents(co);setSelected(null);
-    }).finally(()=>setLoading(false));
-  },[]);
-  const demos=useMemo(()=>DEMO.map(n=>catalog.find(b=>b.name===n)).filter(Boolean),[catalog]);
-  if(loading)return <div className="v2Loading"><b>BRAWL HELPER</b><span>Preparing the new interface…</span></div>;
-  return <main className="v2App">{!selected?<Chooser demos={demos} onSelect={setSelected}/>:<BrawlerProfile b={selected} build={build} components={components} onBack={()=>setSelected(null)}/>}</main>;
+ const [catalog,setCatalog]=useState([]),[build,setBuild]=useState(null),[components,setComponents]=useState(null),[selected,setSelected]=useState(null),[loading,setLoading]=useState(true);
+ useEffect(()=>{Promise.all([fetch(ROOT+'data/brawlers.json').then(r=>r.json()),fetch(ROOT+'data/build-meta.json').then(r=>r.json()),fetch(ROOT+'data/components.json').then(r=>r.json())]).then(([c,b,co])=>{setCatalog(c.brawlers||[]);setBuild(b);setComponents(co)}).finally(()=>setLoading(false))},[]);
+ const demos=useMemo(()=>DEMO.map(n=>catalog.find(b=>b.name===n)).filter(Boolean),[catalog]);
+ if(loading)return <div className="v2Loading"><b>BRAWL HELPER</b><span>Caricamento interfaccia…</span></div>;
+ return <main className="v2App">{selected?<BrawlerProfile b={selected} build={build} components={components} onBack={()=>setSelected(null)}/>:<Chooser demos={demos} onSelect={setSelected}/>}</main>;
 }
 
 function Chooser({demos,onSelect}){
-  return <section className="chooser">
-    <div className="brand"><span>BRAWL HELPER</span><h1>Master Brawler</h1><p>New interface · 3 data-rich profiles</p></div>
-    <div className="chooserGrid">{demos.map((b,i)=><button className="demoCard" key={b.id} onClick={()=>onSelect(b)}>
-      <div className="demoNo">0{i+1}</div><img src={b.imageUrl2||b.imageUrl} alt=""/><div><small>{b.class?.name}</small><strong>{b.name}</strong><span>{b.rarity?.name}</span></div><i>›</i>
-    </button>)}</div>
-    <div className="baseNote"><b>BASE REBUILD</b><span>UI, data model and components are being rebuilt independently. New Brawlers will plug into this same system.</span></div>
-  </section>;
+ return <section className="chooser"><div className="brand"><span>BRAWL HELPER</span><h1>Brawlers</h1><p>Master UI · base rebuild</p></div><div className="chooserGrid">{demos.map((b,i)=><button className="demoCard" key={b.id} onClick={()=>onSelect(b)}><div className="demoNo">0{i+1}</div><img src={b.imageUrl2||b.imageUrl} alt=""/><div><small>{b.class?.name}</small><strong>{b.name}</strong><span>{b.rarity?.name}</span></div><i>›</i></button>)}</div></section>;
 }
 
 function BrawlerProfile({b,build,components,onBack}){
-  const e=build?.entries?.[b.name]||{};
-  const loadout=buildFor(b,build,components);
-  const modes=Object.entries(e.noff?.modes||{}).sort((a,z)=>(z[1].score||0)-(a[1].score||0)).slice(0,3);
-  const maps=(e.noff?.maps||[]).slice(0,3);
-  const stats=e.noff?.stats||{};
-  const buffies=(e.buffies||[]).slice(0,3);
-  return <div className="profile">
-    <div className="topBar"><button className="back" onClick={onBack}>‹ <span>BRAWLERS</span></button><div className="topActions"><button aria-label="favorite">☆</button><button className="team">+ TEAM</button></div></div>
-    <section className="heroBanner"><div className="heroGradient"/><div className="heroGlow"/><div className="heroText"><small>{b.class?.name||'BRAWLER'}</small><h2>{b.name}</h2><p>{b.shortDescription||b.description||'Brawler profile'}</p><div className="chips"><span>{b.rarity?.name}</span><span>{b.class?.name}</span></div></div><img className="heroArt" src={b.imageUrl2||b.imageUrl} alt=""/></section>
-    <section className="stats"><Stat label="WIN RATE" value={pct(stats.winRate)}/><Stat label="PICK RATE" value={pct(stats.pickRate)}/><Stat label="SAMPLE" value={e.sample?.toLocaleString()||'—'}/><Stat label="ACCOUNT" value="OWNED"/></section>
-    <section className="card buildCard"><SectionTitle label="RECOMMENDED LOADOUT" title="Build meta" badge="5 SLOTS"/><p className="sectionIntro">La configurazione consigliata per giocare {b.name}.</p><div className="buildRow">{loadout.map((x,i)=><LoadoutSlot key={x.label+i} {...x} index={i}/>)}</div><button className="upgradeCta"><span>CHECK UPGRADE</span><b>›</b></button></section>
-    <section className="card playCard"><SectionTitle label="PLAYSTYLE" title="How to play"/><div className="playGrid"><div><b>{b.class?.name||'BRAWLER'}</b><span>Primary role</span></div><div><b>PRESSURE</b><span>Keep tempo</span></div><div><b>CONTROL</b><span>Win space</span></div></div><p>Use the recommended setup as the baseline. Map and mode context will refine the recommendation later.</p></section>
-    <section className="card"><SectionTitle label="PROGRESSION" title="Upgrade path" badge="POWER"/><div className="powerPath">{Array.from({length:11},(_,i)=><i className={i<9?'done':''} key={i}>{i+1}</i>)}</div><div className="pathLegend"><span><i className="dot doneDot"/>Current target</span><span><i className="dot"/>Next</span></div></section>
-    <section className="card"><SectionTitle label="GAME DATA" title="Stats"/><div className="dataGrid"><Data label="CLASS" value={b.class?.name}/><Data label="RARITY" value={b.rarity?.name}/><Data label="SAMPLE" value={e.sample||'—'}/><Data label="GADGETS" value={b.gadgets?.length||0}/><Data label="STAR POWERS" value={b.starPowers?.length||0}/><Data label="GEARS" value={(components?.entries?.[String(b.id)]?.gears||[]).length||0}/></div></section>
-    <section className="card"><SectionTitle label="META PERFORMANCE" title="Top modes" badge="NOFF"/><div className="list">{modes.map(([name,x],i)=><div className="listRow" key={name}><em>0{i+1}</em><strong>{name}</strong><span>{pct(x.winRate)} WR · {pct(x.pickRate)} USE</span><b>{Math.round(x.score||0)}</b></div>)}</div></section>
-    <section className="card"><SectionTitle label="MAP PERFORMANCE" title="Top maps" badge="TOP 3"/><div className="maps">{maps.map((x,i)=><div className="map" key={x.name+i}><div className="mapImg"><span>0{i+1}</span><i/></div><strong>{x.name}</strong><small>{pct(x.winRate)} WR · {pct(x.pickRate)} USE</small></div>)}</div></section>
-    <section className="card extrasCard"><SectionTitle label="EXTRAS" title="Buffies"/>{buffies.length?<div className="buffies">{buffies.map(x=><div className="buffie" key={x.id+x.name}><div className="buffieIcon">✦</div><div><span>{x.slot}</span><strong>{x.name.replace(' Buffie','')}</strong><p>{x.description}</p></div></div>)}</div>:<div className="emptyState">No validated Buffie data for this Brawler.</div>}</section>
-    <div className="footerNote">BRAWL HELPER · V2 FOUNDATION · {DEMO.join(' · ')}</div>
-  </div>;
+ const [tab,setTab]=useState('Panoramica');
+ const e=build?.entries?.[b.name]||{}, loadout=buildFor(b,build,components), stats=e.noff?.stats||{};
+ const modes=Object.entries(e.noff?.modes||{}).sort((a,z)=>(z[1].score||0)-(a[1].score||0)).slice(0,6), maps=(e.noff?.maps||[]).slice(0,3), buffies=(e.buffies||[]).slice(0,3);
+ return <div className="profile">
+  <header className="appTop"><button onClick={onBack}>‹</button><strong>{b.name}</strong><button>⚙</button></header>
+  <section className="heroBanner" data-brawler={b.name.replace(/[^a-z0-9]/gi,'').toLowerCase()}>
+   <div className="heroGradient"/><div className="heroTexture"/><div className="heroText"><small>{b.class?.name||'BRAWLER'}</small><h1>{b.name}</h1><p>{b.shortDescription||b.description||'Brawler profile'}</p><div className="chips"><span>● {b.class?.name}</span><span>{b.rarity?.name}</span></div></div><img className="heroArt" src={b.imageUrl2||b.imageUrl} alt=""/>
+   <button className="heroStar">☆</button>
+  </section>
+  <nav className="tabs">{TABS.map(x=><button className={tab===x?'active':''} key={x} onClick={()=>setTab(x)}>{x}</button>)}</nav>
+  {tab==='Panoramica'&&<Overview b={b} e={e} stats={stats} loadout={loadout} modes={modes} maps={maps} buffies={buffies}/>}
+  {tab==='Build'&&<BuildPage b={b} loadout={loadout}/>}
+  {tab==='Modalità'&&<ModesPage modes={modes}/>}
+  {tab==='Stat'&&<StatsPage b={b} e={e}/>}
+  {tab==='Altro'&&<ExtrasPage b={b} buffies={buffies}/>}
+  <BottomNav active="Brawler"/>
+ </div>;
 }
-function LoadoutSlot({label,item,pick,status,index}){
-  const type=label==='GADGET'?'gadgets':label==='STAR POWER'?'starPowers':label.startsWith('GEAR')?'gears':'overdrives';
-  const src=item?.imageUrl||gearSrc(item?.name);
-  return <div className={'slot '+(type==='overdrives'?'overdrive':'')}><div className="slotNum">{index+1}</div>{src?<img src={src} alt=""/>:<div className="emptyIcon">{type==='overdrives'?'⚡':'—'}</div>}<small>{label}</small><strong>{item?.name||'Not available'}</strong>{pick!=null?<em>{pick}% PICK</em>:<em className="mutedStatus">{status}</em>}</div>;
+
+function Overview({b,e,stats,loadout,modes,maps,buffies}){
+ return <div className="content">
+  <section className="sectionHeading"><h2>Build consigliata</h2><span>Top Ranked</span></section>
+  <section className="buildPanel"><div className="buildRow">{loadout.map((x,i)=><LoadoutSlot key={x.label} {...x} index={i}/>)}</div></section>
+  <section className="sectionHeading"><h2>Stato nel tuo account</h2></section>
+  <section className="accountBuild">{loadout.map((x,i)=><LoadoutMini key={x.label} {...x} index={i}/>)}</section>
+  <section className="actionBanner"><div className="actionIcon">⚡</div><div><small>PROSSIMA AZIONE</small><strong>{loadout[4].item?'Usa Overdrive':'Ottieni Overdrive'}</strong><p>Completa la configurazione consigliata.</p></div><b>›</b></section>
+  <section className="sectionHeading"><h2>Migliore in queste modalità</h2><button>Vedi tutte ›</button></section>
+  <div className="modeTiles">{modes.slice(0,4).map(([name,x],i)=><div className="modeTile" key={name}><ModeIcon index={i}/><strong>{name}</strong><span>{pct(x.winRate)} WR</span></div>)}</div>
+  <section className="sectionHeading compactHead"><h2>Statistiche rapide</h2></section>
+  <section className="quickStats"><Data label="WIN RATE" value={pct(stats.winRate)}/><Data label="PICK RATE" value={pct(stats.pickRate)}/><Data label="SAMPLE" value={e.sample||'—'}/><Data label="POWER" value="9/11"/></section>
+  <section className="sectionHeading compactHead"><h2>Mappe migliori</h2></section>
+  <div className="maps">{maps.map((x,i)=><div className="map" key={x.name+i}><div className="mapImg"><span>0{i+1}</span></div><strong>{x.name}</strong><small>{pct(x.winRate)} WR</small></div>)}</div>
+ </div>;
 }
+
+function BuildPage({b,loadout}){
+ return <div className="content"><section className="sectionHeading"><h2>Dettaglio build</h2><span>Top Ranked</span></section><div className="detailList">{loadout.map((x,i)=><LoadoutDetail key={x.label} {...x} index={i}/>)}</div><section className="sectionHeading"><h2>Build alternativa</h2><button>Vedi tutte ›</button></section><div className="filterRow"><button className="selected">Ranked</button><button>Gem Grab</button><button>Brawl Ball</button><button>Knockout</button></div><div className="alternative"><div className="altIcons">{loadout.map((x,i)=><LoadoutMini key={x.label} {...x} index={i}/>)}</div><button className="yellowBtn">Usa questa build</button></div></div>;
+}
+function ModesPage({modes}){return <div className="content"><section className="sectionHeading"><h2>Prestazioni per modalità</h2></section><div className="modeList">{modes.map(([name,x],i)=><div className="modeRow" key={name}><ModeIcon index={i}/><strong>{name}</strong><b className={'tier tier'+i}>{i<1?'S':i<3?'A':i<6?'B':'C'}</b><span>Win Rate<br/><b>{pct(x.winRate)}</b></span><span>Uso<br/><b>{pct(x.pickRate)}</b></span><i>›</i></div>)}</div></div>}
+function StatsPage({b,e}){return <div className="content"><section className="sectionHeading"><h2>Statistiche</h2></section><div className="powerTabs"><button>Power 9</button><button>Power 10</button><button className="selected">Power 11</button></div><div className="statGrid"><Data label="SALUTE" value={b.name==='R-T'?'8200':'—'}/><Data label="ATTACCO" value={b.name==='R-T'?'1400':'—'}/><Data label="SUPER" value={b.name==='R-T'?'2800':'—'}/><Data label="VELOCITÀ" value="Normale"/><Data label="RICARICA SUPER" value="Normale"/><Data label="PORTATA" value="Lunga"/></div><section className="sectionHeading compactHead"><h2>Progressione</h2></section><div className="growthChart"><span>● Salute</span><span>● Attacco</span><span>● Super</span><div className="chartLines"><i/><i/><i/><i/><i/></div></div></div>}
+function ExtrasPage({b,buffies}){return <div className="content"><section className="sectionHeading"><h2>Cosa ti manca</h2></section><div className="missingList"><div><b>⚡</b><strong>Overdrive</strong><span>{b.name} · Non posseduto</span><em>Non posseduto</em></div><div><b>◉</b><strong>Buffies</strong><span>Disponibili</span><em>0/3</em></div><div><b>◈</b><strong>Hypercharge</strong><span>Non disponibile</span><em>—</em></div></div><section className="sectionHeading compactHead"><h2>Buffies disponibili</h2><button>Vedi tutti ›</button></section>{buffies.length?<div className="buffies">{buffies.map(x=><div className="buffie" key={x.id+x.name}><div className="buffieIcon">✦</div><div><span>{x.slot}</span><strong>{x.name.replace(' Buffie','')}</strong><p>{x.description}</p></div></div>)}</div>:<div className="emptyState">Nessun Buffie validato per questo Brawler.</div>}</div>}
+
+function LoadoutSlot({label,item,pick,status,index}){const type=label==='Gadget'?'gadgets':label==='Star Power'?'starPowers':label.startsWith('Gear')?'gears':'overdrives',src=item?.imageUrl||gearSrc(item?.name);return <div className={'slot '+(type==='overdrives'?'overdrive':'')}><small>{label}</small><div className="slotVisual">{src?<img src={src} alt=""/>:<div className="emptyIcon">⚡</div>}</div><strong>{item?.name||'Non disponibile'}</strong><em className={item?'owned':''}>{item?status:'DA OTTENERE'}</em></div>}
+function LoadoutMini({label,item,status,index}){const type=label==='Gadget'?'gadgets':label==='Star Power'?'starPowers':label.startsWith('Gear')?'gears':'overdrives',src=item?.imageUrl||gearSrc(item?.name);return <div className="mini"><div>{src?<img src={src} alt=""/>:<span>⚡</span>}</div><small>{item?.name||'—'}</small><em className={item?'ok':'lock'}>{item?'In uso':'Non posseduto'}</em></div>}
+function LoadoutDetail({label,item,status,index}){const type=label==='Gadget'?'gadgets':label==='Star Power'?'starPowers':label.startsWith('Gear')?'gears':'overdrives',src=item?.imageUrl||gearSrc(item?.name);return <div className="detailRow"><div className={'detailIcon '+(type==='overdrives'?'purple':'')}>{src?<img src={src} alt=""/>:<span>⚡</span>}</div><div><small>{label}</small><strong>{item?.name||'Non disponibile'}</strong><p>{item?'Configurazione consigliata e validata.':'Componente non ancora disponibile.'}</p></div><em className={item?'ok':'lock'}>{item?'In uso':'Non possiedi'}</em><b>›</b></div>}
+function ModeIcon({index}){return <div className={'modeIcon m'+index}>{index===0?'◉':index===1?'◆':index===2?'●':'◎'}</div>}
 function Stat({label,value}){return <div><small>{label}</small><strong>{value}</strong></div>}
 function Data({label,value}){return <div><small>{label}</small><strong>{value??'—'}</strong></div>}
-function SectionTitle({label,title,badge}){return <div className="sectionTitle"><div><span>{label}</span><h3>{title}</h3></div>{badge&&<b>{badge}</b>}</div>}
+function BottomNav({active}){return <nav className="bottomNav"><button>⌂<span>Home</span></button><button className={active==='Brawler'?'active':''}>♙<span>Brawler</span></button><button>⇧<span>Upgrade</span></button><button>★<span>Meta</span></button><button>•••<span>Altro</span></button></nav>}
+
 createRoot(document.getElementById('root')).render(<App/>);
