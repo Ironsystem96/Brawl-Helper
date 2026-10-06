@@ -98,6 +98,18 @@ function LoadoutDetail({label,item,status,index}){const type=label==='Gadget'?'g
 function ModeIcon({index}){return <div className={'modeIcon m'+index}>{index===0?'◉':index===1?'◆':index===2?'●':'◎'}</div>}
 function Stat({label,value}){return <div><small>{label}</small><strong>{value}</strong></div>}
 function Data({label,value}){return <div><small>{label}</small><strong>{value??'—'}</strong></div>}
+function AttackSuper({b}){
+ const attack=b?.attack||b?.attacks?.[0]||null;
+ const superData=b?.super||b?.supers?.[0]||null;
+ return <section className="content attackSection">
+  <section className="sectionHeading"><h2>Attacco e Super</h2></section>
+  <div className="attackGrid">
+   <article><div className="attackIcon">⌁</div><small>ATTACCO</small><strong>{attack?.name||'Attacco base'}</strong><p>{attack?.description||'Informazioni sull’attacco non disponibili nel catalogo.'}</p></article>
+   <article><div className="attackIcon super">✦</div><small>SUPER</small><strong>{superData?.name||'Super'}</strong><p>{superData?.description||'Informazioni sulla Super non disponibili nel catalogo.'}</p></article>
+  </div>
+ </section>;
+}
+
 function BottomNav({active}){return <nav className="bottomNav"><button>⌂<span>Home</span></button><button className={active==='Brawler'?'active':''}>♙<span>Brawler</span></button><button>⇧<span>Upgrade</span></button><button>★<span>Meta</span></button><button>•••<span>Altro</span></button></nav>}
 
 createRoot(document.getElementById('root')).render(<App/>);
