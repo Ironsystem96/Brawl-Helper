@@ -19,6 +19,8 @@ self.addEventListener('fetch',event=>{
   if(event.request.method!=='GET')return;
   const url=new URL(event.request.url);
   const sameOrigin=url.origin===self.location.origin;
+  // V2 is a separate Vite application; never serve it through the legacy root cache.
+  if(sameOrigin && url.pathname.includes('/Brawl-Helper/v2/')){ event.respondWith(fetch(event.request,{cache:'no-store'})); return; }
   if(sameOrigin && (url.pathname.endsWith('/index.html') || url.pathname.endsWith('/app.js') || url.pathname.endsWith('/ui-v2.js') || url.pathname.endsWith('/detail-v3.js') || url.pathname.endsWith('/component-modal.js') || url.pathname.endsWith('/share-card.js') || url.pathname.endsWith('/recommendations.js') || url.pathname.endsWith('/style.css') || url.pathname.endsWith('/sw.js') || url.pathname.endsWith('/data/asset-manifest.json') || url.pathname.endsWith('/data/meta.json') || url.pathname.endsWith('/data/build-meta.json') || url.pathname.endsWith('/data/brawlers.json') || url.pathname.endsWith('/data/components.json') || url.pathname.endsWith('/data/game-db.json'))){
     event.respondWith(
       fetch(event.request,{cache:'no-store'})
