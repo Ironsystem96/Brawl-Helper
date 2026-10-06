@@ -19,10 +19,10 @@ function buildFor(b,build,components,account){
  const gears=(e.gears||[]).slice(0,2).map(x=>gearByName(x.name));
  const overdrive=(ce.overdrives&&ce.overdrives[0])||(e.overdrives||[])[0]||null;
  return [
-  {label:'Gadget',item:gadget,pick:e.gadget?.[0]?.pick,status:account?.gadgets?.some(x=>x.name===gadget?.name)?'IN USO':'DA OTTENERE'},
-  {label:'Star Power',item:star,pick:e.starPower?.[0]?.pick,status:account?.starPowers?.some(x=>x.name===star?.name)?'IN USO':'DA OTTENERE'},
-  {label:'Gear 1',item:gears[0],pick:e.gears?.[0]?.pick,status:account?.gears?.some(x=>x.name===gears[0]?.name)?'IN USO':'DA OTTENERE'},
-  {label:'Gear 2',item:gears[1],pick:e.gears?.[1]?.pick,status:account?.gears?.some(x=>x.name===gears[1]?.name)?'IN USO':'DA OTTENERE'},
+  {label:'Gadget',item:gadget,pick:e.gadget?.[0]?.pick,status:account?.gadgets?.some(x=>String(x.name||'').toLowerCase()===String(gadget?.name||'').toLowerCase())?'IN USO':'DA OTTENERE'},
+  {label:'Star Power',item:star,pick:e.starPower?.[0]?.pick,status:account?.starPowers?.some(x=>String(x.name||'').toLowerCase()===String(star?.name||'').toLowerCase())?'IN USO':'DA OTTENERE'},
+  {label:'Gear 1',item:gears[0],pick:e.gears?.[0]?.pick,status:account?.gears?.some(x=>String(x.name||'').toLowerCase()===String(gears[0]?.name||'').toLowerCase())?'IN USO':'DA OTTENERE'},
+  {label:'Gear 2',item:gears[1],pick:e.gears?.[1]?.pick,status:account?.gears?.some(x=>String(x.name||'').toLowerCase()===String(gears[1]?.name||'').toLowerCase())?'IN USO':'DA OTTENERE'},
   {label:'Overdrive',item:overdrive,pick:overdrive?.pick,status:account?.overdrives?.some(x=>x.name===overdrive?.name)?'IN USO':overdrive?'DA OTTENERE':'NON DISPONIBILE'}
  ];
 }
