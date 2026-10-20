@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-19T04:54:14.508Z",
+  "generatedAt": "2026-10-20T05:02:40.182Z",
   "agent": "Brawl Helper Meta Agent",
   "policy": {
     "externalMetaFirst": true,
@@ -14,8 +14,8 @@
       "name": "BrawlMetrics",
       "role": "battle_stats",
       "enabled": true,
-      "coverage": 105,
-      "updatedAt": "2026-10-19T04:52:24.142Z",
+      "coverage": 106,
+      "updatedAt": "2026-10-20T05:00:07.340Z",
       "ageHours": 0,
       "status": "ok"
     },
@@ -24,8 +24,8 @@
       "name": "Brawl Time Ninja",
       "role": "battle_stats",
       "enabled": true,
-      "coverage": 103,
-      "updatedAt": "2026-10-19T04:52:24.142Z",
+      "coverage": 104,
+      "updatedAt": "2026-10-20T05:00:07.340Z",
       "ageHours": 0,
       "status": "ok"
     },
@@ -34,8 +34,8 @@
       "name": "NOFF",
       "role": "builds",
       "enabled": true,
-      "coverage": 105,
-      "updatedAt": "2026-10-19T04:52:24.142Z",
+      "coverage": 106,
+      "updatedAt": "2026-10-20T05:00:07.340Z",
       "ageHours": 0,
       "status": "ok"
     },
@@ -45,7 +45,7 @@
       "role": "events_stats_catalog",
       "enabled": true,
       "coverage": 109,
-      "updatedAt": "2026-10-19T04:52:24.142Z",
+      "updatedAt": "2026-10-20T05:00:07.340Z",
       "ageHours": 0,
       "status": "ok"
     },
@@ -55,15 +55,15 @@
       "role": "official_account_game_data",
       "enabled": true,
       "coverage": 109,
-      "updatedAt": "2026-10-19T04:52:24.142Z",
+      "updatedAt": "2026-10-20T05:00:07.340Z",
       "ageHours": 0,
       "status": "ok"
     }
   ],
   "summary": {
     "brawlersWithGlobalMeta": 109,
-    "brawlersWithModeMeta": 105,
-    "lowConfidence": 3
+    "brawlersWithModeMeta": 106,
+    "lowConfidence": 2
   },
   "warnings": []
 }
