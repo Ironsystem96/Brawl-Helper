@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "generatedFrom": "BrawlAPI catalog snapshot",
-  "generatedAt": "2026-10-25T04:53:50.641Z",
+  "generatedAt": "2026-10-26T06:23:21.153Z",
   "count": 109,
   "brawlers": [
     {
@@ -3939,7 +3939,7 @@
         {
           "id": "buffie:starPower:GRIFF",
           "name": "Keep The Change Buffie",
-          "description": "Attacking with full ammo also fires a mega coin that deals extra damage! Business Resilience 54% pick Every 2 seconds, Griff regains up to 15% of his missing health.",
+          "description": "Attacking with full ammo also fires a mega coin that deals extra damage! Business Resilience 55% pick Every 2 seconds, Griff regains up to 15% of his missing health.",
           "imageUrl": null,
           "released": true
         },
