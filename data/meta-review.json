@@ -1,7 +1,5 @@
 {
-  "checkedAt": "2026-10-28T07:29:20.222Z",
-  "status": "warning",
-  "warnings": [
-    "Brawl Time Ninja coverage below 50%"
-  ]
+  "checkedAt": "2026-10-29T07:15:53.365Z",
+  "status": "ok",
+  "warnings": []
 }
