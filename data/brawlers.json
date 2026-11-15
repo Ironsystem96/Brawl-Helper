@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "generatedFrom": "BrawlAPI catalog snapshot",
-  "generatedAt": "2026-11-14T07:39:29.241Z",
+  "generatedAt": "2026-11-15T07:55:21.797Z",
   "count": 109,
   "brawlers": [
     {
@@ -1617,7 +1617,29 @@
       "gears": [],
       "hyperCharges": [],
       "overdrives": [],
-      "buffies": [],
+      "buffies": [
+        {
+          "id": "buffie:gadget:SHADE",
+          "name": "Longarms Buffie",
+          "description": "Shade by FlyingSeaFairy782118 1d See More Shade Builds Top Shade Players 1 『火|Tɪᴇs🥀』 LadderOwners 👑 12411 2 ༏ ℷཀ cen𐕣rlx holy grail 10015 3 𝐒𝐢𝐫 Funtime Fallen Angels 7541 4 Mikee LadderOwners 👑 6313 5 bars Mercury 5938 6 JLD|Dynamix 5047 7 ㅤㅤㅤㅤ 5016 8 Neut.",
+          "imageUrl": null,
+          "released": true
+        },
+        {
+          "id": "buffie:gadget:SHADE",
+          "name": "Jump Scare Buffie",
+          "description": "Shade by FlyingSeaFairy782118 1d See More Shade Builds Top Shade Players 1 『火|Tɪᴇs🥀』 LadderOwners 👑 12411 2 ༏ ℷཀ cen𐕣rlx holy grail 10015 3 𝐒𝐢𝐫 Funtime Fallen Angels 7541 4 Mikee LadderOwners 👑 6313 5 bars Mercury 5938 6 JLD|Dynamix 5047 7 ㅤㅤㅤㅤ 5016 8 Neut.",
+          "imageUrl": null,
+          "released": true
+        },
+        {
+          "id": "buffie:starPower:SHADE",
+          "name": "Hardened Hoodie Buffie",
+          "description": "Shade by FlyingSeaFairy782118 1d See More Shade Builds Top Shade Players 1 『火|Tɪᴇs🥀』 LadderOwners 👑 12411 2 ༏ ℷཀ cen𐕣rlx holy grail 10015 3 𝐒𝐢𝐫 Funtime Fallen Angels 7541 4 Mikee LadderOwners 👑 6313 5 bars Mercury 5938 6 JLD|Dynamix 5047 7 ㅤㅤㅤㅤ 5016 8 Neut.",
+          "imageUrl": null,
+          "released": true
+        }
+      ],
       "dataCompleteness": {
         "identity": true,
         "portrait": true,
@@ -1626,7 +1648,7 @@
         "gears": false,
         "hyperCharges": false,
         "overdrives": false,
-        "buffies": false
+        "buffies": true
       }
     },
     {
@@ -7840,6 +7862,6 @@
     "gears": 0,
     "hyperCharges": 0,
     "overdrives": 0,
-    "buffies": 21
+    "buffies": 22
   }
 }
