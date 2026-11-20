@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "generatedFrom": "BrawlAPI catalog snapshot",
-  "generatedAt": "2026-11-19T08:52:42.341Z",
+  "generatedAt": "2026-11-20T08:39:31.139Z",
   "count": 109,
   "brawlers": [
     {
@@ -1621,21 +1621,21 @@
         {
           "id": "buffie:gadget:SHADE",
           "name": "Longarms Buffie",
-          "description": "Shade by FlyingSeaFairy782118 5d See More Shade Builds Top Shade Players 1 『火|Tɪᴇs🥀』 LadderOwners 👑 12411 2 ༏ ℷཀ cen𐕣rlx holy grail 10069 3 𝐒𝐢𝐫 Funtime Fallen Angels 7541 4 Mikee LadderOwners 👑 6313 5 bars end 5862 6 JLD|Dynamix 5043 7 ㅤㅤㅤㅤ 5016 8 Neut.",
+          "description": "Shade by FlyingSeaFairy782118 6d See More Shade Builds Top Shade Players 1 『火|Tɪᴇs🥀』 LadderOwners 👑 12411 2 ༏ ℷཀ cen𐕣rlx holy grail 10069 3 𝐒𝐢𝐫 Funtime Fallen Angels 7541 4 Mikee LadderOwners 👑 6313 5 bars 5862 6 JLD|Dynamix 5043 7 ㅤㅤㅤㅤ 5016 8 Neut.",
           "imageUrl": null,
           "released": true
         },
         {
           "id": "buffie:gadget:SHADE",
           "name": "Jump Scare Buffie",
-          "description": "Shade by FlyingSeaFairy782118 5d See More Shade Builds Top Shade Players 1 『火|Tɪᴇs🥀』 LadderOwners 👑 12411 2 ༏ ℷཀ cen𐕣rlx holy grail 10069 3 𝐒𝐢𝐫 Funtime Fallen Angels 7541 4 Mikee LadderOwners 👑 6313 5 bars end 5862 6 JLD|Dynamix 5043 7 ㅤㅤㅤㅤ 5016 8 Neut.",
+          "description": "Shade by FlyingSeaFairy782118 6d See More Shade Builds Top Shade Players 1 『火|Tɪᴇs🥀』 LadderOwners 👑 12411 2 ༏ ℷཀ cen𐕣rlx holy grail 10069 3 𝐒𝐢𝐫 Funtime Fallen Angels 7541 4 Mikee LadderOwners 👑 6313 5 bars 5862 6 JLD|Dynamix 5043 7 ㅤㅤㅤㅤ 5016 8 Neut.",
           "imageUrl": null,
           "released": true
         },
         {
           "id": "buffie:starPower:SHADE",
           "name": "Hardened Hoodie Buffie",
-          "description": "Shade by FlyingSeaFairy782118 5d See More Shade Builds Top Shade Players 1 『火|Tɪᴇs🥀』 LadderOwners 👑 12411 2 ༏ ℷཀ cen𐕣rlx holy grail 10069 3 𝐒𝐢𝐫 Funtime Fallen Angels 7541 4 Mikee LadderOwners 👑 6313 5 bars end 5862 6 JLD|Dynamix 5043 7 ㅤㅤㅤㅤ 5016 8 Neut.",
+          "description": "Shade by FlyingSeaFairy782118 6d See More Shade Builds Top Shade Players 1 『火|Tɪᴇs🥀』 LadderOwners 👑 12411 2 ༏ ℷཀ cen𐕣rlx holy grail 10069 3 𝐒𝐢𝐫 Funtime Fallen Angels 7541 4 Mikee LadderOwners 👑 6313 5 bars 5862 6 JLD|Dynamix 5043 7 ㅤㅤㅤㅤ 5016 8 Neut.",
           "imageUrl": null,
           "released": true
         }
@@ -6939,7 +6939,36 @@
       "gears": [],
       "hyperCharges": [],
       "overdrives": [],
-      "buffies": [],
+      "buffies": [
+        {
+          "id": "buffie:gadget:EL_PRIMO",
+          "name": "Suplex Supplement Buffie",
+          "description": "Build by ChargingStrawberry735960 23h Best El Primo Build (Brawl Ball) Works best with buffies.",
+          "imageUrl": null,
+          "released": true
+        },
+        {
+          "id": "buffie:gadget:EL_PRIMO",
+          "name": "Asteroid Belt Buffie",
+          "description": "Build by ChargingStrawberry735960 23h Best El Primo Build (Brawl Ball) Works best with buffies.",
+          "imageUrl": null,
+          "released": true
+        },
+        {
+          "id": "buffie:starPower:EL_PRIMO",
+          "name": "El Fuego Buffie",
+          "description": "Build by ChargingStrawberry735960 23h Best El Primo Build (Brawl Ball) Works best with buffies.",
+          "imageUrl": null,
+          "released": true
+        },
+        {
+          "id": "buffie:starPower:EL_PRIMO",
+          "name": "Meteor Rush Buffie",
+          "description": "Build by ChargingStrawberry735960 23h Best El Primo Build (Brawl Ball) Works best with buffies.",
+          "imageUrl": null,
+          "released": true
+        }
+      ],
       "dataCompleteness": {
         "identity": true,
         "portrait": true,
@@ -6948,7 +6977,7 @@
         "gears": false,
         "hyperCharges": false,
         "overdrives": false,
-        "buffies": false
+        "buffies": true
       }
     },
     {
@@ -7862,6 +7891,6 @@
     "gears": 0,
     "hyperCharges": 0,
     "overdrives": 0,
-    "buffies": 22
+    "buffies": 23
   }
 }
